@@ -1,6 +1,6 @@
-title: minima-reboot
-author: GitHub User
-email: your-email@domain.com
+title: lapses and slips
+author: acasquete
+email: acasquete@outlook.com
 description: >
   This is a demo page for minima-reboot, a bootstrap-based rewrite of Jekyll's
   default minima theme. It is simple, lightweight, and responsive.
@@ -20,7 +20,6 @@ minima_reboot:
 header_pages:
 - about.md
 - posts.md
-- github.md
 
 footer_icons:
 - username: aterenin/minima-reboot/
