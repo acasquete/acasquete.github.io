@@ -3,7 +3,7 @@ layout: default
 ---
 <article id="post-page">
 	<h2>{%if page.header %}{{ page.header }}{% else %}{{ page.title }}{% endif %}</h2>		
-	<time datetime="{{ page.date | date_to_xmlschema }}" class="by-line">{{ page.date | date: '%B %d, %Y' }}</time>
+	<time datetime="{{ page.date | date_to_xmlschema }}" class="by-line">{{ page.date | date: '%B %e, %Y' }}</time>
 	<div class="content">
 
 		{{ content }}
