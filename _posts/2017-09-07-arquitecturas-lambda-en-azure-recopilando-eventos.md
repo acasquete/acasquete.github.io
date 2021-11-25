@@ -1,7 +1,7 @@
 ---
-title: Arquitecturas Lambda en Azure: recopilando eventos
+title: Arquitecturas Lambda en Azure recopilando eventos
 description: This is our first post. Hello World!
-header: Arquitecturas Lambda en Azure: recopilando eventos
+header: Arquitecturas Lambda en Azure recopilando eventos
 ---
 Los dispositivos móviles se utilizan para detectar nuestra presencia en centros comerciales, salas de exposiciones, estaciones de tren, aeropuertos, hospitales, museos y un sinfín de lugares más. Esto es posible porque los dispositivos móviles pueden detectarse mediante puntos de acceso WiFi, independientemente del estado de asociación, lo que significa que incluso si un usuario no conecta su dispositivo a la red WiFi, la presencia del dispositivo puede detectarse mientras esté dentro del alcance de la red y, obviamente, la conexión WiFi del dispositivo esté habilitada.
 
