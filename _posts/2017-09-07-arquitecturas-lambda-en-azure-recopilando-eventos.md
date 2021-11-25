@@ -9,17 +9,17 @@ Este es el punto de partida para crear un proceso que permita recopilar y analiz
 
 En esta entrada vamos a centrarnos exclusivamente en la obtención y almacenamiento de los datos de los eventos para poder analizarlos. Para esto vamos a necesitar los siguientes servicios en Azure:
 
-*   **Azure Function** - para exponer una API donde un proveedor de terceros pueda enviar la información de los eventos y enviarlos a un _Event Hub_ para procesarlos en tiempo real.
-*   **Event Hub** - para recopilar, almacenar eventos y para permitir la lectura de los datos en varias aplicaciones mediante suscripción.
-*   **Stream Analytics** - para extraer los eventos del _Event Hub_, procesar los datos de las trazas y guardarlos en un contenedor de _Azure Storage_.
-*   **Azure Storage** - para almacenamiento de los datos en reposo y realizar un análisis posterior.
+* **Azure Function** - para exponer una API donde un proveedor de terceros pueda enviar la información de los eventos y enviarlos a un _Event Hub_ para procesarlos en tiempo real.
+* **Event Hub** - para recopilar, almacenar eventos y para permitir la lectura de los datos en varias aplicaciones mediante suscripción.
+* **Stream Analytics** - para extraer los eventos del _Event Hub_, procesar los datos de las trazas y guardarlos en un contenedor de _Azure Storage_.
+* **Azure Storage** - para almacenamiento de los datos en reposo y realizar un análisis posterior.
 
 Recopilando trazas de localización
 ----------------------------------
 
 En un mundo perfecto, los AP podrían conectarse directamente a **Event Hub** para enviar la información de los eventos, pero en el “Mundo Real” esto casi nunca es posible y en muchos casos tendremos que realizar desarrollos _ad hoc_ para integranos con los distintos proveedores de información.
 
-Para nuestro ejemplo, he elegido un caso real, el formato que utiliza **Cisco Meraki** para enviar los datos de sus dispositivos. La documentación del funcionamiento del análisis de localización se puede encontrar [aquí](https://web.archive.org/web/20210123140943/https://documentation.meraki.com/MR/Monitoring_and_Reporting/Location_Analytics).
+Para nuestro ejemplo, he elegido un caso real, el formato que utiliza **Cisco Meraki** para enviar los datos de sus dispositivos. La documentación del funcionamiento del análisis de localización se puede encontrar [aquí](https://documentation.meraki.com/MR/Monitoring_and_Reporting/Location_Analytics).
 
 Los AP de Cisco generan una firma de presencia desde cualquier dispositivo con la WiFi habilitada detectando tramas de datos 802.11, esten asociados o no a la red. Como decíamos al principio de la entrada, esto es posible porque todos los dispositivos Wifi emiten una petición para descubrir redes cercanas en intervalos regulares. La frecuencia de envío de tramas de cada dispositivo puede puede ir desde una a múltiples veces por minuto y depende de multiples factores: del fabricante, del estado del dispositivo (en espera, dormido, asociado), de las actualizaciones que el dispositovo tenga instaladas o el estado de carga de la batería.
 
@@ -60,7 +60,7 @@ Esta información se enviará por cada uno de los AP e incluye información para
 
 En el _array_ _observations_ recibimos toda la información de los dispositivos detectados por el AP, incluyendo datos como la dirección Mac (_clientMac_) y datos de geoposicionamiento: latitud (_lat_), longitud (_lon_) y su grado de incertidumbre en metros (_unc_).
 
-Una vez familiarizados con el formato, vamos a crear el proyecto de **Azure Function**. Para esto, podemos utilizar tanto **Visual Studio 2017** como **Visual Studio Code** con las [Azure Functions CLI](https://web.archive.org/web/20210123140943/https://www.npmjs.com/package/azure-functions-cli).
+Una vez familiarizados con el formato, vamos a crear el proyecto de **Azure Function**. Para esto, podemos utilizar tanto **Visual Studio 2017** como **Visual Studio Code** con las [Azure Functions CLI](https://www.npmjs.com/package/azure-functions-cli).
 
 En esta ocasión voy a crear el proyecto utilizando la línea de comandos escribiendo el siguiente comando:
 
@@ -91,7 +91,7 @@ Esto generará una función por defecto.
     Writing C:\Code\LocationAnalytics\MerakiTraces\function.json
     
 
-Para poder enviar mensajes a **Event Hub**, tenemos que añadir la referencia al paquete [NuGet de ServiceBus](https://web.archive.org/web/20210123140943/https://www.nuget.org/packages/Microsoft.Azure.ServiceBus.EventProcessorHost/) creando el archivo **project.json** dentro del directorio **MerakiTraces** con el siguiente contenido:
+Para poder enviar mensajes a **Event Hub**, tenemos que añadir la referencia al paquete [NuGet de ServiceBus](https://www.nuget.org/packages/Microsoft.Azure.ServiceBus.EventProcessorHost/) creando el archivo **project.json** dentro del directorio **MerakiTraces** con el siguiente contenido:
 
     {
       "frameworks": {
@@ -207,26 +207,17 @@ Y ejecutar el siguiente comando:
 
 En el código de la función podemos ver que básicamente verificamos que la petición que recibimos es válida (comprobando la propiedad _secret_) y en caso afirmativo enviamos el objeto recibido sin ninguna transformación al **Event Hub**.
 
-Para comprobar que la función está enviando eventos correctamente, podemos ver en el [Portal de Azure](https://web.archive.org/web/20210123140943/https://portal.azure.com/) el número de eventos que están entrando en el **Event Hub**. En la próxima entrada veremos cómo procesar esta información mediante **Stream Analytics**.
+Para comprobar que la función está enviando eventos correctamente, podemos ver en el [Portal de Azure](https://portal.azure.com/) el número de eventos que están entrando en el **Event Hub**. En la próxima entrada veremos cómo procesar esta información mediante **Stream Analytics**.
 
 Resumen
 -------
 
 En esta entrada nos hemos centrado exclusivamnete en cómo recoger mediante una **Azure Function** los eventos de trazas WiFi, utilizando a modo de ejemplo el modelo de trazas de un proveedor específico, para enviarlos a un servicio **Event Hub** que nos permitirá posteriormente procesarlo con, por ejemplo, un _job_ de **Stream Analytics**.
 
-Código Fuente
--------------
-
-El **código fuente** utilizado en esta entrada está disponible en [GitHub](https://web.archive.org/web/20210123140943/https://github.com/acasquete/lambda-architecture-azure).
-
 Referencias
 -----------
 
-[Location Analytics](https://web.archive.org/web/20210123140943/https://documentation.meraki.com/MR/Monitoring_and_Reporting/Location_Analytics)  
-[Vehicle telemetry analytics solution playbook](https://web.archive.org/web/20210123140943/https://docs.microsoft.com/en-us/azure/machine-learning/cortana-analytics-playbook-vehicle-telemetry)  
-[Codificación y comprobación de las funciones de Azure en un entorno local](https://web.archive.org/web/20210123140943/https://docs.microsoft.com/es-es/azure/azure-functions/functions-run-local)
+[Location Analytics](https://documentation.meraki.com/MR/Monitoring_and_Reporting/Location_Analytics)  
+[Vehicle telemetry analytics solution playbook](https://docs.microsoft.com/en-us/azure/machine-learning/cortana-analytics-playbook-vehicle-telemetry)  
+[Codificación y comprobación de las funciones de Azure en un entorno local](https://docs.microsoft.com/es-es/azure/azure-functions/functions-run-local)
 
-Esta entrada es parte de una serie dedicada a las **[Arquitecturas Lambda](https://web.archive.org/web/20210123140943/http://casquete.es/tag/lambda_architecture/)** en **[Azure](https://web.archive.org/web/20210123140943/http://casquete.es/tag/azure/)**:
-
-1.  [Arquitecturas Lambda en Azure](https://web.archive.org/web/20210123140943/http://casquete.es/arquitecturas-lambda-en-azure/)
-2.  [Arquitecturas Lambda en Azure: recopilando eventos](https://web.archive.org/web/20210123140943/http://casquete.es/arquitecturas-lambda-en-azure-recopilando-eventos//)
