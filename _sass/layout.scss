@@ -176,6 +176,16 @@
     font-size: 0.8em;
     white-space: break-spaces;
   }
+
+  a {
+    color: $accent-color;
+    text-decoration: none;
+    font-weight: 700;
+    &:hover,
+    &:focus {
+      color: darken($accent-color, 5%);
+    }
+  }
 }
 
 .by-line {
