@@ -17,6 +17,14 @@ p, ul, ol {
 	font-size: 1em; /* 16px */
 	line-height: 1.8em;
 	margin-bottom: 1.5em; /* 24px/16px */
+
+	code {
+		padding: 2px 4px;
+		font-size: 90%;
+		color: #c7254e;
+		background-color: #f9f2f4;
+		border-radius: 4px;
+	}
 }
 
 h1 {
