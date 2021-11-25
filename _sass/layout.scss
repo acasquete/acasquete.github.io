@@ -169,6 +169,12 @@
   @media (min-width: 940px) {
       margin-bottom: 1.3334em;
     }
+
+  pre {
+    border: 1px solid #ccc; 
+    padding: 1em;
+    font-size: 0.8em;
+  }
 }
 
 .by-line {
