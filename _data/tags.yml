@@ -1,0 +1,12 @@
+allowed-tags:
+  - fsharp
+  - functional_programming
+  - web
+  - suaveio
+  - fake
+  - vsts
+  - netcore
+  - docker
+  - lambda_architecture
+  - azure
+  - big_data
