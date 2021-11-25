@@ -210,8 +210,7 @@ img[title="Monochrome"] {
 
 code {
   font-family: 'Fira Code', monospace;
-  color: lighten($text-color, 35%);
-  background-color: lighten($background-color, 35%);
+  color: lighten($text-color, 10%);
 }
 
 /* Set the vertical rhythm (and padding-left) for lists inside post content */
