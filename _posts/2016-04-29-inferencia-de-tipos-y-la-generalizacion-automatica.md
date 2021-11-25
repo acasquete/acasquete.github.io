@@ -1,6 +1,6 @@
 ---
 title: Inferencia de tipos y la generalización automática
-tags: f#, functional_programming
+tags: fsharp, functional_programming
 ---
 Una de las características con la que cualquier programador queda atrapado al entrar en contacto por primera vez con F# es con la **inferencia de tipos**. Por ejemplo, a partir del siguiente código:
 
