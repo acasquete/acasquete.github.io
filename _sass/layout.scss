@@ -171,9 +171,11 @@
     }
 
   pre {
+    font-family: 'Fira Code', monospace;
     border: 1px solid #ccc; 
     padding: 1em;
     font-size: 0.8em;
+    white-space: break-spaces;
   }
 }
 
