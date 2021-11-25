@@ -159,6 +159,7 @@
 #posts {
   li {
     list-style-type: none;
+    margin-top: 1em;
   }
 }
 
@@ -168,15 +169,6 @@
       margin-bottom: 1.3334em;
     }
 }
-
-.post+.post:before {
-    display: block;
-    content: '';
-    width: 5rem;
-    height: 1px;
-    margin: 0 auto;
-    background-color: lighten($text-color, 70%);
-  }
 
 .by-line {
   display: block;
