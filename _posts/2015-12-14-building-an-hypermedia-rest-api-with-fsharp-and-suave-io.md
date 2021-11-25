@@ -1,6 +1,6 @@
 ---
 title: Building an Hypermedia REST API with F# and Suave.IO
-tags: fsharp, suaveio, functional_programming, web
+tags: [fsharp, suaveio, functional_programming, web]
 ---
 Hypermedia, also known by the acronym HATEOAS (Hypermedia as the Engine of Application State), is an architecture feature of REST applications that allows clients to fully interact with a service through resources provided dynamically by the server. This enables that client and server implementations can evolve independently.
 

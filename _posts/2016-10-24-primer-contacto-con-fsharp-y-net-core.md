@@ -1,6 +1,6 @@
 ---
 title: Primer contacto con F# y .NET Core
-tags: fsharp, functional_programming, netcore
+tags: [fsharp, functional_programming, netcore]
 ---
 En este post veremos cómo comenzar a utilizar F# con .NET Core. Comenzaremos creando un proyecto F# mediante las herramientas de línea de comandos (.NET CLI). Aprovecharemos, además, este primer post para introducir el funcionamiento del servicio **Configuration** de [.NET Core](https://dotnet.github.io/) para cargar la configuración de nuestra aplicación desde distintos orígenes, utilizando una colección en memoria, los clásicos ficheros externos y la versátil línea de comandos.
 

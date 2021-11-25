@@ -1,6 +1,6 @@
 ---
 title: Integrando FAKE y Visual Studio Team Services
-tags: fsharp, fake, vsts
+tags: [fsharp, fake, vsts]
 ---
 **FAKE** (F# Make) es un DSL escrito en F# con el que podemos definir diferentes tareas para compilar y desplegar cualquier tipo de proyecto. Es un sistema de automatización de _builds_ similar a [Make](http://www.gnu.org/software/make/) o [Rake](https://github.com/ruby/rake), es _open-source_ y cuenta con una comunidad, con más de 200 _contributors_, muy activa.
 
