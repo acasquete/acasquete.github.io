@@ -7,7 +7,7 @@ title: Integrando FAKE y Visual Studio Team Services
 
 En este post vamos a ver cómo utilizar **FAKE** para crear un script que genere la _build_ de un proyecto ASP.NET MVC estándard, ejecute los tests unitarios y, por último, veremos cómo integrarlo muy fácilmente en el nuevo sistema de _builds_ de **Visual Studio Team Services**.
 
-## Añadir FAKE a un proyecto ASP.NET MVC 
+### Añadir FAKE a un proyecto ASP.NET MVC 
 
 Para comenzar vamos a añadir FAKE a un proyecto web existente. Como ejemplo utilizaremos un proyecto creado con la plantilla ASP.NET MVC al que se le ha agregado un proyecto de test. Antes que nada, necesitamos agregar a nuestra solución la utilizad de línea de comandos de NuGet. Esto es necesario porque durante el proceso de compilación es necesario descargar todas las dependencias, y esto lo haremos mediante NuGet. Podríamos hacerlo utilizando Paket, pero como la solución por defecto de ASP.NET MVC no lo utiliza, en esta ocasión lo omitiremos.
 
@@ -102,10 +102,8 @@ Esta sería la declaración de dependencias de nuestros _Targets_ y se leería d
     "Clean"
       ==> "RestorePackages"
       ==> "BuildApp"
-    
-    
 
-Al ejecutar y después de unos pocos segundos obtendremos el siguiente resultado.
+t bbAl ejecutar y después de unos pocos segundos obtendremos el siguiente resultado.
 
 ![FAKE First Build](/img/fake-first-build.png)
 
