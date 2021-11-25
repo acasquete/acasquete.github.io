@@ -12,7 +12,7 @@ En esta entrada vamos a centrarnos exclusivamente en la obtención y almacenamie
 * **Stream Analytics** - para extraer los eventos del _Event Hub_, procesar los datos de las trazas y guardarlos en un contenedor de _Azure Storage_.
 * **Azure Storage** - para almacenamiento de los datos en reposo y realizar un análisis posterior.
 
-## Recopilando trazas de localización 
+# Recopilando trazas de localización 
 
 En un mundo perfecto, los AP podrían conectarse directamente a **Event Hub** para enviar la información de los eventos, pero en el “Mundo Real” esto casi nunca es posible y en muchos casos tendremos que realizar desarrollos _ad hoc_ para integranos con los distintos proveedores de información.
 
@@ -20,7 +20,7 @@ Para nuestro ejemplo, he elegido un caso real, el formato que utiliza **Cisco Me
 
 Los AP de Cisco generan una firma de presencia desde cualquier dispositivo con la WiFi habilitada detectando tramas de datos 802.11, esten asociados o no a la red. Como decíamos al principio de la entrada, esto es posible porque todos los dispositivos Wifi emiten una petición para descubrir redes cercanas en intervalos regulares. La frecuencia de envío de tramas de cada dispositivo puede puede ir desde una a múltiples veces por minuto y depende de multiples factores: del fabricante, del estado del dispositivo (en espera, dormido, asociado), de las actualizaciones que el dispositovo tenga instaladas o el estado de carga de la batería.
 
-## Creación de un proyecto Azure Functions 
+# Creación de un proyecto Azure Functions 
 
 Vamos a comenzar creando una **Function App** para exponer una API que sea capaz de recoger las trazas del sistema de localización de Cisco Meraki y enviarlas a un **Event Hub** para que puedan ser procesadas posteriormente. El formato de los eventos que Cisco Meraki envía es el siguiente:
 
@@ -99,7 +99,6 @@ Para poder enviar mensajes a **Event Hub**, tenemos que añadir la referencia al
        }
     }
     
-
 Y cambiar el código de la función del fichero **run.csx** por el siguiente:
 
     using System.Net;
@@ -205,11 +204,11 @@ En el código de la función podemos ver que básicamente verificamos que la pet
 
 Para comprobar que la función está enviando eventos correctamente, podemos ver en el [Portal de Azure](https://portal.azure.com/) el número de eventos que están entrando en el **Event Hub**. En la próxima entrada veremos cómo procesar esta información mediante **Stream Analytics**.
 
-## Resumen 
+# Resumen 
 
 En esta entrada nos hemos centrado exclusivamnete en cómo recoger mediante una **Azure Function** los eventos de trazas WiFi, utilizando a modo de ejemplo el modelo de trazas de un proveedor específico, para enviarlos a un servicio **Event Hub** que nos permitirá posteriormente procesarlo con, por ejemplo, un _job_ de **Stream Analytics**.
 
-## Referencias 
+# Referencias 
 
 [Location Analytics](https://documentation.meraki.com/MR/Monitoring_and_Reporting/Location_Analytics)  
 [Vehicle telemetry analytics solution playbook](https://docs.microsoft.com/en-us/azure/machine-learning/cortana-analytics-playbook-vehicle-telemetry)  

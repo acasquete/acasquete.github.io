@@ -7,7 +7,7 @@ title: Integrando FAKE y Visual Studio Team Services
 
 En este post vamos a ver cómo utilizar **FAKE** para crear un script que genere la _build_ de un proyecto ASP.NET MVC estándard, ejecute los tests unitarios y, por último, veremos cómo integrarlo muy fácilmente en el nuevo sistema de _builds_ de **Visual Studio Team Services**.
 
-### Añadir FAKE a un proyecto ASP.NET MVC 
+# Añadir FAKE a un proyecto ASP.NET MVC 
 
 Para comenzar vamos a añadir FAKE a un proyecto web existente. Como ejemplo utilizaremos un proyecto creado con la plantilla ASP.NET MVC al que se le ha agregado un proyecto de test. Antes que nada, necesitamos agregar a nuestra solución la utilizad de línea de comandos de NuGet. Esto es necesario porque durante el proceso de compilación es necesario descargar todas las dependencias, y esto lo haremos mediante NuGet. Podríamos hacerlo utilizando Paket, pero como la solución por defecto de ASP.NET MVC no lo utiliza, en esta ocasión lo omitiremos.
 
@@ -64,7 +64,7 @@ Si ejecutamos el fichero `build.cmd` obtendremos el siguiente resultado.
 
 Aunque no hemos conseguido un resultado realmente sorprendende, esta primera introducción nos ha servido para conocer la estructura básica de los scripts de FAKE. Vamos a ver ahora cómo modificar el _script_ para realizar las tareas típicas de un proceso de _build_.
 
-## Compilando un proyecto con MSBuild 
+# Compilando un proyecto con MSBuild 
 
 El paso más importante en un proceso de _build_ es sin duda la compilación del proyecto. **FAKE** contiene _helpers_ que contienen tareas que nos permiten utilizar MSBuild (o xBuild en Linux/Unit) para compilar los ficheros de proyectos o de solución de cualquier proyecto .NET. Estas tareas las encontramos en el [Helper MSBuildHelper](http://fsharp.github.io/FAKE/apidocs/fake-msbuildhelper.html). Pero además de estas, FAKE dispone de multitud de tareas de las que se puede consultar su modo de uso en la [documentación de la API](http://fsharp.github.io/FAKE/apidocs/index.html).
 
@@ -107,7 +107,7 @@ t bbAl ejecutar y después de unos pocos segundos obtendremos el siguiente resul
 
 ![FAKE First Build](/img/fake-first-build.png)
 
-## Ejecución de pruebas 
+# Ejecución de pruebas 
 
 Otra de las tareas imprescindibles en una _build_ automatizada es la ejecución de tests. **FAKE** dispone de tareas para ejecutar tests de NUnit, XUnit y MSTest.
 
@@ -141,7 +141,7 @@ El resultado de la ejecución, en esta ocasión, contendrá el número y el resu
 
 ![FAKE First Test Build](/img/fake-first-test-build.png)
 
-## Integrando FAKE con Visual Studio Team Services 
+# Integrando FAKE con Visual Studio Team Services 
 
 El nuevo sistema de Builds de **Visual Studio Team Services** (VSTS) permite integrar muy fácilmente cualquier _script_ de FAKE.
 
@@ -167,7 +167,7 @@ Si ahora lanzamos una nueva _build_, ya sea manualmente o realizando un commit a
 
 ![VSTS Build Results](/img/vsts-build-results.png)
 
-## Conclusiones 
+# Conclusiones 
 
 En esta entrada hemos visto cómo podemos utilizar **FAKE** para crear nuestros scripts de automatización de builds que se ejecutan de la misma forma en local que en cualquier servidor de _builds_. **FAKE** proporciona un EDSL funcional para definir las tareas propias de una build: limpiar directorios, compilar proyectos, ejecución de tests, etc.
 
@@ -175,7 +175,7 @@ Los ficheros de script de FAKE se escriben en F#, pero no es necesario tener con
 
 Otra ventaja es que podemos escribir los scripts con Visual Studio, con lo que tenemos soporte de Intellisense y podremos depurar los scripts como si de cualquier otra aplicación se tratase.
 
-## Referencias 
+# Referencias 
 
 [FAKE - F# Make](https://github.com/fsharp/FAKE)  
 [Installing NuGet](http://docs.nuget.org/consume/installing-nuget)  
