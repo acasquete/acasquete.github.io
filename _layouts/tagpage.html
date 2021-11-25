@@ -5,8 +5,7 @@ layout: default
 <h1>Tag: {{ page.tag }}</h1>
 <ul>
 {% for post in site.tags[page.tag] %}
-  <li><a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date: '%B %e, %Y' }})<br>
-    <p>{{ post.content | strip_html | truncatewords:50 }}</p>
+  <li><a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date: '%B %e, %Y' }}) - {{ post.content | strip_html | truncatewords:50 }}
   </li>
 {% endfor %}
 </ul>
