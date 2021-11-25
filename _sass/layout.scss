@@ -171,7 +171,6 @@
     }
 
   pre {
-    font-family: 'Fira Code', monospace;
     border: 1px solid #ccc; 
     padding: 1em;
     font-size: 0.8em;
@@ -210,6 +209,7 @@ img[title="Monochrome"] {
   }
 
 code {
+  font-family: 'Fira Code', monospace;
   color: lighten($text-color, 35%);
   background-color: lighten($background-color, 35%);
 }
