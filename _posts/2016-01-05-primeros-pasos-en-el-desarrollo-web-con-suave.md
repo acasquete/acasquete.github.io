@@ -2,20 +2,20 @@
 title: Primeros pasos en el desarrollo web con Suave
 tags: fsharp, suaveio, functional_programming, web
 ---
-En la entrada anterior vimos cómo implementar [Hypermedia en una API REST utilizando Suave](https://web.archive.org/web/20210123140942/http://www.casquete.es/building-an-hypermedia-rest-api-with-fsharp-and-suave-io/), en la que partíamos de una pequeña solución y dábamos por conocidos algunos conceptos. En esta entrada damos a un pequeño paso atrás para introducir el funcionamiento y conceptos básicos de [Suave](https://web.archive.org/web/20210123140942/https://suave.io/) para poder afrontar y crear un proyecto web. A través de varios posts, iremos conociendo las distintas características de Suave con los que cualquier desarrollador, incluso sin conocimientos profundos del lenguaje, podrá crear y desplegar una web realizada íntegramente en F#.
+En la entrada anterior vimos cómo implementar [Hypermedia en una API REST utilizando Suave](/building-an-hypermedia-rest-api-with-fsharp-and-suave-io/), en la que partíamos de una pequeña solución y dábamos por conocidos algunos conceptos. En esta entrada damos a un pequeño paso atrás para introducir el funcionamiento y conceptos básicos de [Suave](https://suave.io/) para poder afrontar y crear un proyecto web. A través de varios posts, iremos conociendo las distintas características de Suave con los que cualquier desarrollador, incluso sin conocimientos profundos del lenguaje, podrá crear y desplegar una web realizada íntegramente en F#.
 
 > “Suave es una librería de F# para desarrollo web que proporciona un servidor ligero y un conjunto de combinadores para manipular flujos de enrutamiento y composición de tareas.”
 
 En esta primera introducción, partimos de cero. Crearemos la solución inicial y veremos cómo funciona el _routing_ en Suave haciendo uso de una fantástica característica de la programación funcional: la composición de funciones. En próximos posts trataremos la implementación de vistas, autenticación, despliegues en Azure o Heroku y, en definitiva, todo lo necesario para tener una web o Web API totalmente operativa.
 
-Ayer mismo se publicó la [versión 1.0 de Suave](https://web.archive.org/web/20210123140942/https://www.nuget.org/packages/Suave), así que todos los ejemplos que vamos a mostrar en este y sucesivos posts será utilizando, como mínimo, esta versión.
+Ayer mismo se publicó la [versión 1.0 de Suave](https://www.nuget.org/packages/Suave), así que todos los ejemplos que vamos a mostrar en este y sucesivos posts será utilizando, como mínimo, esta versión.
 
 Iniciando un nuevo proyecto con Suave
 -------------------------------------
 
-Actualmente tenemos varios editores con los que crear una solución con F#, desde el ya clásico **Visual Studio** hasta el recién llegado **Visual Studio Code** y sus [extensiones](https://web.archive.org/web/20210123140942/https://marketplace.visualstudio.com/items/Ionide.Ionide-fsharp), pasando por **Atom** o **Xamarin Studio**. En esta serie vamos a utilizar Visual Studio, pero para crear la solución inicial utilizaremos [Yeoman](https://web.archive.org/web/20210123140942/http://yeoman.io/), la herramienta de node.js (multiplataforma en consecuencia) que ha adquirido mucha popularidad en el ecosistema Microsoft por ser la utilizada por el equipo de ASP.NET. Sin embargo, nada nos impide crear una solución vacía y agregar las dependencias manualmente.
+Actualmente tenemos varios editores con los que crear una solución con F#, desde el ya clásico **Visual Studio** hasta el recién llegado **Visual Studio Code** y sus [extensiones](https://marketplace.visualstudio.com/items/Ionide.Ionide-fsharp), pasando por **Atom** o **Xamarin Studio**. En esta serie vamos a utilizar Visual Studio, pero para crear la solución inicial utilizaremos [Yeoman](http://yeoman.io/), la herramienta de node.js (multiplataforma en consecuencia) que ha adquirido mucha popularidad en el ecosistema Microsoft por ser la utilizada por el equipo de ASP.NET. Sin embargo, nada nos impide crear una solución vacía y agregar las dependencias manualmente.
 
-Después de instalar **Yeoman** utilizando `npm install –g yo`, necesitamos instalar [yeoman-fsharp](https://web.archive.org/web/20210123140942/https://github.com/fsprojects/generator-fsharp) que proporciona las plantillas para realizar el _scaffolding_ de proyectos web, consola y, el que nos interesa a nosotros, una aplicación web con Suave.
+Después de instalar **Yeoman** utilizando `npm install –g yo`, necesitamos instalar [yeoman-fsharp](https://github.com/fsprojects/generator-fsharp) que proporciona las plantillas para realizar el _scaffolding_ de proyectos web, consola y, el que nos interesa a nosotros, una aplicación web con Suave.
 
 Para instalar generador-fsharp desde npm ejecutamos el siguiente comando en la línea de comandos:
 
@@ -24,7 +24,7 @@ Para instalar generador-fsharp desde npm ejecutamos el siguiente comando en la l
 
 Una vez instaladas estás plantillas, iniciamos el generador ejecutando `yo fsharp` en el directorio donde queramos crear la solución y, cuando nos pregunte, seleccionaremos las opciones _Create standalone project_ y _Suave Application_, daremos un nombre a nuestra aplicación y responderemos que sí cuando nos pregunte si queremos utilizar **Paket** como gestor de paquetes. Al completar estos pasos, el generador descargará los ficheros necesarios y al final obtenemos la estructura siguiente.
 
-[![yo-fsharp-folder](/web/20210123140942im_/https://acasquete.github.io/img/yo-fsharp-folder.png)](/web/20210123140942/https://acasquete.github.io/img/yo-fsharp-folder.png)
+[![yo-fsharp-folder](/img/yo-fsharp-folder.png)](/img/yo-fsharp-folder.png)
 
 Si abrimos el fichero del proyecto **fsproj**, veremos que el contenido es muy simple. Únicamente tenemos un fichero de script con el código mínimo para iniciar el servidor web de Suave.
 
@@ -92,7 +92,7 @@ En esta configuración podemos ver varias propiedades con valores predeterminado
 
 En este código, utilizamos la función **HttpBinding.mk** para crear el nuevo enlace con esquema HTTP en el puerto 80 (`us` es el sufijo que utilizamos para indicar el tipo _unsigned int_ de 16 bits). Con este nuevo enlace creamos una nueva configuración a partir de la configuración por defecto estableciendo únicamente la propiedad bindings.
 
-Ahora centrémonos en el segundo argumento de **startWebServer**, en la WebPart. Una **WebPart** es una función que recibe un objeto de tipo **HttpContext** y devuelve un workflow asíncrono de tipo **HttpContext option** (`HttpContext -> Async<HttpContext option>`). Para más información sobre los workflows asíncronos podéis consultar un post anterior ([Workflows asíncronos con F#](https://web.archive.org/web/20210123140942/http://www.casquete.es/workflows-asincronos-con-f-sharp/)) en el que se explican los conceptos básicos.
+Ahora centrémonos en el segundo argumento de **startWebServer**, en la WebPart. Una **WebPart** es una función que recibe un objeto de tipo **HttpContext** y devuelve un workflow asíncrono de tipo **HttpContext option** (`HttpContext -> Async<HttpContext option>`). Para más información sobre los workflows asíncronos podéis consultar un post anterior ([Workflows asíncronos con F#](/workflows-asincronos-con-f-sharp/)) en el que se explican los conceptos básicos.
 
 Como decíamos al principio, la WebPart más simple es la que definimos con la función `OK (OK “Hello World!”)`, y que siempre devuelve un workflow con HttpContext con una respuesta HTTP 200 y la cadena que se le pasa como argumento en el cuerpo de la respuesta. **Podemos entender una WebPart como una promise que contendrá el HttpContext resultante dado por la lógica de la WebPart**.
 
@@ -115,7 +115,7 @@ Tal y como tenemos el código ahora mismo, da igual la ruta que pidamos, ya sea 
 
 Ahora, al ejecutar la solución, solo obtendremos una respuesta si accedemos a `localhost/hello`. En cualquier otra obtendremos una respuesta vacía.
 
-De la expresión anterior podemos diferenciar dos partes. La primera es la función **path** que es de tipo `string -> WebPart`. Es decir, que devuelve una **WebPart** a partir de un **string**. La función path comprueba si la ruta de la petición coincide con la que pasamos cómo argumento y en caso afirmativo devuelve **Some** y en caso negativo devuelve **None**. La otra parte es el operador `>=>`. Este operador no es un operador incluido en F#, sino que está definido por Suave en el namespace **Suave.Operators**. Este operador compone dos **WebParts** en una, evaluando primero la de la izquierda y aplicando el segundo si el primero devuelve **Some**. En teoría de categorías esta operación es conocida como [composición Kleisli](https://web.archive.org/web/20210123140942/https://en.wikipedia.org/wiki/Kleisli_category), con la que **si el resultado del primero de los dos workflows encadenados es None, el cálculo se cortocircuita y el segundo cálculo no se ejecuta nunca**. Tenéis un excelente tutorial del uso del operador `>=>` en [Railway oriented programming](https://web.archive.org/web/20210123140942/http://fsharpforfunandprofit.com/posts/recipe-part2/).
+De la expresión anterior podemos diferenciar dos partes. La primera es la función **path** que es de tipo `string -> WebPart`. Es decir, que devuelve una **WebPart** a partir de un **string**. La función path comprueba si la ruta de la petición coincide con la que pasamos cómo argumento y en caso afirmativo devuelve **Some** y en caso negativo devuelve **None**. La otra parte es el operador `>=>`. Este operador no es un operador incluido en F#, sino que está definido por Suave en el namespace **Suave.Operators**. Este operador compone dos **WebParts** en una, evaluando primero la de la izquierda y aplicando el segundo si el primero devuelve **Some**. En teoría de categorías esta operación es conocida como [composición Kleisli](https://en.wikipedia.org/wiki/Kleisli_category), con la que **si el resultado del primero de los dos workflows encadenados es None, el cálculo se cortocircuita y el segundo cálculo no se ejecuta nunca**. Tenéis un excelente tutorial del uso del operador `>=>` en [Railway oriented programming](http://fsharpforfunandprofit.com/posts/recipe-part2/).
 
 Operadores personalizados
 -------------------------
@@ -157,7 +157,7 @@ Para terminar esta breve introducción a los operadores, mencionar que existen d
 
 Pero no podemos declarar cualquier operador como operador de prefijo. Por ejemplo, los operadores que comienzan por `!`, excepto `!=`, el operador `~` y secuencias repetidas de `~` actúan siempre como operadores de prefijo. Los operadores `+`, `-`, `+.`, `-.`, `&`, `&&`, `%` y `%%` pueden ser operadores de prefijo u operadores de infijo. En estos casos utilizamos el carácter `~` para convertirlo en un operador de prefijo y no formará parte de la secuencia de caracteres del operador. El resto de combinaciones siempre formaran caracteres de infijo.
 
-Según la secuencia de caracteres exacta utilizada, el operador tendrá una prioridad y una asociatividad determinadas. Podéis leer sobre la precedencia y asociatividad de los operadores en este [magnifico post](https://web.archive.org/web/20210123140942/http://www.readcopyupdate.com/blog/2014/09/10/custom-ops-associativity-precedence.html).
+Según la secuencia de caracteres exacta utilizada, el operador tendrá una prioridad y una asociatividad determinadas. Podéis leer sobre la precedencia y asociatividad de los operadores en este [magnifico post](http://www.readcopyupdate.com/blog/2014/09/10/custom-ops-associativity-precedence.html).
 
 Combinadores, combinadores, combinadores
 ----------------------------------------
@@ -215,9 +215,9 @@ En este artículo hemos realizado un primer acercamiento al desarrollo web con S
 Referencias
 -----------
 
-[Custom Operators, Associativity and Precedence in F#](https://web.archive.org/web/20210123140942/http://www.readcopyupdate.com/blog/2014/09/10/custom-ops-associativity-precedence.html)  
-[Operadores de prefijo e infijo](https://web.archive.org/web/20210123140942/https://msdn.microsoft.com/es-es/library/dd233204.aspx#prefix)  
-[Railway oriented programming](https://web.archive.org/web/20210123140942/http://fsharpforfunandprofit.com/posts/recipe-part2/)  
-[Suave.IO introduction and example - Part 1: Intro](https://web.archive.org/web/20210123140942/http://blog.geist.no/suave-io-introduction-and-example-part-1-intro/)  
-[The F# Operators and Basic Functions](https://web.archive.org/web/20210123140942/http://blogs.msdn.com/b/dsyme/archive/2008/09/01/the-f-operators-and-basic-functions.aspx)
+[Custom Operators, Associativity and Precedence in F#](http://www.readcopyupdate.com/blog/2014/09/10/custom-ops-associativity-precedence.html)  
+[Operadores de prefijo e infijo](https://msdn.microsoft.com/es-es/library/dd233204.aspx#prefix)  
+[Railway oriented programming](http://fsharpforfunandprofit.com/posts/recipe-part2/)  
+[Suave.IO introduction and example - Part 1: Intro](http://blog.geist.no/suave-io-introduction-and-example-part-1-intro/)  
+[The F# Operators and Basic Functions](http://blogs.msdn.com/b/dsyme/archive/2008/09/01/the-f-operators-and-basic-functions.aspx)
 
