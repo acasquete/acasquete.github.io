@@ -273,3 +273,13 @@ footer {
   padding: 0.6667em 0;
   font-size: 0.8em;
 }
+
+.tags {
+  a {
+		padding: 2px 4px;
+		font-size: 85%;
+		color: $accent-color;
+		background-color: #f9f2f4;
+		border-radius: 4px;
+	}
+}
