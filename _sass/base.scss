@@ -49,12 +49,12 @@ body {
 
 /*- Link -*/
 a {
-	color: $text-color;
+	color: $accent-color;
 	text-decoration: none;
 	font-weight: 700;
 	&:hover,
 	&:focus {
-		color: darken($text-color, 5%);
+		color: darken($accent-color, 5%);
 	}
 }
 
