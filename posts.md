@@ -1,5 +1,5 @@
 ---
-layout: postperyear
+layout: postsperyear
 title: Posts
 ---
 
