@@ -8,12 +8,12 @@ layout: default
   {% if currentdate != date %}
     {% unless forloop.first %}</ul>{% endunless %}
     <h1 id="y{{post.date | date: "%Y"}}">{{ currentdate }}</h1>
-    <ul>
+    <div>
     {% assign date = currentdate %}
   {% endif %}
-    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-  {% if forloop.last %}</ul>{% endif %}
+    <div><a href="{{ post.url }}">{{ post.title }}</a></div>
+  {% if forloop.last %}</div>{% endif %}
 {% endfor %}
   
-</div>
+
 <hr>
