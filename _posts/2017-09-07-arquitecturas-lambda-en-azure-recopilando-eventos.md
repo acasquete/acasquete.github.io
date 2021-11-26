@@ -22,7 +22,7 @@ Para nuestro ejemplo, he elegido un caso real, el formato que utiliza **Cisco Me
 
 Los AP de Cisco generan una firma de presencia desde cualquier dispositivo con la WiFi habilitada detectando tramas de datos 802.11, esten asociados o no a la red. Como decíamos al principio de la entrada, esto es posible porque todos los dispositivos Wifi emiten una petición para descubrir redes cercanas en intervalos regulares. La frecuencia de envío de tramas de cada dispositivo puede puede ir desde una a múltiples veces por minuto y depende de multiples factores: del fabricante, del estado del dispositivo (en espera, dormido, asociado), de las actualizaciones que el dispositovo tenga instaladas o el estado de carga de la batería.
 
-Creación de un proyecto Azure Functions 
+Creación de un proyecto Azure Function
 ---
 
 Vamos a comenzar creando una **Function App** para exponer una API que sea capaz de recoger las trazas del sistema de localización de Cisco Meraki y enviarlas a un **Event Hub** para que puedan ser procesadas posteriormente. El formato de los eventos que Cisco Meraki envía es el siguiente:
