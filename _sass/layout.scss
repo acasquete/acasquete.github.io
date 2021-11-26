@@ -14,7 +14,8 @@
     }
     &:hover {
       background-color: lighten($accent-color, 5%);
-      color: $FFFFFF;
+      color: $ffffff;
+    }
   }
   span {
       font-weight: 200;
