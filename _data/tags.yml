@@ -10,3 +10,4 @@ allowed-tags:
   - lambda_architecture
   - azure
   - big_data
+  - event
