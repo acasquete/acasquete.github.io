@@ -45,6 +45,9 @@ body {
  max-width: 1000px;
  margin: 0 auto;
  padding: 0 20px;
+
+ -webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
 }
 
 /*- Link -*/

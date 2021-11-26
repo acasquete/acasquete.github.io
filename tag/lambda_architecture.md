@@ -1,5 +1,5 @@
 ---
 layout: tagpage
-title: "Tag: fsharp"
-tag: fsharp
+title: "Tag: lambda_architecture"
+tag: lambda_architecture
 ---
