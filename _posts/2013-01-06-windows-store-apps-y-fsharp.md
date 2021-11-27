@@ -89,8 +89,7 @@ Hasta aquí esta entrada en la que hemos visto cómo crear nuestra primera aplic
 
 Para los que todavía no conozcáis F# y queráis comenzar a introduciros en el mundo de la programación funcional y conocer todas las posibilidades que proporciona, os dejo a continuación varios enlaces que ofrecen una gran cantidad de recursos.
 
-[Visual F# Development Portal](http://msdn.microsoft.com/en-us/library/ff730280.aspx)
-[F# 3.0 Sample Pack](http://fsharp3sample.codeplex.com)
-[Try F# Beta](http://preview.tryfsharp.org/)
-[F# component design guidelines](http://research.microsoft.com/en-us/um/cambridge/projects/fsharp/manual/fsharp-component-design-guidelines.pdf)
-
+[Visual F# Development Portal](http://msdn.microsoft.com/en-us/library/ff730280.aspx) 
+[F# 3.0 Sample Pack](http://fsharp3sample.codeplex.com) 
+[Try F# Beta](http://preview.tryfsharp.org/) 
+[F# component design guidelines](http://research.microsoft.com/en-us/um/cambridge/projects/fsharp/manual/fsharp-component-design-guidelines.pdf) 
