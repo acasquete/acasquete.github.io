@@ -12,3 +12,8 @@ allowed-tags:
   - big_data
   - event
   - windows_store
+  - typescript
+  - windows_store
+  - winjs
+  - winrt
+  - aop
