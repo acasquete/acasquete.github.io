@@ -166,7 +166,6 @@
 
 #post-page {
   margin-bottom: 1.5em;
-  margin-top: 1em;
   @media (min-width: 940px) {
       margin-bottom: 1.3334em;
     }
@@ -259,6 +258,8 @@ code {
   padding: 4px 8px;
   font-weight: 400;
   padding: 0.5em 1em;
+  display: inline-block;
+  width: 10em;
   -webkit-border-radius: 4px;
      -moz-border-radius: 4px;
       -ms-border-radius: 4px;

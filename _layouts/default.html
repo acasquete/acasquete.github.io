@@ -44,9 +44,9 @@
 
         
           {% if paginator.next_page %}
-            <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="page-item">Next page;</a>
+            <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="page-item">Next page</a>
           {% else %}
-            <span class="page-item">Next page;</span>
+            <span class="page-item">Next page</span>
           {% endif %}
         </div>
         {% endif %}
