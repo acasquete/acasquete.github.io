@@ -1,8 +1,14 @@
 ---
-title: Why development projects become a nightmare? Anatomy of a failure
+title: Ethic and censure. The Internet user's stronghold against the LSSI.
 ---
-Today, I've read an excellent article about development failures. Very recommendable for all those that you're finalizing any project and you don't see light at tunnel's end.  
+Today I have read a [news article](http://www.elmundo.es/elmundo/2004/10/30/espana/1099138563.html) that left me quite impressed. The Police has arrested three persons, all them linked to the services of emergencies of Madrid, accused of taked the mutilated cadavers pictures of 11-M attacks' victims published in Internet.  
+As they said any informatives, it is not still known very well of what to accuse them, because one doesn't know that crime has made.  
   
-The development projects are already famous for their deviations in budget and term to the point that many managers of the business avoid to go aboard in them. Probably, let us be needing a totally new focus. The computer projects that exceed by a 200 or 300 percent their original term are so frequent that have transformed in something mythical inside the computer industry. The commercial areas have assumed that it is a reality inmodificable and the managers of these areas suffer impotent when they doesn't have more remedy than to go aboard in a new project that it makes intensive use of the technology of information, something that very often happens in today's world.  
+But the most impressive thing (at least for me) it is the following news' paragraph:  
+
+> _«**In hardly one hour**, the Brigade of Technological Investigation was able to contact with the main Spanish carriers with the purpose of that they **filtered the accesses of the users from our country** to some images that were producing consternation in the relatives of the victims, obtaining that the page could not be visited from Spain.»_
+
   
-You can see full article [here](http://www.willydev.net/descargas/WillyDEV_Anatomia_de_un_fracaso.pdf).  
+Do you remember the [article 8.2 of the LSSI](http://www.lssice.com/legislacion/lssice.html)?  
+  
+Do you imagine what could happen if any Web site published things judged inconvenient?

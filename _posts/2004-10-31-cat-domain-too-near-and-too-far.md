@@ -1,8 +1,8 @@
 ---
-title: Why development projects become a nightmare? Anatomy of a failure
+title: .CAT domain, too near and too far!
 ---
-Today, I've read an excellent article about development failures. Very recommendable for all those that you're finalizing any project and you don't see light at tunnel's end.  
+**.CAT** domain has been in the news this week. José Montilla, the [Spanish industry and tourism minister](http://www.min.es/), who went to the presentation of the «[todos.es](http://www.todos.es)» initiative, has raised the possibility of the creation of .cat as an Internet domain. It's a historical claim of Catalonian internauts through «[Campanya per un domini .CAT](http://www.puntcat.org)» ([Campaign for a .CAT domain](http://www.puntcat.org/default.asp?idioma=I)).  
   
-The development projects are already famous for their deviations in budget and term to the point that many managers of the business avoid to go aboard in them. Probably, let us be needing a totally new focus. The computer projects that exceed by a 200 or 300 percent their original term are so frequent that have transformed in something mythical inside the computer industry. The commercial areas have assumed that it is a reality inmodificable and the managers of these areas suffer impotent when they doesn't have more remedy than to go aboard in a new project that it makes intensive use of the technology of information, something that very often happens in today's world.  
+However, it hasn't received the [ICANN](http://www.icann.org)'s approval. Of the ten candidacies presented in March for the concession of a sponsored top-level domain -a smaller entity that the **.com**, **.net** and **.org**\-, only the domains **.travel** and **.post** have possibilities. The other eight proposals will have to wait for more time.  
   
-You can see full article [here](http://www.willydev.net/descargas/WillyDEV_Anatomia_de_un_fracaso.pdf).  
+The president of the [Spanish Internaut Association](http://www.internautas.org/) (AI), Victor Domingo, advanced at the beginning of the week that was «practically impossible» that the ICANN granted the domain **.cat** to Catalonia because they're only granted to legally constituted countries, recognized by the United Nations.

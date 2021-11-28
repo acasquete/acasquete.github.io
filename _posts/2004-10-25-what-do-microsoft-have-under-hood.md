@@ -1,14 +1,6 @@
 ---
-title: Ethic and censure. The Internet user's stronghold against the LSSI.
+title: What do Microsoft have under the hood?
 ---
-Today I have read a [news article](http://www.elmundo.es/elmundo/2004/10/30/espana/1099138563.html) that left me quite impressed. The Police has arrested three persons, all them linked to the services of emergencies of Madrid, accused of taked the mutilated cadavers pictures of 11-M attacks' victims published in Internet.  
-As they said any informatives, it is not still known very well of what to accuse them, because one doesn't know that crime has made.  
-  
-But the most impressive thing (at least for me) it is the following news' paragraph:  
+Microsoft has until year's end the [second peek at MSN's new search technology](http://techpreview.search.msn.co.uk/?setlang=es-ES). A new algorithmic search engine and a bigger index are the new features of this new preview.  
+The race in the searches world has begun!  
 
-> _«**In hardly one hour**, the Brigade of Technological Investigation was able to contact with the main Spanish carriers with the purpose of that they **filtered the accesses of the users from our country** to some images that were producing consternation in the relatives of the victims, obtaining that the page could not be visited from Spain.»_
-
-  
-Do you remember the [article 8.2 of the LSSI](http://www.lssice.com/legislacion/lssice.html)?  
-  
-Do you imagine what could happen if any Web site published things judged inconvenient?
