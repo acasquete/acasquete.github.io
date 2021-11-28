@@ -1,6 +1,6 @@
 ---
 title: Today the silence finishes
-tags: []
+tags: [personal]
 ---
 Today I’ve decided to create this weblog to finish with my silence. I’ve also decided that my silence finishes in English.
 
