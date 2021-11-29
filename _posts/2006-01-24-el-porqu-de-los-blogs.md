@@ -1,5 +1,6 @@
 ---
 title: El porqué de los blogs
+tags: [personal]
 ---
 Después de escribir mis últimos dos _posts_, me dio por pensar en si seguir escribiendo este blog o deshacerme de él para siempre. Tuve un pensamiento similar hace unos tres meses, momento en el que decidí borrar mi, hasta entonces, fantástico _[MSN space](http://spaces.msn.com/?mkt=es-es)_. Traspasé las pocas entradas que tenía y me olvidé para siempre del limitado sistema de bitácoras de Microsoft. Quizás sea esta mi última entrada en este _blog_, o quizás no. Lo que sí es seguro es que esta entrada va a cambiar mi manera de seleccionar y leer otros _blogs_.  
   
