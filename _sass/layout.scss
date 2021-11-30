@@ -152,12 +152,14 @@
       color: $accent-color;
       font-weight: 300;
 
-      &.subtitle span {
-        background: #000;
-        color:#fff; 
-        padding: 0 4px; 
-        margin:0 3px
-      }
+      
+    }
+
+    .subtitle span {
+      background: #000;
+      color:#fff; 
+      padding: 0 4px; 
+      margin:0 3px
     }
   }
 }
