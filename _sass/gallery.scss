@@ -1,18 +1,10 @@
-&:root {
-	--black: #1a1a1a;
-	--white: #fff;
-	--gray: #ccc;
-	--darkgreen: #18846C;
-	--lightbrown: antiquewhite;
-	--darkblack: rgba(0,0,0,0.8);
-	--minrangevalue: 280px;
-}
-* {
-	margin: 0;
-	padding: 0;
-	outline: none;
-	border: none;
-}
+$black: #1a1a1a;
+$white: #fff;
+$gray: #ccc;
+$darkgreen: #18846C;
+$lightbrown: antiquewhite;
+$darkblack: rgba(0,0,0,0.8);
+$minrangevalue: 280px;
 
 .gallery {
 	padding: 0 2rem;
@@ -37,7 +29,7 @@
 	}
 	body {
 		margin: 50px 0;
-		color: var(--black);
+		color: var($black);
 		font: 1rem/1.3 sans-serif;
 	}
 	
@@ -62,14 +54,14 @@
 			padding-bottom: 3px;
 		}
 		&::placeholder {
-			color: var(--gray);
+			color: var($gray);
 		}
 		.counter {
 			position: absolute;
 			left: 0;
 			top: calc(100% + 5px);
 			font-size: 0.9rem;
-			color: var(--gray);
+			color: var($gray);
 		}
 	}
 	.view-options {
@@ -86,15 +78,15 @@
 		}
 		.active {
 			button {
-				border-color: var(--darkgreen);
+				border-color: var($darkgreen);
 			}
 		}
 	}
 	.image-list {
 		margin: 3rem 0;
 		li {
-			background: var(--lightbrown);
-			color: var(--darkblack);
+			background: var($lightbrown);
+			color: var($darkblack);
 		}
 		p {
 			&:first-child {
@@ -109,7 +101,7 @@
 	.grid-view {
 		display: grid;
 		grid-gap: 2rem;
-		grid-template-columns: repeat(auto-fit, minmax(var(--minRangeValue), 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(var($minRangeValue), 1fr));
 		figcaption {
 			padding: 1rem;
 		}
