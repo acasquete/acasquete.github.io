@@ -34,7 +34,9 @@ layout: default
 
             <figcaption>
               <p class="title">{{ book.title }}</p>
+              {% if book.author  %}
               <p class="author">de {{ book.author }}</p>
+              {% endif %}
               <!--<p class="read">{{ book.read }}</p>-->
             </figcaption>
           </figure>
