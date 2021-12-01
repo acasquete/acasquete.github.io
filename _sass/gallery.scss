@@ -10,13 +10,6 @@
 	--minRangeValue: 280px;
   }
   
-  * {
-	margin: 0;
-	padding: 0;  
-	outline: none;
-	border: none;
-  }
-  
   button {
 	cursor: pointer;
 	background: none;
@@ -35,12 +28,6 @@
   
   a {
 	color: inherit;
-  }
-  
-  body {
-	margin: 50px 0;
-	color: var(--black);
-	font: 1rem/1.3 sans-serif;
   }
   
   .gallery {
