@@ -39,11 +39,6 @@
 	margin: 0 auto;
   }
   
-  .d-none {
-	display: none;
-  }
-  
-  
   /* TOOLBAR
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
   .toolbar {
@@ -75,25 +70,6 @@
 	color: var(--gray);
   }
   
-  .view-options {
-	display: flex;
-	align-items: center;
-  }
-  
-  .view-options li:not(:last-child) {
-	margin-right: 1.2rem;
-  }
-  
-  .view-options button {
-	padding: 2px;
-	border: 3px solid transparent;
-  }
-  
-  .view-options .active button {
-	border-color: var(--darkgreen);
-  }
-  
-  
   /* IMAGE LIST
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
   .image-list {
@@ -114,20 +90,6 @@
 	margin-top: 0.5rem;
   }
   
-  
-  /* GRID VIEW
-  –––––––––––––––––––––––––––––––––––––––––––––––––– */
-  .grid-view {
-	display: grid;
-	grid-gap: 2rem;
-	grid-template-columns: repeat(auto-fit, minmax(var(--minRangeValue), 1fr));
-  }
-  
-  .grid-view figcaption {
-	padding: 1rem;
-  }
-  
-  
   /* LIST VIEW
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
   .list-view li + li {
@@ -141,21 +103,3 @@
 	align-items: center;
   }
   
-  /* MQ
-  –––––––––––––––––––––––––––––––––––––––––––––––––– */
-  @media screen and (max-width: 900px) {
-	.toolbar input[type="range"] {
-	  display: none;
-	}
-  }
-  
-  @media screen and (max-width: 700px) {
-	.grid-view li {
-	  text-align: center;
-	  padding: 0.5rem;
-	}
-	
-	.grid-view figcaption {
-	  padding: 0.5rem 0 0;
-	}
-  }
