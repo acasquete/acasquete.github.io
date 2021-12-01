@@ -1,5 +1,5 @@
 ---
-title: Dos hábitos que debes cuidar
+title: Dos hábitos que debes cultivar
 ---
 La proximidad del fin de año siempre me ha parecido una época idónea para revisar todo lo hecho y planificar las tareas sin resolver. A mi, este final de año me ha provocado unas ansias rabiosas de retomar dos hábitos que había desatendido tremendamente, leer y escribir. Y aunque la intención inicial de estas líneas no es escribir sobre los propósitos del nuevo año, creo que me va a resultar difícil no hacerlo. 
 
