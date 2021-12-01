@@ -94,16 +94,16 @@
   .grid-view figure p {
 	margin: 0;
 
-	.title {
+	&.title {
 		line-height: 1.2em;
 	  }
 
-	.author {
+	&.author {
 		font-size: 0.9em;
 		line-height: 1.2em;
 	  }
 
-	.read {
+	&.read {
 		font-size: 0.7m;
 	}
   }
