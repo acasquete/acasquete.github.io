@@ -13,7 +13,7 @@
   .gallery img {
 	display: block;
 	max-width: 100%;
-	height: auto;
+	max-height: 230px;
 	margin-bottom: 0;
 	margin: 0;
   }
@@ -91,6 +91,10 @@
 	margin: 0;
   }
   
+  .grid-view figure p.title {
+	line-height: 1.2em;
+  }
+
   .grid-view figcaption {
 	padding: 0.2em 0.5em;
   }
