@@ -144,7 +144,7 @@
 	transform: translateZ(20px);
 	background-color: #000000;
 	border-radius: 0 2px 2px 0;
-	box-shadow: 5px 5px 20px #666;
+	box-shadow: 5px 0px 10px #888;
   }
   
   .book::before {
@@ -191,5 +191,4 @@
 	transform: translateZ(-20px);
 	background-color: #000000;
 	border-radius: 0 2px 2px 0;
-	box-shadow: -10px 0 50px 10px #666;
   }
