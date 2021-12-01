@@ -35,20 +35,20 @@
   .toolbar {
 	justify-content: space-between;
 	align-items: center;
-  }
-  
-  .toolbar .search-wrapper {
-	position: relative;
-  }
-  
-  .toolbar input[type="search"] {
-	font-size: 2.1rem;
-	border: none;
-	border-bottom: 1px solid;
-	padding-bottom: 3px;
-	width: 100%;
-    font-family: 'Lora';
-    text-align: center;
+
+	.search-wrapper {
+		position: relative;
+	  }
+
+	input[type="search"] {
+		font-size: 2.1rem;
+		border: none;
+		border-bottom: 1px solid;
+		padding-bottom: 3px;
+		width: 100%;
+		font-family: 'Lora';
+		text-align: center;
+	  }
   }
   
   .toolbar ::placeholder {
@@ -67,34 +67,43 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
   .image-list {
 	margin: 3rem 0;
+
+	li {
+		background: var(--lightbrown);
+		color: var(--darkblack);
+	  }
   }
   
-  .image-list li {
-	background: var(--lightbrown);
-	color: var(--darkblack);
-  }
- 
   .grid-view {
 	display: grid;
 	grid-gap: 2rem;
 	grid-template-columns: repeat(auto-fit, minmax(var(--minRangeValue), 1fr));
-  }
 
-  .grid-view figure {
-	margin-block-end: 0;
-	margin-block-start: 0;
-	margin-inline-start: 0;
-	margin-inline-end: 0;
+	figcaption {
+		padding: 0.2em 0.5em;
+	  }
+
+	  figure {
+		margin-block-end: 0;
+		margin-block-start: 0;
+		margin-inline-start: 0;
+		margin-inline-end: 0;
+	  }
   }
 
   .grid-view figure p {
 	margin: 0;
-  }
-  
-  .grid-view figure p.title {
-	line-height: 1.2em;
-  }
 
-  .grid-view figcaption {
-	padding: 0.2em 0.5em;
+	.title {
+		line-height: 1.2em;
+	  }
+
+	.author {
+		font-size: 0.9em;
+		line-height: 1.2em;
+	  }
+
+	.read {
+		font-size: 0.7m;
+	}
   }
