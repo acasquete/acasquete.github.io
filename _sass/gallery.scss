@@ -86,7 +86,11 @@
 	margin-inline-start: 0;
 	margin-inline-end: 0;
   }
+
+  .grid-view figure p {
+	margin: 0;
+  }
   
   .grid-view figcaption {
-	padding: 1rem;
+	padding: 0.2em 0.5em;
   }
