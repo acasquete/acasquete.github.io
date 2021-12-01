@@ -4,6 +4,7 @@ const imageListItems = document.querySelectorAll(".image-list li");
 const captions = document.querySelectorAll(".image-list figcaption p:first-child");
 const myArray = [];
 let counter = 1;
+const dNone = "d-none";
 
 for (const caption of captions) {
   myArray.push({
