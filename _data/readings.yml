@@ -10,45 +10,45 @@
 
 - title: El extraño caso del Dr. Jekyll y Mr. Hyde
   author: Robert Louis Stevenson
-  image: jekyll.jpg
+  image: el-extrano-caso-del-dr-jekyll-y-mr-hyde.jpg
   read: 2019
 
 - title: Frankenstein
   author: Mary Shelley
-  image: 1984.jpg
+  image: frankenstein.jpg
   read: 2019
 
-- title: El Lazarillo de Tormes
+- title: Lazarillo de Tormes
   author: 
-  image: 1984.jpg
+  image: lazarillo-de-tormes.jpg
   read: 2019
 
 - title: El Principito
   author: Antoine de Saint Exupery
-  image: dracula.jpg
+  image: el-principito.jpg
   read: 2020
 
 - title: Harry Potter y la piedra filosofal
   author: J. K. Rowling
-  image: 1984.jpg
+  image: harry-potter-y-la-piedra-filosofal.jpg
   read: 2020
 
 - title: La vuelta al mundo en 80 días
   author: Julio Verne
-  image: 1984.jpg
+  image: la-vuelta-al-mundo-en-80-dias.jpg
   read: 2020
 
 - title: El viejo y el mar
   author: Ernest Hemingway
-  image: 1984.jpg
+  image: el-viejo-y-el-mar.jpg
   read: 2020
 
 - title: Cuento de Navidad
   author: Charles Dickens
-  image: 1984.jpg
+  image: cuento-de-navidad.jpg
   read: 2020
 
 - title: Platero y yo
   author: Juan Ramón Jiménez
-  image: 1984.jpg
+  image: platero-y-yo.jpg
   read: 2021
