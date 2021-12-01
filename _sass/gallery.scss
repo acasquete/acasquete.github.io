@@ -88,17 +88,12 @@
 	margin-top: 0.5rem;
   }
   
-  /* LIST VIEW
-  –––––––––––––––––––––––––––––––––––––––––––––––––– */
-  .list-view li + li {
-	margin-top: 1.5rem;
-  }
-  
-  .list-view figure {
+  .grid-view {
 	display: grid;
-	grid-gap: 1.5rem;
-	grid-template-columns: 150px 1fr;
-	align-items: center;
-	margin: 0;
+	grid-gap: 2rem;
+	grid-template-columns: repeat(auto-fit, minmax(var(--minRangeValue), 1fr));
   }
   
+  .grid-view figcaption {
+	padding: 1rem;
+  }
