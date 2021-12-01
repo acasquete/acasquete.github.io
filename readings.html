@@ -16,7 +16,12 @@ layout: default
 
         {% for book in site.data.readings %}
           <figure>
-            <img src="/img/books/{{ book.image }}" alt="">
+            
+            <div class="book">
+              <span></span>
+              <img src="/img/books/{{ book.image }}" alt="" />
+            </div>
+            
             <figcaption>
               <p class="title">{{ book.title }}</p>
               <p class="author">de {{ book.author }}</p>
