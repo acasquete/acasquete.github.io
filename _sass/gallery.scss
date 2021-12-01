@@ -113,109 +113,92 @@
 	}
   }
 
-  /* Libro 3D  */
-* {margin:0; padding:0; border: 0 none; position: relative;}
-.book {
-    width: 276px;
-    height: 375px;
-    margin: 20px auto 0;
-    -moz-transform: scaleX(0.88) scaleY(0.95);
-    -moz-perspective: 150px;
-    -moz-perspective-origin: right center;
-    
-    -webkit-perspective: 150px;
-    -webkit-perspective-origin: right center;
-    -webkit-transform-style: preserve-3d;
-    -webkit-transform: scaleX(0.88) scaleY(0.95);
-    
-    -o-perspective: 150px;
-    -o-perspective-origin: right center;
-    -o-transform-style: preserve-3d;
-    -o-transform: scaleX(0.88) scaleY(0.95);
-    
-    -ms-perspective: 150px;
-    -ms-perspective-origin: right center;
-    -ms-transform-style: preserve-3d; 
-    -ms-transform: scaleX(0.88) scaleY(0.95);   
-    
-    perspective: 150px;
-    perspective-origin: right center;
-    transform-style: preserve-3d;
-    transform: scaleX(0.88) scaleY(0.95);
-}
-.book img {
-    display: block;
-    
-
-	max-width: 100%;
-	max-height: 230px;
-
-    position: absolute;
-    z-index:5;
-    -moz-transform: rotateY(-4deg) translateZ(0px);
-    -webkit-transform: rotateY(-4deg) translateZ(0px);
-    -o-transform: rotateY(-4deg) translateZ(0px);
-    -ms-transform: rotateY(-4deg) translateZ(0px);
-    transform: rotateY(-4deg) translateZ(0px);
-}
-
-.book:before, .libro:after {
-content: '';
-position: absolute;
-}
-
-.book:before {
-    height: 100%;
-    width: 40px;
-    position: absolute;
-    right: -25px;
-    top: 0%;
-    background: #89221B;
-    z-index: 2;
-    -moz-transform: rotateY(-4deg) translateZ(0px);    
-    -webkit-transform: rotateY(-4deg) translateZ(0px);
-    -o-transform: rotateY(-4deg) translateZ(0px);    
-    -ms-transform: rotateY(-4deg) translateZ(0px);
-    transform: rotateY(-4deg) translateZ(0px);
-}
-.book:after {
-    background: #F5F5F5;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1), 18px 3px 20px rgba(0, 0, 0, 0.25) inset;
-    height: 98%;
-    width: 30px;
-    right: -19px;
-    top: 1%;
-    z-index: 3;
-    -moz-perspective: 5px;
-    -moz-transform: rotateY(20deg) translateZ(5px);
-    -webkit-perspective: 5px;
-    -webkit-transform: rotateY(20deg) translateZ(5px);
-    -o-perspective: 5px;
-    -o-transform: rotateY(20deg) translateZ(5px);
-    -ms-perspective: 5px;
-    -ms-transform: rotateY(20deg) translateZ(5px);    
-    perspective: 5px;
-    transform: rotateY(20deg) translateZ(5px);
-}
-
-.book span {
-    display: block;
-    position: absolute;
-    bottom: -13px;
-    height: 100px;
-    right: -110px;
-    height: 100px;
-    width: 200px;
-    background-image: -moz-linear-gradient(transparent, rgba(0, 0, 0, 0.1) 15%);
-    background-image: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.1) 15%);
-    background-image: -o-linear-gradient(transparent, rgba(0, 0, 0, 0.1) 15%);
-    background-image: -ms-linear-gradient(transparent, rgba(0, 0, 0, 0.1) 15%);
-    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.1) 15%);
-    border-radius: 15px;
-    box-shadow: 5px 12px 15px 5px rgba(0, 0, 0, 0.1);
-    -moz-transform: rotate(5deg) skew(-65deg);
-    -webkit-transform: rotate(5deg) skew(-35deg);
-    -o-transform: rotate(5deg) skew(-35deg);
-    -ms-transform: rotate(5deg) skew(-35deg);
-    transform: rotate(5deg) skew(-35deg);
-}
+  .book-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	perspective: 600px;
+  }
+  
+  @keyframes initAnimation {
+	0% {
+	  transform: rotateY(0deg);
+	}
+	100% {
+	  transform: rotateY(-30deg);
+	}
+  }
+  
+  .book {
+	width: 170px;
+	height: 230px;
+	position: relative;
+	transform-style: preserve-3d;
+	transform: rotateY(-30deg);
+	transition: 1s ease;
+	animation: 1s ease 0s 1 initAnimation;
+  }
+  
+  .book:hover {
+	transform: rotateY(0deg);
+  }
+  
+  .book > :first-child {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: red;
+	width: 170px;
+	height: 230px;
+	transform: translateZ(25px);
+	background-color: #01060f;
+	border-radius: 0 2px 2px 0;
+	box-shadow: 5px 5px 20px #666;
+  }
+  
+  .book::before {
+	position: absolute;
+	content: ' ';
+	background-color: blue;
+	left: 0;
+	top: 3px;
+	width: 48px;
+	height: 224px;
+	transform: translateX(142px) rotateY(90deg);
+	background: linear-gradient(90deg, 
+	  #fff 0%,
+	  #f9f9f9 5%,
+	  #fff 10%,
+	  #f9f9f9 15%,
+	  #fff 20%,
+	  #f9f9f9 25%,
+	  #fff 30%,
+	  #f9f9f9 35%,
+	  #fff 40%,
+	  #f9f9f9 45%,
+	  #fff 50%,
+	  #f9f9f9 55%,
+	  #fff 60%,
+	  #f9f9f9 65%,
+	  #fff 70%,
+	  #f9f9f9 75%,
+	  #fff 80%,
+	  #f9f9f9 85%,
+	  #fff 90%,
+	  #f9f9f9 95%,
+	  #fff 100%
+	  );
+  }
+  
+  .book::after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	content: ' ';
+	width: 170px;
+	height: 230px;
+	transform: translateZ(-25px);
+	background-color: #01060f;
+	border-radius: 0 2px 2px 0;
+	box-shadow: -10px 0 50px 10px #666;
+  }
