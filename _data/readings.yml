@@ -1,9 +1,54 @@
 - title: Dracula
   author: Bram Stoker
   image: dracula.jpg
-  read: Jan 2020
+  read: 2019
 
 - title: 1984
   author: George Orwell
   image: 1984.jpg
-  read: Sep 2019
+  read: 2019
+
+- title: El extraño caso del Dr. Jekyll y Mr. Hyde
+  author: Robert Louis Stevenson
+  image: 1984.jpg
+  read: 2019
+
+- title: Frankenstein
+  author: Mary Shelley
+  image: 1984.jpg
+  read: 2019
+
+- title: El Lazarillo de Tormes
+  author: 
+  image: 1984.jpg
+  read: 2019
+
+- title: El Principito
+  author: Antoine de Saint Exupery
+  image: dracula.jpg
+  read: 2020
+
+- title: Harry Potter y la piedra filosofal
+  author: J. K. Rowling
+  image: 1984.jpg
+  read: 2020
+
+- title: La vuelta al mundo en 80 días
+  author: Julio Verne
+  image: 1984.jpg
+  read: 2020
+
+- title: El viejo y el mar
+  author: Ernest Hemingway
+  image: 1984.jpg
+  read: 2020
+
+- title: Cuento de Navidad
+  author: Charles Dickens
+  image: 1984.jpg
+  read: 2020
+
+- title: Platero y yo
+  author: Juan Ramón Jiménez
+  image: 1984.jpg
+  read: 2021
