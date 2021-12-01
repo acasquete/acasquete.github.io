@@ -93,6 +93,13 @@
 	grid-gap: 2rem;
 	grid-template-columns: repeat(auto-fit, minmax(var(--minRangeValue), 1fr));
   }
+
+  .grid-view figure {
+	margin-block-end: 0;
+	margin-block-start: 0;
+	margin-inline-start: 0;
+	margin-inline-end: 0;
+  }
   
   .grid-view figcaption {
 	padding: 1rem;
