@@ -10,11 +10,6 @@ HTML 5 se presenta como una plataforma para desarrollar aplicaciones web ricas, 
 
 *Características de HTML 5 soportadas por los distintos navegadores*  
 
-| Syntax | Description |
-| --- | ----------- |
-| Header | Title |
-| Paragraph | Text |
-
 | Feature       | Chrome | IE9 Beta | FF 4 Beta 6 |  
 |---------------|:------:|:--------:|:----------:|  
 | Canvas        | X | X | X |  
