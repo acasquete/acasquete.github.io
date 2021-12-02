@@ -1,5 +1,6 @@
 ---
 title: Escape effect
+tags: [personal]
 ---
 One [news](https://elpais.com/diario/2005/09/30/espana/1128031201_850215.html) that has impressed me so much in the last few days has been the "avalanche" of hundreds of immigrants trying to climb the border fence in Ceuta. The avalanche finished with five immigrants dead and hundreds injured. Now we know that shots of Moroccan police possibly caused this avalanche and the deaths, and the massive jump was not deliberate.
 
