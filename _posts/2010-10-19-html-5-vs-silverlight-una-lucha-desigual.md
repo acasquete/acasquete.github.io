@@ -18,16 +18,12 @@ HTML 5 se presenta como una plataforma para desarrollar aplicaciones web ricas, 
 | Local Storage  | X | X | X |
 | IndexedDB  | - | - | - |
 | Web Workers  | X | - | X |
-| Offline Web Applicaitons  | X | - | X |
+| Offline Web Applications  | X | - | X |
 | GeoLocation  | X | - | X |
-| Input types  | 13 de 13| - | 4 de 13 |
-| Placeholder Text  | X| - | X |
-| Form Autofocus | X| - | X |
-| Microdata | X| - | X |
-FF 4 Beta 6
-
-
-
+| Input types  | 13 de 13 | - | 4 de 13 |
+| Placeholder Text  | X | - | X |
+| Form Autofocus | X | - | X |
+| Microdata | X | - | X |
 
 [Silverlight](http://msdn.microsoft.com/es-es/library/bb404713(v=VS.95).aspx), como ya sabemos, es una realidad. Sin entrar en detalle: es un subconjunto del .NET Framework que nos permite crear aplicaciones ricas para web utilizando orientación a objetos y que pueden ser ejecutadas en distintos navegadores y sistemas operativos. Algunas características añadidas en la última versión son el soporte para webcam y micrófono, nuevas funciones de DRM, mejoras en la ejecución _out-of-browser_, etc. Además, se ha convertido en la plataforma de desarrollo para Windows Phone 7.
 
