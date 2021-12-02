@@ -231,6 +231,10 @@
       color: darken($accent-color, 5%);
     }
   }
+
+  img {
+    max-width: 100%;
+  }
 }
 
 .by-line {
