@@ -9,21 +9,21 @@ Tengo la sensación de que esta repentina preocupación, por lo menos en esta oc
 HTML 5 se presenta como una plataforma para desarrollar aplicaciones web ricas, olvidémonos por lo tanto de asociar exclusivamente HTML 5 con la etiqueta `<video>` que tanto gusta enseñar en las presentaciones. HTML 5 permite, entre otras cosas, crear aplicaciones off-line, ejecución de scripts en paralelo, acceso a base de datos locales, geolocalización, etc. En la tabla que podéis ver a continuación he puesto algunas de estas características y el soporte que hay en las últimas versiones de los principales navegadores.
 
 *Características de HTML 5 soportadas por los distintos navegadores*  
-| Feature       | Chrome | IE9 Beta | FF 4 Beta 6 |
-|---------------|:------:|:--------:|:----------:|
-| Canvas        | X | X | X |
-| Canvas Text   | X | X | X |
-| Video  | X | X | X |
-| Video Formats  | Ogg Theora H.264 WebM | H.264 | Ogg Theora WebM |
-| Local Storage  | X | X | X |
-| IndexedDB  | - | - | - |
-| Web Workers  | X | - | X |
-| Offline Web Applications  | X | - | X |
-| GeoLocation  | X | - | X |
-| Input types  | 13 de 13 | - | 4 de 13 |
-| Placeholder Text  | X | - | X |
-| Form Autofocus | X | - | X |
-| Microdata | X | - | X |
+| Feature       | Chrome | IE9 Beta | FF 4 Beta 6 |  
+|---------------|:------:|:--------:|:----------:|  
+| Canvas        | X | X | X |  
+| Canvas Text   | X | X | X |  
+| Video  | X | X | X |  
+| Video Formats  | Ogg Theora H.264 WebM | H.264 | Ogg Theora WebM |  
+| Local Storage  | X | X | X |  
+| IndexedDB  | - | - | - |  
+| Web Workers  | X | - | X |  
+| Offline Web Applications  | X | - | X |  
+| GeoLocation  | X | - | X |  
+| Input types  | 13 de 13 | - | 4 de 13 |  
+| Placeholder Text  | X | - | X |  
+| Form Autofocus | X | - | X |  
+| Microdata | X | - | X |  
 
 [Silverlight](http://msdn.microsoft.com/es-es/library/bb404713(v=VS.95).aspx), como ya sabemos, es una realidad. Sin entrar en detalle: es un subconjunto del .NET Framework que nos permite crear aplicaciones ricas para web utilizando orientación a objetos y que pueden ser ejecutadas en distintos navegadores y sistemas operativos. Algunas características añadidas en la última versión son el soporte para webcam y micrófono, nuevas funciones de DRM, mejoras en la ejecución _out-of-browser_, etc. Además, se ha convertido en la plataforma de desarrollo para Windows Phone 7.
 
