@@ -2,6 +2,8 @@
 title: Dos hábitos que debes cultivar
 tags: [personal] 
 ---
+![seedlings](/img/seedlings.jpg){:.fullview}
+
 La proximidad del fin de año siempre me ha parecido una época idónea para revisar los objetivos resueltos y planificar las metas por alcanzar. A mí, este final de año me ha provocado unas ansias rabiosas de retomar dos hábitos que había desatendido tremendamente, leer y escribir. Y aunque la intención inicial de estas líneas no es escribir en torno a los propósitos del nuevo año, va a resultar difícil que no lo parezca. 
 
 Tengo que confesar que dedico menos tiempo a la lectura del que me gustaría y que comienzo muchos más libros de los que termino. No soy de esos que se empecina en acabar un libro de cualquier manera. Prefiero dejar de leer y deshacerme de un libro, antes que perder el tiempo en una lectura poco apetecible. Y prefiero releer un libro antes que olvidarlo por siempre en una estantería. Pero volviendo a mi poca constancia, hace tres años elaboré una lista de cien libros que me he propuesto leer y, hasta ahora, solo doce han alcanzado este privilegio. De seguir a este ritmo, completaré la lista en algo más de dos décadas, sin contar los nuevos títulos que voy incluyendo en la lista. Esto da cierta idea de la gravedad de mi situación y del porqué he decidido focalizar mis esfuerzos en recuperar el tiempo perdido.
