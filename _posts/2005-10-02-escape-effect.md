@@ -2,11 +2,12 @@
 title: Escape effect
 tags: [personal]
 ---
-One [news](https://elpais.com/diario/2005/09/30/espana/1128031201_850215.html) that has impressed me so much in the last few days has been the "avalanche" of hundreds of immigrants trying to climb the border fence in Ceuta. The avalanche finished with five immigrants dead and hundreds injured. Now we know that shots of Moroccan police possibly caused this avalanche and the deaths, and the massive jump was not deliberate.
+A [shocking news item](https://elpais.com/diario/2005/09/30/espana/1128031201_850215.html) has been the "avalanche" of hundreds of migrants trying to climb the border fence in Ceuta. The avalanche ended with five migrants dead and hundreds injured. We now know that Moroccan police fire possibly caused this avalanche and the deaths, and that the mass jumping was not deliberate.
 
-[![Zapatillas con clavos](https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Zapatillas_con_clavos.jpg/1024px-Zapatillas_con_clavos.jpg)](https://commons.wikimedia.org/wiki/File:Zapatillas_con_clavos.jpg "Raymond Gelow, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons")
+[![Spiked shoes](https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Zapatillas_con_clavos.jpg/1024px-Zapatillas_con_clavos.jpg)](https://commons.wikimedia.org/wiki/File:Zapatillas_con_clavos.jpg "Raymond Gelow, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons")
 
-Maybe the later reactions and declarations of the political leaders of government and opposition have surprised me more. The Secretary-General of the PP, Ángel Acebes, dared to say that these facts are incited by the "call effect" caused by the law on foreign citizens and the process of regulation that facilitates obtaining the papers. I want to ask Acebes if he thinks what he says and if he does not think that those avalanches are caused, on the contrary, by an "escape effect" from the origin countries.
+But perhaps what has surprised me most have been the subsequent reactions and statements from the political leaders of the government and the opposition position. The secretary general of the PP, Ángel Acebes, dared to say that these events are incited by the "call effect" provoked by the law on foreign citizens and the regulation process that makes it easier to obtain papers. I would like to ask Acebes if he thinks what he says and if he does not believe that these avalanches are provoked, on the contrary, by an "escape effect" from the countries of origin.
 
-Another image that has impressed me is when our army appears defending our borders from the "foreign invasion". I did not see similar action from July of 2002, from the "liberation" of Perejil Island. I would like to ask the defense minister if he does not believe that sending soldiers armed with guns is excessive and extreme to protect the fence of immigrants, which the only thing they have is fear and hunger.
+Another impressive image is the one showing our army defending our borders from "foreign invasion". I have not seen a similar action since July 2002, since the "liberation" of Perejil Island. I would like to ask the Minister of Defence if he does not think that sending soldiers armed with firearms is excessive and extreme to protect the encirclement of immigrants, who have nothing but fear and hunger.
+
 
