@@ -16,15 +16,16 @@ title: Posts
     {% assign currentdate = post.date | date: "%Y" %}
     <div class="row">
       <div class="column" style="background-color:#aaa;">
-        <p>{{ currentdate }}</p>
+        {% if currentdate != date %}<p>{{ currentdate }}</p>{% endif %}
       </div>
       <div class="column" style="background-color:#bbb;">
         <div><a href="{{ post.url }}">{{ post.title }}</a></div>
       </div>
       
     </div>
+    {% assign date = currentdate %}
     {% endfor %}
 
-   
+    
 
       </div>
