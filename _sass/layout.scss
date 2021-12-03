@@ -260,6 +260,8 @@
   position: relative;
   right: 50%;
   width: 100vw;
+  object-fit: none;
+  min-height: 250px;
 }
 
 img {
