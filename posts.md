@@ -1,6 +1,0 @@
----
-layout: postsperyear
-title: Posts
----
-
-
