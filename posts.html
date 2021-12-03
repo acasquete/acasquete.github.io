@@ -3,22 +3,28 @@ layout: default
 title: Posts
 ---
 
+<style>
+  .row {
+    display: flex;
+  }
+</style>
+
 <div id="post-page">
 
-  {% for post in site.posts %}
-  {% assign currentdate = post.date | date: "%Y" %}
-  {% if currentdate != date %}
-    {% unless forloop.first %}</div>{% endunless %}
-    
+
+    {% for post in site.posts %}
+    {% assign currentdate = post.date | date: "%Y" %}
     <div class="row">
       <div class="column" style="background-color:#aaa;">
         <p>{{ currentdate }}</p>
       </div>
       <div class="column" style="background-color:#bbb;">
-        {% assign date = currentdate %}
-    {% endif %}
         <div><a href="{{ post.url }}">{{ post.title }}</a></div>
-        {% if forloop.last %}</div>{% endif %}
-      {% endfor %}
-    
+      </div>
+      
+    </div>
+    {% endfor %}
 
+   
+
+      </div>
