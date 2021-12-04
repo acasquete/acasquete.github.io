@@ -27,33 +27,34 @@ Creación de un proyecto Azure Function
 
 Vamos a comenzar creando una **Function App** para exponer una API que sea capaz de recoger las trazas del sistema de localización de Cisco Meraki y enviarlas a un **Event Hub** para que puedan ser procesadas posteriormente. El formato de los eventos que Cisco Meraki envía es el siguiente:
 
+```json
+{
+  "apMac": <string>,
+  "apTags": [<string, ...],
+  "apFloors": [<string>, ...],
+  "observations": [
     {
-      "apMac": <string>,
-      "apTags": [<string, ...],
-      "apFloors": [<string>, ...],
-      "observations": [
-        {
-          "clientMac": <string>,
-          "ipv4": <string>,
-          "ipv6": <string>,
-          "seenTime": <string>,
-          "seenEpoch": <integer>,
-          "ssid": <string>,
-          "rssi": <integer>,
-          "manufacturer": <string>,
-          "os": <string>,
-          "location": {
-            "lat": <decimal>,
-            "lng": <decimal>,
-            "unc": <decimal>,
-            "x": [<decimal>, ...],
-            "y": [<decimal>, ...]
-          },
-        },
-        //[...]
-      ]
-    }
-    
+      "clientMac": <string>,
+      "ipv4": <string>,
+      "ipv6": <string>,
+      "seenTime": <string>,
+      "seenEpoch": <integer>,
+      "ssid": <string>,
+      "rssi": <integer>,
+      "manufacturer": <string>,
+      "os": <string>,
+      "location": {
+        "lat": <decimal>,
+        "lng": <decimal>,
+        "unc": <decimal>,
+        "x": [<decimal>, ...],
+        "y": [<decimal>, ...]
+      },
+    },
+    //[...]
+  ]
+}
+```  
 
 Esta información se enviará por cada uno de los AP e incluye información para identificar el AP que envía los datos mediante la dirección Mac (_apMac_) y una serie de etiquetas (_apTags_) que se asignan manualmente a cada uno de los AP. En nuestro caso vamos a utilizar estas propiedades para definir la ubicación, planta y sección donde se encuentra el dispositivo. Para nuestro ejemplo, definiremos un _tag_ para indicar que el dispositivo está en Barcelona o Madrid y otro para indicar la planta del edificio, de esta forma podremos saber fácilmente dónde se encontraba el dispositivo cuando esté fue detectado.
 
@@ -63,8 +64,9 @@ Una vez familiarizados con el formato, vamos a crear el proyecto de **Azure Func
 
 En esta ocasión voy a crear el proyecto utilizando la línea de comandos escribiendo el siguiente comando:
 
-    func init LocationAnalytics
-    
+``` 
+func init LocationAnalytics
+``` 
 
 La salida debe mostrar algo similar a lo siguiente:
 
@@ -92,72 +94,76 @@ Esto generará una función por defecto.
 
 Para poder enviar mensajes a **Event Hub**, tenemos que añadir la referencia al paquete [NuGet de ServiceBus](https://www.nuget.org/packages/Microsoft.Azure.ServiceBus.EventProcessorHost/) creando el archivo **project.json** dentro del directorio **MerakiTraces** con el siguiente contenido:
 
-    {
-      "frameworks": {
-        "net46":{
-          "dependencies": {
-            "Microsoft.Azure.ServiceBus.EventProcessorHost": "3.1.2"
-          }
-        }
-       }
+```json
+{
+  "frameworks": {
+    "net46":{
+      "dependencies": {
+        "Microsoft.Azure.ServiceBus.EventProcessorHost": "3.1.2"
+      }
     }
-    
+    }
+}
+````
+
 Y cambiar el código de la función del fichero **run.csx** por el siguiente:
 
-    using System.Net;
-    using Microsoft.ServiceBus.Messaging;
-    using System.Text;
-    using System.Configuration;
+```csharp
+using System.Net;
+using Microsoft.ServiceBus.Messaging;
+using System.Text;
+using System.Configuration;
+
+public static async Task<HttpResponseMessage> Run(HttpRequestMessage req, TraceWriter log)
+{
+    log.Info("MerakiTraces function processed a request.");
+
+    dynamic data = await req.Content.ReadAsAsync<object>();
+
+    var secret = data?.secret;
     
-    public static async Task<HttpResponseMessage> Run(HttpRequestMessage req, TraceWriter log)
+    SendEvent(data, log);
+    
+    return secret != ConfigurationManager.AppSettings["MerakiSecret"]
+        ? req.CreateResponse(HttpStatusCode.Unauthorized, "No valid secret key")
+        : req.CreateResponse(HttpStatusCode.Accepted);
+}
+
+static void SendEvent(object msg, TraceWriter log)
+{
+    string eventHubName = ConfigurationManager.AppSettings["EventHubName"];
+    string connectionString = ConfigurationManager.AppSettings["EventHubConnectionString"];
+    
+    var eventHubClient = EventHubClient.CreateFromConnectionString(connectionString, eventHubName);
+    
+    try
     {
-        log.Info("MerakiTraces function processed a request.");
-    
-        dynamic data = await req.Content.ReadAsAsync<object>();
-    
-        var secret = data?.secret;
+        var message = msg.ToString();
         
-        SendEvent(data, log);
+        log.Info($"{DateTime.Now} > Sending message: {message}");
         
-        return secret != ConfigurationManager.AppSettings["MerakiSecret"]
-            ? req.CreateResponse(HttpStatusCode.Unauthorized, "No valid secret key")
-            : req.CreateResponse(HttpStatusCode.Accepted);
+        eventHubClient.Send(new EventData(Encoding.UTF8.GetBytes(message)));
     }
-    
-    static void SendEvent(object msg, TraceWriter log)
+    catch (Exception exception)
     {
-       string eventHubName = ConfigurationManager.AppSettings["EventHubName"];
-       string connectionString = ConfigurationManager.AppSettings["EventHubConnectionString"];
-       
-       var eventHubClient = EventHubClient.CreateFromConnectionString(connectionString, eventHubName);
-       
-        try
-        {
-            var message = msg.ToString();
-            
-            log.Info($"{DateTime.Now} > Sending message: {message}");
-            
-            eventHubClient.Send(new EventData(Encoding.UTF8.GetBytes(message)));
-        }
-        catch (Exception exception)
-        {
-            log.Info($"{DateTime.Now} > Exception: {exception.Message}");
-        }
+        log.Info($"{DateTime.Now} > Exception: {exception.Message}");
     }
-    
+}
+```
 
 Ahora solo queda añadir la configuración en el fichero **local.settings.json** para establecer los valores de la clave secreta de Meraki (la que se enviará en cada petición), el nombre y la cadena de conexión de **Event Hub**.
 
-    {
-      "IsEncrypted": false,
-      "Values": {
-        "AzureWebJobsStorage": "",
-        "MerakiSecret": "12345",
-        "EventHubName": "event-input",
-        "EventHubConnectionString": "Endpoint=sb://eventhub-location-ns.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=XXX" 
-      }
-    }
-    
+```json
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "",
+    "MerakiSecret": "12345",
+    "EventHubName": "event-input",
+    "EventHubConnectionString": "Endpoint=sb://eventhub-location-ns.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=XXX" 
+  }
+}
+```  
 
 Podemos ejecutar la función localmente, ejecutando el siguiente comando:
 
@@ -166,37 +172,38 @@ Podemos ejecutar la función localmente, ejecutando el siguiente comando:
 
 Para probar que la función funciona correctamente, podemos modificar el fichero **sample.dat** con el siguiente ejemplo de traza:
 
-    {
-      "secret": "12345",
-      "version": "1.0",
-      "type": "",
-      "data": {
-        "apFloors": [ "" ],
-        "apTags": [ "Barcelona", "1stFloor" ],
-        "apMac": "string",
-        "Observations": [
-          {
-            "clientMac": "aa:bb:cc:dd:ee:ff",
-            "seenTime": "2017-09-11T22:05:10.178Z",
-            "seenEpoch": 1505167546,
-            "ipv4": "123.45.67.89",
-            "ipv6": "string",
-            "rssi": 0,
-            "ssid": "Cisco WiFi",
-            "Manufacturer": "Meraki",
-            "os": "Linux",
-            "location": {
-              "lat": 37.77057805947924,
-              "lng": -122.38765965945927,
-              "unc": 15.13174349529074,
-              "x": [ 0 ],
-              "y": [ 0 ]
-            }
-          }
-        ]
+```json
+{
+  "secret": "12345",
+  "version": "1.0",
+  "type": "",
+  "data": {
+    "apFloors": [ "" ],
+    "apTags": [ "Barcelona", "1stFloor" ],
+    "apMac": "string",
+    "Observations": [
+      {
+        "clientMac": "aa:bb:cc:dd:ee:ff",
+        "seenTime": "2017-09-11T22:05:10.178Z",
+        "seenEpoch": 1505167546,
+        "ipv4": "123.45.67.89",
+        "ipv6": "string",
+        "rssi": 0,
+        "ssid": "Cisco WiFi",
+        "Manufacturer": "Meraki",
+        "os": "Linux",
+        "location": {
+          "lat": 37.77057805947924,
+          "lng": -122.38765965945927,
+          "unc": 15.13174349529074,
+          "x": [ 0 ],
+          "y": [ 0 ]
+        }
       }
-    }
-    
+    ]
+  }
+}
+```
 
 Y ejecutar el siguiente comando:
 
@@ -207,13 +214,11 @@ En el código de la función podemos ver que básicamente verificamos que la pet
 
 Para comprobar que la función está enviando eventos correctamente, podemos ver en el [Portal de Azure](https://portal.azure.com/) el número de eventos que están entrando en el **Event Hub**. En la próxima entrada veremos cómo procesar esta información mediante **Stream Analytics**.
 
-Resumen 
----
+# Resumen 
 
 En esta entrada nos hemos centrado exclusivamnete en cómo recoger mediante una **Azure Function** los eventos de trazas WiFi, utilizando a modo de ejemplo el modelo de trazas de un proveedor específico, para enviarlos a un servicio **Event Hub** que nos permitirá posteriormente procesarlo con, por ejemplo, un _job_ de **Stream Analytics**.
 
-Referencias 
----
+# Referencias 
 
 [Location Analytics](https://documentation.meraki.com/MR/Monitoring_and_Reporting/Location_Analytics)  
 [Vehicle telemetry analytics solution playbook](https://docs.microsoft.com/en-us/azure/machine-learning/cortana-analytics-playbook-vehicle-telemetry)  
