@@ -1,5 +1,5 @@
 ---
-title: New Third Star Instructor course
+title: New Third Star instructor course
 tags: [certification, personal, english]
 reviewed: true
 ---
