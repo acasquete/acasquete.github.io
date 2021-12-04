@@ -1,6 +1,6 @@
 ---
 title: Today the silence ends
-tags: [personal]
+tags: [personal, english]
 ---
 Today I have decided to create this weblog to end my silence. I have also decided that my silence ends in English.
 
