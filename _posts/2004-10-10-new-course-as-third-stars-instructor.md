@@ -1,5 +1,14 @@
 ---
-title: New course as Third Star's Instructor
+title: New Third Star Instructor course
+tags: [certification, personal, english]
+reviewed: true
 ---
-From next 18th to 29th in current month will dictate the course "Introduction to C#" of the Five Stars Developer (Desarrollador Cinco Estrellas) program. Time ago I dictated my first course and I feel like to give another. My first experience was very good, I hope that this is better...  
+From the 18th to the 29th of this month I will be teaching the course "Introduction to C#" of the Five Star Developer program. 
+
+Some time ago I taught my first course and I am looking forward to teach another one. 
+
+My first experience was very good, I hope this one will be better...
+
+![](/img/dce.png)
+
 
