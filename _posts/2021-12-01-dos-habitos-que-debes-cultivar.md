@@ -1,6 +1,7 @@
 ---
 title: Dos hábitos que debes cultivar
 tags: [personal] 
+reviewed: true
 ---
 La proximidad del fin de año siempre me ha parecido una época idónea para revisar los objetivos cumplidos y planificar las metas por alcanzar. A mí, este final de año me ha provocado unas ansias rabiosas de retomar dos hábitos que había desatendido en exceso, leer y escribir. Y aunque la intención inicial de estas líneas no es escribir en torno a los propósitos del nuevo año, va a resultar difícil no hacerlo. 
 
