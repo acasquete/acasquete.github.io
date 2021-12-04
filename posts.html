@@ -37,6 +37,7 @@ title: Posts
       </div>
       <div class="column">
         <div><a href="{{ post.url }}">{{ post.title }}</a></div>
+        {% if !post.reviewed %}<p class="reviewed">R</p>{% endif %}
       </div>
       
     </div>
