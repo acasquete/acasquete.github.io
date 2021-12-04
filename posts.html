@@ -51,7 +51,7 @@ reviewed: false
       <div class="column">
         <div>
           <a href="{{ post.url }}">{{ post.title }}</a>
-        {% if post.reviewed == false %}<span class="reviewed">R</span>{% endif %}
+        {% if !post.reviewed %}<span class="reviewed">R</span>{% endif %}
         </div>
       </div>
       
