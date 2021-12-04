@@ -1,9 +1,9 @@
 ---
 title: Two photos from Brazil
+tags: [personal, english]
+reviewed: true
 ---
-These two photos are taken in Rio de Janeiro during the first visit to Brazil in July, 2002. I'm next to my friend Jose. I had desire to publish them and here they're!  
+These two photos are taken in Rio de Janeiro during my first visit to Brazil in July 2002. I am with my friend José. I wanted to publish them and here they are.  
 
-[![](http://www.studio4net.com/alex/image/rio.jpg)](http://www.studio4net.com/alex/images/rio.jpg)  
-  
-[![](http://www.studio4net.com/alex/image/rio2.jpg)](http://www.studio4net.com/alex/images/rio2.jpg)
-
+![Rio de Janeiro](/img/rio1.jpg)   
+![Rio de Janeiro](/img/rio2.jpg) 
