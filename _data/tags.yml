@@ -1,5 +1,6 @@
 allowed-tags:
   - personal
+  - english
   - fsharp
   - functional_programming
   - web
