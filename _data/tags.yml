@@ -9,7 +9,7 @@ allowed-tags:
   - vsts
   - netcore
   - docker
-  - lambda_architecture
+  - architecture
   - azure
   - big_data
   - event

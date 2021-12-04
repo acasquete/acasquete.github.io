@@ -1,6 +1,6 @@
 ---
 title: Arquitecturas Lambda en Azure
-tags: [lambda_architecture, azure, big_data]
+tags: [architecture, azure, big_data]
 ---
 En este artículo veremos los principales desafíos a los que nos enfrentamos cuando tenemos que desarrollar soluciones de procesamiento de datos masivos en sistemas de **Big Data**. Mostraré el enfoque y tecnologías utilizadas para dar respuesta a esos desafíos y cómo implementamos estas soluciones basadas en servicios de Azure: [HDInsight](https://azure.microsoft.com/es-es/services/hdinsight/), [Stream Analytics](https://azure.microsoft.com/es-es/services/stream-analytics/), [EventHub](https://azure.microsoft.com/es-es/services/event-hubs/), [Data Lake](https://azure.microsoft.com/es-es/solutions/data-lake/), etc. Antes de entrar en materia, aprovecho esta primera entrada para introducir el concepto de **Arquitectura Lambda**, en la que veremos las técnicas de **Big Data** en contraposición a los sistemas tradicionales.
 
