@@ -214,11 +214,11 @@ En el código de la función podemos ver que básicamente verificamos que la pet
 
 Para comprobar que la función está enviando eventos correctamente, podemos ver en el [Portal de Azure](https://portal.azure.com/) el número de eventos que están entrando en el **Event Hub**. En la próxima entrada veremos cómo procesar esta información mediante **Stream Analytics**.
 
-# Resumen 
+## Resumen 
 
 En esta entrada nos hemos centrado exclusivamnete en cómo recoger mediante una **Azure Function** los eventos de trazas WiFi, utilizando a modo de ejemplo el modelo de trazas de un proveedor específico, para enviarlos a un servicio **Event Hub** que nos permitirá posteriormente procesarlo con, por ejemplo, un _job_ de **Stream Analytics**.
 
-# Referencias 
+## Referencias 
 
 [Location Analytics](https://documentation.meraki.com/MR/Monitoring_and_Reporting/Location_Analytics)  
 [Vehicle telemetry analytics solution playbook](https://docs.microsoft.com/en-us/azure/machine-learning/cortana-analytics-playbook-vehicle-telemetry)  
