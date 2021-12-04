@@ -6,13 +6,15 @@ Microsoft has released an [ASP.NET HTTP module](http://www.microsoft.com/downloa
 Very recommended to avoid the problems of the vulnerability associated with canonicalization!!!  
   
 Another solution for this vulnerability is to add the following code to the **global.asax**:  
-  
-void Application\_BeginRequest(object source, EventArgs e)  
+
+``` csharp
+void Application_BeginRequest(object source, EventArgs e)  
 {  
-if (Request.Path.IndexOf('\\\\') >= 0  
+    if (Request.Path.IndexOf('\\') >= 0  
 System.IO.Path.GetFullPath(Request.PhysicalPath) != Request.PhysicalPath)  
-{  
-throw new HttpException(404, "not found");  
-}  
-}  
+    {  
+        throw new HttpException(404, "not found");  
+    }  
+}
+```
   
