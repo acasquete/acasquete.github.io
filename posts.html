@@ -36,8 +36,10 @@ title: Posts
         {% if currentdate != date %}<p class="yeartitle">{{ currentdate }}</p>{% endif %}
       </div>
       <div class="column">
-        <div><a href="{{ post.url }}">{{ post.title }}</a></div>
-        {% if !post.reviewed %}<p class="reviewed">R</p>{% endif %}
+        <div>
+          <a href="{{ post.url }}">{{ post.title }}</a>
+        {% if post.reviewed %}<span class="reviewed">R</span>{% endif %}
+        </div>
       </div>
       
     </div>
