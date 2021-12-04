@@ -14,13 +14,13 @@ I hope this will not be my last post.
 ---
 
 ### October 2005
-![Blog Header](/img/alex_casquete_header1.gif)
+![Blog Header](/img/alex_casquete_header1.gif)  
 
 ### December 2005
-![Blog Header](/img/alex_casquete_header2.gif)
+![Blog Header](/img/alex_casquete_header2.gif)  
 ![Blog Header](/img/alex_casquete_header3.gif)  
 
 ### January 2006
 ![Blog Header](/img/alex_casquete_header4.gif)  
 ![Blog Header](/img/alex_casquete_header5.gif)  
-![Blog Header](/img/alex_casquete_header6.gif) 
+![Blog Header](/img/alex_casquete_header6.gif)  
