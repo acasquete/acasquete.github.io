@@ -1,5 +1,7 @@
 ---
 title: Gmail Account, Ya!
+tags: [personal, english]
+reviewed: true
 ---
 It seems that everybody has a [Gmail](http://www.gmail.com) account by now, or at least people who are familiar with this service. At [escomposlinux.org](http://www.escomposlinux.org), they even make a joke in their comic strip. 
 
