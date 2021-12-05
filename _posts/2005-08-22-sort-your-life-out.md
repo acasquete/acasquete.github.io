@@ -1,10 +1,11 @@
 ---
 title: Sort your life out!
+reviewed: true
 ---
-In these days I'm reviewing sort algorithms and I have created a class in C# that allows sorting ascending an integer array. Once I was read that there're not arrangement methods, only elements to sort, so this class has 5 static methods that implements the 5 different common types of sorting algorithms: Insert, Select, Bubble, Shell and QuickSort.  
-All algorithms are sorting an array of integer numbers, although floats, characters could perfectly be used.  
+These days I am reviewing sorting algorithms and I have created a class in C# that allows you to sort in ascending order an array of integers. 
 
-The QuickSort algorithm is the one that better performance offers for any number of elements. The Select algorithm is relatively fast to order a reduced number of elements. Finally, BubbleSort is the algorithm simplest to implement but the one that worse performance offers. It's relatively useful to sort a low number of elements, but the sorting time grows exponentially as the size of the array is increased.  
+I once read that there are no sort methods, only elements to sort, so this class has 5 static methods that implement the 5 different types of most common sorting algorithms: Insert, Select, Bubble, Shell and QuickSort. All algorithms sort an array of integers, although floats or characters could perfectly well be used.  
 
-You can download the class file (OrdenaArray.cs) from [here](http://www.studio4net.com/alex/code/OrdenaArray.cs).
+The QuickSort algorithm performs best for any number of elements. The Select algorithm is relatively fast for sorting a small number of elements. Finally, BubbleSort is the simplest algorithm to implement but the worst performing. It is relatively useful for sorting a small number of elements, but the sorting time grows exponentially as the array size increases.  
 
+You can download the class file (SortArray.cs) from [here](/docs/OrdenaArray.cs).

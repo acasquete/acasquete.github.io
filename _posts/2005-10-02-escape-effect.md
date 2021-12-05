@@ -1,6 +1,7 @@
 ---
 title: Escape effect
-tags: [personal]
+tags: [personal, english]
+reviewed: true
 ---
 A [shocking news item](https://elpais.com/diario/2005/09/30/espana/1128031201_850215.html) has been the "avalanche" of hundreds of migrants trying to climb the border fence in Ceuta. The avalanche ended with five migrants dead and hundreds injured. We now know that Moroccan police fire possibly caused this avalanche and the deaths, and that the mass jumping was not deliberate.
 
