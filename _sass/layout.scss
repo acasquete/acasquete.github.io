@@ -229,6 +229,7 @@
     &:hover,
     &:focus {
       color: darken($accent-color, 5%);
+      text-decoration: underline;
     }
   }
 
