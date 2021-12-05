@@ -1,5 +1,7 @@
 ---
 title: And finally a great joy
+tags: [personal, english]
+reviewed: true
 ---
-I take waiting this event from the 29th of September. Today, TelÃ©fonica has now upped my DSL line speed to 512 Kbps, but sadly, my upload speed is and it will continue being of 128. Terrible!  
+I have been waiting for this event since September 29th. Today, Telefonica has raised the speed of my ADSL line to 512 Kbps, but unfortunately, my upload speed is and will remain at 128. Terrible!  
  

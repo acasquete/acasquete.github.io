@@ -1,8 +1,10 @@
 ---
-title: Why development projects become a nightmare? Anatomy of a failure
+title: Why do development projects become a nightmare? Anatomy of a failure
+tags: [personal, english]
+reviewed: true
 ---
-Today, I've read an excellent article about development failures. Very recommendable for all those that you're finalizing any project and you don't see light at tunnel's end.  
+Today I read an excellent article about failures in development. Highly recommended for all of you who are finishing a project and can't see the light at the end of the tunnel.  
   
-The development projects are already famous for their deviations in budget and term to the point that many managers of the business avoid to go aboard in them. Probably, let us be needing a totally new focus. The computer projects that exceed by a 200 or 300 percent their original term are so frequent that have transformed in something mythical inside the computer industry. The commercial areas have assumed that it is a reality inmodificable and the managers of these areas suffer impotent when they doesn't have more remedy than to go aboard in a new project that it makes intensive use of the technology of information, something that very often happens in today's world.  
+Development projects are already notorious for their budget and schedule slippage, to the point that many business managers avoid getting into them. We may need a whole new approach. IT projects that run 200 to 300 percent over their original schedule are so common that they have become a myth in the IT industry. Business areas have assumed that this is an immovable reality, and company managers are helpless when they have no choice but to start a new IT-intensive project, something that happens all too often in today's world.  
   
-You can see full article [here](http://www.willydev.net/descargas/WillyDEV_Anatomia_de_un_fracaso.pdf).  
+See the full article [here](/docs/WillyDEV_Anatomia_de_un_fracaso.pdf).
