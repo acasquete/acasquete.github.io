@@ -1,6 +1,7 @@
 ---
 title: Panorámica de una Barcelona lluviosa 
 tags: [personal]
+reviewed: true
 ---
 Estas fotografías las hice el pasado 15 de Agosto sobre las dos de la tarde, con una cámara PENTAX Optio E10. 
 
