@@ -1,5 +1,7 @@
 ---
 title: Notepad2 in Catalan
+tags: [personal, english]
+reviewed: true
 ---
 The Catalan and Korean translations of [Notepad2](http://www.flos-freeware.ch/notepad2.html) are now available. At this moment, I am the person in charge of the Catalan version. If you are interested in the Catalan source code, please contact me.  
   
