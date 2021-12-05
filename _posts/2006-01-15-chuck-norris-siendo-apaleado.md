@@ -1,9 +1,10 @@
 ---
 title: Chuck Norris siendo apaleado
+reviewed: true
 ---
 Si has llegado hasta aquí buscando un vídeo de Chuck Norris siendo apaleado, olvídate. Eso es imposible, no puede suceder...  
   
-Vía [El rincón del buda](https://web.archive.org/web/20060209152544/http://elrincondebuda.bitacoras.com/), llego a esta web: [Chuck Norris Facts](https://web.archive.org/web/20051224065832/http://www.chucknorrisfacts.com/) (Hechos de [Chuck Norris](http://en.wikipedia.org/wiki/Chuck_Norris)), una lista de hechos y «azañas» del ídolo de mi niñez (después de [Chema](http://servicios.elcorreodigital.com/vizcaya/pg050822/prensa/noticias/Television/200508/22/VIZ-TV-131.html), el panadero de [Barrio Sésamo](http://es.wikipedia.org/wiki/Barrio_Sésamo)). Aquí está la traducción del top ten:  
+Vía [El rincón del buda](https://web.archive.org/web/20060209152544/http://elrincondebuda.bitacoras.com/), llego a esta web: [Chuck Norris Facts](https://web.archive.org/web/20051224065832/http://www.chucknorrisfacts.com/) (Hechos de [Chuck Norris](http://en.wikipedia.org/wiki/Chuck_Norris)), una lista de hechos y «azañas» del ídolo de mi niñez (después de Chema, el panadero de [Barrio Sésamo](http://es.wikipedia.org/wiki/Barrio_Sésamo)). Aquí está la traducción del top ten:  
   
 
 1.  Las lágrimas de Chuck Norris curan el cáncer, pero es tan malo que nunca ha llorado. Nunca.
