@@ -3,7 +3,9 @@ title: ¿Cuál es el valor de este blog?
 tags: [personal]
 reviewed: true
 ---
-Pues sí, ¡increible! Ni yo mismo daría 5 céntimos por este blog, pero resulta que me entero vía [Popcorn](https://web.archive.org/web/20060116075146/http://popcorn.euniceproductions.com/archives/2005/10/26/how-much-is-my-blog-worth/) que no, que estas líneas tienen un valor, poco pero lo tiene. Averigua el valor de tu blog pulsando [aquí](http://www.business-opportunities.biz/projects/how-much-is-your-blog-worth/).  
+Pues sí, ¡increible! Ni yo mismo daría 5 céntimos por este blog, pero resulta que me entero vía [Popcorn](https://web.archive.org/web/20060116075146/http://popcorn.euniceproductions.com/archives/2005/10/26/how-much-is-my-blog-worth/) que no, que estas líneas tienen un valor, poco, pero lo tiene. 
+
+Averigua el valor de tu blog pulsando [aquí](http://www.business-opportunities.biz/projects/how-much-is-your-blog-worth/).  
 
 
 <div style="margin: auto; border: 1px solid #cccccc; background-color: white; width: 115px; text-align: center; padding: 0 0 10px 0;">
