@@ -5,7 +5,7 @@ reviewed: true
 ---
 Los dispositivos móviles se utilizan para detectar nuestra presencia en centros comerciales, salas de exposiciones, estaciones de tren, aeropuertos, hospitales, museos y un sinfín de lugares más. Esto es posible porque los dispositivos móviles pueden detectarse mediante puntos de acceso WiFi, independientemente del estado de asociación, lo que significa que incluso si un usuario no conecta su dispositivo a la red WiFi, la presencia del dispositivo puede detectarse mientras esté dentro del alcance de la red y, obviamente, la conexión WiFi del dispositivo esté habilitada.
 
-![Lambda architecture](/img/lambda-architecture.jpg){:.fullview}
+![Lambda architecture](/img/lambda-architecture.jpg)
 
 Este es el punto de partida para crear un proceso que permita recopilar y analizar las trazas de posicionamiento WiFi emitidas por los puntos de acceso (AP). El objetivo final de esta solución es obtener información sobre el comportamiento de los visitantes: tiempo medio de las visitas, ubicaciones más populares, tiempo medio por ubicación, tipo de dispositivo utilizado, recencia, etc. Esta información se podrá utilizar para mejorar las estrategias de marketing y comprender mejor el comportamiento de los visitantes.
 
