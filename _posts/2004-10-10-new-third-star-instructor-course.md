@@ -1,6 +1,6 @@
 ---
 title: New Third Star instructor course
-tags: [certification, personal, english]
+tags: [certification, english]
 reviewed: true
 ---
 From the 18th to the 29th of this month I will be teaching the course "Introduction to C#" of the Five Star Developer program. 
