@@ -1,9 +1,9 @@
 $color: skyblue;
 $lineColor: hotpink;
 $fontColor: #bbb;
-$bgColor1: #222;
-$bgColor2: #444;
-$yearBgColor: #333;
+$bgColor1: #ccc;
+$bgColor2: #fff;
+$yearBgColor: #fff;
 
 $breakpoint: 700px;
 
@@ -17,7 +17,6 @@ body {
 
 h1 {
   text-align: center;
-  font-family: 'Raleway', sans-serif;
 }
 
 .timeline {
