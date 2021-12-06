@@ -1,6 +1,6 @@
 ---
 title: Domain .CAT, too close and too far!
-tags: [personal, english]
+tags: [random, english]
 reviewed: true
 ---
 The **.CAT** domain has been in the news this week. José Montilla, the [Minister of Industry and Tourism](http://www.min.es/), who attended the presentation of the initiative "[todos.es](http://www.todos.es)", has raised the possibility of the creation of .cat as an Internet domain. This is a historical demand of Catalan Internet users through the "[Campanya per un domini .CAT](http://www.puntcat.org)" ([Campaign for a .CAT domain](http://www.puntcat.org/default.asp?idioma=I)).  
