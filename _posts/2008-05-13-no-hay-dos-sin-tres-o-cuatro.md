@@ -1,6 +1,6 @@
 ---
 title: No hay dos sin tres (o cuatro)
-tags: [personal]
+tags: [random]
 reviewed: true
 ---
 Una vez más —y ya son unas cuantas— inicio con esta entrada mi nuevo _Blog_, un poco austero en cuanto a diseño, pero nuevo al fin y al cabo.
