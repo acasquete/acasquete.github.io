@@ -1,6 +1,6 @@
 ---
 title: What does Microsoft have up its sleeve?
-tags: [english]
+tags: [random, english]
 reviewed: true
 ---
 Microsoft will have until the end of the year the ["second peek" of the new MSN search technology](http://techpreview.search.msn.co.uk/?setlang=es-ES). A new algorithmic search engine and a higher index are the novelties of this new development. 

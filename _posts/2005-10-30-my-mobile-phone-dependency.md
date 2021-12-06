@@ -1,5 +1,6 @@
 ---
 title: My mobile phone dependency
+tags: [personal]
 ---
 Without a doubt, [mobile telephony](http://en.wikipedia.org/wiki/Mobile_telephony) is one of the great technological advances of the last years. Forgetting the possible impact in the health of [radiation](http://en.wikipedia.org/wiki/Mobile_phone_radiation_and_health) produced by the microwaves of the mobile phones, the numerous advantages of mobile technology are undeniable.  
   

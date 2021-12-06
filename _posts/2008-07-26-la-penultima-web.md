@@ -1,6 +1,6 @@
 ---
 title: La penúltima web
-tags: [personal]
+tags: [web]
 ---
 Comencé este blog (hace ya unos meses) hablando entre otras cosas de algunas irrupciones en mi rutina diaria en forma de PHP. Me estaba refiriendo a unos «trabajos» que tengo pendientes y quiero terminar antes de fin de año. Bien, pues una de esas irrupciones en las que pensaba al final no ha sido tal, ya que la web que acabo de terminar la he hecho con ASP.NET, lo que me ha permitido continuar utilizando, esta vez con C#, la misma plataforma con la que trabajo diariamente.
 

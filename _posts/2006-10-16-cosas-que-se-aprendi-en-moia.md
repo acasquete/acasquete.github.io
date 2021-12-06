@@ -1,6 +1,6 @@
 ---
 title: Cosas que aprendí en Moià 
-tags: [personal]
+tags: [random]
 reviewed: true
 ---
 Lo bueno que tiene pasar un fin de semana en una [casa rural](https://www.miscasasrurales.com/casas-rurales/les-umbertes/) es que aprendes o reaprendes cosas que tenías olvidadas. Este fin de semana además de para conocerme en una intensa convivencia durante tres días con impúberes, me ha servido para animarme a recordar y buscar los nombres de animales y de sus crías según su género y edad. He aquí una lista según la familia:

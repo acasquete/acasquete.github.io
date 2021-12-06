@@ -1,5 +1,6 @@
 ---
 title: Sort your life out!
+tags: [random]
 reviewed: true
 ---
 These days I am reviewing sorting algorithms and I have created a class in C# that allows you to sort in ascending order an array of integers. 

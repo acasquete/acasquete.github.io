@@ -1,5 +1,6 @@
 ---
 title: Ya está aquí el dominio .CAT
+tags: [random]
 ---
 Hace ya más de un año que publiqué el post [.CAT domain, too near and too far!](/cat-domain-too-near-and-too-far), donde me hacía eco de las declaraciones, sobre la posibilidad de la creación del dominio .CAT, por parte de un optimista José Montilla, y de [Víctor Domingo](http://www.aui.es/historia/personajes/fichas/victor_domingo.htm), presidente de la [Asociación de internautas](http://www.internautas.org), con una posición claramente más negativa.  
   

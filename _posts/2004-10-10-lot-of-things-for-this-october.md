@@ -1,6 +1,6 @@
 ---
 title: A lot of things for this October
-tags: [personal, english]
+tags: [random, english]
 reviewed: true
 ---
 This October is being very exciting because of all the events that are taking place.  

@@ -1,6 +1,6 @@
 ---
 title: Perspective on SQL Server 2005 for Database Developers
-tags: [personal, english]
+tags: [random, english]
 reviewed: true
 ---
 With the release of Microsoft SQL Server 2005 Beta 2, the world of database development is changing. 

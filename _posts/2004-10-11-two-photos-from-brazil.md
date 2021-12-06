@@ -1,6 +1,6 @@
 ---
 title: Two photos from Brazil
-tags: [personal, english]
+tags: [random, english]
 reviewed: true
 ---
 These two photos are taken in Rio de Janeiro during my first visit to Brazil in July 2002. I am with my friend José. 

@@ -1,6 +1,6 @@
 ---
 title: Novell turns up the volume of Mono 2
-tags: [personal, english]
+tags: [random, english]
 reviewed: true
 ---
 [Novell](http://www.novell.com) has unveiled enhancements built into the next major release of [Mono](http://www.go-mono.com).  

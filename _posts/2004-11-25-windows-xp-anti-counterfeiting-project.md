@@ -1,6 +1,6 @@
 ---
 title: Windows XP Anti-Counterfeiting Project
-tags: [personal, english]
+tags: [random, english]
 reviewed: true
 ---
 Microsoft has announced a new attack on piracy. The company will offer anyone who is unsure if they have counterfeit software the chance to have it checked by Microsoft, with the promise that, if it turns out to be counterfeit, it will replace it.  

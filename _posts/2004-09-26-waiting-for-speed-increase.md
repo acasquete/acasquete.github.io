@@ -1,6 +1,6 @@
 ---
 title: Waiting for speed increase
-tags: [personal, english]
+tags: [random, english]
 reviewed: true
 ---
 Since a couple of months ago, when [Telefónica](http://www.telefonica.es) announced an increase in the speed of ADSL lines in Spain while maintaining the same price, we have all been impatient to enjoy a few measly extra kilobits.
