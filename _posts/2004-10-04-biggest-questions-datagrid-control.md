@@ -1,6 +1,6 @@
 ---
 title: Biggest questions of Datagrid control
-tags: [personal, english]
+tags: [web, english]
 reviewed: true
 ---
 There are several questions that are always asked in the developer forums about the Datagrid control. How to format datagrid rows and columns, how to hide and add dynamic columns, how to select a row from any point, how to edit multiple rows at the same time, etc. 
