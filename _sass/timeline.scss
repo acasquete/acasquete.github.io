@@ -1,5 +1,5 @@
 $color: skyblue;
-$lineColor: hotpink;
+$lineColor: #c7254e;
 $fontColor: #bbb;
 $bgColor1: #ccc;
 $bgColor2: #fff;
@@ -10,12 +10,6 @@ $breakpoint: 700px;
 * {
   box-sizing: border-box;
 }
-
-body {
-  color: $fontColor;
-}
-
-
 
 .timeline {
   position: relative;
