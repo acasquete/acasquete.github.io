@@ -41,7 +41,7 @@ $gray: #dddddd;
     
     &:before {
       content: '';
-      width: 0;
+      width: 100px;
       height: 0;
       border-top: 3px dashed $gray;
       position: absolute;
