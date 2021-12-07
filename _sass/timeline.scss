@@ -43,10 +43,9 @@ $gray: #dddddd;
       content: '';
       width: 0;
       height: 0;
-      border-top: 1em solid $gray;
-      border-left: 1em solid transparent;
+      border-top: 3px dashed $gray;
       position: absolute;
-      left: -1em;
+      left: -4.5em;
       top: 0;
     }
   }
@@ -89,9 +88,9 @@ $gray: #dddddd;
       float: left;
       
       &:before {
-        border-top: 1em solid $gray;
-        border-right: 1em solid transparent;
-        right: -1em;
+        border-top: 3px dashed $gray;
+        
+        right: -4.5em;
         left: auto;
       }
     }
