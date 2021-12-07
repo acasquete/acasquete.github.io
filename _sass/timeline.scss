@@ -73,7 +73,6 @@ $gray: #dddddd;
     
     .itemlist {
       padding-left: 0;
-      max-width: 700px;
       margin: 0 auto;
     }
     
@@ -81,12 +80,12 @@ $gray: #dddddd;
       width: 42%;
     }
     
-    .item:nth-child(even) {
+    .item > .right {
       float: right;
       margin-top: 2em;
     }
     
-    .item:nth-child(odd) {
+    .item > .left {
       float: left;
       
       &:before {
