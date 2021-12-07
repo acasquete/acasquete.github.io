@@ -27,13 +27,13 @@ $gray: #dddddd;
     clear: both;
   }
   
-  ul {
+  .itemlist {
     list-style: none;
     padding: 0 0 0 1em;
     z-index: 1;
   }
   
-  li {
+  .item {
     background: $gray;
     padding: 1em;
     margin-bottom: 1em;
@@ -71,22 +71,22 @@ $gray: #dddddd;
       left: 50%;
     }
     
-    ul {
+    .itemlist {
       padding-left: 0;
       max-width: 700px;
       margin: 0 auto;
     }
     
-    li {
+    .item {
       width: 42%;
     }
     
-    li:nth-child(even) {
+    .item:nth-child(even) {
       float: right;
       margin-top: 2em;
     }
     
-    li:nth-child(odd) {
+    .item:nth-child(odd) {
       float: left;
       
       &:before {
@@ -97,7 +97,7 @@ $gray: #dddddd;
       }
     }
     
-    li:nth-of-type(2n+1) {
+    .item:nth-of-type(2n+1) {
       clear: both;
     }
   }
