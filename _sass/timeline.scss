@@ -48,7 +48,7 @@ $breakpoint: 700px;
   border-image: linear-gradient(to right, $color 0%, $lineColor 100%);
   border-image-slice: 1;
   position: relative;
-  margin: 1rem 3rem 1rem 1rem;
+  margin: 0.3rem;
   clear: both;
   
   &:after,
@@ -72,7 +72,7 @@ $breakpoint: 700px;
     
     &:nth-of-type(2n) {
       float: right;
-      margin: 1rem;
+      margin: 0.3rem;
       border-image: linear-gradient(to right, $lineColor 0%, $color 100%);
       border-image-slice: 1;
 
@@ -93,7 +93,7 @@ $breakpoint: 700px;
   background-color: $yearBgColor;
   line-height: 1;
   border-image: none;
-  padding: .5rem 1rem 1rem;
+  padding: 0.3rem;
   
   &:before {
     display: none;
@@ -117,7 +117,6 @@ $breakpoint: 700px;
 
 .timeline__title {
   margin: 0;
-  font-family: 'Raleway', sans-serif;
   font-size: 1.5em;
 }
 
