@@ -46,7 +46,7 @@ $gray: #dddddd;
       border-top: 3px dashed $gray;
       position: absolute;
       left: -4.5em;
-      top: 0;
+      top: 20px;
     }
   }
   
@@ -89,7 +89,6 @@ $gray: #dddddd;
       
       &:before {
         border-top: 3px dashed $gray;
-        
         right: -4.5em;
         left: auto;
       }
