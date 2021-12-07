@@ -80,12 +80,12 @@ $gray: #dddddd;
       width: 42%;
     }
     
-    .item .right {
+    .item.right {
       float: right;
       margin-top: 2em;
     }
     
-    .item .left {
+    .item.left {
       float: left;
       
       &:before {
