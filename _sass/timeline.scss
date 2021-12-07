@@ -31,6 +31,9 @@ $breakpoint: 700px;
     clear: both;
   }
   
+  h3 {
+      line-height: 1em;
+  }
   @media screen and (min-width: $breakpoint) {
     padding: 2rem;
     &:before {
