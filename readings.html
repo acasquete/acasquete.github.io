@@ -20,9 +20,7 @@ layout: default
         {% for book in site.data.readings %}
           <figure>
             
-            <a 
-              class="book-container"
-              >
+            <a class="book-container">
             
             <div class="book">
               <img
@@ -35,7 +33,7 @@ layout: default
             <figcaption>
               <p class="title">{{ book.title }}</p>
               {% if book.author  %}
-              <p class="author">de {{ book.author }}</p>
+              <p class="author">by {{ book.author }}</p>
               {% endif %}
               <!--<p class="read">{{ book.read }}</p>-->
             </figcaption>
