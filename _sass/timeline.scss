@@ -48,8 +48,7 @@ $breakpoint: 700px;
   
   padding: 1rem;
   border: 2px solid $lineColor;
-  border-image: linear-gradient(to right, $color 0%, $lineColor 100%);
-  border-image-slice: 1;
+
   position: relative;
   margin: 0.3rem;
   clear: both;
