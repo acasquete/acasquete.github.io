@@ -81,7 +81,7 @@ $gray: #dddddd;
       width: 42%;
     }
     
-    li:nth-child(even) {
+    li:nth-child(even), .right {
       float: right;
       margin-top: 2em;
     }
