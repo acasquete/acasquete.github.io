@@ -72,7 +72,6 @@ $breakpoint: 700px;
     
     &:nth-of-type(2n) {
       float: right;
-      margin: 0.3rem;
       border-image: linear-gradient(to right, $lineColor 0%, $color 100%);
       border-image-slice: 1;
 
