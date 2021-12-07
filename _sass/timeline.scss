@@ -90,7 +90,6 @@ $breakpoint: 700px;
 .timeline__item--year {
   text-align: center;
   max-width: 150px;
-  margin: 0 48px 0 auto;
   font-size: 1.8rem;
   background-color: $yearBgColor;
   line-height: 1;
@@ -103,11 +102,9 @@ $breakpoint: 700px;
   
   @media screen and (min-width: $breakpoint) {
     text-align: center;
-    margin: 1em auto;
     
     &:nth-of-type(2n) {
       float: none;
-      margin: 1em auto;
       border-image: none;
   
       &:before {
