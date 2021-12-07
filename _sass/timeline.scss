@@ -1,128 +1,106 @@
-$color: skyblue;
-$lineColor: #c7254e;
-$fontColor: #bbb;
-$bgColor1: #ccc;
-$bgColor2: #fff;
-$yearBgColor: #fff;
-$breakpoint: 700px;
+@import "compass/css3";
 
-* {
-  box-sizing: border-box;
+$gray: #dddddd;
+
+.container {
+  padding: 1em;
 }
 
 .timeline {
   position: relative;
-  padding: 1rem;
-  margin: 0 auto;
-  max-width: 1300px;
+  overflow: auto;
   
   &:before {
     content: '';
     position: absolute;
     height: 100%;
-    border: 1px solid $lineColor;
-    right: 40px;
-    top: 0;
+    width: 5px;
+    background: $gray;
+    left: 0;
   }
   
-  &:after {
-    content: "";
-    display: table;
+  h2 {
+    background: $gray;
+    max-width: 6em;
+    margin: 0 auto 1em;
+    padding: 0.5em;
+    text-align: center;
+    position: relative;
     clear: both;
   }
   
-  h3 {
-      line-height: 1em;
-      padding: 0;
+  ul {
+    list-style: none;
+    padding: 0 0 0 1em;
+    z-index: 1;
   }
-  @media screen and (min-width: $breakpoint) {
-    padding: 2rem;
+  
+  li {
+    background: $gray;
+    padding: 1em;
+    margin-bottom: 1em;
+    position: relative;
+    
     &:before {
-      left: calc(50% - 1px);
-      right: auto;
+      content: '';
+      width: 0;
+      height: 0;
+      border-top: 1em solid $gray;
+      border-left: 1em solid transparent;
+      position: absolute;
+      left: -1em;
+      top: 0;
     }
+  }
+  
+  h3 {
+    margin-top: 0;
+  }
+  
+  time {
+    font-style: italic;
   }
 }
 
-.timeline__item {
-  
-  padding: 1rem;
-  border: 2px solid $lineColor;
-
-  position: relative;
-  margin: 0.3rem;
-  clear: both;
-  
-  &:after,
-  &:before {
-    content: '';
-    position: absolute;
-  }
-  
-  &:before {
-    right: -10px;
-    top: calc(50% - 8px);
-    border-style: solid;
-    border-color: $lineColor $lineColor transparent transparent;
-    border-width: 10px;
-    transform: rotate(45deg);
-  }
-  
-  @media screen and (min-width: $breakpoint) {
-    width: calc(50% - 23px);
-    margin: 0.5rem;
-    background-color: #ccc;
-    
-    &:nth-of-type(2n) {
-      float: right;
-      
-
-      &:before {
-        right: auto;
-        left: -10px;
-      border-color:transparent transparent $lineColor $lineColor;
-      }
-    }
-  }
-}
-
-.timeline__item--year {
-  text-align: center;
-  max-width: 150px;
-  margin: 0 48px 0 auto;
-  font-size: 1.8rem;
-  background-color: $yearBgColor;
-  line-height: 1;
-  border-image: none;
-  padding: 0.3rem;
-  
-  &:before {
-    display: none;
-  }
-  
-  @media screen and (min-width: $breakpoint) {
-    text-align: center;
+@media screen and (min-width: 40em) {
+  .container {
+    max-width: 1000px;
     margin: 0 auto;
-    
-    &:nth-of-type(2n) {
-      float: none;
-      margin: 0 auto;
-      border-image: none;
+  }
   
+  .timeline {
+    &:before {
+      left: 50%;
+    }
+    
+    ul {
+      padding-left: 0;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    
+    li {
+      width: 42%;
+    }
+    
+    li:nth-child(even) {
+      float: right;
+      margin-top: 2em;
+    }
+    
+    li:nth-child(odd) {
+      float: left;
+      
       &:before {
-        display: none;
+        border-top: 1em solid $gray;
+        border-right: 1em solid transparent;
+        right: -1em;
+        left: auto;
       }
     }
+    
+    li:nth-of-type(2n+1) {
+      clear: both;
+    }
   }
-}
-
-.timeline__title {
-  margin: 0;
-  font-size: 1.5em;
-}
-
-.timeline__blurb {
-  line-height: 1.5;
-  font-size: 1rem;
-  margin: .5rem 0 0;
 }
