@@ -93,12 +93,12 @@ $gray: #dddddd;
       width: 42%;
     }
     
-    .item:nth-child(odd) {
+    .item:nth-of-type(2n) {
       float: right;
       margin-top: 2em;
     }
     
-    .item:nth-child(even) {
+    .item:nth-of-type(2n+1) {
       float: left;
       
       &:before {
