@@ -31,6 +31,10 @@ $gray: #dddddd;
 
 
   }
+
+  h2.small {
+    font-size: 2em;
+  }
   
   .itemlist {
     list-style: none;
@@ -48,7 +52,7 @@ $gray: #dddddd;
       content: '';
       width: 70px;
       height: 0;
-      border-top: 3px solid $gray;
+      border-top: 4px solid $gray;
       position: absolute;
       left: -4.5em;
       top: 20px;
@@ -102,7 +106,7 @@ $gray: #dddddd;
       float: left;
       
       &:before {
-        border-top: 3px solid $gray;
+        border-top: 4px solid $gray;
         right: -4.5em;
         left: auto;
       }
