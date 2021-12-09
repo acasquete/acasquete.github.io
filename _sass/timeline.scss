@@ -4,8 +4,8 @@ $gray: #dddddd;
   padding: 1em;
 
   h1 {
-  
     text-align: center;
+    margin-bottom: 1em;
   }
 }
 
@@ -57,7 +57,7 @@ $gray: #dddddd;
       content: '';
       width: 70px;
       height: 0;
-      border-top: 5px dashed black;
+      border-top: 3px dashed black;
       position: absolute;
       left: -4.5em;
       top: 20px;
@@ -111,7 +111,7 @@ $gray: #dddddd;
       float: left;
       
       &:before {
-        border-top: 5px dashed black;
+        border-top: 3px dashed black;
         right: -4.5em;
         left: auto;
 
