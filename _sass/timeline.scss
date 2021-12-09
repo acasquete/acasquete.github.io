@@ -52,7 +52,7 @@ $gray: #dddddd;
       content: '';
       width: 70px;
       height: 0;
-      border-top: 5px solid black;
+      border-top: 5px dashed black;
       position: absolute;
       left: -4.5em;
       top: 20px;
@@ -106,7 +106,7 @@ $gray: #dddddd;
       float: left;
       
       &:before {
-        border-top: 4px solid black;
+        border-top: 4px dashed black;
         right: -4.5em;
         left: auto;
       }
