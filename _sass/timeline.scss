@@ -13,7 +13,7 @@ $gray: #dddddd;
     position: absolute;
     height: 100%;
     width: 5px;
-    background: $gray;
+    background: black;
     left: 0;
   }
   
@@ -44,15 +44,15 @@ $gray: #dddddd;
   
   .item {
     background: $gray;
-    padding: 1em;
-    margin-bottom: 1em;
+    padding: 0 1em;
+    margin-bottom: 0;
     position: relative;
     
     &:before {
       content: '';
       width: 70px;
       height: 0;
-      border-top: 4px solid $gray;
+      border-top: 5px solid black;
       position: absolute;
       left: -4.5em;
       top: 20px;
@@ -106,7 +106,7 @@ $gray: #dddddd;
       float: left;
       
       &:before {
-        border-top: 4px solid $gray;
+        border-top: 4px solid black;
         right: -4.5em;
         left: auto;
       }
