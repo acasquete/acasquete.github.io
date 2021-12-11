@@ -52,6 +52,13 @@ $gray: #dddddd;
     padding: 0 1em;
     margin-bottom: 0;
     position: relative;
+
+    &.mono {
+      background: none;
+      text-align: right;
+      font-style: italic;
+      font-family: monospace;
+    }
     
     &:before {
       content: '';
@@ -60,7 +67,7 @@ $gray: #dddddd;
       border-top: 3px dashed black;
       position: absolute;
       left: -4.5em;
-      top: 20px;
+      top: 24px;
     }
   }
   
