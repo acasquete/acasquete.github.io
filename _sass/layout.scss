@@ -267,8 +267,9 @@
   position: relative;
   right: 50%;
   width: 100vw;
-  object-fit: none;
+  object-fit: cover;
   min-height: 250px;
+  max-height: 300px;
 }
 
 img {
