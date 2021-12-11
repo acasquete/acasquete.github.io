@@ -3,7 +3,7 @@ title: Desplegar una Web App Suave como un contenedor Docker
 tags: [docker, fsharp, functional_programming, suaveio]
 reviewed: true
 ---
-![Docker](/img/docker.jpeg)
+![Docker](/img/docker.jpeg){:.fullview}
 
 ¿Has oído hablar de Docker? Seguramente sí, a no ser que te hayas pasado los últimos meses, o años podríamos decir a estas alturas, encerrado en una cueva. Para contribuir un poco más al _hype_ creado en torno a esta tecnología, voy a dedicar una serie de entradas al uso, creación y despliegue de contenedores **Docker**. Si eres de los que no sabes de qué va todo esto y has caído en este blog, aquí encontrarás una guía introductoria a **Docker**, con los pasos necesarios para empaquetar y desplegar una aplicación web.
 
