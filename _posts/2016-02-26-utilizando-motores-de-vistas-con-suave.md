@@ -25,42 +25,43 @@ Además del paquete **Suave.Razor**, veremos que **Paket** descarga RazorEngine 
 
 A partir de este momento podremos añadir nuestra primera vista al proyecto. Solo necesitaremos agregar al proyecto el fichero `hello.cshtml` con el siguiente contenido.
 
-    <html>
-    <head>
-        <title>Suave.Razor</title>
-    </head>
-    <body>
-        <h1>Hello Razor!</h1>
-    
-        <!-- Single statement blocks  -->
-        @{ var answer = 42; }
-        @{ var message = "The answer to life the universe and everything"; }
-    
-        <!-- Inline expressions -->
-        <p>@message is @answer </p>
-    
-        <!-- Multi-statement block -->
-        @{
-            var greeting = "Welcome to Suave.Razor!";
-            var weekDay = DateTime.Now.DayOfWeek;
-            var greetingMessage = greeting + " Today is: " + weekDay;
+```html
+<html>
+<head>
+    <title>Suave.Razor</title>
+</head>
+<body>
+    <h1>Hello Razor!</h1>
+
+    <!-- Single statement blocks  -->
+    @{ var answer = 42; }
+    @{ var message = "The answer to life the universe and everything"; }
+
+    <!-- Inline expressions -->
+    <p>@message is @answer </p>
+
+    <!-- Multi-statement block -->
+    @{
+        var greeting = "Welcome to Suave.Razor!";
+        var weekDay = DateTime.Now.DayOfWeek;
+        var greetingMessage = greeting + " Today is: " + weekDay;
+    }
+    <p>The greeting is: @greetingMessage</p>
+
+    <!-- Loop Code -->
+    @{ var colors = new[] { "red", "blue", "green" }; }
+
+    <p>The content of colors is:</p>
+    <ul>
+        @foreach (var color in colors)
+        {
+            <li style="color:@color">@color</li>
         }
-        <p>The greeting is: @greetingMessage</p>
-    
-        <!-- Loop Code -->
-        @{ var colors = new[] { "red", "blue", "green" }; }
-    
-        <p>The content of colors is:</p>
-        <ul>
-            @foreach (var color in colors)
-            {
-                <li style="color:@color">@color</li>
-            }
-        </ul>
-    
-    </body>
-    </html>
-    
+    </ul>
+
+</body>
+</html>
+```
 
 Como la intención de este post no es entrar en detalle de todas las posibilidades que ofrece la sintaxis de Razor, esta vista contiene las estructuras más simples de Razor y podemos resumir la sintaxis en que los bloques de código Razor estan entre @{ … } y las expresiones en línea (variables y funciones) comienzan con @. Y, obviamente, el lenguaje utilizado en las expresiones es C#.
 
@@ -68,43 +69,46 @@ Al añadir el fichero al proyecto es importante revisar que las propiedades **Bu
 
 Y una vez que tenemos la vista preparada, solo tenemos que modificar el código para poder devolverla para una determinada ruta. Añadimos la referencia al namespace Suave.Razor y cambiamos la webpart para que realice una llamada a **Razor.razor**. Esta función tienes dos parametros: el primero es la vista que hay que parsear y el segundo es el modelo, que para este primer ejemplo lo dejamos como una lista vacía.
 
-    #r "packages/Suave/lib/net40/Suave.dll"
-    #r "packages/Suave.Razor/lib/net40/Suave.Razor.dll"
-    
-    open Suave                 
-    open Suave.Successful      
-    open Suave.Web
-    open Suave.Filters
-    open Suave.Operators
-    open Suave.Razor
-    
-    let webPart = path "/" >=> (Razor.razor "hello" [] )
-    
-    startWebServer defaultConfig webPart
-    
+```csharp
+#r "packages/Suave/lib/net40/Suave.dll"
+#r "packages/Suave.Razor/lib/net40/Suave.Razor.dll"
+
+open Suave                 
+open Suave.Successful      
+open Suave.Web
+open Suave.Filters
+open Suave.Operators
+open Suave.Razor
+
+let webPart = path "/" >=> (Razor.razor "hello" [] )
+
+startWebServer defaultConfig webPart
+```
 
 Si ejecutamos la solución y accedemos a `localhost:8083`, veremos el resultado de la template una vez procesada. En lugar de pasar una lista vacía, podemos pasar cualquier tipo como segúndo parámetro de la función razor. En el siguiente ejemplo definimos un _Record Type_ y después declaramos una lista de este tipo y lo pasamos a la función razor.
 
-    type OS = { Name: string; }
-    
-    let OSList =  [ { Name = "OSX"; }
-                    { Name = "Android"} 
-                    { Name = "Windows Phone"} ]
-    
-    let webPart = path "/" >=> Razor.razor "hello" OSList
-    
+```csharp
+type OS = { Name: string; }
+
+let OSList =  [ { Name = "OSX"; }
+                { Name = "Android"} 
+                { Name = "Windows Phone"} ]
+
+let webPart = path "/" >=> Razor.razor "hello" OSList
+``` 
     
 
 Y en la vista podemos hacer referencia a este modelo mediante la variable `Model`.
 
-    <p>Product list</p>
-    <ul>
-        @foreach (var product in Model)
-        {
-            <li>@product.Name @product.Description</li>
-        }
-    </ul>
-    
+```html
+<p>Product list</p>
+<ul>
+    @foreach (var product in Model)
+    {
+        <li>@product.Name @product.Description</li>
+    }
+</ul>
+```
 
 Experimental
 ------------
@@ -113,42 +117,43 @@ Despues de ver el funcionamiento básico con **RazorEngine**, vamos a ver cómo 
 
 Como la vista la vamos a generar con código F#, vamos a crear un nuevo fichero en el proyecto con el nombre `View.fs` en el proyecto con el siguiente contenido que examinaremos a continuación.
 
-    module View
-    
-    open Suave.Html
-    open System
-    
-    // Helpers
-    let h1 = tag "h1" [] 
-    let ul = tag "ul" [] (flatten xml)
-    let li = tag "li" []
-    let spanStyle style = spanAttr ["style", style]
-    
-    let answer = 42
-    let message = "The answer to life the universe and everything"
-    let greeting = "Welcome to Suave.Experimental!"
-    let weekDay = DateTime.Now.DayOfWeek.ToString()
-    let greetingMessage = greeting + " Today is: " + weekDay
-    
-    let colors = ["red";"blue";"green"]
-    
-    let index = 
-      html [
-          head [
-              title "Suave.Experimental"
-          ]
-    
-          body [
-    
-              h1 (text ("Hello Experimental!"))
-              p [ (text (message + " is " + string answer))]
-              p [ (text ("The greeting is:" + greetingMessage)) ]
-              p [ (text ("The content of colors is:")) ]
-              ul [ for color in colors -> li (spanStyle ("color:" + color) (text color)) ]
-          ]
-      ]
-      |> xmlToString
-    
+```csharp
+module View
+
+open Suave.Html
+open System
+
+// Helpers
+let h1 = tag "h1" [] 
+let ul = tag "ul" [] (flatten xml)
+let li = tag "li" []
+let spanStyle style = spanAttr ["style", style]
+
+let answer = 42
+let message = "The answer to life the universe and everything"
+let greeting = "Welcome to Suave.Experimental!"
+let weekDay = DateTime.Now.DayOfWeek.ToString()
+let greetingMessage = greeting + " Today is: " + weekDay
+
+let colors = ["red";"blue";"green"]
+
+let index = 
+    html [
+        head [
+            title "Suave.Experimental"
+        ]
+
+        body [
+
+            h1 (text ("Hello Experimental!"))
+            p [ (text (message + " is " + string answer))]
+            p [ (text ("The greeting is:" + greetingMessage)) ]
+            p [ (text ("The content of colors is:")) ]
+            ul [ for color in colors -> li (spanStyle ("color:" + color) (text color)) ]
+        ]
+    ]
+    |> xmlToString
+```  
 
 Este sistema de plantillas es el que posiblemente se nos haga más raro de utilizar inicialmente, sobre todo porque tenemos que aprender una nueva sintaxis y en muchas ocasiones tendremos que crea funciones para facilitarnos a estructurar el código para que sea mucho más expresivo.
 
@@ -170,20 +175,21 @@ La sintaxis utilizada en las plantillas de DotLiquid es muy similar a la utiliza
 
 En este caso, vamos a generar un tipo con todas las propiedades que necesita nuestro modelo y lo pasamos al motor de **DotLiquid** para generar la vista.
 
-    type OS = { Name: string; }
-    type Model = { message:string; weekday:string; colors: string list; products: OS list }
-    
-    let OSList =  [ { Name = "OSX"; }
-                    { Name = "Android"} 
-                    { Name = "Windows Phone"} ]
-    
-    let model = { message = "The answer to life the universe and everything";
-                  weekday = System.DateTime.Now.DayOfWeek.ToString()
-                  colors = ["red";"blue";"green"]
-                  products = OSList }
-    
-    let webPart = path "/" >=> (DotLiquid.page "index.html" model )
-    
+```csharp
+type OS = { Name: string; }
+type Model = { message:string; weekday:string; colors: string list; products: OS list }
+
+let OSList =  [ { Name = "OSX"; }
+                { Name = "Android"} 
+                { Name = "Windows Phone"} ]
+
+let model = { message = "The answer to life the universe and everything";
+                weekday = System.DateTime.Now.DayOfWeek.ToString()
+                colors = ["red";"blue";"green"]
+                products = OSList }
+
+let webPart = path "/" >=> (DotLiquid.page "index.html" model )
+``` 
 
 En este caso pasamos a la función `page` el nombre de la página completo (index.html) y el modelo.
 
@@ -192,21 +198,24 @@ Contenido estático
 
 Suave solo es capaz de servir los ficheros que están en algunas de las rutas definidas en las WebParts. Es decir, si hacemos una petición a `http://localhost:8083/styles.css`, el servidor nos devolverá un error ya que al no haber una WebPart que responda a esa ruta, no es capaz de manejar esa petición. Para poder servir contenido estático, tenemos que añadir otra alternativa a la función `choose`.
 
-    pathRegex "(.*)\.css" >=> Files.browseHome
-    
+```csharp
+pathRegex "(.*)\.css" >=> Files.browseHome
+```
 
 La WebPart `pathRegex` devuelve `Some` si el _path_ de una petición coincide con el patrón de la expresión regular. En caso afirmativo, se aplicará la WebPart **Files.browseHome**, que sirve ficheros los estáticos que está a partir del directorio raíz de la aplicación. Ahora podemos añadir un fichero CSS al proyecto, sin olvidar establecer el valor de la propiedad “Copy to Output Directory” a “Copy if never” y añadir la referencia en nuestro HTML. En el caso de **Suave.Experimental**, nos podemos crear una función para generar un elemento link.
 
-    let cssLink href = linkAttr [ "href", href; " rel", "stylesheet"; " type", "text/css" ]
-    
+```csharp
+let cssLink href = linkAttr [ "href", href; " rel", "stylesheet"; " type", "text/css" ]
+```  
 
 Y añadirlo en la cabecera de la siguiente forma:
 
-    head [
-            title "Demo"
-            cssLink "/Styles.css"
-         ]
-    
+```csharp
+head [
+        title "Demo"
+        cssLink "/Styles.css"
+        ]
+```   
 
 Resumen
 -------
