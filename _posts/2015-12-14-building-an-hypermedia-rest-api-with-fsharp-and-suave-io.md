@@ -1,6 +1,7 @@
 ---
 title: Building an Hypermedia REST API with F# and Suave.IO
 tags: [fsharp, suaveio, functional_programming, web]
+reviewed: true
 ---
 Hypermedia, also known by the acronym HATEOAS (Hypermedia as the Engine of Application State), is an architecture feature of REST applications that allows clients to fully interact with a service through resources provided dynamically by the server. This enables that client and server implementations can evolve independently.
 
@@ -12,92 +13,95 @@ Basically, for putting it into context, the solution consists in a F# Console Ap
 
 The DB module provides a dictionary in memory to store contacts details. Here we can see the full implementation of this module.
 
-    namespace SuaveRestApi.Db
-    
-    open System.Collections.Generic
-    
-    type Person = {
-      Id : int
-      Name : string
-      Age : int
-      Email : string
-    }
-    
-    module Db =        
-    
-      let peopleStorage = new Dictionary<int, Person>()
-      let getPeople () = 
-          peopleStorage.Values |> Seq.map (fun p -> p)
-      let getPerson id =
-          if peopleStorage.ContainsKey(id) then
-              Some peopleStorage.[id]
-          else
-              None
-      let createPerson person =
-          let id = peopleStorage.Values.Count + 1
-          let newPerson = {
-              Id = id
-              Name = person.Name
-              Age = person.Age
-              Email = person.Email
-          }
-          peopleStorage.Add(id, newPerson)
-          newPerson    
-    
-      let updatePersonById personId personToBeUpdated =
-          if peopleStorage.ContainsKey(personId) then
-              let updatedPerson = {
-                  Id = personId
-                  Name = personToBeUpdated.Name
-                  Age = personToBeUpdated.Age
-                  Email = personToBeUpdated.Email
-              }
-              peopleStorage.[personId] <- updatedPerson
-                  
-              Some updatedPerson
-          else 
-              None
-    
-      let updatePerson personToBeUpdated =
-          updatePersonById personToBeUpdated.Id personToBeUpdated 
-    
-      let deletePerson personId = 
-          peopleStorage.Remove(personId) |> ignore
-    
-      let isPersonExists  = peopleStorage.ContainsKey
-    
+```csharp
+namespace SuaveRestApi.Db
+
+open System.Collections.Generic
+
+type Person = {
+    Id : int
+    Name : string
+    Age : int
+    Email : string
+}
+
+module Db =        
+
+    let peopleStorage = new Dictionary<int, Person>()
+    let getPeople () = 
+        peopleStorage.Values |> Seq.map (fun p -> p)
+    let getPerson id =
+        if peopleStorage.ContainsKey(id) then
+            Some peopleStorage.[id]
+        else
+            None
+    let createPerson person =
+        let id = peopleStorage.Values.Count + 1
+        let newPerson = {
+            Id = id
+            Name = person.Name
+            Age = person.Age
+            Email = person.Email
+        }
+        peopleStorage.Add(id, newPerson)
+        newPerson    
+
+    let updatePersonById personId personToBeUpdated =
+        if peopleStorage.ContainsKey(personId) then
+            let updatedPerson = {
+                Id = personId
+                Name = personToBeUpdated.Name
+                Age = personToBeUpdated.Age
+                Email = personToBeUpdated.Email
+            }
+            peopleStorage.[personId] <- updatedPerson
+                
+            Some updatedPerson
+        else 
+            None
+
+    let updatePerson personToBeUpdated =
+        updatePersonById personToBeUpdated.Id personToBeUpdated 
+
+    let deletePerson personId = 
+        peopleStorage.Remove(personId) |> ignore
+
+    let isPersonExists  = peopleStorage.ContainsKey
+```
 
 The module RestFul contains the type RestResource representing all operations that can be performed on a restful resource abstracting the real resource from the REST API Web Part.
 
-    type RestResource<'a> = {
-      GetAll : unit -> 'a seq
-      GetById : int -> 'a option
-      IsExists : int -> bool
-      Create : 'a -> 'a
-      Update : 'a -> 'a option
-      UpdateById : int -> 'a -> 'a option
-      Delete : int -> unit
-    }
-    
+```csharp
+type RestResource<'a> = {
+    GetAll : unit -> 'a seq
+    GetById : int -> 'a option
+    IsExists : int -> bool
+    Create : 'a -> 'a
+    Update : 'a -> 'a option
+    UpdateById : int -> 'a -> 'a option
+    Delete : int -> unit
+}
+```  
 
 The main function of this module, the rest function, returns the Web Part constructed from the name of the resource and RestResource.
 
-    let rest resourceName resource =
-      
-        …    
+```csharp
+let rest resourceName resource =
     
-        choose [
-                path resourcePath >>= choose [
-                    GET >>= getAll
-                    POST >>= request (getResourceFromReq >> resource.Create >> JSON)
-                    PUT >>= request (getResourceFromReq >> resource.Update >> handleResource badRequest)
-                ]
-                DELETE >>= pathScan resourceIdPath deleteResourceById
-                GET >>= pathScan resourceIdPath getResourceById
-                PUT >>= pathScan resourceIdPath updateResourceById
-                HEAD >>= pathScan resourceIdPath isResourceExists
+    …    
+
+    choose [
+            path resourcePath >>= choose [
+                GET >>= getAll
+                POST >>= request (getResourceFromReq >> resource.Create >> JSON)
+                PUT >>= request (getResourceFromReq >> resource.Update >> handleResource badRequest)
             ]
-    
+            DELETE >>= pathScan resourceIdPath deleteResourceById
+            GET >>= pathScan resourceIdPath getResourceById
+            PUT >>= pathScan resourceIdPath updateResourceById
+            HEAD >>= pathScan resourceIdPath isResourceExists
+        ]
+```
 
 Adding Hypermedia
 -----------------
@@ -108,55 +112,61 @@ In order to standardize the response and structure of our API, we can use differ
 
 To start we will implement the minimum representation of a document Collection+JSON that consists in returning a collection object with two properties, version and a URI that points to the resource itself.
 
-    { "collection" : 
-      {
-         "version" : "1.0",
-         "href" : "http://example.org/people/"
-      } 
-    }
-    
+```json
+{ "collection" : 
+    {
+        "version" : "1.0",
+        "href" : "http://example.org/people/"
+    } 
+}
+``` 
 
 We start by creating a new type in the Restful module that we will use to store version and URI.
 
-    type Collection = {
-      Version : string
-      Href : string
-    }
-    
+```csharp
+type Collection = {
+    Version : string
+    Href : string
+}
+```
 
 And a new type generated by composition using Collection type.
 
-    type Resource = {
-        Collection: Collection
-    }
-    
+```csharp
+type Resource = {
+    Collection: Collection
+}
+```   
 
 So we can use this new type, we have to change the type for the input type that is different from the output type.
 
-    type RestResource<'a,'b> = {
-      GetAll : unit -> 'b seq
-      GetById : int -> 'b option
-      IsExists : int -> bool
-      Create : 'a -> 'b
-      Update : 'a -> 'b option
-      UpdateById : int -> 'a -> 'b option
-      Delete : int -> unit
-    }
-    
+```csharp
+type RestResource<'a,'b> = {
+    GetAll : unit -> 'b seq
+    GetById : int -> 'b option
+    IsExists : int -> bool
+    Create : 'a -> 'b
+    Update : 'a -> 'b option
+    UpdateById : int -> 'a -> 'b option
+    Delete : int -> unit
+}
+``` 
 
 We create the function getCollection that we use to return the Resource type information.
 
-    let getCollection resource =
-      let collection = { Version = "1.0"; Href = host + resourcePath }
-      collection
-    
+```csharp
+let getCollection resource =
+    let collection = { Version = "1.0"; Href = host + resourcePath }
+    collection
+```
 
 And to test this implementation, we modify the function _handleResource_ to add the call to the function and return getCollection Hypermedia links in the response.
 
-    let handleResource requestError = function
-       | Some r -> r |> getCollection |> JSON
-       | _ -> requestError
-    
+```csharp
+let handleResource requestError = function
+    | Some r -> r |> getCollection |> JSON
+    | _ -> requestError
+```
 
 If now we make a request for information from a contact, we obtain the following information:
 
@@ -166,42 +176,45 @@ As example it’s a bit weird, because we’re not showing anything about the re
 
 First step is to create the new types to store Item data and to add a new Item sequence property to the Collection type.
 
-    type Data = {
-      Name : string
-      Value : string
-    }
-    
-    type Item = {
-      Href: string
-      Data: Data list
-    }
-    
-    type Collection = {
-      Version : string
-      Href : string
-      Items : Item seq
-    }
-    
+```csharp
+type Data = {
+    Name : string
+    Value : string
+}
+
+type Item = {
+    Href: string
+    Data: Data list
+}
+
+type Collection = {
+    Version : string
+    Href : string
+    Items : Item seq
+}
+``` 
 
 And then we need to modify the getCollection function to add the value of Items property.
 
-    let getCollection items =
-      let href = host + resourcePath + "/"
-      let collection = { Version = "1.0"; Href = href; Items = items }
-      { Collection = collection }
-    
+```csharp
+let getCollection items =
+    let href = host + resourcePath + "/"
+    let collection = { Version = "1.0"; Href = href; Items = items }
+    { Collection = collection }
+```  
 
 And finally, we need to add the new two functions to generate the sequence of Items and Data properties.
 
-    let getData person = 
-      [ { Name  = "Id"; Value = string person.Id } 
-        { Name  = "Name"; Value = person.Name } 
-        { Name  = "Age"; Value = string person.Age }
-        { Name  = "Email"; Value = person.Email } ]
-    
-    let getItems resource =
-        resource |> Seq.map (fun p -> { Href= url + string p.Id; Data = p |> getData } )
-    
+```csharp
+let getData person = 
+    [ { Name  = "Id"; Value = string person.Id } 
+    { Name  = "Name"; Value = person.Name } 
+    { Name  = "Age"; Value = string person.Age }
+    { Name  = "Email"; Value = person.Email } ]
+
+let getItems resource =
+    resource |> Seq.map (fun p -> { Href= url + string p.Id; Data = p |> getData } )
+```  
 
 Now, if we make the same request we made in the previous step, we get the following response:
 
