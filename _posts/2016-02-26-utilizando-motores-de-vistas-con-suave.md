@@ -1,7 +1,10 @@
 ---
 title: Utilizando motores de vistas con Suave
 tags: [fsharp, suaveio, functional_programming]
+reviewed: true
 ---
+![.NET Core](/img/suave-views.jpeg){:.fullview}
+
 En el [post anterior](/primeros-pasos-en-el-desarrollo-web-con-suave) vimos cómo haciendo uso de la composición de funciones podíamos definir las rutas de nuestra aplicación web y devolver una respuesta con un código HTTP determinado y una cadena de texto en el cuerpo en cada una de esas respuestas. Esto lo conseguíamos fácilmente con las WebParts **OK**, **CREATED** y **ACCEPTED** que están definidas en el [módulo Succesful](https://github.com/SuaveIO/suave/blob/master/src/Suave/Combinators.fs). Pero además de devolver una cadena de texto, que nos puede ser muy útil e incluso suficiente para desarrollar una Web API, **Suave** también permite utilizar distintos motores de vistas para generar HTML y enviarlo al cliente.
 
 > Los motores de vistas nos permiten utilizar ficheros de plantillas estáticos que contienen variables que son reemplazadas en tiempo de ejecución por los valores reales.
