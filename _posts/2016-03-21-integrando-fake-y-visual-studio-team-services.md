@@ -65,7 +65,7 @@ Este script es bastante sencillo de entender incluso si esta es la primera vez q
 
 Si ejecutamos el fichero `build.cmd` obtendremos el siguiente resultado.
 
-![Hello FAKE!](/img/hello-fake.png)
+![Hello FAKE!](/img/hellofake.png)
 
 Aunque no hemos conseguido un resultado realmente sorprendende, esta primera introducción nos ha servido para conocer la estructura básica de los scripts de FAKE. Vamos a ver ahora cómo modificar el _script_ para realizar las tareas típicas de un proceso de _build_.
 
