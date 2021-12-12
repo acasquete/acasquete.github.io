@@ -31,14 +31,15 @@ Una vez instaladas estás plantillas, iniciamos el generador ejecutando `yo fsha
 
 Si abrimos el fichero del proyecto **fsproj**, veremos que el contenido es muy simple. Únicamente tenemos un fichero de script con el código mínimo para iniciar el servidor web de Suave.
 
-    #r "packages/Suave/lib/net40/Suave.dll"  
-      
-    open Suave // always open suave  
-    open Suave.Http.Successful // for OK-result  
-    open Suave.Web // for config  
+```csharp
+#r "packages/Suave/lib/net40/Suave.dll"  
     
-    startWebServer defaultConfig (OK "Hello World!")
-    
+open Suave // always open suave  
+open Suave.Http.Successful // for OK-result  
+open Suave.Web // for config  
+
+startWebServer defaultConfig (OK "Hello World!")
+```   
 
 Esta sentencia iniciará un servidor web en el puerto por defecto. Si ejecutamos la solución y abrimos en cualquier navegador la dirección `http://localhost:8083` obtendremos una respuesta con el mensaje “_Hello World!_”.
 
@@ -59,39 +60,41 @@ Vamos a comenzar analizando la primera, y de momento única, expresión que tene
 
 La función `startWebServer`, la encargada de iniciar el servidor web, requiere un _record_ de tipo **SuaveConfig** con la configuración inicial del servidor y una **WebPart**. La configuración por defecto (`defaultConfig`) está definida en **Suave.Web** en el modulo **Web.fs**.
 
-    let defaultConfig = { 
-        bindings  = [ HttpBinding.defaults ]
-        serverKey = Crypto.generateKey HttpRuntime.ServerKeyLength
-        errorHandler  = defaultErrorHandler
-        listenTimeout = TimeSpan.FromSeconds 2.
-        cancellationToken = Async.DefaultCancellationToken
-        bufferSize= 8192 // 8 KiB
-        maxOps= 100
-        mimeTypesMap  = Writers.defaultMimeTypesMap
-        homeFolder= None
-        compressedFilesFolder = None
-        logger= Loggers.saneDefaultsFor LogLevel.Info
-        tcpServerFactory  = new DefaultTcpServerFactory()
-        cookieSerialiser  = new BinaryFormatterSerialiser()
-        tlsProvider   = new DefaultTlsProvider()
-        hideHeader= false 
-        }
-    
+```csharp
+let defaultConfig = { 
+    bindings  = [ HttpBinding.defaults ]
+    serverKey = Crypto.generateKey HttpRuntime.ServerKeyLength
+    errorHandler  = defaultErrorHandler
+    listenTimeout = TimeSpan.FromSeconds 2.
+    cancellationToken = Async.DefaultCancellationToken
+    bufferSize= 8192 // 8 KiB
+    maxOps= 100
+    mimeTypesMap  = Writers.defaultMimeTypesMap
+    homeFolder= None
+    compressedFilesFolder = None
+    logger= Loggers.saneDefaultsFor LogLevel.Info
+    tcpServerFactory  = new DefaultTcpServerFactory()
+    cookieSerialiser  = new BinaryFormatterSerialiser()
+    tlsProvider   = new DefaultTlsProvider()
+    hideHeader= false 
+    }
+```   
 
 En esta configuración podemos ver varias propiedades con valores predeterminados. La configuración por defecto inicia el servidor en el puerto 8083 y utiliza un manejador de errores predeterminado que devuelve un error 500 para todas las excepciones no controladas. Para cambiar, por ejemplo, el puerto por defecto tenemos que crear una nueva configuración con un nuevo enlace Http.
 
-    #r "packages/Suave/lib/net40/Suave.dll"
-    
-    open Suave // always open suave
-    open Suave.Successful  // for OK-result
-    open Suave.Web // for config
-    open System.Net
-    
-    let newBinding = HttpBinding.mk HTTP IPAddress.Loopback 80us
-    let webConfig = { defaultConfig with bindings = [ newBinding ] }
-    
-    startWebServer webConfig (OK "Hello World!")
-    
+```csharp
+#r "packages/Suave/lib/net40/Suave.dll"
+
+open Suave // always open suave
+open Suave.Successful  // for OK-result
+open Suave.Web // for config
+open System.Net
+
+let newBinding = HttpBinding.mk HTTP IPAddress.Loopback 80us
+let webConfig = { defaultConfig with bindings = [ newBinding ] }
+
+startWebServer webConfig (OK "Hello World!")
+```  
 
 En este código, utilizamos la función **HttpBinding.mk** para crear el nuevo enlace con esquema HTTP en el puerto 80 (`us` es el sufijo que utilizamos para indicar el tipo _unsigned int_ de 16 bits). Con este nuevo enlace creamos una nueva configuración a partir de la configuración por defecto estableciendo únicamente la propiedad bindings.
 
@@ -106,15 +109,16 @@ Registrando múltiples rutas
 
 Tal y como tenemos el código ahora mismo, da igual la ruta que pidamos, ya sea `localhost` o `localhost/hello`, que siempre recibiremos la misma respuesta. Esto es porque no estamos añadiendo ninguna restricción, ni estamos definiendo más rutas en nuestro código. Vamos a ver cómo podemos restringir una WebPart a una ruta determinada.
 
-    open Suave
-    open Suave.Successful
-    open Suave.Filters
-    open Suave.Operators
-    
-    let webPart = path "/hello" >=> OK "Hello World!"
-    
-    startWebServer defaultConfig webPart
-    
+```csharp
+open Suave
+open Suave.Successful
+open Suave.Filters
+open Suave.Operators
+
+let webPart = path "/hello" >=> OK "Hello World!"
+
+startWebServer defaultConfig webPart
+``` 
 
 Ahora, al ejecutar la solución, solo obtendremos una respuesta si accedemos a `localhost/hello`. En cualquier otra obtendremos una respuesta vacía.
 
@@ -125,21 +129,24 @@ Operadores personalizados
 
 Una de las características que hace de F# un lenguaje perfecto para crear un DSL (_Domain Specific Languages_) es la posibilidad de poder sobrecargar los operadores estándar o crear nuevos operadores a partir de determinadas secuencias de caracteres. Todos los operadores en F#, incluso el operador “+” están definidos en **Microsoft.FSharp.Core.Operators**. Podemos definir o sobrecargar los operadores a nivel de clase, _record type_ o a nivel global. Por ejemplo, podemos sobrecargar el operador suma a nivel global, para cambiar radicalmente su comportamiento.
 
+```csharp
     let (+) a b = a - b
-    
+```
 
 A partir de este momento, si utilizamos el operador suma para realizar la operación “3 + 4” obtendremos “-1” como resultado. Además de los operadores matemáticos, en F# disponemos de otras definiciones de operadores. Quizá el más característico del lenguaje es el operador pipe `|>` que está definido de la siguiente forma:
 
-    let inline (|>) x f = f x
-    
+```csharp
+let inline (|>) x f = f x
+```
 
 De la misma forma, nosotros podemos definir nuestros propios operadores. Por ejemplo, podemos definir un operador que nos devuelta si una cadena coincide con una expresión regular de la siguiente manera:
 
-    open System.Text.RegularExpressions
-    
-    let (=~) input pattern =
+```csharp
+open System.Text.RegularExpressions
+
+let (=~) input pattern =
     Regex.IsMatch(input, pattern)
-    
+```
 
 Ahora podemos utilizar este operador con varios ejemplos de expresiones regulares con los siguientes resultados.
 
@@ -167,44 +174,48 @@ Combinadores, combinadores, combinadores
 
 Y volviendo al punto en el que lo dejamos, gracias al operador `>=>` combinamos la WebPart que nos devuelve la función path con la WebPart que devuelve la función OK. Si ahora queremos definir diferentes rutas, tenemos que utilizar la función **choose**, que acepta una lista de WebParts y devuelve una sola WebPart.
 
-    let webPart = 
-        choose [  
-            path "/"   >=> OK "Home"  
-            path "/first"  >=> OK "First page"  
-            path "/second" >=> OK "Second page"  
-    ]
-    
+```csharp
+let webPart = 
+    choose [  
+        path "/"   >=> OK "Home"  
+        path "/first"  >=> OK "First page"  
+        path "/second" >=> OK "Second page"  
+]
+```
 
 Como vemos, estamos constantemente utilizando la composición de funciones para obtener una **WebPart**. **En programación funcional, un combinador combina varias cosas de un mismo tipo en otra cosa del mismo tipo, o coge un valor y devuelve una nueva versión modificando ese valor**. En Suave existen dos tipos de combinadores, unos se utilizan para crear **WebParts** y combinarlos para producir nuevos WebParts y otros para combinar varios en un solo WebPart que se utiliza para inicializar el servidor web.
 
 Pero podemos agregar un nuevo nivel de composición con otra serie de combinadores. En este caso para poder diferenciar peticiones GET o POST, tenemos una serie de funciones, de combinadores, que podemos utilizar junto con las funciones choose y path que hemos visto. En el siguiente ejemplo tenemos seis rutas distintas, tres que responderán con peticiones GET y la otras tres que responderán con peticiones POST. Obviamente, además de estas dos funciones, tenemos disponibles para el resto de verbos HTTP (PUT, HEAD, CONNECT, PATCH, TRACE, OPTIONS).
 
-    let webPart =
-        choose [
-            GET >=>
-                choose [
-                path "/"   >=> OK "Get Home"
-                path "/first"  >=> OK "Get First page"
-                path "/second" >=> OK "Get Second page"
-            ]  
-            POST >=>
-                choose [  
-                path "/"   >=> OK "Post Home"
-                path "/first"  >=> OK "Post First page"
-                path "/second" >=> OK "Post Second page"
-            ]
-    ]
-    
+```csharp
+let webPart =
+    choose [
+        GET >=>
+            choose [
+            path "/"   >=> OK "Get Home"
+            path "/first"  >=> OK "Get First page"
+            path "/second" >=> OK "Get Second page"
+        ]  
+        POST >=>
+            choose [  
+            path "/"   >=> OK "Post Home"
+            path "/first"  >=> OK "Post First page"
+            path "/second" >=> OK "Post Second page"
+        ]
+]
+```
 
 Y para terminar este post, vamos a ver cómo obtener información de las rutas. Suave proporciona una característica denominada “typed routes” (rutas con tipo) que nos permite acceder a los argumentos de las rutas mediante el tipado estático. Para aprovechar esta característica tenemos que utilizar la función **pathScan** en lugar de **path** de la siguiente forma.
 
-    pathScan "/hello/%s" (fun name -> OK (sprintf "Hello %s!" name))
-    
+```csharp
+pathScan "/hello/%s" (fun name -> OK (sprintf "Hello %s!" name))
+```
 
 Como vemos, estamos pasando la ruta y una función que tiene tantos argumentos de entrada como la cadena. Podemos utilizar tantos parámetros como queramos. Por ejemplo, el siguiente caso también es válido.
 
-    pathScan "/hello/%s/%d" (fun (name, year) -> OK (sprintf "Hello %s! Happy new year %d!" name year))
-    
+```csharp
+pathScan "/hello/%s/%d" (fun (name, year) -> OK (sprintf "Hello %s! Happy new year %d!" name year))
+```    
 
 En esta ocasión si el parámetro no es un entero, nos devolverá una respuesta vacía.
 
