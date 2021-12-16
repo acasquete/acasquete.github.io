@@ -2,7 +2,7 @@
 title: Desaprender a ser una oficina tradicional
 tags: [personal]
 ---
-Durante la pandemia hemos tenido que aprender a trabajar en remoto. Quizás vernos forzados a esta situación por una situación de emergencia mundial no ha sido la mejor forma de aprender, pero hemos comprobado que trabajar en remoto, en un modelo totalmente distribuido, no solo es posible, sino que se ha demostrado que los equipos están cómodos y siguen siendo productivos.
+Durante la pandemia hemos tenido que aprender a trabajar en remoto. Vernos forzados a esta situación por una situación de emergencia mundial no ha sido la mejor forma de aprender, pero hemos comprobado que trabajar en remoto, en un modelo totalmente distribuido, no solo es posible, sino que se ha demostrado que los equipos están cómodos y siguen siendo productivos.
 
 ![seedlings](/img/work-from-home.jpg){:.fullview}
 
