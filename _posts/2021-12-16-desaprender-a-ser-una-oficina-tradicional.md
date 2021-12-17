@@ -6,7 +6,7 @@ Durante la pandemia hemos tenido que aprender a trabajar en remoto. Vernos forza
 
 ![seedlings](/img/work-from-home.jpg){:.fullview}
 
-Muchos teníamos claro que el trabajo remoto iba a tener continuidad una vez volviéramos a la normalidad. Cualquier conversación con compañeros en empresas que tenían algún grado de madurez con el trabajo remoto, siempre terminaba de la misma forma: “esto es algo que ha venido para quedarse”. Sin embargo, estaba también claro que las menos maduras volverían al trabajo en oficina, como así lo estamos constatando.
+Muchos teníamos claro que el trabajo remoto iba a tener continuidad una vez volviéramos a la normalidad. Cualquier conversación con compañeros en empresas que tenían algún grado de madurez con el trabajo remoto, siempre terminaba de la misma forma: “esto es algo que ha venido para quedarse”. Sin embargo, estaba también claro que las menos maduras volverían al trabajo en oficina, como así lo estamos comprobando.
 
 Lo curioso es que muchas compañías que ahora han elegido la opción de ser remotas, hace tan solo unos meses ni se lo planteaban. ¿Los motivos? No disponer de las herramientas o infraestructuras adecuadas, miedo a la pérdida de cultura o sentimiento de pertenencia a una empresa o equipo, imposibilidad de desprenderse de las oficinas, o simplemente, falta de confianza en los trabajadores. 
 
