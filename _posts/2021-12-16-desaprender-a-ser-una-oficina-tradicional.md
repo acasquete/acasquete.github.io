@@ -12,7 +12,7 @@ Lo curioso es que muchas compañías que ahora han elegido la opción de ser rem
 
 Estos días he tenido la oportunidad de revisar el _Handbook_ de GitLab a raíz de una formación de gestión de equipos remotos ([_How to Manage a Remote Team_](https://www.coursera.org/learn/remote-team-management/home/welcome)) y me ha permitido reforzar algunas de las ideas sobre el trabajo en remoto, pero, además, me ha dado el punto de vista de una organización que lleva a sus espaldas la experiencia remota de muchos años. Ha sido interesante revisar qué políticas y prácticas han desarrollado, conocer las preocupaciones que tenían los inversores por las posibilidades de escalado de equipos remotos y entender las diferencias de madurez de los distintos tipos de equipos remotos.
 
-En este artículo voy a centrarme en algunas consideraciones que me han parecido interesantes y que debemos tener en cuenta en las distintas etapas cuando una empresa considera o transiciona a adoptar prácticas remotas. 
+En este artículo voy a centrarme en algunas consideraciones que me han parecido interesantes y que debemos tener en cuenta en las distintas etapas por las que una empresa transiciona cuando comienza a adoptar prácticas remotas. 
 
 En primer lugar, si estás planteando la transición a remoto, es importante entender en que fase estás. Una buena manera de comenzar este proceso es preguntarse qué pasaría si mañana cada miembro del equipo decidiera trabajar desde casa. ¿Dónde se rompería la comunicación? ¿Qué tipos de acceso a la información sería necesario? ¿Qué riesgos de seguridad existirían? ¿Todas las personas estarían equipadas de la misma forma para hacer el trabajo? 
 
