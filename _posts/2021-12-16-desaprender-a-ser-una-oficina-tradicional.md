@@ -22,7 +22,7 @@ Más adelante, las empresas empiezan una **fase funcional** en la que se realiza
 
 La mayoría de las herramientas modernas de gestión de proyectos están diseñadas para permitir que los equipos distribuidos trabajen de forma individual y asíncrona. Sin embargo, sólo funcionan si los equipos tienen buenas prácticas establecidas.
 
-La siguiente fase es la que marca el punto de inflexión entre una empresa decidida a trabajar en remoto. Aquí ya se cuenta con experiencia remota y las empresas empiezan a funcionar de forma **asíncrona**. Los equipos hacen el mínimo trabajo de forma síncrona, que se relega para llamadas informales o para situaciones en las que se considera realmente necesario.
+La siguiente fase es la que marca el punto de inflexión en una empresa decidida a trabajar en remoto. Aquí ya se cuenta con experiencia remota y las empresas empiezan a funcionar de forma **asíncrona**. Los equipos hacen el mínimo trabajo de forma síncrona, que se relega para llamadas informales o para situaciones en las que se considera realmente necesario.
 
 Para que esto sea posible, la documentación debe convertirse en un sistema centralizado de fuente única de verdad y estar constantemente actualizada. El reto aquí es crear una cultura auténtica y facilitar la comunicación informal. Es interesante, por ejemplo, la política de asíncronía de GitLab, en la que después de dos comunicaciones asíncronas no satisfactorias sobre un tema o tarea, se convoca una reunión para discutirla y cuando se ha entendido claramente se prosigue de forma asíncrona.
 
