@@ -1,6 +1,7 @@
 ---
 title: Programación basada en agentes
 tags: [fsharp, functional_programming]
+reviewed: true
 ---
 ![Agents](/img/agents.png){:.fullview}
 
