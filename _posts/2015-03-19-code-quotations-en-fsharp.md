@@ -13,10 +13,10 @@ Las _Code Quotations_ son equivalentes a los objetos **Expression<>** de C#, en 
 Expression<Func<int, int>> expr = x => x + 1;
 ```
 
-En F# podemos obtener una _Code Quotation_ poniendo los símbolos **<@ @>** o **<@@ @@>** alrededor de una expresión. La prueba más sencilla que podemos hacer es abrir la ventana _F# Interactive_ y escribir el siguiente código:
+En F# podemos obtener una _Code Quotation_ poniendo los símbolos **\<\@ \@\>** o **\<\@\@ \@\@\>** alrededor de una expresión. La prueba más sencilla que podemos hacer es abrir la ventana _F# Interactive_ y escribir el siguiente código:
 
 ```csharp
-    <@ 2 + 3 @>;;
+<@ 2 + 3 @>;;
 ```
 
 El compilador no calculará el valor de la expresión, en su lugar generará el siguiente resultado:
