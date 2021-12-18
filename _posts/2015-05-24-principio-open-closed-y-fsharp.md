@@ -35,8 +35,8 @@ La función **doublenegative** no devuelve un valor, sino que devuelve otra func
 Si ejecutamos la función **doublenegative** obtendremos el siguiente resultado:
 
 ```bash
-    > doublenegative 2;;
-    val it : int = -4
+> doublenegative 2;;
+val it : int = -4
 ```
 
 Aunque en un primer momento este operador podría parecer similar al operador de canalización (o _pipeline_), si nos fijamos en la implementación veremos que es radicalmente distinta ya que el operador de composición `>>` acepta dos funciones y devuelve una función y el de canalización devuelve un valor a partir de una función y un argumento. En F#, la función de composición está definida de la siguiente forma:
@@ -48,7 +48,7 @@ let inline (>>) f g x = g (f x)
 Mientras que el operador de canalización está definido con la siguiente función:
 
 ```csharp
-    let inline (|>) x f = f x
+let inline (|>) x f = f x
 ```
 
 Adicionalmente, en F# también disponemos del operador `<<` (operador de composición hacia atrás), con el que podemos realizar composición de funciones en el orden inverso. En este caso, la función que define el operador de composición inverso es la siguiente:
