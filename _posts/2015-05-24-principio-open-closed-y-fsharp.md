@@ -3,7 +3,7 @@ title: El principio Open-Closed y F#
 tags: [fsharp, functional_programming]
 reviewed: true
 ---
-![Agents](/img/open-sign.png){:.fullview}
+![Open Sign](/img/open-sign.png){:.fullview}
 
 En la programación orientada a objetos, el **principio Open/Closed** (_Open/Close Principle_, OCP) establece que “las entidades de software deben estar abiertas a extensión, pero cerradas a modificación”. Detrás de este enunciado nos encontramos con el corazón de la OOP, ya que la conformidad con este principio es lo produce los mayores beneficios en cuanto mantenibilidad y reusabilidad del código.
 
