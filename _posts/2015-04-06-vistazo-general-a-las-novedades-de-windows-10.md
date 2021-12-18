@@ -49,7 +49,7 @@ await Windows.System.Launcher.LaunchUriAsync(new Uri(uri));
 También podemos utilizar el control MapControl (MVVM _friendly_) para poder integrar mapas en nuestra app. Es el mismo control que teníamos en Windows Phone 8.1 pero ahora lo tenemos en el namespace **Windows.UI.Xaml.Maps**. Para utilizarlo es tan sencillo como añadir:
 
 ```xml
- <pre class="brush:xml"><maps:MapControl x:Name=”myMap” /> 
+<maps:MapControl x:Name=”myMap” /> 
  ```
 
 En este control podemos establecer propiedades básicas como **ZoomLevel**, **Heading**, **DesiredPitch** y para añadir elementos utilizamos un control hijo.
@@ -66,7 +66,7 @@ InkCanvas
 Un nuevo control de dibujo con soporte para todos los dispositivos y que permite agregar contenido escrito a mano en una página.
 
 ```html
-    <a href="/img/windows10-inkcanvas.jpg">![windows10-inkcanvas](/img/windows10-inkcanvas-1024x576.jpg)</a>
+<a href="/img/windows10-inkcanvas.jpg">![windows10-inkcanvas](/img/windows10-inkcanvas-1024x576.jpg)</a>
 ```
 
 El uso es muy sencillo aunque yo no lo he podido ver en funcionamiento ya que en las primeras pruebas no ha funcionado. Seguiremos informado...
