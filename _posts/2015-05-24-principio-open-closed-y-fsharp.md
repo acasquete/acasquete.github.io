@@ -1,7 +1,10 @@
 ---
 title: El principio Open-Closed y F#
 tags: [fsharp, functional_programming]
+reviewed: true
 ---
+![Agents](/img/open-sign.png){:.fullview}
+
 En la programación orientada a objetos, el **principio Open/Closed** (_Open/Close Principle_, OCP) establece que “las entidades de software deben estar abiertas a extensión, pero cerradas a modificación”. Detrás de este enunciado nos encontramos con el corazón de la OOP, ya que la conformidad con este principio es lo produce los mayores beneficios en cuanto mantenibilidad y reusabilidad del código.
 
 El OCP intenta evitar los “malos” diseños, entendiendo como tales, aquellos en los que al realizar un solo cambio en un programa da como resultado una serie de cambios en los módulos de los que depende. Por lo tanto, **para poder crear diseños que son estables a los cambios durante su ciclo de vida, tenemos que extender el comportamiento añadiendo nuevo código y no cambiar el código antiguo que funciona**.
@@ -15,76 +18,85 @@ Composición de funciones
 
 La composición de funciones consiste en la creación de una nueva función basada en otras funciones. Por ejemplo, supongamos que tenemos las siguientes dos funciones:
 
-    let double x = x * 2
-    
-    let negative x = x * -1
-    
+```csharp
+let double x = x * 2
+
+let negative x = x * -1
+```
 
 y queremos definir una nueva función que sea resultado de la composición de las dos funciones definidas previamente. Utilizando el operador de composición podemos declararla de la siguiente forma:
 
-    let doublenegative = double >> negative
-    
+```csharp
+let doublenegative = double >> negative
+```
 
 La función **doublenegative** no devuelve un valor, sino que devuelve otra función cuya firma es `(int -> int)`. De esta forma, estamos creando una nueva función a partir de la composición de las funciones **double** y **negative**. En este caso, primero se aplica la función **double** y luego se aplica la función **negative** sobre el resultado anterior.
 
 Si ejecutamos la función **doublenegative** obtendremos el siguiente resultado:
 
+```bash
     > doublenegative 2;;
     val it : int = -4
-    
+```
 
 Aunque en un primer momento este operador podría parecer similar al operador de canalización (o _pipeline_), si nos fijamos en la implementación veremos que es radicalmente distinta ya que el operador de composición `>>` acepta dos funciones y devuelve una función y el de canalización devuelve un valor a partir de una función y un argumento. En F#, la función de composición está definida de la siguiente forma:
 
-    let inline (>>) f g x = g (f x)
-    
+```csharp
+let inline (>>) f g x = g (f x)
+```
 
 Mientras que el operador de canalización está definido con la siguiente función:
 
+```csharp
     let inline (|>) x f = f x
-    
+```
 
 Adicionalmente, en F# también disponemos del operador `<<` (operador de composición hacia atrás), con el que podemos realizar composición de funciones en el orden inverso. En este caso, la función que define el operador de composición inverso es la siguiente:
 
-    let inline (<<) f g x = f (g x)
-    
+```csharp
+let inline (<<) f g x = f (g x)
+```
 
 A continuación se muestra un sencillo ejemplo que muestra el comportamiento de los dos operadores de composición de funciones.
 
-    let negative x = x * -1 
-    
-    let square x = x * x
-    
-    let negativesquare = negative >> square
-    
-    let squarenegative = negative << square
-    
-    > negativesquare 2;;
-    val it : int = 4
-    
-    > squarenegative 2;;
-    val it : int = -4
-    
+```csharp
+let negative x = x * -1 
+
+let square x = x * x
+
+let negativesquare = negative >> square
+
+let squarenegative = negative << square
+
+> negativesquare 2;;
+val it : int = 4
+
+> squarenegative 2;;
+val it : int = -4
+```
 
 Aumento de tipo
 ---------------
 
 En [entradas anteriores](/uniones-discriminadas-y-jerarquia-de-objetos/) vimos como en F# podemos añadir funciones adjuntas a las **uniones discriminadas** y a los **_record types_**. En el ejemplo siguiente se muestra la declaración de un _record type_ con la función **area** adjunta.
 
-    type Shape = 
-        { width: int; height: int }
-        member this.area =
-            this.width * this.height
-    
+```csharp
+type Shape = 
+    { width: int; height: int }
+    member this.area =
+        this.width * this.height
+```
 
 En lugar de escribir el código de la función a la vez que la definición del tipo, podemos implementar la funcionalidad asociada con el tipo en una función separada y utilizar el aumento de tipo para hacer esa funcionalidad disponible como un miembro. El siguiente código muestra cómo hacerlo siguiendo el ejemplo anterior:
 
-    type Shape = { width: int; height: int }
-    
-    let area shape = shape.width * shape.height 
-    
-    type Shape with
-        member this.area = area this
-    
+```csharp
+type Shape = { width: int; height: int }
+
+let area shape = shape.width * shape.height 
+
+type Shape with
+    member this.area = area this
+```
 
 Esto permite inyectar fácilmente nuevas funcionalidades a los tipos conocidos y hacer los DSL más legibles. Otro beneficio del uso de este patrón es que la inferencia de tipos funciona mucho mejor con el estilo de programación funcional que con el estilo orientado a objetos.
 
