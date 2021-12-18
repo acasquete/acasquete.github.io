@@ -1,6 +1,7 @@
 ---
 title: Code Quotations en F#
 tags: [fsharp, functional_programming]
+reviewed: true
 ---
 Las [expresiones de cálculo que vimos en un post anterior](/expresiones-de-calculo-personalizadas "Expresiones de cálculo personalizadas") se pueden utilizar para dar un significado distinto al código; sin embargo, tienen ciertas limitaciones. Por poner un ejemplo, no podemos manipular el código y ejecutarlo en un entorno diferente, al igual que hace **LINQ to SQL**. Si queremos hacer algo parecido en F#, podemos lograrlo utilizando una característica del lenguaje llamada _Code Quotations_ o expresiones de código delimitadas, que permite generar y usar expresiones de código F# de forma programática, de forma que es posible acceder a la información de tipo de un bloque de código y además ver cómo está estructurado, conocido normalmente como árbol de sintaxis abstracto (_Abstract-Syntax Tree_ o AST).
 
