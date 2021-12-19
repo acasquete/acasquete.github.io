@@ -7,7 +7,7 @@ En una entrada anterior vimos cómo con [_pattern matching_](/pattern-matching-c
 
 En esta entrada veremos que con el uso de los patrones activos aumentaremos la potencia de _pattern matching_ cuando los tipos de patrones incorporados no nos sean útiles para nuestro propósito, a la vez que añadiremos claridad a nuestro código, ya que podremos simplificar las construcciones eliminando el uso de las protecciones **when**.
 
-Los patrones activos son un tipo especial de definición de función llamada reconocedor activo (_active recognizer_), donde definimos los casos que podemos utilizar en las expresiones de _pattern matching_. Los nombres de los casos están delimitados por los símbolos (| y |), llamados delimitadores de patrones activos o _banana clips_ y cada caso está separado por un separador vertical.
+Los patrones activos son un tipo especial de definición de función llamada reconocedor activo (_active recognizer_), donde definimos los casos que podemos utilizar en las expresiones de _pattern matching_. Los nombres de los casos están delimitados por los símbolos (\| y \|), llamados delimitadores de patrones activos o _banana clips_ y cada caso está separado por un separador vertical.
 
 La sintaxis de la definición de patrones activos es la siguiente:
 
