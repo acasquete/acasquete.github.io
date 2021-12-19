@@ -11,7 +11,7 @@ Muchas veces se compara _pattern matching_ con la sentencia switch de C#, yo mis
 
 _Pattern matching_ consiste en una serie de reglas o funciones que se ejecutarán solo cuando la expresión de entrada coincide con un determinado patrón. La expresión de _pattern matching_ devuelve el resultado de la función que ha coincidido, de tal forma que el tipo de valor devuelto de todas las funciones debe ser el mismo.
 
-Para crear un _pattern matching_, utilizamos la palabra clave **match** seguida de la expresión de entrada y **with** y mediante la barra vertical | declaramos la lista de reglas. El esquema más simple de _pattern matching_ tiene el siguiente aspecto.
+Para crear un _pattern matching_, utilizamos la palabra clave **match** seguida de la expresión de entrada y **with** y mediante la barra vertical \| declaramos la lista de reglas. El esquema más simple de _pattern matching_ tiene el siguiente aspecto.
 
 ```csharp
 match expr with
