@@ -1,6 +1,7 @@
 ---
 title: Pattern matching con F#
 tags: [fsharp, functional_programming]
+reviewed: true
 ---
 ![Query Expressions](/img/pattern-matching.png){:.fullview}
 
