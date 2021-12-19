@@ -7,14 +7,6 @@
 	<title>{%if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{%if page.description %}{{ page.description }}{% else %}{{ post.content | strip_html | truncatewords:75 }}{% endif %}">
 
-  {% raw %}
-{% if post.content contains '<!--more-->' %}
- {{ post.content | split:'<!--more-->' | first }}
-{% else %}
- {{ post.excerpt }}
-{% endif %}
-{% endraw %}
-
 	<!-- CSS & fonts -->
 	<link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl | replace: '//', '/' }}">
 	<link href="/css/lightbox.min.css" rel="stylesheet" />
