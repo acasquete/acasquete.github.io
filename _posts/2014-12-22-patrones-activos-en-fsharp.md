@@ -3,7 +3,7 @@ title: Patrones activos en F#
 tags: [fsharp, functional_programming]
 reviewed: true
 ---
-En una entrada anterior vimos cómo con [_pattern matching_](/pattern-matching-con-fsharp/ "Pattern matching con F#") podemos hacer nuestro código más expresivo cuando queremos comparar datos con estructuras lógicas. Cada patrón nos permite comparar los valores de entrada, descomponerlos y combinarlos con una estructura de datos. Sin embargo, con _pattern matching_ los patrones soportados están limitados a unos tipos determinados, como listas, tuplas o matrices y valores constantes de tipo cadena, numérico, enumeración, etc.
+En una entrada anterior vimos cómo con [_pattern matching_](/pattern-matching-con-fsharp "Pattern matching con F#") podemos hacer nuestro código más expresivo cuando queremos comparar datos con estructuras lógicas. Cada patrón nos permite comparar los valores de entrada, descomponerlos y combinarlos con una estructura de datos. Sin embargo, con _pattern matching_ los patrones soportados están limitados a unos tipos determinados, como listas, tuplas o matrices y valores constantes de tipo cadena, numérico, enumeración, etc.
 
 En esta entrada veremos que con el uso de los patrones activos aumentaremos la potencia de _pattern matching_ cuando los tipos de patrones incorporados no nos sean útiles para nuestro propósito, a la vez que añadiremos claridad a nuestro código, ya que podremos simplificar las construcciones eliminando el uso de las protecciones **when**.
 
