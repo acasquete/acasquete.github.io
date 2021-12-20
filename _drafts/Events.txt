@@ -1,0 +1,164 @@
+Eventos
+
+Publicado el 27 de diciembre de 2013
+Estos son los eventos en los que he participado y voy a participar en los próximos meses.
+
+2015
+
+Codemotion
+Desarrollo móvil con Xamarin y F#
+Madrid, Noviembre 2015
+
+Windows 10: Hel10 World!
+Construyendo una suite empresarial de aplicaciones con App Services
+Madrid, Octubre 2015
+
+Software Craftsmanship Barcelona 2015
+#noestimates
+Barcelona, Octubre 2015
+
+Barcelona F# Meetup
+Web Programming with F# 
+Barcelona, Octubre 2015
+
+GAPAND 2015
+Domain Driven Design with F#
+Andorra, Julio 2015
+
+CatDotNet
+Cloud Computing with MBrace The Cloud
+Barcelona, Mayo 2015
+
+Barcelona F# Meetup
+Domain Driven Design with F#
+Barcelona, Abril 2015
+
+CatDotNet
+Redis: no es solo una caché
+Barcelona, Marzo 2015
+
+Microsoft dotNet Spain Conference
+Async Best Practices
+Por qué deberías plantearte F# para tu próximo proyecto
+Madrid, Febrero 2015
+
+Barcelona F# Meetup
+Coding Dojo: Machine Learning con F#
+Barcelona, Febrero 2015
+
+Andorra dot net
+Getting Started with F#
+Andorra, Enero 2015
+
+Barcelona F# Meetup
+F# Type Providers Hands On
+Barcelona, Enero 2015
+
+2014
+
+Reconnect()
+Desarrollo de aplicaciones multiplataforma con Visual Studio
+Barcelona, Diciembre 2014
+
+Barcelona F# Meetup
+Inaugural Meetup & Data Structures with F#
+Barcelona, Diciembre 2014
+
+Software Craftsmanship Barcelona 2014
+Functional Programming Workshop with F#
+Barcelona, Octubre 2014
+
+#programadorIO Hangout
+Presenting TypeScript
+Online, Septiembre 2014
+
+CatDotNet Workshops
+F# First Contact Workshop
+Barcelona, Junio 2014
+
+Gusenet 2014: Back to my Roots
+Programación funcional reactiva
+Torrevieja, Abril 2014
+
+//learn Global Community Webcast
+Ciclo de vida apps XAML
+Online, Abril 2014
+
+CatDotNet Open Space 2014
+Open Space
+Barcelona, Abril 2014
+
+Global Windows Azure Bootcamp 
+Entornos Híbridos con Windows Azure Web Sites
+Madrid, Marzo 2014
+
+Barcelona Mobile Open Space 2014
+Open Space: Windows Azure Notification Hubs
+Barcelona, 15 Marzo 2014
+
+Microsoft ALM day
+Mayor productividad y comunicación entre los integrantes del equipo de trabajo con Microsoft ALM
+Barcelona, 20 Febrero 2014
+
+Webinar
+Mensajería y Networking con Windows Azure Service Bus
+Online, 25 Febrero 2014
+
+Webinar
+Web sin límites con Windows Azure Web Sites
+Online, 18 Febrero 2014
+
+Webcast comunidades técnicas
+Introducción a la programación funcional con F#
+Online, Enero 2014
+
+2013
+
+MCT Summit Europe
+Working with disconnected data in Windows Store apps
+Helsinki, Finlandia, Noviembre 2013
+
+Evento lanzamiento Visual Studio 2013
+Using Windows Azure to develop secure and deploy cloud applications
+Barcelona, Noviembre 2013
+
+Codemotion 2013
+Arquitecturas distribuidas con Windows Azure Service Bus
+Backend con Windows Azure Mobile Services
+Madrid, Octubre, 2013
+
+Gusenet
+Getting Started F#
+Murcia, Septiembre 2013
+
+#W8IO Desarrollo Web
+Novedades en Windows 8.1 para usuarios y desarrolladores
+Online, Septiembre 2013
+
+Geek-a-Paloozaaaa!!! 2013
+Arquitecturas distribuidas con Windows Azure Service Bus
+Andorra, Junio 2013
+
+Four Sessions Techdencias
+Sex on the beach (Node.js, MongoDB & Windows Azure)
+Barcelona, Junio 2013
+
+Gusenet #TunodeYoxaml #YonodeTuxaml
+Arquitecturas distribuidas con Windows Azure Service Bus
+Alicante, Abril 2013
+
+Four Sessions Techdencias
+Arquitecturas distribuidas con Windows 8 y Windows Azure
+Barcelona, Marzo 2013
+
+#W8IO Desarrollo Web
+Live Tiles en Windows 8
+Online, Marzo 2013
+
+Four Sessions Techdencias
+Juegos Sociales con Windows 8 y Windows Azure
+Barcelona, Enero 2013
+
+#W8IO Desarrollo Web
+Modelos de negocio soportados por Windows Store
+Online, Enero 2013
