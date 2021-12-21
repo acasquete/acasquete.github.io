@@ -146,15 +146,15 @@ Si ejecutamos ahora la aplicación, veremos el siguiente resultado.
 Llegados a este punto, el límite para crear un diseño personalizado es nuestra imaginación. Vamos a crear un método (**indexToPoint**) que será el encargado de calcular y devolver las coordenadas x e y, según el índice de cada elemento. 
     
 ```js
-    var centerPointY = (site.viewportSize.height - 72) / 2;
-    var centerPointX = (site.viewportSize.width - 144) / 2;
-    
-    for (var itemIndex = 0; itemIndex < items.length; itemIndex++) {
-      var item = items[itemIndex];
-      var point = this._indexToPoint(itemIndex);
-      item.style.left = centerPointX + point.x + "px";
-      item.style.top = centerPointY + point.y + "px";
-    }
+var centerPointY = (site.viewportSize.height - 72) / 2;
+var centerPointX = (site.viewportSize.width - 144) / 2;
+
+for (var itemIndex = 0; itemIndex < items.length; itemIndex++) {
+    var item = items[itemIndex];
+    var point = this._indexToPoint(itemIndex);
+    item.style.left = centerPointX + point.x + "px";
+    item.style.top = centerPointY + point.y + "px";
+}
 ```
     
 Como se puede ver, estamos ubicando los elementos partiendo del centro del **ListView**, para lo que utilizamos el objeto **site.viewportSize** . Y para devolver las coordenadas según una espiral de Ulam, utilizaremos el siguiente código.
