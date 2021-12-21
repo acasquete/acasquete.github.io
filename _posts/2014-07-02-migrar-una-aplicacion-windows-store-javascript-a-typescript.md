@@ -59,8 +59,8 @@ Si ejecutamos la aplicación, obtendremos varios errores de compilación "*Could
 Pero por suerte no tendremos que escribir nosotros ese fichero de declaración. El proyecto [DefinitelyTyped](https://github.com/DefinitelyTyped) contiene las definiciones para las principales librerías JavaScript, entre las que encontramos WinJS y WinRT. Además estas definiciones las tenemos disponibles en NuGet, así que para agregarlas al proyecto simplemente tenemos que añadir los paquetes **winjs.TypeScript.DefinitelyTyped** y **winrt.TypeScript.DefinitelyTyped** ejecutando en la Package Manager Console los dos comandos:
     
 ```xml
-    Install-Package winjs.TypeScript.DefinitelyTyped
-    Install-Package winrt.TypeScript.DefinitelyTyped
+Install-Package winjs.TypeScript.DefinitelyTyped
+Install-Package winrt.TypeScript.DefinitelyTyped
 ```
     
 Después de agregarlos, podremos ver una nueva carpeta **typings** dentro de la carpeta **Scripts**, que contendrá los dos ficheros de declaraciones que tendremos que referenciar utilizando el tag reference al principio del fichero data.ts.
