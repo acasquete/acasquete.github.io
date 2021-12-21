@@ -1,6 +1,7 @@
 ---
 title: //learn Global Community Webcast
 tags: [event]
+reviewed: true
 ---
 El equipo de Windows Client de Microsoft junto con la comunidad de MVPs organiza el primer evento online global de la comunidad (_Global Community Webcast event_). Este evento se realizará el próximo 24 de abril y durante 6 horas podremos conocer, a través de una serie de webcasts, las novedades introducidas en la plataforma de desarrollo de Windows Phone 8.1.
 
