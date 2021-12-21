@@ -196,36 +196,36 @@ Al igual que con data.ts, lo primero que haremos será sustituir el **namespace*
 ```ts
 export class PageControlNavigator {
     
-        public element = <HTMLElement>null;
-        public home = "";
-        \_lastNavigationPromise = WinJS.Promise.as(null);
-        \_lastViewstate = 0;
-        \_disposed = false;
-        \_eventHandlerRemover = \[\];
-    
-        constructor(element: Element, options: { home: string } ) {
-            this.element = <HTMLElement>(element || document.createElement("div"));
-            this.element.appendChild(this.createPageElement());
-    
-            this.home = options.home;
-    
-            var that = this;
-    
-            function addRemovableEventListener(e, eventName, handler, capture) {
-                e.addEventListener(eventName, handler, capture);
-                that.\_eventHandlerRemover.push(function () {
-                    e.removeEventListener(eventName, handler);
-                });
-            };
-    
-            addRemovableEventListener(nav, 'navigating', this.navigating.bind(this), false);
-            addRemovableEventListener(nav, 'navigated', this.navigated.bind(this), false);
-    
-            window.onresize = this.resized.bind(this);
-            Application.navigator = this;
-        }
-    
-        // Código omitido
+    public element = <HTMLElement>null;
+    public home = "";
+    \_lastNavigationPromise = WinJS.Promise.as(null);
+    \_lastViewstate = 0;
+    \_disposed = false;
+    \_eventHandlerRemover = \[\];
+
+    constructor(element: Element, options: { home: string } ) {
+        this.element = <HTMLElement>(element || document.createElement("div"));
+        this.element.appendChild(this.createPageElement());
+
+        this.home = options.home;
+
+        var that = this;
+
+        function addRemovableEventListener(e, eventName, handler, capture) {
+            e.addEventListener(eventName, handler, capture);
+            that.\_eventHandlerRemover.push(function () {
+                e.removeEventListener(eventName, handler);
+            });
+        };
+
+        addRemovableEventListener(nav, 'navigating', this.navigating.bind(this), false);
+        addRemovableEventListener(nav, 'navigated', this.navigated.bind(this), false);
+
+        window.onresize = this.resized.bind(this);
+        Application.navigator = this;
+    }
+
+    // Código omitido
 }
 ```
 
