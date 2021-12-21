@@ -32,18 +32,18 @@ Activando las notificaciones en WAT
 Como he comentando al principio, toda la configuración en WAT se realiza mediante un fichero JSON. Para activar las notificaciones Push simplemente tenemos que modificar la sección _notifications_.
 
 ```json
-    "notifications": {
-      "enabled": true,
-      "azureNotificationHub": {
-        "enabled": true,
-        "endpoint": "https://tokiota-ns.servicebus.windows.net/",
-        "secret": "[Secret]",
-        "path": "tokiota",
-        "tags": [
-          "Live Tiles", "Events", "News"
-        ]
-      }
-    }
+"notifications": {
+  "enabled": true,
+  "azureNotificationHub": {
+    "enabled": true,
+    "endpoint": "https://tokiota-ns.servicebus.windows.net/",
+    "secret": "[Secret]",
+    "path": "tokiota",
+    "tags": [
+      "Live Tiles", "Events", "News"
+    ]
+  }
+}
 ```
     
 Los elementos importantes son **endpoint**, **secret**, **path** y **tags**. En **endpoint** indicaremos la dirección del namespace del servicio de Service Bus. En **secret** tendremos que establecer la clave de la cadena de conexión *DefaultListenSharedAccessSignature*. En **path** indicaremos el nombre del hub de notificaciones y, por último, en **tags** podemos definir un array de cadenas que indicarán las categorías a las que el usuario se podrá suscribir. 
