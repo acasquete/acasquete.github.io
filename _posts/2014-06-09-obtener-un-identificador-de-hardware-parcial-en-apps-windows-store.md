@@ -1,6 +1,7 @@
 ---
 title: Obtener un identificador de hardware parcial en apps Windows Store
 tags: [windows_store, winrt]
+reviewed: true
 ---
 Un requisito habitual en las aplicaciones que ofrecen contenido bajo un sistema de licenciamiento es poder limitar el uso que se hace de una cuenta de usuario en un número determinado de dispositivos. Para poder implementar esta restricción, tenemos que obtener y asociar el identificador de dispositivo con la cuenta de usuario para poder después autentificar todas las llamadas de los servicios mediante este identificador.
 
@@ -10,15 +11,15 @@ En las aplicaciones Windows 8, sin embargo, se utiliza el identificador de hardw
 
 Los componentes de hardware que se evalúan para generar el ASHWID son los siguientes:
 
-*   CPU del procesador
-*   Tamaño de la memoria
-*   Número de serie del dispositivo de disco
-*   Adaptador de red
-*   Adaptador de audio
-*   Estación de acoplamiento
-*   Dirección de Bluetooth
-*   Identificador de dispositivo de banda ancha móvil
-*   BIOS
+* CPU del procesador
+* Tamaño de la memoria
+* Número de serie del dispositivo de disco
+* Adaptador de red
+* Adaptador de audio
+* Estación de acoplamiento
+* Dirección de Bluetooth
+* Identificador de dispositivo de banda ancha móvil
+* BIOS
 
 La secuencia de bytes del ASHWID esta formada por grupos de cuatro bytes en donde los dos primeros bytes contienen el tipo de componente y los dos bytes siguientes contienen el valor. Si un dispositivo no dispone un componente concreto, este no formará parte del ASHWID. Y si el dispositivo tiene varios componentes del mismo tipo, por ejemplo, tiene varios adaptadores de red o varias unidades de disco físicos, el ASHWID contendrá un valor para cada uno de ellos, aunque tampoco se garantiza que aparezcan de forma secuencial.
 
@@ -28,84 +29,84 @@ Sin embargo, si tenemos que utilizar un servicio de terceros que nos solicita un
 
 Para comenzar, creamos una enumeración con los distintos tipos de hardware que se evalúan para generar el ID.
 
-    public enum HardwareIdType
+```csharp
+public enum HardwareIdType
+{
+    Invalid = 0,
+    Processor = 1,
+    Memory = 2,
+    DiskDevice = 3,
+    NetworkAdapter = 4,
+    DockingStation = 6,
+    MobileBroadband = 7,
+    Bluetooth = 8,
+    Bios = 9
+};
+```
+    
+A continuación creamos un método al que le pasamos un array de la enumeración que acabamos de definir, para pasar los elementos que queremos que se tenga en cuenta para generar el ID. Este método obtiene el ASHWID mediante el método **GetPackageSpecificToken** de la clase **HardwareIdentification**. 
+    
+```csharp
+public static string GetPartialHardwareId(params HardwareIdType[] components)
+{
+    var hwToken = HardwareIdentification.GetPackageSpecificToken(null);
+    var hwId = hwToken.Id;
+    var hwIdBytes = hwId.ToArray();
+
+    var filteredHwIdBytes = GetFilteredHardwareIdArray(hwIdBytes, components);
+
+    return Convert.ToBase64String(filteredHwIdBytes);
+}
+```
+
+El siguiente método es el que descompone la secuencia de bytes del identificador, comprobando si los dos primeros bytes de cada grupo de 4 corresponde con algún tipo de hardware que hemos indicado en el array y en caso afirmativo se va agregando el valor de cada en una lista de bytes.
+    
+```csharp
+internal static byte[] GetFilteredHardwareIdArray(byte[] hwId, params HardwareIdType[] components)
+{
+    if (hwId.Length % 4 != 0)
     {
-        Invalid = 0,
-        Processor = 1,
-        Memory = 2,
-        DiskDevice = 3,
-        NetworkAdapter = 4,
-        DockingStation = 6,
-        MobileBroadband = 7,
-        Bluetooth = 8,
-        Bios = 9
-    };
-    </pre>
-    
-    A continuación creamos un método al que le pasamos un array de la enumeración que acabamos de definir, para pasar los elementos que queremos que se tenga en cuenta para generar el ID. Este método obtiene el ASHWID mediante el método **GetPackageSpecificToken** de la clase **HardwareIdentification**. 
-    
-    <pre class="brush:csharp">
-    public static string GetPartialHardwareId(params HardwareIdType[] components)
-    {
-        var hwToken = HardwareIdentification.GetPackageSpecificToken(null);
-        var hwId = hwToken.Id;
-        var hwIdBytes = hwId.ToArray();
-    
-        var filteredHwIdBytes = GetFilteredHardwareIdArray(hwIdBytes, components);
-    
-        return Convert.ToBase64String(filteredHwIdBytes);
+        throw new ArgumentException("Invalid Hardware Id", "hwId");
     }
-    </pre>
-    
-    El siguiente método es el que descompone la secuencia de bytes del identificador, comprobando si los dos primeros bytes de cada grupo de 4 corresponde con algún tipo de hardware que hemos indicado en el array y en caso afirmativo se va agregando el valor de cada en una lista de bytes.
-    
-    <pre class="brush:csharp">
-    internal static byte[] GetFilteredHardwareIdArray(byte[] hwId, params HardwareIdType[] components)
+
+    var hardwareId = new List&lt;byte&gt;();
+
+    for (int i = 0; i < hwId.Length / 4; i++)
     {
-        if (hwId.Length % 4 != 0)
+        if (components.Contains((HardwareIdType)BitConverter.ToUInt16(hwId, i * 4)))
         {
-            throw new ArgumentException("Invalid Hardware Id", "hwId");
+            hardwareId.AddRange(hwId.Skip(i * 4).Take(4));
         }
-    
-        var hardwareId = new List&lt;byte&gt;();
-    
-        for (int i = 0; i < hwId.Length / 4; i++)
-        {
-            if (components.Contains((HardwareIdType)BitConverter.ToUInt16(hwId, i * 4)))
-            {
-                hardwareId.AddRange(hwId.Skip(i * 4).Take(4));
-            }
-        }
-    
-        return hardwareId.ToArray();
     }
-    </pre>
+
+    return hardwareId.ToArray();
+}
+```
     
-    Para utilizar, crearemos un array con los tipos de componentes que queremos utilizar para la generación del identificador y llamamos al método **GetPartialHardwareId**. En el siguiente ejemplo se está utilizando el identificador del procesador, unidades de disco, adaptador de red, memoria y BIOS, componentes que tienen una menor probabilidad menor de cambiar.  
-    
-    <pre class="brush:csharp">
-    public string GetInstallationId()
-    {
-        var hardwareIdTypes = new[] { 
-            DeviceIdentification.HardwareIdType.Processor, 
-            DeviceIdentification.HardwareIdType.DiskDevice, 
-            DeviceIdentification.HardwareIdType.NetworkAdapter, 
-            DeviceIdentification.HardwareIdType.Memory, 
-            DeviceIdentification.HardwareIdType.SmBios, };
-    
-        var deviceId = GetPartialHardwareId(hardwareIdTypes);
-    
-        return deviceId;
-    }
-    
+Para utilizar, crearemos un array con los tipos de componentes que queremos utilizar para la generación del identificador y llamamos al método **GetPartialHardwareId**. En el siguiente ejemplo se está utilizando el identificador del procesador, unidades de disco, adaptador de red, memoria y BIOS, componentes que tienen una menor probabilidad menor de cambiar.  
+
+```csharp
+public string GetInstallationId()
+{
+    var hardwareIdTypes = new[] { 
+        DeviceIdentification.HardwareIdType.Processor, 
+        DeviceIdentification.HardwareIdType.DiskDevice, 
+        DeviceIdentification.HardwareIdType.NetworkAdapter, 
+        DeviceIdentification.HardwareIdType.Memory, 
+        DeviceIdentification.HardwareIdType.SmBios, };
+
+    var deviceId = GetPartialHardwareId(hardwareIdTypes);
+
+    return deviceId;
+}
+```
 
 El código que aparece en este artículo está disponible como parte del paquete Nuget **[Business Apps WinRT Toolkit](https://www.nuget.org/packages/BusinessAppsWinRTToolkit)**, un conjunto de helpers, behaviors y extensiones para crear aplicaciones empresariales con Windows Runtime. El código también está disponible en un [repositorio GitHub](https://github.com/acasquete/BusinessAppsWinRTToolkit).
 
 Referencias
 -----------
 
-[Instrucciones sobre el uso del identificador de hardware específico de aplicaciones (ASHWID) para la implementación de lógica de aplicaciones por dispositivo](http://msdn.microsoft.com/es-es/library/windows/apps/jj553431.aspx) 
-[Componente de nube Identificador de hardware específico de aplicaciones (ASHWID)](http://msdn.microsoft.com/es-es/library/windows/apps/jj835815.aspx) 
-[Business Apps WinRT Toolkit Nuget Package](https://www.nuget.org/packages/BusinessAppsWinRTToolkit) 
-[Business Apps WinRT Toolkit GitHub repository](https://github.com/acasquete/BusinessAppsWinRTToolkit)
-
+[Instrucciones sobre el uso del identificador de hardware específico de aplicaciones (ASHWID) para la implementación de lógica de aplicaciones por dispositivo](http://msdn.microsoft.com/es-es/library/windows/apps/jj553431.aspx)   
+[Componente de nube Identificador de hardware específico de aplicaciones (ASHWID)](http://msdn.microsoft.com/es-es/library/windows/apps/jj835815.aspx)   
+[Business Apps WinRT Toolkit Nuget Package](https://www.nuget.org/packages/BusinessAppsWinRTToolkit)   
+[Business Apps WinRT Toolkit GitHub repository](https://github.com/acasquete/BusinessAppsWinRTToolkit)  
