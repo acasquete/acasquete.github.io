@@ -6,12 +6,12 @@ En los ultimos años he conocido desarrolladores de backend que han querido cont
 Si desea ser un científico de datos, probablemente sea mejor leer más sobre los fundamentos estadísticos que se muestran a continuación, ya que serán los
 fundamentos del análisis cuando se trabaja en un tema o tema:
 
-Regresión lineal / logística
-Clasificadores Naïve Bayes
-Agrupación de K-medias
-Árboles de decisión
-Modelado autorregresivo de media móvil integrada (ARIMA)
-Modelado de análisis de varianza (ANOVA)
+Regresión lineal / logística  
+Clasificadores Naïve Bayes  
+Agrupación de K-medias  
+Árboles de decisión  
+Modelado autorregresivo de media móvil integrada (ARIMA)  
+Modelado de análisis de varianza (ANOVA)  
 
 Cómo participar
 ¿Ahora crees que es hora de involucrarte? Involucrarse en el mundo de la ciencia de datos le brinda la oportunidad de mejorar sus habilidades, así como mostrar su trabajo. Un artista es tan bueno como el portafolio que presenta, y ambos sabemos que parte de ser un científico de datos es ser un artista. Si eres como yo, en algún momento todo esto se ha vuelto abrumador y quizás un poco intimidante. La cantidad de experiencia demostrada por parte del contenido disponible puede hacer que incluso el experto en ciencia de datos curtido piense que su trabajo no ha sido más que un juego de niños. Es importante recordar que tu trabajo es tuyo y que el objetivo de todos tus esfuerzos no es ser el mejor, porque en un campo de estudio tan dinámico, no hay "lo mejor", ¡solo oportunidades continuas para crecer y mejorar! El propósito es abordar cada problema con pasión y propósito y aprender tanto como sea posible a lo largo del camino.
