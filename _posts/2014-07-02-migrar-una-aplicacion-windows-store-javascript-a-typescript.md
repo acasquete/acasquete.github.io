@@ -1,6 +1,7 @@
 ---
 title: Migrar una aplicación Windows Store JavaScript a TypeScript
 tags: [typescript, windows_store, winjs]
+reviewed: true
 ---
 Con la [última actualización de Visual Studio 2013](http://www.microsoft.com/es-es/download/details.aspx?id=42666) se liberó la versión 1.0 de [TypeScript](http://www.typescriptlang.org/), la primera release oficial del lenguaje después de año y medio de desarrollo. Además, con esta actualización TypeScript pasa a ser un lenguaje totalmente soportado en Visual Studio y sin necesidad de ninguna extensión tenemos comprobación estática de código, navegación basada en símbolos, refactorización, etc.
 
@@ -18,8 +19,7 @@ Para mostrar cómo habilitar la compilación de TypeScript, voy a utilizar como 
 El primer paso es añadir el **Import** de las propiedades predeterminadas. Recordad que para poder modificar el fichero .jsproj, tenemos que descargar el proyecto de la solución y luego seleccionar la opción Editar en el menú contextual. Una vez abierto, añadiremos justo antes del primer **ItemGroup** la siguiente línea:
 
 ```xml
-    &lt;Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" 
-            Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" /&gt;
+<Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
 ```
 
 Y al final del fichero, justo después del último Import añadiremos la referencias a los tres targets.
