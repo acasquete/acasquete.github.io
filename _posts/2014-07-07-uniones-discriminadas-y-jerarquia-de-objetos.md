@@ -9,7 +9,7 @@ Las uniones discriminadas son uno de los tipos de datos funcionales más importa
 
 ![Propósito de uso de las uniones discriminadas](/img/uniones-discriminadas-usos.png)
 
-Para definir una unión discriminada, al igual que con otros tipos, tenemos que utilizar la palabra clave **type** seguida del nombre del tipo y cada caso de unión separado con una barra vertical (|). Por ejemplo, los distintos tipos de empleados de una empresa pueden ser representados con la siguiente unión discriminada.
+Para definir una unión discriminada, al igual que con otros tipos, tenemos que utilizar la palabra clave **type** seguida del nombre del tipo y cada caso de unión separado con una barra vertical (\|). Por ejemplo, los distintos tipos de empleados de una empresa pueden ser representados con la siguiente unión discriminada.
 
 ```csharp
 type Employee =
