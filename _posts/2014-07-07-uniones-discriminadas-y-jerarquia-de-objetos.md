@@ -21,7 +21,7 @@ type Employee =
 Cada caso de unión recibe el nombre de discriminador y también es posible definirlos en línea omitiendo la barra antes del primer caso de unión.
 
 ```csharp
-    type Employee = Consultant | Manager | Director
+type Employee = Consultant | Manager | Director
 ``` 
 
 Además de las reglas usuales para la nomenclatura de los identificadores, los casos de unión tienen una regla adicional. **Si un nombre de un caso de unión no comienza con una letra mayúscula, el compilador devolverá un error**. El motivo de esta restricción es poder ayudar al compilador a diferenciar los casos de unión de otros identificadores en _pattern matching_.
@@ -88,7 +88,7 @@ type Employee =
 De esta forma las etiquetas aparecen en Intellisense y además podemos utilizar los argumentos con nombre de la siguiente forma:
 
 ```csharp
-    let employeeD = Director ({ FirstName = "Henry"  ; LastName = "Wood"  }, Assistants = 2)
+let employeeD = Director ({ FirstName = "Henry"  ; LastName = "Wood"  }, Assistants = 2)
 ```
 
 Clases y herencia de la jerarquía de objetos
