@@ -216,7 +216,7 @@ En este vídeo podéis ver el resultado final. En el código de ejemplo podéis 
 Descarga código fuente
 ----------------------
 
-[ListViewCustomLayout.zip](https://skydrive.live.com/redir?resid=483C407ED85318FE!22024&authkey=!AHlRj-YXuGZ7Jls&ithint=file%2c.zip)
+[ListViewCustomLayout.zip](/files/ListViewCustomLayout.zip)
 
 Referencias
 -----------
