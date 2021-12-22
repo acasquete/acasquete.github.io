@@ -207,6 +207,7 @@
   li {
     list-style-type: none;
     margin-top: 1em;
+    clear: both;
   }
 
   .postimage {
@@ -219,6 +220,10 @@
       object-fit: cover;
       height: 340px;
       object-position: center;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+       -ms-border-radius: 10px;
+           border-radius: 10px;
     }
   }
 }
