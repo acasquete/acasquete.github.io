@@ -50,6 +50,6 @@ Este método —como se puede ver— no tiene ninguna optimización en la genera
 
 Descargas
 ---
-[Console\_TicTacToe\_CSharp\_v1.zip](http://sdrv.ms/12upnI6)  
-[Silverlight\_TicTacToe\_CSharp\_v0.1.0.zip](http://sdrv.ms/1bszXHu)
+[ConsoleTicTacToe.zip](/files/ConsoleTicTacToe.zip)  
+[SilverlightTicTacToe.zip](/files/SilverlightTicTacToe.zip)
 
