@@ -2,10 +2,8 @@
 title: Desaprender a ser una oficina tradicional
 tags: [personal]
 reviewed: true
+headerfullview: work-from-home.jpg
 ---
-
-
-
 Durante la pandemia, hemos tenido que aprender a trabajar en remoto. Verse obligado por una emergencia mundial no ha sido la mejor manera de aprender. Aun así, hemos descubierto que trabajar en remoto, de forma totalmente distribuida, no solo es posible, sino que es un modelo con el que los equipos se sienten cómodos y siguen siendo productivos.
 
 Muchos estábamos convencidos de que el trabajo remoto iba a tener continuidad una vez volviéramos a la normalidad. Cualquier conversación con compañeros en empresas con algún grado de madurez con el trabajo remoto siempre terminaba de la misma forma: “esto es algo que ha venido para quedarse”. Del mismo modo, era evidente que las menos maduras volverían al trabajo en oficina, como así lo estamos comprobando.
