@@ -10,7 +10,9 @@ comments: true
 	
 	<div class="content">
 
-
+		{% if page.header_image != null %}
+		<p><img src="/img/{{page.header_image}}" alt="{{page.title}}" class="fullview" /></p>
+		{% endif %}
 		
 		{{ content }}
 		
