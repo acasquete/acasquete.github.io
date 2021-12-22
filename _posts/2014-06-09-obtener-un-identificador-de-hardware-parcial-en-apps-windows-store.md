@@ -101,7 +101,7 @@ public string GetInstallationId()
 }
 ```
 
-El código que aparece en este artículo está disponible como parte del paquete Nuget **[Business Apps WinRT Toolkit](https://www.nuget.org/packages/BusinessAppsWinRTToolkit)**, un conjunto de helpers, behaviors y extensiones para crear aplicaciones empresariales con Windows Runtime. El código también está disponible en un [repositorio GitHub](https://github.com/acasquete/BusinessAppsWinRTToolkit).
+El código que aparece en este artículo está disponible como parte del paquete Nuget **[Business Apps WinRT Toolkit](https://www.nuget.org/packages/BusinessAppsWinRTToolkit)**, un conjunto de helpers, behaviors y extensiones para crear aplicaciones empresariales con Windows Runtime.
 
 Referencias
 -----------
