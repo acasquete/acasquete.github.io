@@ -2,9 +2,8 @@
 title: Primeros pasos en el desarrollo web con Suave
 tags: [fsharp, suaveio, functional_programming, web]
 reviewed: true
+header_fullview: suave.jpeg
 ---
-![Suave](/img/suave.jpeg){:.fullview}
-
 En la entrada anterior vimos cómo implementar [Hypermedia en una API REST utilizando Suave](/building-an-hypermedia-rest-api-with-fsharp-and-suave-io), en la que partíamos de una pequeña solución y dábamos por conocidos algunos conceptos. En esta entrada damos a un pequeño paso atrás para introducir el funcionamiento y conceptos básicos de [Suave](https://suave.io/) para poder afrontar y crear un proyecto web. A través de varios posts, iremos conociendo las distintas características de Suave con los que cualquier desarrollador, incluso sin conocimientos profundos del lenguaje, podrá crear y desplegar una web realizada íntegramente en F#.
 
 > “Suave es una librería de F# para desarrollo web que proporciona un servidor ligero y un conjunto de combinadores para manipular flujos de enrutamiento y composición de tareas.”

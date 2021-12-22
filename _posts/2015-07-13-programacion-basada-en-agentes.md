@@ -2,9 +2,8 @@
 title: Programación basada en agentes
 tags: [fsharp, functional_programming]
 reviewed: true
+header_fullview: agents.png
 ---
-![Agents](/img/agents.png){:.fullview}
-
 F# tiene incorporado un mecanismo de procesamiento de mensajes que consiste básicamente en un **sistema de colas que permite enrutar mensajes de forma asíncrona utilizando memoria compartida**. Este sistema, muy parecido a los agentes de Erlang, es especialmente útil cuando tenemos múltiples clientes que tienen que realizar una petición a un único servidor.
 
 Para poder procesar las colas de mensajes, vamos a crear distintos agentes que escanearán las colas en busca de mensajes que cumplan con un determinado criterio y que estén relacionados con la funcionalidad que hayamos designado a cada agente.

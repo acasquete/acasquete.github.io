@@ -2,9 +2,8 @@
 title: Pattern matching con F#
 tags: [fsharp, functional_programming]
 reviewed: true
+header_fullview: pattern-matching.png
 ---
-![Query Expressions](/img/pattern-matching.png){:.fullview}
-
 Continuamos la serie dedicada a F# con una característica del lenguaje tremendamente potente, _pattern matching_ o su traducción en español, coincidencia de patrones. La lista de todas las entradas de la serie se puede consultar en este [link](http://www.casquete.es/category/fsharp). Además, [Juan Manuel Gómez](https://twitter.com/_jmgomez_), está escribiendo otra serie que puedes consultar [aquí](http://geeks.ms/blogs/jmgomez/archive/tags/FSharp/default.aspx).
 
 Muchas veces se compara _pattern matching_ con la sentencia switch de C#, yo mismo utilizo esta analogía en muchas ocasiones para introducir el concepto, pero esa comparación es muy injusta ya que con _pattern matching_ no solo podemos añadir construcciones de control sino que también lo podemos utilizar para descomponer información de entrada a partir de distintas operaciones especificadas a través de un patrón. A lo largo del post veremos algunos posibles de uso de _pattern matching_ y descubriremos como en muchas ocasiones ya lo estamos utilizando sin darnos cuenta.
