@@ -220,10 +220,10 @@
     img {
 
       @media (min-width: 940px) {
-        width: 100%;
+        width: 340px; 
       }
 
-      width: 340px;
+      width: 100%;
       object-fit: cover;
       height: 300px;
       object-position: center;
