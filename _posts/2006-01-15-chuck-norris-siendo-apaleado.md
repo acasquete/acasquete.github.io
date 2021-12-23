@@ -1,5 +1,6 @@
 ---
 title: Chuck Norris siendo apaleado
+tags: [random]
 reviewed: true
 ---
 Si has llegado hasta aquí buscando un vídeo de Chuck Norris siendo apaleado, olvídate. Eso es imposible, no puede suceder...  

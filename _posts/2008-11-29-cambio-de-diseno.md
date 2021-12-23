@@ -1,6 +1,7 @@
 ---
 title: Cambio de diseño
-tags: []
+tags: [random]
+reviewed: true
 ---
 No hay nada como asistir durante una semana a un curso con diseñadores y pasar unas cuantas horas trabajando delante de _Blend_, para tener la necesidad de cambiar el diseño de todo aplicando una excitante apariencia _Black_… He aquí el resultado.
 

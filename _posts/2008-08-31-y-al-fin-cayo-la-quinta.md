@@ -1,6 +1,6 @@
 ---
 title: …y al fin cayó la quinta
-tags: [random]
+tags: [certification]
 reviewed: true
 ---
 Parece ser que el programa [DCE](http://www.dce2005.com/) (Desarrollador Cinco Estrellas) de Microsoft no está muy activo, desde hace unos meses no se ve ningún movimiento por parte de la organización y la anunciada Estrella \*Platinum \*no llega. Eso sí, los foros siguen teniendo actividad y todos [queremos saber](http://social.msdn.microsoft.com/Forums/es-ES/dcees/thread/ffd1a406-cd05-48f2-a1b2-2d95d5a54232) cual será el siguiente movimiento.

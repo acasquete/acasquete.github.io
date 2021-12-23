@@ -1,8 +1,9 @@
 ---
 title: Objetivos para el 2006
 tags: [personal]
+reviewed: true
 ---
-Así quiero terminar el año, ¡que por eso es mi blog, y soy yo el único que lo lee!, con una lista (ordenada) de mis 9 principales objetivos o sueños para este nuevo año. Espero poder ir tachándolos según se vayan o vaya realizando.  
+Así quiero terminar el año, ¡qué por eso es mi blog, y soy yo el único que lo lee!, con una lista (ordenada) de mis 9 principales objetivos o sueños para este nuevo año. Espero poder ir tachándolos según se vayan o vaya realizando.  
 
 1.  Librarme del Zahir.
 2.  Volver a Argentina.
