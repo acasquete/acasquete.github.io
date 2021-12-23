@@ -1,6 +1,7 @@
 ---
 title: Añadir un evento a un control creado en tiempo de ejecución
 tags: [programming]
+reviewed: true
 ---
 Visual Basic no me gusta. Y no es que no le haya dado oportunidades, todo lo contrario, le he dado y le sigo dando demasiadas. He trabajado con VB desde la versión 4 hace ya unos cuantos años y ahora sigo trabajando día a día con VB.NET, y aún no me acostumbro. No es que crea que VB.NET sea malo —que no lo es—, simplemente es que no me acostumbro, se me olvidan las instrucciones. El ejemplo claro es lo que me ha pasado hoy. He estado intentando añadir un evento a un control creado dinámicamente y no lo he conseguido, simplemente porque se me había olvidado como se hacía.
 
