@@ -211,10 +211,18 @@
   }
 
   .postimage {
-    float: left;
+
+    @media (min-width: 940px) {
+      float: left;
+    }
     margin-right: 0.5em;
 
     img {
+
+      @media (min-width: 940px) {
+        width: 100%;
+      }
+
       width: 340px;
       object-fit: cover;
       height: 300px;
