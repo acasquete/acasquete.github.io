@@ -2,9 +2,8 @@
 title: Expresiones de consulta en F#
 tags: [fsharp, functional_programming]
 reviewed: true
+header_fullview: query-expressions.png
 ---
-![Query Expressions](/img/query-expressions.png){:.fullview}
-
 En un post anterior vimos cómo podemos [crear operaciones asíncronas](/workflows-asincronos-con-f-sharp "Workflows asíncronos con F#") utilizando una característica denominada _workflows_ asíncronos, que nos permite escribir un código mucho más legible y que se adecúa mejor al paradigma de la programación funcional. Este tipo de construcción junto con las expresiones de secuencia, son casos de una construcción más general denominada **expresiones de cálculo**.
 
 En esta entrada veremos otro tipo de expresiones de cálculo, las **expresiones de consulta**, que nos permiten **describir una consulta de forma declarativa** y conoceremos los operadores que nos van a permitir transformar, filtrar, ordenar y agrupar secuencias de objetos.

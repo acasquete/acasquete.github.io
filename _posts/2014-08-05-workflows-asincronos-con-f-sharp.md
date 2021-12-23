@@ -2,9 +2,8 @@
 title: Workflows asíncronos con F#
 tags: [fsharp, functional_programming]
 reviewed: true
+header_fullview: beasync.png
 ---
-![Query Expressions](/img/beasync.png){:.fullview}
-
 Continuamos con este post la serie introductoria a los conceptos básicos de programación funcional con F#. En esta ocasión trataremos los flujos de trabajos asíncronos o, en inglés, _asynchronous workflows_.
 
 Uno de los aspectos más importantes del paradigma de la programación funcional es que facilita la creación de procesos asíncronos, gracias sobre todo al uso de la inmutabilidad y de la programación declarativa. En F#, además de poder hacer uso, como en cualquier lenguaje .NET, de la _Task Parallel Library_ (TPL) para implementar paralelismo a nivel de datos y tareas, podemos utilizar una característica propia del lenguaje denominada _asynchronous workflows_. Me voy a referir a este termino de aquí en adelante con su denominación inglesa, ya que me parece mucho más natural que su traducción al español, flujos de trabajo asíncronos.

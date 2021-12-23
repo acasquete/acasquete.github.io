@@ -1,6 +1,6 @@
 ---
 title: WinQ, sustituto de calc.exe
-tags: [dev]
+tags: [programming]
 reviewed: true
 ---
 **Julio 2013:** La página del proyecto de Codeplex ya no existe y no se puede descargar. \[/hypha
