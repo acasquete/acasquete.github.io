@@ -1,8 +1,9 @@
 ---
 title: WinQ, sustituto de calc.exe
 tags: []
+reviewed: true
 ---
-\[hypha\_alert style=”red”\] Julio 2013: La página del proyecto de Codeplex ya no existe y no se puede descargar. \[/hypha\_alert\]
+**Julio 2013:** La página del proyecto de Codeplex ya no existe y no se puede descargar. \[/hypha
 
 ¿Qué harías si un día te encuentras un sistema al que alguien ha borrado el fichero calc.exe y necesitas realizar cálculos muy a menudo? La respuesta es obvia: desarrollas tu propia calculadora…
 

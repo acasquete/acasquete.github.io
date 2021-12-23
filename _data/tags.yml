@@ -4,6 +4,7 @@ allowed-tags:
   - english
   - fsharp
   - functional_programming
+  - programming
   - web
   - suaveio
   - fake
