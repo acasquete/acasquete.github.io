@@ -1,6 +1,7 @@
 ---
 title: Nueva release de WinQ
 tags: [programming]
+reviewed: true 
 ---
 **Julio 2013:** La página del proyecto de Codeplex ya no existe y no se puede descargar.
 
