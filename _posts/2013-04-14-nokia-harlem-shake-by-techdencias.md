@@ -1,6 +1,7 @@
 ---
 title: Nokia Harlem Shake by Techdencias
-tags: []
+tags: [random]
+reviewed: true
 ---
 Este vídeo se podría describir como Nokia Harlem Shake realizado en las oficinas de pasiona con motivo del Megathon Windows 2013 o mil formas de hacer el hawaiano.
 
