@@ -1,6 +1,7 @@
 ---
 title: Are your hands Weapons of Love?
-tags: []
+tags: [random]
+reviewed: true
 ---
 Hoy me he levantado un poco capuleto y no puedo dejar pasar este [vídeo](http://es.youtube.com/watch?v=NRAcBxJyXyI) sin hacer una mínima referencia.
 
@@ -8,3 +9,4 @@ Es el vídeo de la campaña que estamos viendo estos días en televisión contra
 
 Se podrían decir muchas cosas del vídeo (basta mirar los comentarios en YouTube). A mí cada segundo me parece genial.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NRAcBxJyXyI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
