@@ -46,10 +46,16 @@
   }   
   a {
     padding-left: 10px;
+    padding-right: 10px;
     color: $text-color;
     font-weight: 300;
     font-family: "Oswald", sans-serif;
     text-transform: uppercase;
+    background-color: #eee;
+  }
+  &:hover{
+    background-color: #DC143C;
+    color: white;
   }
 }
 
