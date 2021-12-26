@@ -52,7 +52,8 @@
     font-family: "Oswald", sans-serif;
     text-transform: uppercase;
     background-color: #eee;
-   
+    transition-duration: 0.3s;
+    
     &:hover{
       background-color: #DC143C;
       color: white;
