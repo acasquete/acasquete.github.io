@@ -9,6 +9,10 @@
     padding: 0.33334em 0;
     font-size: 1.5em;
     font-weight: 400;
+    transition-duration: 0.3s;
+    font-family: "Oswald", sans-serif;
+    text-decoration: none;
+
     @media (min-width: 940px) {
       font-size: 1em;
     }
@@ -53,7 +57,7 @@
     text-transform: uppercase;
     background-color: #eee;
     transition-duration: 0.3s;
-    
+
     &:hover{
       background-color: #DC143C;
       color: white;
