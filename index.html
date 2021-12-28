@@ -11,9 +11,7 @@ title: Home
 
 	  	<h1>
 			  <a href="{% if site.baseurl == "/" %}{{ post.url }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}">
-				{% if forloop.first == true and paginator.page == 1 %}
-					<div class="postimage"><img src="/img/{{ post.header_fullview }}" /></div>
-				{% endif %}
+				<div class="postimage"><img src="/img/{{ post.header_fullview }}" /></div>
 				{%if post.header %}{{ post.header }}{% else %}{{ post.title }}{% endif %}</a></h1>
       	<time datetime="{{ post.date | date_to_xmlschema }}" class="by-line"> {{ post.date | date: '%B %e, %Y' }} </time>
 	  	<p>{{ post.content | strip_html | truncatewords:50 }}</p>
