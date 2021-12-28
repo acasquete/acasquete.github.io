@@ -1,6 +1,7 @@
 ---
 title: //BUILD 2013 Essentials
 tags: [windows_store, event]
+reviewed: true
 ---
 La **BUILD 2013**, la conferencia anual de desarrolladores de Microsoft, nos deja muchas novedades y mucho contenido que analizar. Las principales presentaciones fueron las _preview_ de Windows 8.1 y de Visual Studio 2013 junto con la nueva versión del .NET Framework, pero no fue lo único. También vimos novedades sobre IE11, ASP.NET, Azure, Xbox, Bing y Kinect. Ahora que todas las grabaciones están disponibles en [Channel9](http://channel9.msdn.com/Events/Build/2013) es hora de ponerse al día.
 
@@ -50,4 +51,3 @@ Day 3
 *   [Tips for Building LOB Apps for the Windows Store](http://channel9.msdn.com/Events/Build/2013/3-185) Como veis, hay material para rato. Y esto es solo lo más destacable sobre Windows Store apps, a todas estas habría que añadir unas cuantas de ASP.NET y Azure, sobre todo la de [Scott Hanselman](http://channel9.msdn.com/Events/Build/2013/2-546) que también considero un _must see_ para conocer las novedades de ASP.NET.
 
 ¡A disfrutar!
-
