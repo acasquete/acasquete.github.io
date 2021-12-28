@@ -9,7 +9,7 @@ I hope that if anyone reads this weblog, they can forgive my English, as it is n
 
 I don't know exactly to whom I will dedicate this space on the web. In fact, I will post news that have impacted me or have interested me.
 
-I hope this will not be my last post.
+I hope this is not my last post.
 
 ---
 
