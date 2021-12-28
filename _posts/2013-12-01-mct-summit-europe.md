@@ -1,6 +1,7 @@
 ---
 title: MCT Summit Europe
 tags: [windows_store, event]
+reviewed: true
 ---
 El pasado 29 de noviembre tuve el placer de participar en el **MCT Summit Europe** que esta vez se organizó en Helsinki, en la que pude compartir y asistir a grandes sesiones técnicas.
 
