@@ -1,6 +1,7 @@
 ---
 title: W8IO Novedades en Windows 8.1 para usuarios y desarrolladores
-tags: [windows_store, event, winjs]
+tags: [windows_store, event]
+reviewed: true
 ---
 El pasado jueves retomamos la nueva temporada de hangouts de [DesarrolloWeb.com](http://www.desarrolloweb.com/) y como no podía ser de otra forma, este primer #W8IO lo dedicamos a hablar de las novedades que nos traerá la próxima actualización de **Windows 8**.
 
@@ -13,5 +14,4 @@ En cuanto a la pequeña rencilla que tenemos con la fecha de salida, confirmar q
 ### Enlaces
 
 [Mark your calendars for Windows 8.1!](http://blogs.windows.com/windows/b/bloggingwindows/archive/2013/08/14/mark-your-calendars-for-windows-8-1.aspx)
-ent/)
 
