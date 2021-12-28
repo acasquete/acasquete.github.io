@@ -1,5 +1,5 @@
 ---
-title: puroWindows, Analizamos Windows 8.1
+title: Características de la nueva API HttpClient de Windows Runtime
 tags: [windows_store, winrt]
 ---
 Una de las novedades incluidas en **Windows 8.1 Preview** es la nueva API para conectar con servicios HTTP. Esta nueva API que está disponible en el _namespace_ **Windows.Web.Http**, viene a reemplazar a los sistemas que utilizamos hasta ahora: la clase _System.Net.HttpClient_ en C# y la función _WinJS.xhr_ en JavaScript. En esta entrada vamos a ver las ventajas y las características que nos aporta esta nueva API.
