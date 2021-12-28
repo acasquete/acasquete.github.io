@@ -1,7 +1,6 @@
 ---
 title: MCT Summit Europe
 tags: [windows_store, event]
-reviewed: true
 ---
 El pasado 29 de noviembre tuve el placer de participar en el **MCT Summit Europe** que esta vez se organizó en Helsinki, en la que pude compartir y asistir a grandes sesiones técnicas.
 
@@ -11,5 +10,7 @@ En la primera parte de la sesión mostré como guardar datos utilizando **SQLite
 
 La presentación que utilicé está disponible en [SlideShare](http://www.slideshare.net/alexcasquete/working-with-disconnected-data-in-windows-store-apps).
 
-
-<iframe src="//www.slideshare.net/slideshow/embed_code/key/lK4Jtv34gOH39Y" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/alexcasquete/working-with-disconnected-data-in-windows-store-apps" title="Working with disconnected data in Windows Store apps" target="_blank">Working with disconnected data in Windows Store apps</a> </strong> from <strong><a href="https://www.slideshare.net/alexcasquete" target="_blank">Alex Casquete</a></strong> </div>
+<div style="display:block; text-align:center">
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/lK4Jtv34gOH39Y" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> 
+<div style="margin-bottom:5px;"> <strong> <a href="//www.slideshare.net/alexcasquete/working-with-disconnected-data-in-windows-store-apps" title="Working with disconnected data in Windows Store apps" target="_blank">Working with disconnected data in Windows Store apps</a> </strong> from <strong><a href="https://www.slideshare.net/alexcasquete" target="_blank">Alex Casquete</a></strong> </div>
+</div>
