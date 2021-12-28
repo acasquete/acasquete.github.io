@@ -1,6 +1,7 @@
 ---
 title: Fresh apps en Windows 8.1
 tags: [windows_store, azure]
+reviewed: true
 ---
 «Be fast & fluid». Este es el principio de diseño de **aplicaciones para la Windows Store** que nos dice que debemos responder a las acciones del usuario rápidamente. Sin embargo, muchas veces debido a la gran cantidad de información que tenemos que descargar, es inevitable que el usuario tenga que esperar hasta que la aplicación esté lista para mostrar la información.
 
@@ -12,33 +13,41 @@ Para poder utilizar esta nueva funcionalidad, no necesitamos realizar ningún ca
 
 Para indicar estos recursos tenemos que utilizar la clase **ContentPrefetcher** y podemos hacerlo de dos maneras diferentes. Mediante la propiedad **ContentUris** podemos indicar las URL de una forma local. Simplemente tenemos que añadir las URL al array **ContentUris** y el sistema se encargará de descargar esta información por nosotros. Veamos el código de ejemplo:
 
-var uris = \[new Windows.Foundation.Uri(“/feed”), new Windows.Foundation.Uri(“/status.jpg”)\];
+```js
+var uris = [new Windows.Foundation.Uri(“/feed”), new Windows.Foundation.Uri(“/status.jpg”)];
 
 Windows.Networking.BackgroundTransfer.ContentPrefetcher.ContentUris.Clear();
 
-for (vari=0; i < uris.length; i++) { Windows.Networking.BackgroundTransfer.ContentPrefetcher.ContentUris.Append(uris\[i\]); } </pre>
+for (vari=0; i < uris.length; i++) { 
+  Windows.Networking.BackgroundTransfer.ContentPrefetcher.ContentUris.Append(uris[i]); 
+}
+```
 
 Este sistema nos será útil para las aplicaciones en las que las URI son estáticas, por ejemplo, la URL de un feed de noticias.
 
 La segunda forma de especificar contenido es utilizando un servicio web. Por un lado, tenemos que crear un fichero XML en nuestro servidor que debe contener los recursos que queremos precargar. Este fichero XML debe tener la siguiente estructura.
 
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <prefetchUris>
     <uri>/2013-07-16-feed.json</uri>
     <uri>/A457985689.jpg</uri> 
     <uri>/B487989889.jpgg</uri>
 </prefetchUris>
+```
 
 Y en nuestra aplicación tenemos que indicar la URL de este fichero XML mediante la propiedad **IndirectContentUri**.
 
+```js
 var indirectContentUri = new Windows.Foundation.Uri("/prefetch.xml");
 
 Windows.Networking.BackgroundTransfer.ContentPrefetcher.indirectContentUri = indirectContentUri;
+````
 
 Este método, a diferencia del primero, nos será útil cuando las URL de nuestro contenido sean muy dinámicas y además con la ventaja de que podremos tener un servicio que actualice este XML cuando queramos.
 
-    ## ¿Y qué pasa con la batería?
-    
+¿Y qué pasa con la batería?
+---    
 
 Cuando comenzamos a hablar de procesos en _background_ y que además hacen uso de red, seguramente la única pregunta que se nos pasa por la cabeza sea esta: ¿y qué pasa con la batería? Microsoft sigue con la promesa de proporcionar una vida larga a las baterías y un buen rendimiento del sistema, así que la precarga de contenido esta sujeta a varias condiciones para ofrecer la mejor experiencia de usuario. Veamos cuales.
 
@@ -50,13 +59,16 @@ Cuando comenzamos a hablar de procesos en _background_ y que además hacen uso d
 
 Además de estas condiciones, tenemos que tener en cuenta que solo podemos definir 40 URI por aplicación y que el sistema da prioridad a las URI definidas localmente que a las definidas en un servicio web.
 
-    ## El ejemplo
-    
+El ejemplo
+---    
 
-Para probar el funcionamiento de la precarga de información, he realizado un ejemplo similar al que [Matt Merry hizo en su sesión “_Building Great Service Connected Apps_” de la pasada BUILD](http://channel9.msdn.com/Events/Build/2013/3-090). Tenemos, por un lado, una aplicación que obtiene un listado de imágenes de Flickr y por otro, mediante una tarea del Scheduler de **Azure Mobile Services** creamos el fichero XML con el mismo listado de imágenes. Si la lista de imágenes cambia, con el uso de **ContentPrefetcher**, el sistema mantendrá las imágenes actualizadas y esarán disponibles antes de que la aplicación se inicie.
+Para probar el funcionamiento de la precarga de información, he realizado un ejemplo similar al que [Matt Merry hizo en su sesión “_Building Great Service Connected Apps_” de la pasada BUILD](http://channel9.msdn.com/Events/Build/2013/3-090). 
+
+Tenemos, por un lado, una aplicación que obtiene un listado de imágenes de Flickr y por otro, mediante una tarea del Scheduler de **Azure Mobile Services** creamos el fichero XML con el mismo listado de imágenes. Si la lista de imágenes cambia, con el uso de **ContentPrefetcher**, el sistema mantendrá las imágenes actualizadas y esarán disponibles antes de que la aplicación se inicie.
 
 Este es el script de la tarea del programador (Scheduler) de Azure Mobile Services. Para guardar el fichero XML estamos haciendo uso de un Blob Storage.
 
+```js
 var request = require('request');
 var azure = require('azure');
 var accountName = '{your account name';
@@ -69,7 +81,7 @@ var blobService = azure.createBlobService(accountName, accountKey);
 function GeneratePrefetchXml() {
   var xml = "n";
   
-  var url = "http://api.flickr.com/services/rest/?method=flickr.photos.search&format=json&nojsoncallback=1&api\_key=" + flickerApiKey + "&per\_page=40&text=red&safe\_search=1&content\_type=1&sort=interestingness+desc&extras=url\_l,url\_m,url\_o";
+  var url = "http://api.flickr.com/services/rest/?method=flickr.photos.search&format=json&nojsoncallback=1&api_key=" + flickerApiKey + "&per_page=40&text=red&safe_search=1&content_type=1&sort=interestingness+desc&extras=url_l,url_m,url_o";
   
   request(url, function photosLoaded(error, response, body) {
     if (!error && response.statusCode == 200) {
@@ -79,12 +91,12 @@ function GeneratePrefetchXml() {
       if (results.photos.photo) {
         results.photos.photo.forEach(function processPhoto(photo) {
 
-          if (photo.url\_o)
-            xml+="t"+photo.url\_o+"n";
-          else if (photo.url\_l)
-            xml+="t"+photo.url\_l+"n";
-          else if (photo.url\_m)
-            xml+="t"+photo.url\_m+"n";
+          if (photo.url_o)
+            xml+="t"+photo.url_o+"n";
+          else if (photo.url_l)
+            xml+="t"+photo.url_l+"n";
+          else if (photo.url_m)
+            xml+="t"+photo.url_m+"n";
 
         });
         
@@ -118,27 +130,25 @@ function GeneratePrefetchXml() {
     }
   });
 }
+```
 
 Ahora solo tenemos que ejecutar el script para generar el fichero XML, comprobar que se genera correctamente revisando el log e indicar al iniciar la aplicación (en el default.js) la URL del fichero XML:
 
+```js
 var indirectContentUri = new Windows.Foundation.Uri("http://youraccount.blob.core.windows.net/prefetch/prefetch.xml");
 
 Windows.Networking.BackgroundTransfer.ContentPrefetcher.indirectContentUri = indirectContentUri;
+```
 
-
-
-
-
-## Conclusiones
-
+Conclusiones
+---
 
 Con este nuevo mecanismo de precarga de contenido tenemos una buena oportunidad de mejorar la experiencia de usuario al iniciar nuestra aplicación. Sin embargo, tenemos que utilizar correctamente este mecanismo. No debemos precargar información que el usuario no vaya a consumir nada más iniciar la aplicación. Y tampoco precargar contenido que tenga un tiempo de vida muy corto, tenemos que precargar contenido del que tengamos la certeza de que será válido cuando se lance nuestra aplicación.
 
-\*\*Descarga código fuente\*\*
-\[FlickrColors\_ContentPrefetcher.zip\](http://sdrv.ms/13inUVi)
+Recursos online
+---
 
-\*\*Recursos online\*\*
-\[ContentPrefetcher class\](http://msdn.microsoft.com/en-us/library/windows/apps/windows.networking.backgroundtransfer.contentprefetcher)
-\[BUILD 2013: Building Great Service Connected Apps\](http://channel9.msdn.com/Events/Build/2013/3-090)
-\[How to Use the Blob Service\](http://www.windowsazure.com/en-us/develop/nodejs/how-to-guides/blob-storage/) 
-\[Schedule recurring jobs in Mobile Services\](http://www.windowsazure.com/en-us/develop/mobile/tutorials/schedule-backend-tasks/)
+[ContentPrefetcher class](http://msdn.microsoft.com/en-us/library/windows/apps/windows.networking.backgroundtransfer.contentprefetcher)  
+[BUILD 2013: Building Great Service Connected Apps](http://channel9.msdn.com/Events/Build/2013/3-090)  
+[How to Use the Blob Service](http://www.windowsazure.com/en-us/develop/nodejs/how-to-guides/blob-storage/)   
+[Schedule recurring jobs in Mobile Services](http://www.windowsazure.com/en-us/develop/mobile/tutorials/schedule-backend-tasks/)  
