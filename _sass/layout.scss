@@ -229,7 +229,7 @@
     }
   }
 
-  .postimage {
+  .postimage:nth-child(1) {
 
     @media (min-width: 940px) {
       float: left;
@@ -245,6 +245,24 @@
       width: 100%;
       object-fit: cover;
       height: 300px;
+      object-position: center;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+       -ms-border-radius: 10px;
+           border-radius: 10px;
+    }
+  }
+
+  .postimage:nth-child(n+1) {
+    img {
+
+      @media (min-width: 940px) {
+        width: 150px; 
+      }
+
+      width: 100%;
+      object-fit: cover;
+      height: 150px;
       object-position: center;
       -webkit-border-radius: 10px;
       -moz-border-radius: 10px;
