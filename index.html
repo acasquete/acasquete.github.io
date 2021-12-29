@@ -15,10 +15,10 @@ title: Home
 					<div class="postimage"><img src="/img/{{ post.header_fullview }}" /></div>
 				{% endif %}
 				{%if post.header %}{{ post.header }}{% else %}{{ post.title }}{% endif %}</a></h1>
+				{{ post.excerpt }}
 				{% if forloop.first == true %}
 				<time datetime="{{ post.date | date_to_xmlschema }}" class="by-line"> {{ post.date | date: '%B %e, %Y' }} </time>
 				{% endif %}
-	  	{{ post.excerpt }}
 	  </li>
 
     {% endfor %}
