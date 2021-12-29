@@ -256,7 +256,7 @@
 
     &:nth-child(n+2) {
       padding-bottom: 1em;
-      height: 185px;
+      min-height: 200px;
 
       h1 {
         font-size: 2em;
