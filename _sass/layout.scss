@@ -233,6 +233,11 @@
 
     }
 
+    time {
+      font-family: sans-serif;
+
+    }
+
     &:nth-child(1) {
       min-height: 250px;
 
@@ -341,10 +346,10 @@
   line-height: 1.8em; 
   margin-bottom: 1.5em; /* 24px/16px */
   font-weight: 200;
+  font-family: sans-serif;
+  font-size: 0.8em;
+
   @media (min-width: 560px) {
-    display: inline-block;
-    color: lighten($text-color, 25%);
-    line-height: 1.8em;
     margin-bottom: 1.3334em; /* 24px/18px */
     font-weight: 200;
   }
