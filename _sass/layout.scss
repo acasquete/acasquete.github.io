@@ -253,10 +253,6 @@
           object-fit: cover;
           height: 250px;
           object-position: center;
-          -webkit-border-radius: 10px;
-          -moz-border-radius: 10px;
-           -ms-border-radius: 10px;
-               border-radius: 10px;
         }
       }
 
@@ -282,10 +278,6 @@
           object-fit: cover;
           height: 150px;
           object-position: center;
-          -webkit-border-radius: 10px;
-          -moz-border-radius: 10px;
-           -ms-border-radius: 10px;
-               border-radius: 10px;
         }
       }
 
@@ -377,12 +369,6 @@ img {
   display: block;
   margin: 0 auto;
   margin-bottom: 24px;
-  -webkit-border-radius: 4px;
-     -moz-border-radius: 4px;
-      -ms-border-radius: 4px;
-          border-radius: 4px;
-
-  
 }
 
 img[title="Monochrome"] {
@@ -435,10 +421,6 @@ code {
   padding: 0.5em 0.5em;
   display: inline-block;
   width: 8.5em;
-  -webkit-border-radius: 4px;
-     -moz-border-radius: 4px;
-      -ms-border-radius: 4px;
-          border-radius: 4px;
 }
 
 /* Footer */
