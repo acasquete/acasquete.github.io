@@ -229,7 +229,7 @@
     }
   }
 
-  .postimage:first() {
+  .postimage:nth-child(1)  {
 
     @media (min-width: 940px) {
       float: left;
@@ -253,7 +253,7 @@
     }
   }
 
-  .postimage:nth-child(n+1) {
+  .postimage:nth-child(n+2) {
     img {
 
       @media (min-width: 940px) {
