@@ -63,7 +63,7 @@ blockquote {
 
 /*- Typography for big screen, based on 18px font-size -*/
 
-@media (min-width: 940px) { //Breakpoint set to 940px
+@media (min-width: 560px) { //Breakpoint set to 940px
 
 p, ul, ol {
 	font-size: 1em; /* 18px */

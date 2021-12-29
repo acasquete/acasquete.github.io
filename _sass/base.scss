@@ -27,7 +27,7 @@ $accent-color: #c7254e;
 html {
 	background-color: $background-color;
 	font-size: 16px;
-	@media (min-width: 940px) {
+	@media (min-width: 560px) {
 		font-size: 18px;
 	}
 	line-height: 1.8;
