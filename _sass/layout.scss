@@ -226,10 +226,11 @@
     p {
       line-height: 1.18em;
       font-family: sans-serif;
+      margin-bottom: 0;
+
     }
 
     &:nth-child(1) {
-      padding-bottom: 1em;
       min-height: 250px;
 
       .postimage  {
@@ -264,7 +265,7 @@
 
     &:nth-child(n+2) {
       padding-bottom: 1em;
-      min-height: 200px;
+      min-height: 150px;
 
       h1 {
         font-size: 2em;
