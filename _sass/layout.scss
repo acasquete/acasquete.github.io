@@ -229,7 +229,6 @@
     }
 
     &:nth-child(1) {
-      border-bottom: 10px solid rgba(0,0,0,0.14);
       padding-bottom: 1em;
       min-height: 250px;
 
@@ -246,7 +245,7 @@
             width: 250px; 
           }
           @media (min-width: 1024px) {
-            width: 350px; 
+            width: 400px; 
           }
     
           width: 100%;
