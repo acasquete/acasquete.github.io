@@ -6,7 +6,7 @@ layout: default
 <div>
 {% for post in site.tags[page.tag] %}
   <div>
-    <a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date: '%B %e, %Y' }}) 
+    <a href="{{ post.url }}">{{ post.title }}</a>. {{ post.date | date: '%B %e, %Y' }} 
     <p>{{ post.excerpt | strip_html }}</p>
   </div>
 {% endfor %}
