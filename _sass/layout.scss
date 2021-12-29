@@ -222,6 +222,11 @@
     list-style-type: none;
     margin-top: 1em;
     clear: both;
+
+    p {
+      line-height: 1.18em;
+    }
+
     &:nth-child(1) {
       border-bottom: 10px solid rgba(0,0,0,0.14);
       padding-bottom: 1em;
