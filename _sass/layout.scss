@@ -257,7 +257,12 @@
     &:nth-child(n+2) {
       border-bottom: 1px solid rgba(0,0,0,0.14);
       padding-bottom: 1em;
-      min-height: 350px;
+      min-height: 185px;
+
+      h1 {
+        font-size: 2em;
+      }
+      
 
       .postimage  {
 
