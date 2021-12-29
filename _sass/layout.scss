@@ -231,7 +231,7 @@
     &:nth-child(1) {
       border-bottom: 10px solid rgba(0,0,0,0.14);
       padding-bottom: 1em;
-      min-height: 350px;
+      min-height: 250px;
 
       .postimage  {
 
@@ -248,7 +248,7 @@
     
           width: 100%;
           object-fit: cover;
-          height: 300px;
+          height: 250px;
           object-position: center;
           -webkit-border-radius: 10px;
           -moz-border-radius: 10px;
