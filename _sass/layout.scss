@@ -229,7 +229,7 @@
     }
   }
 
-  .postimage:nth-child(1) {
+  .postimage:first() {
 
     @media (min-width: 940px) {
       float: left;
