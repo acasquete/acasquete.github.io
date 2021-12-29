@@ -226,48 +226,63 @@
       border-bottom: 1px solid rgba(0,0,0,0.14);
       padding-bottom: 1em;
       min-height: 350px;
-    }
-  }
 
-  .postimage:nth-child(1)  {
+      .postimage  {
 
-    @media (min-width: 940px) {
-      float: left;
-    }
-    margin-right: 0.5em;
-
-    img {
-
-      @media (min-width: 940px) {
-        width: 340px; 
+        @media (min-width: 940px) {
+          float: left;
+        }
+        margin-right: 0.5em;
+    
+        img {
+    
+          @media (min-width: 940px) {
+            width: 340px; 
+          }
+    
+          width: 100%;
+          object-fit: cover;
+          height: 300px;
+          object-position: center;
+          -webkit-border-radius: 10px;
+          -moz-border-radius: 10px;
+           -ms-border-radius: 10px;
+               border-radius: 10px;
+        }
       }
 
-      width: 100%;
-      object-fit: cover;
-      height: 300px;
-      object-position: center;
-      -webkit-border-radius: 10px;
-      -moz-border-radius: 10px;
-       -ms-border-radius: 10px;
-           border-radius: 10px;
     }
-  }
 
-  .postimage:nth-child(n+2) {
-    img {
 
-      @media (min-width: 940px) {
-        width: 150px; 
+    &:nth-child(n+1) {
+      border-bottom: 1px solid rgba(0,0,0,0.14);
+      padding-bottom: 1em;
+      min-height: 350px;
+
+      .postimage  {
+
+        @media (min-width: 940px) {
+          float: left;
+        }
+        margin-right: 0.5em;
+    
+        img {
+    
+          @media (min-width: 940px) {
+            width: 150px; 
+          }
+    
+          width: 100%;
+          object-fit: cover;
+          height: 150px;
+          object-position: center;
+          -webkit-border-radius: 10px;
+          -moz-border-radius: 10px;
+           -ms-border-radius: 10px;
+               border-radius: 10px;
+        }
       }
 
-      width: 100%;
-      object-fit: cover;
-      height: 150px;
-      object-position: center;
-      -webkit-border-radius: 10px;
-      -moz-border-radius: 10px;
-       -ms-border-radius: 10px;
-           border-radius: 10px;
     }
   }
 
