@@ -229,15 +229,15 @@
 
       .postimage  {
 
-        @media (min-width: 560px) {
+        @media (min-width: 730px) {
           float: left;
+          margin-right: 0.5em;
         }
-        margin-right: 0.5em;
     
         img {
     
-          @media (min-width: 560px) {
-            width: 340px; 
+          @media (min-width: 730px) {
+            width: 250px; 
           }
     
           width: 100%;
