@@ -1,5 +1,5 @@
 ---
-title: Ethics and censorship. The Internet user's bulwark against the LSSI.
+title: Ethics and censorship. The Internet user's bulwark against the LSSI
 tags: [personal, english]
 reviewed: true
 ---
