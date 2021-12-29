@@ -264,18 +264,11 @@
 
       .postimage  {
 
-        @media (min-width: 940px) {
-          float: left;
-        }
+        float: left;
         margin-right: 0.5em;
     
         img {
-    
-          @media (min-width: 940px) {
-            width: 150px; 
-          }
-    
-          width: 100%;
+          width: 150px; 
           object-fit: cover;
           height: 150px;
           object-position: center;
