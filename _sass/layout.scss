@@ -378,7 +378,16 @@
 
     .TGN_site_ArticleItems a {
       text-decoration: none !important;
+
+      @media (max-width: 1020px) {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 100%;
+      }
     }
+
+
 
 }
 
