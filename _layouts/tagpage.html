@@ -10,7 +10,7 @@ layout: default
     <p>
 
     {% if post.content contains '<!-- excerpt-end -->' %}
-    {{ post.content | split:'<!-- excerpt-end -->' | first }}
+    {{ post.content | split:'<!-- excerpt-end -->' | strip_html | first }}
     {% else %}
     {{ post.excerpt | strip_html }}
     {% endif %}
