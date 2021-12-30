@@ -219,83 +219,38 @@
 }
 
 /* Posts */
-
 #posts {
-  li {
-    list-style-type: none;
-    margin-top: 1em;
-    clear: both;
 
-    p {
-      line-height: 1.18em;
-      font-family: sans-serif;
-      margin-bottom: 0;
+    .post_hero {
 
-    }
-
-    time {
-      font-family: sans-serif;
-
-    }
-
-    &:nth-child(1) {
-      min-height: 250px;
-
-      .postimage  {
-
-        @media (min-width: 730px) {
-          float: left;
-          margin-right: 0.5em;
-        }
-    
-        img {
-    
-          @media (min-width: 730px) {
-            width: 250px; 
-            height: 250px;
-
-          }
-          @media (min-width: 1024px) {
-            width: 400px; 
-          }
-    
-          width: 100%;
-          object-fit: cover;
-          height: 200px;
-          object-position: center;
-        }
+      a {
+        text-decoration: none !important;
+        color: black !important;
+        display: flex;
+        align-content: center;
+        align-items: center;
       }
-
-    }
-
-
-    &:nth-child(n+2) {
-      padding-bottom: 1em;
-      min-height: 150px;
-
-      h1 {
-        font-size: 2em;
-      }
-
-      .postimage  {
-
-        float: left;
-        margin-right: 0.5em;
-    
-        img {
-          margin: 0;
-          width: 150px; 
-          object-fit: cover;
-          height: 150px;
-          object-position: center;
-        }
-      }
-
-    }
-  }
-
   
+      .post_heroleft {
+        width: 48.9%;
+        display: inline-block;
+        
+        img {
+          width: 100%;
+          margin: 0px;
+          padding: 0px;
+          display: block;
+        }
+    
+        }
 
+        .post_heroright {
+          display: inline-block;
+          width: 47.5%;
+          margin-left: 2.5%;
+          vertical-align: top;
+          }
+    }
 }
 
 #post-page {

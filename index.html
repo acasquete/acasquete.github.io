@@ -7,6 +7,22 @@ title: Home
 
 	{% for post in paginator.posts %}
 
+		{% if forloop.first == true %}
+		<div class="post_hero">
+			<a href="{% if site.baseurl == "/" %}{{ post.url }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}">
+				<div class="post_heroleft">
+				<img src="/img/{{ post.header_fullview }}">
+				</div>
+				<div class="post_heroright">
+					<div class="post_title" style="font-size: 54px; line-height: 56.7px;">{%if post.header %}{{ post.header }}{% else %}{{ post.title }}{% endif %}</div>
+					<div class="post_description">{{ post.excerpt }}</div>
+				<div class="post_herobydate">{{ post.date | date: '%B %e, %Y' }}</div>
+				</div>
+			</a>
+		</div>
+		{% endif %}
+
+		<!--
 	  <li class="post">
 
 	  	<h1>
@@ -17,10 +33,10 @@ title: Home
 				{%if post.header %}{{ post.header }}{% else %}{{ post.title }}{% endif %}</a></h1>
 				{{ post.excerpt }}
 				{% if forloop.first == true %}
-				<time datetime="{{ post.date | date_to_xmlschema }}" class="by-line"> {{ post.date | date: '%B %e, %Y' }} </time>
+				<time datetime="{{ post.date | date_to_xmlschema }}" class="by-line">  </time>
 				{% endif %}
 	  </li>
-
+		-->
     {% endfor %}
 
 </ul>
