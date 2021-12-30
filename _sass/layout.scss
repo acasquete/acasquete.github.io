@@ -147,7 +147,7 @@
 }
 
 #container {
-	margin: 1em auto;
+	margin-top: 24px 0;
 }
 
 #header {
@@ -222,7 +222,8 @@
 #posts {
 
     .post_hero {
-
+        margin-bottom: 24px;
+    
       a {
         text-decoration: none !important;
         color: black !important;
@@ -317,8 +318,10 @@
       margin: 0px;
       padding: 0px;
       display: block;
+      min-height: 200px;
+      object-fit: cover;
     }
-    
+
 }
 
 
