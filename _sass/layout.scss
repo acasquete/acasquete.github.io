@@ -234,6 +234,11 @@
       .post_heroleft {
         width: 48.9%;
         display: inline-block;
+
+        @media (max-width: 680px) {
+          width: 100%;
+          display: block;
+        }
         
         img {
           width: 100%;
@@ -253,6 +258,13 @@
           width: 47.5%;
           margin-left: 2.5%;
           vertical-align: top;
+
+          @media (max-width: 680px) {
+            width: 100%;
+            margin-left: 0%;
+            margin-top: 4px;          
+          }
+
 
           .post_description {
             line-height: 1.18em;
