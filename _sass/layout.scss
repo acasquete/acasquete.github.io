@@ -240,6 +240,10 @@
           margin: 0px;
           padding: 0px;
           display: block;
+
+          object-fit: cover;
+          min-height: 200px;
+          object-position: center;
         }
     
         }
@@ -253,6 +257,7 @@
           .post_description {
             line-height: 1.18em;
             font-family: sans-serif;
+            font-weight: normal;
           }
           }
     }

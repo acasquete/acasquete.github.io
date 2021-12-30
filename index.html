@@ -15,7 +15,7 @@ title: Home
 				</div>
 				<div class="post_heroright">
 					<div class="post_title">{%if post.header %}{{ post.header }}{% else %}{{ post.title }}{% endif %}</div>
-					<div class="post_description">{{ post.excerpt }}</div>
+					<div class="post_description">{{ post.excerpt | strip_html }}</div>
 				<div class="post_herobydate">{{ post.date | date: '%B %e, %Y' }}</div>
 				</div>
 			</a>
