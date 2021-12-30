@@ -13,7 +13,7 @@
     font-family: "Oswald", sans-serif;
     text-decoration: none;
     text-transform: uppercase;
-    @media (min-width: 560px) {
+    @media (min-width: 730px) {
       font-size: 1em;
     }
     &:hover {
@@ -45,7 +45,7 @@
 }
 
 #nav-links {
-  @media (max-width: 560px) {
+  @media (max-width: 730px) {
     display:none;
   } 
   margin-bottom: 0.5em;
@@ -83,14 +83,14 @@
 
 #nav-menu {
   @include icon-position(right);
-  @media (min-width: 560px) {
+  @media (min-width: 730px) {
     display:none;
   }
 }
 
 #nav-menu-left {
   @include icon-position(left);
-  @media (min-width: 560px) {
+  @media (min-width: 730px) {
     display:none;
   }
 }
