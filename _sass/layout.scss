@@ -415,6 +415,11 @@
     .TGN_site_ArticleItems a {
       text-decoration: none !important;
 
+      &:hover {
+        .TGN_site_ArticleItemtitle {
+          text-decoration: underline;
+        }
+      }
       @media (max-width: 1020px) {
         display: flex;
         align-items: flex-start;
