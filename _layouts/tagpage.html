@@ -8,13 +8,12 @@ layout: default
   <div>
     <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: '%B %e, %Y' }} 
     <p>
-    {% raw %}
+
     {% if post.content contains '<!-- excerpt-end -->' %}
     {{ post.content | split:'<!-- excerpt-end -->' | first }}
     {% else %}
     {{ post.excerpt }}
     {% endif %}
-    {% endraw %}
     </p>
 
   </div>
