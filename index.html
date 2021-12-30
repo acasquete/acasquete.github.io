@@ -16,7 +16,7 @@ title: Home
 				<div class="post_heroright">
 					<div class="post_title"><h1>{%if post.header %}{{ post.header }}{% else %}{{ post.title }}{% endif %}</h1></div>
 					<div class="post_description">{{ post.excerpt | strip_html }}</div>
-				<div class="post_herobydate">{{ post.date | date: '%B %e, %Y' }}</div>
+					<time datetime="{{ page.date | date_to_xmlschema }}" class="by-line">{{ page.date | date: '%B %e, %Y' }}</time>
 				</div>
 			</a>
 		</div>
