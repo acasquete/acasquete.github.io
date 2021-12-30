@@ -313,6 +313,13 @@
         width: 100%;
       }
 
+      @media (max-width: 680px) {
+        display: block;
+        align-items: unset;
+        justify-content: unset;
+        width: 100%;
+      }
+
     }
 
     .TGN_site_ArticleItemsBottom {
@@ -323,6 +330,13 @@
       @media (max-width: 1020px) {
         width: 100%;
       }
+
+      @media (max-width: 680px) {
+        display: block;
+        align-items: unset;
+        justify-content: unset;
+        width: 100%;
+      }
     }
 
     .TGN_site_ArticleItem {
@@ -330,6 +344,15 @@
 
       @media (max-width: 1020px) {
         margin-bottom: 24px;
+      }
+
+      @media (max-width: 680px) {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        vertical-align: top;
+        margin-bottom: 20px;
       }
     }
 
@@ -346,7 +369,12 @@
   .TGN_site_ArticleItemcopy {
     @media (max-width: 1020px) {
       width: 58%;
-  }
+    }
+
+    @media (max-width: 680px) {
+      width: 62%;
+    }
+
   width: 100%;
 }
     .TGN_site_ArticleItemimage img {
