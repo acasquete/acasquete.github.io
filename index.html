@@ -28,7 +28,7 @@ title: Home
 	<div class="TGN_site_ArticleItemsTop">
 	{% for post in paginator.posts %}
 
-		{% if forloop.first == false %}
+		{% if forloop.index == 2 or forloop.index == 3 %}
 		<div class="TGN_site_ArticleItem">
             <a href="{% if site.baseurl == "/" %}{{ post.url }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}">
                 <div class="TGN_site_ArticleItemimage"><img src="/img/{{ post.header_fullview }}"></div>
@@ -39,9 +39,28 @@ title: Home
             </a>
         </div>
 		{% endif %}
-		
+
     {% endfor %}
 	</div>
+
+	<div class="TGN_site_ArticleItemsBottom">
+		{% for post in paginator.posts %}
+
+			{% if forloop.index == 4 or forloop.index == 5 %}
+			<div class="TGN_site_ArticleItem">
+				<a href="{% if site.baseurl == "/" %}{{ post.url }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}">
+					<div class="TGN_site_ArticleItemimage"><img src="/img/{{ post.header_fullview }}"></div>
+					<div class="TGN_site_ArticleItemcopy">
+						<div class="TGN_site_ArticleItemtitle">{%if post.header %}{{ post.header }}{% else %}{{ post.title }}{% endif %}</div>
+						<div class="TGN_site_ArticleItemdescription">{{ post.excerpt | strip_html }}</div>
+					</div>
+				</a>
+			</div>
+			{% endif %}
+			
+		{% endfor %}
+		</div>
+
 	</div>
 
 

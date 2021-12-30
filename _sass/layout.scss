@@ -285,7 +285,36 @@
           }
           }
     }
+
+    .TGN_site_ArticleItems {
+
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      margin-bottom: 40px;
+    }
+
+    .TGN_site_ArticleItemsTop {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      width: 48.9%;
+    }
+
+    .TGN_site_ArticleItemsBottom {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      width: 48.9%;
+    }
+
+    .TGN_site_ArticleItem {
+      width: 47.9%;
+    }
 }
+
+
+
 
 #post-page {
   margin-bottom: 1.5em;
