@@ -34,7 +34,13 @@ title: Home
                 <div class="TGN_site_ArticleItemimage"><img src="/img/{{ post.header_fullview }}"></div>
                 <div class="TGN_site_ArticleItemcopy">
                     <div class="TGN_site_ArticleItemtitle"><h1>{%if post.header %}{{ post.header }}{% else %}{{ post.title }}{% endif %}</h1></div>
-                    <div class="TGN_site_ArticleItemdescription">{{ post.excerpt | strip_html }}</div>
+                    <div class="TGN_site_ArticleItemdescription">
+						{% if post.content contains '<!-- excerpt-end -->' %}
+						{{ post.content | split:'<!-- excerpt-end -->' | strip_html | first }}
+						{% else %}
+						{{ post.excerpt | strip_html }}
+						{% endif %}
+					</div>
                 </div>
             </a>
         </div>
@@ -52,7 +58,13 @@ title: Home
 					<div class="TGN_site_ArticleItemimage"><img src="/img/{{ post.header_fullview }}"></div>
 					<div class="TGN_site_ArticleItemcopy">
 						<div class="TGN_site_ArticleItemtitle"><h1>{%if post.header %}{{ post.header }}{% else %}{{ post.title }}{% endif %}</h1></div>
-						<div class="TGN_site_ArticleItemdescription">{{ post.excerpt | strip_html }}</div>
+						<div class="TGN_site_ArticleItemdescription">
+							{% if post.content contains '<!-- excerpt-end -->' %}
+							{{ post.content | split:'<!-- excerpt-end -->' | strip_html | first }}
+							{% else %}
+							{{ post.excerpt | strip_html }}
+							{% endif %}
+						</div>
 					</div>
 				</a>
 			</div>
