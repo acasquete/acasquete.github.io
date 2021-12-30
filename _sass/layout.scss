@@ -293,6 +293,14 @@
       align-items: flex-start;
       justify-content: space-between;
       margin-bottom: 40px;
+
+      @media (max-width: 1020px) {
+        display: block;
+        align-items: unset;
+        justify-content: unset;
+        margin-bottom: 16px;
+      }
+
     }
 
     .TGN_site_ArticleItemsTop {
@@ -300,6 +308,11 @@
       align-items: flex-start;
       justify-content: space-between;
       width: 48.9%;
+
+      @media (max-width: 1020px) {
+        width: 100%;
+      }
+
     }
 
     .TGN_site_ArticleItemsBottom {
@@ -307,12 +320,31 @@
       align-items: flex-start;
       justify-content: space-between;
       width: 48.9%;
+      @media (max-width: 1020px) {
+        width: 100%;
+      }
     }
 
     .TGN_site_ArticleItem {
       width: 47.9%;
     }
 
+   
+  .TGN_site_ArticleItemimage {
+    @media (max-width: 1020px) {
+      width: 38%;
+    }
+    width: 100%;
+    background: #808080;
+  }
+
+ 
+  .TGN_site_ArticleItemcopy {
+    @media (max-width: 1020px) {
+      width: 58%;
+  }
+  width: 100%;
+}
     .TGN_site_ArticleItemimage img {
       width: 100%;
       margin: 0px;
@@ -321,6 +353,14 @@
       min-height: 200px;
       object-fit: cover;
     }
+
+    .TGN_site_ArticleItemtitle {
+    @media (max-width: 1020px) {
+ 
+        margin-top: -2px;
+        max-width: 200px;
+    }
+  }
 
     .TGN_site_ArticleItemtitle h1 {
       font-size: 22px;
@@ -335,7 +375,7 @@
       font-weight: lighter;
       text-decoration: none;
     }
-    
+
     .TGN_site_ArticleItems a {
       text-decoration: none !important;
     }
