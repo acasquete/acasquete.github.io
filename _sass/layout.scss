@@ -237,6 +237,12 @@
         }
       }
   
+      &:hover {
+        .post_title {
+          text-decoration: underline;
+        }
+      }
+
       .post_heroleft {
         width: 48.9%;
         display: inline-block;
