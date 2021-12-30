@@ -327,6 +327,10 @@
 
     .TGN_site_ArticleItem {
       width: 47.9%;
+
+      @media (max-width: 1020px) {
+        margin-bottom: 24px;
+      }
     }
 
    
