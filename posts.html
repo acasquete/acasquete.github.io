@@ -46,7 +46,9 @@ reviewed: false
   <div class="TGN_site_ArticleItemSearchThumb">
     <a href="{{ post.url }}">
         <div class="TGN_site_ArticleItemDesktopdate">{{ post.date | date: '%B %e, %Y' }}</div>
+        {% if post.header_fullview %}
         <div class="TGN_site_ArticleItemimage"><img src="/img/{{ post.header_fullview }}" ></div>
+        {% endif %}
         <div class="TGN_site_ArticleItemcopy">
             <div class="TGN_site_ArticleItemtitle">{{ post.title }}</div>
             <div class="TGN_site_ArticleItemdescription">
