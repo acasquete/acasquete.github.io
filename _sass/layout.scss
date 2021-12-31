@@ -457,6 +457,13 @@
 .TGN_site_ArticleItemSearchThumb a {
   text-decoration: none !important;
   color: black;
+
+  @media (max-width: 1020px) {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 16px;
+  }
 }
 
 .TGN_site_ArticleItemDesktopdate {
