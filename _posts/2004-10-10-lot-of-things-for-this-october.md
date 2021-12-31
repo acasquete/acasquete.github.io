@@ -3,8 +3,8 @@ title: A lot of things for this October
 tags: [random, english]
 reviewed: true
 ---
-This October is being very exciting because of all the events that are taking place.  
-  
+This October is being very exciting because of all the events that are taking place.
+
 The first is that I am finally finishing the web application project that has kept me busy almost every day for the last five months.  
   
 Exciting also because of Microsoft's new initiative for this new year: [Desarrolla con MSDN](http://www.desarrollaconmsdn.com) (_Develop with MSDN_), which includes webcasts, chats and a development contest. Last Thursday we attended the first WebCast [Application Development with .NET and Web Services](https://web.archive.org/web/20051124101924/http://www.desarrollaconmsdn.com/msdn/ServiciosWeb/Eventos/Webcast1.aspx), presented by David Carmona, in which we saw an introduction to the development of web services with . NET. In some moments of the webcast they had some problems with the sound, but this did not affect the final result of the whole webcast.  
