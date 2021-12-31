@@ -25,7 +25,7 @@ reviewed: false
               {% if post.content contains '<!-- excerpt-end -->' %}
 							{{ post.content | split:'<!-- excerpt-end -->' | first | strip_html }}
 							{% else %}
-							{{ post.excerpt | strip_html | truncate: 150 }}
+							{{ post.excerpt | strip_html | truncate: 190 }}
 							{% endif %}
             </div>
             <div class="TGN_site_ArticleItembylinedate">{{ post.date | date: '%B %e, %Y' }}</div>
