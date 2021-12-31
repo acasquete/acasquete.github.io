@@ -3,41 +3,6 @@ layout: default
 title: All
 reviewed: false
 ---
-
-<style>
-  .row {
-    display: flex;
-  }
-  .row * {
-    margin:0;
-  }
-  .columnY {
-    min-width: 3em;
-  }
-  .column {
-    margin-left: 1em;
-  }
-
-  .yeartitle {
-    background: #ccc;
-    color: #000;
-    padding: 0 4px;
-    text-align: center;
-  }
-  .reviewed {
-    background: #ccc;
-    color: WHITE;
-    font-size: 8px;
-    font-family: sans-serif;
-    padding: 1px  2px;
-    vertical-align: middle;
-    text-align: center;
-    width: 12px;
-    height: 12px;
-    display: inline-block;
-  }
-</style>
-
 <h1>All</h1>
 
 <div class="tgnSearchResultsBox">
@@ -60,7 +25,7 @@ reviewed: false
               {% if post.content contains '<!-- excerpt-end -->' %}
 							{{ post.content | split:'<!-- excerpt-end -->' | first | strip_html }}
 							{% else %}
-							{{ post.excerpt | strip_html | truncate: 50 }}
+							{{ post.excerpt | strip_html | truncate: 150 }}
 							{% endif %}
             </div>
             <div class="TGN_site_ArticleItembylinedate">{{ post.date | date: '%B %e, %Y' }}</div>
