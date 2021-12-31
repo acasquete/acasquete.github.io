@@ -38,24 +38,30 @@ reviewed: false
   }
 </style>
 
-<div id="post-page">
+<h1>All</h1>
 
-    <h1>All Posts</h1>
+<div class="tgnSearchResultsBox">
 
-    {% for post in site.posts %}
-    {% assign currentdate = post.date | date: "%Y" %}
-    <div class="row">
-      <div class="columnY">
-        {% if currentdate != date %}<p class="yeartitle">{{ currentdate }}</p>{% endif %}
-      </div>
-      <div class="column">
-        <div>
-          <a href="{{ post.url }}">{{ post.title }}</a>
-        {% unless post.reviewed %}<span class="reviewed">R</span>{% endunless %}
+  {% for post in site.posts %}
+  <div class="TGN_site_ArticleItemSearchThumb">
+    <a href="{{ post.url }}">
+        <div class="TGN_site_ArticleItemDesktopdate">{{ post.date | date: '%B %e, %Y' }}</div>
+        <div class="TGN_site_ArticleItemimage"><img src="/img/{{ post.header_fullview }}" ></div>
+        <div class="TGN_site_ArticleItemcopy">
+            <div class="TGN_site_ArticleItemtitle">{{ post.title }}</div>
+            <div class="TGN_site_ArticleItemdescription">
+              {% if post.content contains '<!-- excerpt-end -->' %}
+							{{ post.content | split:'<!-- excerpt-end -->' | first | strip_html }}
+							{% else %}
+							{{ post.excerpt | strip_html }}
+							{% endif %}
+            </div>
+            <div class="TGN_site_ArticleItembylinedate">{{ post.date | date: '%B %e, %Y' }}</div>
         </div>
-      </div>
-      
-    </div>
-    {% assign date = currentdate %}
-    {% endfor %}
+    </a>
+  </div>
+  {% endfor %}
+</div>
+  
+
 </div>

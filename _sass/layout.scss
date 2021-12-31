@@ -432,8 +432,73 @@
 
 }
 
+.tgnSearchResultsBox {
+  display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 201px;
+    min-height: 1000px;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+}
 
+.TGN_site_ArticleItemSearchThumb {
+  width: 23.5%;
+  margin-bottom: 24px;
+}
 
+.TGN_site_ArticleItemSearchThumb a {
+  text-decoration: none !important;
+  color: black;
+}
+
+.TGN_site_ArticleItemDesktopdate {
+  color: #757575;
+  margin-bottom: 7px;
+  font-family: sans-serif;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.TGN_site_ArticleItemimage {
+  width: 100%;
+  background: #808080;
+}
+
+.TGN_site_ArticleItemcopy {
+  width: 100%;
+}
+
+.TGN_site_ArticleItemtitle {
+  color: #000000;
+  font-family: source-serif-pro, 'Source Serif Pro', 'LyonDisplay-Medium', serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  margin-top: 14px;
+  margin-bottom: 7px;
+}
+
+.TGN_site_ArticleItemdescription {
+  color: #404040;
+  font-family: 'HelveticaNeueW01-45Ligh','neue-haas-unica', sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  overflow-wrap: break-word;
+}
+
+.TGN_site_ArticleItembylinedate {
+  color: #757575;
+  font-family: 'HelveticaNeueW01-45Ligh','neue-haas-unica', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 15px;
+  margin-top: 7px;
+  display: none;
+}
 
 #post-page {
   margin-bottom: 1.5em;
