@@ -2,6 +2,7 @@
 title: Today the silence ends
 tags: [personal, english]
 reviewed: true
+header_fullview: alex_casquete_header1.gif
 ---
 Today I have decided to create this weblog to end my silence. I have also decided that my silence ends in English.
 
