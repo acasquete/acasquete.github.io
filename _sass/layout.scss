@@ -492,6 +492,10 @@
     display: block;
     object-fit: cover;
     height: 200px;
+
+    @media (max-width: 1020px) {
+      height: 150px;
+    }
   }
 
   @media (max-width: 1020px) {
