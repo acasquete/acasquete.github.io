@@ -452,6 +452,10 @@
     width: 47.9%;
     margin-bottom: 0
   }
+
+  @media (max-width: 680px) {
+    width: 100%;
+  }
 }
 
 .TGN_site_ArticleItemSearchThumb a {
@@ -464,6 +468,8 @@
     justify-content: space-between;
     margin-bottom: 16px;
   }
+
+  
 }
 
 .TGN_site_ArticleItemDesktopdate {
@@ -496,6 +502,10 @@
     @media (max-width: 1020px) {
       height: 150px;
     }
+
+    @media (max-width: 680px) {
+      width: 33%;
+    }
   }
 
   @media (max-width: 1020px) {
@@ -512,6 +522,9 @@
       width: 58%;
   }
   
+  @media (max-width: 680px) {
+    width: 62%;
+  }
 }
 
 .TGN_site_ArticleItemtitle {
