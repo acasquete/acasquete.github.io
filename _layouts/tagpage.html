@@ -1,22 +1,35 @@
 ---
 layout: default
 ---
-<div id="post-page">
 <h1>{{ page.title }}</h1>
-<div>
-{% for post in site.tags[page.tag] %}
-  <div>
-    <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: '%B %e, %Y' }} 
-    <p>
 
-    {% if post.content contains '<!-- excerpt-end -->' %}
-    {{ post.content | split:'<!-- excerpt-end -->' | first | strip_html }}
-    {% else %}
-    {{ post.excerpt | strip_html }}
-    {% endif %}
-    </p>
+<div class="tgnSearchResultsBox">
 
+  {% for post in site.tags[page.tag] %}
+  <div class="TGN_site_ArticleItemSearchThumb">
+    <a href="{{ post.url }}">
+        <div class="TGN_site_ArticleItemDesktopdate">{{ post.date | date: '%B %e, %Y' }}</div>
+        <div class="TGN_site_ArticleItemimage">
+          {% if post.header_fullview %}
+          <img src="/img/{{ post.header_fullview }}" >
+          {% else %}
+          <img src="/img/favicon.png" >
+          {% endif %}
+        </div>
+        
+        <div class="TGN_site_ArticleItemcopy">
+            <div class="TGN_site_ArticleItemtitle"><h1>{{ post.title }}</h1></div>
+            <div class="TGN_site_ArticleItemdescription">
+              {% if post.content contains '<!-- excerpt-end -->' %}
+							{{ post.content | split:'<!-- excerpt-end -->' | first | strip_html }}
+							{% else %}
+							{{ post.excerpt | strip_html | truncate: 150 }}
+							{% endif %}
+            </div>
+            <div class="TGN_site_ArticleItembylinedate">{{ post.date | date: '%B %e, %Y' }}</div>
+        </div>
+    </a>
   </div>
-{% endfor %}
+  {% endfor %}
 </div>
-</div>
+  
