@@ -12,8 +12,8 @@ comments: true
 
 		{% if page.header_fullview %}
 		<p><img src="/img/{{page.header_fullview}}" alt="{{page.title}}" class="fullview" /></p>
-        {% elsif post.header %}
-		<p><img src="/img/{{page.header_fullview}}" alt="{{page.title}}" /></p>
+        {% elsif page.header %}
+		<p><img src="/img/{{page.header}}" alt="{{page.title}}" /></p>
 		{% endif %}
 		
 		{{ content }}
