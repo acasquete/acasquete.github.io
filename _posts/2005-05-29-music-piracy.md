@@ -2,6 +2,7 @@
 title: Music piracy
 tags: [personal, english]
 reviewed: true
+header_fullview: piracy-music.jpg
 ---
 I don't believe that the high CD prices imposed by the recording industry are responsible for piracy. They have the right to set the prices they want. There are many other things that I find much more expensive and I still pay for them. I think the main problem is much more serious than a simple corporate pricing policy.
 
