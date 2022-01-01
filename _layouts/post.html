@@ -10,8 +10,10 @@ comments: true
 	
 	<div class="content">
 
-		{% if page.header_fullview != null %}
+		{% if page.header_fullview %}
 		<p><img src="/img/{{page.header_fullview}}" alt="{{page.title}}" class="fullview" /></p>
+        {% elsif post.header %}
+		<p><img src="/img/{{page.header_fullview}}" alt="{{page.title}}" /></p>
 		{% endif %}
 		
 		{{ content }}

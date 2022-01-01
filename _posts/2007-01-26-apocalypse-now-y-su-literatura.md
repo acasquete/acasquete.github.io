@@ -2,7 +2,7 @@
 title: Apocalypse Now y su literatura
 tags: [personal]
 reviewed: true
-header_fullview: corazon-tinieblas-3dcover.jpg
+header: corazon-tinieblas-3dcover.jpg
 ---
 Uno de los momentos más brillantes e intensos que nos ha dado el séptimo arte es la escena de la excelsa «Apocalypse Now» de [Francis Ford Coppola](http://es.wikipedia.org/wiki/Francis_Coppola), en la que el Coronel Kurtz, interpretado por Marlon Brando lee los primeros versos del poema «Los hombres huecos» (The hollow men) de T.S. Eliot:
 
