@@ -1,6 +1,7 @@
 ---
 title: Explorando ensamblados con System.Reflection
-tags: []
+tags: [programming]
+reviewed: true
 ---
 De nuevo una nueva entrada dedicada a mi resumen del «MCTS Self-Placed Training Kit». En esta ocasión es del capítulo dedicado al espacio de nombres _System.Reflection_. Comienzo con la primera de las cinco entradas que dedicaré, al igual que el libro, a la reflexión con .NET.
 
@@ -26,6 +27,7 @@ Una vez tenemos una instancia de clase _Assembly_, podemos interrogar las propie
 
 El siguiente código muestra el nombre todos los módulos del ensamblado que está en ejecución.
 
+```csharp
 Assembly a = Assembly.GetExecutingAssembly();
 
 Console.WriteLine("Nombre completo: {0}", a.FullName);
@@ -37,13 +39,12 @@ foreach (Module m in mods)
 {
     Console.WriteLine("Module Name: {0}", m.Name);
 }
+```
 
+Y como podemos suponer, la clase *Module* se puede utilizar para recuperar o buscar tipos contenidos dentro de un módulo especifico. Estos son los métodos y las propiedades de la clase *Module* que nos ayudarán en esta tarea:
 
+**Propiedades:** *Assembly*, *FullyQualifiedName*, *Name*.
+**Métodos:** *FindTypes*, *GetCustomAttributes*, *GetField*, *GetFields*, *GetMethod*, *GetMethods*, *GetTypes*, *IsResource*.
 
-Y como podemos suponer, la clase \*Module\* se puede utilizar para recuperar o buscar tipos contenidos dentro de un módulo especifico. Estos son los métodos y las propiedades de la clase \*Module\* que nos ayudarán en esta tarea:
-
-\*\*Propiedades:\*\* \*Assembly\*, \*FullyQualifiedName\*, \*Name\*.
-\*\*Métodos:\*\* \*FindTypes\*, \*GetCustomAttributes\*, \*GetField\*, \*GetFields\*, \*GetMethod\*, \*GetMethods\*, \*GetTypes\*, \*IsResource\*.
-
-La siguiente entrada tratará de los atributos de los ensamblados, es decir de aquella información de un ensamblado que no está disponible mediante la clase \*Assembly\*.
+La siguiente entrada tratará de los atributos de los ensamblados, es decir de aquella información de un ensamblado que no está disponible mediante la clase *Assembly*.
 

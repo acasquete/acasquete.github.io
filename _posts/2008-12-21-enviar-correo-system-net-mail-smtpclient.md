@@ -1,6 +1,7 @@
 ---
 title: Enviar correo con System.Net.Mail.SmtpClient
 tags: [certification]
+reviewed: true
 ---
 Continúo con mis resúmenes del «MCTS Self-Placed Training Kit» que estoy utilizando para la preparación del examen 70-356.
 
@@ -12,28 +13,33 @@ SmtpClient smtp = new SmtpClient(“localhost”); smtp.Send(m); </pre> Esto es,
 
 Para especificar unas credenciales podemos utilizar las credenciales de red por defecto poniendo a True la propiedad _UseDefaultCredentials_ o asignado _CredentialCache.DefaultNetworkCredentials_ (del espacio de nombres _System.Net_) a _SmtpClient.Credentials_.
 
+```csharp
 SmtpClient client = new SmtpClient("smtp.servidor.com");
 client.Credentials = System.Net.CredentialCache.DefaultNetworkCredentials;
+```
 
 Si queremos especificar usuario y password y opcionalmente dominio tenemos que crear una instancia del _System.Net.NetworkCredentials_ y asignarla a _SmtpClient.Credentials_.
 
+```csharp
 SmtpClient client = new SmtpClient("smtp.servidor.com");
 
 client.Credentials = new NetworkCredential("usuario", "contraseña");
+```
 
 Si queremos encriptar la comunicación SMTP debemos poner a True la propiedad _EnableSsl_, teniendo en cuenta que no todos los servidores tienen soporte de SSL.
 
-    ### Envío asíncrono con SmtpClient.SendAsync
-    
+Envío asíncrono con SmtpClient.SendAsync
+---    
 
 El envío asíncrono de e-mails permite que nuestra aplicación siga respondiendo mientras se envía el mensaje. Si el servidor no responde, la aplicación esperará el valor indicado en _SmtpClient.Timeout_. Para enviar un mensaje de forma asíncrona tenemos crear un método para responder al evento _SmtpClient.SendCompleted_, llamar al método _SmtpClient.SendAsync_ y opcionalmente podremos cancelar el envío llamando al método _SmtpClient.SendAsyncCancel_.
 
+```csharp
 sc = new SmtpClient("localhost");
-sc.SendCompleted += new SendCompletedEventHandler(sc\_SendCompleted);
+sc.SendCompleted += new SendCompletedEventHandler(sc_SendCompleted);
 sc.SendAsync(mailmessage, null);
 sc.SendAsyncCancel();
 
-void sc\_SendCompleted(object sender, AsyncCompletedEventArgs e)
+void sc_SendCompleted(object sender, AsyncCompletedEventArgs e)
 {
     if (e.Cancelled)
         Console.WriteLine("Envío cancelado");
@@ -42,10 +48,8 @@ void sc\_SendCompleted(object sender, AsyncCompletedEventArgs e)
     else
         Console.WriteLine("Mensaje enviado");
 }
+```
 
+Cuando usamos *SmtpClient.SendAsync*, los destinatarios no válidos y otros posibles errores no generan una excepción. Si el valor de *AsyncCompletedEventArgs.Error* no es nulo, significa que se ha producido algún error. El segundo parámetro del método SendAsync se puede utilizar para identificar el mensaje que se está enviando en el caso de que tengamos múltiples envíos asíncronos.
 
-
-Cuando usamos \*SmtpClient.SendAsync\*, los destinatarios no válidos y otros posibles errores no generan una excepción. Si el valor de \*AsyncCompletedEventArgs.Error\* no es nulo, significa que se ha producido algún error. El segundo parámetro del método SendAsync se puede utilizar para identificar el mensaje que se está enviando en el caso de que tengamos múltiples envíos asíncronos.
-
-Hasta aquí el capítulo de \*System.Net.Mail\*. El siguiente tema al que dedicaré otra entrada es el tema relacionado con la reflexión.
-
+Hasta aquí el capítulo de *System.Net.Mail*. El siguiente tema al que dedicaré otra entrada es el tema relacionado con la reflexión.

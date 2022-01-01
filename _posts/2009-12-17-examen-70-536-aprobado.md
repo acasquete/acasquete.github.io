@@ -1,6 +1,8 @@
 ---
 title: Examen 70-536 aprobado
-tags: []
+tags: [certification]
+reviewed: true
+header_fullview: aspnet35-3dcover.png
 ---
 Durante este año he podido confirmar que el propósito de publicar artículos regularmente es una empresa quimérica. Hace poco más de un año, inicié lo que debería haber sido una serie de posts dedicados al repaso de los temas preparatorios para el examen [cuatro artículos](/tag/certification/) y he escrito otros tantos borradores que, muy probablemente, nunca verán la luz. Esto es así porque el pasado día 4 aprobé el dichoso examen, después de cuatro semanas de preparación.
 

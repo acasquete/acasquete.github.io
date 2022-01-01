@@ -1,6 +1,6 @@
 ---
 title: Primeros pasos con Silverlight, algoritmo MiniMax y 3 en raya
-tags: [algorithms]
+tags: [programming]
 reviewed: true
 ---
 Organizando los directorios donde guardo todos mis proyectos, he encontrado dos juegos que hice hace ya catorce años: el 3 en raya y _Dernier_. Lamentablemente [no puedo ver el código fuente](http://support.microsoft.com/default.aspx/kb/58956/es) de ninguno de los dos porque están compilados con _QuickBASIC_. Recuerdo que programé estos dos juegos a base de un sinfín de _ifs_ anidados, ya que por aquel entonces no tenía ni idea de lo que era el algoritmo [MiniMax](http://es.wikipedia.org/wiki/Minimax). El resultado me convenció durante un tiempo ya que, a pesar de todo, eran juegos imbatibles, pero enseguida entendí que utilizando este sistema de programación nunca podría hacer un juego más complejo, como las damas o el ajedrez.
