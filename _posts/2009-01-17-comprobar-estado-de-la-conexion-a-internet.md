@@ -1,12 +1,26 @@
 ---
 title: Comprobar estado de la conexión a Internet
-tags: []
+tags: [programming]
+reviewed: true
 ---
 Cada vez más a menudo nuestras aplicaciones necesitan saber si se dispone de una conexión a Internet para, por ejemplo, activar opciones que sólo tienen sentido en un entorno conectado (actualización de datos, envío de e-mails, etc.). La manera más fácil y rápida de realizar esta tarea es comprobando si nuestro proveedor resuelve la dirección IP de cualquier nombre de dominio.
 
 El ejemplo siguiente utiliza el método _GetHostEntry_ para consultar en un servidor DNS la dirección IP asociada al dominio www.microsoft.com. Si se produce cualquier excepción podemos deducir que no tenemos una conexión a Internet. Este sistema funcionaría incluso si la web de Microsoft estuviese caída, ya que siempre realizamos la consulta a nuestro servidor de DNS y no al servidor de Microsoft.
 
-private bool InternetIsAlive() { try { System.Net.IPHostEntry host = System.Net.Dns.GetHostEntry(“www.microsoft.com”); return true; } catch { return false; } } </pre>
+```csharp
+private bool InternetIsAlive() 
+{ 
+    try 
+    { 
+        System.Net.IPHostEntry host = System.Net.Dns.GetHostEntry(“www.microsoft.com”); 
+        return true; 
+    } 
+    catch 
+    { 
+        return false; 
+    } 
+} 
+```
 
 Otro de los entornos donde nos puede ser útil comprobar si tenemos conexión es en la web. Supongamos que tenemos una página de una aplicación web donde el usuario debe rellenar un formulario, que puede ser más o menos extenso. Antes de realizar el _submit_ del formulario podemos comprobar si el navegador mantiene la conexión con el servidor y en caso de no tener conexión podemos alertar al usuario e incluso podemos guardar los datos en local para recuperarlos en cuanto la conexión vuelva a estar disponible.
 
@@ -14,7 +28,8 @@ Con la última versión de Internet Explorer esto lo podemos hacer mediante la p
 
 Con el ejemplo que pongo a continuación podemos ver el funcionamiento de esta nueva funcionalidad. Para probarlo simplemente tenemos que desconectar el cable de red o deshabilitar el adaptador de red.
 
- function InternetIsAlive()
+```js
+function InternetIsAlive()
 {
     return window.navigator.onLine ? "Está conectado" : "Está desconectado";
 }
@@ -36,7 +51,6 @@ function changeStatusEvent(e)
 window.onload = function() {
     document.body.ononline = changeStatusEvent;
     document.body.onoffline = changeStatusEvent;
-} 
-
-Estado de la conexión
+}
+```
 

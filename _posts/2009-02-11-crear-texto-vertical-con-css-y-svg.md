@@ -20,6 +20,7 @@ Para rotar texto en el resto de navegadores tenemos que recurrir a los gráficos
 
 Como Internet Explorer es el único navegador que no implementa SVG de forma nativa, si queremos hacer, por ejemplo una tabla que contenga una etiqueta vertical, y que sea visible en todos los navegadores, tenemos que utilizar los [comentarios condicionales](http://msdn.microsoft.com/en-us/library/ms537512.aspx), otro gran invento de Microsoft. En el siguiente código tenemos un ejemplo de como hacerlo.
 
+```html
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <html>
 <head>Tabla con etiqueta vertical 
@@ -61,4 +62,4 @@ Como Internet Explorer es el único navegador que no implementa SVG de forma nat
   </table>
 </body> 
 </html>
-
+```
