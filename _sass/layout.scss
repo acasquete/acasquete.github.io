@@ -584,6 +584,19 @@
   }
 }
 
+.acArt {
+
+  .ac_mainpaintingImage {
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
+        
+}
+
+
 #post-page {
   margin-bottom: 1.5em;
   @media (min-width: 560px) {
