@@ -1,0 +1,31 @@
+---
+layout: default
+title: Paintings
+---
+
+<div class="tgnSearchResultsBox">
+
+  {% for painting in site.paintings %}
+  <div class="TGN_site_ArticleItemSearchThumb">
+    <a href="{{ painting.url }}">
+        <div class="TGN_site_ArticleItemDesktopdate">{{ post.year }}</div>
+        <div class="TGN_site_ArticleItemimage">
+          {% if painting.image %}
+          <img src="/img/paintings/{{ painting.image }}" >
+          {% else %}
+          <img src="/img/acnotes.png" >
+          {% endif %}
+        </div>
+        
+        <div class="TGN_site_ArticleItemcopy">
+            <div class="TGN_site_ArticleItemtitle"><h1>{{ painting.title }}</h1></div>
+            <div class="TGN_site_ArticleItemdescription">Acrylic on Canvas<br/>19x24,8 cm</div>
+            <div class="TGN_site_ArticleItembylinedate">{{ painting.year }}</div>
+        </div>
+    </a>
+  </div>
+  {% endfor %}
+</div>
+  
+
+</div>
