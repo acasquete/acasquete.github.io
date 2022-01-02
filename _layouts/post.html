@@ -13,7 +13,8 @@ comments: true
 		{% if page.header_fullview %}
 		<p><img src="/img/{{page.header_fullview}}" alt="{{page.title}}" class="fullview" /></p>
         {% elsif page.header_image %}
-		<p><img src="/img/{{page.header_image}}" alt="{{page.title}}" /></p>
+		<p><img src="/img/{{page.header_image}}" alt="{{page.title}}" style="width: 100%;
+			max-height: 300px; object-fit: cover;" /></p>
 		{% endif %}
 		
 		{{ content }}
