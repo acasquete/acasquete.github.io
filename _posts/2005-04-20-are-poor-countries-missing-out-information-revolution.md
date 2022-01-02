@@ -2,6 +2,7 @@
 title: Are poor countries missing out on the information revolution?
 tags: [personal, english]
 reviewed: true
+header_image: developing-countries.jpg
 ---
 Today there is a big difference in the use of information technology between poor and rich countries. The Information Revolution is comparable to the Industrial Revolution. All countries are participating in this revolution, but as with the Industrial Revolution, the difference between rich and poor countries is widening, although it is clear that all countries are making use of ICT products.
 
