@@ -2,6 +2,7 @@
 title: Looking after the planet
 tags: [personal, english]
 reviewed: true
+header_fullview: save-planet.jpg
 ---
 I am going to take this post as an exercise of sincerity and a declaration of intentions. 
 I don't think I really take care of our environment, I don't know if it's because of lack of habit or lack of education. Maybe my lack of ecological sentiment is caused by bigger problems that are not solved.  But there are no excuses. There are many ways to go green in our home.
