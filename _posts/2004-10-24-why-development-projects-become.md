@@ -2,6 +2,7 @@
 title: Why do development projects become a nightmare? Anatomy of a failure
 tags: [personal, english]
 reviewed: true
+header_fullview: project-management.jpg
 ---
 Today I read an excellent article about failures in development. Highly recommended for all of you who are finishing a project and can't see the light at the end of the tunnel.
 
