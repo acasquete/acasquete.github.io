@@ -13,8 +13,7 @@ Vía [El rincón del buda](https://web.archive.org/web/20060209152544/http://elr
 2.  Chuck Norris no duerme, espera.
 3.  Chuck Norris ha demandado a la NBC, reclamando Ley y Orden como marcas registradas de sus piernas izquierda y derecha.
 4.  El producto de mayor exportación de Chuck Norris es el dolor.
-5.  Si puedes ver a Chuck Norris, él también puede verte. Si no puedes ver a Chuck Norris, puedes estar a sólo unos segundos de morir.  
-    
+5.  Si puedes ver a Chuck Norris, él también puede verte. Si no puedes ver a Chuck Norris, puedes estar a sólo unos segundos de morir.
 6.  Chuck Norris ha contado hasta el infinito. Dos veces.
 7.  Chuck Norris no va de caza porque la palabra caza conlleva una posibilidad de error. Chuck Norris va a matar.
 8.  Chuck Norris no lava su ropa, se deshace de ella.
