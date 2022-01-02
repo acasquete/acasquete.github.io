@@ -2,6 +2,7 @@
 title: Future trends in video games
 tags: [personal, english]
 reviewed: true
+header_fullview: manusvr_glove.jpg
 ---
 Undoubtedly, it is in video games where we can see the technological evolution. If we look back over the last fifteen years, we can see big differences in the method of playing and programming video games. But in some aspects, we still have the same limitations today. Our contact with video reality is always through a monitor and a keyboard. The most advanced thing we have is a joystick or a steering wheel and virtual reality goggles.
 
