@@ -3,6 +3,8 @@
 
 . Ya hablamos de la mejora de los procesos de producción con el fin de reducir la huella ambiental
 
+HR y la sostenibilidad
+
 
 Investigamos el efecto de la sostenibilidad corporativa en los procesos organizativos y el rendimiento. Utilizando una muestra emparejada de 180 empresas estadounidenses, descubrimos que las empresas que adoptaron voluntariamente políticas de sostenibilidad en 1993 -denominadas empresas de alta sostenibilidad- presentan en 2009 procesos organizativos distintos en comparación con una muestra emparejada de empresas que no adoptaron casi ninguna de estas políticas -denominadas empresas de baja sostenibilidad-. Descubrimos que es más probable que los consejos de administración de estas empresas sean formalmente responsables de la sostenibilidad y que los incentivos de la remuneración de los altos ejecutivos estén más en función de las métricas de sostenibilidad. Además, las empresas de alta sostenibilidad tienen más probabilidades de contar con procesos establecidos para la participación de las partes interesadas, de estar más orientadas al largo plazo y de mostrar una mayor medición y divulgación de información no financiera. Por último, demostramos que las empresas con un alto nivel de sostenibilidad superan significativamente a sus homólogas a largo plazo, tanto en términos de rendimiento bursátil como contable.
 
