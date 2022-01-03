@@ -7,7 +7,7 @@ title: Paintings
 
   {% for painting in site.data.paintings %}
   <div class="TGN_site_ArticleItemSearchThumb">
-    <a href="{{ painting.url }}">
+    <a href="/paintings/{{ painting.url }}">
         <div class="TGN_site_ArticleItemDesktopdate">{{ post.year }}</div>
         <div class="TGN_site_ArticleItemimage">
           {% if painting.image %}
