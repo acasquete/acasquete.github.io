@@ -1,6 +1,7 @@
 ---
 title: Project Euler Solved
 tags: [fsharp]
+reviewed: true
 ---
 Pues ya ha pasado un mes de este 2013 y al menos uno de mis proyectos para este nuevo año sigue adelante. No es más que aprender F#. Y aunque la verdad que este primer mes ha sido bastante intenso en cuanto a actividades, estoy bastante satisfecho con la dedicación que le estoy dando a este nuevo lenguaje. **Leer, practicar, seguir leyendo y practicar de nuevo**. No hay más secretos para aprender, bueno, eso y que te apasione lo que haces. Y sin duda, F# y la programación funcional en general me parecen fascinantes.
 
