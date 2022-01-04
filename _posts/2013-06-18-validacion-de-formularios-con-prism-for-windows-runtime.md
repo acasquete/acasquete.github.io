@@ -10,19 +10,40 @@ En la librería **Microsoft.Practices.Prism.StoreApps** tenemos dos clases que n
 La primera decisión que debemos tomar cuando queremos validar el valor de un campo, es si lo queremos hacer en el View Model o en el Model. Lo aconsejable es realizar la validación en el Model, ya que de hacerlo en el VM, muy posiblemente significará que estamos duplicando las propiedades del modelo. Para comenzar con el ejemplo más sencillo vamos a crear una clase de modelo que herede de **ValidatableBindableBase** y especificamos las reglas de validación añadiendo atributos **DataAnnotation** a las propiedades. La lista de los atributos que podemos utilizar los podéis encontrar en la documentación de [System.ComponentModel.DataAnnotations de la MSDN](http://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations(v=vs.100).aspx). Y para evitar tener que exponer todas las propiedades en el VM, se expone en el VM una instancia de la clase UserInfo.
 
 ```csharp
-public class UserInfo : ValidatableBindableBase { private string firstName;
+public class UserInfo : ValidatableBindableBase {
+    private string firstName;
 
-\[Required\] public string FirstName { get { return firstName; } set { SetProperty(ref firstName, value); } } }
+    [Required] 
+    public string FirstName 
+    { 
+        get { return firstName; } 
+    set { SetProperty(ref firstName, value); } } 
+    }
 
-public class UserInfoViewModel : ViewModel { public MainPageViewModel() : this(new UserInfo()) {
+public class UserInfoViewModel : ViewModel { 
+    public MainPageViewModel() : this(new UserInfo()) 
+    {
 
+    }
+
+    public MainPageViewModel(UserInfo userInfo) 
+    { 
+        this.userInfo = userInfo; 
+    }
+
+    private UserInfo userInfo;
+
+    public UserInfo UserInfo { 
+        get 
+        { 
+            return userInfo; 
+        } 
+        set 
+        { 
+            SetProperty(ref userInfo, value); 
+        } 
+    } 
 }
-
-public MainPageViewModel(UserInfo userInfo) { this.userInfo = userInfo; }
-
-private UserInfo userInfo;
-
-public UserInfo UserInfo { get { return userInfo; } set { SetProperty(ref userInfo, value); } } }
 ```
 
 En este ejemplo, solo tenemos una propiedad en el modlo que hemos marcado como obligatoria mediante el atributo **Required**. Este atributo indica que la validación fallará si el campo está nulo, contiene una cadena válida o solo espacios en blanco.
