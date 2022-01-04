@@ -37,12 +37,12 @@ Si omitimos algún texto o imagen, se reemplazará automáticamente por una cade
 
 ```js
 Notifications.updateTileWideSmallImageAndText05(
-  {
-      text1: "Text Header Field 1",
-      text2: "Text Field 2",
-      image1src: "http://localhost:37725/images/image1.png",
-      image1alt: "Alternate text for image",
-  });
+{
+    text1: "Text Header Field 1",
+    text2: "Text Field 2",
+    image1src: "http://localhost:37725/images/image1.png",
+    image1alt: "Alternate text for image",
+});
 ```
 
 Por defecto, está habilitada la cola de notificaciones, así que cada llamada a un método **updateTile** encolará la actualización. Si queremos deshabilitar la cola de notificaciones debemos utilizar el método _enableNotificationQueue_ de la siguiente forma, pasando _false_ como parámetro.
@@ -74,11 +74,11 @@ Por último, queda mostrar la forma de programar una notificación del sistema. 
 
 ```js
 Notifications.scheduleToastImageAndText01(
-  {
-      text1: "Demo notificación toast!",
-      image1src: "http://localhost:37725/images/image1.png",
-      image1alt: "Image 1"
-  }, 3600);
+{
+    text1: "Demo notificación toast!",
+    image1src: "http://localhost:37725/images/image1.png",
+    image1alt: "Image 1"
+}, 3600);
 ```
 
 ## Resumen
