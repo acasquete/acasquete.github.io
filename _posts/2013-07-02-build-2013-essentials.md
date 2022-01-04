@@ -48,6 +48,8 @@ Day 3
 *   [Building a Great Authentication Experience into Your App](http://channel9.msdn.com/Events/Build/2013/3-503)
 *   [Rendering PDF Content in Windows Store Apps](http://channel9.msdn.com/Events/Build/2013/3-175)
 *   [Lessons Learned from Building Alarms and Calculator for Windows 8.1](http://channel9.msdn.com/Events/Build/2013/2-060)
-*   [Tips for Building LOB Apps for the Windows Store](http://channel9.msdn.com/Events/Build/2013/3-185) Como veis, hay material para rato. Y esto es solo lo más destacable sobre Windows Store apps, a todas estas habría que añadir unas cuantas de ASP.NET y Azure, sobre todo la de [Scott Hanselman](http://channel9.msdn.com/Events/Build/2013/2-546) que también considero un _must see_ para conocer las novedades de ASP.NET.
+*   [Tips for Building LOB Apps for the Windows Store](http://channel9.msdn.com/Events/Build/2013/3-185)
+
+Como veis, hay material para rato. Y esto es solo lo más destacable sobre Windows Store apps, a todas estas habría que añadir unas cuantas de ASP.NET y Azure, sobre todo la de [Scott Hanselman](http://channel9.msdn.com/Events/Build/2013/2-546) que también considero un _must see_ para conocer las novedades de ASP.NET.
 
 ¡A disfrutar!

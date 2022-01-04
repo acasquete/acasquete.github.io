@@ -1,6 +1,7 @@
 ---
 title: Renderizado de PDF en Windows Store apps (Windows 8.1)
 tags: [windows_store, winrt, winjs]
+reviewed: true
 ---
 Ya tenemos aquí **Windows 8.1 Preview** y con él muchos cambios y [novedades en la API de Windows Runtime y WinJS](http://msdn.microsoft.com/library/windows/apps/bg182410). Una de las primeras novedades que he querido probar ha sido la lectura y renderizado de documentos PDF, ya que, hasta ahora, no teníamos otra forma de mostrar el contenido de un PDF en una aplicación de la Windows Store que no pasase por utilizar un motor de terceros o crearnos uno propio en C++, algo nada trivial.
 
@@ -10,6 +11,7 @@ Las clases principales que vamos a utilizar para trabajar con ficheros PDF son *
 
 En este ejemplo se muestra cómo lanzar el selector de archivos mediante FileOpenPicker.PickSingleFileAsync para que el usuario seleccione un fichero PDF. Después de obtener el StorageFile se llama a loadFromFIleAsync para cargar el documento y conseguir un objeto **PdfDocument**.
 
+```js
 var openPicker = new Windows.Storage.Pickers.FileOpenPicker(); openPicker.viewMode = Windows.Storage.Pickers.PickerViewMode.list; openPicker.suggestedStartLocation = Windows.Storage.Pickers.PickerLocationId.documentsLibrary; openPicker.fileTypeFilter.replaceAll(\[“.pdf”\]);
 
 openPicker.pickSingleFileAsync().then(function (file) { if (file) {
@@ -19,9 +21,12 @@ openPicker.pickSingleFileAsync().then(function (file) { if (file) {
                 // TODO Render Document
             });
         });
-    } });</pre> Tanto el método *loadFromFileAsync* como *loadFromStreamAsync *tienen una sobrecarga para indicar la contraseña en el caso de que queramos abrir un PDF protegido. Sin embargo, no tenemos un método que nos indique antes de cargarlo si el PDF está o no protegido, solo tenemos la propiedad *IsPasswordProtected *que nos indica esto, pero se establece una vez hemos cargado el PDF. Así que tendremos que solicitar la contraseña cuando la lectura del PDF falle.
-    
+    } });
+```
 
+Tanto el método *loadFromFileAsync* como *loadFromStreamAsync *tienen una sobrecarga para indicar la contraseña en el caso de que queramos abrir un PDF protegido. Sin embargo, no tenemos un método que nos indique antes de cargarlo si el PDF está o no protegido, solo tenemos la propiedad *IsPasswordProtected *que nos indica esto, pero se establece una vez hemos cargado el PDF. Así que tendremos que solicitar la contraseña cuando la lectura del PDF falle.
+    
+```js
 function openFile(file, password) {
     if (file) {
 
@@ -33,11 +38,13 @@ function openFile(file, password) {
         });
     }
 }
+```
 
-Una vez tenemos cargado el documento, la forma de proceder para mostrar el contenido es iterar por todas las páginas y convertir cada una de ellas a imagen. Podemos obtener una referencia a cada página llamando al método _GetPage \*del objeto PdfDocument. Este método nos devuelve una referencia a un objeto **PdfPage** del que podemos tener acceso a su contenido en una secuencia con el método \*renderToStreamAsync_. Además, este método admite un segundo parámetro en el que podemos especificar opciones para personalizar el renderizado de las páginas. Podemos modificar el color de fondo, las dimensiones o renderizar solo una parte de la página. Para establecer estas opciones tenemos que instanciar la clase [PdfPageRenderOptions](http://msdn.microsoft.com/en-us/library/windows/apps/windows.data.pdf.pdfpagerenderoptions.aspx), establecer los valores y pasarlo como parámetro. En nuestro ejemplo no vamos a utilizar este parámetro porque queremos el renderizado predeterminado.
+Una vez tenemos cargado el documento, la forma de proceder para mostrar el contenido es iterar por todas las páginas y convertir cada una de ellas a imagen. Podemos obtener una referencia a cada página llamando al método _GetPage_ del objeto PdfDocument. Este método nos devuelve una referencia a un objeto **PdfPage** del que podemos tener acceso a su contenido en una secuencia con el método _renderToStreamAsync_. Además, este método admite un segundo parámetro en el que podemos especificar opciones para personalizar el renderizado de las páginas. Podemos modificar el color de fondo, las dimensiones o renderizar solo una parte de la página. Para establecer estas opciones tenemos que instanciar la clase [PdfPageRenderOptions](http://msdn.microsoft.com/en-us/library/windows/apps/windows.data.pdf.pdfpagerenderoptions.aspx), establecer los valores y pasarlo como parámetro. En nuestro ejemplo no vamos a utilizar este parámetro porque queremos el renderizado predeterminado.
 
 En el siguiente ejemplo vamos a ver cómo convertir a imagen la primera página del PDF. Para esto vamos a crear la función renderPDF, al que le pasaremos el objeto PdfDocument que hemos obtenido en el ejemplo anterior. Este método obtiene referencia a la primera página del PDF y después la secuencia mediante _renderToStreamAsync_. Una vez tenemos esta secuencia, tenemos que crear una de acceso aleatorio, mediante la clase **RandomAccessStreamReference**, con la que podremos obtener el **blob**.
 
+```js
 function renderPage(pdfDocument) {
 
     var promise = WinJS.Promise.wrap(new Windows.Storage.Streams.InMemoryRandomAccessStream());
@@ -63,9 +70,11 @@ function renderPage(pdfDocument) {
         });
     });
 }
+```
 
 Ahora podemos asignar fácilmente la propiedad imageSrc como origen de cualquier elemento imagen.
 
+```js
 Windows.Data.Pdf.PdfDocument.loadFromFileAsync(file).then(function (pdfDocument) {
     if (pdfDocument !== null) {
         renderPage(pdfDocument).then(function (result) {
@@ -73,9 +82,11 @@ Windows.Data.Pdf.PdfDocument.loadFromFileAsync(file).then(function (pdfDocument)
         });
     }
 }
+```
 
 Ahora, partiendo de este código en el que solo mostramos la primera página, vamos a extenderlo para mostrar todas las páginas con la ayuda de un control Flipview. La única complejidad que nos vamos a encontrar es la gestión de todas las llamadas asíncronas. Primero vamos a modificar ligeramente la función _renderPage_ para que podamos pasar como parámetro el índice de la página que queremos convertir.
 
+```js
 function renderPage(pdfDocument, pageIndex) {
 
     var promise = WinJS.Promise.wrap(new Windows.Storage.Streams.InMemoryRandomAccessStream());
@@ -101,9 +112,11 @@ function renderPage(pdfDocument, pageIndex) {
         });
     });
 }
+```
 
 Después creamos un método que nos carge todas las páginas en un array. Para obtener el número total de páginas del documento PDF utilizamos la propiedad **PageCount** del objeto **PdfDocument** y creamos una promise que se completará cuando se hayan convertido todas las páginas.
 
+```js
 function loadPages(pdfDocument) {
       var promisePages = \[\];
 
@@ -116,9 +129,11 @@ function loadPages(pdfDocument) {
 
       return WinJS.Promise.join(promiseArray);
   }
+```
 
 Ahora solo queda hacer una lista enlazable que podamos asignar como origen de datos a un control **FlipView** y un método que rellene esta lista. Este método llama a la función _loadPages_ que hemos definido antes y cuando la promise se complete, se añade el resultado a la lista enlazable.
 
+```js
 var pageList = new WinJS.Binding.List();
 
 function getPageList(pdfDocument) {
@@ -132,9 +147,11 @@ function getPageList(pdfDocument) {
 
     return pageList;
 }
+```
 
 Para terminar, necesitamos declarar el control **FlipView** con su correspondiente plantilla en el HTML. En la plantilla estoy utilizando un control ViewBox para que se adapte al tamaño de pantalla.
 
+```html
 <div id="imagePageTemplate" data-win-control="WinJS.Binding.Template"> 
     <div id="pdfitemmainviewdiv" data-win-control="WinJS.UI.ViewBox">
         <img data-win-bind="src: imageSrc"  /> 
@@ -145,9 +162,11 @@ Para terminar, necesitamos declarar el control **FlipView** con su correspondien
      data-win-control="WinJS.UI.FlipView" 
      data-win-options="{itemTemplate: select('#imagePageTemplate')}">
 </div>
+```
 
 Y asignar el dataSource de la lista a la propiedad itemDataSource del control.
 
+```js
 function renderDocument(pdfDocument) {
     var pdfFlipView = document.getElementById("pdfFlipView");
 
@@ -157,15 +176,19 @@ function renderDocument(pdfDocument) {
 
     pdfFlipView.winControl.itemDataSource = pages.dataSource;
 }
+```
 
-¡Ya tenemos nuestro primer lector de PDF creado con la nueva API de WinRT y en JavaScript! La mala noticia es que este ejemplo tiene varios puntos de mejora. El más importante es relativo al rendimiento, ahora estamos cargando y procesando todas las páginas del fichero con lo que si cargamos ficheros pesados, el tiempo de renderizado aumentará. Lo ideal sería que el renderizado fuese incremental, utilizando un objeto \*\*VirtualizedDataSource\*\* en lugar de una Binding.List. En \[este ejemplo el Windows Dev Center\](http://code.msdn.microsoft.com/windowsapps/PDF-viewer-showcase-sample-39ced1e8) tenéis la forma de implementarlo.
+¡Ya tenemos nuestro primer lector de PDF creado con la nueva API de WinRT y en JavaScript! La mala noticia es que este ejemplo tiene varios puntos de mejora. El más importante es relativo al rendimiento, ahora estamos cargando y procesando todas las páginas del fichero con lo que si cargamos ficheros pesados, el tiempo de renderizado aumentará. Lo ideal sería que el renderizado fuese incremental, utilizando un objeto **VirtualizedDataSource** en lugar de una Binding.List. En [este ejemplo el Windows Dev Center](http://code.msdn.microsoft.com/windowsapps/PDF-viewer-showcase-sample-39ced1e8) tenéis la forma de implementarlo.
 
-He dejado el código completo del ejemplo de esta entrada en SkyDrive: \[http://sdrv.ms/12wJ3dX\](http://sdrv.ms/12wJ3dX). Recordad que esta solución solo funciona con Windows 8.1 y Visual Studio 2013 Preview.
+He dejado el código completo del ejemplo de esta entrada en: 
+
+[FirstPDF_JS.zip](/files/FirstPDF_JS)
+
+Recordad que esta solución solo funciona con Windows 8.1 y Visual Studio 2013 Preview.
 
 
 ## Referencias
 
-
-[PDF viewer showcase sample (Windows 8.1)](http://code.msdn.microsoft.com/windowsapps/PDF-viewer-showcase-sample-39ced1e8)
+[PDF viewer showcase sample (Windows 8.1)](http://code.msdn.microsoft.com/windowsapps/PDF-viewer-showcase-sample-39ced1e8)  
 [Windows.Data.Pdf namespace](http://msdn.microsoft.com/en-us/library/windows/apps/windows.data.pdf.aspx)
 
