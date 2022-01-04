@@ -4,3 +4,15 @@ tags: [random]
 ---
 Aprovechando la API de Google Maps he creado este mapa donde he marcado (y seguiré marcando) todas las ciudades y pueblos que he visitado.
 
+<div id="map"></div>
+
+<script>
+let map;
+
+function initMap() {
+  map = new google.maps.Map(document.getElementById("map"), {
+    center: { lat: -34.397, lng: 150.644 },
+    zoom: 8,
+  });
+}
+</script>
