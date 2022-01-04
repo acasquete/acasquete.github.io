@@ -1,6 +1,7 @@
 ---
 title: Gamepad táctil para Windows Store Apps con Javascript e Internet Explorer 10
 tags: [windows_store, winjs]
+reviewed: true
 ---
 En los dispositivos táctiles, el ratón y el teclado han dejado de ser los principales dispositivos controladores de videojuegos. Ahora, para controlar el movimiento de un personaje solo podemos interactuar con la pantalla y el típico control con las teclas del cursor ha sido sustituido, en muchas ocasiones, por un _gamepad_ o control táctil, emulando a los tradicionales que utilizamos en las consolas de videojuegos.
 
