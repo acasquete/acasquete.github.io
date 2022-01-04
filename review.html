@@ -1,0 +1,41 @@
+---
+layout: default
+title: All
+---
+
+<div class="tgnSearchResultsBox">
+
+  {% for post in site.posts %}
+  {% unless post.reviewed %}
+  <div class="TGN_site_ArticleItemSearchThumb">
+    <a href="{{ post.url }}">
+        <div class="TGN_site_ArticleItemDesktopdate">{{ post.date | date: '%B %e, %Y' }}</div>
+        <div class="TGN_site_ArticleItemimage">
+          {% if post.header_fullview %}
+          <img src="/img/{{ post.header_fullview }}" >
+          {% elsif post.header_image %}
+          <img src="/img/{{ post.header_image }}" >
+          {% else %}
+          <img src="/img/acnotes.png" >
+          {% endif %}
+        </div>
+        
+        <div class="TGN_site_ArticleItemcopy">
+            <div class="TGN_site_ArticleItemtitle"><h1>{{ post.title }}</h1></div>
+            <div class="TGN_site_ArticleItemdescription">
+              {% if post.content contains '<!-- excerpt-end -->' %}
+							{{ post.content | split:'<!-- excerpt-end -->' | first | strip_html }}
+							{% else %}
+							{{ post.excerpt | strip_html | truncate: 150 }}
+							{% endif %}
+            </div>
+            <div class="TGN_site_ArticleItembylinedate">{{ post.date | date: '%B %e, %Y' }}</div>
+        </div>
+    </a>
+  </div>
+  {% endunless %}
+  {% endfor %}
+</div>
+  
+
+</div>
