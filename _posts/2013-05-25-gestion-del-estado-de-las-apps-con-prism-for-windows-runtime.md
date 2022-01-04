@@ -15,7 +15,8 @@ En una aplicación para la Windows Store generada a partir de las plantillas est
 private async void OnSuspending(object sender, SuspendingEventArgs e) 
 { 
     var deferral = e.SuspendingOperation.GetDeferral(); 
-    await SuspensionManager.SaveAsync(); deferral.Complete(); 
+    await SuspensionManager.SaveAsync(); 
+    deferral.Complete(); 
 }
 
 protected override async void OnLaunched(LaunchActivatedEventArgs args) 
