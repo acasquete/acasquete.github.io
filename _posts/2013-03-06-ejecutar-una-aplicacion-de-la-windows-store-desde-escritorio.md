@@ -1,6 +1,7 @@
 ---
 title: Ejecutar una aplicación de la Windows Store desde escritorio
 tags: [windows_store, winrt]
+reviewed: true
 ---
 Hago un paréntesis en la serie que estoy dedicando a los procesos en _background_ para tratar brevemente un tema de esos que llamo “raros”. Vamos a ver cómo **ejecutar una aplicación de la Windows Store desde un proceso de escritorio**. No es que sea un tema excesivamente complicado o “raro”, pero como hoy se me ha vuelto a plantear por segunda vez, aprovecho la oportunidad para escribir explicando cómo conseguirlo sin demasiadas complicaciones. También tengo que avisar que el código de esta entrada lo he extraído de un hilo de los foros de MSDN, ya que no he encontrado documentación oficial.
 
@@ -10,6 +11,7 @@ Si queremos lanzar una aplicación directamente, tenemos que utilizar la interfa
 
 Comenzamos creando un nuevo proyecto en C# de librería de clases al que le añadimos la definición de la interfaz **IApplicationActivationManager** con el siguiente código**:**
 
+```csharp
 using System; using System.Runtime.InteropServices;
 
 namespace StoreAppLauncher { public enum ActivateOptionsEnum { None = 0,  
@@ -40,26 +42,27 @@ NoSplashScreen = 0x4, }
     
         [MethodImpl(MethodImplOptions.InternalCall, MethodCodeType = MethodCodeType.Runtime)]
         public extern IntPtr ActivateForProtocol([In] String appUserModelId, [In] IntPtr itemArray, [Out] out UInt32 processId);
-    } }</pre> Ahora podremos desde cualquier proyecto instanciar y llamar al método **ActivateApplication** para lanzar cualquier aplicación que tengamos instalada.
+    } }
+```
     
-
+Ahora podremos desde cualquier proyecto instanciar y llamar al método **ActivateApplication** para lanzar cualquier aplicación que tengamos instalada.
+    
+```js
 var appActiveManager = new ApplicationActivationManager();
 
 uint pid;
 appActiveManager.ActivateApplication(appUserModelId, null, ActivateOptionsEnum.None, out pid);
+```
 
-Lo único que nos falta es obtener el \*\*AppUserModelId\*\*, el identificador de la aplicación de la Tienda Windows que queremos ejecutar. El único sitio donde lo podemos localizar es el registro, así que tenemos que abrir el editor del registro y buscar la clave \*\*HKEY\_CURRENT\_USERSoftwareClassesActivatableClassesPackage\*\*. Aquí encontraremos una lista con el nombre completo de todos los paquetes que tenemos instalados. Dentro de cada paquete encontraremos la clave \*\*ServerApp.wwa\*\* y dentro de esta valor de \*\*AppUserModelId\*\*. En la siguiente imagen se muestra el valor de la aplicación de Skype.
+Lo único que nos falta es obtener el **AppUserModelId**, el identificador de la aplicación de la Tienda Windows que queremos ejecutar. El único sitio donde lo podemos localizar es el registro, así que tenemos que abrir el editor del registro y buscar la clave **HKEY_CURRENT_USERSoftwareClassesActivatableClassesPackage**. Aquí encontraremos una lista con el nombre completo de todos los paquetes que tenemos instalados. Dentro de cada paquete encontraremos la clave **ServerApp.wwa** y dentro de esta valor de **AppUserModelId**. En la siguiente imagen se muestra el valor de la aplicación de Skype.
 
-[!\[execute-windows-store-app-from-desktop\](/img/execute-windows-store-app-from-desktop.png)](/img/execute-windows-store-app-from-desktop.png)
+Así que si pasamos este valor (Microsoft.SkypeApp\_kzf8qxf38zg5c!App) al método **ActivateApplication**, la aplicación de Bing se lanzará o se pondrá en primer plano si ya la teníamos en ejecución.
 
-Así que si pasamos este valor (Microsoft.SkypeApp\_kzf8qxf38zg5c!App) al método \*\*ActivateApplication\*\*, la aplicación de Bing se lanzará o se pondrá en primer plano si ya la teníamos en ejecución.
-
-La solución completa está disponible en GitHub \[https://github.com/acasquete/StoreAppLauncher\](https://github.com/acasquete/StoreAppLauncher). Espero que os sea de utilidad si os encontráis con alguna de esas situaciones raras.
+Espero que os sea de utilidad si os encontráis con alguna de esas situaciones raras.
 
 
 ## Referencias
 
-
-[IApplicationActivationManager interface (Windows)](IApplicationActivationManager%20interface%20(Windows))
-[Windows Desktop Development Forums](http://social.msdn.microsoft.com/Forums/en-US/windowsgeneraldevelopmentissues/thread/11e5a9ae-3497-4a0a-92ac-d409ccf3d2a3/)
+[IApplicationActivationManager interface (Windows)](IApplicationActivationManager%20interface%20(Windows))  
+[Windows Desktop Development Forums](http://social.msdn.microsoft.com/Forums/en-US/windowsgeneraldevelopmentissues/thread/11e5a9ae-3497-4a0a-92ac-d409ccf3d2a3/)  
 
