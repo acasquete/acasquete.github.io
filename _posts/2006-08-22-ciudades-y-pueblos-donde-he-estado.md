@@ -81,6 +81,6 @@ function initMap() {
   map.addOverlay(createMarker(new GPoint(  1.131420,  42.412051), "Sort"));
   map.addOverlay(new GPolyline([new GPoint(  2.083497,  41.298992), new GPoint( 4.756737,  52.312204), new GPoint( -46.474228, -23.431985)], "#00ff00", 2));
   map.addOverlay(new GPolyline([new GPoint(  2.083497,  41.298992), new GPoint( 8.556633,  50.039722), new GPoint( -43.251543, -22.815824), new GPoint( -46.474228, -23.431985), new GPoint( -58.538418, -34.814508)], "#0000ff", 2));
-	}
+	
 }
 </script>
