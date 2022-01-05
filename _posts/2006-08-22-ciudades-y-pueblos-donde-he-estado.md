@@ -20,7 +20,7 @@ function initMap() {
   });
   
   {% for city in site.data.cities %}
-  new google.maps.Marker({ position: { lat: {{city.lat}}, lng: {{city.long}} };, map, title: "{{city.name}}" });
+  new google.maps.Marker({ position: { lat: {{city.lat}}, lng: {{city.long}} }, map, title: "{{city.name}}" });
   {% endfor %}
 
 }
