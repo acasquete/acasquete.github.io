@@ -4,7 +4,7 @@ tags: [random]
 ---
 Aprovechando la API de Google Maps he creado este mapa donde he marcado (y seguiré marcando) todas las ciudades y pueblos que he visitado.
 
-<div id="map"></div>
+<div id="map" style="width:100%; height: 400px"></div>
 
 <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHq3yNM4mSpvgccI8wNdXMVoI8j_dKKKk&callback=initMap&v=weekly"
