@@ -1,6 +1,7 @@
 ---
 title: Mejorar el tiempo de carga eliminando espacios en blanco
 tags: [programming]
+reviewed: true
 ---
 Hace unos meses Microsoft publicó [Visual Round Trip Analyzer (VRTA)](http://www.microsoft.com/Downloads/details.aspx?FamilyID=119f3477-dced-41e3-a0e7-d8b5cae893a3&displaylang=en), una herramienta que permite visualizar y evaluar el rendimiento de un sitio web. Por su lado, Google presentó la semana pasada [Page Speed](http://code.google.com/speed/page-speed/), un complemento _open-source_ para FireFox / FireBug con una funcionalidad muy similar a VRTA. Ambas herramientas realizan un análisis de rendimiento y ofrecen sugerencias para mejorar la utilización del ancho de banda, el tiempo del viaje de ida y vuelta al servidor y el tiempo de renderizado del navegador.
 

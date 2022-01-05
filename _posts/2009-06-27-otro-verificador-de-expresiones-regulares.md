@@ -1,6 +1,7 @@
 ---
 title: Otro verificador de expresiones regulares
 tags: [programming]
+reviewed: true
 ---
 Existen infinidad de validadores o verificadores de expresiones regulares, pero no he encontrado ninguno _online_ que evalúe la expresión conforme se va escribiendo. Así que he dedicado un par de horas a realizar otro verificador de expresiones regulares, y como no podía ser de otra forma, lo he hecho en Silverlight.
 

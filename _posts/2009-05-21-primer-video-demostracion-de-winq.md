@@ -1,6 +1,7 @@
 ---
 title: Primer vídeo demostración de WinQ
 tags: [random]
+reviewed: true
 ---
 En noviembre del año pasado —hace ya unos cuantos meses de esto— decidí [no continuar con el desarrollo de _WinQ_](/winq-punto-y-aparte/), principalmente porque tenía la necesidad de sustituir _JavaScript_, que utilizaba como lenguaje de _scripts_, por un lenguaje compilado (C# o VB.NET). A esto hay que añadir que existían múltiples _bugs_ sin solucionar y a los que no veía una salida rápida. En definitiva, al no estar convencido en general del resultado final obtenido y debido a que tendría que realizar grandes modificaciones en el diseño de la aplicación para implementar todo lo que quería cambiar, abandoné el desarrollo en favor de uno nuevo realizado con _VS2008_. Además, en estos últimos meses de uso he ido encontrando nuevos errores, con lo que he podido ir reafirmando que tomé una buena decisión.
 
