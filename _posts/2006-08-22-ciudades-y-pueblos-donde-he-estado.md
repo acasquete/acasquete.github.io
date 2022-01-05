@@ -7,7 +7,7 @@ Aprovechando la API de Google Maps he creado este mapa donde he marcado (y segui
 <div id="map"></div>
 
 <script
-      src="https://maps.googleapis.com/maps/api/js?key=aaa&callback=initMap&v=weekly"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHq3yNM4mSpvgccI8wNdXMVoI8j_dKKKk&callback=initMap&v=weekly"
       async
     ></script>
     
@@ -17,6 +17,7 @@ let map;
 function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
     center: { lat: -34.397, lng: 150.644 },
+    
     zoom: 8,
   });
 }
