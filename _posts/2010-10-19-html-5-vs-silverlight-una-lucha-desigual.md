@@ -2,6 +2,7 @@
 title: HTML 5 vs Silverlight, una lucha desigual
 tags: [personal]
 header_image: sumo-vs-kid.jpeg
+reviewed: true
 ---
 Durante la preparación del examen de **Silverlight** he tropezado con un rumor que se está extendiendo rápidamente: el futuro incierto de Silverlight debido a la popularización de **HTML 5**. ¿Quiere decir esto que Microsoft piensa reemplazar a Silverlight?
 
