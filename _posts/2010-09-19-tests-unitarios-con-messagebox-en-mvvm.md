@@ -9,7 +9,12 @@ En la entrada de hoy veremos una de estas situaciones, veremos los problemas que
 
 Comenzamos añadiendo dos nuevos controles a la vista: un control _Button_ y un _TextBlock_. La idea es que al pulsar el botón se muestre un _MessageBox_ y que se muestre un mensaje en la etiqueta según la respuesta del usuario.
 
-<Button Command=”{Binding ShowYesNoQuestionCommand}” Content=”Show Question” /> <TextBlock Text=”{Binding Answer}” /></pre> Enlazamos la propiedad _Command_ del botón y la propiedad _Text_ del cuadro de texto con el comando **ShowYesNoQuestionCommand** y la propiedad **Answer** que tenemos que crear en el **ViewModel** con el código siguiente.
+```xml
+<Button Command=”{Binding ShowYesNoQuestionCommand}” Content=”Show Question” />
+<TextBlock Text=”{Binding Answer}” />
+```
+
+Enlazamos la propiedad _Command_ del botón y la propiedad _Text_ del cuadro de texto con el comando **ShowYesNoQuestionCommand** y la propiedad **Answer** que tenemos que crear en el **ViewModel** con el código siguiente.
 
 ```cs
 public string Answer
