@@ -10,7 +10,7 @@ En esta entrada vamos a hacer uso de **WebSockets** para crear una aplicación p
 Dibujando en el canvas
 ---
 
-Comenzamos con lo básico: cómo dibujar en un elemento canvas. El código que viene a continuación es uno que ya he utilizado en alguna presentación y me permite demostrar que cualquier código JavaScript funciona en una aplicación para Windows 8. En el código se registra un controlador para los eventos **mousemove**, **mousedown \*\*y \*\*mouseup \*\*y según el evento disparado iniciamos un nuevo trazo mediante el método \*\*beginPath** o dibujamos una línea con los métodos **lineTo** y **stroke**. Si queréis más información sobre estos métodos, podéis consultar la MSDN donde aparecen todos [los métodos disponibles del objeto canvas](http://msdn.microsoft.com/en-us/library/ie/hh826010(v=vs.85).aspx).
+Comenzamos con lo básico: cómo dibujar en un elemento canvas. El código que viene a continuación es uno que ya he utilizado en alguna presentación y me permite demostrar que cualquier código JavaScript funciona en una aplicación para Windows 8. En el código se registra un controlador para los eventos **mousemove**, **mousedown** y **mouseup** y según el evento disparado iniciamos un nuevo trazo mediante el método  **beginPath** o dibujamos una línea con los métodos **lineTo** y **stroke**. Si queréis más información sobre estos métodos, podéis consultar la MSDN donde aparecen todos [los métodos disponibles del objeto canvas](http://msdn.microsoft.com/en-us/library/ie/hh826010(v=vs.85).aspx).
 
 ```js
 var sketch = (function () { “use strict”;
