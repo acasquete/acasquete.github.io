@@ -1,6 +1,7 @@
 ---
 title: Reglas personalizadas para FxCop
-tags: [mvvm]
+tags: [programming]
+reviewed: true
 ---
 En una entrada anterior vimos [cómo integrar **FxCop** con Visual Studio](/integrando-fxcop-10-en-visual-studio), el siguiente paso lógico que debemos dar es crear nuestras propias reglas de análisis de código. Vamos a ver que la dificultad no está en cómo crear estas reglas, sino en averiguar cuáles son las que necesitamos y cómo de complejo queremos hacer el análisis de esas reglas.
 
@@ -12,12 +13,22 @@ Para crear un conjunto de reglas debemos crear un proyecto de **Biblioteca de cl
 
 El código mínimo de la clase de una regla es el siguiente:
 
+```csharp
 using Microsoft.FxCop.Sdk;
 
-namespace SolidRules { public class SingleResponsibilityCheck : BaseIntrospectionRule { public SingleResponsibilityCheck() : base(“SingleResponsibility”, “SolidRules.Rules”, typeof(SingleResponsibilityCheck).Assembly) { } } }</pre> En el constructor hay que llamar al constructor de la clase base **BaseIntrospectionRule** pasando 3 parámetros: el nombre de la regla, el nombre del fichero XML de documentación, incluyendo el _namespace_, y el ensamblado al que pertenece la clase.
+namespace SolidRules { 
+  public class SingleResponsibilityCheck : BaseIntrospectionRule { 
+    public SingleResponsibilityCheck() : base(“SingleResponsibility”, “SolidRules.Rules”, typeof(SingleResponsibilityCheck).Assembly) 
+    { } 
+  } 
+}
+```
+
+En el constructor hay que llamar al constructor de la clase base **BaseIntrospectionRule** pasando 3 parámetros: el nombre de la regla, el nombre del fichero XML de documentación, incluyendo el _namespace_, y el ensamblado al que pertenece la clase.
 
 El siguiente paso es añadir un nuevo fichero XML a nuestro proyecto y asignarle el valor **Recurso incrustado** (_Embebbed resource_) a la propiedad **Acción de compilación** (_Action Build_), para que se incruste dentro del ensamblado del proyecto. El contenido de este fichero debe ser el siguiente:
 
+```xml
 <?xml version="1.0" encoding="utf-8" ?>
 <Rules FriendlyName="SOLID Rules">
     <Rule TypeName="SingleResponsibility" Category="Design" CheckId="IB001">
@@ -31,11 +42,13 @@ El siguiente paso es añadir un nuevo fichero XML a nuestro proyecto y asignarle
         <FixCategories>NonBreaking</FixCategories>
     </Rule>
 </Rules>
+```
 
-De este fichero, sólo habría que destacar varios detalles que hay que tener en cuenta. El elemento _Resolution_ acepta elementos de formato, que podemos utilizar para mostrar el valor de cualquier objeto. El _MessageLevel_ describe el porcentaje de exactitud que creemos que tiene la regla y la gravedad del mensaje (_CriticalError_, _Error_, _CriticalWarning_, _Warning \*, \*Information_). Y por último, aunque parece evidente, que en un mismo fichero XML podemos añadir tantos elementos _Rules_ como queramos.
+De este fichero, sólo habría que destacar varios detalles que hay que tener en cuenta. El elemento _Resolution_ acepta elementos de formato, que podemos utilizar para mostrar el valor de cualquier objeto. El _MessageLevel_ describe el porcentaje de exactitud que creemos que tiene la regla y la gravedad del mensaje (_CriticalError_, _Error_, _CriticalWarning_, _Warning *, *Information_). Y por último, aunque parece evidente, que en un mismo fichero XML podemos añadir tantos elementos _Rules_ como queramos.
 
 A continuación, vamos a añadir el código que verifique el número de métodos de cada clase. Esto lo hacemos utilizando la sobrecarga del método **Check** que acepta un parámetro de tipo **TypeNode**. En este método añadimos a una lista todos los métodos de la clase públicos o protegidos. Si al final de procesar todos los métodos de la clase obtenemos un número superior a 20, añadimos un nuevo elemento a la colección _Problems_. La implementación queda como sigue:
 
+```csharp
 public override ProblemCollection Check(TypeNode type)
 {
   var methods = new List<string>();
@@ -61,13 +74,14 @@ public override ProblemCollection Check(TypeNode type)
 
   return Problems;
 }
+```
 
-Sólo queda compilar y agregar el \*assembly\* al directorio Rules de FxCop. Al ejecutar nos aparecerá el nuevo grupo (\*SOLID rules\*) con una sola regla. En el proyecto que os podéis descargar al final de la entrada, he incluido un proyecto con una clase para probar la nueva regla. Si analizamos este ensamblado mediante la aplicación de FxCop obtendremos un resultado parecido al siguiente:
+Sólo queda compilar y agregar el *assembly* al directorio Rules de FxCop. Al ejecutar nos aparecerá el nuevo grupo (*SOLID rules*) con una sola regla. En el proyecto que os podéis descargar al final de la entrada, he incluido un proyecto con una clase para probar la nueva regla. Si analizamos este ensamblado mediante la aplicación de FxCop obtendremos un resultado parecido al siguiente:
 
-Y si ejecutáis el análisis en Visual Studio mediante los \*Build Events\*, la pantalla de errores mostrará el siguiente aspecto:
+Y si ejecutáis el análisis en Visual Studio mediante los *Build Events*, la pantalla de errores mostrará el siguiente aspecto:
 
 
 Y ahora, ¿quién se anima a mejorar esta y añadir el resto de reglas para principios SOLID?
 
-**Descargar código fuente**
-[SOLIDRules.zip](http://sdrv.ms/13bf4IZ) 
+**Descargar código fuente**  
+[SOLIDRules.zip](/files/SOLIDRules.zip) 

@@ -1,6 +1,7 @@
 ---
 title: Tests unitarios con MessageBox en MVVM
-tags: [mvvm]
+tags: [programming]
+reviewed: true
 ---
 Existen una serie de buenas prácticas que debemos seguir para hacer nuestras aplicaciones más testeables. Tres de estas prácticas son: hacer uso de patrones de diseño (MVVM, IoC, DI, etc.), utilizar un _framework_ de testing unitario para automatizar la ejecución de pruebas y, por último, hacer _mocking_ de nuestras bases de datos y _web services_ para evitar realizar llamadas remotas. Naturalmente no es necesario aplicar todas estas buenas prácticas en todos nuestros proyectos, sino que tenemos que identificar las situaciones en las que son necesarias.
 
@@ -10,6 +11,7 @@ Comenzamos añadiendo dos nuevos controles a la vista: un control _Button_ y un 
 
 <Button Command=”{Binding ShowYesNoQuestionCommand}” Content=”Show Question” /> <TextBlock Text=”{Binding Answer}” /></pre> Enlazamos la propiedad _Command_ del botón y la propiedad _Text_ del cuadro de texto con el comando **ShowYesNoQuestionCommand** y la propiedad **Answer** que tenemos que crear en el **ViewModel** con el código siguiente.
 
+```cs
 public string Answer
 {
   get
@@ -56,10 +58,12 @@ private bool ShowYesNoQuestion(string message)
           return false;
   }
 }
+```
 
 Este código no brilla por su originalidad, pero si lo ejecutamos, funcionará perfectamente. Entonces, ¿cuál es el problema? Fundamentalmente el error está en que no deberíamos mostrar el _MessageBox_ desde el _ViewModel_, nos deberían doler los ojos al ver algo así. Pero, ¿por qué? Pues porque esta implementación nos impide probar correctamente nuestro _ViewModel_. Supongamos que queremos crear un test unitario para probar el funcionamiento de nuestro _Command_ y hacemos algo parecido a esto:
 
-\[TestMethod\]
+```cs
+[TestMethod\]
 public void BadTestExecuteShowQuestionAndAnswerYes()
 {
     ICommand command = vm.BadShowYesNoQuestionCommand;
@@ -68,6 +72,7 @@ public void BadTestExecuteShowQuestionAndAnswerYes()
 
     Assert.AreEqual("Your answer is Yes", vm.Answer);
 }
+```
 
 ¿Qué sucederá? Efectivamente, al ejecutar nuestro test, se mostrará el mensaje esperando que pulsemos algún botón, y esto no debe suceder nunca si queremos seguir llamando a nuestros tests, automatizados.
 
@@ -75,6 +80,7 @@ Para solucionar este problema tenemos que evitar la llamada al _MessageBox_ en e
 
 Creamos un nuevo proyecto en el que añadiremos la clase _ServiceLocator_ y _MsgBoxService_. Podéis ver la implementación de la clase _ServiceLocator_ en el código fuente disponible para descarga al final de la entrada. La clase **MsgBoxService** no tiene ningún secreto, tiene un método _Show_ con 4 parámetros que son análogos a los del mismo método de la clase _MessageBox_.
 
+```cs
 public class MsgBoxService : IMsgBoxService
 {
     public MessageBoxResult Show(string messageBoxText, string caption, MessageBoxButton button, MessageBoxImage icon)
@@ -82,9 +88,11 @@ public class MsgBoxService : IMsgBoxService
         return MessageBox.Show(messageBoxText, caption, button, icon);
     }
 }
+```
 
 Ahora debemos agregar una referencia al _Service Locator_ en nuestro _ViewModel_, mediante una propiedad que nos devolverá siempre la misma instancia y añadiremos el método _GetService_ que nos devolverá el objeto que se haya registrado.
 
+```cs
 private ServiceLocator serviceLocator = ServiceLocator.Instance;
 
 public ServiceLocator ServiceLocator
@@ -99,9 +107,11 @@ public T GetService<T>()
 {
     return this.serviceLocator.Resolve<T>();
 }
+```
 
 Ahora tenemos que cambiar el _Command_ del _ViewModel_ para que utilice el nuevo servicio. El cambio es bastante sencillo:
 
+```cs
 private void ShowYesNoQuestion(string message)
 {
     IMsgBoxService msgbox = GetService<IMsgBoxService>();
@@ -123,15 +133,19 @@ private void ShowYesNoQuestion(string message)
             break;
     }
 }
+```
 
 ¿Qué es lo que falta? Registrar el servicio para que lo pueda devolver el _ServiceLocator_. Esto lo podemos hacer desde la clase _App_.
 
+```cs
 ServiceLocator.Instance.Register<IMsgBoxService>(new MsgBoxService());
+```
 
 Si ejecutamos la aplicación, funcionará de la misma forma que antes, con la ventaja de que ahora el _ViewModel_ no tiene ninguna llamada al _MessageBox_ y ahora sí estamos en condiciones de testearlo correctamente. Veamos cómo.
 
 En nuestro proyecto de Test creamos un servicio falso que implemente la interfaz **IMsgBoxService**. Esta clase también tendrá un método _Show_, pero esta nos devolverá el valor que hayamos establecido en una nueva propiedad (**ShowReturnValue**) e incrementará un contador (**ShowCallCount**) que podremos consultar para comprobar las veces que se ha llamado al método.
 
+```cs
 class MockMsgBoxService : IMsgBoxService
 {
     public MessageBoxResult ShowReturnValue;
@@ -144,10 +158,12 @@ class MockMsgBoxService : IMsgBoxService
         return this.ShowReturnValue;
     }
 }
+```
 
 El test unitario lo modificamos de la siguiente forma. Vemos que antes de llamar a _Execute_, establecemos el valor que queremos que nos devuelva el servicio, y que al final comprobamos que el método se haya ejecutado sólo una vez.
 
-\[TestMethod\]
+```cs
+[TestMethod]
 public void GoodTestExecuteShowQuestionAndAnswerYes()
 {
     ICommand command = vm.ShowYesNoQuestionCommand;
@@ -160,21 +176,24 @@ public void GoodTestExecuteShowQuestionAndAnswerYes()
     Assert.AreEqual("Your answer is Yes", vm.Answer);
     Assert.AreEqual(1, msgBox.ShowCallCount);
 }
+```
 
 Lo único que queda es registrar el servicio en la clase de test desde un método que marcamos con el atributo _AssemblyInitialize_, indicando que se ejecutará antes de todos los tests dentro del ensamblado.
 
-\[AssemblyInitialize\]
+```cs
+[AssemblyInitialize]
 public static void RegisterServices(TestContext context)
 {
     ServiceLocator.Instance.Register<IMsgBoxService>(new MockMsgBoxService());
 }
+```
 
-**Enlaces relacionados:**
-[Service Locator (MSDN)](http://msdn.microsoft.com/en-us/library/cc304894.aspx)
-[Dependency Injection (MSDN)](http://msdn.microsoft.com/en-us/library/ff648334.aspx)
-[Inversion of Control (MSDN)](http://msdn.microsoft.com/en-us/library/ff648478.aspx)
+**Enlaces relacionados:**  
+[Service Locator (MSDN)](http://msdn.microsoft.com/en-us/library/cc304894.aspx)  
+[Dependency Injection (MSDN)](http://msdn.microsoft.com/en-us/library/ff648334.aspx)  
+[Inversion of Control (MSDN)](http://msdn.microsoft.com/en-us/library/ff648478.aspx)  
 [Dependency Injection (MSDN Magazine)](http://msdn.microsoft.com/en-us/magazine/cc163739.aspx)
 
-**Descarga código fuente:**
-[BasicMVVM-ServiceLocator.zip](http://sdrv.ms/159vPHz)** 
+**Descarga código fuente:**  
+[BasicMVVM-ServiceLocator.zip](/files/BasicMVVM-ServiceLocator.zip)
 
