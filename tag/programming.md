@@ -1,5 +1,5 @@
 ---
 layout: tagpage
-title: "Tag: programming"
+title: "Programming"
 tag: programming
 ---

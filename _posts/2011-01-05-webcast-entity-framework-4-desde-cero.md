@@ -1,6 +1,7 @@
 ---
 title: Webcast, Entity Framework 4 desde cero
 tags: [event]
+reviewed: true
 ---
 Comenzamos este año con novedades muy interesantes. Gracias a un invitación de [Jesús Bosch](http://geeks.ms/blogs/jbosch/), el próximo martes 18 de Enero, desde las 19:30 hasta las 21:00 (hora española), voy a presentar mi primer _webcast_ organizado por el [grupo de usuarios de la UOC (UOC DotNetClub)](http://uoc.dotnetclubs.com/).
 
@@ -20,7 +21,6 @@ Los temas que tengo previstos tratar durante el _webcast_ son los siguientes:
 
 Aunque es inevitable que en presentaciones de este estilo haya bastante teoría, intentaré que la presentación sea fundamentalmente práctica. Espero contar con todos vosotros. ¡No faltéis!
 
-**Registro al evento** [https://msevents.microsoft.com/CUI/EventDetail.aspx?EventID=1032474103&Culture=es-ES](https://msevents.microsoft.com/CUI/EventDetail.aspx?EventID=1032474103&Culture=es-ES)
-
-**Enlaces relacionados** [Eventos UOC DotNetClub](http://uoc.dotnetclubs.com/eventos/)
+**Enlaces relacionados**  
+[Eventos UOC DotNetClub](http://web.archive.org/web/20110128183326/http://uoc.dotnetclubs.com/eventos/webcast-entity-framework-4-desde-cero-desp-237-dete-de-los-datasets/eventos/)
 
