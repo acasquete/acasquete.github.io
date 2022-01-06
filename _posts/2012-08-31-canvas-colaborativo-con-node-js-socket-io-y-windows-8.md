@@ -109,7 +109,7 @@ var sketch = (function () {
     "use strict";
     var context;
     var isPainting;
-    var clients = \[\];
+    var clients =  [];
     var selfID = "self";
    
     var onMouseDown = function (e) {
@@ -132,8 +132,8 @@ var sketch = (function () {
     var drawLine = function (id, data) {
       context.beginPath();
       
-      if (clients\[id\]) {
-        context.moveTo(clients\[id\].lastx, clients\[id\].lasty);
+      if (clients [id ]) {
+        context.moveTo(clients [id ].lastx, clients [id ].lasty);
       }
       
       context.lineTo(data.x, data.y);
@@ -141,13 +141,13 @@ var sketch = (function () {
     };
     
     var setPosition = function (id, data) {
-      clients\[id\].lastx=data.x;
-      clients\[id\].lasty=data.y;
+      clients [id ].lastx=data.x;
+      clients [id ].lasty=data.y;
     };
 
     return {
         init: function () {
-            var canvas = document.getElementsByTagName('canvas')\[0\];
+            var canvas = document.getElementsByTagName('canvas') [0 ];
             context = canvas.getContext('2d');
             
             canvas.width = window.innerWidth;
@@ -201,8 +201,8 @@ Tambi&eacute;n tenemos que modificar el m&eacute;todo **setPosition** para envia
     
 ```js
 var setPosition = function (id, data) {
-  clients\[id\].lastx=data.x;
-  clients\[id\].lasty=data.y;
+  clients [id ].lastx=data.x;
+  clients [id ].lasty=data.y;
   
   if (id != selfID) return; 
   
@@ -221,7 +221,7 @@ io.sockets.on('connection', function (socket) {
   
  socket.on('addclient', function(id){
   socket.username = id;
-  clients\[id\] = id;
+  clients [id ] = id;
   io.sockets.emit('updateclients', clients);
   socket.broadcast.emit('updateclients', clients);
  });
@@ -231,7 +231,7 @@ io.sockets.on('connection', function (socket) {
   });
 
   socket.on('disconnect', function() {
-    delete clients\[socket.username\];
+    delete clients [socket.username ];
   });  
 });
 ```
@@ -245,8 +245,8 @@ A continuaci&oacute;n est&aacute; la implementaci&oacute;n de los m&eacute;todos
 var onUpdateClients = function(ids) {  
   for (var id in ids)
   {
-    if (!clients\[id\]) {
-      clients\[id\] = { lastx: 0, lasty: 0 };
+    if (!clients [id ]) {
+      clients [id ] = { lastx: 0, lasty: 0 };
     }
   }
 };
