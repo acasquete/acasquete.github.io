@@ -1,6 +1,7 @@
 ---
 title: BcnDevCon, Aplicaciones robustas con Programación Orientada a Aspectos
 tags: [aop, event]
+reviewed: true
 ---
 Este pasado jueves di una breve charla durante la [Barcelona Developers Conference](http://www.bcndevcon.org/) sobre Programación Orientada a Aspectos. Fue una charla introductoria de cuarenta y cinco minutos en la que vimos los conceptos básicos de [PostSharp](http://www.sharpcrafters.com/postsharp/) y [DynamicProxy](http://www.castleproject.org/dynamicproxy/index.html), dos librerías que podemos utilizar para implementar aspectos en nuestras aplicaciones. En esta entrada voy a intentar resumir lo que ya fue una charla muy resumida de lo que es AOP.
 
@@ -14,14 +15,24 @@ Los problemas que provoca tener que implementar toda esta funcionalidad transver
 
 Para minimizar el impacto de la implementación de esta transversalidad normalmente se utilizan distintas técnicas como puede ser la generación de código, programación funcional o proxies dinámicos, pero al no estar diseñados para implementar AOP no es la solución ideal para todos los casos.
 
-**Beneficios de la Programación Orientada a Aspectos** Al finalizar la charla comenté varios de los beneficios que obtenemos al aplicar AOP en nuestras aplicaciones. Estos beneficios quedan resumidos en la siguiente lista: **Menos costes** – El coste de la creación de software es casi directamente proporcional al número de líneas de código que se hemos generado, y que luego tenemos que mantener. **Menos fallos** – Menos código es sinónimo de menos fallos. Aunque los aspectos también pueden tener fallos, es más fácil solucionar un error en la clase de los aspectos que en cada uno de los métodos donde se aplica. **Aseguramiento de la Calidad** - La programación orientada a aspectos, permite la activación de las funcionalidades transversales sin afectar la calidad de la aplicación. **Mejora el mantenimiento** – Al reducir la dispersión del código transversal los desarrolladores pueden encontrar el código afectado por un cambio más fácilmente. **Mejora el trabajo en equipo** – Los equipos de desarrollo no tienen que lidiar con la forma en que se debe implementar la funcionalidad transversal, permitiendo así que solo tengan que trabajar con el código de negocio. Además, los nuevos miembros tendrán una curva de aprendizaje menos prolongada para comenzar a ser productivos.
+**Beneficios de la Programación Orientada a Aspectos** Al finalizar la charla comenté varios de los beneficios que obtenemos al aplicar AOP en nuestras aplicaciones. Estos beneficios quedan resumidos en la siguiente lista: 
+
+**Menos costes** – El coste de la creación de software es casi directamente proporcional al número de líneas de código que se hemos generado, y que luego tenemos que mantener. 
+
+**Menos fallos** – Menos código es sinónimo de menos fallos. Aunque los aspectos también pueden tener fallos, es más fácil solucionar un error en la clase de los aspectos que en cada uno de los métodos donde se aplica. 
+
+**Aseguramiento de la Calidad** - La programación orientada a aspectos, permite la activación de las funcionalidades transversales sin afectar la calidad de la aplicación. 
+
+**Mejora el mantenimiento** – Al reducir la dispersión del código transversal los desarrolladores pueden encontrar el código afectado por un cambio más fácilmente. 
+
+**Mejora el trabajo en equipo** – Los equipos de desarrollo no tienen que lidiar con la forma en que se debe implementar la funcionalidad transversal, permitiendo así que solo tengan que trabajar con el código de negocio. Además, los nuevos miembros tendrán una curva de aprendizaje menos prolongada para comenzar a ser productivos.
 
 Hasta aquí este pequeño resumen, dejo también varios enlaces de referencia que mostré al final de la presentación así como el código que utilicé durante las demos.
 
-**Descarga código fuente:** [BcnDevCon.AOP\_.zip](http://sdrv.ms/1dtAmaV)
+**Descarga código fuente:** [BcnDevCon.AOP.zip](/files/BcnDevCon.AOP.zip)
 
 Enlaces relacionados
 ---
-[Aspect-Oriented Software Development](http://aosd.net/) 
-[PostSharp](http://www.sharpcrafters.com/postsharp) 
+[Aspect-Oriented Software Development](http://aosd.net/)  
+[PostSharp](http://www.sharpcrafters.com/postsharp)  
 [DynamicProxy](http://www.castleproject.org/dynamicproxy)
