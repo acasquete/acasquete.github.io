@@ -325,7 +325,7 @@ socket.on('connect', function () {
         if (result) {
             selfID = result;
         } else {
-            selfID = (Math.random() \* 10000) >> 0;
+            selfID = (Math.random() * 10000) >> 0;
         }
 
         socket.emit('addclient', selfID);
