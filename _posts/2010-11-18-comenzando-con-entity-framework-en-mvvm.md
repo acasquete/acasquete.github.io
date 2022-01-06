@@ -124,12 +124,13 @@ public Data()
   }
 
   DbContext = new AdventureWorksLT2008Entities();
-  CustomersCollection = new ObservableCollection<Customer>(from c in DbContext.Customers 
-                                                           select c);
+  CustomersCollection = new ObservableCollection<Customer>(from c in DbContext.Customers select c);
 }
+```
 
 Con esta modificación el contructor no realizará ninguna acción en tiempo de diseño, pero podemos hacer que haga algo más interesante como, por ejemplo, mostrar unos datos de muestra para comprobar que el _Binding_ se está realizando correctamente, además podemos hacer uso de las directivas del compilador y la compilación condicional para evitar que este código se compile en modo _Release_.
 
+```cs
 public Data()
 {
 #if DEBUG
@@ -146,6 +147,7 @@ public Data()
   CustomersCollection = new ObservableCollection<Customer>(from c in DbContext.Customers 
   select c);
 }
+```
 
 Continuamos añadiendo la funcionalidad de búsqueda a nuestra pequeña demostración. En el ViewModel añadimos la propiedad SearchName, un ICommand (SearchCommand) para el botón y un método que actualizará la lista de clientes según el contenido del campo.
 
