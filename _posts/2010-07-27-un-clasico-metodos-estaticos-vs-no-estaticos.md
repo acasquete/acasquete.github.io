@@ -23,9 +23,10 @@ También se suele decir muchas veces que el rendimiento de los métodos estátic
 
 Otra de las creencias es que con métodos estáticos no se libera la memoria de los objetos utilizados. Esto creo que es debido a que se confunden los miembros con los métodos. Observemos el siguiente código:
 
-```csharp
-class TestClass { 
-    static object testObj1;`
+```cs
+class TestClass 
+{ 
+    static object testObj1;
 
     static void testMethod() 
     { 
@@ -39,7 +40,8 @@ Si utilizamos un código similar al anterior, el GC no recogerá el objeto _test
 
 En definitiva y para concluir, la idea principal con la que nos tenemos que quedar es que la elección entre crear métodos de clase o de instancia debe estar siembre basada en cuestiones de diseño y nunca de rendimiento.
 
-**Enlaces relacionados** 
+Enlaces relacionados
+---
 
 Blackwasp: [_Speed Test: Static vs Instance Methods_](http://www.blackwasp.co.uk/SpeedTestStaticInstance.aspx)  
 Biblioteca MSDN: [Diseño de clases estáticas](http://msdn.microsoft.com/es-es/library/ms229038(VS.80).aspx)  
