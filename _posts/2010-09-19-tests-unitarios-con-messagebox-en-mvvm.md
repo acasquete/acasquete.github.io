@@ -21,12 +21,12 @@ public string Answer
 {
   get
   {
-      return \_answer;
+      return _answer;
   }
 
   set
   {
-      \_answer = value;
+      _answer = value;
       NotifyPropertyChanged("Answer");
   }
 }
@@ -68,7 +68,7 @@ private bool ShowYesNoQuestion(string message)
 Este código no brilla por su originalidad, pero si lo ejecutamos, funcionará perfectamente. Entonces, ¿cuál es el problema? Fundamentalmente el error está en que no deberíamos mostrar el _MessageBox_ desde el _ViewModel_, nos deberían doler los ojos al ver algo así. Pero, ¿por qué? Pues porque esta implementación nos impide probar correctamente nuestro _ViewModel_. Supongamos que queremos crear un test unitario para probar el funcionamiento de nuestro _Command_ y hacemos algo parecido a esto:
 
 ```cs
-[TestMethod\]
+[TestMethod]
 public void BadTestExecuteShowQuestionAndAnswerYes()
 {
     ICommand command = vm.BadShowYesNoQuestionCommand;
