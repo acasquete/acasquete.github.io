@@ -1,6 +1,7 @@
 ---
 title: Windows Runtime y el despliegue de aplicaciones
 tags: [windows_store, winrt]
+reviewed: true
 ---
 Llevo utilizando la versión _preview_ de **Windows 8** desde su presentación en septiembre y durante este tiempo he podido introducirme en el nuevo mundo que se nos ha presentado con el desarrollo de aplicaciones **Metro Style** y **Windows Runtime**, el nuevo proveedor de servicios del sistema. Hace también unas semanas que estoy deseando escribir sobre mis experiencias y por fin me he decidido, así que en los próximos días iré compartiendo con todos vosotros una serie de entradas sobre el funcionamiento de **Windows Runtime**y sobre cómo desarrollar aplicaciones para la plataforma.
 
