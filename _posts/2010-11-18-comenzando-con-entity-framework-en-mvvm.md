@@ -205,9 +205,11 @@ El siguiente paso que vamos a dar es añadir una búsqueda instantánea, es deci
 <TextBox Height="23" Width="300" Text="{Binding SearchName, UpdateSourceTrigger=PropertyChanged}"/>
 <Button Content="Search" Width="75" Command="{Binding SearchCommand}" />
 <CheckBox Content="Instant Search" Height="16" IsChecked="{Binding InstantSearch}" />
+```
 
 Ahora solo tenemos que crear la propiedad _InstantSearch_ para enlazar con la propiedad **IsChecked** del **CheckBox** y modificar la propiedad **SearchName** para que llame al método _Search_ en el descriptor de acceso **set**.
 
+```cs
 public bool InstantSearch { get; set; }
 
 private string _searchName = "";
@@ -224,11 +226,13 @@ public string SearchName
     if (InstantSearch) this.Search();
   }
 }
+```
 
 Nos centramos ahora en la actualización de la entidad _Customer_. Vamos a enlazar los **TextBox** de la derecha para que muestren el valor del elemento seleccionado en el **ListView**. Para conseguir esto, vamos a hacer uso del evento **CurrentChanged** del objeto **ICollectionView**. Este evento se lanza cada vez que cambia la propiedad **CurrentItem** del ListView.
 
 Creamos la propiedad _CurrentCustomer_ que devuelva el _CurrentItem_ del **ICollectionView**.
 
+```cs
 public Customer CurrentCustomer
 {
   get
@@ -243,15 +247,19 @@ public Customer CurrentCustomer
     }
   }
 }
+```
 
 y añadimos en el constructor el tratamiento para cuando se lance el evento **CurrentChanged** se notifique un cambio de la propiedad _CurrentCustomer_.
 
+```cs
 _CustomersView.CurrentChanged += (sender, e) => { NotifyPropertyChanged("CurrentCustomer"); };
+```
 
 Ahora al seleccionar un elemento del **ListView** aparecerá el valor de los campos FirstName, LastName y CompanyName a la derecha y si modificamos alguno de ellos, el cambio se verá reflejado en la lista. Hay que tener en cuenta que para que esto funcione la propiedad **IsSynchronizedWithCurrentItem** del **ListView** debe estar a **True**.
 
 El siguiente paso es actualizar la base de datos. Añadimos a nuestro ViewModel los tres comandos para añadir una nueva entidad, borrar la entidad actualmente seleccionada y guardar todos los cambios.
 
+```xml
 <Button Content="Add Customer" Command="{Binding AddCustomer}" />
 <Button Content="Delete Customer" Command="{Binding DeleteCustomer}" />
 <Button Content="Save Changes" Command="{Binding SaveChanges}" />
