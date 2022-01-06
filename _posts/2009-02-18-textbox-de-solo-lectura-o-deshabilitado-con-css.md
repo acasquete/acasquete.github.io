@@ -17,6 +17,7 @@ Lo que sí que se puede hacer, es aplicar un estilo concreto a los _TextBox_ que
     background-color:#00c; 
     color:#fff; 
 }
+```
 
 Con este código cualquier control que tenga la propiedad _disabled_ activada aparecerá con el color de fondo en verde y los que tengan la propiedad _readonly_ lo tendrán de color azul. Eso sí, en cualquier navegador menos en Internet Explorer.
 
