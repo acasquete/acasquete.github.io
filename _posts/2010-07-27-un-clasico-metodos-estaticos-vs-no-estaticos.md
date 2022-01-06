@@ -1,6 +1,7 @@
 ---
 title: Un clásico, métodos estáticos vs no estáticos
-tags: []
+tags: [programming]
+reviewed: true
 ---
 Efectivamente, como ya aviso en el título, la entrada trata un tema muy manido, lo podríamos denominar un clásico de las discusiones entre programadores. Es un clásico, pero por algún motivo las discusiones siempre van acompañadas de mitos y leyendas que no sé muy bien de dónde surgen.
 
@@ -18,14 +19,21 @@ Después de esta más que breve introducción, una serie de directrices que nos 
     
 4.  No hay que utilizar **clases estáticas** como un cajón de elementos que hagan muchas cosas. Aunque esto parece evidente, he visto muchas veces clases en las que todos los métodos están definidos cómo estáticos y realizan infinidad de funciones diferentes. No debemos olvidar nunca que el abuso de clases estáticas y por ende de métodos estáticos, nos puede hacer crear código difícil de manejar en muy poco tiempo.
     
-
 También se suele decir muchas veces que el rendimiento de los métodos estáticos es mucho mejor, he escuchado lo contrario incluso, pero la realidad es que la diferencia de rendimiento entre métodos estáticos y los no estáticos es realmente muy pequeña. En este artículo: [_Speed Test: Static vs Instance Methods_](http://www.blackwasp.co.uk/SpeedTestStaticInstance.aspx), podemos ver la comparación de los tiempos de ejecución según el tipo de método, confirmando que esta diferencia no es significativa.
 
 Otra de las creencias es que con métodos estáticos no se libera la memoria de los objetos utilizados. Esto creo que es debido a que se confunden los miembros con los métodos. Observemos el siguiente código:
 
-class TestClass { static object testObj1;\`
+```csharp
+class TestClass { 
+    static object testObj1;`
 
-static void testMethod() { testObj1 = new object(); object testObj2 = new object(); } }
+    static void testMethod() 
+    { 
+        testObj1 = new object(); 
+        object testObj2 = new object(); 
+    } 
+}
+```
 
 Si utilizamos un código similar al anterior, el GC no recogerá el objeto _testObj1_ hasta que se iguale a _null_, ya que el objeto (al ser estático) siempre está disponible. No sucede lo mismo con el objeto _testObj2_ que estará disponible para recolección al finalizar la ejecución del método.
 
@@ -33,5 +41,5 @@ En definitiva y para concluir, la idea principal con la que nos tenemos que qued
 
 **Enlaces relacionados** 
 
-Blackwasp: [_Speed Test: Static vs Instance Methods_](http://www.blackwasp.co.uk/SpeedTestStaticInstance.aspx) 
-Biblioteca MSDN: [Diseño de clases estáticas](http://msdn.microsoft.com/es-es/library/ms229038(VS.80).aspx)
+Blackwasp: [_Speed Test: Static vs Instance Methods_](http://www.blackwasp.co.uk/SpeedTestStaticInstance.aspx)  
+Biblioteca MSDN: [Diseño de clases estáticas](http://msdn.microsoft.com/es-es/library/ms229038(VS.80).aspx)  
