@@ -1,6 +1,7 @@
 ---
 title: Hello world en el Marketplace de Windows Phone 7
 tags: [windows_phone]
+reviewed: true
 ---
 Ya me temía yo que algún poso dejaría el pasar más de tres años involucrado en el desarrollo de una aplicación para recursos humanos. ¿Por qué digo esto? Pues porque hace unas pocas horas que he recibido el correo confirmando que ya está disponible mi primera aplicación en el [Marketplace de Windows Phone 7](http://www.microsoft.com/windowsphone/es-es/default.aspx) y no he tenido una mejor idea para mi primer proyecto que hacer una aplicación para el cáculo del salario neto.
 
@@ -14,8 +15,6 @@ Una vez hayamos enviado nuestra primera aplicación tendremos que cumplir un úl
 
 En cuanto a la aplicación, Salary Calculator, no hay mucho que comentar. Es una aplicación con una única página que incluye un control **Pivot** con cinco elementos. Cada uno de estos elementos contiene los distintos apartados en los que podemos ir completando todos los datos necesarios para realizar el cálculo (salario bruto, información personal, número de ascendientes, minusvalía, etc.). El último **PivotItem** muestra los resultados del cálculo, que incluyen los importes de retención IRPF anual, Seguridad Social, sueldo neto anual, porcentaje de retención y el sueldo neto mensual. A nivel técnico, solo comentar que para añadir la funcionalidad de los selectores de lista he utilizado el indispensable [Windows Phone Toolkit](http://silverlight.codeplex.com/releases/view/52297) disponible en Codeplex. Durante los próximos días compartiré el proyecto completo e iré añadiendo nuevas funcionalidades, así que, como siempre, cualquier comentario será bienvenido.
 
-**Enlaces relacionados** 
-[Salary Calculator en el Zune Marketplace](http://social.zune.net/redirect?type=phoneApp&id=6c674147-ff95-e011-986b-78e7d1fa76f8)
 
 
 
