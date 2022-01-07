@@ -1,6 +1,7 @@
 ---
 title: Enlazar un EntityDataReader con un DataGrid
 tags: [programming]
+reviewed: true
 ---
 En todos los ejemplos que he utilizado para mostrar el funcionamiento del [proveedor EntityClient para EntityFramework](http://msdn.microsoft.com/es-es/library/bb738561.aspx), siempre he acabado mostrando los resultados de la consulta en una aplicación de consola mediante un sencillo _Console.WriteLine_. Nunca había hecho la implementación en una aplicación real y mucho menos había utilizado un _DataGrid_ para mostrar el contenido de un _EntityDataReader_. De hecho no había visto ninguna implementación de esto último hasta hace unos días, en la que se resolvía añadiendo los resultados del EntityDataReader a un _DataTable_ que se enlazaba directamente con el _DataGrid_. Esta no es la única forma de conseguirlo, podríamos, por ejemplo, utilizar un Dictionary y convertirlo a una lista de _KeyValuePair_ o crear un tipo en tiempo de ejecución y crear una lista de ese tipo. Hay unas cuantas formas de hacerlo.
 
