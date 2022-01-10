@@ -1,6 +1,7 @@
 ---
 title: Personalizar la generación de base de datos para crear un campo rowversion
-tags: []
+tags: [programming]
+reviewed: true
 ---
 _Model-First_ es como denominamos a uno de los enfoques que tenemos disponibles con Visual Studio 2010 y Entity Framework 4 para diseñar nuestro **Entity Data Model** y del que ya he hablado en alguna ocasión. Este enfoque nos permite crear nuestro EDM desde un modelo vacío y después, a partir de este, generar la base de datos, las asignaciones y las clases. En esta entrada nos vamos a centrar en conocer cómo el asistente genera el script de base de datos y de qué forma podemos modificarlo para adaptarlo a nuestras necesidades o a las reglas que tengamos impuestas.
 
@@ -10,13 +11,25 @@ El asistente de generación de base de datos utiliza flujos de trabajo (_workflo
 
 Comenzamos creando una copia del fichero **SSDLToSQL10.tt** en el mismo directorio y le cambiamos el nombre, por ejemplo, a **SSDLToSQL10-RowVersion.tt**. Una vez tenemos la copia editamos el fichero con Visual Studio y modificamos el contenido de la línea 165 según aparece en el siguiente código:
 
-* * *
+```cs
+<# foreach (EntitySet entitySet in Store.GetAllEntitySets()) { 
+  string schemaName = Id(entitySet.GetSchemaName());
+  string tableName = Id(entitySet.GetTableName()); 
+#> 
+– Creating table ‘<#=tableName#>’ 
+CREATE TABLE <# if (!IsSQLCE) {#>[<#=schemaName#>].<#}#>[<#=tableName#>] ( 
+  <# for (int p = 0; p < entitySet.ElementType.Properties.Count; p++) { 
+    EdmProperty prop = entitySet.ElementType.Properties[p]; 
+  #> 
+  <#=Id(prop.Name)#>]
+  <#if (prop.Name==”RowVersion”) { #>rowversion<# } else { #><#=prop.ToStoreType()#><# } 
+  #> 
+  <#=WriteIdentity(prop, targetVersion)#> <#=WriteNullable(prop.Nullable)#><#=(p < entitySet.ElementType.Properties.Count - 1) ? “,” : “”#> 
+  <# } #> ); 
+GO
 
-– Creating all tables – ————————————————–
-
-<# foreach (EntitySet entitySet in Store.GetAllEntitySets()) { string schemaName = Id(entitySet.GetSchemaName()); string tableName = Id(entitySet.GetTableName()); #> – Creating table ‘<#=tableName#>’ CREATE TABLE <# if (!IsSQLCE) {#>\[<#=schemaName#>\].<#}#>\[<#=tableName#>\] ( <# for (int p = 0; p < entitySet.ElementType.Properties.Count; p++) { EdmProperty prop = entitySet.ElementType.Properties\[p\]; #> \[<#=Id(prop.Name)#>\] <#if (prop.Name==”RowVersion”) { #>rowversion<# } else { #><#=prop.ToStoreType()#><# } #> <#=WriteIdentity(prop, targetVersion)#> <#=WriteNullable(prop.Nullable)#><#=(p < entitySet.ElementType.Properties.Count - 1) ? “,” : “”#> <# } #> ); GO
-
-<# } #> </pre>
+<# } #>
+```
 
 Lo que hemos hecho es añadir una condición para que se cambie el tipo de datos generado para las propiedades que tengan el nombre **RowVersion**. Un detalle que quiero destacar es que he utilizado el tipo de datos _rowversion_ ya que el tipo _timestamp_ está obsoleto y posiblemente desaparezca en alguna próxima versión de SQL Server, así que es recomendable utilizar _rowversion_ siempre que sea posible.
 
@@ -26,18 +39,17 @@ Para probar esta plantilla simplemente tenemos que añadir una entidad en nuestr
 
 Ahora solo queda seleccionar la nueva plantilla que acabamos de crear en la propiedad **DDL Generation Template** del EDM y ejecutar el asistente de generación de base de datos. El resultado debería contener un código similar a este:
 
-\-- Creating table 'MiEntidad'
-CREATE TABLE \[dbo\].\[MiEntidad\] (
-  \[Id\] int IDENTITY(1,1) NOT NULL,
-  \[RowVersion\] rowversion NOT NULL
+```cs
+-- Creating table 'MiEntidad'
+CREATE TABLE [dbo].[MiEntidad] (
+  [Id] int IDENTITY(1,1) NOT NULL,
+  [RowVersion] rowversion NOT NULL
 )
+```
 
+**Descarga Plantilla T4:**  
+[SSDLToSQL10-RowVersion.zip](/files/SSDLToSQL10-RowVersion.zip)
 
-
-**Descarga Plantilla T4:**
-[SSDLToSQL10-RowVersion.zip](http://sdrv.ms/1aiQMmw)
-
-**Enlaces relacionados**
-[MSDN: rowversion (Transact-SQL)](http://msdn.microsoft.com/es-es/library/ms182776.aspx) 
-[Cómo: Personalizar la generación de bases de datos (Asistente para generar base de datos)](http://msdn.microsoft.com/es-es/library/dd560887.aspx) 
-
+**Enlaces relacionados**  
+[MSDN: rowversion (Transact-SQL)](http://msdn.microsoft.com/es-es/library/ms182776.aspx)  
+[Cómo: Personalizar la generación de bases de datos (Asistente para generar base de datos)](http://msdn.microsoft.com/es-es/library/dd560887.aspx)  
