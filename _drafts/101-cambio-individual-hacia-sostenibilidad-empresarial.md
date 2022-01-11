@@ -3,34 +3,39 @@ title: Cambio individual hacia la sostenibilidad empresarial
 tags: [personal]
 header_fullview: corporate-sustainability.jpg
 ---
+En este principio de año me he encontrado buscando las formas con las que puedo reducir mi huella ambiental y cómo contribuyen a la sostenibilidad empresarial.
+
+Pero antes de entrar a analizar los cambios individuales, me gustaría repasar algunos procesos organizativos que se producen en la empresa al adoptar politicas de sostenibilidad.
+
+La idea de que las empresas no solo deben buscar beneficios sino que tienen responsabilidades sociales es algo que está muy extendido, aunque muchos aún sigan creyendo que estos temas deben ser responsabilidad de los gobiernos. Se ha hecho evidente que las grandes empresas y especialmente las multinacionales tienen impactos enormes que van mucho más allá de la decisión de los únicos ejecutivos. 
+
+
+
+Es interesante revisar un estudio en el que se investigó el efecto de la sostenibilidad corporativa en los procesos organizativos y el rendimiento. Utilizando una muestra emparejada de 180 empresas estadounidenses, descubrimos que las empresas que adoptaron voluntariamente políticas de sostenibilidad en 1993 -denominadas empresas de alta sostenibilidad- presentan en 2009 procesos organizativos distintos en comparación con una muestra emparejada de empresas que no adoptaron casi ninguna de estas políticas -denominadas empresas de baja sostenibilidad-. Descubrimos que es más probable que los consejos de administración de estas empresas sean formalmente responsables de la sostenibilidad y que los incentivos de la remuneración de los altos ejecutivos estén más en función de las métricas de sostenibilidad. Además, las empresas de alta sostenibilidad tienen más probabilidades de contar con procesos establecidos para la participación de los stakeholders, de estar más orientadas al largo plazo y de mostrar una mayor medición y divulgación de información no financiera. Por último, demostramos que las empresas con un alto nivel de sostenibilidad superan significativamente a sus homólogas a largo plazo, tanto en términos de rendimiento bursátil como contable.
+
+Identificamos dos grupos de empresas: las que tienen y las que no han adoptado un conjunto completo de políticas corporativas relacionadas con el medio ambiente, los empleados, la comunidad, los productos y los clientes. El conjunto completo de estas políticas se incluye en el Apéndice. Ejemplos de políticas relacionadas con el medio ambiente incluyen si la empresa tiene una política para reducir las emisiones, utiliza criterios medioambientales en la selección de los miembros de su cadena de suministro y si la empresa trata de mejorar su eficiencia energética o hídrica. Las políticas relacionadas con los empleados incluyen si la empresa tiene una política de diversidad e igualdad de oportunidades, de conciliación de la vida laboral y familiar, de mejora de la salud y la seguridad, y de favorecer la promoción interna. Las políticas relacionadas con la comunidad incluyen compromisos de ciudadanía corporativa, ética empresarial y criterios de derechos humanos. Las políticas relacionadas con los productos y los clientes incluyen la calidad de los productos y servicios, el riesgo de los productos y la salud y seguridad de los clientes.
+
+
+
+
+
+
+Así que la organización tiene que contribuir a ello. Los procesos organizativos son importantes, como las políticas, los códigos de contacto, las normas de comportamiento, etc. Hay aspectos externos que son importantes, como las normas gubernamentales. 
+
+Pero el núcleo de todo este desarrollo es el individuo. Si el individuo no llega, no conseguiremos una organización floreciente, y ese es el reto. Ahora bien, ¿cómo puede cambiar el individuo?
+
+Los efectos de la meditación en la transformación de los individuos.
+
+Si te interesa profundizar, te recomiendo la formación de Coursera "", en la que podrás en.
+
+
+
+
+
 - Intro
 - 
 - Sustainable Software Engineering
     https://docs.microsoft.com/en-us/learn/modules/sustainable-software-engineering-overview/1-introduction
-
-
-
-En este principio de año me he encontrado buscando las formas con las que puedo reducir mi huella ambiental y cómo contribuyen a la sostenibilidad empresarial.
-
-La idea de que las empresas no solo deben buscar beneficios sino que tienen responsabilidades sociales es algo que está muy extendido, aunque muchos aún sigan creyendo que estos temas deben ser responsabilidad de los gobiernos. Se ha hecho evidente que las grandes empresas y especialmente las multinacionales tienen impactos enormes que van mucho más allá de la decisión de los únicos ejecutivos. 
-
-Antes de ver que cambios individuales, me gustaría repasar algunos procesos organizativos.
-
-
-Así que la organización tiene que contribuir a ello. Los procesos organizativos son importantes, como las políticas, los códigos de contacto, las normas de comportamiento, etc. Hay aspectos externos que son importantes, como las normas gubernamentales. Pero el núcleo de todo este desarrollo es el individuo. Si el individuo no llega, no conseguiremos una organización floreciente, y ese es el reto. Ahora bien, ¿cómo puede cambiar el individuo?
-
-Los efectos de la meditación en la transformación de los individuos.
-
-
-
-
-
-
-
-
-
-Si te interesa profundizar, te recomiendo la formación de Coursera "", en la que podrás en.
-
 
 
 Green Software Engineering
@@ -43,8 +48,6 @@ Green applications are normally cheaper to run, more performant, more resilient 
 https://docs.microsoft.com/en-us/learn/modules/sustainable-software-engineering-overview/?ocid=AID3038246&WT.mc_id=green-9537-cxa
 
 
-
-For the full story – please view the video belo
 
 
 . Ya hablamos de la mejora de los procesos de producción con el fin de reducir la huella ambiental
@@ -80,8 +83,6 @@ Así que, para resumir, Friedman presentó la responsabilidad social como un int
 Por lo tanto, Friedman sugirió que, después de todo, podría existir un espacio para la responsabilidad social, , pero solo para aquellas iniciativas que fueran beneficiosas para las empresas. Y, en cualquier caso, Friedman creía que era mejor no llamarlos responsabilidad social para evitar cualquier implicación de que las empresas podrían tener ningún deber más allá de la obtención de beneficios. 
 
 Los argumentos de Friedman están en el corazón de este llamado enfoque de valor accionista , , que dominó el negocio en los años 80 del siglo pasado. 
-
-Este artículo sigue siendo influyente hoy en día, y la idea de que las empresas solo deben buscar beneficios y dejar los asuntos sociales y ambientales a los gobiernos sigue siendo atractiva para muchos. 
 
 Sin embargo, a partir de los años 90, la idea de que las empresas tienen responsabilidades sociales se ha extendido. Se ha hecho evidente que las grandes empresas y especialmente las multinacionales tienen impactos enormes que van mucho más allá de la decisión de los únicos ejecutivos. 
 
