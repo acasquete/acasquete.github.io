@@ -3,20 +3,42 @@ title: Cambio individual hacia la sostenibilidad empresarial
 tags: [personal]
 header_fullview: corporate-sustainability.jpg
 ---
-En este principio de año me he encontrado buscando las formas con las que puedo reducir mi huella ambiental y cómo contribuyen a la sostenibilidad empresarial.
+En este principio de año me he encontrado buscando las formas con las que puedo reducir mi huella ambiental y cómo pueden contribuir a la sostenibilidad empresarial.
 
-Pero antes de entrar a analizar los cambios individuales, me gustaría repasar algunos procesos organizativos que se producen en la empresa al adoptar politicas de sostenibilidad.
+Antes de entrar a analizar los cambios individuales, me gustaría repasar algunos cambios que se producen en la empresa al adoptar politicas de sostenibilidad. Para esto es interesante revisar un estudio en el que se investió este impacto en los procesos organizativos y rendimiento.
 
-La idea de que las empresas no solo deben buscar beneficios sino que tienen responsabilidades sociales es algo que está muy extendido, aunque muchos aún sigan creyendo que estos temas deben ser responsabilidad de los gobiernos. Se ha hecho evidente que las grandes empresas y especialmente las multinacionales tienen impactos enormes que van mucho más allá de la decisión de los únicos ejecutivos. 
+En los últimos años se ha hecho evidente que las empresas y especialmente las multinacionales tienen un gran impacto y una gran resposabilidad social. La idea de que las empresas solo deben buscar beneficios, sino que.  La búsqueda simultánea de la sostenibilidad económica, medioambiental y social se está convirtiendo rápidamente en parte de la retórica establecida para muchas empresas de todos los sectores y regiones geográficas.
+
+Para demostrar el impacto, el estudio de XX utilizó una muestra de 180 empresas estadounidenses y concluyó que las empresas que adoptaron políticas de sostenibilidad de forma voluntaria en 1993. 16 años después presentaron procesos organizativos distintos comparada con empresas que no adoptaron ninguna de estás políticas.
+
+La idea de que las empresas no solo deben buscar beneficios sino que tienen responsabilidades sociales es algo que está muy extendido, aunque muchos aún sigan creyendo que estos temas deben ser responsabilidad de los gobiernos. Se ha hecho evidente que las grandes empresas y especialmente las multinacionales tienen impactos enormes que van mucho más allá de la decisión de los únicos ejecutivos.  
+
+Además, las empresas de alta sostenibilidad tienen más probabilidades de contar con procesos establecidos para la participación de los stakeholders,  de estar más orientadas al largo plazo y de mostrar una mayor medición y divulgación de información no financiera.  
+
+Y, por último, demostró que las empresas con alto nivel de sostenibilidad superaron a sus homólogas en tanto en términos de rendimiento bursátil como contable.
+
+Descubrimos que es más probable que los consejos de administración de estas empresas sean formalmente responsables de la sostenibilidad y que los incentivos de la remuneración de los altos ejecutivos estén más en función de las métricas de sostenibilidad.
+
+En este grupo de empresas de alta sostenibiliad, se identificaron dos grupos de empresas, las que que tienen y las que no han adoptado un conjunto completo de políticas corporativas relacionadas con el medio ambiente, los empleados, la comunidad, los productos y los clientes.
+
+Algunos ejemplos de politicas relacionadas con el medio ambiente, incluyen si la empresa tiene política para reducir emisiones, utiliza criterios medioambientales en la selección de los miembros de su cadena de suministro o si la empresa trata de mejorar su eficiencia energética o hídrica. Respecto a las políticas relacionadas con los empleados nos encontramos si tiene una política de diversidad e igualdad de oportunidades, de conciliación de la vida laboral y familiar, de mejora de la salud y la seguridad, y de favorecer la promoción interna. Las políticas relacionadas con la comunidad incluyen compromisos de ciudadanía corporativa, ética empresarial y criterios de derechos humanos. Y, por último, las políticas relacionadas con los productos y los clientes incluyen la calidad de los productos y servicios, el riesgo de los productos y la salud y seguridad de los clientes.
+
+Dentro de la transformación hacia la sostenibilidad empresarial, existen distintos problemas que tenemos que enfocar. El primero tienen que ver con el corto plazo en las decisiones empresariales y las decisiones a largo plazo. Dan mucho peso en las consecuencias a corto plazo, dando mucho menos si es. El segundo problema tiene 
+
+Así que hay mucha investigación que muestra que, por ejemplo, la práctica de meditación reduce los niveles de estrés, ¿de acuerdo? Ya sea que seas un trabajador o un estudiante, el estrés tiene este efecto particular, reduce el horizonte temporal, te hace pensar en el día de hoy, te hace pensar en tus propios intereses personales y te hace pensar esencialmente, de una manera muy estrecha, ¿verdad? No te permite explorar, expandirte. No solo en pensando en el valor a crear para los demás, sino también en pensando realmente en nuevas formas de hacer las cosas, la innovación, que también es importante. Esas son algunas de las principales razones por las que realmente vemos evidencia de que la práctica de la meditación realmente tiene un impacto en el pensamiento y el sentimiento de sostenibilidad. Más específicamente, permítanme compartir con ustedes realmente brevemente los resultados de una serie de experimentos de investigación que hemos llevado a cabo en los últimos seis o siete años en colaboración con neurocientíficos, psicólogos, expertos en gestión y sostenibilidad. Los experimentos fueron dirigidos a identificar cuáles son las formas más efectivas de desarrollar, para nutrir esta mentalidad de sostenibilidad.  y nos hemos centrado especialmente en dos enfoques.
+
+Todo esto va más allá, por supuesto, del conocimiento, el intercambio, el aprendizaje que todo el mundo puede hacer leyendo libros, por asistiendo a clases y así sucesivamente. Realmente estamos tratando de entender lo que es efectivo para influir en la forma en que pensamos. Influyendo en la forma que nuestro cerebro, de alguna manera, funciona. Ahora, por un lado, probamos una serie de ejercicios que han sido desarrollados por neurocientíficos específicamente con el propósito de alargar el horizonte temporal. 
+
+El experimento que me parece especialmente esclarecedor está relacionado con el uso de estos dos enfoques, el entrenamiento neurocognitivo y la meditación, en dos grupos diferentes, además de un tercer grupo que se suponía que era de control, en el que no habían recibido ningún tipo de entrenamiento, pero en el que se midieron sus propios rasgos psicológicos, todos pasaron por una simulación de decisiones empresariales relacionadas con la sostenibilidad, y todos se sometieron a un escáner de IRMf, resonancia magnética, ¿verdad?
+
+Así que, esencialmente, una técnica de imágenes cerebrales que nos permitiera entender si algo había cambiado realmente en su cerebro, en particular en los aspectos, en las partes del cerebro que son más importantes para, de nuevo, alargar el horizonte temporal y ampliar la noción de uno mismo, en particular resistiendo la tentación de acceder a las recompensas inmediatas, de ir básicamente a por el beneficio inmediato a expensas de la sostenibilidad a largo plazo de la empresa, así como de toda la industria. Y los resultados fueron bastante sorprendentes. Esperábamos ver una mayor o menor eficacia de ambas intervenciones, pero no la vimos. Vimos, de las dos intervenciones, sólo la del campo de la medicina, con cambios significativos realmente importantes en las decisiones que la gente tomaba, mucho más sostenibles en el caso del entrenamiento de meditación, y realmente ningún cambio o si acaso algo ligeramente negativo, menos sostenible, en el grupo que fue entrenado con ejercicios neurocognitivos. Pero los cambios en el patrón de toma de decisiones, la sostenibilidad de la toma de decisiones, no fue el único resultado. En realidad vimos cambios significativos en los rasgos psicológicos de estos estudiantes y de estos directivos. Vimos que, por ejemplo, la disposición a cooperar era mucho, mucho más fuerte en el grupo que pasó por la meditación. La autotrascendencia es un término psicológico que significa esencialmente la voluntad de hacer lo mejor para los demás, es decir, ir más allá de uno mismo, ampliar la noción del yo, que era, de nuevo, una dimensión clave de la mentalidad de sostenibilidad, también mejoró significativamente. También las dimensiones éticas, la importancia del comportamiento moral, aumentaron de nuevo en el grupo que siguió la formación en meditación, sin que hubiera cambios en los otros dos grupos. Y por último, y lo más sorprendente, vimos que en una parte particular del cerebro, que es la circunvolución frontal inferior, para aquellos de ustedes que conocen la neurociencia, pero esencialmente es la parte del cerebro que es responsable de poner la atención dentro y controlar los impulsos para alcanzar de nuevo las recompensas inmediatas, ¿verdad? Así que básicamente es el freno a nuestro impulso de conseguir felicidad inmediata. Y por lo tanto es lo que nos permite realmente pensar más a largo plazo y pensar más por los demás. Esa parte en particular no sólo fue mucho más activa después del entrenamiento de meditación, sino que en realidad la densidad de la materia gris cambió físicamente, lo cual fue algo que realmente no esperábamos, pero que obviamente nos complació mucho ver, porque eso significa que realmente este tipo de ejercicio que, ya sabes, te estamos invitando a experimentar, realmente podría tener una influencia significativa en la forma en que te percibes a ti mismo, percibes a los demás, y percibes la relación entre tú y los demás. Por supuesto, con las implicaciones, por ejemplo, de permitir, dotaros de más sensibilidad hacia la sostenibilidad y de más capacidad para tomar decisiones sostenibles. Así que me gustaría invitarte a que sigas y te diviertas y disfrutes de este proceso que, en realidad, es especialmente agradable, estas sesiones, y estaremos encantados de escuchar cualquier resultado, cualquier comentario tuyo en nuestro grupo de chat. Que lo disfruten.
 
 
 
-Es interesante revisar un estudio en el que se investigó el efecto de la sostenibilidad corporativa en los procesos organizativos y el rendimiento. Utilizando una muestra emparejada de 180 empresas estadounidenses, descubrimos que las empresas que adoptaron voluntariamente políticas de sostenibilidad en 1993 -denominadas empresas de alta sostenibilidad- presentan en 2009 procesos organizativos distintos en comparación con una muestra emparejada de empresas que no adoptaron casi ninguna de estas políticas -denominadas empresas de baja sostenibilidad-. Descubrimos que es más probable que los consejos de administración de estas empresas sean formalmente responsables de la sostenibilidad y que los incentivos de la remuneración de los altos ejecutivos estén más en función de las métricas de sostenibilidad. Además, las empresas de alta sostenibilidad tienen más probabilidades de contar con procesos establecidos para la participación de los stakeholders, de estar más orientadas al largo plazo y de mostrar una mayor medición y divulgación de información no financiera. Por último, demostramos que las empresas con un alto nivel de sostenibilidad superan significativamente a sus homólogas a largo plazo, tanto en términos de rendimiento bursátil como contable.
 
-Identificamos dos grupos de empresas: las que tienen y las que no han adoptado un conjunto completo de políticas corporativas relacionadas con el medio ambiente, los empleados, la comunidad, los productos y los clientes. El conjunto completo de estas políticas se incluye en el Apéndice. Ejemplos de políticas relacionadas con el medio ambiente incluyen si la empresa tiene una política para reducir las emisiones, utiliza criterios medioambientales en la selección de los miembros de su cadena de suministro y si la empresa trata de mejorar su eficiencia energética o hídrica. Las políticas relacionadas con los empleados incluyen si la empresa tiene una política de diversidad e igualdad de oportunidades, de conciliación de la vida laboral y familiar, de mejora de la salud y la seguridad, y de favorecer la promoción interna. Las políticas relacionadas con la comunidad incluyen compromisos de ciudadanía corporativa, ética empresarial y criterios de derechos humanos. Las políticas relacionadas con los productos y los clientes incluyen la calidad de los productos y servicios, el riesgo de los productos y la salud y seguridad de los clientes.
+Así que el problema del corto plazo, tiene que ver con el hecho que los tomadores de decisiones empresariales, gerentes, típicamente ponen mucho peso en las consecuencias a corto plazo de sus propias decisiones, dando mucho menos si es relevante, a las consecuencias a largo plazo de lo que decidir hacer por sus empresas. 
 
-
-
+Hay mucha evidencia, hay bibliotecas enteras escritas particularmente en el campo de la llamada economía conductual. Una rama bastante grande y cada vez más importante de la economía, que recientemente ha recibido seis Premios Nobel en los últimos años. La evidencia está ahí y bastante convincente. Pero no es sólo un tema teórico aquí. La cuestión es muy concreta desde el punto de vista empresarial, y el hecho de que al tratar de hacer lo mejor para su empresa en el corto plazo, en realidad los gerentes de negocios podrían terminar perjudicando el desempeño a largo plazo de sus propias empresas. Para ilustrar esto, me gustaría pedirle para leer una carta que Larry Fink, el CEO de BlackRock, uno de los mayores fondos de inversión en el mundo, escribió en febrero de 2016 a los CEOs de muchas grandes empresas internacionales de Fortune 1000, y en particular a los CEOs de esas empresas, que él y su empresa invirtieron. Me gustaría que leas esta carta no sólo para entender cuáles fueron sus argumentos. Pero particularmente para entender por qué decidió tomar un sello tan inusual para comunicar esos argumentos.
 
 
 
@@ -27,16 +49,6 @@ Pero el núcleo de todo este desarrollo es el individuo. Si el individuo no lleg
 Los efectos de la meditación en la transformación de los individuos.
 
 Si te interesa profundizar, te recomiendo la formación de Coursera "", en la que podrás en.
-
-
-
-
-
-- Intro
-- 
-- Sustainable Software Engineering
-    https://docs.microsoft.com/en-us/learn/modules/sustainable-software-engineering-overview/1-introduction
-
 
 Green Software Engineering
 Green Software Engineering is an emerging discipline with principles, philosophies, and competencies to define, develop, and run sustainable software applications.
@@ -49,8 +61,7 @@ https://docs.microsoft.com/en-us/learn/modules/sustainable-software-engineering-
 
 
 
-
-. Ya hablamos de la mejora de los procesos de producción con el fin de reducir la huella ambiental
+Ya hablamos de la mejora de los procesos de producción con el fin de reducir la huella ambiental
 
 HR y la sostenibilidad
 
