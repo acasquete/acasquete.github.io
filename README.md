@@ -1,4 +1,4 @@
-## acasquetenotes.com
+# acasquetenotes.com
 
 ## Install/Setup Jekyll
 
@@ -16,7 +16,7 @@ sudo apt-get install ruby2.2-dev
 - [Jekyll documentation](http://jekyllrb.com)   
 
 
-## Install Monochrome dependencies
+## Install dependencies
 
 ```
 sudo gem install jekyll-paginate
