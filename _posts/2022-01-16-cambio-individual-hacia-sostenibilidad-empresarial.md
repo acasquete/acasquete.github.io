@@ -22,25 +22,25 @@ Para evaluar el grado de adopción de sostenibilidad diseñaron un índice con e
 |:----|:----|
 |Plan de Bonos para Empleados/Comunidad de Empleados|¿La empresa ofrece un plan de bonos a la mayoría de los empleados?|
 |Comunidad|¿Tiene la empresa una política para esforzarse por ser un buen ciudadano corporativo o apoyar los [Principios Globales de Sullivan](https://en.wikipedia.org/wiki/Sullivan_principles)?|
-|Diversidad y Oportunidad/Política|¿Tiene la empresa una política para respetar la ética empresarial o ha firmado el Pacto Mundial de las Naciones Unidas o sigue las directrices de la OCDE?|
+|Diversidad y Oportunidad/Política|¿La empresa tiene una política para respetar la ética empresarial o ha firmado el Pacto Mundial de las Naciones Unidas o sigue las directrices de la OCDE?|
 |Política de Reducción de Emisiones Elementos/Emisiones |¿La empresa cuenta con una política de diversidad e igualdad de oportunidades?|
 |Reducción de Emisiones/Reducción de CO2|¿La empresa tiene una política de reducción de emisiones?|
 |Reducción de Emisiones/Reducción del Impacto del Transporte |¿La empresa muestra alguna iniciativa para reducir, reutilizar, reciclar, sustituir, eliminar o compensar los equivalentes de CO2 en el proceso productivo?|
 |Bienestar de los empleados|¿La empresa tiene iniciativas para reducir el impacto ambiental del transporte de sus productos o de su personal?|
 |Calidad/Política de Empleo I|¿La empresa cuenta con una política de conciliación?|
 |Calidad/Política de Empleo II|¿La empresa tiene una política competitiva de beneficios para los empleados o garantiza buenas relaciones con los empleados dentro de su cadena de suministro?|
-|Gestión ambiental de la cadena de suministro|¿Tiene la empresa una política para mantener el crecimiento y la estabilidad del empleo a largo plazo?|
+|Gestión ambiental de la cadena de suministro|¿La empresa tiene una política para mantener el crecimiento y la estabilidad del empleo a largo plazo?|
 |Generosos beneficios complementarios|¿La empresa utiliza criterios ambientales (ISO 14000, consumo de energía, etc.) en el proceso de selección de sus proveedores o socios de abastecimiento?|
 |Salud y seguridad /Política|¿La empresa afirma proporcionar a sus empleados un fondo de pensión, atención médica u otros seguros?|
-|Contratista de derechos humanos|¿Tiene la empresa una política para mejorar la salud y seguridad de los empleados dentro de la empresa y su cadena de suministro?|
+|Contratista de derechos humanos|¿La empresa tiene una política para mejorar la salud y seguridad de los empleados dentro de la empresa y su cadena de suministro?|
 |Derechos humanos/Política I|¿La empresa demuestra utilizar criterios de derechos humanos en el proceso de selección o seguimiento de sus proveedores o socios de abastecimiento?|
 |Derechos humanos/Política II|¿La empresa cuenta con una política para garantizar la libertad de asociación aplicada universalmente independientemente de las leyes locales?|
 |Promoción interna|¿La empresa cuenta con una política de exclusión del trabajo infantil, forzoso u obligatorio?|
 |Formación de directivos|¿La empresa pretende favorecer la promoción desde dentro?|
-|Discriminación positiva|¿Afirma la empresa que proporciona formación periódica de personal y gestión empresarial a sus directivos?|
+|Discriminación positiva|¿La empresa afirma que proporciona formación periódica de personal y gestión empresarial a sus directivos?|
 |Minimización del impacto del producto|¿La empresa promueve la discriminación positiva?|
-|Innovación de productos|¿Diseña la empresa funciones y aplicaciones/servicios de productos que promuevan un uso responsable, eficiente, rentable y ambientalmente preferible? ¿Cuenta la empresa con procedimientos de devolución y programas de reciclaje para reducir los riesgos potenciales de que los productos ingresen al medio ambiente?|
-|Responsabilidad del producto/Política I|¿Tiene la empresa una política para proteger la salud y la seguridad del cliente?|
+|Innovación de productos|¿La empresa diseña funciones y aplicaciones/servicios de productos que promuevan un uso responsable, eficiente, rentable y ambientalmente preferible? ¿La empresa cuenta con procedimientos de devolución y programas de reciclaje para reducir los riesgos potenciales de que los productos ingresen al medio ambiente?|
+|Responsabilidad del producto/Política I|¿La empresa tiene una política para proteger la salud y la seguridad del cliente?|
 |Responsabilidad sobre productos/Política II|¿La empresa cuenta con una política de calidad de productos y servicios?|
 |Eficiencia de recursos/Eficiencia energética |¿La empresa tiene una política para mejorar su eficiencia energética?|
 |Política de Eficiencia de Recursos/Eficiencia Hídrica|¿La empresa tiene una política para mejorar su eficiencia hídrica?|
