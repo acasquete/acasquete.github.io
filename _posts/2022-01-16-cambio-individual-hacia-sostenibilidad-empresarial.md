@@ -18,7 +18,7 @@ Uno de los estudios que ha analizado el impacto de las medidas de sostenibilidad
 
 Para evaluar el grado de adopción de sostenibilidad diseñaron un índice con el que se midieron políticas implantadas en materia medioambiental y social. Algunos ejemplos de políticas relacionadas con el medio ambiente son si la empresa tiene políticas para reducir emisiones, utiliza criterios medioambientales en la selección de los miembros de su cadena de suministro o si la empresa trata de mejorar su eficiencia energética o hídrica. Respecto a las políticas relacionadas con los empleados se consideraba si se tiene una política de diversidad e igualdad de oportunidades, de conciliación de la vida laboral y familiar, de mejora de la salud y la seguridad, y de favorecer la promoción interna. En la tabla siguiente se puede ver la lista completa de políticas analizadas.
 
-|Nombre|Descripción|
+|Área|Descripción|
 |:----|:----|
 |Plan de Bonos para Empleados/Comunidad de Empleados|¿La empresa ofrece un plan de bonos a la mayoría de los empleados?|
 |Comunidad|¿Tiene la empresa una política para esforzarse por ser un buen ciudadano corporativo o apoyar los [Principios Globales de Sullivan](https://en.wikipedia.org/wiki/Sullivan_principles)?|
