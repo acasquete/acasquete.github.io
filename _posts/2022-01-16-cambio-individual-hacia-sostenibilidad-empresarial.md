@@ -20,8 +20,8 @@ Para evaluar el grado de adopción de sostenibilidad diseñaron un índice con e
 
 |Nombre|Descripción|
 |:----|:----|
-|Plan de Bonos para Empleados/Comunidad de Empleados/Política I|¿La empresa brinda un plan de bonos a la mayoría de los empleados?|
-|Comunidad/Política II|¿Tiene la empresa una política para esforzarse por ser un buen ciudadano corporativo o apoyar los Principios Globales de Sullivan?|
+|Plan de Bonos para Empleados/Comunidad de Empleados|¿La empresa ofrece un plan de bonos a la mayoría de los empleados?|
+|Comunidad|¿Tiene la empresa una política para esforzarse por ser un buen ciudadano corporativo o apoyar los [Principios Globales de Sullivan](https://en.wikipedia.org/wiki/Sullivan_principles)?|
 |Diversidad y Oportunidad/Política|¿Tiene la empresa una política para respetar la ética empresarial o ha firmado el Pacto Mundial de las Naciones Unidas o sigue las directrices de la OCDE?|
 |Política de Reducción de Emisiones Elementos/Emisiones |¿La empresa cuenta con una política de diversidad e igualdad de oportunidades?|
 |Reducción de Emisiones/Reducción de CO2|¿La empresa tiene una política de reducción de emisiones?|
@@ -47,7 +47,7 @@ Para evaluar el grado de adopción de sostenibilidad diseñaron un índice con e
 | Política de Capacitación y Desarrollo/Política|¿La empresa cuenta con una política para apoyar la capacitación en habilidades o el desarrollo profesional de sus empleados?|
 |Reducción Total de Residuos |¿La empresa tiene iniciativas para reciclar, reducir, reutilizar, sustituir, tratar o eliminar el total de residuos? |
 
-El estudio demostró que las empresas de alta sostenibilidad tenían procesos establecidos que fomentaban la participación de los empleados y clientes, estaban más orientadas al largo plazo y mostraban una mayor medición y divulgación de la información no financiera. Y, por último, demostró que las empresas con alto nivel de sostenibilidad superaron a sus contrapartes tanto en términos de rendimiento bursátil como en contable.
+El estudio demuestra que las empresas más sostenibles tienen establecidos unos procesos que fomentan la participación de los empleados y clientes, están más orientadas al largo plazo y muestran una mayor medición y divulgación de la información no financiera. Y, por último, demostró que las empresas con alto nivel de sostenibilidad superaron a sus contrapartes tanto en términos de rendimiento bursátil como en contable.
 
 Este estudio muestra también que, dentro de la transformación hacia la sostenibilidad empresarial, una de las grandes dificultades que hay que superar es el cortoplacismo de las decisiones empresariales. Esto tiene que ver con el hecho de que quien toma las decisiones empresariales pone mucho peso en las consecuencias a corto plazo, y que tratando de hacer lo mejor para su empresa en el corto plazo, en realidad, puede terminar perjudicando el rendimiento a largo plazo.
 
