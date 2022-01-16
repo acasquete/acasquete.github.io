@@ -18,38 +18,36 @@ Uno de los estudios que ha analizado el impacto de las medidas de sostenibilidad
 
 Para evaluar el grado de adopción de sostenibilidad diseñaron un índice con el que se midieron políticas implantadas en materia medioambiental y social. Algunos ejemplos de políticas relacionadas con el medio ambiente son si la empresa tiene políticas para reducir emisiones, utiliza criterios medioambientales en la selección de los miembros de su cadena de suministro o si la empresa trata de mejorar su eficiencia energética o hídrica. Respecto a las políticas relacionadas con los empleados se consideraba si se tiene una política de diversidad e igualdad de oportunidades, de conciliación de la vida laboral y familiar, de mejora de la salud y la seguridad, y de favorecer la promoción interna. En la tabla siguiente se puede ver la lista completa de políticas.
 
----
-
-|Name|Description|
+|Nombre|Descripción|
 |:----|:----|
-|Bonus Plan for Employees/Employees Community/Policy I|Does the company provide a bonus plan to most employees?|
-|Community/Policy II|Does the company have a policy to strive to be a good corporate citizen or endorse the Global Sullivan Principles?|
-|Diversity and Opportunity/Policy|Does the company have a policy to respect business ethics or has the company signed the UN Global Compact or follow the OECD guidelines?|
-|Emission Reduction Policy Elements/Emissions |Does the company have a diversity and equal opportunity policy?|
-|Emission Reduction/CO2 Reduction|Does the company have a policy to reduce emissions?|
-|Emission Reduction/Transportation Impact Reduction |Does the company shows an initiative to reduce, reuse, recycle, substitute, phased out or compensate CO2 equivalents in the production process?|
-|Employee welfare|Does the company have initiatives to reduce the environmental impact of transportation of its products or its staff?|
-|Employment Quality/Policy I|Does the company have a work-life balance policy?|
-|Employment Quality/Policy II|Does the company have a competitive employee benefits policy or ensuring good employee relations within its supply chain?|
-|Environmental Supply Chain Management|Does the company have a policy for maintaining long term employment growth and stability?|
-|Generous Fringe Benefits|Does the company use environmental criteria (ISO 14000, energy consumption, etc.) in the selection process of its suppliers or sourcing partners?|
-|Health & Safety /Policy|Does the company claim to provide its employees with a pension fund, health care or other insurances?|
-|Human Rights Contractor|Does the company have a policy to improve employee health & safety within the company and its supply chain?|
-|Human Rights/Policy I|Does the company show to use human rights criteria in the selection or monitoring process of its suppliers or sourcing partners?|
-|Human Rights/Policy II|Does the company have a policy to guarantee the freedom of association universally applied independent of local laws?|
-|Internal Promotion|Does the company have a policy for the exclusion of child, forced or compulsory labor?|
-|Management Training|Does the company claim to favor promotion from within?|
-|Positive Discrimination|Does the company claim to provide regular staff and business management training for its managers?|
-|Product Impact Minimization|Does the company promote positive discrimination?|
-|Product Innovation|Does the company design product features and applications/services that promote responsible, efficient, cost-effective and environmentally preferable use? Does the company have take-back procedures and recycling programs to reduce the potential risks of products entering the environment?|
-|Product Responsibility/Policy I|Does the company have a policy to protect customer health & safety?|
-|Product Responsibility/Policy II|Does the company have a products and services quality policy?|
-|Resource Efficiency/Energy Efficiency |Does the company have a policy to improve its energy efficiency?|
-|Policy Resource Efficiency/Water Efficiency|Does the company have a policy to improve its water efficiency?|
-| Policy Training and Development/Policy|Does the company have a policy to support the skills training or career development of its employees?|
-|Waste Reduction Total |Does the company have initiatives to recycle, reduce, reuse, substitute, treat or phase out total waste? |
+|Plan de Bonos para Empleados/Comunidad de Empleados/Política I|¿La empresa brinda un plan de bonos a la mayoría de los empleados?|
+|Comunidad/Política II|¿Tiene la empresa una política para esforzarse por ser un buen ciudadano corporativo o apoyar los Principios Globales de Sullivan?|
+|Diversidad y Oportunidad/Política|¿Tiene la empresa una política para respetar la ética empresarial o ha firmado el Pacto Mundial de las Naciones Unidas o sigue las directrices de la OCDE?|
+|Política de Reducción de Emisiones Elementos/Emisiones |¿La empresa cuenta con una política de diversidad e igualdad de oportunidades?|
+|Reducción de Emisiones/Reducción de CO2|¿La empresa tiene una política de reducción de emisiones?|
+|Reducción de Emisiones/Reducción del Impacto del Transporte |¿La empresa muestra alguna iniciativa para reducir, reutilizar, reciclar, sustituir, eliminar o compensar los equivalentes de CO2 en el proceso productivo?|
+|Bienestar de los empleados|¿La empresa tiene iniciativas para reducir el impacto ambiental del transporte de sus productos o de su personal?|
+|Calidad/Política de Empleo I|¿La empresa cuenta con una política de conciliación?|
+|Calidad/Política de Empleo II|¿La empresa tiene una política competitiva de beneficios para los empleados o garantiza buenas relaciones con los empleados dentro de su cadena de suministro?|
+|Gestión ambiental de la cadena de suministro|¿Tiene la empresa una política para mantener el crecimiento y la estabilidad del empleo a largo plazo?|
+|Generosos beneficios complementarios|¿La empresa utiliza criterios ambientales (ISO 14000, consumo de energía, etc.) en el proceso de selección de sus proveedores o socios de abastecimiento?|
+|Salud y seguridad /Política|¿La empresa afirma proporcionar a sus empleados un fondo de pensión, atención médica u otros seguros?|
+|Contratista de derechos humanos|¿Tiene la empresa una política para mejorar la salud y seguridad de los empleados dentro de la empresa y su cadena de suministro?|
+|Derechos humanos/Política I|¿La empresa demuestra utilizar criterios de derechos humanos en el proceso de selección o seguimiento de sus proveedores o socios de abastecimiento?|
+|Derechos humanos/Política II|¿La empresa cuenta con una política para garantizar la libertad de asociación aplicada universalmente independientemente de las leyes locales?|
+|Promoción interna|¿La empresa cuenta con una política de exclusión del trabajo infantil, forzoso u obligatorio?|
+|Formación de directivos|¿La empresa pretende favorecer la promoción desde dentro?|
+|Discriminación positiva|¿Afirma la empresa que proporciona formación periódica de personal y gestión empresarial a sus directivos?|
+|Minimización del impacto del producto|¿La empresa promueve la discriminación positiva?|
+|Innovación de productos|¿Diseña la empresa funciones y aplicaciones/servicios de productos que promuevan un uso responsable, eficiente, rentable y ambientalmente preferible? ¿Cuenta la empresa con procedimientos de devolución y programas de reciclaje para reducir los riesgos potenciales de que los productos ingresen al medio ambiente?|
+|Responsabilidad del producto/Política I|¿Tiene la empresa una política para proteger la salud y la seguridad del cliente?|
+|Responsabilidad sobre productos/Política II|¿La empresa cuenta con una política de calidad de productos y servicios?|
+|Eficiencia de recursos/Eficiencia energética |¿La empresa tiene una política para mejorar su eficiencia energética?|
+|Política de Eficiencia de Recursos/Eficiencia Hídrica|¿La empresa tiene una política para mejorar su eficiencia hídrica?|
+| Política de Capacitación y Desarrollo/Política|¿La empresa cuenta con una política para apoyar la capacitación en habilidades o el desarrollo profesional de sus empleados?|
+|Reducción Total de Residuos |¿La empresa tiene iniciativas para reciclar, reducir, reutilizar, sustituir, tratar o eliminar el total de residuos? |
 
-El estudio demostró que las empresas de alta sostenibilidad tenían procesos establecidos que fomentaban la participación de los empleados y clientes, estaban más orientadas al largo plazo y mostraban una mayor medición y divulgación de la información no financiera. Y, por último, demostró que las empresas con alto nivel de sostenibilidad superaron a sus homólogas tanto en términos de rendimiento bursátil como contable.
+El estudio demostró que las empresas de alta sostenibilidad tenían procesos establecidos que fomentaban la participación de los empleados y clientes, estaban más orientadas al largo plazo y mostraban una mayor medición y divulgación de la información no financiera. Y, por último, demostró que las empresas con alto nivel de sostenibilidad superaron a sus contrapartes tanto en términos de rendimiento bursátil como en contable.
 
 Este estudio muestra también que, dentro de la transformación hacia la sostenibilidad empresarial, una de las grandes dificultades que hay que superar es el cortoplacismo de las decisiones empresariales. Esto tiene que ver con el hecho de que quien toma las decisiones empresariales pone mucho peso en las consecuencias a corto plazo, y que tratando de hacer lo mejor para su empresa en el corto plazo, en realidad, puede terminar perjudicando el rendimiento a largo plazo.
 
