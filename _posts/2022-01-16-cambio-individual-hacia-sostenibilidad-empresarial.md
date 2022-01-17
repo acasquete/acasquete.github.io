@@ -74,16 +74,11 @@ Si te interesa continuar este tema, te recomiendo la formación de Coursera [_Co
 
 Referencias
 -----------
-Friedman, M., (1970). "The Social Responsibility of Business is to Increase its Profits", The New York Times Magazine
-
-Robert G. Eccles, Ioannis Ioannou, George Serafeim (2014). “The Impact of Corporate Sustainability on Organizational Processes and Performance”, Management Science, 60
-
-Schneider, S. C., Zollo, M., & Manocha, R. (2010). Developing Socially Responsible Behaviour in Managers: Experimental Evidence of the Effectiveness of Different Approaches to Management Education. The Journal of Corporate Citizenship, 39, 21–40. http://www.jstor.org/stable/jcorpciti.39.21
-
-https://blogs.microsoft.com/blog/2021/05/25/accenture-github-microsoft-and-thoughtworks-launch-the-green-software-foundation-with-the-linux-foundation-to-put-sustainability-at-the-core-of-software-engineering/
-
-What Is Green Software? Https://Greensoftware.Foundation/Articles/What-Is-Green-Software
-
+Friedman, M., (1970). "The Social Responsibility of Business is to Increase its Profits", The New York Times Magazine  
+Robert G. Eccles, Ioannis Ioannou, George Serafeim (2014). “The Impact of Corporate Sustainability on Organizational Processes and Performance”, Management Science, 60  
+Schneider, S. C., Zollo, M., & Manocha, R. (2010). Developing Socially Responsible Behaviour in Managers: Experimental Evidence of the Effectiveness of Different Approaches to Management Education. The Journal of Corporate Citizenship, 39, 21–40. http://www.jstor.org/stable/jcorpciti.39.21  
+https://blogs.microsoft.com/blog/2021/05/25/accenture-github-microsoft-and-thoughtworks-launch-the-green-software-foundation-with-the-linux-foundation-to-put-sustainability-at-the-core-of-software-engineering/  
+What Is Green Software? Https://Greensoftware.Foundation/Articles/What-Is-Green-Software  
 https://blueandgreentomorrow.com/environment/how-companies-going-techno-green/
 
 
