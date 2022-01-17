@@ -66,5 +66,27 @@ Yoga.
 
 Aunque los resultados se deben tomar con precaución, ya que hace falta mucha más investigación, los datos aportan pruebas de que los enfoques tradicionales de la educación en materia de gestión no son eficaces para cambiar las decisiones en relación con los dilemas de la responsabilidad social en la empresa. Los enfoques orientados al desarrollo personal, como las técnicas de entrenamiento de relajación y meditación en silencio mental, incluso sin referencia explícita a la responsabilidad social, muestran un fuerte impacto en los cambios de las decisiones tomadas y en las características psicológicas específicas de los directivos (afecto, valores y razonamiento cognitivo, denominado conciencia social) que potencian la aparición de un comportamiento socialmente responsable. Se extraen implicaciones para una mejor comprensión de los procesos de aprendizaje relacionados con la responsabilidad social, así como para el diseño de la formación de directivos en este ámbito específico.
 
+La sostenibilidad tiene un impacto positivo en la reputación, la lealtad de los clientes, la innovación, la licencia para operar, la gestión de riesgos, operacional y la eficiencia de los recursos. A medida que más y más empresas se dan cuenta, la sostenibilidad no solo representa una oportunidad de crecimiento, sino que podría convertirse en un requisito previo para acceder a inversiones a gran escala. 
+
+Así que es la combinación de la integración de los planes de sostenibilidad con el plan de negocio y la transición de la mentalidad va a ser clave en los próximos años.
+
+Si te interesa continuar este tema, te recomiendo la formación de Coursera [_Corporate Sustainability. Understanding and Seizing the Strategic Opportunity_](https://www.coursera.org/learn/corp-sustainability/home/welcome), en la que podrás acceder a multitud de material de estudio para profundizar.
+
+Referencias
+-----------
+Friedman, M., (1970). "The Social Responsibility of Business is to Increase its Profits", The New York Times Magazine
+
+Robert G. Eccles, Ioannis Ioannou, George Serafeim (2014). “The Impact of Corporate Sustainability on Organizational Processes and Performance”, Management Science, 60
+
+Schneider, S. C., Zollo, M., & Manocha, R. (2010). Developing Socially Responsible Behaviour in Managers: Experimental Evidence of the Effectiveness of Different Approaches to Management Education. The Journal of Corporate Citizenship, 39, 21–40. http://www.jstor.org/stable/jcorpciti.39.21
+
+https://blogs.microsoft.com/blog/2021/05/25/accenture-github-microsoft-and-thoughtworks-launch-the-green-software-foundation-with-the-linux-foundation-to-put-sustainability-at-the-core-of-software-engineering/
+
+What Is Green Software? Https://Greensoftware.Foundation/Articles/What-Is-Green-Software
+
+https://blueandgreentomorrow.com/environment/how-companies-going-techno-green/
+
+
+
 
 
