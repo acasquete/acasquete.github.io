@@ -650,7 +650,8 @@
     padding: 3px 2px;
   }
   table tbody td {
-    font-size: 13px;
+    font-size: 12px;
+    font-family: sans-serif;
   }
   table tr:nth-child(even) {
     background: #F5F5F5;
@@ -664,6 +665,7 @@
     color: #FFFFFF;
     text-align: left;
     border-left: 2px solid #FFFFFF;
+    font-family: sans-serif;
   }
   table thead th:first-child {
     border-left: none;
