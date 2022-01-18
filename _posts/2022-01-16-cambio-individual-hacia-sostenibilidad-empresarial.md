@@ -46,7 +46,9 @@ Para evaluar el grado de adopción de sostenibilidad diseñaron un índice con e
 | Capacitación y Desarrollo | ¿La empresa cuenta con una política para apoyar la capacitación en habilidades o el desarrollo profesional de sus empleados? |
 | Reducción total de residuos | ¿La empresa tiene iniciativas para reciclar, reducir, reutilizar, sustituir, tratar o eliminar el total de residuos? |
 
+<div class="tablefoot">
 Tabla con codas las políticas medioambientales y sociales que se utilizan para construir el índice de políticas de sostenibilidad.
+</div>
 
 El estudio demuestra que las empresas más sostenibles tienen establecidos unos procesos que fomentan la participación de los empleados y clientes, están más orientadas al largo plazo y muestran una mayor medición y divulgación de la información no financiera. Además, las empresas con alto nivel de sostenibilidad superan a sus contrapartes tanto en términos de rendimiento bursátil como en contable.
 
