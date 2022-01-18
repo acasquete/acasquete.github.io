@@ -16,6 +16,9 @@ Uno de los estudios que ha analizado el impacto de las medidas de sostenibilidad
 
 Para evaluar el grado de adopción de sostenibilidad diseñaron un índice con el que se midieron políticas implantadas en materia medioambiental y social. Algunos ejemplos de políticas relacionadas con el medio ambiente son si la empresa tiene políticas para reducir emisiones, utiliza criterios medioambientales en la selección de los miembros de su cadena de suministro o si la empresa trata de mejorar su eficiencia energética o hídrica. Respecto a las políticas relacionadas con los empleados se consideraba si se tiene una política de diversidad e igualdad de oportunidades, de conciliación de la vida laboral y familiar, de mejora de la salud y la seguridad, y de favorecer la promoción interna. En la tabla siguiente se puede ver la lista completa de políticas analizadas.
 
+<figure>  
+
+
 | Área | Descripción |
 |---|---|
 | Empleados | ¿La empresa ofrece un plan de bonos a la mayoría de los empleados? |
@@ -45,18 +48,13 @@ Para evaluar el grado de adopción de sostenibilidad diseñaron un índice con e
 | Eficiencia de recursos | ¿La empresa tiene una política para mejorar su eficiencia hídrica? |
 | Capacitación y Desarrollo | ¿La empresa cuenta con una política para apoyar la capacitación en habilidades o el desarrollo profesional de sus empleados? |
 | Reducción total de residuos | ¿La empresa tiene iniciativas para reciclar, reducir, reutilizar, sustituir, tratar o eliminar el total de residuos? |
-|:--:|
-| Tabla con codas las políticas medioambientales y sociales que se utilizan para construir el índice de políticas de sostenibilidad. |
 
-|             |          Grouping           ||
-First Header  | Second Header | Third Header |
- ------------ | :-----------: | -----------: |
-Content       |          *Long Cell*        ||
-Content       |   **Cell**    |         Cell |
 
-New section   |     More      |         Data |
-And more      | With an escaped '\|'         ||  
-[Prototype table]
+<figcaption>
+Tabla con codas las políticas medioambientales y sociales que se utilizan para construir el índice de políticas de sostenibilidad.
+</figcaption>
+
+</figure>
 
 El estudio demuestra que las empresas más sostenibles tienen establecidos unos procesos que fomentan la participación de los empleados y clientes, están más orientadas al largo plazo y muestran una mayor medición y divulgación de la información no financiera. Además, las empresas con alto nivel de sostenibilidad superan a sus contrapartes tanto en términos de rendimiento bursátil como en contable.
 
