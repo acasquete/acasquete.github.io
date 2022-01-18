@@ -79,12 +79,15 @@ Si te interesa continuar este tema, te recomiendo la formación de Coursera [_Co
 Referencias
 -----------
 Friedman, M., (1970). "The Social Responsibility of Business is to Increase its Profits", The New York Times Magazine  
+
 Robert G. Eccles, Ioannis Ioannou, George Serafeim (2014). “The Impact of Corporate Sustainability on Organizational Processes and Performance”, Management Science, 60  
+
 Schneider, S. C., Zollo, M., & Manocha, R. (2010). Developing Socially Responsible Behaviour in Managers: Experimental Evidence of the Effectiveness of Different Approaches to Management Education. The Journal of Corporate Citizenship, 39, 21–40. http://www.jstor.org/stable/jcorpciti.39.21  
 
-  
 Ray TN, Franz SA, Jarrett NL, Pickett SM. Nature Enhanced Meditation: Effects on Mindfulness, Connectedness to Nature, and Pro-Environmental Behavior. Environment and Behavior. 2021;53(8):864-890. doi:10.1177/0013916520952452
   
+Bode, C.S., Singh, J., Rogan, M., (2015). "Corporate social initiatives and employee retention", Organization Science, 26(6): 1702-1720
+
 
 
 
