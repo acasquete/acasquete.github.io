@@ -16,34 +16,35 @@ Uno de los estudios que ha analizado el impacto de las medidas de sostenibilidad
 
 Para evaluar el grado de adopción de sostenibilidad diseñaron un índice con el que se midieron políticas implantadas en materia medioambiental y social. Algunos ejemplos de políticas relacionadas con el medio ambiente son si la empresa tiene políticas para reducir emisiones, utiliza criterios medioambientales en la selección de los miembros de su cadena de suministro o si la empresa trata de mejorar su eficiencia energética o hídrica. Respecto a las políticas relacionadas con los empleados se consideraba si se tiene una política de diversidad e igualdad de oportunidades, de conciliación de la vida laboral y familiar, de mejora de la salud y la seguridad, y de favorecer la promoción interna. En la tabla siguiente se puede ver la lista completa de políticas analizadas.
 
-|Área|Descripción|
-|:----|:----|
-|Comunidad de Empleados|¿La empresa ofrece un plan de bonos a la mayoría de los empleados?|
-|Comunidad|¿Tiene la empresa una política para esforzarse por ser un buen ciudadano corporativo o apoyar los [Principios Globales de Sullivan](https://en.wikipedia.org/wiki/Sullivan_principles){:target="_blank"}?|
-|Diversidad y Oportunidad|¿La empresa tiene una política para respetar la ética empresarial o ha firmado el Pacto Mundial de las Naciones Unidas o sigue las directrices de la OCDE?|
-|Política de Reducción de Emisiones|¿La empresa cuenta con una política de diversidad e igualdad de oportunidades?|
-|Reducción de Emisiones|¿La empresa tiene una política de reducción de emisiones?|
-|Reducción de Emisiones|¿La empresa muestra alguna iniciativa para reducir, reutilizar, reciclar, sustituir, eliminar o compensar los equivalentes de CO2 en el proceso productivo?|
-|Bienestar de los empleados|¿La empresa tiene iniciativas para reducir el impacto ambiental del transporte de sus productos o de su personal?|
-|Calidad/Política de Empleo|¿La empresa cuenta con una política de conciliación?|
-|Calidad/Política de Empleo|¿La empresa tiene una política competitiva de beneficios para los empleados o garantiza buenas relaciones con los empleados dentro de su cadena de suministro?|
-|Gestión ambiental de la cadena de suministro|¿La empresa tiene una política para mantener el crecimiento y la estabilidad del empleo a largo plazo?|
-|Generosos beneficios complementarios|¿La empresa utiliza criterios ambientales (ISO 14000, consumo de energía, etc.) en el proceso de selección de sus proveedores o socios de abastecimiento?|
-|Salud y seguridad|¿La empresa afirma proporcionar a sus empleados un fondo de pensión, atención médica u otros seguros?|
-|Contratista de derechos humanos|¿La empresa tiene una política para mejorar la salud y seguridad de los empleados dentro de la empresa y su cadena de suministro?|
-|Derechos humanos/Política I|¿La empresa demuestra utilizar criterios de derechos humanos en el proceso de selección o seguimiento de sus proveedores o socios de abastecimiento?|
-|Derechos humanos/Política II|¿La empresa cuenta con una política para garantizar la libertad de asociación aplicada universalmente independientemente de las leyes locales?|
-|Promoción interna|¿La empresa cuenta con una política de exclusión del trabajo infantil, forzoso u obligatorio?|
-|Formación de directivos|¿La empresa pretende favorecer la promoción desde dentro?|
-|Discriminación positiva|¿La empresa afirma que proporciona formación periódica de personal y gestión empresarial a sus directivos?|
-|Minimización del impacto del producto|¿La empresa promueve la discriminación positiva?|
-|Innovación de productos|¿La empresa diseña funciones y aplicaciones/servicios de productos que promuevan un uso responsable, eficiente, rentable y ambientalmente preferible? ¿La empresa cuenta con procedimientos de devolución y programas de reciclaje para reducir los riesgos potenciales de que los productos ingresen al medio ambiente?|
-|Responsabilidad del producto/Política I|¿La empresa tiene una política para proteger la salud y la seguridad del cliente?|
-|Responsabilidad sobre productos/Política II|¿La empresa cuenta con una política de calidad de productos y servicios?|
-|Eficiencia de recursos/Eficiencia energética |¿La empresa tiene una política para mejorar su eficiencia energética?|
-|Política de eficiencia de Recursos|¿La empresa tiene una política para mejorar su eficiencia hídrica?|
-| Política de Capacitación y Desarrollo|¿La empresa cuenta con una política para apoyar la capacitación en habilidades o el desarrollo profesional de sus empleados?|
-|Reducción total de Residuos |¿La empresa tiene iniciativas para reciclar, reducir, reutilizar, sustituir, tratar o eliminar el total de residuos? |
+| Área | Descripción |
+|---|---|
+| Empleados | ¿La empresa ofrece un plan de bonos a la mayoría de los empleados? |
+| Comunidad | ¿Tiene la empresa una política para esforzarse por ser un buen ciudadano corporativo o apoyar los Principios Globales de Sullivan? |
+| Comunidad | ¿La empresa tiene una política para respetar la ética empresarial o ha firmado el Pacto Mundial de las Naciones Unidas o sigue las directrices de la OCDE? |
+| Diversidad y Oportunidad | ¿La empresa cuenta con una política de diversidad e igualdad de oportunidades? |
+| Reducción de Emisiones | ¿La empresa tiene una política de reducción de emisiones? |
+| Reducción de Emisiones | ¿La empresa muestra alguna iniciativa para reducir, reutilizar, reciclar, sustituir, eliminar o compensar los equivalentes de CO2 en el proceso productivo? |
+| Reducción de Emisiones | ¿La empresa tiene iniciativas para reducir el impacto ambiental del transporte de sus productos o de su personal? |
+| Empleados | ¿La empresa cuenta con una política de conciliación? |
+| Calidad de empleo | ¿La empresa tiene una política competitiva de beneficios para los empleados o garantiza buenas relaciones con los empleados dentro de su cadena de suministro? |
+| Calidad de empleo | ¿La empresa tiene una política para mantener el crecimiento y la estabilidad del empleo a largo plazo? |
+| Cadena de suministro | ¿La empresa utiliza criterios ambientales (ISO 14000, consumo de energía, etc.) en el proceso de selección de sus proveedores? |
+| Empleados | ¿La empresa afirma proporcionar a sus empleados un fondo de pensión, atención médica u otros seguros? |
+| Salud y seguridad | ¿La empresa tiene una política para mejorar la salud y seguridad de los empleados dentro de la empresa y su cadena de suministro? |
+| Derechos humanos | ¿La empresa demuestra utilizar criterios de derechos humanos en el proceso de selección o seguimiento de sus proveedores o socios de abastecimiento? |
+| Derechos humanos | ¿La empresa cuenta con una política para garantizar la libertad de asociación aplicada universalmente independientemente de las leyes locales? |
+| Derechos humanos | ¿La empresa cuenta con una política de exclusión del trabajo infantil, forzoso u obligatorio? |
+| Promoción interna | ¿La empresa pretende favorecer la promoción desde dentro? |
+| Formación de directivos | ¿La empresa afirma que proporciona formación periódica de personal y gestión empresarial a sus directivos? |
+| Discriminación positiva | ¿La empresa promueve la discriminación positiva? |
+| Minimización del impacto del producto | ¿La empresa diseña funciones y aplicaciones/servicios de productos que promuevan un uso responsable, eficiente, rentable y ambientalmente preferible? |
+| Innovación de productos | ¿La empresa cuenta con procedimientos de devolución y programas de reciclaje para reducir los riesgos potenciales de que los productos ingresen al medio ambiente? |
+| Responsabilidad sobre productos | ¿La empresa tiene una política para proteger la salud y la seguridad del cliente? |
+| Responsabilidad sobre productos | ¿La empresa cuenta con una política de calidad de productos y servicios? |
+| Eficiencia de recursos | ¿La empresa tiene una política para mejorar su eficiencia energética? |
+| Eficiencia de recursos | ¿La empresa tiene una política para mejorar su eficiencia hídrica? |
+| Capacitación y Desarrollo | ¿La empresa cuenta con una política para apoyar la capacitación en habilidades o el desarrollo profesional de sus empleados? |
+| Reducción total de residuos | ¿La empresa tiene iniciativas para reciclar, reducir, reutilizar, sustituir, tratar o eliminar el total de residuos? |
 
 El estudio demuestra que las empresas más sostenibles tienen establecidos unos procesos que fomentan la participación de los empleados y clientes, están más orientadas al largo plazo y muestran una mayor medición y divulgación de la información no financiera. Además, las empresas con alto nivel de sostenibilidad superan a sus contrapartes tanto en términos de rendimiento bursátil como en contable.
 
@@ -51,18 +52,15 @@ Como vemos, en la transformación hacia la sostenibilidad, una de las grandes di
 
 Para ejemplarizar el valor del pensamiento a largo plazo siempre se elige la [carta]( https://www.businessinsider.com/blackrock-ceo-larry-fink-letter-to-sp-500-ceos-2016-2?op=1){:target="_blank"} que Larry Fink, CEO de [uno de los mayores fondos de inversión en el mundo](https://www.nasdaq.com/es/market-activity/stocks/blk){:target="_blank"}, escribió en 2016 a los directivos de grandes empresas internacionales. En esa carta abierta, pide que se presenten cada año a los accionistas un marco estratégico de creación de valor a largo plazo. Dice que “la cultura actual de histeria por los beneficios trimestrales” es contraria al enfoque a largo plazo y aunque es necesario informar de los resultados trimestrales, por transparencia, los directivos deberían estar centrados en los informes estratégicos y no en la desviación de _one-penny_ [un penique] en los objetivos de beneficios.
 
-Volviendo al estudio, este es solo uno de muchos en los que se demuestra que la sostenibilidad corporativa está relacionada positivamente con los resultados de la empresa. Y si se analiza que es lo que estimula estos resultados, veremos que existen muchos factores, pero uno de estos factores es, sin duda, la motivación de los empleados. 
+Volviendo al estudio, este es solo uno de muchos que demuestran que la sostenibilidad corporativa está relacionada positivamente con los resultados de la empresa. Y si se analiza que es lo que estimula estos resultados, veremos que existen muchos factores, pero uno de estos factores es, sin duda, la motivación de los empleados. En general, como empleados, perseguimos tener un buen salario, un buen equilibrio entre la vida laboral y personal y, cada vez más, sentir que provocamos un impacto social positivo en la sociedad. La realidad es que, en muchas ocasiones, hay hacer algún tipo de concesión a la hora de elegir el trabajo. Puede que tengamos un trabajo bien pagado que nos dé autonomía, pero en el que el impacto social no es tan grande como nos gustaría. En estas situaciones, podemos optar por buscar este impacto fuera de la empresa haciendo voluntariado, colaborando con ONG o, en última instancia, cambiando de trabajo. Sin embargo, las empresas que tienen la oportunidad de crear un impacto social generan un beneficio mutuo consiguiendo, por un lado, empleados más felices y motivados y la reducción de rotación, por otro.
 
-No es ninguna novedad que los empleados estamos motivados, entre otras razones, por tener un buen salario, un equilibrio entre la vida laboral y personal y, por sentir que provoca un impacto social positivo en la sociedad. La realidad es que, en muchas ocasiones, hay hacer algún tipo de concesión a la hora de elegir el trabajo. Puede que tengamos un trabajo bien pagado que nos dé autonomía, pero en el que el impacto social no es tan grande como nos gustaría. En estas situaciones, podemos optar por buscar este impacto fuera de la empresa haciendo voluntariado, colaborando con ONG o, en última instancia, cambiando de trabajo. Sin embargo, las empresas que tienen la oportunidad de crear un impacto social generan un beneficio mutuo consiguiendo por un lado empleados más felices y motivados y con menos rotación por otro.
+Relacionado con esto, otro estudio presentó por primera vez pruebas empíricas de un efecto de retención positivo asociado a la participación de los empleados en una iniciativa corporativa con objetivos explícitos de impacto social. Aunque hay estudios previos que habían demostrado la existencia de un vínculo entre las iniciativas sociales de las empresas y la motivación y la identificación con la empresa, no se había investigado su relación con los resultados finales de retención. 
 
-Relacionado con esto, otro estudio presenta pruebas empíricas de un efecto de retención positivo asociado a la participación de los empleados en una iniciativa corporativa con objetivos explícitos de impacto social. Aunque hay estudios previos que habían demostrado la existencia de un vínculo entre las iniciativas sociales de las empresas y la motivación y la identificación con la empresa, no se había investigado su relación con los resultados finales de retención. Este estudio, que utilizó datos de 10.000 empleados de una empresa de consultoría de gestión global, viene a confirmar esta relación.
+Este estudio, que utilizó datos de 10.000 empleados de una empresa de consultoría de gestión global, viene a confirmar esta relación.
 
-Todos estudios muestran claramente que los procesos organizativos son importantes. Cómo las políticas, las normas de comportamiento y el compromiso social de las empresas sirven de herramienta para la gestión estratégica del capital humano. Pero en el centro de todo este desarrollo, tenemos que colocar a las personas. Si no conseguimos tener personas involucradas con la sostenibilidad a cualquier nivel, no se conseguirá organizaciones sostenibles. Y aquí la pregunta que nos tenemos que hacer es cómo podemos cambiar individualmente para abrazar la sostenibilidad.
+Todos estos estudios confirman claramente que los procesos organizativos son importantes en términos de sostenibilidad y que las políticas, las normas de comportamiento y el compromiso social de las empresas sirven de herramienta para la gestión estratégica del capital humano. Pero en el centro de todo este desarrollo, tenemos que colocar a las personas. Si no conseguimos tener a personas, en cualquier nivel, involucradas con la sostenibilidad no se conseguirá organizaciones sostenibles. Y aquí la pregunta que nos tenemos que hacer es cómo podemos cambiar individualmente para adoptar cambios en el comportamiento.
 
-Para intentar responder esta pregunta, cuatro empresas participaron en experimentos controlados para comprobar la eficacia de diferentes enfoques de educación “no ordodoxos” diseñados para desarrollar un comportamiento socialmente responsable en gerentes. El programa se basó en técnicas de meditación de "silencio mental" llamada Sahaja Yoga, técnicas de relajación y liberación del estrés llamada Hatha
-Yoga.
-
-Aunque los resultados se deben tomar con precaución, ya que hace falta mucha más investigación, los datos aportan pruebas de que los enfoques tradicionales de la educación en materia de gestión no son eficaces para cambiar las decisiones en relación con los dilemas de la responsabilidad social en la empresa. Los enfoques orientados al desarrollo personal, como las técnicas de entrenamiento de relajación y meditación en silencio mental, incluso sin referencia explícita a la responsabilidad social, muestran un fuerte impacto en los cambios de las decisiones tomadas y en las características psicológicas específicas de los directivos (afecto, valores y razonamiento cognitivo, denominado conciencia social) que potencian la aparición de un comportamiento socialmente responsable. Se extraen implicaciones para una mejor comprensión de los procesos de aprendizaje relacionados con la responsabilidad social, así como para el diseño de la formación de directivos en este ámbito específico.
+Para intentar responder esta pregunta, cuatro empresas participaron en experimentos controlados para comprobar la eficacia de diferentes enfoques de educación “no ordodoxos” diseñados para desarrollar un comportamiento socialmente responsable en la capa de gestión. El programa se basó en técnicas de meditación de "silencio mental" llamada Sahaja Yoga, técnicas de relajación y liberación del estrés llamada Hatha Yoga. Y aunque los resultados se deben tomar con precaución, ya que hace falta mucha más investigación, estas técnicas, incluso sin referencia explícita a la responsabilidad social, muestran un fuerte impacto en los cambios de las decisiones tomadas y en las características psicológicas específicas de los directivos (afecto, valores y razonamiento cognitivo, denominado conciencia social) que potencian la aparición de un comportamiento socialmente responsable. Los datos aportan pruebas de que los enfoques tradicionales de la educación en materia de gestión no son eficaces para cambiar las decisiones en relación con los dilemas de la responsabilidad social en la empresa.
 
 La sostenibilidad tiene un impacto positivo en la reputación, la lealtad de los clientes, la innovación, la licencia para operar, la gestión de riesgos, operacional y la eficiencia de los recursos. A medida que más y más empresas se dan cuenta, la sostenibilidad no solo representa una oportunidad de crecimiento, sino que podría convertirse en un requisito previo para acceder a inversiones a gran escala. 
 
@@ -77,6 +75,13 @@ Referencias
 Friedman, M., (1970). "The Social Responsibility of Business is to Increase its Profits", The New York Times Magazine  
 Robert G. Eccles, Ioannis Ioannou, George Serafeim (2014). “The Impact of Corporate Sustainability on Organizational Processes and Performance”, Management Science, 60  
 Schneider, S. C., Zollo, M., & Manocha, R. (2010). Developing Socially Responsible Behaviour in Managers: Experimental Evidence of the Effectiveness of Different Approaches to Management Education. The Journal of Corporate Citizenship, 39, 21–40. http://www.jstor.org/stable/jcorpciti.39.21  
+
+  
+Ray TN, Franz SA, Jarrett NL, Pickett SM. Nature Enhanced Meditation: Effects on Mindfulness, Connectedness to Nature, and Pro-Environmental Behavior. Environment and Behavior. 2021;53(8):864-890. doi:10.1177/0013916520952452
+  
+
+
+
 https://blogs.microsoft.com/blog/2021/05/25/accenture-github-microsoft-and-thoughtworks-launch-the-green-software-foundation-with-the-linux-foundation-to-put-sustainability-at-the-core-of-software-engineering/  
 What Is Green Software? Https://Greensoftware.Foundation/Articles/What-Is-Green-Software  
 https://blueandgreentomorrow.com/environment/how-companies-going-techno-green/
