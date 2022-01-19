@@ -70,27 +70,25 @@ Y a pesar de que no tengo ninguna experiencia con ninguna de técnicas de medita
 
 Todas las buenas prácticas que podemos ver en sus principios hacen que las aplicaciones sean menos costosas y ofrezcan un mejor rendimiento, pero el cambio de mentalidad es la clave, lo importante es el efecto positivo en el planeta.
 
-Hemos visto que la sostenibilidad tiene un impacto positivo en la empresa a todos los niveles, imagen, fidelidad de clientes y trabajadores, innovación y resultados financieros. A medida que más y más empresas tomen consciencia, la sostenibilidad no solo será una oportunidad de crecimiento, sino que se convertirá en un requisito previo para acceder a mejores inversiones. La integración de los planes de sostenibilidad con el plan de negocio va a ser clave en los próximos años. Empresas que no dispongan de planes de sostenibilidad y un compromiso claro con el medio ambiente y la sociedad, estarán cerrando sus puertas a nuevas oportunidades de negocio.
+Hemos visto que la sostenibilidad tiene un impacto positivo en la empresa a todos los niveles, imagen, fidelidad de clientes y empleados, innovación y resultados financieros. A medida que más y más empresas tomen consciencia, la sostenibilidad no solo será una oportunidad de crecimiento, sino que se convertirá en un requisito previo para acceder a mejores inversiones. La integración de los planes de sostenibilidad con el plan de negocio va a ser clave en los próximos años. Empresas que no dispongan de planes de sostenibilidad y un compromiso claro con el medio ambiente y la sociedad, estarán cerrando sus puertas a nuevas oportunidades de negocio.
 
 Te recomiendo continuar con la formación de Coursera “[_Corporate Sustainability. Understanding and Seizing the Strategic Opportunity_](https://www.coursera.org/learn/corp-sustainability/home/welcome){:target="_blank"}”, en la que podrás acceder a multitud de material de estudio para seguir profundizando en la sostenibilidad empresarial.
 
 Referencias
 -----------
-Friedman, M., (1970). "The Social Responsibility of Business is to Increase its Profits", The New York Times Magazine  
+Friedman, M., (1970). "[The Social Responsibility of Business is to Increase its Profits](https://www.nytimes.com/1970/09/13/archives/a-friedman-doctrine-the-social-responsibility-of-business-is-to.html){:target="_blank"}", The New York Times Magazine.
 
-Robert G. Eccles, Ioannis Ioannou, George Serafeim (2014). “The Impact of Corporate Sustainability on Organizational Processes and Performance”, Management Science, 60  
+Robert G. Eccles, Ioannis Ioannou, George Serafeim (2014). "[The Impact of Corporate Sustainability on Organizational Processes and Performance](https://www.hbs.edu/faculty/Publication Files/SSRN-id1964011_6791edac-7daa-4603-a220-4a0c6c7a3f7a.pdf){:target="_blank"}”, Management Science, 60  
 
-Schneider, S. C., Zollo, M., & Manocha, R. (2010). Developing Socially Responsible Behaviour in Managers: Experimental Evidence of the Effectiveness of Different Approaches to Management Education. The Journal of Corporate Citizenship, 39, 21–40. http://www.jstor.org/stable/jcorpciti.39.21  
+Schneider, S. C., Zollo, M., & Manocha, R. (2010). "[Developing Socially Responsible Behaviour in Managers: Experimental Evidence of the Effectiveness of Different Approaches to Management Education](http://www.jstor.org/stable/jcorpciti.39.21){:target="_blank"}". The Journal of Corporate Citizenship, 39, 21–40. 
 
-Ray TN, Franz SA, Jarrett NL, Pickett SM. Nature Enhanced Meditation: Effects on Mindfulness, Connectedness to Nature, and Pro-Environmental Behavior. Environment and Behavior. 2021;53(8):864-890. doi:10.1177/0013916520952452
+Ray TN, Franz SA, Jarrett NL, Pickett SM. "[Nature Enhanced Meditation: Effects on Mindfulness, Connectedness to Nature, and Pro-Environmental Behavior. Environment and Behavior](https://journals.sagepub.com/doi/abs/10.1177/0013916520952452){:target="_blank"}". 2021;53(8):864-890.
   
-Bode, C.S., Singh, J., Rogan, M., (2015). "Corporate social initiatives and employee retention", Organization Science, 26(6): 1702-1720
+Bode, C.S., Singh, J., Rogan, M., (2015). "[Corporate social initiatives and employee retention](https://www.insead.edu/sites/default/files/assets/faculty-personal-site/jasjit-singh/documents/Bode_Singh_Rogan_Corporate_Social_Initiatives_and_Employee_Retention_PRINT.pdf){:target="_blank"}", Organization Science, 26(6): 1702-1720
 
 Accenture, GitHub, Microsoft and ThoughtWorks launch the Green Software Foundation with the Linux Foundation to put sustainability at the core of software engineering. https://blogs.microsoft.com/blog/2021/05/25/accenture-github-microsoft-and-thoughtworks-launch-the-green-software-foundation-with-the-linux-foundation-to-put-sustainability-at-the-core-of-software-engineering/ 
 
 What Is Green Software? Https://Greensoftware.Foundation/Articles/What-Is-Green-Software  
-
-https://blueandgreentomorrow.com/environment/how-companies-going-techno-green/
 
 
 
