@@ -68,7 +68,7 @@ Y a pesar de que no tengo ninguna experiencia con las técnicas de meditación d
 
 En cualquier caso, quiero terminar este artículo con un punto de vista más próximo a la ingeniería del software con la denominada “ingeniería del software verde”, una disciplina que ahora llamamos “emergente”, pero que ya está siendo adoptada, y con la que podemos impactar en nuestros proyectos comenzando desde hoy mismo.
 
-[_The Green Software Foundation_](https://greensoftware.foundation), es una organización sin ánimo de lucro (fundada por Accenture, GitHub, Microsoft y ThoughWorks, entre otras) que tiene como uno de sus objetivos la creación de estándares, patrones y prácticas de software verde para ayudar al desarrollo de aplicaciones sostenibles. Un aspecto que resaltar es que sus principios están orientados a la reducción de emisiones y no en la neutralización ya que, cómo establece su web, “no es lo mismo un gramo de carbono que no se emite a nuestra atmósfera que un gramo de carbono que se compensa”.
+[_The Green Software Foundation_](https://greensoftware.foundation){:target="_blank"}, es una organización sin ánimo de lucro (fundada por Accenture, GitHub, Microsoft y ThoughWorks, entre otras) que tiene como uno de sus objetivos la creación de estándares, patrones y prácticas de software verde para ayudar al desarrollo de aplicaciones sostenibles. Un aspecto que resaltar es que sus principios están orientados a la reducción de emisiones y no en la neutralización ya que, cómo establece su web, “no es lo mismo un gramo de carbono que no se emite a nuestra atmósfera que un gramo de carbono que se compensa”.
 
 Todas las buenas prácticas que podemos ver en sus principios hacen que las aplicaciones sean menos costosas y ofrezcan un mejor rendimiento, pero el cambio de mentalidad es la clave, lo importante es el efecto positivo en el planeta.
 
@@ -88,9 +88,9 @@ Ray TN, Franz SA, Jarrett NL, Pickett SM. "[_Nature Enhanced Meditation: Effects
   
 Bode, C.S., Singh, J., Rogan, M., (2015). "[_Corporate social initiatives and employee retention](https://www.insead.edu/sites/default/files/assets/faculty-personal-site/jasjit-singh/documents/Bode_Singh_Rogan_Corporate_Social_Initiatives_and_Employee_Retention_PRINT.pdf){:target="_blank"}", _Organization Science_, 26(6): 1702-1720
 
-Sandquist J. (2021). "[_Accenture, GitHub, Microsoft and ThoughtWorks launch the Green Software Foundation with the Linux Foundation to put sustainability at the core of software engineering_](https://blogs.microsoft.com/blog/2021/05/25/accenture-github-microsoft-and-thoughtworks-launch-the-green-software-foundation-with-the-linux-foundation-to-put-sustainability-at-the-core-of-software-engineering/), _Official Microsoft Blog_.
+Sandquist J. (2021). "[_Accenture, GitHub, Microsoft and ThoughtWorks launch the Green Software Foundation with the Linux Foundation to put sustainability at the core of software engineering_](https://blogs.microsoft.com/blog/2021/05/25/accenture-github-microsoft-and-thoughtworks-launch-the-green-software-foundation-with-the-linux-foundation-to-put-sustainability-at-the-core-of-software-engineering/){:target="_blank"}, _Official Microsoft Blog_.
 
-[_What Is Green Software?_](https://Greensoftware.Foundation/Articles/What-Is-Green-Software). _Green Software Foundation_.
+[_What Is Green Software?_](https://Greensoftware.Foundation/Articles/What-Is-Green-Software){:target="_blank"}. _Green Software Foundation_.
 
 
 
