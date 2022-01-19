@@ -93,8 +93,3 @@ Bode, C.S., Singh, J., Rogan, M., (2015). "[_Corporate social initiatives and em
 Sandquist J. (2021). "[_Accenture, GitHub, Microsoft and ThoughtWorks launch the Green Software Foundation with the Linux Foundation to put sustainability at the core of software engineering_](https://blogs.microsoft.com/blog/2021/05/25/accenture-github-microsoft-and-thoughtworks-launch-the-green-software-foundation-with-the-linux-foundation-to-put-sustainability-at-the-core-of-software-engineering/){:target="_blank"}, _Official Microsoft Blog_.
 
 [_What Is Green Software?_](https://Greensoftware.Foundation/Articles/What-Is-Green-Software){:target="_blank"}, _Green Software Foundation_.
-
-
-
-
-
