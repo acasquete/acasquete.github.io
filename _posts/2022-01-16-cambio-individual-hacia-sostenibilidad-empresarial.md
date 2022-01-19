@@ -82,15 +82,15 @@ Friedman, M., (1970). "[_The Social Responsibility of Business is to Increase it
 
 Robert G. Eccles, Ioannis Ioannou, George Serafeim (2014). "[_The Impact of Corporate Sustainability on Organizational Processes and Performance_](https://www.hbs.edu/faculty/Publication Files/SSRN-id1964011_6791edac-7daa-4603-a220-4a0c6c7a3f7a.pdf){:target="_blank"}”, _Management Science_, 60  
 
-Schneider, S. C., Zollo, M., & Manocha, R. (2010). "[_Developing Socially Responsible Behaviour in Managers: Experimental Evidence of the Effectiveness of Different Approaches to Management Education_](http://www.jstor.org/stable/jcorpciti.39.21){:target="_blank"}". _The Journal of Corporate Citizenship_, 39, 21–40. 
+Schneider, S. C., Zollo, M., & Manocha, R. (2010). "[_Developing Socially Responsible Behaviour in Managers: Experimental Evidence of the Effectiveness of Different Approaches to Management Education_](http://www.jstor.org/stable/jcorpciti.39.21){:target="_blank"}", _The Journal of Corporate Citizenship_, 39, 21–40. 
 
-Ray TN, Franz SA, Jarrett NL, Pickett SM. "[_Nature Enhanced Meditation: Effects on Mindfulness, Connectedness to Nature, and Pro-Environmental Behavior_](https://journals.sagepub.com/doi/abs/10.1177/0013916520952452){:target="_blank"}". _Environment and Behavior_. 2021;53(8):864-890.
+Ray TN, Franz SA, Jarrett NL, Pickett SM. "[_Nature Enhanced Meditation: Effects on Mindfulness, Connectedness to Nature, and Pro-Environmental Behavior_](https://journals.sagepub.com/doi/abs/10.1177/0013916520952452){:target="_blank"}", _Environment and Behavior_. 2021;53(8):864-890.
   
 Bode, C.S., Singh, J., Rogan, M., (2015). "[_Corporate social initiatives and employee retention_](https://www.insead.edu/sites/default/files/assets/faculty-personal-site/jasjit-singh/documents/Bode_Singh_Rogan_Corporate_Social_Initiatives_and_Employee_Retention_PRINT.pdf){:target="_blank"}", _Organization Science_, 26(6): 1702-1720
 
 Sandquist J. (2021). "[_Accenture, GitHub, Microsoft and ThoughtWorks launch the Green Software Foundation with the Linux Foundation to put sustainability at the core of software engineering_](https://blogs.microsoft.com/blog/2021/05/25/accenture-github-microsoft-and-thoughtworks-launch-the-green-software-foundation-with-the-linux-foundation-to-put-sustainability-at-the-core-of-software-engineering/){:target="_blank"}, _Official Microsoft Blog_.
 
-[_What Is Green Software?_](https://Greensoftware.Foundation/Articles/What-Is-Green-Software){:target="_blank"}. _Green Software Foundation_.
+[_What Is Green Software?_](https://Greensoftware.Foundation/Articles/What-Is-Green-Software){:target="_blank"}, _Green Software Foundation_.
 
 
 
