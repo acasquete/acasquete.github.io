@@ -76,7 +76,7 @@ Si empezamos a aplicar las prácticas que podemos ver en los principios, obtendr
 
 La sostenibilidad tiene un impacto positivo en la empresa a todos los niveles, imagen, fidelidad de clientes y trabajadores, innovación y finanzas. A medida que más y más empresas tomen consciencia, la sostenibilidad no solo será una oportunidad de crecimiento, sino que se convertirá en un requisito previo para acceder a mejores inversiones. La integración de los planes de sostenibilidad con el plan de negocio va a ser clave en los próximos años. Empresas que no dispongan de planes de sostenibilidad y un compromiso claro con el medio ambiente y la sociedad, estarán cerrando sus puertas a nuevas oportunidades de negocio.
 
-Te recomiendo continuar con la formación de Coursera “[_Corporate Sustainability. Understanding and Seizing the Strategic Opportunity_](https://www.coursera.org/learn/corp-sustainability/home/welcome){:target="_blank"}”, en la que podrás acceder a multitud de material de estudio para seguir profundizando en la sostenibilidad empresarial.
+Te animo a continuar con la formación de Coursera “[_Corporate Sustainability. Understanding and Seizing the Strategic Opportunity_](https://www.coursera.org/learn/corp-sustainability/home/welcome){:target="_blank"}”, en la que podrás acceder a multitud de material de estudio para seguir profundizando en la sostenibilidad empresarial.
 
 Referencias
 -----------
