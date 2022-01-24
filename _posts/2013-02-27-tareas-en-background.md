@@ -1,23 +1,24 @@
 ---
 title: Tareas en background
-tags: [windows_store, winrt]
+tags: [programming, windows_store, winrt]
+reviewed: true
 ---
 Seguimos con la serie dedicada a los procesos de background (tranquilos, ya queda poco). En entradas anteriores hemos introducido el modelo de ejecución de aplicaciones de Windows 8 y hemos visto cómo podemos realizar ciertas operaciones aunque nuestra aplicación no esté en primer plano o incluso en ejecución. Los escenarios que hemos examinado hasta ahora son las descargas de archivos y reproducción de audio en segundo plano. A grandes rasgos, las descargas en segundo plano las resolvemos mediante el uso de la API de transferencia en segundo plano y la reproducción de audio lo conseguimos declarando una tarea en segundo plano en el manifiesto de la aplicación.
 
 Aquí tenéis los enlaces a los artículos de toda la serie dedicada al modelo de ejecución en segundo plano:
 
-*   [Reproducir audio en background](/reproducir-audio-en-background)
-*   [Transferencia de datos en background con autenticación](/transferencia-de-datos-en-background-con-autenticacion)
-*   [Transferencia de datos en background](/transferencia-de-datos-en-background) Además de estas operaciones, Windows 8 nos permite ejecutar código cuando nuestra aplicación está suspendida haciendo uso de las tareas de background. En esta entrada, vamos a ver cómo crear este tipo de tarea y en qué escenarios las podemos utilizar.
+* [Reproducir audio en background](/reproducir-audio-en-background)
+* [Transferencia de datos en background con autenticación](/transferencia-de-datos-en-background-con-autenticacion)
+* [Transferencia de datos en background](/transferencia-de-datos-en-background)
+
+Además de estas operaciones, Windows 8 nos permite ejecutar código cuando nuestra aplicación está suspendida haciendo uso de las tareas de background. En esta entrada, vamos a ver cómo crear este tipo de tarea y en qué escenarios las podemos utilizar.
 
 Las tareas en background no valen para todo
 -------------------------------------------
 
 Un error bastante común es tratar una tarea en background como si fuese un servicio de Windows, un proceso que podemos utilizar para realizar cualquier tipo de operación. Nada más alejado de la realidad. Así que antes de ver cómo se implementan, vamos a conocer los límites de uso de los procesos en segundo plano.
 
-El primer aspecto a tener en cuenta es que las tareas en segundo plano tienen un entorno de ejecución muy limitado en cuanto al uso de procesador y la red. Así que ya nos podemos ir olvidando de ejecutar en background procesos pesados. Procesos como la codificación de vídeos o procesos de cálculo largos tendrán que ser implementados y expuestos mediante servicios externos. El motivo de estas restricciones es por algo que ha preocupado mucho en el diseño de Windows 8: el poder ofrecer una mayor duración de la batería.
-
-**El uso de tareas de background queda relegado a escenarios en los que haya poca carga de trabajo y no se genere mucho tráfico de datos**. Dos ejemplos típicos de estos escenarios podrían ser la descarga periódica de correo o realizar peticiones a un servidor para actualizar información bajo ciertas circunstancias.
+El primer aspecto a tener en cuenta es que las tareas en segundo plano tienen un entorno de ejecución muy limitado en cuanto al uso de procesador y la red. Así que ya nos podemos ir olvidando de ejecutar en background procesos pesados. Procesos como la codificación de vídeos o procesos de cálculo largos tendrán que ser implementados y expuestos mediante servicios externos. El motivo de estas restricciones es por algo que ha preocupado mucho en el diseño de Windows 8: el poder ofrecer una mayor duración de la batería. **El uso de tareas de background queda relegado a escenarios en los que haya poca carga de trabajo y no se genere mucho tráfico de datos**. Dos ejemplos típicos de estos escenarios podrían ser la descarga periódica de correo o realizar peticiones a un servidor para actualizar información bajo ciertas circunstancias.
 
 Una vez somos conscientes de que las tareas de background no son la panacea, veamos qué es lo que tenemos entre manos, veamos cuáles son las restricciones concretas a las que nos enfrentamos.
 
@@ -36,6 +37,7 @@ Como no hay nada mejor que comprobarlo personalmente, vamos a poner en práctica
 
 Comenzamos creando un nuevo proyecto JavaScript para la **Windows Store** utilizando la plantilla de navegación. En la carpeta js añadimos un nuevo fichero de JavaScript con el nombre “primesworker.js”. A este fichero le añadimos el siguiente código, que será el que se ejecute cuando se dispare la tarea en segundo plano.
 
+```js
 (function() { “use strict”; var prime = 1;
 
     var isPrime = function(num) {
@@ -80,27 +82,30 @@ Comenzamos creando un nuevo proyecto JavaScript para la **Windows Store** utiliz
         close();
     }
     
-    calcMillionthPrimeNumber(); })();</pre> El código es bastante sencillo: *isPrime* devuelve un booleano indicando si un número es primo o no, *nextPrime* devuelve el siguiente número primo y por último, *calcMillionthPrimeNumber* es la función responsable de calcular el número primo 1.000.000 y de guardarlo en un fichero de texto. Esto lo hacemos para poder comprobar que la tarea finaliza aunque no la tengamos en primer plano. Recordemos también que como estamos guardando un fichero en la carpeta de fotos, necesitamos indicar la capacidad en el manifiesto.
-    
+    calcMillionthPrimeNumber(); })();
+```
+
+El código es bastante sencillo: *isPrime* devuelve un booleano indicando si un número es primo o no, *nextPrime* devuelve el siguiente número primo y por último, *calcMillionthPrimeNumber* es la función responsable de calcular el número primo 1.000.000 y de guardarlo en un fichero de texto. Esto lo hacemos para poder comprobar que la tarea finaliza aunque no la tengamos en primer plano. Recordemos también que como estamos guardando un fichero en la carpeta de fotos, necesitamos indicar la capacidad en el manifiesto.
 
 Para indicar el resultado de la operación, se está utilizando el objeto **WebUIBackgroundTaskInstance**, que permite acceder a las propiedades de la tarea de background, para establecer el resultado en la propiedad _progress_ y es ponemos a true la propiedad _succeded_ para indicar que la tarea se ha ejecutado con éxito y por último y más importante, llamamos al método _close_ para indicar que la tarea ha finalizado. Sin esta llamada, la infraestructura de tareas de background asumiría que la tarea se mantiene en ejecución y dejaría el host JavaScript activo, provocando un consumo de recursos innecesario.
 
 Bien, ya tenemos listo el worker que realiza el cálculo, ahora sólo tenemos que registrar la tarea en segundo plano.
 
-    ## Registrando la tarea de segundo plano
-    
+Registrando la tarea de segundo plano
+---
 
 Para registrar una tarea de background, tenemos que asociarla a un evento disparador (_trigger_) y opcionalmente a una o más condiciones. En nuestro ejemplo vamos registrar una tarea de background que se lanzará cuando la conexión a Internet pase a estar disponible. He elegido este tipo de evento porque nos es muy sencillo disparar este evento, basta con desconectar y volver a conectar la conexión a Internet.
 
 Tenemos varios tipos de disparadores o _triggers_ que podemos utilizar para lanzar tareas en background. Algunos son estos:
 
-*   TimeTrigger – Se lanza periodicamente, el tiempo mínimo son 15 minutos.
-*   PushNotificationTrigger - Cuando se recibe una notificación raw.
-*   SystemTrigger – Se dispara por diversos eventos de sistema (cuando se recibe SMS, hay cambios en el estado de red, se actualiza una applicación, etc.) Podéis consultar todos los tipos disponibles en el artículo de la [MSDN SystemTriggerType enumeration](http://msdn.microsoft.com/en-us/library/windows/apps/windows.applicationmodel.background.systemtriggertype).
-*   MaintenanceTrigger – Al igual que TimeTrigger, se ejecuta periodicamente, pero solo en equipos conectados a una toma de corriente. Tenemos que tener en cuenta que los triggers **MaintenanceTrigger** y **SystemTrigger** no necesitan tener la aplicación en la pantalla de bloqueo para que se disparen mientras que el resto sí. En el caso de **SystemTrigger** nos encontramos con varias excepciones, ya que los eventos _SessionConnected_, _UserPresent_, _UserAway_ y _ControlChannelReset_ sí que necesitan que la aplicación esté en la pantalla de bloqueo.
+* TimeTrigger – Se lanza periodicamente, el tiempo mínimo son 15 minutos.
+* PushNotificationTrigger - Cuando se recibe una notificación raw.
+* SystemTrigger – Se dispara por diversos eventos de sistema (cuando se recibe SMS, hay cambios en el estado de red, se actualiza una applicación, etc.) Podéis consultar todos los tipos disponibles en el artículo de la [MSDN SystemTriggerType enumeration](http://msdn.microsoft.com/en-us/library/windows/apps/windows.applicationmodel.background.systemtriggertype).
+* MaintenanceTrigger – Al igual que TimeTrigger, se ejecuta periodicamente, pero solo en equipos conectados a una toma de corriente. Tenemos que tener en cuenta que los triggers **MaintenanceTrigger** y **SystemTrigger** no necesitan tener la aplicación en la pantalla de bloqueo para que se disparen mientras que el resto sí. En el caso de **SystemTrigger** nos encontramos con varias excepciones, ya que los eventos _SessionConnected_, _UserPresent_, _UserAway_ y _ControlChannelReset_ sí que necesitan que la aplicación esté en la pantalla de bloqueo.
 
 El código siguiente muestra como registrar la tarea con un trigger de sistema que se dispara cuando la conexión pasa a estar disponible.
 
+```csharp
 var builder = new Windows.ApplicationModel.Background.BackgroundTaskBuilder();
 builder.name = "PrimesWorker";
 builder.taskEntryPoint = "js\\primeworker.js";
@@ -114,35 +119,32 @@ var task = builder.register();
 task.addEventListener("progress", function(args) {
    document.getElementById("progress").innerHTML = args.progress;
 });
+```
 
 Nos hemos suscrito al evento _progress_ de la tarea para poder mostrar el resultado por pantalla en el caso de que nuestra aplicación esté en primer plano. Este código lo colocamos en un punto que se ejecute cuando se inicie la aplicación, por ejemplo después de la llamada al método **WinJS.UI.processAll**.
 
 El último cambio que tenemos que hacer es indicar en el manifiesto de la aplicación que nuestra aplicación utiliza tareas en background. Simplemente tenemos que añadir la declaración “Background Tasks” e indicar el tipo de trigger, en nuestro caso “System event” y en el campo Start Page tenemos que indicar la ruta del _worker_ JavaScript.
 
-[![manifest-background](/img/manifest-background.png)](/img/manifest-background.png)
-
 Si ejecutamos la aplicación desde Visual Studio y desconectamos y conectamos la conexión, la tarea en segundo plano se lanzará y al cabo de varios segundos, dependiendo de la máquina que tengamos, aparecerá el resultado en pantalla. Mientras se calcula, podemos mirar en el administrador de tareas el uso de CPU de nuestra aplicación. Hasta aquí, todo normal. La tarea se ha ejecutado porque nuestra aplicación está en primer plano y no aplican las restricciones de CPU. Además si tenemos la aplicación en depuración con VS nunca entrará en estado de suspensión.
 
 Ahora hacemos la misma prueba, pero en lugar de ejecutar la aplicación con VS, la ejecutamos sin depurar, lanzándola desde la pantalla de inicio o pulsando Ctrl+F5 (sin depuración). Una vez la tenemos en marcha la pasamos a segundo plano, por ejemplo mostrando el escritorio o abriendo otra aplicación, y esperamos a que el sistema la suspenda y volvemos a desconectar y conectar la conexión a internet. ¿Qué sucede en esta ocasión? Pues vemos que la aplicación se ha puesto en marcha y al cabo de unos pocos segundos ha pasado a suspensión de nuevo. Parece ser que en esta ocasión la tarea no se ha completado. Para ver cuál ha sido el error vayamos a ver el visor de eventos.
 
-1.  Pulsamos Win+X para abrir el menú contextual y seleccionamos _Event Viewer_ o visor de sucesos.
-2.  Una vez abierto, navegamos hasta **Applications and Service Logs** / **Microsoft** / **BackgroundTaskInfrastructure** / **Operational.**
+1. Pulsamos Win+X para abrir el menú contextual y seleccionamos _Event Viewer_ o visor de sucesos.
+2. Una vez abierto, navegamos hasta **Applications and Service Logs** / **Microsoft** / **BackgroundTaskInfrastructure** / **Operational.**
 
-Aquí veremos un registro con el mensaje \*Background task for package “” with entry point “” was suspended due to CPU resource management policy\*) y que podéis ver en la imagen siguiente.
-
-[!\[event-viewer-background\](http://www.casquete.es/wp-content/uploads/2013/02/event-viewer-background.png)](http://www.casquete.es/wp-content/uploads/2013/02/event-viewer-background.png)
+Aquí veremos un registro con el mensaje *Background task for package “” with entry point “” was suspended due to CPU resource management policy*) y que podéis ver en la imagen siguiente.
 
 Con esto hemos podido comprobar los límites en cuanto a uso de CPU y que no podemos relegar a tareas en segundo plano operaciones que requieran muchos cálculos ya que el sistema nos va a suspender la aplicación si superamos la cuota de uso de CPU.
 
-    ## Depurando tareas
-    
+Depurando tareas
+---
 
 En la prueba que hemos hecho, desconectábamos y conectábamos la conexión a Internet para lanzar la tarea en background. Lo hemos hecho así porque era la forma más sencilla para disparar el evento del sistema cuando no tenemos la aplicación en depuración. Sin embargo, si estamos depurando la aplicación y queremos disparar la tarea en segundo plano, tenemos un método mucho más práctico. En la barra de herramientas **Debug Location** tenemos un menú desplegable con todas las tareas registradas y que podemos lanzar simplemente seleccionándola.
 
 [![debug-background](/img/debug-background.png)](/img/debug-background.png)
 
-    ## Restricciones de Red
-    
+Restricciones de Red
+---
 
 De la misma forma que el uso de CPU impacta en la duración de la batería, el uso de la red puede representar una pérdida importante de duración de batería. Por este motivo el uso de la red también está restringido para las tareas en background. En este caso tenemos que tener en cuenta que si el dispositivo está conectado a la corriente no se aplican estas restricciones. Esta es una diferencia, ya que el uso de CPU sí que está restringido aunque el dispositivo esté conectado a una toma de corriente.
 
@@ -150,13 +152,14 @@ Las restricciones de red varía según la red que estemos utilizando y se basan 
 
 Aproximadamente una aplicación que no esté en la pantalla de bloqueo podrá transferir (carga y descarga) unos 75 MB cada día con un máximo de 7.5 cada 2 horas. En unas condiciones ideales de 10Mbps.
 
-    ## Tareas de background en el Mundo Real®
-    
+Tareas de background en el Mundo Real®
+---
 
 Llegados hasta aquí, hemos visto como no utilizar una tarea de background. Interesante, pero poco práctico. Vamos a ver como actualizar una Tile desde una tarea de background, una implementación que pueden utilizar muchas aplicaciones que no quieran depender de servicios externos para notificar actualizaciones.
 
-Comenzamos primero creando el \*worker \*encargado de actualizar la Tile.
+Comenzamos primero creando el *worker* encargado de actualizar la Tile.
 
+```js
 (function () {
     "use strict";
     var notifications = Windows.UI.Notifications;
@@ -166,7 +169,7 @@ Comenzamos primero creando el \*worker \*encargado de actualizar la Tile.
         var tileXml = notifications.TileUpdateManager.getTemplateContent(template);
 
         var tileTextAttributes = tileResumenXml.getElementsByTagName("text");
-        tileTextAttributes\[0\].appendChild(tileXml.createTextNode("Tile actualizada desde background task"));
+        tileTextAttributes[0].appendChild(tileXml.createTextNode("Tile actualizada desde background task"));
 
         var tileNotification = new notifications.TileNotification(tileXml);
 
@@ -186,29 +189,30 @@ Comenzamos primero creando el \*worker \*encargado de actualizar la Tile.
     updateTile();
 
 })();
+```
 
 Hemos dicho antes que las tareas de background están asociadas como mínimo a un trigger que se puede lanzar con alguna condición. En esta ocasión vamos a registrar la tarea con un **MaintenanceTrigger** que se ejecutará cada 6 horas con la condición de que haya conexión a internet.
 
+```csharp
 var builder = new Windows.ApplicationModel.Background.BackgroundTaskBuilder();
 builder.name = "UpdateTileWorker";
-builder.taskEntryPoint = "js\\updatetile.js";
+builder.taskEntryPoint = "js\updatetile.js";
 var myTrigger = new Windows.ApplicationModel.Background.MaintenanceTrigger(360, false);
 
 builder.setTrigger(myTrigger);
 var condition = new Windows.ApplicationModel.Background.SystemCondition(Windows.ApplicationModel.Background.SystemConditionType.internetAvailable);
 builder.addCondition(condition);
+```
 
-Es un código muy similar al del anterior ejemplo, únicamente cambia el tipo de \*trigger\* que estamos utilizando y la llamada al método \*addCondition\* para agregar la condición al objeto \*\*BackgroundTaskBuilder\*\*.
+Es un código muy similar al del anterior ejemplo, únicamente cambia el tipo de **trigger** que estamos utilizando y la llamada al método **addCondition** para agregar la condición al objeto **BackgroundTaskBuilder**.
 
-
-## Resumiendo
-
+Resumiendo
+---
 
 En la entrada de hoy hemos introducido las tareas de background, procesos nos permiten ejecutar código aunque la aplicación no esté en ejecución. Hemos conocido los límites de uso y visto un caso práctico de cómo no utilizar las tareas en background y un ejemplo de un caso tiípico con un proceso con muy poca carga de trabajo. En próximas entradas seguiremos conociendo los secretos de las tareas de background. En esta entrada no hemos tratado como cancelar una tarea o engancharnos a tareas para no ir registrando nuevas en cada ejecución. Todo esto lo iremos viendo en próximos posts.
 
+Referencias
+---
 
-## Referencias
-
-
-[White Paper: Introduction to Background Tasks](http://www.microsoft.com/en-us/download/details.aspx?id=27411)
+[White Paper: Introduction to Background Tasks](http://www.microsoft.com/en-us/download/details.aspx?id=27411)  
 [Dar soporte a tu aplicación mediante tareas en segundo plano](http://msdn.microsoft.com/es-es/library/windows/apps/hh977046.aspx)
