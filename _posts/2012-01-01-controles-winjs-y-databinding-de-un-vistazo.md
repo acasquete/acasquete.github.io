@@ -1,6 +1,6 @@
 ---
 title: Controles WinJS y databinding de un vistazo
-tags: [windows_store, winjs]
+tags: [programming, windows_store, winjs]
 reviewed: true
 ---
 WinJS (_Windows Library for JavaScript_) es una librería que nos ayuda en la tarea de crear **aplicaciones Metro style para Windows 8** utilizando **JavaScript**. Esta librería esta compuesta por un conjunto de ficheros JavaScript y CSS que nos proporcionan además de los estilos por defecto para que nuestras aplicaciones tengan el estilo Windows Metro, los controles de uso común como el selector de fecha y hora, la barra de aplicación, listas de selección, barra de progreso, etc. Así, hasta unos 20 controles WinJS que tenemos disponibles en la _preview_. Pero no sólo esto, WinJS nos da soporte entre otras funciones para interacción táctil, navegación y programación asíncrona. En esta entrada nos vamos a centrar en como declarar **controles WinJS** y como enlazarlos con un origen de datos.
