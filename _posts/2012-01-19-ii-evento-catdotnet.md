@@ -5,11 +5,10 @@ reviewed: true
 ---
 ![CatDotNet Gener 2012](/img/IIEventActivitats.jpg)
 
-![Eduard Tomas](/img/etomas.jpg)
-![Alex Casquete](/img/acasquete.jpg)
-![Toni Recio](/img/trecio.jpg)
-![Ibon Landa](/img/ilanda.jpg)
-![Rodrigo Corral](/img/rcorral.jpg)
+|   |   |   |   |   |
+|---|---|---|---|---|
+|![Eduard Tomas](/img/etomas.jpg)|![Alex Casquete](/img/acasquete.jpg)|![Toni Recio](/img/trecio.jpg)|![Ibon Landa](/img/ilanda.jpg)|![Rodrigo Corral](/img/rcorral.jpg)|
+|   |   |   |   |   |
 
 El próximo sábado 28 de enero, el grupo de usuarios .NET de Catalunya (el [CatDotNet](http://catdotnet.net/ii-evento-catdotnet/)) organiza el segundo evento en Barcelona, donde tendré la oportunidad de participar junto a unos auténticos fieras. En esta ocasión hablaré de cómo **desarrollar aplicaciones Metro en Windows 8 con HTML 5**. El evento se celebrará en la sala de actos del [centro cívico Golferichs](http://www.golferichs.org/), situado en Gran Via de les Corts Catalanes, 491, en la esquina con la calle Viladomat ([ver en Google Maps](http://maps.google.es/maps/place?cid=11342203686279331133&q=Casa+Golferichs,+Barcelona&hl=en&ved=0CBQQ-gswAA&sa=X&ei=Y0oXT-naNI7Ijgegl8XGBQ)). Para asistir al evento os podéis registar en la página de eventos de Microsoft a través de [este enlace](https://msevents.microsoft.com/CUI/EventDetail.aspx?EventID=1032504068&Culture=es-ES). La agenda del día es la siguiente:
 
