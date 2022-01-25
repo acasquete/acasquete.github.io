@@ -1,6 +1,7 @@
 ---
 title: Usar componentes WinRT personalizados desde JavaScript
-tags: [windows_store, winjs, winrt]
+tags: [programming, windows_store, winjs, winrt]
+reviewed: true
 ---
 Desde nuestras **aplicaciones Windows Metro style** creadas con JavaScript podemos acceder a todas las APIs de **Windows Runtime** de la misma forma que lo hacemos desde las aplicaciones Metro creadas con XAML. Lo que no tenemos desde JavaScript es la posibilidad de acceder a toda la funcionalidad que nos proporcionan las librerías de clases del Framework .NET, ni podemos aprovechar el código que ya tengamos en C# o Visual Basic. Sin embargo, en estas situaciones podemos crear un **componente Windows Runtime personalizado**.
 
@@ -16,8 +17,10 @@ Por último, tenemos que cambiar la opción _Output type_ de las propiedades del
 
 Lo siguiente es añadir un nuevo proyecto a la solución eligiendo JavaScript como lenguaje y la plantilla de aplicación Metro style en blanco. Después de que se cree, añadimos una referencia al proyecto del componente WinRT y modificamos el fichero _default.js_ para realizar la llamada al componente. Para esta prueba podemos eliminar todo el código generado del fichero JS y escribir lo siguiente:
 
+```js
 var result = Calculator.Calc.suma(2, 3);
 console.log(result);
+```
 
 Si ejecutamos la aplicación podremos comprobar que la variable _result_ contiene el valor esperado, un 5. Así de simple. Añadiendo la referencia al componente WinRT, hemos realizado desde JavaScript una llamada a nuestro código en C#. Naturalmente este ejemplo no justifica la creación de un componente WinRT, pero como demostración rápida nos vale.
 
@@ -25,56 +28,50 @@ Hay un detalle en el código que los más observadores habréis notado y es que 
 
 En este primer ejemplo hemos utilizado únicamente un tipo de dato básico, el tipo _int_. Pero, ¿qué sucedería si quisiésemos utilizar un tipo distinto? Por ejemplo, ¿Un tipo lista? Probemos añadiendo el siguiente método.
 
-public static int SumaLista(List lista) { return lista.Sum(); }
+```js
+public static int SumaLista(List lista) 
+{ 
+    return lista.Sum(); 
+}
+```
 
 Si intentamos compilar el código obtendremos el siguiente mensaje (también muy esclarecedor):
 
-    >«*Method 'Calculator.Calc.SumaLista(System.Collections.Generic.List)' has a parameter of type 'System.Collections.Generic.List' in its signature. Although this type is not a valid Windows Runtime type, it implements interfaces which are valid Windows Runtime types. Consider changing the method signature to instead use one of the following types: 'System.Collections.Generic.IList, System.Collections.Generic.IReadOnlyList, System.Collections.Generic.IEnumerable, System.Collections.IList, System.Collections.IEnumerable'.*»
-    
+```bash
+>«*Method 'Calculator.Calc.SumaLista(System.Collections.Generic.List)' has a parameter of type 'System.Collections.Generic.List' in its signature. Although this type is not a valid Windows Runtime type, it implements interfaces which are valid Windows Runtime types. Consider changing the method signature to instead use one of the following types: 'System.Collections.Generic.IList, System.Collections.Generic.IReadOnlyList, System.Collections.Generic.IEnumerable, System.Collections.IList, System.Collections.IEnumerable'.*»
+```
 
 Básicamente nos está diciendo que el tipo **List** no se puede utilizar en una clase que queramos exportar, y que en su lugar debemos utilicemos una interfaz (**IList**). No olvidemos que Windows Runtime es un sistema basado en interfaces. Siguiendo las instrucciones del mensaje, cambiamos la firma del método de la siguiente forma.
 
-public static int SumaLista(IList lista) { return lista.Sum(); }
+```csharp
+public static int SumaLista(IList lista) 
+{ 
+    return lista.Sum(); 
+}
+```
 
 Ahora sí, el código compila y podemos utilizarlo desde JavaScript. Si nos fijamos en el tipo del parámetro en JavaScript, veremos que no es del tipo IList, en su lugar veremos la proyección del tipo, un objeto de tipo [IVector](http://msdn.microsoft.com/en-us/library/windows/desktop/br206631.aspx), que representa una colección de objetos a los que podemos acceder por el índice. Mediante el siguiente código podemos realizar llamada al método _sumaLista_pasando una lista de enteros.
 
-var result2 = Calculator.Calc.sumaLista(\[2,3,5\]);
+```js
+var result2 = Calculator.Calc.sumaLista([2,3,5]);
 console.log(result2);
+```
 
 En esta tabla aparecen las principales interfaces genéricas de Windows Runtime y los tipos equivalentes en .NET.
 
-Windows Runtime
+|Windows Runtime|.NET Framework|
+|---|---|
+|IIterable|IEnumerable|
+|IIterator|IEnumerator
+|IVector|IList|
+|IVectorView|IReadOnlyList|
+|IMap<k, v="">|IDictionary<tkey, tvalue="">|
+|IMapView<k, v="">|IReadOnlyDictionary|
 
-.NET Framework
+Para finalizar esta entrada, un aspecto que tenemos que tener en cuenta al utilizar componentes WinRT es que no es posible depurar al mismo tiempo el código JavaScript y el código .NET. Eso significa que si depuramos la aplicación Javascript no podremos depurar el componente. Si queremos cambiar este comportamiento predeterminado, tenemos que acceder a las propiedades de la aplicación Metro y cambiar la opción *Debugger Type* del apartado *Debugging* seleccionando *Managed Only* en lugar de *Script Only*. De esta forma podremos poner puntos de ruptura y depurar el código de nuestro componente WinRT. Hasta aquí esta primera aproximación a los componentes WinRT personalizados donde hemos visto cómo crear un componente WinRT muy básico utilizando C# y consumirlo desde una aplicación Windows Metro utilizando JavaScript. En próximas entradas seguiremos viendo otros escenarios donde utilizar nuestros componentes WinRT.
 
-IIterable
-
-IEnumerable
-
-IIterator
-
-IEnumerator
-
-IVector
-
-IList
-
-IVectorView
-
-IReadOnlyList
-
-IMap<k, v="">
-
-IDictionary<tkey, tvalue="">
-
-IMapView<k, v="">
-
-IReadOnlyDictionary
-
-Para finalizar esta entrada, un aspecto que tenemos que tener en cuenta al utilizar componentes WinRT es que no es posible depurar al mismo tiempo el código JavaScript y el código .NET. Eso significa que si depuramos la aplicación Javascript no podremos depurar el componente. Si queremos cambiar este comportamiento predeterminado, tenemos que acceder a las propiedades de la aplicación Metro y cambiar la opción \*Debugger Type\* del apartado \*Debugging\* seleccionando \*Managed Only\* en lugar de \*Script Only\*. De esta forma podremos poner puntos de ruptura y depurar el código de nuestro componente WinRT. Hasta aquí esta primera aproximación a los componentes WinRT personalizados donde hemos visto cómo crear un componente WinRT muy básico utilizando C# y consumirlo desde una aplicación Windows Metro utilizando JavaScript. En próximas entradas seguiremos viendo otros escenarios donde utilizar nuestros componentes WinRT.
-
-Referencias:
+Referencias
 ---
 
-[Creating a simple component in C# or Visual Basic and calling it from JavaScript](http://msdn.microsoft.com/en-us/library/windows/apps/hh779077(v=vs.110).aspx) 
-[Using the Windows Runtime from JavaScript](http://channel9.msdn.com/Events/BUILD/BUILD2011/TOOL-533T) 
+[Creating a simple component in C# or Visual Basic and calling it from JavaScript](http://msdn.microsoft.com/en-us/library/windows/apps/hh779077(v=vs.110).aspx)  
+[Using the Windows Runtime from JavaScript](http://channel9.msdn.com/Events/BUILD/BUILD2011/TOOL-533T)  
