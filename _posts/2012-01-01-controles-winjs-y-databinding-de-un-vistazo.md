@@ -7,7 +7,11 @@ WinJS (_Windows Library for JavaScript_) es una librería que nos ayuda en la ta
 
 A diferencia de los controles HTML, los controles WinJS no tienen un elemento dedicado, es decir, si queremos añadir un elemento de selección de hora (Timepicker) no haremos añadiendo el elemento <timepicker /> a nuestro código HTML, sino que tenemos que crear un objeto JavaScript que estará enlazado a un elemento HTML. Tenemos dos métodos para instanciar estos controles, lo podemos hacer de forma declarativa, utilizando atributos desde el código HTML, o programáticamente. Primero veamos cómo podemos crear el control WinJS de forma declarativa. Añadimos un elemento div y utilizamos el attributo **data-win-control** para especificar el tipo de control que queremos. Con esto estamos indicando que el elemento sera el host del control WinJS. En el siguiente ejemplo vemos como crear un control **TimePicker**.
 
-<div data-win-control=”WinJS.UI.TimePicker”></div></pre> Una vez lo tenemos declarado en el HTML tenemos que llamar a la función **WinJS.UI.processAll** que se encarga de parsear todo el código HTML e instanciar los controles WinJS que contenga el documento. El mejor sitio para llamar a esta función es en el evento DOMContentLoaded que se lanza cuando se ha terminado de parsear toda la página.
+```xml
+<div data-win-control=”WinJS.UI.TimePicker”></div>
+```
+
+Una vez lo tenemos declarado en el HTML tenemos que llamar a la función **WinJS.UI.processAll** que se encarga de parsear todo el código HTML e instanciar los controles WinJS que contenga el documento. El mejor sitio para llamar a esta función es en el evento DOMContentLoaded que se lanza cuando se ha terminado de parsear toda la página.
 
 ```js
 document.addEventListener("DOMContentLoaded", function (e) {
