@@ -1,4 +1,4 @@
-long,lat,name
+long,lat,name,year
 2.130554,41.371672,"Barcelona HomeSWEETHome"
 -3.689518,40.437671,"Madrid"
 2.816277,41.977486,"Girona"
@@ -50,3 +50,4 @@ long,lat,name
 -68.328094,-34.618517,"SanRafael"
 1.929817,42.436491,"Puigcerdà"
 1.131420,42.412051,"Sort"
+12.3345898,45.4371908,"Venice",2000
