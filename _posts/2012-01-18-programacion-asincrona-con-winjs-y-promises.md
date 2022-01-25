@@ -9,7 +9,21 @@ Uno de los problemas con el que nos encontramos al lidiar con programación así
 
 La especificación es muy sencilla, y dice simplemente que hay que tener un objeto con un método llamado _then_ y que este método debe aceptar tres parámetros. Estos tres paramétros serán tres funciones callback que se llamarán cuando la Promise se complete, cuando se produzca un error o cuando se produzca algún evento de progreso. En WinJS el objeto es **WinJS.Promise** y podemos ver su implementación en el fichero **base.js**. Ya he comentado antes que la función _WinJS.UI.processAll_ devuelve un objeto **Promise**, veamos otro ejemplo que utilizaremos a menudo.
 
-WinJS.Application.onmainwindowactivated = function (e) { WinJS.xhr({ url: “http://idlebit.es/rss” }).then( function (result) { console.log(“Promise completada con éxito.”); }, function (error) { console.log(“Promise completada con error.”); }, function (progress) { console.log(“Promise en progreso.”); }); }</pre> En este caso hemos llamado a la función **WinJS.xhr** que realiza una petición **XmlHttpRequest** como una **Promise**. Esta función devuelve un objeto **Promise** que se completa cuando la propiedad _readyState_ es igual a 4 y el valor de _status_ está entre 200 y 300. Si la propiedad _readyState_ es igual a 4 pero el _status_ no está entre 200 y 300, la _Promise_ se completará pero en este caso se llamará a la función callback de error y para el resto de llamadas a _XMLHttpRequest.onreadystatechange_ se llamará a la función callback de progreso. Si ejecutamos el código, podremos comprobar que a cada una de las funciones callback se le pasa el objeto XMLHttpRequest. En este caso he elegido la función _WinJS.xhr_ porque implementa la notificación de los tres estados, pero hay que tener en cuenta que no todas las Promises lo implementan ya que es opcional. Ahora veamos un ejemplo en los que queremos concatenar una serie de peticiones.
+```js
+WinJS.Application.onmainwindowactivated = function (e) { 
+  WinJS.xhr({ url: “http://idlebit.es/rss” }).then( 
+    function (result) { 
+      console.log(“Promise completada con éxito.”); 
+    }, 
+    function (error) { 
+      console.log(“Promise completada con error.”); 
+    }, 
+    function (progress) { console.log(“Promise en progreso.”); }
+  ); 
+}
+```
+
+En este caso hemos llamado a la función **WinJS.xhr** que realiza una petición **XmlHttpRequest** como una **Promise**. Esta función devuelve un objeto **Promise** que se completa cuando la propiedad _readyState_ es igual a 4 y el valor de _status_ está entre 200 y 300. Si la propiedad _readyState_ es igual a 4 pero el _status_ no está entre 200 y 300, la _Promise_ se completará pero en este caso se llamará a la función callback de error y para el resto de llamadas a _XMLHttpRequest.onreadystatechange_ se llamará a la función callback de progreso. Si ejecutamos el código, podremos comprobar que a cada una de las funciones callback se le pasa el objeto XMLHttpRequest. En este caso he elegido la función _WinJS.xhr_ porque implementa la notificación de los tres estados, pero hay que tener en cuenta que no todas las Promises lo implementan ya que es opcional. Ahora veamos un ejemplo en los que queremos concatenar una serie de peticiones.
 
 ```js
 WinJS.xhr({ url: "http://idlebit.es/rss" }).then( 
