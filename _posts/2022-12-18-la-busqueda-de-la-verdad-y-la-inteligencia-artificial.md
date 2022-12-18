@@ -24,6 +24,17 @@ Errores gramaticales: Chatgpt a menudo comete errores gramaticales o ortográfic
 
 Falta de personalidad: El texto generado por chatgpt carece de personalidad y no refleja la voz o el estilo únicos de un ser humano.
 
+
+Para saber si un texto ha sido generado por ChatGPT o cualquier otro modelo de lenguaje generativo, puedes intentar lo siguiente:
+
+Revisa el contexto en el que se presenta el texto. Si el texto se presenta como parte de una conversación en línea o como respuesta a una pregunta específica, es más probable que haya sido generado por ChatGPT o un modelo similar.
+Busca patrones o repeticiones inusuales en el texto. Los modelos de lenguaje generativo a veces pueden producir frases o palabras que se repiten de manera inusual, lo que puede ser un indicio de que el texto ha sido generado por un modelo.
+Analiza la gramática y la sintaxis del texto. Si hay errores de gramática o sintaxis frecuentes o si el texto parece estar estructurado de manera poco natural, es posible que haya sido generado por un modelo.
+Utiliza herramientas en línea o programas especializados para evaluar la originalidad del texto. Existen varias herramientas en línea que pueden ayudarte a determinar si un texto ha sido generado por un modelo de lenguaje generativo o no.
+Es importante tener en cuenta que ninguna de estas opciones es infalible y que es posible que tengas que utilizar varias de ellas para determinar si un texto ha sido generado por un modelo de lenguaje generativo.
+
+
+
 En este sentido, la novela de sabueso de los Baskerville me recordó la importancia de la lógica y el razonamiento en la resolución de problemas y me hizo reflexionar sobre el potencial de la IA en la detección de la verdad.
 
 Además de esta mezcla de lo natural y lo sobrenatural, “El sabueso de los Baskerville” también trata sobre la verdad y la fantasía. A lo largo de la novela, Holmes y Watson deben determinar qué es real y qué es fruto de la imaginación de los personajes. Esta lucha entre la verdad y la fantasía es un tema clave en la novela y añade una capa de complejidad a la trama.
