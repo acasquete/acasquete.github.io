@@ -11,7 +11,13 @@ title: Home
 		<div class="post_hero">
 			<a href="{% if site.baseurl == "/" %}{{ post.url }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}">
 				<div class="post_heroleft">
-				<img src="/img/{{ post.header_fullview }}">
+				{% if post.header_fullview %}
+				<img src="/img/{{ post.header_fullview }}" >
+				{% elsif post.header_image %}
+				<img src="/img/{{ post.header_image }}" >
+				{% else %}
+				<img src="/img/acnotes.png" >
+				{% endif %}
 				</div>
 				<div class="post_heroright">
 					<div class="post_title"><h1>{%if post.header %}{{ post.header }}{% else %}{{ post.title }}{% endif %}</h1></div>
