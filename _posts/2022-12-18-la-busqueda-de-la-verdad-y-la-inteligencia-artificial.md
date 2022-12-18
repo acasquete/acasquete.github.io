@@ -1,7 +1,7 @@
 ---
-title: La inteligencia artificial y la búsqueda de la verdad
+title: La búsqueda de la verdad y la inteligencia artificial
 tags: [personal]
-header_image: art-hound-baskervilles-3dcover.jpg
+header_fullview: art-hound-baskervilles-3dcover.jpg
 reviewed: false
 ---
 A pesar de mi afición por las historias de misterio y detectives, hasta el momento no había tenido la oportunidad de leer "El sabueso de los Baskerville", una novela escrita por Arthur Conan Doyle y considerada una de las mejores obras del género.
