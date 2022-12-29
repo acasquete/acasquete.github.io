@@ -8,7 +8,13 @@ Me fascinan las historias de misterio y detectives. Siempre he disfrutado tratan
 
 El Sabueso de los Baskerville es la tercera de las cuatro novelas protagonizadas por Sherlock Holmes y fue publicada en entregas en la revista *The Strand Magazine* entre agosto de 1901 y abril de 1902. Su publicación tuvo un gran éxito, tanto que los lectores hacían cola frente a las oficinas de la revista para obtener el próximo número.
 
-Conan Doyle escribió esta novela en una época en la que el género de misterio y detectives aún estaba en sus primeras etapas de desarrollo. Aunque el personaje de Sherlock Holmes no puede ser considerado el primer detective de ficción, ya que fue influenciado por obras anteriores de Edgar Allan Poe y Émile Gaboriau, su nombre se ha vuelto sinónimo de la temática de misterio y detectives y ha sido adoptado como paradigma en el género.
+Esta novela se escribió en una época en la que el género de misterio y detectives aún estaba en sus primeras etapas de desarrollo. Y aunque el personaje de Sherlock Holmes no puede ser considerado el primer detective de ficción, ya que fue influenciado por obras anteriores de Edgar Allan Poe y Émile Gaboriau, su nombre se ha vuelto sinónimo de la temática de misterio y detectives y ha sido adoptado como paradigma en el género.
+
+Conan Doyle escribió la novela después de volver de trabajar como médico voluntario en Sudáfrica durante la Segunda Guerra Bóer. Había estado alejado de la escritura de Sherlock Holmes durante ocho años ya que en 1893, Doyle mató al personaje. La historia está inspirada en la leyenda del sabueso y el color local de Dartmoor con la ayuda de un periodista del Daily Express llamado llamado Bertram Fletcher Robinson, a quien pagó un tercio de los derechos de autor. Robinson convenció a Doyle de que Dartmoor, de donde él era oriundo, constituía el escenario ideal, con sus ruinas prehistóricas y su páramo neblinoso. Viajaron hasta allí y pasaron semanas recorriendo la zona y tomando notas. Doyle escribió que la novela fue concebida originalmente como un "enredador victoriano" y que la idea de introducir a Holmes, el detective con dotes extraordinarias para resolver el misterio, como deus ex machina surgió más tarde.
+
+La novela incorpora una trama principal y cuatro subtramas. La primera de ellas es la historia de la maldición, las dos tramas secundarias sobre Selden y el otro extraño que vive en el páramo, los hechos reales que le ocurren a Baskerville narrados por Watson y la trama oculta que debe descubrir Holmes. 
+
+
 
 Al adentrarme en la novela, me vi inmerso en la misteriosa historia de muerte y secretos ocultos que rodean a la familia Baskerville. La trama gira en torno a la muerte de Sir Charles Baskerville, que parece estar relacionada con una antigua maldición familiar y un peligroso sabueso que merodea cerca de su mansión en el condado de Devon, Inglaterra.
 
