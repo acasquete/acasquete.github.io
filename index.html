@@ -40,6 +40,10 @@ title: Home
                 <div class="TGN_site_ArticleItemimage">
 					{% if post.header_fullview %}
 					<img src="/img/{{ post.header_fullview }}">
+					{% elsif post.header_image %}
+					<img src="/img/{{ post.header_image }}" >
+					{% else %}
+					<img src="/img/acnotes.png" >
 					{% endif %}
 				</div>
                 <div class="TGN_site_ArticleItemcopy">
