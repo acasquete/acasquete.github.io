@@ -1,8 +1,8 @@
 ---
 title: El futuro no es remoto
 tags: [personal]
-header_image: future-hound-baskervilles-3dcover.jpg
-reviewed: false
+header_fullview: hybrid-work-environment.png
+reviewed: true
 ---
 La pandemia transformó las prácticas laborales en todo el mundo, llevando a muchas empresas a adoptar el trabajo remoto como una alternativa viable. Sin embargo, en la actualidad, muchas organizaciones están optando por regresar al entorno presencial o adoptar un enfoque híbrido. En este post, exploraremos cómo las empresas están adaptandose a las necesidades cambiantes en el espacio laboral, considerando tanto el trabajo remoto como el presencial.
 
