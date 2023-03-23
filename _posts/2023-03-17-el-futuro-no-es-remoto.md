@@ -1,7 +1,7 @@
 ---
 title: El futuro no es remoto
 tags: [personal]
-header_fullview: hybrid-work-environment.jpeg
+header_image: hybrid-work-environment.jpeg
 reviewed: true
 ---
 Cuando pienso en el futuro del trabajo, no puedo evitar imaginar un mundo en el que las interacciones personales vuelvan a tomar protagonismo. Si bien el trabajo remoto ha sido la solución a muchos problemas en tiempos de pandemia y ha demostrado ser útil en ciertas circunstancias, también es cierto que no es la panacea que muchos creen.
