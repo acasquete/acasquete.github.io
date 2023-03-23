@@ -32,7 +32,7 @@ La verdadera esencia de sentirse parte de un grupo, un equipo, es la interacció
 
 > "Veremos un retorno a las interacciones personales, donde el trabajo en remoto será una opción."
 
-No debemos olvidar que somos seres sociales por naturaleza, y es en el contacto cara a cara donde encontramos el sentido de pertenencia que tanto buscamos. En el futuro del trabajo, creo que veremos un retorno a las interacciones personales, donde el trabajo en remoto será una opción pero no la única.
+No debemos olvidar que somos seres sociales por naturaleza, y es en el contacto cara a cara donde encontramos el sentido de pertenencia que tanto buscamos. En el futuro del trabajo, creo que veremos un retorno a las interacciones personales, donde el trabajo en remoto será una opción, pero no la única.
 
 En lugar de idealizar un futuro exclusivamente remoto, deberíamos pensar en un futuro más híbrido, donde se combinen lo mejor del trabajo presencial y el trabajo remoto según las necesidades y características de cada profesión. Esta visión permite aprovechar las ventajas de ambas modalidades sin sacrificar la riqueza de las interacciones humanas que nos definen y nos hacen únicos.
 
