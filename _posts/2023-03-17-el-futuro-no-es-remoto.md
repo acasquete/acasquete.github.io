@@ -16,6 +16,8 @@ Ante esta situación, decidimos llevar a cabo el siguiente taller de forma prese
 
 Este ejemplo ilustra cómo, en ciertas situaciones, el trabajo presencial puede proporcionar una experiencia más rica y efectiva en comparación con el trabajo remoto, especialmente cuando se trata de las primeras interacciones con un cliente. La cercanía física facilita la construcción de confianza y entendimiento entre los miembros del equipo y el cliente, aspectos fundamentales para el éxito de cualquier proyecto.
 
+> "El futuro del trabajo es un espacio donde lo presencial y lo virtual se complementan, creando un entorno laboral más humano."
+
 Continuando con la importancia de las interacciones personales, quisiera mencionar otra situación que observo a menudo en el ámbito laboral. Con la implementación del trabajo remoto, muchas personas nuevas se han unido a nuestros equipos, y a menudo no se hace el esfuerzo necesario para presentarse e interactuar con ellas como lo haríamos en un entorno presencial. En lugar de acercarnos a nuestros compañeros recién llegados, tendemos a mantenernos en nuestros círculos preexistentes, limitando la oportunidad de establecer relaciones sólidas y enriquecedoras.
 
 Además, he notado que muchas personas prefieren no utilizar la cámara durante las videollamadas, argumentando que no se encuentran presentables en ese momento. Aunque estas autoexcusas son globalmente aceptadas, esta actitud contribuye a la falta de interacción personal y cercanía en el entorno laboral virtual. En mi opinión, no deberíamos permitir que estas excusas nos impidan relacionarnos con los demás, independientemente de nuestra apariencia o situación. La comunicación visual es fundamental para construir relaciones sólidas, tanto personales como profesionales.
