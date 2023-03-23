@@ -21,7 +21,13 @@ title: Home
 				</div>
 				<div class="post_heroright">
 					<div class="post_title"><h1>{%if post.header %}{{ post.header }}{% else %}{{ post.title }}{% endif %}</h1></div>
-					<div class="post_description">{{ post.excerpt | strip_html }}</div>
+					<div class="post_description">
+						{% if post.content contains '<!-- excerpt-end -->' %}
+						{{ post.content | split:'<!-- excerpt-end -->' | first | strip_html }}
+						{% else %}
+						{{ post.excerpt | strip_html }}
+						{% endif %}
+					</div>
 					<time datetime="{{ page.date | date_to_xmlschema }}" class="by-line">{{ post.date | date: '%B %e, %Y' }}</time>
 				</div>
 			</a>
