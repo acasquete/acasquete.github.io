@@ -46,6 +46,7 @@ La tecnología debe jugar un papel esencial en la mejora de las interacciones re
 
 ![Project Starline](/img/project-starline.webp){:.fullview}
 
-En lugar de idealizar un futuro exclusivamente remoto, deberíamos pensar en un futuro más híbrido, donde se combinen lo mejor del trabajo presencial y el trabajo remoto según las necesidades y características de cada profesión. Esta visión permite aprovechar las ventajas de ambas modalidades sin sacrificar la riqueza de las interacciones humanas que nos definen y nos hacen únicos.
+En lugar de idealizar un futuro exclusivamente remoto, deberíamos pensar en un futuro más híbrido, donde se combinen lo mejor del trabajo presencial y el trabajo remoto según las necesidades y características de cada profesión. Esta visión permite aprovechar las ventajas de ambas modalidades sin sacrificar la riqueza de las interacciones humanas que nos definen y nos hacen únicos. 
 
-El futuro del trabajo no será exclusivamente remoto, sino una combinación equilibrada de interacciones presenciales y virtuales que aprovechen lo mejor de ambos mundos. La tecnología seguirá desempeñando un papel fundamental en este proceso, permitiéndonos explorar nuevas formas de colaborar y conectar a nivel humano, independientemente de la distancia que nos separe. Y medida que evolucionamos hacia un enfoque "Remote-Wise", estaremos cada vez más cerca de construir un entorno laboral más humano, cercano y satisfactorio para todos.
+La tecnología seguirá desempeñando un papel fundamental en este proceso, permitiéndonos explorar nuevas formas de colaborar y conectar a nivel humano, independientemente de la distancia que nos separe. Y medida que evolucionamos hacia un enfoque "Remote-Wise", estaremos cada vez más cerca de construir un entorno laboral más humano, cercano y satisfactorio para todos.
+
