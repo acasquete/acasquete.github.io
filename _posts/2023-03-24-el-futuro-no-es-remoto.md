@@ -4,7 +4,7 @@ tags: [personal]
 header_image: hybrid-work-environment.jpeg
 reviewed: true
 ---
-Cuando pienso en modelos de trabajo futuros, no puedo evitar imaginar un mundo en el que las interacciones personales vuelvan a tomar protagonismo. Si bien el trabajo remoto ha sido la solución a muchos problemas en tiempos de pandemia y ha demostrado ser útil en ciertas circunstancias, también es cierto que no es la panacea que muchos creen.<!-- excerpt-end --> Durante este período, hemos tenido que [desaprender la forma de ser una oficina tradicional](/desaprender-a-ser-una-oficina-tradicional) y adaptarnos a un entorno laboral virtual. Sin embargo, ahora es el momento de repensar qué tipo de oficina queremos ser en el futuro, buscando un equilibrio entre el trabajo presencial y el remoto que aproveche lo mejor de ambos mundos y fomente un ambiente más humano y colaborativo.
+Cuando pienso en modelos de trabajo futuros, no puedo dejar de imaginar un mundo en el que las interacciones personales vuelvan a tomar protagonismo. Si bien el trabajo remoto ha sido la solución a muchos problemas en tiempos de pandemia y ha demostrado ser útil en ciertas circunstancias, también es cierto que no es la panacea que muchos creen.<!-- excerpt-end --> Durante este período, hemos tenido que [desaprender la forma de ser una oficina tradicional](/desaprender-a-ser-una-oficina-tradicional) y adaptarnos a un entorno laboral virtual. Sin embargo, ahora es el momento de repensar qué tipo de oficina queremos ser en el futuro, buscando un equilibrio entre el trabajo presencial y el remoto que aproveche lo mejor de ambos mundos y fomente un ambiente más humano y colaborativo.
 
 Sin duda, el trabajo en remoto ha sido un reto a nivel social. Sin embargo, a medida que nos hemos ido adaptando a esta modalidad, he notado cómo las interacciones personales se han visto relegadas a un segundo plano, siendo sustituidas por videollamadas, conversaciones de chat y correos electrónicos. Y aunque estas herramientas han sido de gran ayuda, no siempre son el sustituto ideal para el contacto humano y la cercanía que solo se puede lograr en un ambiente presencial.
 
@@ -44,7 +44,7 @@ No debemos olvidar que somos seres sociales por naturaleza, y es en el contacto 
 
 La tecnología debe jugar un papel esencial en la mejora de las interacciones remotas y en estrechar lazos entre las personas en el entorno laboral. Sin embargo, aún no hemos alcanzado ese nivel. Espero con ansia que se hagan realidad proyectos como el Proyecto Starline de Google, que lleva años desarrollando una solución tecnológica con el objetivo de recrear la experiencia de la presencialidad, mediante una especie de "ventana mágica" a través de la cual podemos interactuar en tamaño real y en tres dimensiones, permitiendo gesticular y mantener contacto visual.
 
-<video style="display:block; margin: 1em auto" autoplay="false" loop="" muted="" playsinline="" class="article-carousel__media" src="https://storage.googleapis.com/gweb-uniblog-publish-prod/original_videos/denya_v4_360p.mp4" type="video/mp4" title="Project Starline">Video format not supported</video>
+![Project Starline](/img/project-starline.webp){:.fullview}
 
 En lugar de idealizar un futuro exclusivamente remoto, deberíamos pensar en un futuro más híbrido, donde se combinen lo mejor del trabajo presencial y el trabajo remoto según las necesidades y características de cada profesión. Esta visión permite aprovechar las ventajas de ambas modalidades sin sacrificar la riqueza de las interacciones humanas que nos definen y nos hacen únicos.
 
