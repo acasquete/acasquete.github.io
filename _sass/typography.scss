@@ -28,7 +28,7 @@ p, ul, ol {
 }
 
 h1 {
-	font-family: 'Unna', serif;
+	font-family: 'Abril Fatface', serif;
 	font-size: 2.3em; /* 36px/16px */
 	line-height: 1em;
 	padding: 0.33335em 0; /* 12px/36px * 2 (Use padding instead of margin to maintain proximity with paragraph) */
@@ -66,14 +66,14 @@ blockquote {
 @media (min-width: 560px) { //Breakpoint set to 940px
 
 p, ul, ol {
-	font-size: 1em; /* 18px */
+	font-size: 1.1em; /* 18px */
 	line-height: 1.8em;
 	margin-bottom: 1.3334em; /* 24px/18px */
 }
 
 h1 {
-	font-family: 'Unna', serif;
-	font-size: 2.7em; /* 48px/18px */
+	font-family: 'Abril Fatface', serif;
+	font-size: 2.8em; /* 48px/18px */
 	line-height: 1em;
 	padding: 0.25em 0; /* 12px/48px * 2 (Use padding instead of margin to maintain proximity with paragraph) */
     letter-spacing: -1px;
