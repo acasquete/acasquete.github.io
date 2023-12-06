@@ -8,7 +8,7 @@ author:
   url: "https://acasquete.github.io"
 
 # Build settings
-baseurl: / # Change this to your relative path (ex: /blog/), or leave just a /
+baseurl: / 
 markdown: kramdown
 source: .
 destination: ./_site
