@@ -4,7 +4,7 @@ tags: [personal]
 header_image: hybrid-work-environment.jpeg
 reviewed: true
 ---
-Cuando pienso en modelos de trabajo futuros, no puedo dejar de imaginar un mundo en el que las interacciones personales vuelvan a tomar protagonismo. Si bien el trabajo remoto ha sido la solución a muchos problemas en tiempos de pandemia y ha demostrado ser útil en ciertas circunstancias, también es cierto que no es la panacea que muchos creen.
+Cuando pienso en modelos de trabajo futuros, no puedo dejar de imaginar un mundo en el que las interacciones personales vuelvan a tomar protagonismo.<!-- excerpt-end --> Si bien el trabajo remoto ha sido la solución a muchos problemas en tiempos de pandemia y ha demostrado ser útil en ciertas circunstancias, también es cierto que no es la panacea que muchos creen.
 
 Durante este período, hemos tenido que [desaprender la forma de ser una oficina tradicional](/desaprender-a-ser-una-oficina-tradicional) y adaptarnos a un entorno laboral virtual. Sin embargo, ahora es el momento de repensar qué tipo de oficina queremos ser en el futuro, buscando un equilibrio entre el trabajo presencial y el remoto que aproveche lo mejor de ambos mundos y fomente un ambiente más humano y colaborativo.
 

@@ -1,5 +1,12 @@
-/* -- General Layout -- */
-
+@font-face {
+  font-family: "Krungthep";
+  src: url("/fonts/Krungthep.eot");
+  src: url("/fonts/Krungthep.eot?#iefix")format("embedded-opentype"),
+  url("/fonts/Krungthep.woff2")format("woff2"),
+  url("/fonts/Krungthep.woff")format("woff"),
+  url("/fonts/Krungthep.ttf")format("truetype"),
+  url("/fonts/Krungthep.svg#Krungthep")format("svg");
+}
 /* Navigation */
 
 #nav, #nav-left { 
@@ -166,11 +173,13 @@
 
   h1 {
     color:#999;
-    font-size:1.9em;
+    font-size:1.6em;
     font-weight:300; 
     width:100%;
     display:block;
     text-align: left;
+    font-family: Krungthep;
+    text-transform: uppercase;
   }
   
   h1 > div {
@@ -178,21 +187,21 @@
   }
   
   #flip {
-    height:35px;
+    height:25px;
     overflow:hidden;
-    margin-left: 3px;
+    margin-left: 2px;
   }
   
   #flip > div > div {
     color:#fff;
-    padding: 0 6px;
+    padding: 0 3px;
     height:45px;
     margin-bottom:45px;
     display:inline-block;
   }
   
   #flip div:first-child {
-    animation: show 5s linear infinite;
+    animation: show 12s linear infinite;
   }
   
   #flip div div {
@@ -386,15 +395,13 @@
       margin: 0px;
       padding: 0px;
       display: block;
-      min-height: 200px;
       object-fit: cover;
+      aspect-ratio: 1 / 1;
     }
 
     .TGN_site_ArticleItemtitle {
     @media (max-width: 1020px) {
- 
         margin-top: -2px;
-        max-width: 200px;
     }
   }
 
@@ -502,12 +509,7 @@
     padding: 0px;
     display: block;
     object-fit: cover;
-    height: 200px;
-
-    @media (max-width: 1020px) {
-      height: 150px;
-    }
-
+    aspect-ratio: 1/1;
     
   }
 
@@ -595,11 +597,14 @@
         
 }
 
-
 #post-page {
   margin-bottom: 1.5em;
-  @media (min-width: 560px) {
+  
+    @media (min-width: 820px) {
       margin-bottom: 1.3334em;
+      width: 780px;
+      margin: auto;
+
     }
 
   pre {
