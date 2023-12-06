@@ -2,7 +2,7 @@
 title: El clásico del género de misterio y detectives
 tags: [personal, readings]
 header_image: art-hound-baskervilles-3dcover.jpg
-reviewed: false
+reviewed: true
 ---
 Me fascinan las historias de misterio y detectives. Siempre he disfrutado tratando de adivinar quien es el asesino y seguir los pasos del detective para resolver el caso.<!-- excerpt-end --> Sin embargo, por alguna razón, nunca había leído una de las novelas más conocidas y la que es ya considerada un clásico del género. Así que finalmente he decidido leerla y la he devorado en cuestión de horas.
 
