@@ -1,11 +1,11 @@
 ---
-title: "El valor de las certificaciones profesionales: una visión en perspectiva"
+title: "Reimaginando las certificaciones profesionales: una visión en perspectiva"
 tags: [personal, certification]
 header_image: close-up-people-with-thumbs-up.jpg
 image_copyright: https://www.freepik.com/free-photo/close-up-people-with-thumbs-up_15501126.htm
 reviewed: false
 ---
-Siempre he creído que el verdadero valor de las certificaciones va más allá de simplemente añadir una línea más al currículum.<!-- excerpt-end --> A lo largo de mi carrera, he conocido profesionales excepcionales, tanto con amplios conocimientos y sin certificaciones formales, como con múltiples acreditaciones. Esto evidencia que las certificaciones, por si mismas, no son necesarias para garantizar conocimientos o habilidades. 
+Siempre he creído que el verdadero valor de las certificaciones va más allá de simplemente añadir una línea más al currículum.<!-- excerpt-end --> A lo largo de mi carrera, he conocido profesionales excepcionales con amplios conocimientos, tanto con certificaciones como sin. Esto evidencia que las certificaciones, por si mismas, no son necesarias para garantizar conocimientos o habilidades. 
 
 El proceso de preparación para obtener una certificación conlleva una disciplina y un compromiso que permite ampliar nuestro conocimiento en ese campo profesional. Una certificación debería validar ―explicaré más adelante que esto ahora mismo no es así― ante terceros un conjunto de conocimientos, pero su mayor valor radica en la motivación extra que dan para seguir creciendo profesionalmente.
 
@@ -61,8 +61,19 @@ La aplicación de la inteligencia artificial en el ámbito de los exámenes de c
 
 ## Reimaginar la experiencia
 
-Reflexionar sobre el valor de las certificaciones, especialmente en el ámbito de la tecnología, es crucial en un momento donde la competencia profesional y la actualización constante son fundamentales. 
+Reflexionar sobre el valor de las certificaciones, especialmente en el ámbito de la tecnología, es crucial en un momento donde la actualización constante son fundamentales. 
 
-Los avances en inteligencia artificial ofrecen un panorama prometedor, abriendo la posibilidad de revolucionar completamente los procesos de evaluación y certificación profesional. Sistemas innovadores como el CAT y el uso de IA generativa para crear exámenes únicos son ejemplos de cómo podemos reimaginar y mejorar la experiencia de certificación. Estas tecnologías no solo hacen más difícil el fraude, sino que también permiten medir las habilidades de forma más precisa y equitativa, elevando la credibilidad de las certificaciones.
+Los avances en inteligencia artificial ofrecen un panorama prometedor, abriendo la posibilidad de revolucionar completamente los procesos de evaluación y certificación profesional. Sistemas innovadores utilizando IA Generativa en conjuncion con CAT para crear exámenes únicos son ejemplos de cómo podemos reimaginar la experiencia de certificación. Estas tecnologías no solo hacen más difícil el fraude, sino que también permiten medir las habilidades de los candidatos de forma más precisa, aumentando la credibilidad de las certificaciones.
 
-A pesar de los desafíos que implica implementar estos cambios, es necesario adoptarlos rápidamente. Esto no solo beneficiará a los estudiantes, sino también a las organizaciones que buscan contratar profesionales certificadosasí, así como a las entidades de certificación, cuya credibilidad y valor se verán reforzados. Al reimaginar la experiencia de certificación, estamos dando un paso hacia un futuro donde las certificaciones no solo son una formalidad, sino una verdadera garantía de conocimientos y competencias.
+A pesar de los desafíos que implica implementar estos cambios, es necesario adoptarlos rápidamente. Esto no solo beneficiará a los estudiantes, sino también a las organizaciones que buscan contratar profesionales certificados, así como a las entidades de certificación, cuya credibilidad y valor se verán reforzados. 
+
+Al reimaginar esta experiencia, estamos dando un paso hacia un futuro donde las certificaciones no solo sean una formalidad, sino una verdadera garantía de conocimientos y competencias, algo que lamentablemente hoy no son.
+
+### Referencias
+
+https://www.imsglobal.org/spec/cat/v1p0/impl#h.lnm1z460a08b
+https://www.itprotoday.com/compute-engines/adaptive-testing
+https://news.microsoft.com/1999/01/25/microsoft-unveils-innovative-testing-technology-to-simulate-work-environment/
+https://nursing.uworld.com/blog/nclex-computer-adaptive-test/
+https://www.nclex.com/computerized-adaptive-testing.page#:~:text=How%20CAT%20Works,all%20of%20their%20previous%20responses.
+https://ieeexplore.ieee.org/document/9458219
