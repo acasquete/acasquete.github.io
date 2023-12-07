@@ -61,7 +61,7 @@ La aplicación de la inteligencia artificial en el ámbito de los exámenes de c
 
 ## Reimaginar la experiencia
 
-Reflexionar sobre el valor de las certificaciones, especialmente en el ámbito de la tecnología, es crucial en un momento donde la competencia profesional y la actualización constante son fundamentales. Los avances en inteligencia artificial abren un futuro prometedor para revolucionar los procesos de evaluación y certificación profesional. 
+Reflexionar sobre el valor de las certificaciones, especialmente en el ámbito de la tecnología, es crucial en un momento donde la competencia profesional y la actualización constante son fundamentales. 
 
 Los avances en inteligencia artificial ofrecen un panorama prometedor, abriendo la posibilidad de revolucionar completamente los procesos de evaluación y certificación profesional. Sistemas innovadores como el CAT y el uso de IA generativa para crear exámenes únicos son ejemplos de cómo podemos reimaginar y mejorar la experiencia de certificación. Estas tecnologías no solo hacen más difícil el fraude, sino que también permiten medir las habilidades de forma más precisa y equitativa, elevando la credibilidad de las certificaciones.
 
