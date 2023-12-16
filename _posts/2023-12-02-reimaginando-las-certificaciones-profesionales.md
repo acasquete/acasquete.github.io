@@ -5,7 +5,7 @@ header_image: close-up-people-with-thumbs-up.jpg
 image_copyright: https://www.freepik.com/free-photo/close-up-people-with-thumbs-up_15501126.htm
 reviewed: false
 ---
-Siempre he creído que el verdadero valor de las certificaciones va más allá de simplemente añadir una línea más al currículum.<!-- excerpt-end --> A lo largo de mi carrera, he conocido profesionales excepcionales con amplios conocimientos, tanto con certificaciones como sin. Esto evidencia que las certificaciones, por si mismas, no son necesarias para garantizar conocimientos o habilidades. 
+Siempre he creído que el verdadero valor de las certificaciones va más allá de simplemente añadir una línea más al currículum.<!-- excerpt-end --> A lo largo de mi carrera, he conocido profesionales excepcionales con amplios conocimientos, tanto con certificaciones como sin. Esto evidencia que las certificaciones, por si mismas, no son necesarias para garantizar conocimientos o habilidades. Además, muchas de las certificaciones han perdido la credibilidad que tenian hace unos años. Hoy estamos en el momento perfecto para reimaginar cómo deberia ser el proceso de certificación para ganar esa credibilidad perdida y para mejorar la efectividad en la evaluacion de conocimiento.
 
 El proceso de preparación para obtener una certificación conlleva una disciplina y un compromiso que permite ampliar nuestro conocimiento en ese campo profesional. Una certificación debería validar ―explicaré más adelante que esto ahora mismo no es así― ante terceros un conjunto de conocimientos, pero su mayor valor radica en la motivación extra que dan para seguir creciendo profesionalmente.
 
