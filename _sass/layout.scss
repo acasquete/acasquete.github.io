@@ -62,9 +62,9 @@
     padding-right: 10px;
     color: $text-color;
     font-weight: 300;
-    font-size: 0.8em;
-    font-family: "Krungthep", sans-serif;
-    text-transform: uppercase;
+    font-size: 0.9em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform:capitalize;
     background-color: #eee;
     transition-duration: 0.3s;
 
@@ -173,12 +173,12 @@
 
   h1 {
     color:#000;
-    font-size:1.6em;
+    font-size:1.8em;
     font-weight:300; 
     width:100%;
     display:block;
     text-align: left;
-    font-family: Krungthep;
+    font-family: 'Krungthep', sans-serif;
     text-transform: uppercase;
   }
   
@@ -187,7 +187,7 @@
   }
   
   #flip {
-    height:25px;
+    height:27px;
     overflow:hidden;
     margin-left: 2px;
   }
@@ -411,7 +411,7 @@
 
     .TGN_site_ArticleItemdescription {
       color: #404040;
-      font-family: 'HelveticaNeueW01-45Ligh','neue-haas-unica', sans-serif;
+      font-family: Arial, Helvetica, sans-serif;
       font-size: 14px;
       line-height: 18px;
       overflow-wrap: break-word;
@@ -537,8 +537,9 @@
 }
 
 .TGN_site_ArticleItemtitle {
-  color: #000000;
-  font-family: 'Zilla Slab', 'Georgia', 'serif';
+  color: #000000;font-family: "source-serif-4", serif;
+	font-weight: 900;
+	font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;

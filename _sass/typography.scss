@@ -4,7 +4,7 @@
 //
 body
 {
-  font-family : 'Lora', serif;
+  font-family : 'Lusitana', serif;
   font-style: normal;
   font-weight: 400;
   font-size   : 16px;
@@ -28,7 +28,9 @@ p, ul, ol {
 }
 
 h1 {
-	font-family: 'Zilla Slab', serif;
+	font-family: "source-serif-4", serif;
+	font-weight: 900;
+	font-style: normal;
 	font-size: 3.2em; /* 36px/16px */
 	line-height: 1em;
 	padding: 0.33335em 0; /* 12px/36px * 2 (Use padding instead of margin to maintain proximity with paragraph) */
@@ -72,7 +74,9 @@ p, ul, ol {
 }
 
 h1 {
-	font-family: 'Zilla Slab', serif;
+	font-family: "source-serif-4", serif;
+	font-weight: 900;
+	font-style: normal;
 	font-size: 3.2em; /* 48px/18px */
 	line-height: 1em;
 	padding: 0.25em 0; /* 12px/48px * 2 (Use padding instead of margin to maintain proximity with paragraph) */
