@@ -8,7 +8,7 @@ Ya estamos en 2024, y aunque el año ya ha comenzado, es el momento perfecto par
 
 ## Mi Huella en el Mundo
 
-Al cruzar el umbral de un nuevo año, me encuentro en un momento de reflexión profunda. Con el transcurso de los años, la idea del legado que quiero dejar se vuelve cada vez más importante. 
+Al cruzar el umbral de un nuevo año, y consciente de que nuestras vidas están limitadas a unas 4000 semanas, reflexiono sobre el legado que quiero dejar. Con el transcurso de los años, esta idea se vuelve cada vez más importante. 
 
 No se trata solo de lo que hago o logro, sino de la huella que dejo en el mundo, en las personas y en las comunidades que me rodean. Quiero compartir los aspectos de mi vida que quiero empezar a considerar fundamentales para forjar este legado, aquellos componentes que, a mi parecer, constituyen la esencia de una vida plena y significativa.
 
