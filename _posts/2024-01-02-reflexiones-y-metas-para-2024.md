@@ -4,7 +4,7 @@ tags: [personal]
 header_fullview: runner.jpg
 reviewed: false
 ---
-Ya estamos en 2024, y aunque el año ya ha comenzado, es el momento perfecto para reflexionar, definir mis metas y aspiraciones. Este espacio, que se ha convertido en mi diario personal, me parece el lugar ideal para compartir mis reflexiones, con la esperanza de motivar o ayudar a algún lector que encuentre resonancia en mis palabras.
+Ya estamos en 2024, y aunque el año ya ha comenzado, es el momento perfecto para reflexionar, definir las metas y aspiraciones. Este espacio, que se ha convertido en mi diario personal, me parece el lugar ideal para compartir mis reflexiones, con la esperanza de motivar o ayudar a algún lector que encuentre resonancia en mis palabras.
 
 ## Mi Huella en el Mundo
 
