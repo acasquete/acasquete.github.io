@@ -7,7 +7,7 @@ title: All
 
   {% for post in site.posts %}
   <div class="TGN_site_ArticleItemSearchThumb">
-    <a href="/{{ site.lang }}/{{ post.url }}">
+    <a href="{{ post.url }}">
         <div class="TGN_site_ArticleItemDesktopdate">{{ post.date | date: '%B %e, %Y' }}</div>
         <div class="TGN_site_ArticleItemimage">
           {% if post.header_fullview %}
