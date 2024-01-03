@@ -29,7 +29,6 @@ defaults:
 gems:
   - jekyll-paginate
   - jekyll-sitemap
-  - jekyll-multiple-languages-plugin
 
 # Custom variables
 version: "1.0.0"
@@ -39,5 +38,9 @@ custom_header: false
 custom_nav_footer: false
 reverse: false
 
-languages: ["es", "en"]
-exclude_from_localizations: ["img", "articles", "audio","css","docs","files","fonts","img","js","paintings","tag"]
+languages: ["en", "es"]
+exclude_from_localizations: ["articles", "audio","css","docs","files","fonts","img","js","paintings","tag"]
+defaultLang: en
+languageNames:
+  es: Spanish
+  en: English
