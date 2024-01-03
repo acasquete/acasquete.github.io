@@ -1,12 +1,1 @@
-<footer>
-    <a class="active" href="#">{{ site.languageNames[site.lang] }}</a>
-        {% for lang in site.languageNames %}
-        {% if lang[0] == site.lang %} {% continue %} {% endif %}
-        {% if page.namespace %}
-        <a href="{% tl {{ page.namespace }} {{ lang[0] }} %}">{{ lang[1] }}</a>
-        {% else %}
-        <a href="{{ site.baseurl_root }}/{{ lang[0] }}/">{{ lang[1] }}</a>
-        {% endif %}
-        {% endfor %}
-    
-    <span>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</span></footer>
+<footer><span>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</span></footer>
