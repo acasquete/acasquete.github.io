@@ -9,7 +9,7 @@ title: Home
 
 		{% if forloop.first == true %}
 		<div class="post_hero">
-			<a href="/{{ site.lang }}/{{ post.url }}">
+			<a href="{% if site.baseurl == "/" %}{{ post.url }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}">
 				<div class="post_heroleft">
 				{% if post.header_fullview %}
 				<img src="/img/{{ post.header_fullview }}" >
@@ -42,7 +42,7 @@ title: Home
 
 		{% if forloop.index == 2 or forloop.index == 3 %}
 		<div class="TGN_site_ArticleItem">
-            <a href="/{{ site.lang }}/{{ post.url }}">
+            <a href="{% if site.baseurl == "/" %}{{ post.url }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}">
                 <div class="TGN_site_ArticleItemimage">
 					{% if post.header_fullview %}
 					<img src="/img/{{ post.header_fullview }}">
@@ -74,7 +74,7 @@ title: Home
 
 			{% if forloop.index == 4 or forloop.index == 5 %}
 			<div class="TGN_site_ArticleItem">
-				<a href="/{{ site.lang }}/{{ post.url }}">
+				<a href="{% if site.baseurl == "/" %}{{ post.url }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}">
 					<div class="TGN_site_ArticleItemimage">
 						{% if post.header_fullview %}
 						<img src="/img/{{ post.header_fullview }}">
