@@ -12,7 +12,7 @@ Tengo la sensación de que esta repentina preocupación, por lo menos en esta oc
 
 HTML 5 se presenta como una plataforma para desarrollar aplicaciones web ricas, olvidémonos por lo tanto de asociar exclusivamente HTML 5 con la etiqueta `<video>` que tanto gusta enseñar en las presentaciones. HTML 5 permite, entre otras cosas, crear aplicaciones off-line, ejecución de scripts en paralelo, acceso a base de datos locales, geolocalización, etc. En la tabla que podéis ver a continuación he puesto algunas de estas características y el soporte que hay en las últimas versiones de los principales navegadores.
 
-### Características de HTML 5 soportadas por los distintos navegadores  
+# Características de HTML 5 soportadas por los distintos navegadores  
 
 | Feature       | Chrome | IE9 Beta | FF 4 Beta 6 |  
 |---------------|:------:|:--------:|:----------:|  

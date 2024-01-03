@@ -16,7 +16,7 @@ Para utilizar este módulo solo se tiene que descargar, copiarlo en la carpeta d
 
 Básicamente lo que nos proporciona este módulo es una serie de métodos para actualizar la _tile_, el distintivo (o _badge_) y programar una notificación toast. Esto lo conseguimos a través de estos tres métodos: **updateTile**_, **scheduleToast**_ y **updateBadge**. El asterisco en los métodos updateTile y scheduleToast es el marcador para poner el nombre de una de las plantillas, por ejemplo: **updateTileWideText03** o **scheduleToastImageAndText02**. En MSDN tenemos el listado completo tanto de las [plantillas de tile](http://msdn.microsoft.com/en-us/library/windows/apps/hh761491.aspx), como de [notificaciones de sistema](http://msdn.microsoft.com/es-es/library/windows/apps/hh761494.aspx). Veamos varios ejemplos de cómo pasar el contenido para utilizar estos métodos.
 
-## Actualizar la tile
+# Actualizar la tile
     
 El siguiente script muestra como actualizar la _tile_ utilizando la pantilla [TileWidePeekImageCollection01](http://msdn.microsoft.com/en-us/library/windows/apps/hh761491.aspx#TileWidePeekImageCollection01) que contiene 5 imágenes y 2 líneas de texto. Para cada elemento de texto utilizamos el formato **textN** y para cada elemento de imagen, **imageNsrc**.
 
@@ -57,7 +57,7 @@ Y, por último, para limpiar la tile tenemos el método clearTile();
 Notifications.clearTile();
 ```
 
-## Cambiar el distintivo de la tile
+# Cambiar el distintivo de la tile
     
 Para cambiar el distintivo, tenemos que utilizar el método _updateBadge_. Cómo primer parámetro, podemos pasar un número de 1 al 99 o uno de los siguientes valores para mostrar uno de los glifos predefinidos: activity, alert, available, away, busy, newMessage, paused, playing, unavailable, error, attention. El siguiente _script_ muestra dos ejemplos para actualizar con un número y con el indicador ‘disponible’.
 
@@ -68,7 +68,7 @@ Notifications.updateBadge("available", 10);
 
 El segundo parámetro indica el tiempo de expiración en segundos. Si no pasamos ningún valor, nunca caducará.
 
-## Programar una notificación de sistema
+# Programar una notificación de sistema
     
 Por último, queda mostrar la forma de programar una notificación del sistema. Al igual que con las _tiles_, tenemos un método por tipo de plantilla y el contenido lo establecemos de la misma forma. En el siguiente ejemplo se muestra cómo programar una notificación que se mostrará al cabo de 1 hora (3600 segundos).
 
@@ -81,6 +81,6 @@ Notifications.scheduleToastImageAndText01(
 }, 3600);
 ```
 
-## Resumen
+# Resumen
 
 Aunque todavía queda añadir un poco de funcionalidad, como enviar las dos tiles (cuadrada y ancha) a la vez, cancelar notificaciones o personalizar aún más las notificaciones, este módulo nos facilita la creación de *tiles* y notificaciones para los escenarios más sencillos y es fácilmente modificable para aquellos usuarios que no quieran pelearse con el componente WinRT de NotificationsExtensions.

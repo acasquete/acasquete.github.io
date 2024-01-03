@@ -85,7 +85,7 @@ public string City
 
 Nos ahorramos un poco de código, pero el problema sigue estando ahí, bien presente. El problema lo tenemos, sobre todo, cuando tenemos dependencias de propiedades, es decir, que cuando al establecer el valor a una propiedad, tengamos que actualizar otra. En nuestro ejemplo, cuando actualizamos la propiedad _City_, queremos actualizar la propiedad _FullAddress_, ya que la última depende del valor de la primera. Así que, código duplicado aparte, tenemos que gestionar las dependencias entre propiedades. Algo falla, ¿no?. Sí, pero seguimos y seguimos haciendo este tipo de código como si no tuviésemos alternativa, ¡y tenemos unas cuantas! Vamos a ver una de ellas.
 
-## Simplificando nuestro código con PostSharp
+# Simplificando nuestro código con PostSharp
     
 Después de toda esta parrafada, este es el momento en el que entra en escena la última versión de **PostSharp**. Lo primero que tenemos que hacer es descargar la última versión mediante NuGet. Como he dicho al principio de la entrada, la versión 3 todavía está en _Preview_, así que tenemos que marcar la opción “Include PreRelease” para que nos aparezca en los resultados.
 

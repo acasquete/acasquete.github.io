@@ -1,4 +1,4 @@
-## Relevancias
+# Relevancias
 
 En cuanto a elegir certificaciones relevantes, recomiendo enfocarse en aquellas que complementen tus habilidades actuales y te empujen hacia tus objetivos profesionales. Además, es importante equilibrar el aprendizaje de certificaciones con otras formas de educación y experiencia práctica. Este equilibrio garantiza un desarrollo profesional integral, combinando conocimientos teóricos con habilidades prácticas.
 

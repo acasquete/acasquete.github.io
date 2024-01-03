@@ -46,7 +46,7 @@ var game = (function () {
 
 Aunque por ahora el objeto **game** solo se encarga de redimensionar el canvas, más adelante le daremos otra responsabilidad, la de coordinar y dibujar todos los objetos visibles en pantalla. Si nos fijamos, he declarado la variable Ga*mepad*, que utilizaremos para guardar una instancia del objeto encargado de dibujar el controlador y definirá su comportamiento. Pero no nos adelantemos, todo llegará a su debido tiempo...
         
-## Los vectores y el *Gamepad*
+# Los vectores y el *Gamepad*
 
 Para poder obtener un vector que nos proporcione la dirección, el sentido y la distancia, necesitamos guardar la posición de los 2 puntos del canvas, la posición inicial donde se ha pulsado, y la posición actual del puntero. Para guardar está información nos vamos a apoyar en la siguiente implementación del objeto **vector**.
 
@@ -173,7 +173,7 @@ function onMSPointerDown(e) {
 
 En **onMSPointerDown** establecemos la misma posición en el vector inicial y en actual. Además, establecemos a **true** el valor de a propiedad *isDown* que nos permite saber si seguimos manteniendo un punto de contacto presionado. En el método **onMSPointerMove** solo actualizamos los valores en el vector *currentVector* y calculamos el vector resta que se obtiene restando los componentes de *currentVector* de *startVector*. Por último, en el método **onMSPointerUp** restablecemos el valor de la propiedad *isDown*para indicar que ya no hay puntos de contacto. Con todo esto, tenemos toda la funcionalidad que necesitamos implementada, pero todavía no hemos dibujado nada en el canvas. Veamos cómo hacerlo.
      
-## Dibujando en el canvas
+# Dibujando en el canvas
     
 En el método **draw **dibujamos la dos circunferencias solo si existe algún punto de contacto (*isDown=true*). Además mostramos los valores X e Y del vector resta.
     
@@ -216,7 +216,7 @@ var gameLoop = function () {
     };
 ```
  
-## El truco final
+# El truco final
         
 Para terminar el post, vamos a añadir una pequeña mejora al movimiento del controlador y aprovechamos para hacer un repaso a las matemáticas.
     

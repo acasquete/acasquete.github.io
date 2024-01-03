@@ -126,7 +126,7 @@ if (sessionStateService.SessionState.ContainsKey("users"))
 
 Como vemos, esta última forma poco cambio nos aporta con la que ya veníamos utilizando. El aporte principal que nos da Prism en este aspecto es el uso del atributo **RestorableState** para no tener guardar y recuperar una a una las propiedades del ViewModel.
 
-## Plantillas de proyecto Prism for Windows Runtime
+# Plantillas de proyecto Prism for Windows Runtime
 
 
 Antes he dicho que no quería hacer una introducción, pero no puedo terminar esta entrada sin recomendar (sobre todo para los que no hayáis utilizado nunca Prism) que os bajéis de la Visual Studio Gallery [la colección de plantillas para Visual Studio](http://visualstudiogallery.msdn.microsoft.com/e86649de-2b5e-45bb-bc65-5c6499b92b34) que ha creado David Britch (autor también toda la documentación de Prism) y que están disponibles desde hoy mismo.
@@ -137,7 +137,7 @@ Además de las plantillas de proyecto, tenemos plantillas de elementos que podem
 
 En próximas entradas iré desgranando lo más interesante de esta librería.
 
-## Referencias
+# Referencias
 
 [Manage app lifecycle and state](http://msdn.microsoft.com/en-us/library/windows/apps/hh986968.aspx)  
 [Channel 9: Prism for Windows Store Apps](http://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Prism-for-Windows-Store-Apps)  

@@ -14,15 +14,15 @@ I hope this is not my last post.
 
 ---
 
-## 2005
+# 2005
 ![Blog Header](/img/alex_casquete_header1.gif)  
 ![Blog Header](/img/alex_casquete_header2.gif) 
 ![Blog Header](/img/alex_casquete_header3.gif) 
 
-## 2006
+# 2006
 ![Blog Header](/img/alex_casquete_header4.gif) 
 ![Blog Header](/img/alex_casquete_header5.gif)
 ![Blog Header](/img/alex_casquete_header6.gif) 
 
-## 2014
+# 2014
 ![Blog Header](/img/alex_casquete_header7.gif) 

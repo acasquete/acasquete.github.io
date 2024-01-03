@@ -15,7 +15,7 @@ Creo que prepararse para una certificacion es la única manera de saber si una c
 
 > El valor real de una certificación radica en las horas de estudio, investigación y práctica invertidas antes del examen.
 
-## La fiabilidad de las certificaciones
+# La fiabilidad de las certificaciones
 
 Aunque la certificación acredite conocimientos técnicos, no es garantía de éxito en la implementación de proyectos complejos. Se requiere además experiencia para aplicar esos conocimientos correctamente ante los retos de cada caso particular. Por eso, no deberíamos confiar sólo en las certificaciones a la hora de seleccionar un profesional o partner tecnológico, sino evaluar cuidadosamente el historial de proyectos exitosos que respalden su capacidad para obtener resultados.
 
@@ -29,7 +29,7 @@ Además, la proliferación de bancos de preguntas o *Test-King* y otros métodos
 
 Desde el punto de vista de la preparación para cualquier certificación, los exámenes de práctica pueden proporcionar la ayuda necesaria para familiarizarse con el tipo de examen y preguntas. Como en cualquier otro estudio, memorizar preguntas no desarrollará los conocimientos realmente necesarios. Lo realmente valioso es el conocimiento adquirido, no simplemente lucir nuevas credenciales. Cualquier certificación puede obtenerse con una preparación adecuada, sin utilizar atajos que definitivamente son innecesarios.
 
-## Evaluación mediante Inteligencia Artificial
+# Evaluación mediante Inteligencia Artificial
 
 La aplicación de la inteligencia artificial en el diseño de los procesos de certificación representa una revolución en el campo de la evaluación académica. Ofrece una oportunidad única para hacer obsoletos los métodos de memorización de preguntas y evaluar las habilidades y conocimientos de los estudiantes de una manera más precisa y justa. 
 
@@ -49,7 +49,7 @@ En estos sistemas, existen reglas que determinan cuándo se debe finalizar el ex
 
 Al finalizar, el sistema compara el nivel de habilidad estimado con el criterio de aprobación para determinar el resultado del candidato. Este enfoque optimiza la eficiencia del proceso de evaluación, reduciendo tanto el número de preguntas necesarias como el tiempo requerido para determinar con precisión el nivel de habilidad de un candidato. Sin embargo, la calidad del examen depende de la amplia y representativa base de datos de preguntas. Si esta base de datos no es lo suficientemente diversa o está sesgada, podría afectar la validez de la evaluación.
 
-## ...y llegó la IA Generativa
+# ...y llegó la IA Generativa
 
 En un momento donde la IA generativa esta impactando en todos los campos, muy pronto deberíamos verlo aplicado en los exámenes de certificacion. La integración con sistemas CAT promete transformar y mejorar la evaluación, a la vez que ofrece métodos efectivos para combatir el fraude. Además, tiene el potencial de redefinir los exámenes como herramientas fiables para validar verdaderamente las habilidades y conocimientos de los candidatos. Algunas de sus aplicaciones más prometedoras incluyen:
 
@@ -61,7 +61,7 @@ En un momento donde la IA generativa esta impactando en todos los campos, muy pr
 
 La aplicación de la inteligencia artificial en el ámbito de los exámenes de certificación promete no solo combatir el fraude de manera efectiva, sino también elevar el estándar de las evaluaciones, asegurando que los exámenes cumplan su propósito fundamental: validar de forma fiable y justa las capacidades de los candidatos.
 
-## Reimaginar la experiencia
+# Reimaginar la experiencia
 
 Reflexionar sobre el valor de las certificaciones, especialmente en el ámbito de la tecnología, es crucial en un momento donde la actualización constante son fundamentales. 
 
@@ -71,7 +71,7 @@ A pesar de los desafíos que implica implementar estos cambios, es necesario ado
 
 Al reimaginar esta experiencia, estamos dando un paso hacia un futuro donde las certificaciones no solo sean una formalidad, sino una verdadera garantía de conocimientos y competencias, algo que lamentablemente hoy no son.
 
-### Referencias
+# Referencias
 
 https://www.imsglobal.org/spec/cat/v1p0/impl#h.lnm1z460a08b
 https://www.itprotoday.com/compute-engines/adaptive-testing

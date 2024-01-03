@@ -266,7 +266,7 @@ Finalizando, de momento...
     
 Con todo lo anterior ya tenemos todo lo necesario para poner en marcha la aplicaci&oacute;n. Si ejecutamos la p&aacute;gina desde varios navegadores o varias pesta&ntilde;as veremos c&oacute;mo podemos pintar sobre el lienzo y que cada trazo se pinta en cada uno de los clientes conectados. &iexcl;No est&aacute; mal! Pero esto es solo el principio, la verdad que pintar en un color o con un solo grosor tiene poca gracia. Adem&aacute;s los clientes solo ven el dibujo desde el momento que se conectan, no desde que se conect&oacute; el primero. Y... &iquest;qu&eacute; pasar&aacute; cuando tengamos 10 usuarios conectados? &iquest;Y 100? &iquest;Y 10000? Todo esto lo veremos en pr&oacute;ximas entradas.
     
-### Pero... &iquest;y Windows 8?
+# Pero... &iquest;y Windows 8?
  
 Pues s&iacute;, he dicho que era una aplicaci&oacute;n para **Windows 8**, pero de momento ni rastro de &eacute;l. Todo lo que hemos visto hasta ahora funciona en cualquier navegador web que soporte WebSockets. Lo bueno de esto es que si funciona en IE10, significa que todo el c&oacute;digo de cliente lo podemos trasladar a una aplicaci&oacute;n para Windows 8 (*Windows Store App*) y funcionar&aacute; de la misma forma. Sin embargo, tenemos que tener en cuenta ciertos aspectos que s&oacute;lo nos encontramos en las aplicaciones de Windows 8.
     

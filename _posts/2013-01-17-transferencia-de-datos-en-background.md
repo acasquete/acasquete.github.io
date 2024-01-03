@@ -12,7 +12,11 @@ Como ya expliqué en un [post](/procesos-en-background-en-aplicaciones-metro-con
 * Actualización periódicas de *tiles*. 
 * Notificaciones programadas y *push*. 
 
-Adicionalmente a estos escenarios, si la operación que queremos hacer es distinta a las anteriores, tenemos la posibilidad de ejecutar código de nuestra aplicación incluso cuando la aplicación no está en ejecución a través de las tareas de background. En esta entrada y durante las siguientes de este mes vamos a ir examinando cada uno de estos escenarios, comenzando por el funcionamiento de la API para la transferencia de datos en segundo plano. ## API Windows.Networking.BackgroundTransfer Todas las clases para utilizar las funcionalidades para la transferencia de datos en segundo plano se encuentran incluidas dentro en el namespace **Windows.Networking.BackgroundTransfer**. Las clases principales a utilizar serán **BackgroundDownloader** y **BackgroundUploader** que nos servirán para configurar la operación de carga y descarga. En el siguiente ejemplo iniciamos la descarga de un fichero utilizando el método **createDownload** al que pasamos la URI del fichero a descargar y el fichero (*IStorageFile*) donde se guardará. Este método nos devuelve un objeto **DownloadOperation **que podremos utilizar para iniciar la descarga mediante método *StartAsync*. 
+Adicionalmente a estos escenarios, si la operación que queremos hacer es distinta a las anteriores, tenemos la posibilidad de ejecutar código de nuestra aplicación incluso cuando la aplicación no está en ejecución a través de las tareas de background. En esta entrada y durante las siguientes de este mes vamos a ir examinando cada uno de estos escenarios, comenzando por el funcionamiento de la API para la transferencia de datos en segundo plano. 
+
+# API Windows.Networking.BackgroundTransfer
+
+Todas las clases para utilizar las funcionalidades para la transferencia de datos en segundo plano se encuentran incluidas dentro en el namespace **Windows.Networking.BackgroundTransfer**. Las clases principales a utilizar serán **BackgroundDownloader** y **BackgroundUploader** que nos servirán para configurar la operación de carga y descarga. En el siguiente ejemplo iniciamos la descarga de un fichero utilizando el método **createDownload** al que pasamos la URI del fichero a descargar y el fichero (*IStorageFile*) donde se guardará. Este método nos devuelve un objeto **DownloadOperation **que podremos utilizar para iniciar la descarga mediante método *StartAsync*. 
 
 ```js
 var download = null; 
@@ -29,7 +33,11 @@ function downloadFile(uriString) {
     };
 ```
 
-Un detalle importante de este código es que estamos guardando a nivel de módulo tanto el objeto *DownloadOperation* como la promise que devuelve startAsync. Esto nos será útil cuando queramos cancelar, pausar o reanudar la descarga. ## Mostrar el progreso de transferencia El método startAsync devuelve una promise que nos informa de cuando ha finalizado con éxito, cuando ha fallado y el progreso de la transferencia. En la función de progreso, podemos obtener el estado del progreso mediante la propiedad *progress *del objeto *DownloadOperation. *Entre otra información, podemos obtener la tamaño total de la transferencia (*totalBytesToReceive*) y los bytes recibidos (*bytesReceived*). En el ejemplo siguiente utilizamos esta información para mostrarla mediante un control *progressBar*.
+Un detalle importante de este código es que estamos guardando a nivel de módulo tanto el objeto *DownloadOperation* como la promise que devuelve startAsync. Esto nos será útil cuando queramos cancelar, pausar o reanudar la descarga. 
+
+# Mostrar el progreso de transferencia 
+
+El método startAsync devuelve una promise que nos informa de cuando ha finalizado con éxito, cuando ha fallado y el progreso de la transferencia. En la función de progreso, podemos obtener el estado del progreso mediante la propiedad **progress** del objeto **DownloadOperation**. Entre otra información, podemos obtener la tamaño total de la transferencia (*totalBytesToReceive*) y los bytes recibidos (*bytesReceived*). En el ejemplo siguiente utilizamos esta información para mostrarla mediante un control *progressBar*.
 
 ```js
 function progress() {

@@ -61,7 +61,7 @@ Así que si pasamos este valor (Microsoft.SkypeApp\_kzf8qxf38zg5c!App) al métod
 Espero que os sea de utilidad si os encontráis con alguna de esas situaciones raras.
 
 
-## Referencias
+# Referencias
 
 [IApplicationActivationManager interface (Windows)](IApplicationActivationManager%20interface%20(Windows))  
 [Windows Desktop Development Forums](http://social.msdn.microsoft.com/Forums/en-US/windowsgeneraldevelopmentissues/thread/11e5a9ae-3497-4a0a-92ac-d409ccf3d2a3/)  

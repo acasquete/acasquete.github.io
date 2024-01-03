@@ -37,7 +37,7 @@ Para que todo esto funcione, tenemos que llamar a la funci&oacute;n **WinJS.Bind
 WinJS.Binding.processAll(document.body, data);
 ```
 
-## Creando el modo Two-way
+# Creando el modo Two-way
     
 Hasta aqu&iacute; nada nuevo, hemos descrito el comportamiento normal del enlace a datos con WinJS. Si modificamos desde JS el contenido de la propiedad *name, *el nuevo valor se ver&aacute; actualizado en todos los controles en los que se est&eacute; utilizando.
     
@@ -74,7 +74,7 @@ De esta forma podremos aplicarlo en la declaraci&oacute;n del enlace a datos en 
 
 Si ahora escribimos en el campo de texto y cambiamos de control, el valor se actualizará en el modelo JavaScript y en todos los elementos en los que la propiedad este enlazada.
 
-## Referencias
+# Referencias
 
 [Deep dive into WinJS](http://channel9.msdn.com/Events/Build/2012/4-101)  
 [Data Binding in a Windows Store App with JavaScript](http://msdn.microsoft.com/en-us/magazine/jj651576.aspx)  

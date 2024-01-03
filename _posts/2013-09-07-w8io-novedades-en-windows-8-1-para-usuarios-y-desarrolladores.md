@@ -11,7 +11,7 @@ Como siempre, quiero agradecer a [@midesweb](http://www.twitter.com/midesweb) po
 
 En cuanto a la pequeña rencilla que tenemos con la fecha de salida, confirmar que Microsoft comenzará el despliegue de Windows 8.1 a través de la Windows Store el próximo 17 de octubre a la 1 de la tarde, hora española. Y como ya comentamos en directo, la actualización será gratuita y para los usuarios de dispositivos con Windows 8 y Windows RT.
 
-### Enlaces
+# Enlaces
 
 [Mark your calendars for Windows 8.1!](http://blogs.windows.com/windows/b/bloggingwindows/archive/2013/08/14/mark-your-calendars-for-windows-8-1.aspx)
 

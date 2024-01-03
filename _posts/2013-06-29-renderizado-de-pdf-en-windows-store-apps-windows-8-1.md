@@ -187,7 +187,7 @@ He dejado el código completo del ejemplo de esta entrada en:
 Recordad que esta solución solo funciona con Windows 8.1 y Visual Studio 2013 Preview.
 
 
-## Referencias
+# Referencias
 
 [PDF viewer showcase sample (Windows 8.1)](http://code.msdn.microsoft.com/windowsapps/PDF-viewer-showcase-sample-39ced1e8)  
 [Windows.Data.Pdf namespace](http://msdn.microsoft.com/en-us/library/windows/apps/windows.data.pdf.aspx)

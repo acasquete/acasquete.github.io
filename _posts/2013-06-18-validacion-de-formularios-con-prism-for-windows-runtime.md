@@ -71,7 +71,7 @@ La _attached property_ **PropertyErrors** está enlazada con la propiedad Errors
 
 Esta es la implementación sencilla, la más básica. Pero la realidad es que en las aplicaciones reales, al final las validaciones simples son las menos frecuentes.
 
-## Validando propiedades dependientes
+# Validando propiedades dependientes
 
 Lo normal es que tengamos validaciones en un campo que dependen del valor de otro campo. El ejemplo típico es el de fecha inicio y fecha fin, donde la final no puede ser inferior a la inicial. En el siguiente ejemplo voy a utilizar otro caso bastante habitual, voy a añadir al modelo las propiedades **Country** e **IBAN**, que nos servirán para guardar la nacionalidad y el número de cuenta internacional. La característica del IBAN es que comienza con dos caracteres que corresponden al código de país, así que vamos a añadir la validación para que verifique que el código comienza con el código correcto de país. No voy a implementar toda la validación de IBAN, porque para este post carece de interés.
 
@@ -113,7 +113,7 @@ public static ValidationResult ValidateIBAN(object value, ValidationContext vali
 
 El parámetro **ValidationContext** nos permite acceder a la instancia del modelo para obtener el valor de otra propiedad, en este caso de la propiedad _CountryCode_. Si la validación es correcta, devolvemos un **ValidationResult.Success** y si es incorrecta, una nueva instancia de **ValidationResult** pasando el mensaje de validación.
 
-## Suspendiendo y reanudando el estado de las validaciones
+# Suspendiendo y reanudando el estado de las validaciones
     
 Otro tema tan importante como el poder validar los campos de un formulario es que esas validaciones sobrevivan a una suspensión y finalización de la aplicación. Veamos como hacerlo.
 
@@ -156,13 +156,13 @@ public override void OnNavigatedTo(object navigationParameter, NavigationMode na
 
 En este caso, primero estamos obteniendo la colección de errores mediante **RetrieveEntityStateValue** y lo establecemos en el **BindableValidator** mediante el método **SetAllErrors**.
 
-## Conclusión
+# Conclusión
 
 
 En esta entrada hemos vistos dos aspectos importantes que tenemos que tener en cuenta para añadir validaciones en formulario. Por un lado, hemos visto que haciendo uso de la clase **ValidatableBindableBase**, los atributos de **DataAnotation** y el _behavior_ **HighlightFormFieldOnErrors** podemos añadir fácilmente validaciones en campos y que podemos seguir utilizando el atributo **CustomValidator** para crear validaciones personalizas. Hemos visto también cómo guardar el estado de las validaciones mediante los métodos de la clase **ValidatableBindableBase** para que se pueda restaurar si la aplicación es finalizada.
 
 
-## Referencias
+# Referencias
 
 
 [Validating user input in AdventureWorks Shopper](http://msdn.microsoft.com/en-us/library/windows/apps/xx130659.aspx)

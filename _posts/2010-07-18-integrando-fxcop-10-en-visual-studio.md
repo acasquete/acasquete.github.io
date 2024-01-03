@@ -24,7 +24,7 @@ Para automatizar este proceso he creado un _script_ que registra **FxCop** como 
 
 Para completar la integración, podemos [personalizar el menú contextual](http://msdn.microsoft.com/es-es/library/ms241445(VS.80).aspx) del proyecto añadiendo un comando que ejecute una herramienta externa, en este caso, FxCop. De esta forma, podremos lanzar el análisis de código directamente desde el explorador de la solución.
 
-#### Evento de compilación
+# Evento de compilación
 
 Otra forma de integrar **FxCop** es especificando un evento de generación. Simplemente tenemos que añadir la siguiente línea de comando en el evento _Post-Build_ de nuestro proyecto:
 

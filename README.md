@@ -10,7 +10,7 @@ sudo apt-get install ruby2.2-dev
 2. Install bundle: `sudo gem install bundler`
 3. Install jekyll: `sudo gem install jekyll`
 
-### Resources
+# Resources
 
 - We found the jekyll tutorials on youtube very quick and useful to get started
 - [Jekyll documentation](http://jekyllrb.com)   

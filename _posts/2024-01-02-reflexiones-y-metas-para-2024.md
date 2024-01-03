@@ -6,7 +6,7 @@ reviewed: false
 ---
 Ya estamos en 2024, y aunque el año ya ha comenzado, es el momento perfecto para reflexionar, definir las metas y aspiraciones. Este espacio, que se ha convertido en mi diario personal, me parece el lugar ideal para compartir mis reflexiones, con la esperanza de motivar o ayudar a algún lector que encuentre resonancia en mis palabras.
 
-## Mi Huella en el Mundo
+# Mi huella en el mundo
 
 Al cruzar el umbral de un nuevo año, y consciente de que nuestras vidas están limitadas a unas 4000 semanas, reflexiono sobre el legado que quiero dejar. Con el transcurso de los años, esta idea se vuelve cada vez más importante. 
 
@@ -26,7 +26,7 @@ No se trata solo de lo que hago o logro, sino de la huella que dejo en el mundo,
 
 **Documentar experiencias**. Planeo llevar un registro escrito de mis pensamientos e ideas, tal vez a través de este blog. 
 
-## Objetivos para 2024
+# Objetivos para 2024
 
 A medida que nos adentramos en el 2024, es esencial establecer metas claras y definidas. Este año representa un lienzo en blanco, lleno de oportunidades para crecer, aprender y superar nuevos desafíos. Aquí están mis objetivos principales para este año:
 
