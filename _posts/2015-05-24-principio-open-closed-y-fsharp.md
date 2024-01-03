@@ -74,8 +74,7 @@ val it : int = 4
 val it : int = -4
 ```
 
-Aumento de tipo
----------------
+# Aumento de tipo
 
 En [entradas anteriores](/uniones-discriminadas-y-jerarquia-de-objetos/) vimos como en F# podemos añadir funciones adjuntas a las **uniones discriminadas** y a los **_record types_**. En el ejemplo siguiente se muestra la declaración de un _record type_ con la función **area** adjunta.
 
