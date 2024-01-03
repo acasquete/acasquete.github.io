@@ -1,5 +1,5 @@
 ---
 layout: tagpage
-title: "Personal posts"
+title: "Personal Corner"
 tag: personal
 ---

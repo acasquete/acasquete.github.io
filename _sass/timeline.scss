@@ -1,4 +1,4 @@
-$gray: #dddddd;
+$gray: #d6cec3;
 
 .container {
   
@@ -17,8 +17,8 @@ $gray: #dddddd;
     content: '';
     position: absolute;
     height: 100%;
-    width: 5px;
-    background: black;
+    width: 3px;
+    background: $accent-color;
     left: 0;
   }
   
@@ -29,7 +29,7 @@ $gray: #dddddd;
     text-align: center;
     position: relative;
     clear: both;
-    font-family: sans-serif;
+    font-family: "source-serif-4", serif;
     font-size: 1.5em;
     font-style: italic;
     line-height: 1em;
@@ -52,11 +52,19 @@ $gray: #dddddd;
     padding: 0 1em;
     margin-bottom: 0;
     position: relative;
+    border-radius: 15px;
+    background-size: cover;
+
+    .description {
+      color: #fff;
+      background-color: #fffc;
+    }
+    
 
     &.mono {
       background: none;
       text-align: right;
-      font-style: italic;
+      font-style: normal;
       font-family: monospace;
     }
     
@@ -64,7 +72,7 @@ $gray: #dddddd;
       content: '';
       width: 70px;
       height: 0;
-      border-top: 3px dashed black;
+      border-top: 3px dashed $accent-color;
       position: absolute;
       left: -4.5em;
       top: 24px;
@@ -72,8 +80,22 @@ $gray: #dddddd;
   }
   
   h3 {
-    margin-top: 0;
-    line-height: 1.3em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: 0;
+    font-family: "source-serif-4", serif;
+    padding: 0;
+    list-style: 0.8em;
+    display: inline-block;
+    border-radius:  15px;
+
+
+    &.bk {
+      background-color: #0005;
+      color: #fff;
+      padding: 0 10px;
+    }
+
   }
 
   p {
@@ -85,7 +107,7 @@ $gray: #dddddd;
   }
 
   .aquamarine {
-    background-color: aquamarine !important;
+    background-color: #b2a590 !important;
   } 
 }
 
@@ -118,7 +140,7 @@ $gray: #dddddd;
       float: left;
       
       &:before {
-        border-top: 3px dashed black;
+        border-top: 2px dashed $accent-color;
         right: -4.5em;
         left: auto;
 
