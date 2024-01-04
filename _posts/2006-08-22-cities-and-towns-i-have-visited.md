@@ -4,7 +4,7 @@ tags: [personal]
 reviewed: true
 header_fullview: world-map-2.jpg
 ---
-Using the Google Maps API, I have created this map where I have marked (and will continue to mark) all the cities and towns I have visited and spent at least one night.
+Discover my journey through the Google Maps API: a map where I've marked every city and town where I've spent at least one night. This map is more than just locations; it's a story of my travels, a visual diary of the places I've explored. Follow along as I continue to add new destinations, each with its own unique tale.
 
 <div id="map" style="width:100%; height: 400px"></div>
 
