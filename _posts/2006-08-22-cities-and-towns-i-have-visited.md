@@ -10,13 +10,12 @@ Discover my journey through the Google Maps API: a map where I've marked every c
 
 <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHq3yNM4mSpvgccI8wNdXMVoI8j_dKKKk&callback=initMap&v=weekly" async></script>
-    
 <script>
 let map;
 
 function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
-    center: { lat: 41.371672, lng: 2.130554 },
+    center: { lat: 47.603832, lng: -122.330062 },
     
     zoom: 6,
   });
