@@ -1,5 +1,5 @@
 ---
-title: Cities and towns I have visited
+title: My Global Footprint
 tags: [personal]
 reviewed: true
 header_fullview: world-map-2.jpg
