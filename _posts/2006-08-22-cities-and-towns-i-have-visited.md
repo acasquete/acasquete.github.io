@@ -1,9 +1,10 @@
 ---
-title: Ciudades y pueblos donde he estado
+title: Cities and towns I have visited
 tags: [personal]
 reviewed: true
+header_fullview: world-map-2.jpg
 ---
-Aprovechando la API de Google Maps he creado este mapa donde he marcado (y seguiré marcando) todas las ciudades y pueblos que he visitado.
+Using the Google Maps API, I have created this map where I have marked (and will continue to mark) all the cities and towns I have visited and spent at least one night.
 
 <div id="map" style="width:100%; height: 400px"></div>
 
