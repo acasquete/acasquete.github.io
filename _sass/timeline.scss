@@ -33,8 +33,6 @@ $gray: #d6cec3;
     font-size: 1.5em;
     font-style: italic;
     line-height: 1em;
-
-
   }
 
   h2.primary {
@@ -48,7 +46,6 @@ $gray: #d6cec3;
   }
   
   .item {
-
     position: relative; 
     display: block; 
     margin-top: 10px; 
@@ -58,7 +55,6 @@ $gray: #d6cec3;
     min-height: 80px;
     border-radius: 15px;
     background-size: cover;
-    
 
     img {
       display: block; 
@@ -66,9 +62,9 @@ $gray: #d6cec3;
       height: 10em;
       overflow: hidden;
       border-radius: 15px;
-      border: 2px solid #d6cec3;
       object-fit: cover;
       margin-bottom: 0;
+      border: 1px solid #d6cec3;
     }
 
     .item-label {
@@ -78,7 +74,7 @@ $gray: #d6cec3;
       font-weight: bold;
       padding: 2px 15px;
       position: absolute;
-      top: 8px; /* Ajusta este valor para que la etiqueta 'sobresalga' del contenedor */
+      top: 8px; 
       text-transform: uppercase;
       border-radius: 3px;
       font-size: 20px;
