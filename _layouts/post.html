@@ -24,6 +24,12 @@ comments: true
 		{% endif %}
 
 		{{ content }}
+
+		{% if page.ia == true %}
+		<div class="underreview">
+			<strong>Nota sobre el uso de IA:</strong> Este artículo ha sido desarrollado principalmente por el autor, utilizando herramientas de inteligencia artificial de manera limitada para la estructuración del contenido. Todas las opiniones, análisis y reflexiones son del autor.
+		</div>
+		{% endif %}
 		
 	</div>
 
