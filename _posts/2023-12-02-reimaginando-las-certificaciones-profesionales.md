@@ -3,7 +3,7 @@ title: Reimaginando las certificaciones profesionales
 tags: [personal, certification]
 header_image: close-up-people-with-thumbs-up.jpg
 image_copyright: https://www.freepik.com/free-photo/close-up-people-with-thumbs-up_15501126.htm
-reviewed: false
+reviewed: true
 ---
 Siempre he creído que el verdadero valor de las certificaciones va más allá de añadir una línea al currículum. <!-- excerpt-end --> A lo largo de mi carrera, he conocido profesionales excepcionales con grandes conocimientos, tanto con certificaciones como sin ellas. Esto evidencia que, por sí mismas, las certificaciones no son necesarias para garantizar conocimientos o habilidades. Además, muchas de las certificaciones han perdido la credibilidad que tenían hace unos años. Ahora estamos en el momento perfecto para reimaginar cómo debería ser el proceso de certificación para recuperar esa credibilidad perdida y para mejorar la efectividad en la evaluación de conocimientos.
 
@@ -73,9 +73,9 @@ Al reimaginar esta experiencia, estamos dando un paso hacia un futuro donde las 
 
 # Referencias
 
-https://www.imsglobal.org/spec/cat/v1p0/impl#h.lnm1z460a08b
-https://www.itprotoday.com/compute-engines/adaptive-testing
-https://news.microsoft.com/1999/01/25/microsoft-unveils-innovative-testing-technology-to-simulate-work-environment/
-https://nursing.uworld.com/blog/nclex-computer-adaptive-test/
-https://www.nclex.com/computerized-adaptive-testing.page#:~:text=How%20CAT%20Works,all%20of%20their%20previous%20responses.
-https://ieeexplore.ieee.org/document/9458219
+- [IMS Global Learning Consortium. (n.d.). *IMS Global computer adaptive testing* (CAT) 1.0 specification.](https://www.imsglobal.org/spec/cat/v1p0/impl#h.lnm1z460a08b)
+-  [Berntsen, J. (2021, June 17). *Understanding adaptive testing: Benefits and challenges*. IT Pro Today.](https://www.itprotoday.com/compute-engines/adaptive-testing)
+-  [Microsoft. (1999, January 25). *Microsoft unveils innovative testing technology to simulate work environment*. Microsoft News Center.](https://news.microsoft.com/1999/01/25/microsoft-unveils-innovative-testing-technology-to-simulate-work-environment/)
+-  [UWorld Nursing. (2022, February 14). *NCLEX computer adaptive test: How does it work?*. UWorld Nursing Blog.](https://nursing.uworld.com/blog/nclex-computer-adaptive-test/)
+-  [NCLEX. (n.d.). *How CAT works*. NCLEX.com.](https://www.nclex.com/computerized-adaptive-testing.page#:~:text=How%20CAT%20Works,all%20of%20their%20previous%20responses)
+-  [Jin, X., Zhao, J., & Li, Z. (2021). Research on computer adaptive testing and its application. *IEEE Xplore*.](https://ieeexplore.ieee.org/document/9458219)
