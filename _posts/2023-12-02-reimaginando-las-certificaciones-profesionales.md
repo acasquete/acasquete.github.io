@@ -73,9 +73,9 @@ Al reimaginar esta experiencia, estamos dando un paso hacia un futuro donde las 
 
 # Referencias
 
-- [IMS Global Learning Consortium. (n.d.). *IMS Global computer adaptive testing* (CAT) 1.0 specification.](https://www.imsglobal.org/spec/cat/v1p0/impl#h.lnm1z460a08b)
--  [Berntsen, J. (2021, June 17). *Understanding adaptive testing: Benefits and challenges*. IT Pro Today.](https://www.itprotoday.com/compute-engines/adaptive-testing)
--  [Microsoft. (1999, January 25). *Microsoft unveils innovative testing technology to simulate work environment*. Microsoft News Center.](https://news.microsoft.com/1999/01/25/microsoft-unveils-innovative-testing-technology-to-simulate-work-environment/)
--  [UWorld Nursing. (2022, February 14). *NCLEX computer adaptive test: How does it work?*. UWorld Nursing Blog.](https://nursing.uworld.com/blog/nclex-computer-adaptive-test/)
--  [NCLEX. (n.d.). *How CAT works*. NCLEX.com.](https://www.nclex.com/computerized-adaptive-testing.page#:~:text=How%20CAT%20Works,all%20of%20their%20previous%20responses)
--  [Jin, X., Zhao, J., & Li, Z. (2021). Research on computer adaptive testing and its application. *IEEE Xplore*.](https://ieeexplore.ieee.org/document/9458219)
+[IMS Global Learning Consortium. (n.d.). *IMS Global computer adaptive testing* (CAT) 1.0 specification.](https://www.imsglobal.org/spec/cat/v1p0/impl#h.lnm1z460a08b)  
+[Berntsen, J. (2021, June 17). *Understanding adaptive testing: Benefits and challenges*. IT Pro Today.](https://www.itprotoday.com/compute-engines/adaptive-testing)  
+[Microsoft. (1999, January 25). *Microsoft unveils innovative testing technology to simulate work environment*. Microsoft News Center.](https://news.microsoft.com/1999/01/25/microsoft-unveils-innovative-testing-technology-to-simulate-work-environment/)  
+[UWorld Nursing. (2022, February 14). *NCLEX computer adaptive test: How does it work?*. UWorld Nursing Blog.](https://nursing.uworld.com/blog/nclex-computer-adaptive-test/)  
+[NCLEX. (n.d.). *How CAT works*. NCLEX.com.](https://www.nclex.com/computerized-adaptive-testing.page#:~:text=How%20CAT%20Works,all%20of%20their%20previous%20responses)  
+[Jin, X., Zhao, J., & Li, Z. (2021). Research on computer adaptive testing and its application. *IEEE Xplore*.](https://ieeexplore.ieee.org/document/9458219)  
