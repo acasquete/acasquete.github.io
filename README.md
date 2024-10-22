@@ -24,5 +24,10 @@ sudo gem install jekyll-sitemap
 
 ```
 
+## Execute
+```
+bundle exec jekyll serve
+```
+
 ## License
 Released under [MIT License](license.md).
