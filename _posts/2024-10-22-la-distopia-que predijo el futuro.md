@@ -14,8 +14,12 @@ Una de las cosas que más me llama la atención de *Un mundo feliz* es cómo Hux
 ## El uso de la tecnología para el control social
 En la actualidad, el uso de la tecnología para el seguimiento y el control social es un tema que preocupa cada vez más. El acceso masivo a datos personales a través de redes sociales, dispositivos móviles y otras tecnologías recuerda el control que ejercen las autoridades en *Un mundo feliz*. Aunque en la novela no hay un sistema de vigilancia al estilo de Orwell, el control social se ejerce a través del condicionamiento desde la infancia y la manipulación genética. En la vida moderna, el uso del big data y los algoritmos puede influir en nuestro comportamiento diario, desde qué anuncios vemos hasta qué noticias leemos, lo que en cierto modo refleja el tipo de control indirecto que Huxley planteó en su distopía.
 
+> "Vivimos en una era donde muchas personas pasan horas navegando por contenido fugaz, sin detenerse a profundizar o cuestionar."
+
 ## La adicción al entretenimiento superficial
 Otro aspecto que resuena con fuerza es la obsesión por el entretenimiento superficial. En *Un mundo feliz*, los ciudadanos se distraen constantemente con espectáculos y placeres sensoriales diseñados para mantenerlos complacidos e indiferentes ante las realidades más profundas. Hoy en día, las redes sociales, los videojuegos y las plataformas de contenido de fácil consumo (como TikTok o Instagram) pueden verse como equivalentes modernos de los *feelies* que aparecen en la novela, donde las personas buscan satisfacción inmediata y una constante evasión de la realidad.
+
+
 
 Vivimos en una era donde muchas personas pasan horas navegando por contenido fugaz, sin detenerse a profundizar o cuestionar. Esta sobrecarga de estímulos y entretenimiento está diseñada para ser adictiva, algo que recuerda el uso del *soma* en la novela, donde las personas se automedican para evitar cualquier forma de malestar emocional. En este sentido, Huxley parece haber anticipado cómo el entretenimiento masivo podría ser utilizado para distraernos de los problemas más graves que enfrenta la sociedad.
 
@@ -35,6 +39,8 @@ Otro de los temas que aparece en el "mundo feliz" de Huxley son las relaciones s
 
 ## La estabilidad sobre la libertad
 Quizás uno de los temas más inquietantes de la novela es el sacrificio de la libertad personal a cambio de la estabilidad social. En la sociedad de Huxley, la libertad de pensamiento, expresión y acción ha sido eliminada para mantener una paz y estabilidad constantes. En nuestra era, la seguridad y la estabilidad social a menudo se discuten en relación con la libertad personal. Durante crisis globales, como la pandemia de COVID, vimos cómo gobiernos de todo el mundo tomaron medidas restrictivas en nombre de la salud pública, lo que generó debates sobre hasta qué punto es aceptable ceder libertades individuales por el bien común.
+
+> "La búsqueda de la comodidad y el placer ha reemplazado la libertad, la creatividad y la emoción humana genuina."
 
 ## El poder de una advertencia atemporal
 *Un mundo feliz* es mucho más que una simple novela de ciencia ficción. Es una advertencia profunda sobre el futuro de la humanidad. Huxley nos muestra un mundo donde la búsqueda de la comodidad y el placer ha reemplazado la libertad, la creatividad y la emoción humana genuina. Y lo más inquietante de todo es que muchos de los elementos de esa distopía futurista resuenan con las tendencias actuales de nuestra sociedad.
