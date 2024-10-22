@@ -5,7 +5,7 @@ header_image: un-mundo-feliz-3dcover.jpg
 reviewed: true
 ai: true
 ---
-**No deja de sorprenderme cuando alguien es capaz de anticipar el futuro con tanta exactitud**. *Un mundo feliz*, de Aldous Huxley, es uno de esos libros que, a pesar de haber sido escrito en 1932, parece anticipar muchas de las cuestiones que enfrentamos hoy. Esta vez, he aprovechado para volver a él en formato audiolibro mientras entreno, lo que me ha permitido sumergirme en su mundo de una manera diferente. Aun así, la intensidad de su mensaje sigue siendo tan impactante como cuando lo leí por primera vez.
+**No deja de sorprenderme cuando alguien es capaz de anticipar el futuro con tanta exactitud**. *Un mundo feliz*, de Aldous Huxley, es uno de esos libros que, a pesar de haber sido escrito en 1932, parece anticipar muchas de las cuestiones que enfrentamos hoy.<!-- excerpt-end --> Esta vez, he aprovechado para volver a él en formato audiolibro mientras entreno, lo que me ha permitido sumergirme en su mundo de una manera diferente. Aun así, la intensidad de su mensaje sigue siendo tan impactante como cuando lo leí por primera vez.
 
 Huxley imagina un mundo futurista donde el control social es total, disfrazado bajo una apariencia de felicidad. Los seres humanos son creados en laboratorios y condicionados desde su nacimiento para ocupar roles preestablecidos en una jerarquía rígida. Las familias, la religión, el arte y hasta el sufrimiento han sido eliminados para garantizar la estabilidad. A cambio, los ciudadanos reciben placeres superficiales, como el consumo desenfrenado y una droga llamada *soma* que asegura que nadie experimente emociones negativas.
 
