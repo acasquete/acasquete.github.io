@@ -2,7 +2,6 @@
 title: Los riesgos de la delegación automática
 tags: [personal, readings]
 header_image: dashboard-rules-cheating.jpg
-image_copyright: https://www.freepik.com/free-photo/close-up-people-with-thumbs-up_15501126.htm
 reviewed: false
 ai: true
 ---
