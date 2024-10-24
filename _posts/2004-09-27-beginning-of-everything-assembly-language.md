@@ -1,6 +1,6 @@
 ---
 title: The beginning of everything, the assembly language
-tags: [personal, english]
+tags: [personal, english, readings]
 reviewed: true
 header_image: art-assembly-3dcover.jpg
 ---

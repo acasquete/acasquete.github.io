@@ -1,6 +1,6 @@
 ---
 title: Apocalypse Now y su literatura
-tags: [personal]
+tags: [personal, readings]
 reviewed: true
 header_image: corazon-tinieblas-3dcover.jpg
 ---

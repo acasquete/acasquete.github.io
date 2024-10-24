@@ -1,4 +1,5 @@
 allowed-tags:
+  - readings
   - random
   - personal
   - english
@@ -26,3 +27,4 @@ allowed-tags:
   - certification
   - mvvm
   - algorithms
+  
