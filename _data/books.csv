@@ -1,84 +1,83 @@
-title,author,length,recommended_format
-La vida es sueño,Pedro Calderón de la Barca,corto,Libro
-Crimen y castigo,Fiodor Dostoievski,largo,Audiolibro
-Oliver Twist,Charles Dickens,largo,Audiolibro
-Trampa 22,Joseph Heller,largo,Libro
-Stoner,John Williams,largo,Libro
-Adiós a las armas,Ernest Hemingway,largo,Audiolibro
-El crepúsculo de los ídolos,Friedrich Nietzsche,corto,Libro
-20.000 leguas de viaje submarino,Julio Verne,largo,Audiolibro
-El señor de los anillos,J.R.R. Tolkien,largo,Audiolibro
-Los cinco,Enid Blyton,corto,Libro
-Saga Harry Potter,J.K. Rowling,largo,Audiolibro
-Torres de Malory,Enid Blyton,corto,Libro
-Al este del Edén,John Steinbeck,largo,Audiolibro
-Alicia en el País de las Maravillas,Lewis Carroll,corto,Libro
-Matar a un ruiseñor,Harper Lee,corto,Libro
-El señor de las moscas,William Golding,corto,Libro
-Orgullo y prejuicio,Jane Austen,corto,Audiolibro
-Cumbres borrascosas,Emily Brontë,largo,Audiolibro
-Hamlet,William Shakespeare,corto,Libro
-El gran Gatsby,Francis Scott Fitzgerald,corto,Libro
-Don Quijote,Miguel de Cervantes,muy largo,Audiolibro
-Ulysses,James Joyce,muy largo,Libro
-El diario de Ana Frank,Ana Frank,corto,Audiolibro
-Anna Karenina,Leon Tolstoi,largo,Audiolibro
-En el camino,Jack Kerouac,largo,Libro
-La guerra de los mundos,H.G. Wells,largo,Audiolibro
-Alguien voló sobre el nido del cuco,Ken Kesey,largo,Libro
-Las mil y una noches,,muy largo,Libro
-Las cuitas del joven Werther,J. W. Goethe,corto,Libro
-Robinson Crusoe,Daniel Defoe,largo,Audiolibro
-Los viajes de Gulliver,Jonathan Swift,largo,Audiolibro
-Romeo y Julieta,William Shakespeare,corto,Libro
-La Divina Comedia,Dante Alighieri,muy largo,Libro
-Notre Dame de París,Victor Hugo,largo,Audiolibro
-Madame Bovary,Gustave Flaubert,largo,Audiolibro
-Manhattan Transfer,John Dos Passos,largo,Libro
-Las uvas de la ira,John Steinbeck,largo,Audiolibro
-En busca del tiempo perdido,Marcel Proust,muy largo,Libro
-Viaje al centro de la Tierra,Julio Verne,largo,Audiolibro
-El mago de Oz,L. Frank Baum,corto,Libro
-De ratones y hombres,John Steinbeck,corto,Libro
-Los miserables,Victor Hugo,muy largo,Audiolibro
-La Celestina,Francisco de Rojas,largo,Libro
-La historia interminable,Michael Ende,largo,Audiolibro
-La elegancia del erizo,Muriel Barbery,largo,Libro
-Cien años de soledad,Gabriel García Márquez,largo,Audiolibro
-La senda del perdedor,Charles Bukowski,largo,Libro
-Leyendas,Gustavo Adolfo Bécquer,corto,Libro
-Memorias de Idhún,Laura Gallego García,largo,Libro
-Bel Ami,Guy de Maupassant,largo,Audiolibro
-Ilusiones,Richard Bach,corto,Libro
-Mujercitas,Louisa May Alcott,largo,Audiolibro
-Marianela,Benito Pérez Galdós,largo,Audiolibro
-Siddharta,Herman Hesse,corto,Libro
-El Cantar de Mio Cid,,largo,Audiolibro
-La campana de cristal,Sylvia Plath,corto,Libro
-Moby Dick,Herman Melville,largo,Audiolibro
-Historia de una escalera,Antonio Buero Vallejo,corto,Libro
-El curioso incidente del perro a medianoche,Mark Haddon,corto,Libro
-Las aventuras de Huckleberry Finn,Mark Twain,largo,Audiolibro
-La isla del tesoro,Robert Louis Stevenson,largo,Audiolibro
-La letra escarlata,Nathaniel Hawthorne,largo,Libro
-El llano en llamas,Juan Rulfo,corto,Libro
-Miedo y asco en Las Vegas,Hunter S. Thompson,largo,Libro
-Entrevista con el vampiro,Anne Rice,largo,Audiolibro
-Lolita,Vladimir Nabokov,largo,Audiolibro
-La naranja mecánica,Anthony Burgess,corto,Libro
-Pippi Calzaslargas,Astrid Lindgren,corto,Libro
-Rebelión en la granja,George Orwell,corto,Libro
-Rojo y negro,Stendhal,largo,Audiolibro
-Trainspotting,Irvine Welsh,largo,Libro
-La fundación,Isaac Asimov,largo,Audiolibro
-Los tres mosqueteros,Alejandro Dumas,largo,Audiolibro
-La Metamorfosis,Ovidio,corto,Libro
-Colmillo Blanco,Jack London,largo,Audiolibro
-Don Juan Tenorio,José Zorrilla,largo,Audiolibro
-Las peregrinaciones de Childe Harold,Lord Byron,largo,Audiolibro
-Episodios nacionales,Benito Pérez Galdós,muy largo,Libro
-David Copperfield,Charles Dickens,largo,Audiolibro
-Los cuentos de Edgar Allan Poe,,largo,Audiolibro
-Fortunata y Jacinta,Benito Pérez Galdós,muy largo,Audiolibro
-La dama de las camelias,Alexandre Dumas,largo,Audiolibro
-Otra vuelta de tuerca,Henry James,corto,Libro
+title,author,length
+Rebelión en la granja,George Orwell
+El gran Gatsby,Francis Scott Fitzgerald
+Siddharta,Herman Hesse
+Romeo y Julieta,William Shakespeare
+Crimen y castigo,Fiodor Dostoievski
+Oliver Twist,Charles Dickens
+Trampa 22,Joseph Heller
+Stoner,John Williams
+Adiós a las armas,Ernest Hemingway
+El crepúsculo de los ídolos,Friedrich Nietzsche
+20.000 leguas de viaje submarino,Julio Verne
+El señor de los anillos,J.R.R. Tolkien
+Los cinco,Enid Blyton
+Saga Harry Potter,J.K. Rowling
+Torres de Malory,Enid Blyton
+Al este del Edén,John Steinbeck
+Alicia en el País de las Maravillas,Lewis Carroll
+Matar a un ruiseñor,Harper Lee
+El señor de las moscas,William Golding
+Orgullo y prejuicio,Jane Austen
+Cumbres borrascosas,Emily Brontë
+Hamlet,William Shakespeare
+Don Quijote,Miguel de Cervantes,muy largo
+Ulysses,James Joyce,muy largo
+El diario de Ana Frank,Ana Frank
+Anna Karenina,Leon Tolstoi
+En el camino,Jack Kerouac
+La guerra de los mundos,H.G. Wells
+Alguien voló sobre el nido del cuco,Ken Kesey
+Las mil y una noches,,muy largo
+Las cuitas del joven Werther,J. W. Goethe
+Robinson Crusoe,Daniel Defoe
+Los viajes de Gulliver,Jonathan Swift
+La Divina Comedia,Dante Alighieri,muy largo
+Notre Dame de París,Victor Hugo
+Madame Bovary,Gustave Flaubert
+Manhattan Transfer,John Dos Passos
+Las uvas de la ira,John Steinbeck
+En busca del tiempo perdido,Marcel Proust,muy largo
+Viaje al centro de la Tierra,Julio Verne
+El mago de Oz,L. Frank Baum
+De ratones y hombres,John Steinbeck
+Los miserables,Victor Hugo,muy largo
+La Celestina,Francisco de Rojas
+La historia interminable,Michael Ende
+La elegancia del erizo,Muriel Barbery
+Cien años de soledad,Gabriel García Márquez
+La senda del perdedor,Charles Bukowski
+Leyendas,Gustavo Adolfo Bécquer
+Memorias de Idhún,Laura Gallego García
+Bel Ami,Guy de Maupassant
+Ilusiones,Richard Bach
+Mujercitas,Louisa May Alcott
+Marianela,Benito Pérez Galdós
+El Cantar de Mio Cid,
+La campana de cristal,Sylvia Plath
+Moby Dick,Herman Melville
+Historia de una escalera,Antonio Buero Vallejo
+El curioso incidente del perro a medianoche,Mark Haddon
+Las aventuras de Huckleberry Finn,Mark Twain
+La isla del tesoro,Robert Louis Stevenson
+La letra escarlata,Nathaniel Hawthorne
+El llano en llamas,Juan Rulfo
+Miedo y asco en Las Vegas,Hunter S. Thompson
+Entrevista con el vampiro,Anne Rice
+Lolita,Vladimir Nabokov
+La naranja mecánica,Anthony Burgess
+Pippi Calzaslargas,Astrid Lindgren
+Rojo y negro,Stendhal
+Trainspotting,Irvine Welsh
+La fundación,Isaac Asimov
+Los tres mosqueteros,Alejandro Dumas
+La Metamorfosis,Ovidio
+Colmillo Blanco,Jack London
+Don Juan Tenorio,José Zorrilla
+Las peregrinaciones de Childe Harold,Lord Byron
+Episodios nacionales,Benito Pérez Galdós,muy largo
+David Copperfield,Charles Dickens
+Los cuentos de Edgar Allan Poe,
+Fortunata y Jacinta,Benito Pérez Galdós,muy largo
+La dama de las camelias,Alexandre Dumas
+Otra vuelta de tuerca,Henry James
