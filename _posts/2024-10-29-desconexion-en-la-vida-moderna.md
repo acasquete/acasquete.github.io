@@ -1,5 +1,5 @@
 ---
-title: Una reflexión sobre la deshumanización
+title: Desconexión en la vida moderna
 tags: [personal, readings]
 header_image: la-metamorfosis-3dcover.jpg
 reviewed: true
