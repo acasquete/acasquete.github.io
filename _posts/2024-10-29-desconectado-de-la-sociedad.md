@@ -1,5 +1,5 @@
 ---
-title: Desconexión en la vida moderna
+title: Desconectado de la sociedad
 tags: [personal, readings]
 header_image: la-metamorfosis-3dcover.jpg
 reviewed: true
