@@ -29,5 +29,10 @@ sudo gem install jekyll-sitemap
 bundle exec jekyll serve
 ```
 
+## Execute Future Post
+```
+bundle exec jekyll serve --future --incremental
+```
+
 ## License
 Released under [MIT License](license.md).

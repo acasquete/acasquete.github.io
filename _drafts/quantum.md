@@ -1,0 +1,1 @@
+https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/quantum-sensings-untapped-potential-insights-for-leaders?stcr=3E3B5B64156844F18D97DA147B51910C&cid=other-eml-alt-mip-mck&hlkid=4e83b4ac36ca421396a9f704c7a255c6&hctky=13762547&hdpid=b8d09928-6479-46bd-93ee-f2bfcca8bf01

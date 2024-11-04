@@ -1,12 +1,11 @@
 ---
 title: My mobile phone dependency
-tags: [personal, english]
+tags: [personal, english, health]
 reviewed: true
 header_fullview: selfie.jpg
 ---
-[Mobile telephony](http://en.wikipedia.org/wiki/Mobile_telephony) is undoubtedly one of the great technological advances of recent years. Forgetting the possible health impact of [radiation](http://en.wikipedia.org/wiki/Mobile_phone_radiation_and_health) produced by microwaves from cell phones, the many advantages of mobile technology are undeniable.
+[Mobile telephony](http://en.wikipedia.org/wiki/Mobile_telephony) is undeniably one of the greatest technological advances of recent years. Setting aside potential health impacts of [radiation](http://en.wikipedia.org/wiki/Mobile_phone_radiation_and_health) from cell phones, the benefits of mobile technology are clear.
 
-I basically use my phone to send and receive calls and I can qualify my use as "moderate". I only call my friends and a few clients, and always to talk about something specific. Usually a conversation does not exceed two minutes, but there are always exceptions. I don't understand phone conversations that go on forever.  
-  
-Although I do not abuse mobiles, and I am not a regular user of other services such as Internet connection and [short messages](http://en.wikipedia.org/wiki/Short_message_service) and [multimedia messages](http://en.wikipedia.org/wiki/Multimedia_Messaging_System), I confess that I do not leave home without my phone, and if I sometimes forget it (on rare occasions), I go back to get it. It is possibly the only drawback I suffer from: dependence on my cell phone.
+Primarily, I use my phone for calls, and I’d describe my usage as "moderate." I only call friends and a few clients, always with a specific purpose in mind. Most of my conversations don’t last more than two minutes, though there are, of course, exceptions. I simply don’t understand lengthy phone conversations.
 
+Although I don’t overuse my mobile and rarely use other features like internet access, [SMS](http://en.wikipedia.org/wiki/Short_message_service), or [MMS](http://en.wikipedia.org/wiki/Multimedia_Messaging_System), I admit I never leave home without it. If I do forget it (a rare occurrence), I often go back to retrieve it. This reliance may be the only real downside I experience: a subtle but noticeable dependence on my phone.
