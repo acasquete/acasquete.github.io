@@ -7,7 +7,7 @@ title: Health
 
 <div class="tgnSearchResultsBox">
     
-    {% assign health_items = site.posts | concat: site.pages %}
+    {% assign health_items = site.posts %}
     {% assign health_items = health_items | sort: 'date' | reverse %}
     {% for item in health_items %}
     {% if item.tags contains 'health' %}
