@@ -26,51 +26,6 @@ Para construir una base sólida en mi camino hacia una vida saludable, he defini
 
 5. **Medición de resultados y adaptación constante**: Llevo un registro de mi energía, estado físico y bienestar. Esto no es solo para medir avances, sino para adaptar y refinar mi protocolo según lo que realmente funcione para mí.
 
-# Implementación práctica del protocolo
-
-Dividir el día en tres bloques de 8 horas —descanso, trabajo y tiempo personal— me proporciona una estructura sencilla y equilibrada que me permite atender cada aspecto importante de mi vida. Esta organización asegura que pueda dedicar tiempo de calidad a cada área sin sacrificar mi bienestar, fomentando así un estilo de vida más saludable y sostenible.
-
-## Mi aplicación del principio de 8-8-8
-
-1. **8 horas para dormir**  
-   Este bloque se centra en optimizar la calidad de mi sueño. No solo se trata de acostarme a una hora razonable, sino de seguir una serie de prácticas que promuevan un descanso profundo y reparador. Esto incluye:
-   - Crear una rutina nocturna relajante (desconectarme de pantallas, leer o meditar).
-   - Evitar comidas pesadas o estimulantes (como cafeína) en las horas previas al sueño.
-
-   Estas 8 horas de descanso son una de las piedras angulares de mi bienestar. Un sueño adecuado me permite rendir mejor en los otros dos bloques de mi día, ya sea en el trabajo o en mis actividades personales.
-
-2. **8 horas para el trabajo**  
-   En este tiempo, busco ser eficiente y productivo. Me esfuerzo por establecer límites claros entre el tiempo de trabajo y mi vida personal. Esto implica:
-   - Planificar mi día laboral con objetivos específicos y establecer prioridades.
-   - Tomar pequeños descansos cada hora para estirarme, despejar la mente y mantener la concentración.
-   - Finalizar el trabajo a una hora establecida para permitir un equilibrio real entre mi vida laboral y personal.
-
-3. **8 horas para uno mismo**  
-   Este bloque está dedicado a mi bienestar personal y a cultivar relaciones. Lo uso para:
-   - Actividades físicas como caminar, entrenar y meditar, que alimentan tanto mi cuerpo como mi mente.
-   - Tiempo para hobbies, lectura y aprendizaje, lo cual me aporta alegría y crecimiento personal.
-   - Conectar con amigos y familiares, fortaleciendo vínculos y encontrando apoyo emocional.
-
-## Limitar el alcohol
-
-Reducir el consumo de alcohol ha sido uno de los cambios más significativos en mi protocolo de bienestar. En el pasado, el alcohol era parte habitual de muchas reuniones y comidas. Sin embargo, al profundizar en sus efectos sobre la salud, el rendimiento mental y, especialmente, sobre el descanso y la variabilidad de la frecuencia cardíaca (HRV), decidí moderar su presencia en mi vida. Hoy, mi enfoque es:
-
-- **Reservarlo para ocasiones especiales**: En lugar de consumir alcohol regularmente, lo reservo para momentos puntuales, lo que me permite disfrutar más de esas celebraciones sin perder la conexión con mi estilo de vida saludable.
-
-- **Alternativas saludables**: He sustituido las bebidas alcohólicas por opciones como cervezas sin alcohol, agua con gas y kombucha, que me permiten disfrutar de una bebida sin los efectos negativos del alcohol.
-
-- **Beneficios de la moderación en el descanso y HRV**: Desde que he reducido el alcohol, he notado una mejora notable en la calidad de mi sueño, despertándome con mayor energía y claridad mental. Además, mi HRV ha mostrado un aumento progresivo, un indicador de que mi sistema nervioso está mejor regulado y recuperado. Estos beneficios son fundamentales, ya que un descanso de calidad y una buena HRV son esenciales para mi bienestar general y mi capacidad de adaptación ante el estrés.
-
-## Alimentación basada en comida real
-
-La “comida real” es otro pilar esencial en mi protocolo. Este concepto significa optar por alimentos frescos y naturales en lugar de productos ultraprocesados. En términos prácticos, comer comida real implica:
-
-- **Alimentos mínimamente procesados**: Priorizar frutas, verduras, granos enteros, legumbres, proteínas y grasas saludables. Estos ingredientes están llenos de nutrientes y no contienen aditivos o conservantes que puedan afectar la salud.
-- **Preparación casera**: Al cocinar mis propias comidas, puedo controlar los ingredientes, evitando aceites procesados, azúcares añadidos y sales excesivas que suelen estar presentes en los productos ultraprocesados.
-- **Planificación y organización**: Para asegurarme de seguir este enfoque, planifico mis comidas de la semana, lo que evita que recurra a opciones poco saludables en momentos de prisa.
-
-Optar por comida real me da energía y vitalidad, y siento que nutro mi cuerpo con lo que realmente necesita. Además, este cambio ha impactado positivamente mi digestión, mi piel y mi bienestar general.
-
 # Mi punto de partida
 
 En el siguiente cuadro se detallan algunos parámetros de salud clave y cómo han variado entre 2018 y 2024. Esto me permite monitorizar las áreas donde debo enfocarme para mejorar mi bienestar.
@@ -101,9 +56,64 @@ En este análisis se observan los cambios en varios parámetros de salud clave a
 ## Función Hepática (AST, ALT y ALK PHOS)
 - **AST (SGOT):** Hubo un aumento significativo en 2022 (55 U/L), aunque este valor volvió a estar dentro del rango en 2024. Esto podría haber sido una respuesta temporal a factores como dieta o ejercicio.
 - **ALT (SGPT):** Este marcador de salud hepática se ha mantenido dentro de los límites normales en todos los años.
-Fosfatasa Alcalina (ALK PHOS): En 2024, la fosfatasa alcalina se encuentra bien dentro del rango de referencia, lo cual es favorable para la función hepática y ósea.
+  Fosfatasa Alcalina (ALK PHOS): En 2024, la fosfatasa alcalina se encuentra bien dentro del rango de referencia, lo cual es favorable para la función hepática y ósea.
 
-## Suplementos Básicos
+# Implementación práctica del protocolo
+
+Dividir el día en tres bloques de 8 horas —descanso, trabajo y tiempo personal— me proporciona una estructura sencilla y equilibrada que me permite atender cada aspecto importante de mi vida. Esta organización asegura que pueda dedicar tiempo de calidad a cada área sin sacrificar mi bienestar, fomentando así un estilo de vida más saludable y sostenible.
+
+1. **8 horas para dormir**  
+   Este bloque se centra en optimizar la calidad de mi sueño. No solo se trata de acostarme a una hora razonable, sino de seguir una serie de prácticas que promuevan un descanso profundo y reparador. Esto incluye:
+   - Crear una rutina nocturna relajante (desconectarme de pantallas, leer o meditar).
+   - Evitar comidas pesadas o estimulantes (como cafeína) en las horas previas al sueño.
+
+   Estas 8 horas de descanso son una de las piedras angulares de mi bienestar. Un sueño adecuado me permite rendir mejor en los otros dos bloques de mi día, ya sea en el trabajo o en mis actividades personales.
+
+2. **8 horas para el trabajo**  
+   En este tiempo, busco ser eficiente y productivo. Me esfuerzo por establecer límites claros entre el tiempo de trabajo y mi vida personal. Esto implica:
+   - Planificar mi día laboral con objetivos específicos y establecer prioridades.
+   - Tomar pequeños descansos cada hora para estirarme, despejar la mente y mantener la concentración.
+   - Finalizar el trabajo a una hora establecida para permitir un equilibrio real entre mi vida laboral y personal.
+
+3. **8 horas para uno mismo**  
+   Este bloque está dedicado a mi bienestar personal y a cultivar relaciones. Lo uso para:
+   - Actividades físicas como caminar, entrenar y meditar, que alimentan tanto mi cuerpo como mi mente.
+   - Tiempo para hobbies, lectura y aprendizaje, lo cual me aporta alegría y crecimiento personal.
+   - Conectar con amigos y familiares, fortaleciendo vínculos y encontrando apoyo emocional.
+
+# Alimentación basada en comida real
+
+La “comida real” es otro pilar esencial en mi protocolo. Este concepto significa optar por alimentos frescos y naturales en lugar de productos ultraprocesados. En términos prácticos, comer comida real implica:
+
+- **Alimentos mínimamente procesados**: Priorizar frutas, verduras, granos enteros, legumbres, proteínas y grasas saludables. Estos ingredientes están llenos de nutrientes y no contienen aditivos o conservantes que puedan afectar la salud.
+- **Preparación casera**: Al cocinar mis propias comidas, puedo controlar los ingredientes, evitando aceites procesados, azúcares añadidos y sales excesivas que suelen estar presentes en los productos ultraprocesados.
+- **Planificación y organización**: Para asegurarme de seguir este enfoque, planifico mis comidas de la semana, lo que evita que recurra a opciones poco saludables en momentos de prisa.
+
+Optar por comida real me da energía y vitalidad, y siento que nutro mi cuerpo con lo que realmente necesita. Además, este cambio ha impactado positivamente mi digestión, mi piel y mi bienestar general.
+
+## Limitar el alcohol
+
+Reducir el consumo de alcohol ha sido uno de los cambios más significativos en mi protocolo de bienestar. En el pasado, el alcohol era parte habitual de muchas reuniones y comidas. Sin embargo, al profundizar en sus efectos sobre la salud, el rendimiento mental y, especialmente, sobre el descanso y la variabilidad de la frecuencia cardíaca (HRV), decidí moderar su presencia en mi vida. Hoy, mi enfoque es:
+
+- **Reservarlo para ocasiones especiales**: En lugar de consumir alcohol regularmente, lo reservo para momentos puntuales, lo que me permite disfrutar más de esas celebraciones sin perder la conexión con mi estilo de vida saludable.
+
+- **Alternativas saludables**: He sustituido las bebidas alcohólicas por opciones como cervezas sin alcohol, agua con gas y kombucha, que me permiten disfrutar de una bebida sin los efectos negativos del alcohol.
+
+- **Beneficios de la moderación en el descanso y HRV**: Desde que he reducido el alcohol, he notado una mejora notable en la calidad de mi sueño, despertándome con mayor energía y claridad mental. Además, mi HRV ha mostrado un aumento progresivo, un indicador de que mi sistema nervioso está mejor regulado y recuperado. Estos beneficios son fundamentales, ya que un descanso de calidad y una buena HRV son esenciales para mi bienestar general y mi capacidad de adaptación ante el estrés.
+
+# Actividad física equilibrada
+
+La actividad física es un componente clave en mi protocolo, orientado a mejorar mi rendimiento, salud y bienestar general. Mi enfoque está estructurado para abarcar distintos tipos de ejercicio que complementan mis objetivos de resistencia, fuerza y agilidad. Este enfoque incluye:
+
+- **Entrenamiento de resistencia**: Me he propuesto mejorar mis tiempos en carreras de 10K, con el objetivo de bajar de los 48 minutos. Para lograrlo, he incorporado 3 días de running a la semana, enfocados en sesiones variadas que combinan trabajo de fondo y velocidad. Estos entrenamientos me ayudan a ganar resistencia y optimizar mis tiempos.
+
+- **HIIT (Entrenamiento de intervalos de alta intensidad)**: El HIIT es parte de mi rutina semanal para mejorar mi capacidad cardiovascular y resistencia anaeróbica. Con este entrenamiento, trabajo en intervalos intensos y breves, lo que me ayuda a ganar agilidad y potencia sin dedicar mucho tiempo extra.
+
+- **Entrenamiento de fuerza**: Dedico entre 3 y 4 sesiones semanales al fortalecimiento de todo el cuerpo. Divido mis entrenamientos en rutinas específicas para el tren superior, tren inferior y core, que me permiten mantener una base sólida y equilibrada. Este trabajo de fuerza me ayuda no solo en la resistencia, sino también en la prevención de lesiones y en la mejora de la postura.
+
+Este enfoque variado me permite alcanzar un equilibrio entre resistencia, fuerza y recuperación, mejorando mi rendimiento físico y mi salud en general.
+
+# Suplementos Básicos
 
 Los suplementos básicos que he incorporado en mi protocolo son una extensión de mi enfoque en la salud y el bienestar. Cada uno de ellos ha sido cuidadosamente seleccionado para apoyar áreas específicas de mi rendimiento físico y mental, optimizando mis niveles de energía, promoviendo una recuperación adecuada y potenciando mi capacidad de concentración y bienestar general. Aunque los suplementos no sustituyen una dieta equilibrada ni un estilo de vida saludable, actúan como un complemento que aporta beneficios adicionales para alcanzar mis objetivos de salud.
 
@@ -119,7 +129,7 @@ Los suplementos básicos que he incorporado en mi protocolo son una extensión d
 
 - **Tribulus** (Apoyo para los niveles de testosterona y el equilibrio hormonal): Aunque no me he realizado una analítica específica, he decidido incluir tribulus terrestris en mi protocolo debido a su potencial para apoyar la producción natural de testosterona y promover el equilibrio hormonal, especialmente útil en periodos prolongados de déficit calórico. Este tipo de déficit puede afectar los niveles hormonales y reducir la energía y el rendimiento físico. Tomar tribulus es una forma preventiva de cuidar estos aspectos, ayudándome a mantener un nivel óptimo de bienestar mientras trabajo en mis objetivos físicos.
 
-## Monitorización del progreso
+# Monitorización del progreso
 
 Para asegurar que mi protocolo de bienestar siga siendo efectivo y ajustado a mis necesidades, he incorporado una serie de herramientas de monitorización que me permiten analizar de cerca mi progreso y realizar ajustes en función de los resultados. Esta observación constante es fundamental para mantener una visión objetiva de mi evolución, permitiéndome refinar mi rutina y maximizar los beneficios de mis esfuerzos.
 
@@ -129,7 +139,7 @@ Además, utilizo **MyFitnessPal** para llevar un registro detallado de mi ingest
 - **Reflexión**: Cada semana reviso los avances logrados y detecto áreas de mejora, utilizando los datos registrados para una evaluación más precisa.
 - **Adaptación**: Con base en los resultados obtenidos, ajusto mi protocolo para enfocarme en lo que realmente funciona, optimizando así cada área de mi bienestar.
 
-## Un compromiso constante con mi bienestar
+# Un compromiso constante con mi bienestar
 Este protocolo no es solo una rutina, es un compromiso con quien quiero ser: alguien que prioriza su bienestar físico y mental, que sabe escuchar a su cuerpo y que cultiva una mentalidad positiva. En este camino, la constancia y la atención a los detalles me guían más que la intensidad. Este es mi espacio de reflexión, crecimiento y progreso, y espero que, con el tiempo, este protocolo continúe evolucionando para reflejar lo que necesito en cada etapa de mi vida.
 
 Mantengo esta guía para mí, y si alguna vez alguien la encuentra útil en su propio camino, bienvenido sea.
