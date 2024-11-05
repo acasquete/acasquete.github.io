@@ -89,7 +89,7 @@ La “comida real” es otro pilar esencial en mi protocolo. Este concepto signi
 - **Preparación casera**: Al cocinar mis propias comidas, puedo controlar los ingredientes, evitando aceites procesados, azúcares añadidos y sales excesivas que suelen estar presentes en los productos ultraprocesados.
 - **Planificación y organización**: Para asegurarme de seguir este enfoque, planifico mis comidas de la semana, lo que evita que recurra a opciones poco saludables en momentos de prisa.
 
-Optar por comida real me da energía y vitalidad, y siento que nutro mi cuerpo con lo que realmente necesita. Además, este cambio ha impactado positivamente mi digestión, mi piel y mi bienestar general.
+Optar por comida real me da energía y vitalidad y siento que nutro mi cuerpo con lo que realmente necesita. Además, este cambio ha impactado positivamente mi digestión, mi piel y mi bienestar general.
 
 ## Limitar el alcohol
 
@@ -121,7 +121,7 @@ Los suplementos básicos que he incorporado en mi protocolo son una extensión d
 
 - **Creatina** (Incrementa fuerza y rendimiento físico): Conocida principalmente por sus beneficios en el rendimiento físico, la creatina también se ha relacionado con mejoras en la función cognitiva. Es un suplemento versátil que potencia la fuerza y la resistencia durante el ejercicio, facilitando el progreso en mis entrenamientos y ayudando a mantener la masa muscular.
 
-- **Colágeno** (Apoyo para articulaciones, piel y tejidos conectivos): He incorporado el colágeno a mi protocolo debido a sus beneficios para la salud de las articulaciones, la piel y otros tejidos conectivos. Este suplemento es especialmente útil para mantener la elasticidad de la piel, fortalecer los tendones y ligamentos, y apoyar la salud de las articulaciones, aspectos que se vuelven cada vez más importantes con el tiempo y la actividad física constante. Al añadir colágeno, busco promover una recuperación completa y un bienestar integral que va más allá de la musculatura, cuidando también de las estructuras que sostienen mi rendimiento y movilidad a largo plazo.
+- **Colágeno** (Apoyo para articulaciones, piel y tejidos conectivos): He incorporado el colágeno a mi protocolo debido a sus beneficios para la salud de las articulaciones, la piel y otros tejidos conectivos. Este suplemento es especialmente útil para mantener la elasticidad de la piel, fortalecer los tendones y ligamentos y apoyar la salud de las articulaciones, aspectos que se vuelven cada vez más importantes con el tiempo y la actividad física constante. Al añadir colágeno, busco promover una recuperación completa y un bienestar integral que va más allá de la musculatura, cuidando también de las estructuras que sostienen mi rendimiento y movilidad a largo plazo.
 
 - **Omega 3** (Apoya corazón y reduce inflamación): Aunque intento consumir fuentes naturales de omega 3, como pescado azul y semillas, he decidido incorporar este suplemento para maximizar sus beneficios en mi perfil lipídico y salud cardiovascular. Este ácido graso esencial es clave para reducir la inflamación, proteger la salud del corazón y contribuir a la claridad mental, lo cual es fundamental para gestionar el estrés y promover un bienestar emocional equilibrado. Tomarlo como suplemento me permite asegurarme de que estoy recibiendo una dosis óptima, especialmente en aquellos días en los que las fuentes naturales pueden ser limitadas en mi dieta.
 
@@ -140,6 +140,6 @@ Además, utilizo **MyFitnessPal** para llevar un registro detallado de mi ingest
 - **Adaptación**: Con base en los resultados obtenidos, ajusto mi protocolo para enfocarme en lo que realmente funciona, optimizando así cada área de mi bienestar.
 
 # Un compromiso constante con mi bienestar
-Este protocolo no es solo una rutina, es un compromiso con quien quiero ser: alguien que prioriza su bienestar físico y mental, que sabe escuchar a su cuerpo y que cultiva una mentalidad positiva. En este camino, la constancia y la atención a los detalles me guían más que la intensidad. Este es mi espacio de reflexión, crecimiento y progreso, y espero que, con el tiempo, este protocolo continúe evolucionando para reflejar lo que necesito en cada etapa de mi vida.
+Este protocolo no es solo una rutina, es un compromiso con quien quiero ser: alguien que prioriza su bienestar físico y mental, que sabe escuchar a su cuerpo y que cultiva una mentalidad positiva. En este camino, la constancia y la atención a los detalles me guían más que la intensidad. Este es mi espacio de reflexión, crecimiento y espero que, con el tiempo, este protocolo continúe evolucionando para reflejar lo que necesito en cada etapa de mi vida.
 
-Mantengo esta guía para mí, y si alguna vez alguien la encuentra útil en su propio camino, bienvenido sea.
+Mantengo esta guía para mí y si alguna vez alguien la encuentra útil en su propio camino, bienvenido sea.
