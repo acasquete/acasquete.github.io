@@ -1,5 +1,5 @@
 ---
-title: Evolución de parámetros
+title: Parameters
 header_fullview: gym-protocol.jpg
 tags: [personal, health]  
 reviewed: true  
