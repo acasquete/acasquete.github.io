@@ -6,7 +6,6 @@ reviewed: true
 ai: false
 layout: post
 date: 2024-11-05
-disabled: true
 ---
 En el siguiente cuadro se detallan algunos parámetros de salud clave y cómo han variado entre 2018 y 2024. Esto me permite monitorizar las áreas donde debo enfocarme para mejorar mi bienestar.
 
