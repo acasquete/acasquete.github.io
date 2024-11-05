@@ -1,6 +1,6 @@
 ---
 title: My mobile phone dependency
-tags: [personal, english, health]
+tags: [personal, english]
 reviewed: true
 header_fullview: selfie.jpg
 ---
