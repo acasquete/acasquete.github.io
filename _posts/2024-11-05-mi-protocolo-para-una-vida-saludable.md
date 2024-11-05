@@ -99,7 +99,7 @@ Reducir el consumo de alcohol ha sido uno de los cambios más significativos en 
 
 - **Alternativas saludables**: He sustituido las bebidas alcohólicas por opciones como cervezas sin alcohol, agua con gas y kombucha, que me permiten disfrutar de una bebida sin los efectos negativos del alcohol.
 
-- **Beneficios de la moderación en el descanso y HRV**: Desde que he reducido el alcohol, he notado una mejora notable en la calidad de mi sueño, despertándome con mayor energía y claridad mental. Además, mi HRV ha mostrado un aumento progresivo, un indicador de que mi sistema nervioso está mejor regulado y recuperado. Estos beneficios son fundamentales, ya que un descanso de calidad y una buena HRV son esenciales para mi bienestar general y mi capacidad de adaptación ante el estrés.
+Desde que he reducido el alcohol, he notado una mejora notable en la calidad de mi sueño. Además, mi HRV ha mostrado un aumento progresivo, un indicador de que mi sistema nervioso está mejor regulado y recuperado. Estos beneficios son fundamentales, ya que un descanso de calidad y una buena HRV son esenciales para mi bienestar general y mi capacidad de adaptación ante el estrés.
 
 # Actividad física equilibrada
 
