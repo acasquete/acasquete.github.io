@@ -1,11 +1,11 @@
 ---
-title: Parameters
-header_fullview: gym-protocol.jpg
-tags: [personal, health]  
+title: Mis parámetros de salud
+tags: [health]  
 reviewed: true  
 ai: false
 layout: post
-date: 2024-11-05
+date: 2024-11-06
+home: false
 ---
 En el siguiente cuadro se detallan algunos parámetros de salud clave y cómo han variado entre 2018 y 2024. Esto me permite monitorizar las áreas donde debo enfocarme para mejorar mi bienestar.
 
@@ -52,3 +52,5 @@ En este análisis se observan los cambios en varios parámetros de salud clave a
 - **AST (SGOT):** Hubo un aumento significativo en 2022 (55 U/L), aunque este valor volvió a estar dentro del rango en 2024. Esto podría haber sido una respuesta temporal a factores como dieta o ejercicio.
 - **ALT (SGPT):** Este marcador de salud hepática se ha mantenido dentro de los límites normales en todos los años.
   Fosfatasa Alcalina (ALK PHOS): En 2024, la fosfatasa alcalina se encuentra bien dentro del rango de referencia, lo cual es favorable para la función hepática y ósea.
+
+## Peso

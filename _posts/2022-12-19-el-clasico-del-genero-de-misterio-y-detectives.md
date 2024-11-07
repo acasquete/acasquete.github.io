@@ -4,6 +4,7 @@ tags: [personal, readings]
 header_image: art-hound-baskervilles-3dcover.jpg
 reviewed: true
 ia: true
+home: true
 ---
 Me fascinan las historias de misterio y detectives. Siempre me ha gustado intentar adivinar quién es el culpable y seguir cada paso del detective para resolver el caso. Sin embargo, por alguna razón, nunca había leído una de las novelas más famosas y considerada un clásico del género. Finalmente me decidí a leerla y la devoré en cuestión de horas.
 

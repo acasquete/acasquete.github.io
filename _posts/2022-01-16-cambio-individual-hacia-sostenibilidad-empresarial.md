@@ -3,6 +3,7 @@ title: Cambio individual hacia la sostenibilidad empresarial
 tags: [personal]
 header_image: corporate-sustainability.jpg
 reviewed: true
+home: true
 ---
 En este principio de año me he encontrado buscando las formas con las que puedo reducir mi huella ambiental y cómo contribuir a mejorar la sostenibilidad empresarial.
 

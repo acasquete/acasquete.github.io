@@ -2,7 +2,8 @@
 title: Mi protocolo para una vida saludable
 header_fullview: gym-protocol.jpg
 tags: [personal, health]  
-reviewed: true  
+reviewed: true 
+home: true
 ---
 Con el paso de los años, el valor de cada día se siente con más intensidad, apreciando cada momento como único. Hoy soy más consciente de esto que nunca y jamás le había dado tanta importancia a la salud como lo hago ahora. **No podemos reemplazar nuestro cuerpo; es el único que tendremos hasta nuestros últimos días y cuidarlo debe ser nuestra responsabilidad más básica.**
 
@@ -46,7 +47,9 @@ En el siguiente cuadro se detallan algunos parámetros de salud clave y cómo ha
 
 (*) Valores fuera de los límites de referencia.
 
-En este análisis se observan los cambios en varios parámetros de salud clave a lo largo de los años, desde 2018 hasta 2024. A continuación, se destacan las tendencias más relevantes:
+En este análisis se observan los cambios en varios parámetros de salud clave a lo largo de los años, desde 2018 hasta 2024. 
+
+En este [articulo](/parametros-de-salud), se puede hacer la revisión en detalle de todos los parámetros.
 
 ## Perfil lipídico (colesterol y triglicéridos)
 

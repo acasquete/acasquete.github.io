@@ -4,6 +4,7 @@ tags: [personal, certification]
 header_image: close-up-people-with-thumbs-up.jpg
 image_copyright: https://www.freepik.com/free-photo/close-up-people-with-thumbs-up_15501126.htm
 reviewed: true
+home: true
 ---
 Siempre he creído que el verdadero valor de las certificaciones va más allá de añadir una línea al currículum. <!-- excerpt-end --> A lo largo de mi carrera, he conocido profesionales excepcionales con grandes conocimientos, tanto con certificaciones como sin ellas. Esto evidencia que, por sí mismas, las certificaciones no son necesarias para garantizar conocimientos o habilidades. Además, muchas de las certificaciones han perdido la credibilidad que tenían hace unos años. Ahora estamos en el momento perfecto para reimaginar cómo debería ser el proceso de certificación para recuperar esa credibilidad perdida y para mejorar la efectividad en la evaluación de conocimientos.
 

@@ -5,7 +5,8 @@ title: Home
 <!-- Posts -->
 <div id="posts">
 
-	{% for post in paginator.posts %}
+	{% assign home_posts = site.posts | where: "home", true %}
+	{% for post in home_posts %}
 
 		{% if forloop.first == true %}
 		<div class="post_hero">
@@ -37,13 +38,13 @@ title: Home
 	{% endfor %}
 
 	<div class="AC_site_ArticleItems">
-	<div class="AC_site_ArticleItemsTop">
-	{% for post in paginator.posts %}
+		<div class="AC_site_ArticleItemsTop">
+			{% for post in home_posts %}
 
-		{% if forloop.index == 2 or forloop.index == 3 %}
-		<div class="TGN_site_ArticleItem">
-            <a href="{% if site.baseurl == "/" %}{{ post.url }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}">
-                <div class="TGN_site_ArticleItemimage">
+			{% if forloop.index == 2 or forloop.index == 3 %}
+			<div class="TGN_site_ArticleItem">
+				<a href="{% if site.baseurl == "/" %}{{ post.url }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}">
+				<div class="TGN_site_ArticleItemimage">
 					{% if post.header_fullview %}
 					<img src="/img/{{ post.header_fullview }}">
 					{% elsif post.header_image %}
@@ -52,53 +53,120 @@ title: Home
 					<img src="/img/acnotes.png" >
 					{% endif %}
 				</div>
-                <div class="TGN_site_ArticleItemcopy">
-                    <div class="TGN_site_ArticleItemtitle"><h1>{%if post.header %}{{ post.header }}{% else %}{{ post.title }}{% endif %}</h1></div>
-                    <div class="TGN_site_ArticleItemdescription">
+				<div class="TGN_site_ArticleItemcopy">
+					<div class="TGN_site_ArticleItemtitle"><h1>{%if post.header %}{{ post.header }}{% else %}{{ post.title }}{% endif %}</h1></div>
+					<div class="TGN_site_ArticleItemdescription">
 						{% if post.content contains '<!-- excerpt-end -->' %}
 						{{ post.content | split:'<!-- excerpt-end -->' | first | strip_html }}
 						{% else %}
 						{{ post.excerpt | strip_html }}
 						{% endif %}
 					</div>
-                </div>
-            </a>
-        </div>
-		{% endif %}
+				</div>
+				</a>
+			</div>
+			{% endif %}
 
-    {% endfor %}
-	</div>
+			{% endfor %}
+		</div>
 
-	<div class="AC_site_ArticleItemsBottom">
-		{% for post in paginator.posts %}
+		<div class="AC_site_ArticleItemsBottom">
+			{% for post in home_posts %}
 
 			{% if forloop.index == 4 or forloop.index == 5 %}
 			<div class="TGN_site_ArticleItem">
 				<a href="{% if site.baseurl == "/" %}{{ post.url }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}">
-					<div class="TGN_site_ArticleItemimage">
-						{% if post.header_fullview %}
-						<img src="/img/{{ post.header_fullview }}">
-						{% elsif post.header_image %}
-						<img src="/img/{{ post.header_image }}" >
+				<div class="TGN_site_ArticleItemimage">
+					{% if post.header_fullview %}
+					<img src="/img/{{ post.header_fullview }}">
+					{% elsif post.header_image %}
+					<img src="/img/{{ post.header_image }}" >
+					{% else %}
+					<img src="/img/acnotes.png" >
+					{% endif %}
+				</div>
+				<div class="TGN_site_ArticleItemcopy">
+					<div class="TGN_site_ArticleItemtitle"><h1>{%if post.header %}{{ post.header }}{% else %}{{ post.title }}{% endif %}</h1></div>
+					<div class="TGN_site_ArticleItemdescription">
+						{% if post.content contains '<!-- excerpt-end -->' %}
+						{{ post.content | split:'<!-- excerpt-end -->' | first | strip_html }}
 						{% else %}
-						<img src="/img/acnotes.png" >
+						{{ post.excerpt | strip_html }}
 						{% endif %}
 					</div>
-					<div class="TGN_site_ArticleItemcopy">
-						<div class="TGN_site_ArticleItemtitle"><h1>{%if post.header %}{{ post.header }}{% else %}{{ post.title }}{% endif %}</h1></div>
-						<div class="TGN_site_ArticleItemdescription">
-							{% if post.content contains '<!-- excerpt-end -->' %}
-							{{ post.content | split:'<!-- excerpt-end -->' | first | strip_html }}
-							{% else %}
-							{{ post.excerpt | strip_html }}
-							{% endif %}
-						</div>
-					</div>
+				</div>
 				</a>
 			</div>
 			{% endif %}
-			
-		{% endfor %}
+
+			{% endfor %}
+		</div>
+
+	</div>
+	
+	<div class="AC_site_ArticleItems">
+		<div class="AC_site_ArticleItemsTop">
+			{% for post in home_posts %}
+
+			{% if forloop.index == 6 or forloop.index == 7 %}
+			<div class="TGN_site_ArticleItem">
+				<a href="{% if site.baseurl == "/" %}{{ post.url }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}">
+				<div class="TGN_site_ArticleItemimage">
+					{% if post.header_fullview %}
+					<img src="/img/{{ post.header_fullview }}">
+					{% elsif post.header_image %}
+					<img src="/img/{{ post.header_image }}" >
+					{% else %}
+					<img src="/img/acnotes.png" >
+					{% endif %}
+				</div>
+				<div class="TGN_site_ArticleItemcopy">
+					<div class="TGN_site_ArticleItemtitle"><h1>{%if post.header %}{{ post.header }}{% else %}{{ post.title }}{% endif %}</h1></div>
+					<div class="TGN_site_ArticleItemdescription">
+						{% if post.content contains '<!-- excerpt-end -->' %}
+						{{ post.content | split:'<!-- excerpt-end -->' | first | strip_html }}
+						{% else %}
+						{{ post.excerpt | strip_html }}
+						{% endif %}
+					</div>
+				</div>
+				</a>
+			</div>
+			{% endif %}
+
+			{% endfor %}
+		</div>
+
+		<div class="AC_site_ArticleItemsBottom">
+			{% for post in home_posts %}
+
+			{% if forloop.index == 8 or forloop.index == 9 %}
+			<div class="TGN_site_ArticleItem">
+				<a href="{% if site.baseurl == "/" %}{{ post.url }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}">
+				<div class="TGN_site_ArticleItemimage">
+					{% if post.header_fullview %}
+					<img src="/img/{{ post.header_fullview }}">
+					{% elsif post.header_image %}
+					<img src="/img/{{ post.header_image }}" >
+					{% else %}
+					<img src="/img/acnotes.png" >
+					{% endif %}
+				</div>
+				<div class="TGN_site_ArticleItemcopy">
+					<div class="TGN_site_ArticleItemtitle"><h1>{%if post.header %}{{ post.header }}{% else %}{{ post.title }}{% endif %}</h1></div>
+					<div class="TGN_site_ArticleItemdescription">
+						{% if post.content contains '<!-- excerpt-end -->' %}
+						{{ post.content | split:'<!-- excerpt-end -->' | first | strip_html }}
+						{% else %}
+						{{ post.excerpt | strip_html }}
+						{% endif %}
+					</div>
+				</div>
+				</a>
+			</div>
+			{% endif %}
+
+			{% endfor %}
 		</div>
 
 	</div>
