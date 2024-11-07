@@ -3,7 +3,6 @@ title: Mi protocolo para una vida saludable
 header_fullview: gym-protocol.jpg
 tags: [personal, health]  
 reviewed: true  
-ai: true
 ---
 A medida que pasa el tiempo, cada día adquiere un valor distinto y nunca antes había sido tan consciente de la importancia de la salud como lo soy ahora. **Nuestro cuerpo no es algo que podamos reemplazar, es el único que tendremos hasta nuestros últimos días y cuidarlo es nuestra responsabilidad más básica y esencial.**
 
@@ -14,7 +13,10 @@ Bienvenidos a esta guía personal hacia el bienestar y la longevidad, basada en 
 Este blog será un **espacio vivo y en constante evolución**, donde compartiré, ajustaré y mejoraré mi enfoque de bienestar a medida que aprendo y descubro nuevas herramientas y perspectivas. Refleja mi compromiso personal con una vida más auténtica y plena. **Si en el proceso logro inspirar a otros en sus propios caminos, será un regalo añadido.**
 
 # Principios fundamentales de mi Protocolo
+
 Para construir una base sólida en mi camino hacia una vida saludable, he definido algunos principios esenciales que guían cada aspecto de mi rutina:
+
+![alt text](/img/health/principles_es.png "Principios fundamentales de mi Protocolo")
 
 1. **Consistencia por encima de la intensidad**: Los pequeños pasos diarios crean cambios sostenibles. Prefiero la regularidad a los grandes esfuerzos ocasionales porque sé que, para lograr bienestar a largo plazo, la clave es hacer de estos hábitos una parte constante de mi vida.
 
