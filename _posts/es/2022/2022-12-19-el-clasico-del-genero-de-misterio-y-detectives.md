@@ -6,7 +6,7 @@ reviewed: true
 ia: true
 home: true
 ---
-Me fascinan las historias de misterio y detectives. Siempre me ha gustado intentar adivinar quién es el culpable y seguir cada paso del detective para resolver el caso. Sin embargo, por alguna razón, nunca había leído una de las novelas más famosas y considerada un clásico del género. Finalmente me decidí a leerla y la devoré en cuestión de horas.
+Me fascinan las historias de misterio y detectives. Siempre me ha gustado intentar adivinar quién es el culpable y seguir cada paso del detective para resolver el caso.<!-- excerpt-end --> Sin embargo, por alguna razón, nunca había leído una de las novelas más famosas y considerada un clásico del género. Finalmente me decidí a leerla y la devoré en cuestión de horas.
 
 *El Sabueso de los Baskerville* es la tercera de las cuatro novelas protagonizadas por Sherlock Holmes y se publicó originalmente por entregas en la revista *The Strand Magazine* entre agosto de 1901 y abril de 1902. Tuvo tanto éxito que los lectores hacían cola fuera de las oficinas de la revista esperando el siguiente número, algo que recuerda a lo que pasó con los fans de *Harry Potter* cuando esperaban cada nuevo libro.
 
