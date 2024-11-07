@@ -4,7 +4,7 @@ comments: true
 ---
 <article id="post-page">
 	<h1>{%if page.header %}{{ page.header }}{% else %}{{ page.title }}{% endif %}</h1>		
-	<time datetime="{{ page.date | date_to_xmlschema }}" class="by-line">{{ page.date | date: '%e de %B de %Y' }}</time>
+	<time datetime="{{ page.date | date_to_xmlschema }}" class="by-line">{{ page.date | date_in_spanish }}</time>
 	
 	{% include read-time.html %}
 	
