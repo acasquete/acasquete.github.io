@@ -29,7 +29,7 @@ title: Home
 						{{ post.excerpt | strip_html }}
 						{% endif %}
 					</div>
-					<time datetime="{{ page.date | date_to_xmlschema }}" class="by-line">{{ post.date | date_in_spanish }}</time>
+					<time datetime="{{ page.date | date_to_xmlschema }}" class="by-line">{% include formatted_date.html date=post.date %}</time>
 				</div>
 			</a>
 		</div>
