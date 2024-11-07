@@ -1,11 +1,13 @@
 ---
 layout: default
-title: Bookshelf
+title: Lecturas seleccionadas
 ---
+<div class="container">
+  <h1>Biblioteca Personal</h1>
+</div>
 
-<h1>My Personal Bookshelf</h1>		
 
-<section class="gallery">
+  <section class="gallery">
   <div class="container">
 
     <ol class="image-list grid-view">
@@ -39,7 +41,9 @@ title: Bookshelf
   </div>
 </section>
 
-<h1>Up Next: {{ site.data.books | size }} Books on My Reading Horizon</h1>
+<div class="container">
+  <h1>Lo próximo: {{ site.data.books | size }} libros en mi radar</h1>
+</div>
 
 <section class="pending">
 

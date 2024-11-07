@@ -47,21 +47,11 @@ En el siguiente cuadro se detallan algunos parámetros de salud clave y cómo ha
 
 (*) Valores fuera de los límites de referencia.
 
-En este análisis se observan los cambios en varios parámetros de salud clave a lo largo de los años, desde 2018 hasta 2024. 
+A lo largo de los años, los datos reflejados en la tabla muestran tendencias importantes en la salud cardiovascular y hepática. El **colesterol total** y el **colesterol LDL** han seguido una tendencia al alza desde 2019, superando los niveles recomendados, lo que sugiere un incremento en el riesgo de enfermedades cardiovasculares. Aunque el **HDL** ha mantenido valores saludables, su descenso en 2024 indica la necesidad de atención continua. Los **triglicéridos**, si bien han mostrado un aumento reciente, permanecen en un rango aceptable.
 
-En este [articulo](/parametros-de-salud), se puede hacer la revisión en detalle de todos los parámetros.
+En cuanto a la **función hepática**, el aumento puntual de **AST** en 2022 podría haber reflejado un episodio temporal relacionado con la dieta o el ejercicio, pero se ha normalizado en 2024, lo que es alentador. Los niveles de **ALT** y **fosfatasa alcalina** han estado consistentemente dentro de los rangos normales, indicando una función hepática estable.
 
-## Perfil lipídico (colesterol y triglicéridos)
-
-- **Colesterol Total:** Desde 2019, el colesterol total ha superado consistentemente el límite recomendado de 200 mg/dL, alcanzando su punto más alto en 2024 con 234 mg/dL. Esto puede estar relacionado con cambios en el estilo de vida o el metabolismo a lo largo de los años.
-- **Colesterol LDL (colesterol "malo"):** Al igual que el colesterol total, el LDL ha mostrado una tendencia ascendente, superando el límite de 100 mg/dL desde 2019 y llegando a 146 mg/dL en 2024. Este valor es especialmente relevante, ya que el LDL alto se asocia con un mayor riesgo de enfermedades cardiovasculares.
-- **Colesterol HDL (colesterol "bueno"):** Los niveles de HDL se han mantenido generalmente por encima del límite recomendado (40 mg/dL), lo que es positivo. Sin embargo, en 2024, hubo una ligera disminución respecto a años anteriores, situándose en 68 mg/dL frente a los 80 mg/dL de 2022.
-- **Triglicéridos:** Se han mantenido dentro del rango saludable durante todos los años. Los triglicéridos más bajos en 2022 (49 mg/dL) sugieren un buen control, aunque aumentaron a 94 mg/dL en 2024.
-
-## Función Hepática (AST, ALT y ALK PHOS)
-- **AST (SGOT):** Hubo un aumento significativo en 2022 (55 U/L), aunque este valor volvió a estar dentro del rango en 2024. Esto podría haber sido una respuesta temporal a factores como dieta o ejercicio.
-- **ALT (SGPT):** Este marcador de salud hepática se ha mantenido dentro de los límites normales en todos los años.
-  Fosfatasa Alcalina (ALK PHOS): En 2024, la fosfatasa alcalina se encuentra bien dentro del rango de referencia, lo cual es favorable para la función hepática y ósea.
+Estos cambios resaltan la importancia de seguir de cerca estos indicadores y ajustar el estilo de vida o la atención médica según sea necesario para mantener la salud a largo plazo. Para detalles más exhaustivos, se recomienda consultar el [artículo completo](/parametros-de-salud).
 
 # Implementación práctica del protocolo
 

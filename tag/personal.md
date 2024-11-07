@@ -1,5 +1,5 @@
 ---
 layout: tagpage
-title: "Personal Corner"
+title: "Una mirada personal"
 tag: personal
 ---
