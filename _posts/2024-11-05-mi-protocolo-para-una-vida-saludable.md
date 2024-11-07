@@ -8,9 +8,9 @@ Con el paso de los años, el valor de cada día se siente con más intensidad, a
 
 Cuidar de mi bienestar va mucho más allá de evitar enfermedades o alargar la vida. Se trata de vivir con calidad, de sentirme fuerte y presente, tanto para mí mismo como para quienes forman parte de mi vida. **He comprendido que para lograr esto, es esencial enfocarme en la salud y reconocer que el verdadero cambio no se da de la noche a la mañana.** La clave para transformar mi vida de manera significativa reside en los pequeños pasos y en las decisiones cotidianas que tomo cada día.
 
-Bienvenidos a esta guía personal hacia el bienestar y la longevidad, basada en **prácticas sostenibles y respaldadas por evidencia científica**. Este protocolo no es simplemente una serie de rutinas, **se ha convertido en mi brújula diaria**, un enfoque integral que orienta mis decisiones y hábitos como una forma de vida que busca construir una versión más plena de mí mismo, desde dentro hacia fuera.
+Bienvenidos a esta guía personal hacia el bienestar y la longevidad, basada en **prácticas sostenibles y respaldadas por evidencia científica**. Este protocolo no es simplemente una serie de rutinas, **se ha convertido en mi brújula diaria**, un enfoque integral que orienta mis decisiones y hábitos como una forma de vida que busca construir una versión más plena de mí mismo.
 
-Este blog será un **espacio vivo y en constante evolución**, donde compartiré, ajustaré y mejoraré mi enfoque de bienestar a medida que aprendo y descubro nuevas herramientas y perspectivas. Refleja mi compromiso personal con una vida más auténtica y plena. **Si en el proceso logro inspirar a otros en sus propios caminos, será un regalo añadido.**
+Este blog será un **espacio vivo y en constante evolución**, donde compartiré, ajustaré y mejoraré mi enfoque de bienestar a medida que descubro nuevas herramientas. Refleja mi compromiso personal con una vida más auténtica y plena. **Si en el proceso logro inspirar a otros en sus propios caminos, será un regalo añadido.**
 
 # Principios fundamentales de mi Protocolo
 
