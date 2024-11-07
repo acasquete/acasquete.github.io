@@ -4,9 +4,9 @@ header_fullview: gym-protocol.jpg
 tags: [personal, health]  
 reviewed: true  
 ---
-Con el paso de los años, cada día adquiere un valor distinto y nunca antes había sido tan consciente de la importancia de la salud como lo soy ahora. **Nuestro cuerpo no es algo que podamos reemplazar, es el único que tendremos hasta nuestros últimos días y cuidarlo es nuestra responsabilidad más básica y esencial.**
+Con el paso de los años, el valor de cada día se siente con más intensidad, apreciando cada momento como único. Hoy soy más consciente de esto que nunca y jamás le había dado tanta importancia a la salud como lo hago ahora. **No podemos reemplazar nuestro cuerpo; es el único que tendremos hasta nuestros últimos días y cuidarlo debe ser nuestra responsabilidad más básica.**
 
-Cuidar de mi bienestar va mucho más allá de evitar enfermedades o alargar la vida. **Se trata de vivir con calidad, de sentirme fuerte y presente, tanto para mí mismo como para quienes forman parte de mi vida.** Este momento me invita a apreciar lo esencial y a reconocer que el verdadero cambio no ocurre de la noche a la mañana, sino en esos pequeños pasos y decisiones que tomamos cada día.
+Cuidar de mi bienestar va mucho más allá de evitar enfermedades o alargar la vida. Se trata de vivir con calidad, de sentirme fuerte y presente, tanto para mí mismo como para quienes forman parte de mi vida. **He comprendido que para lograr esto, es esencial enfocarme en la salud y reconocer que el verdadero cambio no se da de la noche a la mañana.** La clave para transformar mi vida de manera significativa reside en los pequeños pasos y en las decisiones cotidianas que tomo cada día.
 
 Bienvenidos a esta guía personal hacia el bienestar y la longevidad, basada en **prácticas sostenibles y respaldadas por evidencia científica**. Este protocolo no es simplemente una serie de rutinas, **se ha convertido en mi brújula diaria**, un enfoque integral que orienta mis decisiones y hábitos como una forma de vida que busca construir una versión más plena de mí mismo, desde dentro hacia fuera.
 
