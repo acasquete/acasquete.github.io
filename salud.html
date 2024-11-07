@@ -10,12 +10,11 @@ title: ♥️ Salud
     <div class="tgnSearchResultsBox">
     
     {% assign health_items = site.posts %}
-    {% assign health_items = health_items | sort: 'date' | reverse %}
+    {% assign health_items = health_items | sort: 'date' %}
     {% for item in health_items %}
     {% if item.tags contains 'health' %}
   <div class="AC_site_ArticleItemsearchThumb">
     <a href="{{ item.url }}">
-        <div class="TGN_site_ArticleItemDesktopdate">{{ item.date | date: '%B %e, %Y' }}</div>
         <div class="TGN_site_ArticleItemimage">
           {% if item.header_fullview %}
           <img src="/img/{{ item.header_fullview }}" >
