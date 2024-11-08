@@ -1,6 +1,5 @@
 ---
 title: Mi protocolo para una vida saludable
-header_fullview: gym-protocol.jpg
 tags: [personal, health]  
 reviewed: true 
 home: true
