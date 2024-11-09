@@ -8,14 +8,13 @@ title: "Salud ♥️ Max"
     <p>La salud no es simplemente la ausencia de enfermedad, sino un viaje de <strong>autodescubrimiento y crecimiento</strong>. Cada elección, cada hábito y cada día nos acerca a una vida de <strong>equilibrio y plenitud</strong>. Para mí, el verdadero bienestar significa esforzarse por <strong>cuidar tanto el cuerpo como la mente</strong>: en los alimentos que consumo, los pensamientos que cultivo y las acciones que realizo.</p>
     
     <div class="tgnSearchResultsBox">
-    
     {% assign health_items = site.posts %}
     {% assign health_items = health_items | sort: 'date' %}
     {% for item in health_items %}
     {% if item.tags contains 'health' %}
-  <div class="AC_site_ArticleItemsearchThumb">
+  <div class="AC_site_ArticleItemsearchThumbWide">
     <a href="{{ item.url }}">
-        <div class="TGN_site_ArticleItemimage">
+        <div class="TGN_site_ArticleItemimageWide">
           {% if item.header_fullview %}
           <img src="/img/{{ item.header_fullview }}" >
           {% elsif item.header_image %}

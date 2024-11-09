@@ -5,7 +5,7 @@ reviewed: true
 home: true
 header_image: close-up-hands-holding-heart.jpg
 ---
-Con el paso de los años, he aprendido a mirar cada amanecer con más intensidad, como una promesa renovada de oportunidades y aprendizajes. No siempre he pensado así, lo reconozco. La rutina y las prisas se han llevado los días por delante durante mucho tiempo, dejándome ajeno a lo que de verdad importa: estar **presente**, **cuidarme** y **cuidar de los míos**.<!-- excerpt-end --> Ahora, he entendido que la salud no es solo un estado, sino una **elección diaria**, una declaración silenciosa de amor propio y de respeto a la vida misma.
+Con el paso de los años, he aprendido a mirar cada amanecer con más intensidad, como una promesa renovada de oportunidades y aprendizajes.<!-- excerpt-end --> No siempre he pensado así, lo reconozco. La rutina y las prisas se han llevado los días por delante durante mucho tiempo, dejándome ajeno a lo que de verdad importa: estar **presente**, **cuidarme** y **cuidar de los míos**.<!-- excerpt-end --> Ahora, he entendido que la salud no es solo un estado, sino una **elección diaria**, una declaración silenciosa de amor propio y de respeto a la vida misma.
 
 **No hay otro cuerpo que me esté esperando para recoger el relevo**. Este, el que me ha sostenido en cada risa y me ha recogido en cada caída, es el único que tendré hasta el último día. Y entenderlo ha sido como un despertar, un toque de atención que me ha hecho replantearme prioridades. Porque cuidarme ya no es solo una cuestión de evitar enfermedades, sino de vivir con calidad, de sentirme fuerte y presente.
 
