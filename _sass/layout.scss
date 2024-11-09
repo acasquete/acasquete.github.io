@@ -394,14 +394,9 @@
       display: block;
       object-fit: cover;
       aspect-ratio: 1 / 1;
-      height: 272px;
+      max-height: 234px;
       
-      @media (max-width: 1020px) {
-        height: 159px;
-      }
-      @media (max-width: 680px) {
-        height: 176px;
-      }
+      
     }
 
     .TGN_site_ArticleItemtitle {
