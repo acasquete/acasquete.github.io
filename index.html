@@ -139,8 +139,8 @@ title: Inicio
 		<div class="AC_site_ArticleItemsBottom">
 			{% for post in home_posts %}
 
-			{% if forloop.index == 8 or forloop.index == 9 %}
-			<div class="TGN_site_ArticleItem">
+			{% if forloop.index == 8 %}
+			<div class="TGN_site_ArticleItem wide_item">
 				<a href="{% if site.baseurl == "/" %}{{ post.url }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}">
 				<div class="TGN_site_ArticleItemimage">
 					{% if post.header_fullview %}
@@ -152,7 +152,7 @@ title: Inicio
 					{% endif %}
 				</div>
 				<div class="TGN_site_ArticleItemcopy">
-					<div class="TGN_site_ArticleItemtitle"><h1>{%if post.header %}{{ post.header }}{% else %}{{ post.title }}{% endif %}</h1></div>
+					<div class="TGN_site_ArticleItemtitlewide"><h1>{%if post.header %}{{ post.header }}{% else %}{{ post.title }}{% endif %}</h1></div>
 					<div class="TGN_site_ArticleItemdescription">
 						{% if post.content contains '<!-- excerpt-end -->' %}
 						{{ post.content | split:'<!-- excerpt-end -->' | first | strip_html }}
@@ -169,37 +169,6 @@ title: Inicio
 		</div>
 
 	</div>
-
-	{% for post in home_posts %}
-
-	{% if forloop.first == true %}
-	<div class="post_hero">
-		<a href="{% if site.baseurl == "/" %}{{ post.url }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}">
-		<div class="post_heroleft">
-			{% if post.header_fullview %}
-			<img src="/img/{{ post.header_fullview }}" >
-			{% elsif post.header_image %}
-			<img src="/img/{{ post.header_image }}" >
-			{% else %}
-			<img src="/img/acnotes.png" >
-			{% endif %}
-		</div>
-		<div class="post_heroright">
-			<div class="post_title"><h1>{%if post.header %}{{ post.header }}{% else %}{{ post.title }}{% endif %}</h1></div>
-			<div class="post_description">
-				{% if post.content contains '<!-- excerpt-end -->' %}
-				{{ post.content | split:'<!-- excerpt-end -->' | first | strip_html }}
-				{% else %}
-				{{ post.excerpt | strip_html }}
-				{% endif %}
-			</div>
-			<time datetime="{{ page.date | date_to_xmlschema }}" class="by-line">{% include formatted_date.html date=post.date %}</time>
-		</div>
-		</a>
-	</div>
-	{% endif %}
-
-	{% endfor %}
 
 </div>
 

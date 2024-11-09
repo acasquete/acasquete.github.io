@@ -4,9 +4,9 @@ tags: [personal, health]
 reviewed: true 
 home: true
 ---
-Con el paso de los años, he aprendido a mirar cada amanecer con más intensidad, una promesa renovada de oportunidades y aprendizajes. No siempre he pensado así, lo reconozco. No hace tanto tiempo en que la rutina y las prisas se llevaban por delante el tiempo, dejándome ajeno a lo que de verdad importa: estar **presente**, **cuidarme** y **cuidar de los míos**. Ahora, he entendido que la salud no es solo un estado, sino una **elección diaria**, una declaración silenciosa de amor propio y de respeto a la vida misma.
+Con el paso de los años, he aprendido a mirar cada amanecer con más intensidad, como una promesa renovada de oportunidades y aprendizajes. No siempre he pensado así, lo reconozco. La rutina y las prisas se han llevado los días por delante durante mucho tiempo, dejándome ajeno a lo que de verdad importa: estar **presente**, **cuidarme** y **cuidar de los míos**.<!-- excerpt-end --> Ahora, he entendido que la salud no es solo un estado, sino una **elección diaria**, una declaración silenciosa de amor propio y de respeto a la vida misma.
 
-No hay otro cuerpo que me pertenezca, ni otro que me aguarde en una tienda esperando un relevo. Este, el que me ha sostenido en cada risa y me ha recogido en cada caída, es el único que tendré hasta el último día. Y entenderlo ha sido como un despertar, un toque de atención que me ha hecho replantearme prioridades. Porque cuidarme ya no es solo una cuestión de evitar enfermedades, sino de vivir con calidad, de sentirme fuerte y presente.
+**No hay otro cuerpo que me esté esperando para recoger el relevo**. Este, el que me ha sostenido en cada risa y me ha recogido en cada caída, es el único que tendré hasta el último día. Y entenderlo ha sido como un despertar, un toque de atención que me ha hecho replantearme prioridades. Porque cuidarme ya no es solo una cuestión de evitar enfermedades, sino de vivir con calidad, de sentirme fuerte y presente.
 
 [Salud ♥️ Max](/saludmax) es la síntesis de ese viaje personal, una guía donde la ciencia y la experiencia se encuentran para construir **hábitos sostenibles** que me permitan, **no solo añadir años a la vida, sino vida a los años**. Porque al final, lo que de verdad cuenta es cómo me siento en cada uno de esos días: fuerte y capaz de estar para mí y para los que me rodean.
 
@@ -16,7 +16,7 @@ Aquí, en este espacio, espero que encuentres inspiración, reflexiones y herram
 
 # Principios fundamentales de mi Protocolo
 
-Para construir una base sólida en mi camino hacia una vida saludable, he definido algunos principios esenciales que guían cada aspecto de mi rutina:
+Para construir una base sólida en mi camino hacia una vida saludable, he definido cinco principios esenciales que guían cada aspecto de mi rutina:
 
 ![alt text](/img/health/principles_es.png "Principios fundamentales de mi Protocolo")
 
@@ -32,7 +32,7 @@ Para construir una base sólida en mi camino hacia una vida saludable, he defini
 
 # Mi punto de partida
 
-En el siguiente cuadro se detallan algunos parámetros de salud clave y cómo han variado entre 2018 y 2024. Esto me permite monitorizar las áreas donde debo enfocarme para mejorar mi bienestar.
+En la siguiente tabla se detallan algunos parámetros de salud clave y cómo han variado entre 2018 y 2024. Hacer el seguimiento de estos valores, me permite tener claro las areas donde debo enfocarme para mejorar mi bienestar.
 
 | **Parameter**             | **Reference**              | **2018** | **2019** | **2021** | **2022** | **2024** |
 |---------------------------|----------------------------|----------|----------|----------|----------|----------|
@@ -48,7 +48,7 @@ En el siguiente cuadro se detallan algunos parámetros de salud clave y cómo ha
 
 (*) Valores fuera de los límites de referencia.
 
-A lo largo de los años, los datos reflejados en la tabla muestran tendencias importantes en la salud cardiovascular y hepática. El **colesterol total** y el **colesterol LDL** han seguido una tendencia al alza desde 2019, superando los niveles recomendados, lo que sugiere un incremento en el riesgo de enfermedades cardiovasculares. Aunque el **HDL** ha mantenido valores saludables, su descenso en 2024 indica la necesidad de atención continua. Los **triglicéridos**, si bien han mostrado un aumento reciente, permanecen en un rango aceptable.
+Mirar estos números no es solo un repaso médico, es una lectura de mi propio camino, de las decisiones tomadas y de aquellas que aún tengo por delante. Los datos muestran varias tendencias importantes en la salud cardiovascular y hepática. El **colesterol total** y el **colesterol LDL** han seguido una tendencia al alza desde 2019, superando los niveles recomendados, lo que sugiere un incremento en el riesgo de enfermedades cardiovasculares. Aunque el **HDL** ha mantenido valores saludables, su descenso en 2024 indica la necesidad de atención continua. Los **triglicéridos**, si bien han mostrado un aumento reciente, permanecen en un rango aceptable.
 
 En cuanto a la **función hepática**, el aumento puntual de **AST** en 2022 podría haber reflejado un episodio temporal relacionado con la dieta o el ejercicio, pero se ha normalizado en 2024, lo que es alentador. Los niveles de **ALT** y **fosfatasa alcalina** han estado consistentemente dentro de los rangos normales, indicando una función hepática estable.
 
