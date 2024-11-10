@@ -3,9 +3,10 @@ title: Volar más alto
 tags: [personal, readings]  
 header_image: juan-salvador-gaviota-3dcover.jpg  
 reviewed: true  
-ai: true  
+ai: true
+home: true
 ---
-Es curioso cómo a veces los libros llegan a nuestras manos en el momento justo. Esta es la primera vez que he leído *Juan Salvador Gaviota*, y lo que más me sorprendió, además de la profundidad de su mensaje, fue descubrir que en 2013 se publicó un capítulo adicional que cambia por completo la perspectiva final de la obra.<!-- excerpt-end --> Este capítulo no solo expande el legado de Juan, sino que añade una reflexión fascinante sobre cómo las enseñanzas pueden distorsionarse con el tiempo, ofreciendo una nueva visión del viaje de esta singular gaviota.
+Es curioso cómo a veces los libros llegan a nuestras manos en el momento justo. Esta es la primera vez que he leído *Juan Salvador Gaviota*, y lo que más me sorprendió, además de la profundidad de su mensaje, fue descubrir que hace unos anos se publicó un capítulo adicional que cambia la perspectiva final de la obra.<!-- excerpt-end --> Este capítulo no solo expande el legado de Juan, sino que añade una reflexión fascinante sobre cómo las enseñanzas pueden distorsionarse con el tiempo, ofreciendo una nueva visión del viaje de esta singular gaviota.
 
 Me esperaba una fábula sobre superación, pero encontré un relato profundo sobre la búsqueda de libertad y la lucha por romper con los límites autoimpuestos. Y este nuevo capítulo, que aborda las generaciones posteriores de gaviotas que veneran a Juan como una figura casi mítica, le da un giro interesante a la historia: el verdadero mensaje de libertad puede perderse cuando lo convertimos en dogma. Así, esta obra me dejó reflexionando sobre hasta qué punto nuestras propias búsquedas y aspiraciones pueden ser malinterpretadas con el tiempo.
 
