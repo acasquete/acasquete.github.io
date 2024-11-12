@@ -8,21 +8,33 @@ Discover my journey through the Google Maps API: a map where I've marked every c
 
 <div id="map" style="width:100%; height: 400px"></div>
 
-<script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHq3yNM4mSpvgccI8wNdXMVoI8j_dKKKk&callback=initMap&v=weekly" async></script>
+<script 
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhg1OUFK0r7HMQQ5IyohgZaixIR9oopz4&callback=initMap&v=weekly&libraries=marker" async></script>
 <script>
 let map;
 
 function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
     center: { lat: 47.603832, lng: -122.330062 },
-    
     zoom: 6,
+    mapId: 'acasquetenotes'
   });
   
   {% for city in site.data.cities %}
-  new google.maps.Marker({ position: { lat: {{city.lat}}, lng: {{city.long}} }, map, title: "{{city.name}}" });
+    new google.maps.marker.AdvancedMarkerElement({
+    position: { lat: {{city.lat}}, lng: {{city.long}} }, map: map, title: "{{city.name}}"
+  });
   {% endfor %}
 
 }
 </script>
+
+<style>
+.custom-marker {
+  background-color: #ffcc00;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-weight: bold;
+  color: #333;
+}
+</style>
