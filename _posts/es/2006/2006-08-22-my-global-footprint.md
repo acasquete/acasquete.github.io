@@ -9,7 +9,7 @@ Discover my journey through the Google Maps API: a map where I've marked every c
 <div id="map" style="width:100%; height: 400px"></div>
 
 <script 
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhg1OUFK0r7HMQQ5IyohgZaixIR9oopz4&callback=initMap&v=weekly&libraries=marker" async></script>
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAGXUKzypxUeI8MBKygbYY_0UGm-NDkBk0&callback=initMap&v=weekly&libraries=marker" async></script>
 <script>
 let map;
 
