@@ -148,9 +148,14 @@
   image: hamlet.jpg
   read: 2024
   
-- title: Romeo y Julieta,
+- title: Romeo y Julieta
   author: William Shakespeare
   image: romeo-y-julieta.jpg
   read: 2024
-  
+
+- title: Las penas del joven Werther
+  author: J. W. Goethe
+  image: penas-joven-werther.jpg
+  read: 2024
+
   
