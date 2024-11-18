@@ -4,7 +4,7 @@ tags: [personal, readings]
 header_image: un-mundo-feliz-3dcover.jpg
 reviewed: true
 ai: true
-home: true
+home: false
 ---
 No deja de sorprenderme cuando alguien es capaz de anticipar el futuro con tal precisión que sus ideas terminan encajando perfectamente con la realidad.<!-- excerpt-end --> Arthur C. Clarke, Asimov, Verne han escrito sobre cosas que parecían imposibles en su tiempo, pero que luego se convirtieron en realidad. *Un mundo feliz*, de Aldous Huxley, es uno de esos libros que, a pesar de haber sido escrito en 1932, parece anticipar muchas de las cuestiones que enfrentamos hoy. Esta vez, he aprovechado para volver a él en formato audiolibro y escucharlo mientras entreno, lo que me ha permitido sumergirme en su mundo de una manera diferente. Aun así, la intensidad de su mensaje sigue siendo tan impactante como cuando lo leí por primera vez.
 
