@@ -3,7 +3,7 @@ layout: default
 title: Biblioteca Personal
 ---
 <div class="container">
-  <h1>Biblioteca Personal</h1>
+  <h1>Literatura Universal y Clásicos</h1>
 </div>
 
   <section class="gallery">
@@ -41,6 +41,10 @@ title: Biblioteca Personal
 </section>
 
 <div class="container">
+  <h1>Desarrollo Personal y Productividad</h1>
+</div>
+
+<div class="container">
   <h1>Lo próximo: {{ site.data.books | size }} libros en mi radar</h1>
 </div>
 
@@ -51,5 +55,19 @@ title: Biblioteca Personal
   <span class="book-title">{{ book.title }}</span>
 
   {% endfor %}  
+
+</section>
+
+<div class="container">
+  <h1>Lo próximo: {{ site.data.personal | size }} libros en mi radar</h1>
+</div>
+
+<section class="pending">
+
+  {% for book in site.data.personal %}
+
+  <span class="book-title">{{ book.title }}</span>
+
+  {% endfor %}
 
 </section>
