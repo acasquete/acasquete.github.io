@@ -12,7 +12,7 @@ title: Biblioteca Personal
 
     <ol class="image-list grid-view">
 
-        {% for book in site.data.readings %}
+        {% for book in site.data.world_literature %}
           <figure>
             
             <a class="book-container">
@@ -44,6 +44,40 @@ title: Biblioteca Personal
 <div class="container">
   <h2>Desarrollo Personal</h2>
 </div>
+
+<section class="gallery">
+  <div class="container">
+
+    <ol class="image-list grid-view">
+
+      {% for book in site.data.personal_development %}
+      <figure>
+
+        <a class="book-container">
+
+          <div class="book">
+            <img
+                    alt="{{ book.title }}"
+                    src="/img/books/{{ book.image }}"
+            />
+          </div>
+        </a>
+
+        <figcaption>
+          <p class="title">{{ book.title }}</p>
+          {% if book.author  %}
+          <p class="author">by {{ book.author }}</p>
+          {% endif %}
+          <!--<p class="read">{{ book.read }}</p>-->
+        </figcaption>
+      </figure>
+      {% endfor %}
+
+
+
+    </ol>
+  </div>
+</section>
 
 <div class="container">
   <h1>Lo próximo: {{ site.data.books | size }} + {{ site.data.personal | size }} libros en mi radar</h1>
