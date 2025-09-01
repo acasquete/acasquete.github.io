@@ -9,7 +9,7 @@ Con el paso de los años, he aprendido a mirar cada amanecer con más intensidad
 
 **No hay otro cuerpo que me esté esperando para recoger el relevo**. Este, el que me ha sostenido en cada risa y me ha recogido en cada caída, es el único que tendré hasta el último día. Y entenderlo ha sido como un despertar, un toque de atención que me ha hecho replantearme prioridades. Porque cuidarme ya no es solo una cuestión de evitar enfermedades, sino de vivir con calidad, de sentirme fuerte y presente.
 
-[One Step](/onestep) es la síntesis de ese viaje personal, una guía donde la ciencia y la experiencia se encuentran para construir **hábitos sostenibles** que me permitan, **no solo añadir años a la vida, sino vida a los años**. Porque al final, lo que de verdad cuenta es cómo me siento en cada uno de esos días: fuerte y capaz de estar para mí y para los que me rodean.
+[One–Step](/onestep) es la síntesis de ese viaje personal, una guía donde la ciencia y la experiencia se encuentran para construir **hábitos sostenibles** que me permitan, **no solo añadir años a la vida, sino vida a los años**. Porque al final, lo que de verdad cuenta es cómo me siento en cada uno de esos días: fuerte y capaz de estar para mí y para los que me rodean.
 
 Esta guía no es una receta milagrosa ni una lista rígida de mandamientos. Es un relato de **pequeñas decisiones**, de **constancia** y **aprendizaje**, de esos momentos en los que me paro a escucharme y a reconocer qué necesito para sentirme bien de verdad. Es mi mapa, mi manual y ahora quiero compartirlo. No porque crea tener todas las respuestas, sino porque en este viaje, compartir es también una forma de crecer y aprender.
 
