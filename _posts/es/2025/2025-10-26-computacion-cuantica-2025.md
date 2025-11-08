@@ -35,7 +35,7 @@ El objetivo es ofrecer una visión clara, actualizada y accesible del panorama c
 
 # Referencias
 
-[^1]: Arute et al., “Quantum supremacy using a programmable superconducting processor,” *Nature*, 574(7779), 505–510 (2019).  
+[^1]: Arute et al., “[Quantum supremacy using a programmable superconducting processor](https://www.nature.com/articles/s41586-019-1666-5)” *Nature*, 574(7779), 505–510 (2019). 
 [^2]: Preskill, J., “Quantum Computing in the NISQ era and beyond,” *Quantum*, 2, 79 (2018).  
 [^3]: IBM Quantum Roadmap, “The era of quantum utility is here,” IBM Research Blog (2023).  
 [^4]: Google Quantum AI, “Suppressing quantum errors by scaling a surface code logical qubit,” *Nature* (2023).  
