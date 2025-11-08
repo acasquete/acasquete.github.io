@@ -6,13 +6,13 @@ home: true
 ai: true
 header_fullview: majorana.jpg
 ---
-La **computación cuántica** promete revolucionar la informática al aprovechar fenómenos de la mecánica cuántica como la *superposición* y el *entrelazamiento* para procesar información de formas imposibles para los ordenadores clásicos. <!-- excerpt-end -->En lugar de bits binarios, emplea **cúbits**, que pueden estar en múltiples estados simultáneamente, multiplicando exponencialmente la capacidad de cómputo[^1]. Esto abre la puerta a resolver problemas intratables hoy en día, desde la simulación de moléculas complejas hasta la optimización de sistemas logísticos o financieros[^2].
+La **computación cuántica** promete revolucionar la informática al aprovechar fenómenos de la mecánica cuántica como la *superposición* y el *entrelazamiento* para procesar información de formas imposibles para los ordenadores clásicos. <!-- excerpt-end --> En lugar de bits binarios, emplea **cúbits**, que pueden estar en múltiples estados simultáneamente, multiplicando exponencialmente la capacidad de cómputo[^1]. Esto abre la puerta a resolver problemas intratables hoy en día, desde la simulación de moléculas complejas hasta la optimización de sistemas logísticos o financieros[^2].
 
 Si es la primera vez que te enfrentas a un texto sobre **tecnología cuántica**, el párrafo anterior puede resultar aturdidor. Términos como **superposición**, **entrelazamiento** o **estados simultáneos** requieren cierto **conocimiento previo de física cuántica**, algo que puede intimidar al principio.
 
 El objetivo de este artículo no es profundizar en la teoría física que hay detrás, sino ofrecer una visión comprensible y práctica del estado actual de la tecnología cuántica. Para quienes deseen explorar con más detalle los fundamentos teóricos, existen excelentes recursos introductorios de física cuántica y computación cuántica a los que el lector puede remitirse, como *Quantum Computing for Everyone* de Chris Bernhardt (MIT Press, 2020) [^75].
 
-Sin embargo, la tecnología aún se encuentra en una fase **emergente**: sus aplicaciones prácticas son limitadas y enfrenta grandes desafíos de ingeniería. Los cúbits son extremadamente sensibles al entorno, sufriendo **decoherencia** y errores que dificultan mantener cálculos estables. Aun así, los avances en los últimos años han sido acelerados, con empresas e instituciones compitiendo por superar obstáculos como la corrección de errores y la escalabilidad de los sistemas cuánticos [^3] [^4].
+Sin embargo, la tecnología aún se encuentra en una fase **emergente**: sus aplicaciones prácticas son limitadas y enfrenta grandes desafíos de ingeniería. Los cúbits son extremadamente sensibles al entorno y sufren **decoherencia** y errores que dificultan mantener cálculos estables. Aun así, los avances en los últimos años han sido rápidos, con empresas e instituciones compitiendo por superar obstáculos como la corrección de errores y la escalabilidad de los sistemas cuánticos [^3] [^4].
 
 Desde 2019, cuando Google anunció haber alcanzado la llamada *supremacía cuántica* con su procesador **Sycamore** —capaz de realizar en 200 segundos una tarea que habría llevado miles de años a un superordenador clásico— [^5], la carrera por lograr una **ventaja cuántica práctica** se ha intensificado. IBM, por su parte, ha escalado sus procesadores superconductores desde 5 cúbits en 2016 hasta más de 1 000 cúbits en 2023 con el chip **Condor** [^6]. Microsoft ha apostado por una vía diferente, basada en cúbits **topológicos de Majorana**, que podrían ofrecer una corrección de errores más eficiente [^7].
 
@@ -20,9 +20,9 @@ Paralelamente, startups como **IonQ**, **Quantinuum**, **Atom Computing** o **Qu
 
 A nivel de software, han surgido lenguajes y frameworks de programación cuántica como **Qiskit** (IBM), **Q#** (Microsoft), **Cirq** (Google) y **PennyLane** (Xanadu), que permiten a desarrolladores e investigadores diseñar y ejecutar algoritmos cuánticos en entornos simulados o en hardware real accesible desde la nube [^10] [^11].
 
-La revolución cuántica no solo afectará al cómputo: también redefine la **ciberseguridad**. Los algoritmos de Shor y Grover podrían quebrar los sistemas criptográficos actuales basados en RSA y ECC una vez existan computadoras cuánticas tolerantes a fallos [^12]. Para adelantarse a ese riesgo, el **NIST** publicó en 2024 los primeros estándares de **criptografía post-cuántica**, inaugurando una transición global hacia algoritmos resistentes a ataques cuánticos [^13].
+La revolución cuántica no solo afectará al cómputo: también redefine la **ciberseguridad**. Los algoritmos de Shor y Grover podrían poner en riesgo los sistemas criptográficos actuales basados en RSA y ECC una vez existan computadoras cuánticas tolerantes a fallos [^12]. Para adelantarse a ese riesgo, el **NIST** publicó en 2024 los primeros estándares de **criptografía post-cuántica**, inaugurando una transición global hacia algoritmos resistentes a ataques cuánticos [^13].
 
-Este artículo explora el **estado del arte de la tecnología cuántica en 2025**, abordando:
+En los próximos articulos exploraremos el **estado del arte de la tecnología cuántica en 2025**, abordando:
 
 - Los hitos recientes desde la *supremacía cuántica* hasta la *ventaja cuántica práctica*.  
 - Los principales actores y líneas de investigación.  
