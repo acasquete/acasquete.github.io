@@ -1,8 +1,6 @@
 ---
 description: "Suavizar expresiones artificiales conservando la voz del autor"
 mode: "edit"
-model: "default"
-tools: []
 ---
 
 Objetivo
@@ -17,6 +15,7 @@ Instrucciones (uso en el editor o Chat)
 - Corrige errores tipográficos, ortográficos y de acentuación cuando los detectes (por ejemplo, "codigo" → "código").
 - Conserva el formato Markdown (listas, blockquotes, encabezados, etc.).
 - Evita cambios de estilo global (p. ej. no convertir un texto informal en uno formal).
+- Unifica el tratamiento del lector, utilizado usted en lugar de tú. Utilizar “Si es la primera vez que te enfrentas…” → “Si es la primera vez que usted se enfrenta…”
 - Al terminar, incluye un breve comentario (1–2 líneas) al final del archivo indicando las correcciones realizadas, por ejemplo: "Corregidas 3 expresiones: líneas 12–16".
 
 Cómo usarlo en VS Code
