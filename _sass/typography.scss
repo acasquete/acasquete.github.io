@@ -12,10 +12,18 @@ body
 }
 
 /*- Typography for medium and small screen, based on 16px font-size -*/
+.footnotes {
+	
+	p {
+		
+		margin: 0;
+	}
+}
+
 
 p, ul, ol {
-	font-size: 1em; /* 16px */
-	line-height: 1.8em;
+	font-size: 1rem; /* 16px */
+	line-height: 1.8rem;
 	margin-bottom: 1.5em; /* 24px/16px */
 
 	code {
@@ -68,8 +76,8 @@ blockquote {
 @media (min-width: 560px) { //Breakpoint set to 940px
 
 p, ul, ol {
-	font-size: 1.1em; /* 18px */
-	line-height: 1.8em;
+	font-size: 1.1rem; /* 18px */
+	line-height: 1.8rem;
 	margin-bottom: 1.3334em; /* 24px/18px */
 }
 
