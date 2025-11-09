@@ -10,7 +10,7 @@ La **computación cuántica** promete revolucionar la informática al aprovechar
 
 Si es la primera vez que usted se enfrenta a un texto sobre **tecnología cuántica**, el párrafo anterior puede resultar aturdidor. Términos como **superposición**, **entrelazamiento** o **estados simultáneos** requieren cierto **conocimiento previo de física cuántica**, algo que puede intimidar al principio.
 
-El objetivo de este artículo no es profundizar en la teoría física que hay detrás, sino ofrecer una visión comprensible y práctica del estado actual de la tecnología cuántica. Para quienes deseen explorar con más detalle los fundamentos teóricos, existen excelentes recursos introductorios de física cuántica y computación cuántica a los que el lector puede remitirse, como *Quantum Computing for Everyone* de Chris Bernhardt (MIT Press, 2020) [^75]. Además, también podrá apoyarse de la extensa referencia bibliografica que incluiré en cada uno de los artículos.
+El objetivo de este artículo no es profundizar en la teoría física que hay detrás, sino ofrecer una visión comprensible y práctica del estado actual de la tecnología cuántica. Para quienes deseen explorar con más detalle los fundamentos teóricos, existen excelentes recursos introductorios de física cuántica y computación cuántica a los que el lector puede remitirse, como *Quantum Computing for Everyone* de Chris Bernhardt (MIT Press, 2020) [^75]. Además, cada articulo incluye una extensa referencia bibliografica donde apoyarse.
 
 La tecnología aún se encuentra en una fase **emergente**: sus aplicaciones prácticas son limitadas y enfrenta grandes desafíos de ingeniería. Los cúbits son extremadamente sensibles al entorno y sufren **decoherencia** y errores que dificultan mantener cálculos estables. Aun así, los avances en los últimos años han sido rápidos, con empresas e instituciones compitiendo por superar obstáculos como la corrección de errores y la escalabilidad de los sistemas cuánticos [^3] [^4].
 
@@ -36,9 +36,9 @@ El objetivo es ofrecer una visión clara, actualizada y accesible del panorama c
 # Referencias
 
 [^1]: Arute et al., “[Quantum supremacy using a programmable superconducting processor](https://www.nature.com/articles/s41586-019-1666-5)” *Nature*, 574(7779), 505–510 (2019). 
-[^2]: Preskill, J., “Quantum Computing in the NISQ era and beyond,” *Quantum*, 2, 79 (2018).  
-[^3]: IBM Quantum Roadmap, “The era of quantum utility is here,” IBM Research Blog (2023).  
-[^4]: Google Quantum AI, “Suppressing quantum errors by scaling a surface code logical qubit,” *Nature* (2023).    
+[^2]: Preskill, J., “[Quantum Computing in the NISQ era and beyond](https://quantum-journal.org/papers/q-2018-08-06-79/),” *Quantum*, 2, 79 (2018).  
+[^3]: IBM Quantum Roadmap, “[The era of quantum utility is here](https://www.ibm.com/quantum/blog/quantum-roadmap-2033),” IBM Research Blog (2023).  
+[^4]: Google Quantum AI, “[Suppressing quantum errors by scaling a surface code logical qubit](https://www.nature.com/articles/s41586-022-05434-1),” *Nature* (2023).    
 [^6]: IBM Research, “IBM Condor: 1,121-qubit processor unveiled,” IBM Newsroom (2023).  
 [^7]: Microsoft Azure Quantum Blog, “Introducing Majorana 1: topological qubits for scalable quantum computing” (2025).  
 [^8]: Quantinuum, “System Model H2: trapped-ion quantum computer with all-to-all connectivity,” Press Release (2023).  
