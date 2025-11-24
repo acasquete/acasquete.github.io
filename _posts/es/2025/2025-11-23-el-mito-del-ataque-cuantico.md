@@ -4,19 +4,19 @@ tags: [personal, quantum]
 reviewed: true
 home: true
 ai: true
-header_fullview: majorana.jpg
+header_fullview: elliptic-curve-bitcoin-chalkboard-side-view.jpg
 ---
-A principios de año apareció en *Voz Pópuli* un artículo titulado [*“En solo 320 segundos hackean a Bitcoin con el primer ataque cuántico de la historia”*](https://www.vozpopuli.com/economia/solo-320-segundos-hackean-bitcoin-con-el-primer-ataque-cuantico-historia-sd.html). El artículo, publicado el 9 de marzo, generó un notable eco mediático y el propio medio finalmente modificó el titular por uno más prudente (aunque igualmente impreciso): *“Un experto alerta de un posible intento de hackeo a Bitcoin con computación cuántica”*.
+A principios de año apareció en *Voz Pópuli* un artículo titulado [*“En solo 320 segundos hackean a Bitcoin con el primer ataque cuántico de la historia”*](https://www.vozpopuli.com/economia/solo-320-segundos-hackean-bitcoin-con-el-primer-ataque-cuantico-historia-sd.html). El artículo generó un notable eco mediático y el propio medio finalmente modificó el titular por uno más prudente (aunque igualmente impreciso): *“Un experto alerta de un posible intento de hackeo a Bitcoin con computación cuántica”*.
 
 El problema no es solo el alarmismo. Es que la premisa fundamental del artículo es falsa: **no existe ningún ataque cuántico contra Bitcoin con un ordenador de 18 qubits, ni en 320 segundos ni de ningún tipo**.
 
 Este episodio, sin embargo, sirve para explicar de forma clara cómo funciona la criptografía de Bitcoin, por qué no tiene nada que ver con RSA y qué necesitaría la computación cuántica para suponer una amenaza real.
 
-## RSA y el problema de la factorización
+# RSA y el problema de la factorización
 
 RSA, uno de los estándares clásicos de cifrado de clave pública, se basa en una idea muy sencilla: multiplicar dos números primos grandes es fácil, pero averiguar qué dos primos se usaron —es decir, factorizar el número resultante— es extremadamente difícil. Esa asimetría es la base de su seguridad y explica por qué un atacante debe invertir enormes recursos computacionales para romper una clave RSA convencional.
 
-La construcción de RSA sigue siempre el mismo proceso: se escogen dos primos grandes (p y q), se multiplica n = p × q, y se deriva un exponente público e junto con un exponente privado d que es el inverso modular de e respecto a (p-1)(q-1). El par (e, n) forma la clave pública, mientras que (d, n) constituye la clave privada. Sobre este mecanismo se construyen tanto el cifrado como la firma: el mensaje se eleva a una potencia módulo n, con la clave pública para cifrar y con la clave privada para firmar; el proceso inverso se hace con la clave complementaria.
+La construcción de RSA sigue siempre el mismo proceso: se escogen dos primos grandes (p y q), se multiplica n = p × q y se deriva un exponente público e junto con un exponente privado d que es el inverso modular de e respecto a (p-1)(q-1). El par (e, n) forma la clave pública, mientras que (d, n) constituye la clave privada. Sobre este mecanismo se construyen tanto el cifrado como la firma: el mensaje se eleva a una potencia módulo n, con la clave pública para cifrar y con la clave privada para firmar; el proceso inverso se hace con la clave complementaria.
 
 Las claves RSA modernas tienen normalmente **2048 bits**, una longitud que garantiza que la factorización clásica resulte impracticable. Pero en 1994 Peter Shor demostró que un ordenador cuántico suficientemente grande podría factorizar estos números de forma eficiente mediante su algoritmo cuántico, lo que rompería RSA de forma directa.
 
@@ -26,7 +26,7 @@ En entornos reales como TLS/SSL, RSA ha desempeñado históricamente dos funcion
 
 Por todo ello, RSA sigue siendo relevante, pero su futuro depende de la evolución tanto de la computación cuántica como de la transición hacia esquemas criptográficos postcuánticos más resistentes.
 
-## Criptografía de curvas elípticas y por qué Bitcoin no usa RSA
+# Criptografía de curvas elípticas y por qué Bitcoin no usa RSA
 
 A diferencia de RSA, Bitcoin no se apoya en la factorización de números grandes, sino en la criptografía de curvas elípticas, concretamente en el esquema **ECDSA** sobre la curva *secp256k1*. Este enfoque permite ofrecer un nivel de seguridad muy alto con claves mucho más pequeñas.
 
@@ -48,9 +48,9 @@ Aunque una clave de Bitcoin tiene solo **256 bits**, su nivel de seguridad es eq
 
 En este contexto, el famoso algoritmo de Shor también podría, en teoría, resolver el logaritmo discreto, igual que factoriza números para romper RSA. Sin embargo, aplicarlo a curvas elípticas requiere aún más recursos: para atacar claves de 256 bits serían necesarios **centenares de qubits lógicos** y, por extensión, **millones de qubits físicos** cuando se incorpora la corrección de errores cuánticos. Nada de esto es posible con los dispositivos cuánticos actuales, que siguen limitados por ruido elevado, profundidades de circuito muy bajas y tamaños muy reducidos.
 
-Por esta razón, la criptografía de curvas elípticas sigue siendo completamente segura frente a la tecnología cuántica disponible hoy en día, y constituye la base robusta sobre la que se construyen las firmas digitales de Bitcoin.
+Por esta razón, la criptografía de curvas elípticas sigue siendo completamente segura frente a la tecnología cuántica disponible hoy en día y constituye la base robusta sobre la que se construyen las firmas digitales de Bitcoin.
 
-## Qué sí sería una verdadera amenaza cuántica
+# Una verdadera amenaza cuántica
 
 Para que un ataque cuántico contra Bitcoin o RSA fuera realmente viable, no bastaría con un procesador de unas pocas decenas o incluso cientos de qubits físicos. Sería necesario un tipo de máquina cuántica radicalmente más avanzada que las actuales. En concreto, un ataque práctico requeriría:
 
@@ -62,13 +62,13 @@ Para que un ataque cuántico contra Bitcoin o RSA fuera realmente viable, no bas
 
 Solo la combinación de estos elementos permitiría, en la práctica, romper RSA o ECDSA. Y ninguno de ellos está disponible hoy. La distancia tecnológica entre los ordenadores cuánticos actuales y una máquina capaz de atacar criptografía real sigue siendo enorme.
 
-## Conclusión
+# Conclusión
 
 El supuesto “ataque cuántico a Bitcoin en 320 segundos” no solo era falso, sino técnicamente imposible con el hardware cuántico disponible hoy. Tanto RSA como las curvas elípticas que utiliza Bitcoin se basan en problemas matemáticos cuya inversión sigue estando muy lejos del alcance de los ordenadores cuánticos actuales. El algoritmo de Shor demuestra que, en teoría, el futuro cuántico podrá romper ambos sistemas, pero ese escenario exige miles de qubits lógicos y millones de qubits físicos, una escala que ninguna plataforma cuántica moderna puede ofrecer.
 
 Mientras tanto, Bitcoin continúa protegido por ECDSA sobre *secp256k1*, una estructura criptográfica altamente resistente y con niveles de seguridad equivalentes a claves RSA mucho más largas. La amenaza cuántica llegará eventualmente, pero no será de la mano de dispositivos de 18 qubits ni mediante titulares sensacionalistas. Será un proceso gradual que la comunidad criptográfica, las infraestructuras de Internet y las cadenas de bloques tendrán que afrontar mediante algoritmos postcuánticos estandarizados.
 
-## Referencias
+# Referencias
 
 Shor, P. W. (1994). *Algorithms for quantum computation: Discrete logarithms and factoring*. IEEE FOCS. [https://doi.org/10.1109/SFCS.1994.365700](https://doi.org/10.1109/SFCS.1994.365700)
 
