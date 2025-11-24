@@ -10,7 +10,7 @@ A principios de año apareció en *Voz Pópuli* un artículo titulado [*“En so
 
 El problema no es solo el alarmismo. Es que la premisa fundamental del artículo es falsa: **no existe ningún ataque cuántico contra Bitcoin con un ordenador de 18 qubits, ni en 320 segundos ni de ningún tipo**.
 
-Este episodio, sin embargo, sirve para explicar de forma clara cómo funciona la criptografía de Bitcoin, por qué no tiene nada que ver con RSA y qué necesitaría la computación cuántica para suponer una amenaza real.
+Esta anécdota, sin embargo, sirve para repasar cómo funcionan distintos algoritmos de clave pública, explicar con claridad la criptografía que utiliza Bitcoin y entender qué requeriría realmente la computación cuántica para convertirse en una amenaza.
 
 # RSA y el problema de la factorización
 
@@ -22,7 +22,7 @@ Las claves RSA modernas tienen normalmente **2048 bits**, una longitud que garan
 
 El problema —y es la razón por la que RSA sigue siendo seguro hoy— es que ese “ordenador cuántico suficientemente grande” está muy lejos de la tecnología actual: sería necesario disponer de **miles de qubits lógicos**, lo que se traduce en **millones de qubits físicos** una vez añadida la corrección de errores cuánticos. No existe hoy ningún sistema que se acerque mínimamente a esa escala.
 
-En entornos reales como TLS/SSL, RSA ha desempeñado históricamente dos funciones: por un lado, autenticar al servidor mediante la firma del certificado, algo que sigue siendo habitual; por otro, desempeñar el papel de mecanismo de intercambio de claves, una función que hoy se ha abandonado porque no ofrece secreto perfecto hacia adelante. En las versiones modernas del protocolo (TLS 1.3), el intercambio se realiza con ECDHE —basado en curvas elípticas—, mientras que RSA queda relegado a la autenticación mediante certificados o, en muchos casos, se sustituye directamente por firmas ECDSA o algoritmos postcuánticos experimentales.
+En entornos reales como TLS (y anteriormente SSL), RSA ha desempeñado históricamente dos funciones: por un lado, autenticar al servidor mediante las firmas empleadas en los certificados, algo que sigue siendo habitual; por otro, actuar como mecanismo de intercambio de claves, una función que hoy se ha abandonado porque no ofrece *Forward Secrecy* (garantizar que, aunque la clave privada del servidor se vea comprometida en el futuro, las sesiones cifradas del pasado sigan siendo imposibles de descifrar). En las versiones modernas del protocolo (TLS 1.3), el intercambio de claves se realiza mediante ECDHE —basado en curvas elípticas—, mientras que RSA queda relegado a la autenticación o sustituido directamente por firmas ECDSA o, de forma aún limitada, por algoritmos postcuánticos en fase de adopción.
 
 Por todo ello, RSA sigue siendo relevante, pero su futuro depende de la evolución tanto de la computación cuántica como de la transición hacia esquemas criptográficos postcuánticos más resistentes.
 
