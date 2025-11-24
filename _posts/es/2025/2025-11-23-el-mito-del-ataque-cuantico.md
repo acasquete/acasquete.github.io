@@ -12,6 +12,8 @@ El problema no es solo el alarmismo. Es que la premisa fundamental del artículo
 
 Esta anécdota, sin embargo, sirve para repasar cómo funcionan distintos algoritmos de clave pública, explicar con claridad la criptografía que utiliza Bitcoin y entender qué requeriría realmente la computación cuántica para convertirse en una amenaza.
 
+Antes de continuar, conviene recordar algo esencial: la computación cuántica no es magia ni un atajo inmediato para romper cifrados. Su estado actual está limitado por ruido, escalabilidad, fidelidad y la necesidad de corrección de errores masiva. Comprender estas limitaciones técnicas es clave para evaluar cualquier supuesto “ataque cuántico”.
+
 # RSA y el problema de la factorización
 
 RSA, uno de los estándares clásicos de cifrado de clave pública, se basa en una idea muy sencilla: multiplicar dos números primos grandes es fácil, pero averiguar qué dos primos se usaron —es decir, factorizar el número resultante— es extremadamente difícil. Esa asimetría es la base de su seguridad y explica por qué un atacante debe invertir enormes recursos computacionales para romper una clave RSA convencional.
@@ -57,7 +59,7 @@ Para que un ataque cuántico contra Bitcoin o RSA fuera realmente viable, no bas
 - **Qubits lógicos y corrección de errores completa**. La criptografía moderna no cae con qubits físicos: hace falta ejecutar el algoritmo de Shor de forma tolerante a fallos. Esto implica miles de qubits lógicos, cada uno respaldado por miles de qubits físicos mediante códigos de corrección de errores.
 - **Profundidad de circuito muy elevada**. Shor, aplicado a claves reales de 2048 o 3072 bits (RSA) o a claves de 256 bits en curvas elípticas (Bitcoin), exige millones de puertas cuánticas consecutivas. Los dispositivos actuales apenas soportan unas decenas.
 - **Tasas de error ultrabajas**. Incluso un pequeño error acumulado destruye el estado cuántico y hace fracasar la ejecución. Se necesitarían tasas de error por puerta y por qubit varios órdenes de magnitud mejores que las actuales.
-- **Quantum RAM (QRAM)**. Para manejar eficientemente estructuras de datos a la escala necesaria en ataques criptográficos. La QRAM es todavía un concepto teórico sin implementaciones prácticas.
+- **Quantum RAM (QRAM)**. Para manejar eficientemente estructuras de datos a la escala necesaria en ataques criptográficos. La QRAM no es estrictamente necesaria para ejecutar Shor, pero sería imprescindible para escalar muchos ataques criptográficos cuánticos más avanzados y hoy sigue siendo solo un concepto teórico.
 - **Estabilidad durante tiempos largos**. Ejecutar Shor sobre claves reales demandaría minutos u horas de operación coherente, mientras que los sistemas actuales mantienen la coherencia durante milisegundos o microsegundos.
 
 Solo la combinación de estos elementos permitiría, en la práctica, romper RSA o ECDSA. Y ninguno de ellos está disponible hoy. La distancia tecnológica entre los ordenadores cuánticos actuales y una máquina capaz de atacar criptografía real sigue siendo enorme.
@@ -66,7 +68,7 @@ Solo la combinación de estos elementos permitiría, en la práctica, romper RSA
 
 El supuesto “ataque cuántico a Bitcoin en 320 segundos” no solo era falso, sino técnicamente imposible con el hardware cuántico disponible hoy. Tanto RSA como las curvas elípticas que utiliza Bitcoin se basan en problemas matemáticos cuya inversión sigue estando muy lejos del alcance de los ordenadores cuánticos actuales. El algoritmo de Shor demuestra que, en teoría, el futuro cuántico podrá romper ambos sistemas, pero ese escenario exige miles de qubits lógicos y millones de qubits físicos, una escala que ninguna plataforma cuántica moderna puede ofrecer.
 
-Mientras tanto, Bitcoin continúa protegido por ECDSA sobre *secp256k1*, una estructura criptográfica altamente resistente y con niveles de seguridad equivalentes a claves RSA mucho más largas. La amenaza cuántica llegará eventualmente, pero no será de la mano de dispositivos de 18 qubits ni mediante titulares sensacionalistas. Será un proceso gradual que la comunidad criptográfica, las infraestructuras de Internet y las cadenas de bloques tendrán que afrontar mediante algoritmos postcuánticos estandarizados.
+Mientras tanto, Bitcoin continúa protegido por ECDSA sobre *secp256k1*, una estructura criptográfica altamente resistente y con niveles de seguridad equivalentes a claves RSA mucho más largas. La amenaza cuántica llegará si la tecnología consigue escalar de forma significativa, algo que hoy está muy lejos de estar resuelto. Será un proceso gradual que la comunidad criptográfica, las infraestructuras de Internet y las cadenas de bloques tendrán que afrontar mediante algoritmos postcuánticos estandarizados.
 
 # Referencias
 
@@ -84,11 +86,7 @@ Google Quantum AI (2019). *Quantum supremacy using a programmable superconductin
 
 Google Quantum AI (2024). Información técnica del procesador Willow (105 qubits). [https://quantumai.google](https://quantumai.google)
 
-Arute, F. et al. (2020). *Quantum approximate optimization of nonplanar Ising models*. *Science* 369, 1084–1089. [https://www.science.org/doi/10.1126/science.abb9811](https://www.science.org/doi/10.1126/science.abb9811)
-
 IETF (2018). *RFC 8446: The Transport Layer Security (TLS) Protocol Version 1.3*. [https://datatracker.ietf.org/doc/rfc8446/](https://datatracker.ietf.org/doc/rfc8446/)
-
-NSA (2022). *Commercial National Security Algorithm Suite 2.0 (CNSA 2.0)*.  [https://media.defense.gov/2022/sep/07/2003072245/-1/-1/0/cnsa_2.0_fact_sheet.pdf](https://media.defense.gov/2022/sep/07/2003072245/-1/-1/0/cnsa_2.0_fact_sheet.pdf)
 
 Bernstein, D. J., Buchmann, J., Dahmen, E. (2009). *Post-Quantum Cryptography*. Springer. [https://link.springer.com/book/10.1007/978-3-540-88702-7](https://link.springer.com/book/10.1007/978-3-540-88702-7)
 
