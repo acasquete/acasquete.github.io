@@ -80,7 +80,7 @@ En mi experiencia, eso pasa por tres gestos concretos:
 
 Integrar contexto no convierte a la IA en experta de tu organización. Solo le da el mínimo necesario para que sus preguntas y objeciones sean menos ingenuas. Y aun así, ese contexto será una narrativa parcial, construida desde tu punto de vista. El resto —contrastar esas objeciones con otros actores, con datos y con la historia real de la organización— sigue dependiendo de las personas.
 
-## Costes, riesgos y límites del modo adversarial
+# Costes, riesgos y límites del modo adversarial
 
 Idealizar el “modo adversarial” también tiene sus riesgos. Algunos de ellos apenas aparecen en el libro y conviene explicitarlos:
 
@@ -92,7 +92,7 @@ Idealizar el “modo adversarial” también tiene sus riesgos. Algunos de ellos
 
 Reconocer estos límites no invalida el uso adversarial. Simplemente lo sitúa donde pertenece, una herramienta más en un ecosistema de mecanismos de contraste que incluye revisión por pares, comités de riesgo, auditorías externas y, sobre todo, conversaciones humanas difíciles.
 
-## Un uso más honesto y menos ingenuo
+# Un uso más honesto y menos ingenuo
 
 La IA puede ser un socio valioso, pero no solo por lo que automatiza ni solo por lo que incomoda. Su aportación real aparece cuando se combinan tres condiciones:
 
@@ -100,7 +100,7 @@ La IA puede ser un socio valioso, pero no solo por lo que automatiza ni solo por
 
 2. **Validar lo que dice con mecanismos algo más rigurosos que “me encaja/no me encaja”** - La IA formula críticas con seguridad incluso cuando interpreta mal un contexto o exagera problemas menores. El valor no está en la crítica literal, sino en lo que te obliga a revisar. Esa validación puede incluir contrastar con datos, pedir una segunda opinión (humana o de otro modelo) o someter las objeciones a una revisión por pares dentro del equipo.
 
-3. **Aceptar que no toda la incomodidad es insight y que el modelo tiene límites estructurales.** - Parte de la incomodidad será simplemente ruido: hipótesis poco probables, malentendidos, repeticiones. Además, hay ámbitos donde el modelo, por capacidad o por *guardrails*, no va a ir mucho más allá de lugares comunes, por más contexto y *prompts* que le des. Tu trabajo no es acatar ni descartar por reflejo, sino clasificar: qué merece trabajo adicional, qué se descarta y qué se aparca a la espera de más información.
+3. **Aceptar que no toda la incomodidad es insight y que el modelo tiene límites estructurales** - Parte de la incomodidad será simplemente ruido: hipótesis poco probables, malentendidos, repeticiones. Además, hay ámbitos donde el modelo, por capacidad o por *guardrails*, no va a ir mucho más allá de lugares comunes, por más contexto y *prompts* que le des. Tu trabajo no es acatar ni descartar por reflejo, sino clasificar: qué merece trabajo adicional, qué se descarta y qué se aparca a la espera de más información.
 
 Antes de cualquier decisión relevante, una instrucción simple puede elevar la calidad del análisis sin convertir a la IA en juez final:
 
