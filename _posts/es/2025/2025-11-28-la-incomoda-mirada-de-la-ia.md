@@ -16,7 +16,7 @@ La IA acelera tareas como resumir o depurar contenido y ese uso sí puede modifi
 
 Si no se hace ese trabajo explícito, la combinación de alineamiento de seguridad, prudencia en el tono y generación probabilística produce algo reconocible, una confirmación amable, críticas superficiales y una falsa sensación de solidez que puede llevarte a creer que tus planteamientos están mejor fundamentados de lo que realmente están.
 
-## La incomodidad bien definida
+# La incomodidad bien definida
 
 Hablar de “incomodidad” puede sonar abstracto, así que conviene precisarlo. En este contexto, incomodidad significa descubrir que habías dado por válidos supuestos no verificados o dependencias que dabas por obvias. Esa ruptura no surge sola. Aparece, a veces, cuando fuerzas al modelo a adoptar un rol adversarial, no asistencial.
 
@@ -38,7 +38,7 @@ Un modelo puede sonar incisivo y, aun así, estar generando hipótesis irrelevan
 
 > La incomodidad productiva consiste en discriminar qué críticas merecen trabajo y cuáles son solo ruido generativo.
 
-## La IA como comunicador, con límites claros
+# La IA como comunicador, con límites claros
 
 El libro también propone usar la IA para depurar mensajes complejos. Un modelo sin experiencia directa en tu dominio puede, aun así, ayudarte a clarificar una explicación, reorganizar argumentos o ajustar el tono para audiencias distintas.
 
@@ -52,7 +52,7 @@ La IA no distingue, por sí sola, lo crítico de lo accesorio. Solo puede aproxi
 
 > La responsabilidad de decidir qué matices no se pueden sacrificar sigue siendo tuya.
 
-## Lo que el libro no aborda (y por qué importa)
+# Lo que el libro no aborda (y por qué importa)
 
 El enfoque del libro es estimulante, pero incompleto. No profundiza en las razones por las que un modelo rara vez contradice de entrada. Entre ellas están:
 

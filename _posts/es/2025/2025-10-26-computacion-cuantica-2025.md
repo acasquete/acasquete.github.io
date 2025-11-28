@@ -4,7 +4,7 @@ tags: [personal, quantum_computing]
 reviewed: true
 home: true
 ai: true
-header_fullview: quantum-hardware-closeup.jpg
+header_image: quantum-hardware-closeup.jpg
 ---
 La **computación cuántica** promete revolucionar la informática al aprovechar fenómenos de la mecánica cuántica como la *superposición* y el *entrelazamiento* para procesar información de formas imposibles para los ordenadores clásicos. <!-- excerpt-end --> En lugar de bits binarios, emplea **cúbits**, que pueden estar en múltiples estados simultáneamente, multiplicando exponencialmente la capacidad de cómputo[^1]. Esto abre la puerta a resolver problemas intratables hoy en día, desde la simulación de moléculas complejas hasta la optimización de sistemas logísticos o financieros[^2].
 
@@ -41,7 +41,7 @@ El objetivo es ofrecer una visión clara, actualizada y accesible del panorama c
 [^2]: Preskill, J., “[Quantum Computing in the NISQ era and beyond](https://quantum-journal.org/papers/q-2018-08-06-79/),” *Quantum*, 2, 79 (2018).  
 [^3]: IBM Quantum Roadmap, “[The era of quantum utility is here](https://www.ibm.com/quantum/blog/quantum-roadmap-2033),” IBM Research Blog (2023).  
 [^4]: Google Quantum AI, “[Suppressing quantum errors by scaling a surface code logical qubit](https://www.nature.com/articles/s41586-022-05434-1),” *Nature* (2023).    
-[^6]: IBM Research, “IBM Condor: 1,121-qubit processor unveiled,” IBM Newsroom (2023).  
+[^6]: IBM Research, “[IBM Condor: 1,121-qubit processor unveiled](https://www.ibm.com/quantum/blog/quantum-roadmap-2033),” IBM Newsroom (2023).  
 [^7]: Microsoft Azure Quantum Blog, “[Introducing Majorana 1: topological qubits for scalable quantum computing](https://azure.microsoft.com/en-us/blog/quantum/2025/02/19/microsoft-unveils-majorana-1-the-worlds-first-quantum-processor-powered-by-topological-qubits/)” (2025).  
 [^8]: Quantinuum, “[System Model H2: trapped-ion quantum computer with all-to-all connectivity](https://www.quantinuum.com/press-releases/for-the-first-time-ever-quantinuums-new-h2-quantum-computer-has-created-non-abelian-topological-quantum-matter-and-braided-its-anyons),” Press Release (2023).  
 [^9]: Xanadu, “[Borealis: programmable photonic processor achieves quantum advantage](https://www.nature.com/articles/s41586-022-04725-x),” *Nature* (2022).  
