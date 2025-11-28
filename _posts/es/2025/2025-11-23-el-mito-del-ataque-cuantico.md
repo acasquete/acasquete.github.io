@@ -8,7 +8,7 @@ header_fullview: elliptic-curve-bitcoin-chalkboard-side-view.jpg
 ---
 A principios de año apareció en *Voz Pópuli* un artículo titulado [*“En solo 320 segundos hackean a Bitcoin con el primer ataque cuántico de la historia”*](https://www.vozpopuli.com/economia/solo-320-segundos-hackean-bitcoin-con-el-primer-ataque-cuantico-historia-sd.html). El artículo generó un notable eco mediático y el propio medio finalmente modificó el titular por uno más prudente (aunque igualmente impreciso): *“Un experto alerta de un posible intento de hackeo a Bitcoin con computación cuántica”*.
 
-El problema no es solo el alarmismo. Es que la premisa fundamental del artículo es falsa: **no existe ningún ataque cuántico contra Bitcoin con un ordenador de 18 qubits, ni en 320 segundos ni de ningún tipo**.
+El problema no es solo el alarmismo. Es que la premisa fundamental del artículo es falsa: **no existe ningún ataque cuántico contra Bitcoin con un ordenador de 18 cúbits, ni en 320 segundos ni de ningún tipo**.
 
 Esta anécdota, sin embargo, sirve para repasar cómo funcionan distintos algoritmos de clave pública, explicar con claridad la criptografía que utiliza Bitcoin y entender qué requeriría realmente la computación cuántica para convertirse en una amenaza.
 
@@ -22,7 +22,7 @@ La construcción de RSA sigue siempre el mismo proceso: se escogen dos primos gr
 
 Las claves RSA modernas tienen normalmente **2048 bits**, una longitud que garantiza que la factorización clásica resulte impracticable. Pero en 1994 Peter Shor demostró que un ordenador cuántico suficientemente grande podría factorizar estos números de forma eficiente mediante su algoritmo cuántico, lo que rompería RSA de forma directa.
 
-El problema —y es la razón por la que RSA sigue siendo seguro hoy— es que ese “ordenador cuántico suficientemente grande” está muy lejos de la tecnología actual: sería necesario disponer de **miles de qubits lógicos**, lo que se traduce en **millones de qubits físicos** una vez añadida la corrección de errores cuánticos. No existe hoy ningún sistema que se acerque mínimamente a esa escala.
+El problema —y es la razón por la que RSA sigue siendo seguro hoy— es que ese “ordenador cuántico suficientemente grande” está muy lejos de la tecnología actual: sería necesario disponer de **miles de cúbits lógicos**, lo que se traduce en **millones de cúbits físicos** una vez añadida la corrección de errores cuánticos. No existe hoy ningún sistema que se acerque mínimamente a esa escala.
 
 En entornos reales como TLS (y anteriormente SSL), RSA ha desempeñado históricamente dos funciones: por un lado, autenticar al servidor mediante las firmas empleadas en los certificados, algo que sigue siendo habitual; por otro, actuar como mecanismo de intercambio de claves, una función que hoy se ha abandonado porque no ofrece *Forward Secrecy* (garantizar que, aunque la clave privada del servidor se vea comprometida en el futuro, las sesiones cifradas del pasado sigan siendo imposibles de descifrar). En las versiones modernas del protocolo (TLS 1.3), el intercambio de claves se realiza mediante ECDHE —basado en curvas elípticas—, mientras que RSA queda relegado a la autenticación o sustituido directamente por firmas ECDSA o, de forma aún limitada, por algoritmos postcuánticos en fase de adopción.
 
@@ -48,15 +48,15 @@ La seguridad se basa en el **problema del logaritmo discreto en curvas elíptica
 
 Aunque una clave de Bitcoin tiene solo **256 bits**, su nivel de seguridad es equivalente al de una clave RSA de más de **3000 bits**, debido a la mayor complejidad matemática del ECDLP. Por eso Bitcoin no necesita claves largas ni grandes tamaños de módulo: la curva elíptica proporciona una resistencia criptográfica muy superior por bit.
 
-En este contexto, el famoso algoritmo de Shor también podría, en teoría, resolver el logaritmo discreto, igual que factoriza números para romper RSA. Sin embargo, aplicarlo a curvas elípticas requiere aún más recursos: para atacar claves de 256 bits serían necesarios **centenares de qubits lógicos** y, por extensión, **millones de qubits físicos** cuando se incorpora la corrección de errores cuánticos. Nada de esto es posible con los dispositivos cuánticos actuales, que siguen limitados por ruido elevado, profundidades de circuito muy bajas y tamaños muy reducidos.
+En este contexto, el famoso algoritmo de Shor también podría, en teoría, resolver el logaritmo discreto, igual que factoriza números para romper RSA. Sin embargo, aplicarlo a curvas elípticas requiere aún más recursos: para atacar claves de 256 bits serían necesarios **centenares de cúbits lógicos** y, por extensión, **millones de cúbits físicos** cuando se incorpora la corrección de errores cuánticos. Nada de esto es posible con los dispositivos cuánticos actuales, que siguen limitados por ruido elevado, profundidades de circuito muy bajas y tamaños muy reducidos.
 
 Por esta razón, la criptografía de curvas elípticas sigue siendo completamente segura frente a la tecnología cuántica disponible hoy en día y constituye la base robusta sobre la que se construyen las firmas digitales de Bitcoin.
 
 # Una verdadera amenaza cuántica
 
-Para que un ataque cuántico contra Bitcoin o RSA fuera realmente viable, no bastaría con un procesador de unas pocas decenas o incluso cientos de qubits físicos. Sería necesario un tipo de máquina cuántica radicalmente más avanzada que las actuales. En concreto, un ataque práctico requeriría:
+Para que un ataque cuántico contra Bitcoin o RSA fuera realmente viable, no bastaría con un procesador de unas pocas decenas o incluso cientos de cúbits físicos. Sería necesario un tipo de máquina cuántica radicalmente más avanzada que las actuales. En concreto, un ataque práctico requeriría:
 
-- **Qubits lógicos y corrección de errores completa**. La criptografía moderna no cae con qubits físicos: hace falta ejecutar el algoritmo de Shor de forma tolerante a fallos. Esto implica miles de qubits lógicos, cada uno respaldado por miles de qubits físicos mediante códigos de corrección de errores.
+- **cúbits lógicos y corrección de errores completa**. La criptografía moderna no cae con cúbits físicos: hace falta ejecutar el algoritmo de Shor de forma tolerante a fallos. Esto implica miles de cúbits lógicos, cada uno respaldado por miles de cúbits físicos mediante códigos de corrección de errores.
 - **Profundidad de circuito muy elevada**. Shor, aplicado a claves reales de 2048 o 3072 bits (RSA) o a claves de 256 bits en curvas elípticas (Bitcoin), exige millones de puertas cuánticas consecutivas. Los dispositivos actuales apenas soportan unas decenas.
 - **Tasas de error ultrabajas**. Incluso un pequeño error acumulado destruye el estado cuántico y hace fracasar la ejecución. Se necesitarían tasas de error por puerta y por qubit varios órdenes de magnitud mejores que las actuales.
 - **Quantum RAM (QRAM)**. Para manejar eficientemente estructuras de datos a la escala necesaria en ataques criptográficos. La QRAM no es estrictamente necesaria para ejecutar Shor, pero sería imprescindible para escalar muchos ataques criptográficos cuánticos más avanzados y hoy sigue siendo solo un concepto teórico.
@@ -66,7 +66,7 @@ Solo la combinación de estos elementos permitiría, en la práctica, romper RSA
 
 # Conclusión
 
-El supuesto “ataque cuántico a Bitcoin en 320 segundos” no solo era falso, sino técnicamente imposible con el hardware cuántico disponible hoy. Tanto RSA como las curvas elípticas que utiliza Bitcoin se basan en problemas matemáticos cuya inversión sigue estando muy lejos del alcance de los ordenadores cuánticos actuales. El algoritmo de Shor demuestra que, en teoría, el futuro cuántico podrá romper ambos sistemas, pero ese escenario exige miles de qubits lógicos y millones de qubits físicos, una escala que ninguna plataforma cuántica moderna puede ofrecer.
+El supuesto “ataque cuántico a Bitcoin en 320 segundos” no solo era falso, sino técnicamente imposible con el hardware cuántico disponible hoy. Tanto RSA como las curvas elípticas que utiliza Bitcoin se basan en problemas matemáticos cuya inversión sigue estando muy lejos del alcance de los ordenadores cuánticos actuales. El algoritmo de Shor demuestra que, en teoría, el futuro cuántico podrá romper ambos sistemas, pero ese escenario exige miles de cúbits lógicos y millones de cúbits físicos, una escala que ninguna plataforma cuántica moderna puede ofrecer.
 
 Mientras tanto, Bitcoin continúa protegido por ECDSA sobre *secp256k1*, una estructura criptográfica altamente resistente y con niveles de seguridad equivalentes a claves RSA mucho más largas. La amenaza cuántica llegará si la tecnología consigue escalar de forma significativa, algo que hoy está muy lejos de estar resuelto. Será un proceso gradual que la comunidad criptográfica, las infraestructuras de Internet y las cadenas de bloques tendrán que afrontar mediante algoritmos postcuánticos estandarizados.
 
@@ -84,7 +84,7 @@ Bernstein, D. J., Lange, T. (2017). *Post-quantum cryptography*. *Nature* 549, 1
 
 Google Quantum AI (2019). *Quantum supremacy using a programmable superconducting processor*. *Nature* 574, 505–510. [https://www.nature.com/articles/s41586-019-1666-5](https://www.nature.com/articles/s41586-019-1666-5)
 
-Google Quantum AI (2024). Información técnica del procesador Willow (105 qubits). [https://quantumai.google](https://quantumai.google)
+Google Quantum AI (2024). Información técnica del procesador Willow (105 cúbits). [https://quantumai.google](https://quantumai.google)
 
 IETF (2018). *RFC 8446: The Transport Layer Security (TLS) Protocol Version 1.3*. [https://datatracker.ietf.org/doc/rfc8446/](https://datatracker.ietf.org/doc/rfc8446/)
 
