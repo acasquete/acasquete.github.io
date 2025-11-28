@@ -88,8 +88,7 @@ Idealizar el “modo adversarial” también tiene sus riesgos. Algunos de ellos
 
 - **Ruido disfrazado de lucidez** - Un modelo instruido para ser adversarial puede generar escenarios catastróficos improbables, sobre-detectar riesgos menores o cuestionar supuestos razonables solo por cumplir su rol. Esa “hipervigilancia” puede distraer de los problemas relevantes.
 
-- **Sesgos reforzados, no corregidos.**  
-  Si quien tiene la última palabra utiliza la IA solo para legitimar decisiones ya tomadas, la insistencia en “tu criterio es lo que manda” puede reforzar sesgos de autoridad. La fricción que aporta el modelo se usa como barniz, no como contraste real.
+- **Sesgos reforzados, no corregidos** - Si quien tiene la última palabra utiliza la IA solo para legitimar decisiones ya tomadas, la insistencia en “tu criterio es lo que manda” puede reforzar sesgos de autoridad. La fricción que aporta el modelo se usa como barniz, no como contraste real.
 
 Reconocer estos límites no invalida el uso adversarial. Simplemente lo sitúa donde pertenece, una herramienta más en un ecosistema de mecanismos de contraste que incluye revisión por pares, comités de riesgo, auditorías externas y, sobre todo, conversaciones humanas difíciles.
 
@@ -97,21 +96,18 @@ Reconocer estos límites no invalida el uso adversarial. Simplemente lo sitúa d
 
 La IA puede ser un socio valioso, pero no solo por lo que automatiza ni solo por lo que incomoda. Su aportación real aparece cuando se combinan tres condiciones:
 
-1. **Pedir explícitamente un rol crítico**  
-   Los modelos conversacionales tienden a la cooperación segura. Si no defines el rol, tenderán a confirmar tu razonamiento o a criticarlo de forma inofensiva. Instrucciones directas (“actúa como auditor externo”, “detecta contradicciones”, “señala riesgos no identificados”) abren la puerta a un análisis distinto.
+1. **Pedir explícitamente un rol crítico** - Los modelos conversacionales tienden a la cooperación segura. Si no defines el rol, tenderán a confirmar tu razonamiento o a criticarlo de forma inofensiva. Instrucciones directas (“actúa como auditor externo”, “detecta contradicciones”, “señala riesgos no identificados”) abren la puerta a un análisis distinto.
 
-2. **Validar lo que dice con mecanismos algo más rigurosos que “me encaja/no me encaja”.**  
-   La IA formula críticas con seguridad incluso cuando interpreta mal un contexto o exagera problemas menores. El valor no está en la crítica literal, sino en lo que te obliga a revisar. Esa validación puede incluir contrastar con datos, pedir una segunda opinión (humana o de otro modelo) o someter las objeciones a una revisión por pares dentro del equipo.
+2. **Validar lo que dice con mecanismos algo más rigurosos que “me encaja/no me encaja”** - La IA formula críticas con seguridad incluso cuando interpreta mal un contexto o exagera problemas menores. El valor no está en la crítica literal, sino en lo que te obliga a revisar. Esa validación puede incluir contrastar con datos, pedir una segunda opinión (humana o de otro modelo) o someter las objeciones a una revisión por pares dentro del equipo.
 
-3. **Aceptar que no toda la incomodidad es insight y que el modelo tiene límites estructurales.**  
-   Parte de la incomodidad será simplemente ruido: hipótesis poco probables, malentendidos, repeticiones. Además, hay ámbitos donde el modelo, por capacidad o por *guardrails*, no va a ir mucho más allá de lugares comunes, por más contexto y *prompts* que le des. Tu trabajo no es acatar ni descartar por reflejo, sino clasificar: qué merece trabajo adicional, qué se descarta y qué se aparca a la espera de más información.
+3. **Aceptar que no toda la incomodidad es insight y que el modelo tiene límites estructurales.** - Parte de la incomodidad será simplemente ruido: hipótesis poco probables, malentendidos, repeticiones. Además, hay ámbitos donde el modelo, por capacidad o por *guardrails*, no va a ir mucho más allá de lugares comunes, por más contexto y *prompts* que le des. Tu trabajo no es acatar ni descartar por reflejo, sino clasificar: qué merece trabajo adicional, qué se descarta y qué se aparca a la espera de más información.
 
 Antes de cualquier decisión relevante, una instrucción simple puede elevar la calidad del análisis sin convertir a la IA en juez final:
 
 **“Desafía mi planteamiento como si fueras un auditor externo con interés en demostrar que estoy equivocado. Luego clasifica tus objeciones según su solidez y probabilidad.”**
 
-Si la respuesta solo trae elogios o críticas superficiales, puede que el problema esté en el *prompt*, en el planteamiento, en el nivel de contexto o, simplemente, en las limitaciones del modelo para ese tema o ese tipo de análisis. No conviene eximir a la IA de sus límites, ni cargar siempre la responsabilidad en el usuario.
+Si la respuesta solo trae elogios o críticas superficiales, puede que el problema esté en el *prompt*, en el planteamiento, en el nivel de contexto o, simplemente, en las limitaciones del modelo para ese tipo de análisis. No conviene eximir a la IA de sus límites, ni cargar siempre la responsabilidad en el usuario.
 
-Pensar con IA no es pensar más rápido. Tampoco es pensar mejor por defecto.  Es introducir un interlocutor adicional que amplifica tanto tus aciertos como tus sesgos. Puede sonar convincente al decir algo correcto… o al decir algo equivocado. Tu tarea es distinguir lo uno de lo otro.
+Pensar con IA no es pensar más rápido. Tampoco es pensar mejor por defecto. Es introducir un interlocutor adicional que amplifica tanto tus aciertos como tus sesgos. Puede sonar convincente al decir algo correcto… o al decir algo equivocado. Tu tarea es distinguir lo uno de lo otro.
 
 La incomodidad no es un efecto secundario. Es el mecanismo que convierte a la IA en un interlocutor crítico, siempre que renuncies a su versión amable y mantengas intacto lo único que no puede automatizar: tu criterio.
