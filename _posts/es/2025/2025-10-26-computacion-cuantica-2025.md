@@ -24,7 +24,7 @@ A nivel de software, han surgido lenguajes y frameworks de programación cuánti
 
 La revolución cuántica no solo afectará al cómputo: también redefine la **ciberseguridad**. Los algoritmos de Shor y Grover podrían poner en riesgo los sistemas criptográficos actuales basados en RSA y ECC una vez existan computadoras cuánticas tolerantes a fallos [^12]. Para adelantarse a ese riesgo, el **NIST** publicó en 2024 los primeros estándares de **criptografía post-cuántica**, inaugurando una transición global hacia algoritmos resistentes a ataques cuánticos [^13].
 
-En los próximos artículos exploraremos el **estado del arte de la tecnología cuántica en 2025**, abordando:
+En los próximos artículos exploraremos el **estado del arte de la tecnología cuántica**, abordando:
 
 - Los hitos recientes desde la *supremacía cuántica* hasta la *ventaja cuántica práctica*.  
 - Los principales actores y líneas de investigación.  
@@ -42,12 +42,12 @@ El objetivo es ofrecer una visión clara, actualizada y accesible del panorama c
 [^3]: IBM Quantum Roadmap, “[The era of quantum utility is here](https://www.ibm.com/quantum/blog/quantum-roadmap-2033),” IBM Research Blog (2023).  
 [^4]: Google Quantum AI, “[Suppressing quantum errors by scaling a surface code logical qubit](https://www.nature.com/articles/s41586-022-05434-1),” *Nature* (2023).    
 [^6]: IBM Research, “IBM Condor: 1,121-qubit processor unveiled,” IBM Newsroom (2023).  
-[^7]: Microsoft Azure Quantum Blog, “Introducing Majorana 1: topological qubits for scalable quantum computing” (2025).  
-[^8]: Quantinuum, “System Model H2: trapped-ion quantum computer with all-to-all connectivity,” Press Release (2023).  
-[^9]: Xanadu, “Borealis: programmable photonic processor achieves quantum advantage,” *Nature* (2022).  
-[^10]: IBM, “Qiskit documentation,” https://qiskit.org (2025).  
-[^11]: Microsoft Learn, “Q# and the Quantum Development Kit,” https://learn.microsoft.com/en-us/azure/quantum/qsharp-overview (2025).  
-[^12]: Shor, P., “Algorithms for quantum computation: discrete logarithms and factoring,” *Proc. 35th IEEE Symposium on Foundations of Computer Science* (1994).  
-[^13]: NIST, “Finalized post-quantum cryptography standards (FIPS 203–205),” August 2024. https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards
-[^14]: Preskill, J., “Quantum Computing in the NISQ era and beyond,” *Quantum*, 2, 79 (2018).  
-[^75]: Bernhardt, C. (2020). Quantum Computing for Everyone. MIT Press.
+[^7]: Microsoft Azure Quantum Blog, “[Introducing Majorana 1: topological qubits for scalable quantum computing](https://azure.microsoft.com/en-us/blog/quantum/2025/02/19/microsoft-unveils-majorana-1-the-worlds-first-quantum-processor-powered-by-topological-qubits/)” (2025).  
+[^8]: Quantinuum, “[System Model H2: trapped-ion quantum computer with all-to-all connectivity](https://www.quantinuum.com/press-releases/for-the-first-time-ever-quantinuums-new-h2-quantum-computer-has-created-non-abelian-topological-quantum-matter-and-braided-its-anyons),” Press Release (2023).  
+[^9]: Xanadu, “[Borealis: programmable photonic processor achieves quantum advantage](https://www.nature.com/articles/s41586-022-04725-x),” *Nature* (2022).  
+[^10]: IBM, “[Qiskit documentation](https://qiskit.org )” (2025).  
+[^11]: Microsoft Learn, “[Q# and the Quantum Development Kit](https://learn.microsoft.com/en-us/azure/quantum/qsharp-overview),” (2025).  
+[^12]: Shor, P., “[Algorithms for quantum computation: discrete logarithms and factoring](https://ieeexplore.ieee.org/document/365700),” *Proc. 35th IEEE Symposium on Foundations of Computer Science* (1994).  
+[^13]: NIST, “[Finalized post-quantum cryptography standards (FIPS 203–205)](https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards),” August 2024. 
+[^14]: Preskill, J., “[Quantum Computing in the NISQ era and beyond](https://quantum-journal.org/papers/q-2018-08-06-79/),” *Quantum*, 2, 79 (2018).  
+[^75]: Bernhardt, C. (2020). [Quantum Computing for Everyone](https://mitpress.mit.edu/9780262539531/quantum-computing-for-everyone/). MIT Press.
