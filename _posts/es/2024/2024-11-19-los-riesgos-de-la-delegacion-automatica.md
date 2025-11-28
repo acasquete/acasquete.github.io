@@ -1,6 +1,6 @@
 ---
 title: Los riesgos de la delegación automática
-tags: [personal]
+tags: [personal, artificial_intelligence]
 header_image: copybook-electronic-device.jpg
 reviewed: true
 ai: true

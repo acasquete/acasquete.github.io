@@ -1,6 +1,6 @@
 ---
 title: El mito del ataque cuántico
-tags: [personal, quantum]
+tags: [personal, quantum_computing]
 reviewed: true
 home: true
 ai: true

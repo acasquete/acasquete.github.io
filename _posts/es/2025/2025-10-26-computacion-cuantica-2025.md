@@ -1,6 +1,6 @@
 ---
 title: La era cuántica, más allá del silicio
-tags: [personal, quantum]
+tags: [personal, quantum_computing]
 reviewed: true
 home: true
 ai: true
