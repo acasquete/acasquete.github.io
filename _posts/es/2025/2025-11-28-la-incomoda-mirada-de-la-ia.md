@@ -56,7 +56,7 @@ La IA no distingue, por sí sola, lo crítico de lo accesorio. Solo puede aproxi
 
 El planteamiento del libro es interesante, pero se queda corto. No aborda un aspecto que sería clave para reforzar su tesis: por qué un modelo tiende a evitar la contradicción directa y qué implica eso cuando intentas usarlo para pensar mejor. Entender ese comportamiento sería esencial para diseñar estrategias que lo compensen y para no interpretar como acuerdo lo que, muchas veces, es simplemente aversión al conflicto.
 
-Hay motivos conocidos detrás de esta tendencia. El entrenamiento desincentiva el conflicto abierto y favorece respuestas seguras. Las capas de seguridad reducen la posibilidad de posturas duras. El mecanismo de generación prioriza lo verosímil más que lo exacto. Y la arquitectura del modelo tiene límites claros a la hora de comprender en profundidad un contexto organizativo o cultural.
+Hay motivos conocidos detrás de esta tendencia. El entrenamiento desincentiva el conflicto abierto y favorece respuestas seguras. Las capas de seguridad reducen la posibilidad de posturas duras. El mecanismo de generación prioriza lo verosímil más que lo exacto. Y la arquitectura del modelo tiene límites claros a la hora de comprender en profundidad un contexto organizativo.
 
 Conviene aclarar dos cosas. La primera es que estas dinámicas no significan que el modelo “confirme” de forma activa lo que dices. A menudo producen neutralidad, prudencia o críticas tan abstractas que apenas generan fricción. La segunda es que este comportamiento no es uniforme. Depende del modelo, del proveedor y de cómo lo utilices, así que asumir que toda IA actúa igual conduce a lecturas equivocadas.
 
@@ -65,11 +65,11 @@ Solo puede inferirlas a partir del contexto que tú proporcionas. Y ese contexto
 
 La cuestión de fondo es cómo introducir ese contexto de forma que realmente mejore el análisis, sin dar por hecho que basta con describir una organización para que la IA llegue a comprenderla. En la práctica, construir soluciones útiles exige incorporar tres prácticas concretas:
 
-1. **Contextualizar de forma explícita y operativa** - No basta con describir la organización. Hay que proporcionar al modelo información que tenga consecuencias prácticas: quién decide, dónde están las dependencias reales, qué tensiones existen, qué fricciones son habituales y qué objetivos compiten entre sí. Sin esa capa, el análisis del modelo se queda en generalidades.
+**Contextualizar de forma explícita y operativa** - No basta con describir la organización. Hay que proporcionar al modelo información que tenga consecuencias prácticas: quién decide, dónde están las dependencias reales, qué tensiones existen, qué fricciones son habituales y qué objetivos compiten entre sí. Sin esa capa, el análisis del modelo se queda en generalidades.
 
-2. **Contrastar sistemáticamente las salidas del modelo** - La respuesta inicial nunca debe tomarse como conclusión. Hay que ponerla a prueba con datos, documentos, ejemplos concretos y la experiencia de quienes conocen el terreno. Este contraste permite detectar lagunas, matizar supuestos y evitar recomendaciones que suenan convincentes pero no encajan con la realidad.
+**Contrastar sistemáticamente las salidas del modelo** - La respuesta inicial nunca debe tomarse como conclusión. Hay que ponerla a prueba con datos, documentos, ejemplos concretos y la experiencia de quienes conocen el terreno. Este contraste permite detectar lagunas, matizar supuestos y evitar recomendaciones que suenan convincentes pero no encajan con la realidad.
 
-3. **Integrar la IA en un ciclo deliberativo, no en un flujo automático** - El valor no está en obtener respuestas “correctas”, sino en usarlas para pensar mejor. Eso implica iterar: reformular preguntas, introducir matices, pedir contraargumentos y explorar escenarios alternativos. El modelo funciona como un catalizador de análisis, no como un sustituto del criterio.
+**Integrar la IA en un ciclo deliberativo, no en un flujo automático** - El valor no está en obtener respuestas “correctas”, sino en usarlas para pensar mejor. Eso implica iterar: reformular preguntas, introducir matices, pedir contraargumentos y explorar escenarios alternativos. El modelo funciona como un catalizador de análisis, no como un sustituto del criterio.
 
 Trabajar así no convierte al modelo en un experto externo ni en un sustituto del juicio humano. Lo convierte en un interlocutor útil. La diferencia es fundamental. Cuando la IA se integra en un ciclo deliberativo bien diseñado, su valor no depende de “acertar”, sino de ampliar el espacio de análisis, revelar ángulos que no estabas considerando y forzarte a explicitar tus supuestos. No se trata de confiar más en la IA, sino de crear las condiciones para pensar mejor con ella.
 
@@ -77,11 +77,11 @@ Trabajar así no convierte al modelo en un experto externo ni en un sustituto de
 
 Idealizar el “modo adversarial” también tiene sus riesgos. Algunos de ellos apenas aparecen en el libro y conviene explicitarlos:
 
-- **Coste cognitivo y de tiempo** - Mantener a la IA como auditor externo de forma sistemática puede ser inviable en decisiones cotidianas. No todo merece una sesión de objeciones exhaustivas: podrías paralizar procesos que necesitan rapidez.
+**Coste cognitivo y de tiempo** - Mantener a la IA como auditor externo de forma sistemática puede ser inviable en decisiones cotidianas. No todo merece una sesión de objeciones exhaustivas: podrías paralizar procesos que necesitan rapidez.
 
-- **Ruido disfrazado de lucidez** - Un modelo instruido para ser adversarial puede generar escenarios catastróficos improbables, sobre-detectar riesgos menores o cuestionar supuestos razonables solo por cumplir su rol. Esa “hipervigilancia” puede distraer de los problemas relevantes.
+**Ruido disfrazado de lucidez** - Un modelo instruido para ser adversarial puede generar escenarios catastróficos improbables, sobre-detectar riesgos menores o cuestionar supuestos razonables solo por cumplir su rol. Esa “hipervigilancia” puede distraer de los problemas relevantes.
 
-- **Sesgos reforzados, no corregidos** - Si quien tiene la última palabra utiliza la IA solo para legitimar decisiones ya tomadas, la insistencia en “tu criterio es lo que manda” puede reforzar sesgos de autoridad. La fricción que aporta el modelo se usa como barniz, no como contraste real.
+**Sesgos reforzados, no corregidos** - Si quien tiene la última palabra utiliza la IA solo para legitimar decisiones ya tomadas, la insistencia en “tu criterio es lo que manda” puede reforzar sesgos de autoridad. La fricción que aporta el modelo se usa como barniz, no como contraste real.
 
 Reconocer estos límites no invalida el uso adversarial. Simplemente lo sitúa donde pertenece, una herramienta más en un ecosistema de mecanismos de contraste que incluye revisión por pares, comités de riesgo, auditorías externas y, sobre todo, conversaciones humanas difíciles.
 
@@ -89,11 +89,11 @@ Reconocer estos límites no invalida el uso adversarial. Simplemente lo sitúa d
 
 La IA puede ser un socio valioso, pero no solo por lo que automatiza ni solo por lo que incomoda. Su aportación real aparece cuando se combinan tres condiciones:
 
-1. **Pedir explícitamente un rol crítico** - Los modelos conversacionales tienden a la cooperación segura. Si no defines el rol, tenderán a confirmar tu razonamiento o a criticarlo de forma inofensiva. Instrucciones directas (“actúa como auditor externo”, “detecta contradicciones”, “señala riesgos no identificados”) abren la puerta a un análisis distinto.
+**Pedir explícitamente un rol crítico** - Los modelos conversacionales tienden a la cooperación segura. Si no defines el rol, tenderán a confirmar tu razonamiento o a criticarlo de forma inofensiva. Instrucciones directas (“actúa como auditor externo”, “detecta contradicciones”, “señala riesgos no identificados”) abren la puerta a un análisis distinto.
 
-2. **Validar lo que dice con mecanismos algo más rigurosos que “me encaja/no me encaja”** - La IA formula críticas con seguridad incluso cuando interpreta mal un contexto o exagera problemas menores. El valor no está en la crítica literal, sino en lo que te obliga a revisar. Esa validación puede incluir contrastar con datos, pedir una segunda opinión (humana o de otro modelo) o someter las objeciones a una revisión por pares dentro del equipo.
+**Validar lo que dice con mecanismos algo más rigurosos que “me encaja/no me encaja”** - La IA formula críticas con seguridad incluso cuando interpreta mal un contexto o exagera problemas menores. El valor no está en la crítica literal, sino en lo que te obliga a revisar. Esa validación puede incluir contrastar con datos, pedir una segunda opinión (humana o de otro modelo) o someter las objeciones a una revisión por pares dentro del equipo.
 
-3. **Aceptar que no toda la incomodidad es insight y que el modelo tiene límites estructurales** - Parte de la incomodidad será simplemente ruido: hipótesis poco probables, malentendidos, repeticiones. Además, hay ámbitos donde el modelo, por capacidad o por *guardrails*, no va a ir mucho más allá de lugares comunes, por más contexto y *prompts* que le des. Tu trabajo no es acatar ni descartar por reflejo, sino clasificar: qué merece trabajo adicional, qué se descarta y qué se aparca a la espera de más información.
+**Aceptar que no toda la incomodidad es insight y que el modelo tiene límites estructurales** - Parte de la incomodidad será simplemente ruido: hipótesis poco probables, malentendidos, repeticiones. Además, hay ámbitos donde el modelo, por capacidad o por *guardrails*, no va a ir mucho más allá de lugares comunes, por más contexto y *prompts* que le des. Tu trabajo no es acatar ni descartar por reflejo, sino clasificar: qué merece trabajo adicional, qué se descarta y qué se aparca a la espera de más información.
 
 Antes de cualquier decisión relevante, una instrucción simple puede elevar la calidad del análisis sin convertir a la IA en juez final:
 
