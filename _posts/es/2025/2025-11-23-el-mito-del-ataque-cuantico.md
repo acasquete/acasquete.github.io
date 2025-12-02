@@ -34,27 +34,57 @@ Por todo ello, **RSA sigue siendo relevante**, pero su futuro está condicionado
 
 # Criptografía de curvas elípticas y por qué Bitcoin no usa RSA
 
-A diferencia de RSA, Bitcoin no se apoya en la factorización de números grandes, sino en la criptografía de curvas elípticas, concretamente en el esquema **ECDSA** sobre la curva *secp256k1*. Este enfoque permite ofrecer un nivel de seguridad muy alto con claves mucho más pequeñas.
+A diferencia de RSA, Bitcoin no se apoya en la factorización de números grandes, sino en la criptografía de **curvas elípticas**, concretamente en el esquema **ECDSA** utilizado sobre la curva **secp256k1**. Este enfoque permite ofrecer un nivel de seguridad muy alto con claves mucho más pequeñas.
 
-La curva utilizada por Bitcoin se define por la ecuación:
+**ECDSA** (Elliptic Curve Digital Signature Algorithm) es un algoritmo de firma digital que permite verificar que una transacción ha sido firmada por el propietario de una clave privada, sin revelar esa clave. La seguridad del sistema depende de la dificultad de resolver el **ECDLP**.
+
+**ECDLP** (Elliptic Curve Discrete Logarithm Problem, o problema del logaritmo discreto en curvas elípticas) plantea lo siguiente: dado un punto `P` de la curva que resulta de multiplicar un punto base `G` por un número secreto `k` (es decir, `P = k × G`), es computacionalmente inviable calcular `k`. Multiplicar es fácil; invertir la operación es prácticamente imposible.
+
+La curva usada por Bitcoin es muy simple en su definición matemática y se expresa mediante la ecuación:
 
 \[
 y^2 = x^3 + 7 \mod p
 \]
 
-donde \(p\) es un número primo de 256 bits. En este sistema:
 
-- La **clave privada** es simplemente un número entero de 256 bits.
-- La **clave pública** es un punto en la curva, obtenido mediante la operación de multiplicación escalar \(P = k \cdot G\), donde \(G\) es un punto base bien conocido.
-- A partir de la clave pública se genera la **dirección Bitcoin** mediante funciones hash.
+donde `p` es un número primo de 256 bits. Dentro de este sistema:
 
-La seguridad se basa en el **problema del logaritmo discreto en curvas elípticas (ECDLP)**: dado un punto \(P = k \cdot G\), es computacionalmente inviable recuperar el valor de \(k\). Esta operación es fácil en una dirección (multiplicar), pero extraordinariamente difícil en la otra (invertir), del mismo modo que ocurre con la factorización en RSA.
+- La **clave privada** es un número entero de 256 bits.
+- La **clave pública** es un punto de la curva, obtenido mediante la operación `P = k × G`, donde `G` es un punto base fijado por el estándar.
+- A partir de la clave pública se genera la dirección de Bitcoin aplicando varias funciones hash.
 
-Aunque una clave de Bitcoin tiene solo **256 bits**, su nivel de seguridad es equivalente al de una clave RSA de más de **3000 bits**, debido a la mayor complejidad matemática del ECDLP. Por eso Bitcoin no necesita claves largas ni grandes tamaños de módulo: la curva elíptica proporciona una resistencia criptográfica muy superior por bit.
+La seguridad depende de que, aun conociendo `G` y `P`, nadie pueda recuperar el valor `k`. Esta dificultad es lo que hace que una clave de 256 bits en curvas elípticas ofrezca una seguridad equivalente a la de una clave RSA de más de 3000 bits.
 
-En este contexto, el famoso algoritmo de Shor también podría, en teoría, resolver el logaritmo discreto, igual que factoriza números para romper RSA. Sin embargo, aplicarlo a curvas elípticas requiere aún más recursos: para atacar claves de 256 bits serían necesarios **centenares de cúbits lógicos** y, por extensión, **millones de cúbits físicos** cuando se incorpora la corrección de errores cuánticos. Nada de esto es posible con los dispositivos cuánticos actuales, que siguen limitados por ruido elevado, profundidades de circuito muy bajas y tamaños muy reducidos.
+### Ejemplo sencillo de cómo funciona una curva elíptica
 
-Por esta razón, la criptografía de curvas elípticas sigue siendo completamente segura frente a la tecnología cuántica disponible hoy en día y constituye la base robusta sobre la que se construyen las firmas digitales de Bitcoin.
+Para fines ilustrativos podemos usar una curva elíptica muy pequeña (no segura), definida sobre números enteros módulo 17:
+
+y² = x³ + 2 (mod 17)
+
+
+En esta curva existen puntos válidos como:
+
+- `G = (5, 1)` → lo tomamos como **punto base**.
+- Elegimos una **clave privada** ficticia: `k = 7`.
+- Calculamos la **clave pública** multiplicando `k × G`.
+
+La multiplicación escalar en una curva elíptica no es un producto convencional, sino la repetición de la operación de “suma de puntos” definida por la geometría de la curva:
+
+P = 7 × G
+= G + G + G + G + G + G + G
+
+
+Realizando las operaciones (omito el detalle para mantenerlo breve), obtenemos:
+
+P = (0, 6)
+
+Ese punto `P` sería la **clave pública**. Conociendo `G` y `P`, nadie sería capaz de recuperar el valor `k = 7` salvo intentando todas las posibilidades, algo inviable cuando `k` tiene 256 bits como en Bitcoin.
+
+### Seguridad frente a la computación cuántica
+
+En teoría, el algoritmo de Shor podría resolver el ECDLP igual que factoriza números para romper RSA. Sin embargo, aplicar Shor a claves de 256 bits requeriría cientos de cúbits lógicos y millones de cúbits físicos una vez añadida la corrección de errores cuánticos. Los ordenadores cuánticos actuales están a años —o décadas— de poder ejecutar un ataque práctico de este tipo.
+
+Por esta razón, la criptografía de curvas elípticas sigue siendo completamente segura frente a la tecnología cuántica disponible hoy y constituye la base sobre la que se construyen las firmas digitales de Bitcoin.
 
 # Una verdadera amenaza cuántica
 
