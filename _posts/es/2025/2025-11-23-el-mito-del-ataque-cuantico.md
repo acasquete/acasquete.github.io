@@ -32,6 +32,16 @@ En las versiones modernas del protocolo (TLS 1.3), el intercambio de claves se r
 
 Por todo ello, **RSA sigue siendo relevante**, pero su futuro está condicionado por dos factores clave: la evolución real de la computación cuántica y la transición hacia **algoritmos criptográficos postcuánticos**, diseñados para resistir tanto ataques clásicos como ataques cuánticos. La solidez de RSA hoy no está en duda, pero a medio y largo plazo dependerá de cómo avance esta migración hacia estándares más robustos.
 
+Para ver ejemplos reales, basta con comprobar los certificados de algunas webs muy conocidas. **Amazon.com**, por ejemplo, utiliza certificados basados en **RSA de 2048 bits**, algo que sigue siendo habitual en grandes plataformas por motivos de compatibilidad y estabilidad.
+
+Por el contrario, **Google.com** es uno de los mejores ejemplos de un servicio que **no utiliza RSA**, sino certificados basados en **ECDSA**, normalmente con claves de curva elíptica **secp256r1**. Este enfoque ofrece la misma seguridad con claves más pequeñas y mejor rendimiento.
+
+En la imagen siguiente puede apreciarse la diferencia entre ambos tipos de certificados al inspeccionar el campo *Public Key Algorithm*:
+
+![Comparativa de certificados RSA vs ECDSA](img/rsa-vs-ecdsa-real-web-certificates.jpg)
+
+*Ejemplo real: Amazon.com utiliza RSA de 2048 bits, mientras que Google.com utiliza ECDSA con claves de curva elíptica de 256 bits. La diferencia se aprecia comparando el campo "Public Key Algorithm" del certificado TLS.*
+
 # Criptografía de curvas elípticas y por qué Bitcoin no usa RSA
 
 A diferencia de RSA, Bitcoin no se apoya en la factorización de números grandes, sino en la criptografía de **curvas elípticas**, concretamente en el esquema **ECDSA** utilizado sobre la curva **secp256k1**. Este enfoque permite ofrecer un nivel de seguridad muy alto con claves mucho más pequeñas.
