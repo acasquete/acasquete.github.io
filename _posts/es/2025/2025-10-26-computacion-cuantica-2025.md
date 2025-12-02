@@ -48,7 +48,7 @@ La intención es ofrecer una visión clara, actualizada y accesible del panorama
 [^3]: Bernhardt, C. (2020). *Quantum Computing for Everyone*. MIT Press.  
 [^4]: IBM Quantum Roadmap, "The era of quantum utility is here," IBM Research Blog (2023). [https://research.ibm.com/blog/quantum-roadmap-2033](https://research.ibm.com/blog/quantum-roadmap-2033)  
 [^5]: Google Quantum AI, "Suppressing quantum errors by scaling a surface code logical qubit," *Nature* (2023). [https://doi.org/10.1038/s41586-022-05434-1](https://doi.org/10.1038/s41586-022-05434-1)  
-[^6]: IBM Research, "IBM Condor: 1,121-qubit processor unveiled," IBM Newsroom (2023). [https://newsroom.ibm.com/2023-12-04-IBM-Debuts-Next-Generation-Quantum-Processor-IBM-Quantum-System-Two](https://newsroom.ibm.com/2023-12-04-IBM-Debuts-Next-Generation-Quantum-Processor-IBM-Quantum-System-Two)  
+[^6]: IBM Research, "IBM Condor: 1,121-qubit processor unveiled," IBM Newsroom (2023). [https://postquantum.com/industry-news/ibm-condor/)  
 [^7]: Microsoft Azure Quantum Blog, "Introducing Majorana 1: topological qubits for scalable quantum computing" (2025). [https://cloudblogs.microsoft.com/quantum/](https://cloudblogs.microsoft.com/quantum/)  
 [^8]: Quantinuum, "System Model H2: trapped-ion quantum computer with all-to-all connectivity," Press Release (2023). [https://www.quantinuum.com/hardware/h2](https://www.quantinuum.com/hardware/h2)  
 [^9]: Xanadu, "Borealis: programmable photonic processor achieves quantum advantage," *Nature* (2022). [https://doi.org/10.1038/s41586-022-04725-x](https://doi.org/10.1038/s41586-022-04725-x)  
