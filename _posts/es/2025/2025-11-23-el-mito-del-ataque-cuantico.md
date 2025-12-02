@@ -68,30 +68,82 @@ La seguridad depende de que, aun conociendo `G` y `P`, nadie pueda recuperar el 
 
 ## Ejemplo sencillo de cómo funciona una curva elíptica
 
-Para fines ilustrativos podemos usar una curva elíptica muy pequeña (no segura), definida sobre números enteros módulo 17:
+Para entender bien cómo funcionan las curvas elípticas en criptografía ayuda trabajar con un ejemplo pequeño y manejable. En lugar de usar la curva real de Bitcoin, que opera con números enormes de 256 bits, empleamos una curva diminuta definida sobre el campo finito módulo 17. Este tipo de curva no es segura, pero permite ver con claridad cómo se generan y manipulan claves sin necesidad de software especializado.
 
-y² = x³ + 2 (mod 17)
+La curva que utilizamos es `y² = x³ + 2 (mod 17)`. Elegimos este valor porque en módulos reducidos solo algunos parámetros producen curvas válidas y con suficientes puntos. El valor 2 genera una curva simple y funcional en este entorno. En Bitcoin se usa el parámetro 7 porque así lo fija el estándar secp256k1 y funciona correctamente en un módulo de 256 bits.
 
-En esta curva existen puntos válidos como:
+En un campo finito la curva no es continua. Es un conjunto discreto de puntos que cumplen la ecuación módulo 17. Con un módulo tan pequeño se pueden listar todos los puntos válidos de forma directa. Entre ellos está `G = (5, 1)` que empleamos como punto base. En sistemas reales como secp256k1 el punto base también está definido de antemano y garantiza las propiedades de seguridad necesarias.
 
-- `G = (5, 1)` → lo tomamos como **punto base**.
-- Elegimos una **clave privada** ficticia: `k = 7`.
-- Calculamos la **clave pública** multiplicando `k × G`.
+### Clave privada y clave pública
 
-La multiplicación escalar en una curva elíptica no es un producto convencional, sino la repetición de la operación de “suma de puntos” definida por la geometría de la curva:
+Elegimos una clave privada pequeña `k = 7`. En Bitcoin esta clave sería un número aleatorio de 256 bits. En este ejemplo usamos un valor simple para seguir el proceso sin complicaciones.
 
-P = 7 × G
-= G + G + G + G + G + G + G
+La clave pública se obtiene mediante multiplicación escalar con la fórmula `P = k × G`. En una curva elíptica esta operación no es un producto tradicional. Multiplicar un punto por un número significa sumarlo consigo mismo tantas veces como indique el valor de k. En este caso la operación completa es:
 
-Realizando las operaciones (omito el detalle para mantenerlo breve), obtenemos:
+`P = 7 × G = G + G + G + G + G + G + G`
 
-P = (0, 6)
+Tras aplicar las reglas de la curva se obtiene `P = (4, 12)` y este punto se convierte en la clave pública asociada a la clave privada k.
 
-Ese punto `P` sería la **clave pública**. Conociendo `G` y `P`, nadie sería capaz de recuperar el valor `k = 7` salvo intentando todas las posibilidades, algo inviable cuando `k` tiene 256 bits como en Bitcoin.
+Cada una de esas sumas sigue un procedimiento geométrico muy concreto. Si los puntos son distintos se imagina una recta que pasa por ellos y se busca el tercer punto donde esa recta intersecta la curva. Después se refleja ese punto en el eje x y se obtiene el resultado de la suma. Cuando se suma un punto consigo mismo se usa la tangente a la curva en ese punto y se aplica el mismo método. Estas reglas matemáticas se traducen en fórmulas exactas dentro del campo finito y permiten que la curva forme una estructura estable que soporta la multiplicación escalar.
 
-En teoría, el algoritmo de Shor podría resolver el ECDLP igual que factoriza números para romper RSA. Sin embargo, aplicar Shor a claves de 256 bits requeriría cientos de cúbits lógicos y millones de cúbits físicos una vez añadida la corrección de errores cuánticos. Los ordenadores cuánticos actuales están a años —o décadas— de poder ejecutar un ataque práctico de este tipo.
+Para ver cómo funciona esto en un ejemplo real se puede usar un pequeño script que calcula la multiplicación escalar en la curva `y² = x³ + 2 (mod 17)` con el punto base `G = (5, 1)`. El programa es corto y no incluye nada innecesario. Está pensado para que el lector pueda reproducir el cálculo y comprobar cómo la curva combina sumas sucesivas hasta llegar al punto final.
 
-Por esta razón, la criptografía de curvas elípticas sigue siendo completamente segura frente a la tecnología cuántica disponible hoy y constituye la base sobre la que se construyen las firmas digitales de Bitcoin.
+```python
+# Curva y^2 = x^3 + 2 (mod 17)
+p = 17
+
+def inv(k):
+    return pow(k, -1, p)
+
+def add(P, Q):
+    if P is None:
+        return Q
+    if Q is None:
+        return P
+    x1, y1 = P
+    x2, y2 = Q
+    if x1 == x2 and (y1 + y2) % p == 0:
+        return None
+    if P == Q:
+        m = (3 * x1 * x1) * inv(2 * y1 % p) % p
+    else:
+        m = (y2 - y1) * inv((x2 - x1) % p) % p
+    x3 = (m * m - x1 - x2) % p
+    y3 = (m * (x1 - x3) - y1) % p
+    return (x3, y3)
+
+def mul(k, P):
+    R = None
+    Q = P
+    while k > 0:
+        if k & 1:
+            R = add(R, Q)
+        Q = add(Q, Q)
+        k >>= 1
+    return R
+
+# Ejemplo de uso
+G = (5, 1)
+k = 7
+
+print("k × G =", mul(k, G))
+```
+
+Este pequeño programa muestra cómo una operación que parece sencilla oculta una estructura matemática rica y difícil de invertir. El lector puede cambiar el valor de k o probar otros puntos para observar cómo se comporta la curva y cómo crecen los múltiplos del punto base.
+
+### Interpretación criptográfica
+
+En ECDSA la clave privada sirve para firmar y la clave pública para verificar. En ECDH ambas partes realizan operaciones similares para establecer un secreto compartido. La seguridad descansa en una idea muy simple. Calcular P a partir de k y G es fácil. Recuperar k a partir de G y P es prácticamente imposible.
+
+## Por qué es difícil invertir la operación
+
+Resolver `P = k × G` con el objetivo de recuperar k es el problema del logaritmo discreto en curvas elípticas. No existe un método eficiente que permita invertir esta operación en curvas seguras. La única opción es probar valores hasta encontrar el que satisface la ecuación.
+
+En nuestro ejemplo este proceso sería posible porque el espacio es pequeño. En Bitcoin la clave privada tiene 256 bits. Eso implica un total de `2²⁵⁶` candidatos, unos `1,15 × 10⁷⁷` valores posibles. Incluso un ordenador capaz de probar mil millones de claves por segundo tardaría `10⁶⁸` segundos en revisar todas las opciones. La edad del universo es de unos `10¹⁷` segundos. En la práctica la operación inversa es inalcanzable.
+
+## Qué ocurre con los ordenadores cuánticos
+
+El algoritmo de Shor podría resolver este problema en teoría. Para hacerlo con claves de 256 bits sería necesario un sistema con cientos de cúbits lógicos y una corrección de errores completa. Esto exige millones de cúbits físicos y circuitos extremadamente estables. Los ordenadores cuánticos actuales usan cúbits ruidosos y carecen de corrección de errores a gran escala. No tienen la capacidad necesaria para ejecutar un ataque real contra ECDSA. Por eso la computación cuántica disponible hoy no compromete la seguridad de Bitcoin.
 
 # Una verdadera amenaza cuántica
 
