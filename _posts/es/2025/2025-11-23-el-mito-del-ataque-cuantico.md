@@ -12,7 +12,7 @@ El problema no es únicamente el alarmismo generado, sino que la premisa central
 
 Esta anécdota, sin embargo, sirve para repasar cómo funcionan distintos algoritmos de clave pública, explicar con claridad la criptografía que utiliza Bitcoin y entender qué requeriría realmente la computación cuántica para convertirse en una amenaza.
 
-Antes de continuar, conviene recordar algo esencial: la computación cuántica no es magia ni un atajo inmediato para romper cifrados. Su estado actual está limitado por ruido, escalabilidad, fidelidad y la necesidad de corrección de errores masiva. Comprender estas limitaciones técnicas es clave para evaluar cualquier supuesto “ataque cuántico”.
+Además, conviene recordar que este tipo de narrativa no es algo aislado. Cada cierto tiempo reaparece la idea de que la computación cuántica está a punto de romper toda la seguridad basada en claves públicas, incluidas las infraestructuras de certificados que usamos a diario. Se suele presentar como uno de los primeros argumentos al hablar de ordenadores cuánticos, casi siempre sin matices. En este artículo veremos que estamos muy lejos de ese escenario. La computación cuántica no es magia ni un atajo inmediato para romper cifrados. Su estado actual está limitado por ruido, escalabilidad, fidelidad y la necesidad de corrección de errores masiva. Comprender estas limitaciones técnicas es clave para evaluar cualquier supuesto “ataque cuántico”.
 
 # RSA y el problema de la factorización
 
@@ -90,8 +90,6 @@ La clave pública se obtiene mediante **multiplicación escalar**, expresada com
 Tras realizar cada una de estas sumas según las normas de la curva se obtiene `P = (4, 12)`, que pasa a ser la **clave pública** correspondiente a la clave privada `k`.
 
 Estas sumas no se comportan como operaciones en el plano habitual. La curva define un mecanismo geométrico propio. Cuando los puntos son distintos se toma la recta que los une, se identifica el tercer punto donde esa recta vuelve a cortar la curva y se refleja ese punto respecto al eje x para obtener el resultado. Cuando se suma un punto consigo mismo se utiliza la tangente en ese punto y se aplica el mismo procedimiento. Estas reglas se traducen en fórmulas exactas dentro del campo finito y permiten que la curva forme una estructura algebraica estable donde la multiplicación escalar tiene sentido y es eficiente de calcular.
-
-En ECDSA la clave privada permite firmar mensajes y la clave pública permite verificarlos. En ECDH dos partes calculan multiplicaciones escalares similares para generar un secreto compartido. Todo el esquema se apoya en una idea fundamental. Calcular `P` a partir de `k` y `G` es sencillo. Recuperar `k` a partir de `G` y `P` es prácticamente imposible.
 
 ## Por qué es difícil invertir la operación
 
