@@ -66,12 +66,11 @@ Dentro de este sistema:
 
 La seguridad depende de que, aun conociendo `G` y `P`, nadie pueda recuperar el valor `k`. Esta dificultad es lo que hace que una clave de 256 bits en curvas elípticas ofrezca una seguridad equivalente a la de una clave RSA de más de 3000 bits.
 
-### Ejemplo sencillo de cómo funciona una curva elíptica
+## Ejemplo sencillo de cómo funciona una curva elíptica
 
 Para fines ilustrativos podemos usar una curva elíptica muy pequeña (no segura), definida sobre números enteros módulo 17:
 
 y² = x³ + 2 (mod 17)
-
 
 En esta curva existen puntos válidos como:
 
@@ -84,14 +83,11 @@ La multiplicación escalar en una curva elíptica no es un producto convencional
 P = 7 × G
 = G + G + G + G + G + G + G
 
-
 Realizando las operaciones (omito el detalle para mantenerlo breve), obtenemos:
 
 P = (0, 6)
 
 Ese punto `P` sería la **clave pública**. Conociendo `G` y `P`, nadie sería capaz de recuperar el valor `k = 7` salvo intentando todas las posibilidades, algo inviable cuando `k` tiene 256 bits como en Bitcoin.
-
-### Seguridad frente a la computación cuántica
 
 En teoría, el algoritmo de Shor podría resolver el ECDLP igual que factoriza números para romper RSA. Sin embargo, aplicar Shor a claves de 256 bits requeriría cientos de cúbits lógicos y millones de cúbits físicos una vez añadida la corrección de errores cuánticos. Los ordenadores cuánticos actuales están a años —o décadas— de poder ejecutar un ataque práctico de este tipo.
 
