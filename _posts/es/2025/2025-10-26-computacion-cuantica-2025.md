@@ -10,15 +10,15 @@ La **computación cuántica** promete transformar la informática al aprovechar 
 
 Para quienes se acercan por primera vez a la **tecnología cuántica**, es habitual que el párrafo anterior resulte abrumador. Conceptos como **superposición**, **entrelazamiento** o **estados simultáneos** requieren cierta base de física cuántica y pueden parecer intimidantes al principio.
 
-El objetivo de esta serie de artículos no es profundizar en la teoría, sino ofrecer una visión clara y práctica del estado actual de la tecnología cuántica. Quienes deseen explorar los fundamentos pueden encontrar excelentes recursos introductorios, como *Quantum Computing for Everyone*, de Chris Bernhardt (MIT Press, 2020) [^75]. Además, cada artículo incluirá referencias adicionales para ampliar información.
+El objetivo de esta serie de artículos no es profundizar en la teoría, sino ofrecer una visión clara y práctica del estado actual de la tecnología cuántica. Quienes deseen explorar los fundamentos pueden encontrar excelentes recursos introductorios, como *Quantum Computing for Everyone*, de Chris Bernhardt (MIT Press, 2020)[^3]. Además, cada artículo incluirá referencias adicionales para ampliar información.
 
-Hoy la tecnología cuántica sigue siendo **emergente**: las aplicaciones reales son limitadas y los retos de ingeniería son enormes. Los cúbits son extremadamente sensibles al entorno y sufren **decoherencia** y errores que dificultan cálculos estables. Aun así, los avances de los últimos años han sido rápidos, con empresas e instituciones compitiendo por superar desafíos como la corrección de errores y la escalabilidad[^3][^4].
+Hoy la tecnología cuántica sigue siendo **emergente**: las aplicaciones reales son limitadas y los retos de ingeniería son enormes. Los cúbits son extremadamente sensibles al entorno y sufren **decoherencia** y errores que dificultan cálculos estables. Aun así, los avances de los últimos años han sido rápidos, con empresas e instituciones compitiendo por superar desafíos como la corrección de errores y la escalabilidad[^4][^5].
 
 Desde que Google anunció en 2019 la llamada *supremacía cuántica* con su procesador **Sycamore**, capaz de completar en 200 segundos una tarea que a un superordenador le llevaría miles de años[^1], la carrera hacia una **ventaja cuántica práctica** se ha intensificado. IBM ha escalado sus procesadores superconductores desde 5 cúbits en 2016 hasta más de 1000 en 2023 con su chip **Condor**[^6]. Microsoft, en cambio, apuesta por cúbits **topológicos de Majorana**, que en teoría permiten una corrección de errores más eficiente[^7].
 
-En 2025, Google Quantum AI sigue centrada en la construcción de cúbits lógicos más estables mediante códigos de superficie. Tras los avances de 2023 y 2024, en los que logró reducir los errores por debajo del umbral necesario para la corrección lógica, la compañía ha demostrado memorias cuánticas donde el cúbit lógico supera en fidelidad a los mejores cúbits físicos, un paso importante hacia sistemas tolerantes a fallos.[^4]
+En 2025, Google Quantum AI sigue centrada en la construcción de cúbits lógicos más estables mediante códigos de superficie. Tras los avances de 2023 y 2024, en los que logró reducir los errores por debajo del umbral necesario para la corrección lógica, la compañía ha demostrado memorias cuánticas donde el cúbit lógico supera en fidelidad a los mejores cúbits físicos, un paso importante hacia sistemas tolerantes a fallos.[^5]
 
-IBM avanza en una dirección complementaria con **IBM Quantum System Two**, una arquitectura modular diseñada para la nueva era del “quantum-centric supercomputing”. Su enfoque combina criogenia escalable, electrónica de control modular y varios procesadores Heron integrados en una misma plataforma, con la intención de facilitar la interconexión de múltiples chips y el aumento progresivo de la capacidad de cómputo.[^3]
+IBM avanza en una dirección complementaria con **IBM Quantum System Two**, una arquitectura modular diseñada para la nueva era del "quantum-centric supercomputing". Su enfoque combina criogenia escalable, electrónica de control modular y varios procesadores Heron integrados en una misma plataforma, con la intención de facilitar la interconexión de múltiples chips y el aumento progresivo de la capacidad de cómputo.[^4]
 
 Microsoft, por su parte, apuesta por una vía distinta con el procesador **Majorana 1**, basado en su propuesta de cúbits topológicos más robustos frente al ruido. Aunque la empresa afirma haber dado un paso relevante hacia esa meta, parte de la comunidad científica se mantiene cauta y considera que aún no hay pruebas concluyentes de que estos cúbits topológicos operen de forma plenamente funcional. Esto mantiene abierto el debate sobre la madurez real de este enfoque frente a las plataformas superconductoras o de iones atrapados.[^7]
 
@@ -43,16 +43,16 @@ La intención es ofrecer una visión clara, actualizada y accesible del panorama
 
 # Referencias
 
-[^1]: Arute et al., “Quantum supremacy using a programmable superconducting processor,” *Nature*, 574(7779), 505–510 (2019).  
-[^2]: Preskill, J., “Quantum Computing in the NISQ era and beyond,” *Quantum*, 2, 79 (2018).  
-[^3]: IBM Quantum Roadmap, “The era of quantum utility is here,” IBM Research Blog (2023).  
-[^4]: Google Quantum AI, “Suppressing quantum errors by scaling a surface code logical qubit,” *Nature* (2023).  
-[^6]: IBM Research, “IBM Condor: 1,121-qubit processor unveiled,” IBM Newsroom (2023).  
-[^7]: Microsoft Azure Quantum Blog, “Introducing Majorana 1: topological qubits for scalable quantum computing” (2025).  
-[^8]: Quantinuum, “System Model H2: trapped-ion quantum computer with all-to-all connectivity,” Press Release (2023).  
-[^9]: Xanadu, “Borealis: programmable photonic processor achieves quantum advantage,” *Nature* (2022).  
-[^10]: IBM, “Qiskit documentation” (2025).  
-[^11]: Microsoft Learn, “Q# and the Quantum Development Kit” (2025).  
-[^12]: Shor, P., “Algorithms for quantum computation: discrete logarithms and factoring,” *Proc. 35th IEEE Symposium on Foundations of Computer Science* (1994).  
-[^13]: NIST, “Finalized post-quantum cryptography standards (FIPS 203–205),” August 2024.  
-[^75]: Bernhardt, C. (2020). *Quantum Computing for Everyone*. MIT Press.
+[^1]: Arute et al., "Quantum supremacy using a programmable superconducting processor," *Nature*, 574(7779), 505–510 (2019). [https://doi.org/10.1038/s41586-019-1666-5](https://doi.org/10.1038/s41586-019-1666-5)  
+[^2]: Preskill, J., "Quantum Computing in the NISQ era and beyond," *Quantum*, 2, 79 (2018). [https://doi.org/10.22331/q-2018-08-06-79](https://doi.org/10.22331/q-2018-08-06-79)  
+[^3]: Bernhardt, C. (2020). *Quantum Computing for Everyone*. MIT Press.  
+[^4]: IBM Quantum Roadmap, "The era of quantum utility is here," IBM Research Blog (2023). [https://research.ibm.com/blog/quantum-roadmap-2033](https://research.ibm.com/blog/quantum-roadmap-2033)  
+[^5]: Google Quantum AI, "Suppressing quantum errors by scaling a surface code logical qubit," *Nature* (2023). [https://doi.org/10.1038/s41586-022-05434-1](https://doi.org/10.1038/s41586-022-05434-1)  
+[^6]: IBM Research, "IBM Condor: 1,121-qubit processor unveiled," IBM Newsroom (2023). [https://newsroom.ibm.com/2023-12-04-IBM-Debuts-Next-Generation-Quantum-Processor-IBM-Quantum-System-Two](https://newsroom.ibm.com/2023-12-04-IBM-Debuts-Next-Generation-Quantum-Processor-IBM-Quantum-System-Two)  
+[^7]: Microsoft Azure Quantum Blog, "Introducing Majorana 1: topological qubits for scalable quantum computing" (2025). [https://cloudblogs.microsoft.com/quantum/](https://cloudblogs.microsoft.com/quantum/)  
+[^8]: Quantinuum, "System Model H2: trapped-ion quantum computer with all-to-all connectivity," Press Release (2023). [https://www.quantinuum.com/hardware/h2](https://www.quantinuum.com/hardware/h2)  
+[^9]: Xanadu, "Borealis: programmable photonic processor achieves quantum advantage," *Nature* (2022). [https://doi.org/10.1038/s41586-022-04725-x](https://doi.org/10.1038/s41586-022-04725-x)  
+[^10]: IBM, "Qiskit documentation" (2025). [https://qiskit.org/documentation/](https://qiskit.org/documentation/)  
+[^11]: Microsoft Learn, "Q# and the Quantum Development Kit" (2025). [https://learn.microsoft.com/azure/quantum/](https://learn.microsoft.com/azure/quantum/)  
+[^12]: Shor, P., "Algorithms for quantum computation: discrete logarithms and factoring," *Proc. 35th IEEE Symposium on Foundations of Computer Science* (1994). [https://doi.org/10.1109/SFCS.1994.365700](https://doi.org/10.1109/SFCS.1994.365700)  
+[^13]: NIST, "Finalized post-quantum cryptography standards (FIPS 203–205)," August 2024. [https://csrc.nist.gov/projects/post-quantum-cryptography](https://csrc.nist.gov/projects/post-quantum-cryptography)  
