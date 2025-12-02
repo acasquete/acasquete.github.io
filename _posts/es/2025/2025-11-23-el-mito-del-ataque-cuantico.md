@@ -32,7 +32,7 @@ En las versiones modernas del protocolo (TLS 1.3), el intercambio de claves se r
 
 Para ver ejemplos reales, basta con comprobar los certificados de algunas webs muy conocidas. **Amazon.com**, por ejemplo, utiliza certificados basados en **RSA de 2048 bits**, algo que sigue siendo habitual en grandes plataformas por motivos de compatibilidad y estabilidad.
 
-Por el contrario, **Google.com** es uno de los mejores ejemplos de un servicio que **no utiliza RSA**, sino certificados basados en **ECDSA**, normalmente con claves de curva elíptica **secp256r1**. Este enfoque ofrece la misma seguridad con claves más pequeñas y mejor rendimiento.
+Por el contrario, **Google.com** es uno de los mejores ejemplos de un servicio que **no utiliza RSA**, sino certificados basados en **ECDSA**, normalmente con claves de curva elíptica **secp256r1**. 
 
 En la imagen siguiente puede apreciarse la diferencia entre ambos tipos de certificados al inspeccionar el campo *Public Key Algorithm*:
 
@@ -40,7 +40,7 @@ En la imagen siguiente puede apreciarse la diferencia entre ambos tipos de certi
 
 *Ejemplo real: Amazon.com utiliza RSA de 2048 bits, mientras que Google.com utiliza ECDSA con claves de curva elíptica de 256 bits. La diferencia se aprecia comparando el campo "Public Key Algorithm" del certificado TLS.*
 
-Por todo ello, **RSA sigue siendo relevante**, pero su futuro está condicionado por dos factores clave: la evolución real de la computación cuántica y la transición hacia **algoritmos criptográficos postcuánticos**, diseñados para resistir tanto ataques clásicos como ataques cuánticos. La solidez de RSA hoy no está en duda, pero a medio y largo plazo dependerá de cómo avance esta migración hacia estándares más robustos.
+**RSA sigue siendo relevante**, pero su futuro está condicionado por dos factores clave: la evolución real de la computación cuántica y la transición hacia **algoritmos criptográficos postcuánticos**, diseñados para resistir tanto ataques clásicos como ataques cuánticos. La solidez de RSA hoy no está en duda, pero a medio y largo plazo dependerá de cómo avance esta migración hacia estándares más robustos.
 
 # Criptografía de curvas elípticas
 
@@ -57,6 +57,7 @@ La curva usada por Bitcoin es muy simple en su definición matemática y se expr
 donde `p` es un número primo de 256 bits. Aunque en la práctica se opera sobre un **campo finito**, esta representación continua ayuda a visualizar la forma de la curva:
 
 ![Representación gráfica de la curva elíptica y² = x³ + 7](img/elliptic-curve-secp256k1.jpg)
+*Imagen 1. Representación gráfica de la curva elíptica y² = x³ + 7*
 
 Dentro de este sistema:
 
@@ -72,78 +73,35 @@ Para entender bien cómo funcionan las curvas elípticas en criptografía ayuda 
 
 La curva que utilizamos es `y² = x³ + 2 (mod 17)`. Elegimos este valor porque en módulos reducidos solo algunos parámetros producen curvas válidas y con suficientes puntos. El valor 2 genera una curva simple y funcional en este entorno. En Bitcoin se usa el parámetro 7 porque así lo fija el estándar secp256k1 y funciona correctamente en un módulo de 256 bits.
 
-En un campo finito la curva no es continua. Es un conjunto discreto de puntos que cumplen la ecuación módulo 17. Con un módulo tan pequeño se pueden listar todos los puntos válidos de forma directa. Entre ellos está `G = (5, 1)` que empleamos como punto base. En sistemas reales como secp256k1 el punto base también está definido de antemano y garantiza las propiedades de seguridad necesarias.
+En un campo finito la curva no es continua. Es un conjunto discreto de puntos que cumplen la ecuación módulo 17. Con un módulo tan pequeño se pueden listar todos los puntos válidos de forma directa. Entre ellos está `G = (0, 6)` que empleamos como punto base. En sistemas reales como secp256k1 el punto base también está definido de antemano y garantiza las propiedades de seguridad necesarias.
 
-### Clave privada y clave pública
+![Comparación entre la curva elíptica real y su versión discreta en el campo finito F₁₇](img/elliptic-curve-real-vs-finite-field.png)
 
-Elegimos una clave privada pequeña `k = 7`. En Bitcoin esta clave sería un número aleatorio de 256 bits. En este ejemplo usamos un valor simple para seguir el proceso sin complicaciones.
+*Imagen 2. Comparación entre la curva elíptica real y su versión discreta en el campo finito F₁₇*
 
-La clave pública se obtiene mediante multiplicación escalar con la fórmula `P = k × G`. En una curva elíptica esta operación no es un producto tradicional. Multiplicar un punto por un número significa sumarlo consigo mismo tantas veces como indique el valor de k. En este caso la operación completa es:
+## Clave privada y clave pública
+
+Partimos de una clave privada pequeña, `k = 7`. En Bitcoin este valor sería un número aleatorio de 256 bits, pero aquí elegimos un número reducido para poder seguir el ejemplo sin esfuerzo.
+
+La clave pública se obtiene mediante **multiplicación escalar**, expresada como `P = k × G`. En las curvas elípticas esta operación no es un producto convencional. Multiplicar un punto por un número significa **sumarlo consigo mismo k veces** aplicando las reglas específicas de la curva. En este caso:
 
 `P = 7 × G = G + G + G + G + G + G + G`
 
-Tras aplicar las reglas de la curva se obtiene `P = (4, 12)` y este punto se convierte en la clave pública asociada a la clave privada k.
+Tras realizar cada una de estas sumas según las normas de la curva se obtiene `P = (4, 12)`, que pasa a ser la **clave pública** correspondiente a la clave privada `k`.
 
-Cada una de esas sumas sigue un procedimiento geométrico muy concreto. Si los puntos son distintos se imagina una recta que pasa por ellos y se busca el tercer punto donde esa recta intersecta la curva. Después se refleja ese punto en el eje x y se obtiene el resultado de la suma. Cuando se suma un punto consigo mismo se usa la tangente a la curva en ese punto y se aplica el mismo método. Estas reglas matemáticas se traducen en fórmulas exactas dentro del campo finito y permiten que la curva forme una estructura estable que soporta la multiplicación escalar.
+Estas sumas no se comportan como operaciones en el plano habitual. La curva define un mecanismo geométrico propio. Cuando los puntos son distintos se toma la recta que los une, se identifica el tercer punto donde esa recta vuelve a cortar la curva y se refleja ese punto respecto al eje x para obtener el resultado. Cuando se suma un punto consigo mismo se utiliza la tangente en ese punto y se aplica el mismo procedimiento. Estas reglas se traducen en fórmulas exactas dentro del campo finito y permiten que la curva forme una estructura algebraica estable donde la multiplicación escalar tiene sentido y es eficiente de calcular.
 
-Para ver cómo funciona esto en un ejemplo real se puede usar un pequeño script que calcula la multiplicación escalar en la curva `y² = x³ + 2 (mod 17)` con el punto base `G = (5, 1)`. El programa es corto y no incluye nada innecesario. Está pensado para que el lector pueda reproducir el cálculo y comprobar cómo la curva combina sumas sucesivas hasta llegar al punto final.
-
-```python
-# Curva y^2 = x^3 + 2 (mod 17)
-p = 17
-
-def inv(k):
-    return pow(k, -1, p)
-
-def add(P, Q):
-    if P is None:
-        return Q
-    if Q is None:
-        return P
-    x1, y1 = P
-    x2, y2 = Q
-    if x1 == x2 and (y1 + y2) % p == 0:
-        return None
-    if P == Q:
-        m = (3 * x1 * x1) * inv(2 * y1 % p) % p
-    else:
-        m = (y2 - y1) * inv((x2 - x1) % p) % p
-    x3 = (m * m - x1 - x2) % p
-    y3 = (m * (x1 - x3) - y1) % p
-    return (x3, y3)
-
-def mul(k, P):
-    R = None
-    Q = P
-    while k > 0:
-        if k & 1:
-            R = add(R, Q)
-        Q = add(Q, Q)
-        k >>= 1
-    return R
-
-# Ejemplo de uso
-G = (5, 1)
-k = 7
-
-print("k × G =", mul(k, G))
-```
-
-Este pequeño programa muestra cómo una operación que parece sencilla oculta una estructura matemática rica y difícil de invertir. El lector puede cambiar el valor de k o probar otros puntos para observar cómo se comporta la curva y cómo crecen los múltiplos del punto base.
-
-### Interpretación criptográfica
-
-En ECDSA la clave privada sirve para firmar y la clave pública para verificar. En ECDH ambas partes realizan operaciones similares para establecer un secreto compartido. La seguridad descansa en una idea muy simple. Calcular P a partir de k y G es fácil. Recuperar k a partir de G y P es prácticamente imposible.
+En ECDSA la clave privada permite firmar mensajes y la clave pública permite verificarlos. En ECDH dos partes calculan multiplicaciones escalares similares para generar un secreto compartido. Todo el esquema se apoya en una idea fundamental. Calcular `P` a partir de `k` y `G` es sencillo. Recuperar `k` a partir de `G` y `P` es prácticamente imposible.
 
 ## Por qué es difícil invertir la operación
 
-Resolver `P = k × G` con el objetivo de recuperar k es el problema del logaritmo discreto en curvas elípticas. No existe un método eficiente que permita invertir esta operación en curvas seguras. La única opción es probar valores hasta encontrar el que satisface la ecuación.
+Intentar resolver `P = k × G` para encontrar `k` es el **problema del logaritmo discreto en curvas elípticas**. No existe ningún algoritmo eficiente que permita invertir esta operación en curvas modernas. La única estrategia general es la fuerza bruta. Examinar valores uno a uno hasta encontrar el correcto.
 
-En nuestro ejemplo este proceso sería posible porque el espacio es pequeño. En Bitcoin la clave privada tiene 256 bits. Eso implica un total de `2²⁵⁶` candidatos, unos `1,15 × 10⁷⁷` valores posibles. Incluso un ordenador capaz de probar mil millones de claves por segundo tardaría `10⁶⁸` segundos en revisar todas las opciones. La edad del universo es de unos `10¹⁷` segundos. En la práctica la operación inversa es inalcanzable.
+En el ejemplo esto sería posible porque el espacio de búsqueda es pequeño. En Bitcoin la clave privada tiene 256 bits y el total de valores posibles asciende a `2²⁵⁶`, aproximadamente `1,15 × 10⁷⁷` opciones. Incluso un sistema capaz de probar mil millones de claves por segundo tardaría `10⁶⁸` segundos en recorrer el espacio completo. La edad del universo ronda los `10¹⁷` segundos. La operación inversa se encuentra completamente fuera de alcance.
 
 ## Qué ocurre con los ordenadores cuánticos
 
-El algoritmo de Shor podría resolver este problema en teoría. Para hacerlo con claves de 256 bits sería necesario un sistema con cientos de cúbits lógicos y una corrección de errores completa. Esto exige millones de cúbits físicos y circuitos extremadamente estables. Los ordenadores cuánticos actuales usan cúbits ruidosos y carecen de corrección de errores a gran escala. No tienen la capacidad necesaria para ejecutar un ataque real contra ECDSA. Por eso la computación cuántica disponible hoy no compromete la seguridad de Bitcoin.
+El algoritmo de Shor podría, en teoría, resolver este problema de forma eficiente. Para hacerlo con claves de 256 bits sería necesario disponer de cientos de cúbits lógicos con corrección de errores completa. Esto exige millones de cúbits físicos y circuitos profundos y extremadamente estables. La tecnología cuántica actual trabaja con cúbits ruidosos y sin la corrección de errores necesaria para ejecutar un ataque de este tipo. En estas condiciones **los ordenadores cuánticos reales no suponen una amenaza para ECDSA ni para Bitcoin**.
 
 # Una verdadera amenaza cuántica
 
