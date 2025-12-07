@@ -9,53 +9,67 @@ layout: post
 Incorporar suplementos en mi rutina diaria ha sido un proceso de ajustes en el momento de la toma y la dosificación para maximizar su efectividad. A continuación, comparto mi horario de ingesta ideal y recomendaciones para cada suplemento, lo que me ayuda a sacar el máximo partido de mi régimen.
 
 # 1. **Proteína aislada**
-- **Dosis**: 20-30g por ración, ajustada según mis necesidades diarias de proteína y mi ingesta alimentaria.
-- **Momento recomendado**: Encuentro más beneficioso consumir proteína aislada después del entrenamiento para maximizar la síntesis de proteínas musculares. Alternativamente, la tomo como tentempié entre comidas para ayudar a cumplir mis necesidades proteicas diarias.
-- **Por qué**: Tomar proteína tras el entrenamiento favorece la reparación y crecimiento muscular, y una ración extra durante el día asegura que alcanzo mis objetivos de ingesta diaria de proteínas.
+- **Dosis**: 20-30g por ración, ajustada según mis necesidades diarias de proteína.
+- **Momento recomendado**: Después del entrenamiento para favorecer la síntesis proteica, o entre comidas para asegurar la ingesta diaria.
+- **Por qué**: Apoya la reparación muscular y facilita alcanzar mis objetivos de proteína.
 
 # 2. **Creatina**
 - **Dosis**: 5g al día.
-- **Momento recomendado**: Aunque el momento no es crítico, suelo tomar la creatina después del entrenamiento o con una comida para mejorar la absorción.
-- **Por qué**: La ingesta constante de creatina potencia mi rendimiento y fuerza, haciéndola una parte imprescindible de mi rutina.
+- **Momento recomendado**: Después del entrenamiento o con una comida.
+- **Por qué**: Mejora el rendimiento, la fuerza y la capacidad de recuperación. La clave es la constancia.
 
-# 3. **Colágeno**
+# 3. **Colágeno (Collagen Peptides)**
 - **Dosis**: 5-10g al día.
-- **Momento recomendado**: Lo tomo por la mañana o antes de acostarme, y a veces lo mezclo con mi proteína aislada tras el entrenamiento. Para obtener los mejores resultados, lo combino con vitamina C (como zumo de naranja o un suplemento de vitamina C) para potenciar la síntesis de colágeno.
-- **Por qué**: El colágeno me ayuda a mantener la elasticidad de la piel, la salud articular y la integridad de los tejidos conectivos. Al combinarlo con vitamina C, su absorción y síntesis son más efectivas.
+- **Momento recomendado**: Por la mañana, antes de acostarme o mezclado con la proteína tras entrenar. Tomarlo con vitamina C potencia su síntesis.
+- **Por qué**: Mejora la salud articular, la piel y los tejidos conectivos.
 
 # 4. **Magnesio**
-- **Dosis**: 200mg al día (ajustable según consejo médico y tipo de magnesio).
-- **Momento recomendado**: Tomo el magnesio por la noche, ya que me ayuda a relajarme y mejora la calidad de mi sueño.
-- **Por qué**: El magnesio apoya la función muscular y la recuperación, y tomarlo por la noche promueve un sueño reparador.
+- **Dosis**: 200mg al día (según tipo y tolerancia).
+- **Momento recomendado**: Por la noche para mejorar la relajación y el sueño.
+- **Por qué**: Reduce la tensión muscular y favorece la recuperación.
 
-# 5. **Omega-3**
-- **Dosis**: 1000mg al día (ajustable según la concentración de EPA y DHA).
-- **Momento recomendado**: Tomo omega-3 con una comida, idealmente rica en grasas saludables, como el almuerzo o la cena, para favorecer su absorción.
-- **Por qué**: Los omega-3 apoyan la salud cardiovascular y reducen la inflamación, siendo más efectivos cuando se toman con grasas dietéticas.
+# 5. **Omega-3 (Aceite de pescado)**
+- **Dosis**: Según concentración, normalmente 1000-1250mg.
+- **Momento recomendado**: Con comidas ricas en grasa, idealmente almuerzo o cena.
+- **Por qué**: Reduce inflamación y apoya la salud cardiovascular.
 
-# 6. **Curcumina (Cúrcuma)**
-- **Dosis**: Aproximadamente 500-1000mg al día, dependiendo de la concentración de curcumina.
-- **Momento recomendado**: La tomo con una comida que contenga grasas saludables, como el almuerzo o la cena, ya que la curcumina es liposoluble.
-- **Por qué**: La curcumina es un potente antiinflamatorio y antioxidante, y su absorción se mejora cuando se combina con pimienta negra (bioperina) o grasas saludables.
+# 6. **Ashwagandha**
+- **Dosis**: 300-500mg de extracto estandarizado.
+- **Momento recomendado**: Por la noche o con la última comida, especialmente en días de estrés elevado.
+- **Por qué**: Adaptógeno que contribuye a modular el estrés, mejorar la calidad del sueño y apoyar el equilibrio hormonal.
 
-# 7. **Tribulus Terrestris**
-- **Dosis**: 500-1500mg al día.
-- **Momento recomendado**: Lo tomo con las comidas, generalmente por la mañana o la tarde, dividiendo la dosis en dos tomas (mañana y tarde) para evitar posibles molestias estomacales.
-- **Por qué**: El Tribulus Terrestris apoya mis niveles naturales de testosterona y se absorbe mejor con la comida.
+# 7. **Vitamina D3 + K2**
+- **Dosis**: 2500 IU D3 + 100 mcg K2 (según el producto).
+- **Momento recomendado**: Con una comida que incluya grasas saludables, normalmente desayuno o comida.
+- **Por qué**: La D3 mantiene niveles óptimos de energía e inmunidad, y la K2 ayuda a fijar el calcio en los huesos.
 
----
+# 8. **Probiótico (60 Billion CFU)**
+- **Dosis**: 1 cápsula al día.
+- **Momento recomendado**: Por la mañana, preferiblemente en ayunas, o al menos 30 minutos antes de una comida.
+- **Por qué**: Favorece la digestión, reduce la inflamación intestinal, mejora la regularidad y apoya la inmunidad. La inulina aumenta la supervivencia y actividad de las cepas.
+
+# 9. **Berberina**
+- **Dosis**: 2 cápsulas al día (1000 mg en total).
+- **Momento recomendado**: Con una comida principal, como el almuerzo o la cena, para mejorar la tolerancia digestiva y optimizar la absorción.
+- **Por qué**: Mantiene niveles normales de glucosa y colesterol, favorece el metabolismo de grasas y apoya la salud hepática. Su combinación de Berberine HCl y Berberine Phytosome mejora la biodisponibilidad, potencia la eficacia clínica y contribuye a un microbioma intestinal equilibrado.
 
 # Mi Plan Diario de Suplementos
 
-| Suplemento              | Dosis          | Momento recomendado                              |
-|-------------------------|----------------|--------------------------------------------------|
-| **Proteína Aislada**    | 20-30g         | Después del entrenamiento o entre comidas        |
-| **Creatina**            | 5g             | Después del entrenamiento o con una comida       |
-| **Magnesio**            | 200mg          | Por la noche, antes de acostarme                 |
-| **Tribulus Terrestris** | 500-1500mg   | Mañana y tarde, con las comidas                  |
-| **Omega-3**             | 1000mg         | Almuerzo o cena, con una comida rica en grasas   |
-| **Curcumina**           | 500-1000mg     | Almuerzo o cena, con una comida rica en grasas   |
-| **Colágeno**            | 5-10g          | Por la mañana, antes de acostarme, o post-entrenamiento con proteína |
+| Suplemento              | Dosis            | Momento recomendado                                      |
+|-------------------------|------------------|----------------------------------------------------------|
+| **Proteína Aislada**    | 20-30g           | Después del entrenamiento o entre comidas                |
+| **Creatina**            | 5g               | Después del entrenamiento o con una comida               |
+| **Magnesio**            | 200mg            | Por la noche                                             |
+| **Omega-3**             | 1000-1250mg      | Almuerzo o cena                                          |
+| **Ashwagandha**         | 300-500mg        | Noche o última comida                                    |
+| **Vitamina D3 + K2**    | 2500 IU + 100mcg | Desayuno o comida con grasa                              |
+| **Probiótico**          | 1 cápsula        | Mañana, idealmente en ayunas                             |
+| **Berberina (Thorne)**  | 2 cápsulas       | Almuerzo o cena                                          |
+| **Colágeno**            | 5-10g            | Mañana, noche o post-entrenamiento                       |
 
-# Reflexiones Finales
-Cada suplemento en mi plan tiene un propósito específico, desde la recuperación muscular hasta el apoyo articular y el bienestar general. He aprendido que cada cuerpo responde de forma diferente, por lo que escucho cómo me siento y ajusto el momento o la dosis según sea necesario. Consultar a un profesional de la salud también puede ayudar a personalizar cualquier plan de suplementos según los objetivos de salud individuales.
+
+# Reflexiones finales
+Cada suplemento cumple una función concreta, desde la recuperación muscular hasta el bienestar digestivo y la gestión del estrés. Mantener una rutina constante y observar cómo responde mi cuerpo es esencial para ajustar dosis y horarios.
+
+Consultar con un profesional de la salud puede aportar una personalización adicional en función de los objetivos individuales.
+
