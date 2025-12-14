@@ -24,32 +24,51 @@ $text-light-color: rgba(0,0,0,0.6);
 $text-dark-color: #000000;
 $accent-color: #c7254e;
 
+/*- CSS Variables for theming -*/
+
+:root {
+	--background-color: #FFFFFF;
+	--text-color: #333333;
+	--text-light-color: rgba(0,0,0,0.6);
+	--text-dark-color: #000000;
+	--accent-color: #c7254e;
+	--header-bg: #FFFFFF;
+	--code-bg: #f5f5f5;
+	--border-color: #e0e0e0;
+	--link-hover: #000000;
+	--secondary-bg: #f9f9f9;
+}
+
 /*- Base settings -*/
 
 html {
-	background-color: $background-color;
+	background-color: var(--background-color);
 	font-size: 16px;
 	@media (min-width: 560px) {
 		font-size: 18px;
 	}
 	line-height: 1.8;
-	color: $text-color;
+	color: var(--text-color);
+	transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 body {
  max-width: 1200px;
  margin: 0 auto;
  padding: 0 20px;
+ background-color: var(--background-color);
+ color: var(--text-color);
 }
 
 /*- Link -*/
 a {
-	color: $text-color;
+	color: var(--text-color);
 	text-decoration: none;
 	font-weight: 700;
+	transition: color 0.2s ease;
 	&:hover,
 	&:focus {
-		color: darken($text-color, 5%);
+		color: var(--link-hover);
 		text-decoration: underline;
 	}
 }

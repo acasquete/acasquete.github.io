@@ -1,0 +1,300 @@
+/*- Dark Theme Variables -*/
+
+[data-theme="dark"] {
+  --background-color: #1a1a1a;
+  --text-color: #e4e4e4;
+  --text-light-color: rgba(255,255,255,0.6);
+  --text-dark-color: #ffffff;
+  --accent-color: #ff6b9d;
+  --header-bg: #1a1a1a;
+  --code-bg: #2d2d2d;
+  --border-color: #333333;
+  --link-hover: #ffffff;
+  --secondary-bg: #252525;
+}
+
+/*- Dark Theme Styles -*/
+
+[data-theme="dark"] {
+  
+  background-color: var(--background-color);
+  
+  html {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+
+  #wrap {
+    background-color: var(--background-color);
+  }
+
+  a {
+    color: var(--text-color);
+    &:hover,
+    &:focus {
+      color: var(--link-hover);
+    }
+  }
+
+  #header {
+    background-color: var(--header-bg);
+    border-bottom: 1px solid var(--border-color);
+    
+    h1 {
+      color: var(--text-dark-color) !important;
+    }
+    
+    .slash {
+      color: var(--accent-color);
+    }
+  }
+
+  #container {
+    background-color: var(--background-color);
+  }
+
+  main {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--text-dark-color);
+  }
+
+  p, li, td, th {
+    color: var(--text-color);
+  }
+
+  code {
+    background-color: var(--code-bg);
+    color: var(--text-dark-color);
+  }
+
+  pre {
+    background-color: var(--code-bg);
+    border-color: var(--border-color);
+    
+    code {
+      background-color: var(--code-bg);
+      color: var(--text-dark-color);
+    }
+  }
+
+  blockquote {
+    background-color: var(--secondary-bg);
+    border-left-color: var(--accent-color);
+    color: var(--text-light-color);
+  }
+
+  table {
+    th {
+      background-color: var(--secondary-bg);
+      color: var(--text-dark-color);
+    }
+    
+    td {
+      border-color: var(--border-color);
+    }
+
+    tr:hover {
+      background-color: var(--secondary-bg);
+    }
+  }
+
+  hr {
+    border-color: var(--border-color);
+  }
+
+  .post-title,
+  .post-title a {
+    color: var(--text-dark-color);
+  }
+
+  .post-meta {
+    color: var(--text-light-color);
+  }
+
+  #nav,
+  #nav-left {
+    background-color: var(--header-bg);
+    
+    a {
+      color: var(--text-color);
+      
+      &:hover {
+        color: var(--accent-color);
+      }
+    }
+  }
+
+  #nav-menu,
+  #nav-menu-left {
+    #menu {
+      background-color: var(--text-color);
+      
+      &:after,
+      &:before {
+        background-color: var(--text-color);
+      }
+    }
+  }
+
+  .tag {
+    background-color: var(--secondary-bg);
+    color: var(--text-color);
+    border-color: var(--border-color);
+    
+    &:hover {
+      background-color: var(--accent-color);
+      color: var(--background-color);
+    }
+  }
+
+  // Image filters for dark mode
+  img {
+    filter: brightness(0.8) contrast(1.1);
+    transition: filter 0.3s ease;
+    
+    &:hover {
+      filter: brightness(0.95) contrast(1.05);
+    }
+  }
+
+  // Header images need more dramatic effect
+  .fullview,
+  article img:first-of-type,
+  .post-header img {
+    filter: brightness(0.6) contrast(1.2) saturate(0.75);
+    
+    &:hover {
+      filter: brightness(0.75) contrast(1.15) saturate(0.85);
+    }
+  }
+
+  footer {
+    color: var(--text-light-color);
+    border-top: 1px solid var(--border-color);
+  }
+
+  .underreview {
+    background: var(--secondary-bg);
+    color: var(--text-color);
+    border-color: var(--border-color);
+  }
+
+  .tags a {
+    background-color: var(--secondary-bg);
+    color: var(--text-color);
+    
+    &:hover {
+      background-color: var(--accent-color);
+      color: var(--background-color);
+    }
+  }
+
+  // Timeline elements
+  .timeline {
+    h2 {
+      background: var(--background-color);
+      color: var(--text-dark-color);
+    }
+
+    .item-desc,
+    .picture-desc {
+      background-color: var(--secondary-bg);
+      border-color: var(--border-color);
+      color: var(--text-color);
+    }
+
+    .item img {
+      border-color: var(--border-color);
+    }
+
+    h3.bk {
+      background-color: var(--secondary-bg);
+      color: var(--text-dark-color);
+    }
+  }
+
+  // Book titles
+  .book-title {
+    background: var(--secondary-bg);
+    border-color: var(--border-color);
+    color: var(--text-color);
+  }
+
+  // Posts list styling
+  .TGN_site_ArticleItemtitle h1 {
+    color: var(--text-dark-color);
+  }
+
+  .TGN_site_ArticleItemdescription {
+    color: var(--text-color) !important;
+  }
+
+  .TGN_site_ArticleItemDesktopdate {
+    color: var(--text-light-color);
+  }
+
+  .AC_site_ArticleItems a {
+    color: var(--text-color);
+    
+    &:hover {
+      .TGN_site_ArticleItemtitle h1 {
+        color: var(--accent-color);
+      }
+    }
+  }
+
+  // Post hero (featured post)
+  .post_hero {
+    a {
+      color: var(--text-color) !important;
+    }
+
+    .post_title {
+      color: var(--text-dark-color);
+    }
+
+    .post_description {
+      color: var(--text-color);
+    }
+
+    .post_date {
+      color: var(--text-light-color);
+    }
+  }
+}
+
+/*- Theme Toggle Button -*/
+
+.theme-toggle {
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 8px;
+  margin-left: 10px;
+  font-size: 1.2em;
+  transition: transform 0.3s ease;
+  display: inline-block;
+  vertical-align: middle;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &:focus {
+    outline: 2px solid var(--accent-color);
+    outline-offset: 2px;
+  }
+}
+
+[data-theme="dark"] .theme-toggle {
+  color: var(--text-dark-color);
+}

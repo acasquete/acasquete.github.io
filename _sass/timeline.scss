@@ -22,7 +22,7 @@ $gray: #d6cec3;
   }
   
   h2 {
-    background: #fff;
+    background: var(--background-color, #fff);
     margin: 0 auto 0;
     padding: 0.2em;
     text-align: center;
@@ -63,7 +63,7 @@ $gray: #d6cec3;
       border-radius: 15px;
       object-fit: cover;
       margin-bottom: 0;
-      border: 1px solid #d6cec3;
+      border: 1px solid var(--border-color, #d6cec3);
     }
 
     .item-label {
@@ -85,8 +85,8 @@ $gray: #d6cec3;
       width: 100%;
       overflow: hidden;
       border-radius: 15px;
-      border: 1px solid #d6cec3;
-      background-color:#fcf6f4;
+      border: 1px solid var(--border-color, #d6cec3);
+      background-color: var(--secondary-bg, #fcf6f4);
       object-fit: cover;
       margin-bottom: 0;
       font-family: Arial, Helvetica, sans-serif;
@@ -112,8 +112,8 @@ $gray: #d6cec3;
       width: 100%;
       overflow: hidden;
       border-radius: 15px;
-      border: 1px solid #d6cec3;
-      background-color:#fcf6f4;
+      border: 1px solid var(--border-color, #d6cec3);
+      background-color: var(--secondary-bg, #fcf6f4);
       object-fit: cover;
       margin-bottom: 0;
       font-family: Arial, Helvetica, sans-serif;
