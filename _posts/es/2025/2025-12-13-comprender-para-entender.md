@@ -1,12 +1,12 @@
 ---
-title: Entre silencios y palabras
+title: Entre silencios y palabras, escuchar para entender
 tags: [personal]
 reviewed: true
 home: true
 ai: true
 header_image: how-to-know-a-person.jpg
 ---
-Siempre que tengo una reunión importante, especialmente cuando sé que habrá puntos de vista distintos sobre la mesa, intento hacer un pequeño ejercicio previo. Me recuerdo algo sencillo pero nada obvio: **el objetivo no es demostrar que uno tiene razón, sino entender de verdad a la otra persona**.
+Siempre que tengo una conversación importante, especialmente cuando sé que habrá puntos de vista distintos sobre la mesa, intento hacer un pequeño ejercicio previo, como quien se ajusta la chaqueta antes de salir al frío. Me recuerdo algo sencillo pero nada obvio: **el objetivo no es demostrar que uno tiene razón, sino entender de verdad a la otra persona**.
 
 Esta idea aparece de forma muy clara en *How to Know a Person*, de David Brooks, un libro que pone el foco en una habilidad tan básica como olvidada: saber ver a los demás. El libro cuestiona una confusión muy extendida, especialmente entre personas que se consideran buenas comunicadoras: pensar que comunicar bien es lo mismo que argumentar bien. Tener ideas claras, datos y ejemplos ayuda, sin duda. Pero dominar un discurso no garantiza saber conectar. Las conversaciones que realmente marcan la diferencia no son las que se ganan, sino las que **construyen confianza**. Y la confianza no se impone, se genera.
 

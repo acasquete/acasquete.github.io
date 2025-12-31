@@ -3,3 +3,32 @@
   color: $accent-color;
 }
 // -- Put custom style under this point -- //
+
+// Estilos para tablas de suplementos (solo página de suplementos)
+.suplementos-guide table {
+  table-layout: fixed;
+  width: 100%;
+  
+  th, td {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  
+  // Columna de suplemento más estrecha
+  th:nth-child(1),
+  td:nth-child(1) {
+    width: 25%;
+  }
+  
+  // Columna de dosis más estrecha
+  th:nth-child(2),
+  td:nth-child(2) {
+    width: 15%;
+  }
+  
+  // Columna de beneficios más amplia
+  th:nth-child(3),
+  td:nth-child(3) {
+    width: 60%;
+  }
+}

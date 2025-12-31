@@ -2,7 +2,7 @@
 layout: default
 comments: true
 ---
-<article id="post-page">
+<article id="post-page" {% if page.custom_class %}class="{{ page.custom_class }}"{% endif %}>
 	<h1>{%if page.header %}{{ page.header }}{% else %}{{ page.title }}{% endif %}</h1>		
 	<time datetime="{{ page.date | date_to_xmlschema }}" class="by-line">{% include formatted_date.html %}</time>
 	
