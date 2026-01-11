@@ -10,8 +10,8 @@ Decimos que construimos software.
 Como si fuera algo sólido. Como si hubiera planos definitivos, materiales estables y un momento claro en el que alguien pudiera decir: *"ya está"*.
 
 A los desarrolladores nos gusta pensar que escribimos código y el sistema emerge, limpio, coherente, casi elegante.
-A los diseñadores nos contamos que diseñamos experiencias, flujos, *journeys*.
-A los clientes les decimos que vamos a construir una solución que cubre sus necesidades actuales… y las futuras, si todo va bien.
+Los diseñadores definen experiencias, flujos, *journeys*, que después contamos a los clientes.
+A los clientes les decimos que vamos a construir una solución que cubre sus necesidades actuales… y las futuras, si el presupuesto lo permite.
 
 La palabra clave es **construir**.
 Porque suena a control. A previsibilidad. A dominio técnico.
