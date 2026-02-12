@@ -6,9 +6,9 @@ home: true
 ai: true
 header_image: los-tres-mosqueteros-cover.jpg
 ---
-A estas alturas de la vida, retomar *Los tres mosqueteros* ha sido una de esas lecturas que te reconcilian con los clásicos.<!-- excerpt-end --> Pese a haber visto adaptaciones en cine y televisión durante décadas, nunca me había detenido en la novela original de Dumas. Y me ha sorprendido comprobar cuánto se pierde en esas versiones: la estructura narrativa es mucho más rica, y ciertos personajes y acontecimientos cobran un peso que las películas apenas insinúan.
+A estas alturas de la vida, retomar *Los tres mosqueteros* ha sido una de esas lecturas que te reconcilian con los clásicos. Pese a haber visto adaptaciones en cine y televisión durante décadas, nunca me había detenido en la novela original de Dumas.<!-- excerpt-end --> Y me ha sorprendido comprobar cuánto se pierde en esas versiones: la estructura narrativa es mucho más rica, y ciertos personajes y acontecimientos cobran un peso que las películas apenas insinúan.
 
-La novela se divide en dos bloques bien diferenciados. La primera parte gira en torno a **los herretes de diamantes** (los adornos que la reina Ana de Austria regala al duque de Buckingham), un episodio que pone en marcha el conflicto político y sentimental que recorre toda la obra. Aquí el foco está en **D'Artagnan y su ascenso entre los mosqueteros**. La segunda parte, en cambio, se centra en **Milady de Winter**, cuya figura adquiere un protagonismo oscuro y magnético.
+Dumas sitúa su historia en la Francia del siglo XVII, bajo el reinado de Luis XIII, donde el cardenal Richelieu ejerce el verdadero poder político. En este contexto de intrigas cortesanas y conflictos religiosos, la novela se divide en dos bloques bien diferenciados. La primera parte gira en torno a **los herretes de diamantes** (los adornos que la reina Ana de Austria regala al duque de Buckingham), un episodio que pone en marcha el conflicto político y sentimental que recorre toda la obra. Aquí el foco está en **D'Artagnan y su ascenso entre los mosqueteros**. La segunda parte, en cambio, se centra en **Milady de Winter**, cuya figura adquiere un protagonismo oscuro y magnético.
 
 > "Todos para uno y uno para todos."
 
