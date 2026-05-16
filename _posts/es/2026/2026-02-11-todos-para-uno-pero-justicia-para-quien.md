@@ -2,7 +2,7 @@
 title: Todos para uno, pero ¿justicia para quién?
 tags: [personal, readings]
 reviewed: true
-home: true
+home: false
 ai: true
 header_image: los-tres-mosqueteros-cover.jpg
 ---
