@@ -16,7 +16,7 @@ Hasta hace poco, revisar una PR significaba lo de siempre: alguien se leía los 
 
 En esas aplicaciones, buena parte de los pasos del ciclo (leer la issue, escribir el código, ejecutar los tests, abrir la PR) ya no los hace una persona, sino un agente de IA con sus propias herramientas y permisos, dentro de los límites que le marcamos. Los pasos son los de siempre; lo que ha cambiado es quién los da. Y eso nos obliga a replantearnos dónde ponemos la atención humana.
 
-La decisión que tomamos fue esta: **la revisión humana deja de ser una puerta antes del merge y pasa a ser una capa posterior.** Una PR solo se integra si todas sus puertas (tests, spec, auditoría, contratos) están en verde. La persona revisa el resultado, no cada línea que lo ha producido.
+La decisión que tomamos fue esta: **la revisión humana deja de ser una puerta antes del merge y pasa a ser una capa posterior.** Una PR solo se integra si todas sus puertas (spec, tests, seguridad, licencias) están en verde. La persona revisa el resultado, no cada línea que lo ha producido.
 
 El motivo no es ir más rápido. El motivo es que, cuando una persona lee diffs generados por agentes al ritmo al que los agentes los generan, esa lectura deja de ser una señal de calidad. **Se convierte en teatro.**
 
@@ -64,11 +64,11 @@ Todo esto suena abstracto hasta que abres una jaula. Así que, en la aplicación
 
 **Seguridad en cada build, sin tener que pedirla.** TruffleHog para secretos filtrados, Trivy para vulnerabilidades conocidas en dependencias e infraestructura y Semgrep para patrones inseguros en el código. Los tres bloquean. Nada de esto depende de que alguien se dé cuenta, ni debería.
 
-**Cada build sabe lo que lleva dentro.** Cada build genera con Syft una lista de materiales del software, un SBOM: un inventario completo y legible por máquina de cada paquete y componente que contiene la aplicación, con su licencia. Un paquete con una licencia que no podemos distribuir se caza antes de llegar a un entregable. Además, es lo primero que pide un equipo de seguridad o un auditor, precisamente por eso, antes se hacía a mano, una vez, la semana antes de la auditoría.
+**Cada build sabe lo que lleva dentro.** Cada build genera con Syft una lista de materiales del software, un SBOM: un inventario completo y legible por máquina de cada paquete y componente que contiene la aplicación, con su licencia. Un paquete con una licencia que no podemos distribuir se caza antes de llegar a un entregable. Antes esto se hacía a mano, una vez, y solo cuando alguien lo pedía.
 
 **Lo que se despliega se vuelve a probar con el sistema en marcha.** Después del merge, el código va a un entorno de staging y ZAP lo sondea automáticamente como lo haría un atacante, antes de que una persona confirme el paso a producción. La jaula no termina en el merge.
 
-**La ingeniería que siempre se aplazaba ahora se hace.** Todos los equipos conocen la lista: restaurar un backup para demostrar que funciona, rotar los secretos, revisar quién sigue teniendo acceso, comprobar que lo que se está ejecutando coincide con lo documentado, mantener el runbook al día. Siempre importante, siempre lo primero que pide el auditor, siempre para el trimestre que viene. Un backup que nadie ha restaurado es una hipótesis, y una lista de accesos que nadie revisa es un riesgo. Las evidencias de auditoría, que antes eran una carrera de última hora, pasan a ser un subproducto del build.
+**La ingeniería que siempre se aplazaba ahora se hace.** Todos los equipos conocen la lista: restaurar un backup para demostrar que funciona, rotar los secretos, revisar quién sigue teniendo acceso, comprobar que lo que se está ejecutando coincide con lo documentado, mantener el runbook al día. Siempre importante, siempre para el trimestre que viene. Un backup que nadie ha restaurado es una hipótesis, y una lista de accesos que nadie revisa es un riesgo. La evidencia de que todo eso se hace, que antes era una carrera de última hora, pasa a ser un subproducto del build.
 
 ## Las 7 puertas que pasa una PR antes de que la vea una persona
 
