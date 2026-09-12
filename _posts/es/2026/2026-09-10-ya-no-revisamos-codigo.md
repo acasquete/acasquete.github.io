@@ -38,7 +38,7 @@ Esta es una distinción que me costó ver.
 
 Hay dos cosas a las que llamamos "jaula" y no son lo mismo. La primera es el conjunto de comprobaciones que un cambio tiene que pasar antes de salir: los tests, el mutation score, los escaneos de seguridad, la spec contra la que se construyó. Eso **comprueba el resultado**. Le da igual lo bueno que sea el modelo, porque tendría que existir aunque el código lo hubiera escrito una persona.
 
-La segunda es el proceso por el que obligamos a pasar al agente para llegar hasta ahí: qué paso va primero, qué artefacto tiene que producir antes de dejarle pasar al siguiente, cuánto del trabajo es andamiaje para que un modelo flojo no se salga del carril. Eso **comprueba el camino**. Y con cada nueva versión de los modelos, una parte deja de tener sentido.
+La segunda es el proceso por el que obligamos a pasar al agente para llegar hasta ahí: qué paso va primero, qué artefacto tiene que producir antes de dejarle pasar al siguiente, cuánto del trabajo es andamiaje para que un modelo flojo no se salga del carril. Eso **comprueba el camino**. Es lo que en inglés se llama el *harness* del agente: el arnés de herramientas, permisos, pasos y plantillas que envuelve al modelo y le marca por dónde puede moverse. Y con cada nueva versión de los modelos, una parte deja de tener sentido.
 
 > La jaula que comprueba el resultado no envejece con los modelos. La que comprueba el camino, sí.
 
@@ -100,7 +100,7 @@ Sería fácil terminar con "y por eso necesitas una jaula" y quedarse ahí. Tamb
 
 Así que no perdamos la cabeza ni en un sentido ni en otro. La ingeniería no desaparece: alguien tiene que escribir la spec, decidir los invariantes y construir las comprobaciones que te dicen si lo que ha salido es lo que se pidió. Esa parte gana importancia a medida que mejoran los modelos, porque es lo único que queda entre un modelo muy capaz y producción.
 
-Lo que se abarata es todo lo que construimos para mantener al modelo en el camino: el andamiaje, la ceremonia, los pasos añadidos porque un modelo anterior se perdía sin ellos. Cada uno de ellos es un barrote que conviene quitar el día que deje de cazar algo, y cuanto antes llegue ese día, mejor: **cada barrote que quitas es esfuerzo que vuelve a la ingeniería que importa.**
+Lo que se abarata es el *harness*, todo lo que construimos para mantener al modelo en el camino: el andamiaje, la ceremonia, los pasos añadidos porque un modelo anterior se perdía sin ellos. Cada uno de ellos es un barrote que conviene quitar el día que deje de cazar algo, y cuanto antes llegue ese día, mejor: **cada barrote que quitas es esfuerzo que vuelve a la ingeniería que importa.**
 
 > Una puerta se gana su sitio cazando algo. Si lleva meses sin cazar nada, es un coste, no una protección.
 
