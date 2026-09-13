@@ -6,19 +6,19 @@ home: true
 ai: true
 header_image: ya-no-revisamos-codigo-cover.jpg
 ---
-Este mes compartí una nota interna con toda la gente de Plain Concepts. El titular, *"ya no revisamos código"*, lo elegí a propósito para que llamara la atención. Pero el titular es lo de menos. Lo importante son las conversaciones que este tipo de declaraciones abre y que, por fin, nos pusiéramos de acuerdo sobre algo que todos veíamos venir desde hacía un año, aunque nadie tuviera muy claro cómo iba a llegar.<!-- excerpt-end -->
+Este mes compartí una nota interna con todo el equipo de Plain Concepts. El titular, *"ya no revisamos código"*, lo elegí a propósito para que llamara la atención. Pero el titular es lo de menos. Lo importante son las conversaciones que este tipo de declaraciones abre y que, por fin, dijéramos en voz alta algo que todos veíamos venir desde hacía un año, aunque nadie tuviera muy claro cómo iba a llegar.<!-- excerpt-end -->
 
-Ya está aquí. Y no se parece del todo a lo que imaginábamos.
+Puede que lo único que hizo el titular fuera hacer visible algo que ya estaba repartido entre todos, esperando a que alguien lo dijera: una nueva forma de hacer software ha llegado y no se parece del todo a lo que imaginábamos.
 
 ## Qué ha pasado
 
-Hasta hace poco, revisar una PR significaba lo de siempre: alguien se leía los cambios, dejaba comentarios, la aprobaba y solo entonces el código llegaba a producción. Hoy, en ocho aplicaciones internas que compartimos en la compañía, ese paso está desapareciendo. Y no porque hayamos bajado el listón, sino porque lo hemos subido en otro sitio.
+Hasta hace poco, revisar una PR significaba lo de siempre: alguien leía los cambios, dejaba comentarios, la aprobaba y solo entonces el código llegaba a producción. Hoy, en ocho aplicaciones internas que compartimos en la compañía, ese paso está desapareciendo. Y no porque hayamos bajado el listón, sino porque lo hemos subido en otro sitio.
 
-En esas aplicaciones, buena parte de los pasos del ciclo (leer la issue, escribir el código, ejecutar los tests, abrir la PR) ya no los hace una persona, sino un agente de IA con sus propias herramientas y permisos, dentro de los límites que le marcamos. Los pasos son los de siempre; lo que ha cambiado es quién los da. Y eso nos obliga a replantearnos dónde ponemos la atención humana.
+En esas aplicaciones, buena parte de los pasos del ciclo (leer la *issue*, escribir el código, ejecutar los tests, abrir la PR) ya no los hace una persona, sino un agente de IA con sus propias herramientas y permisos, dentro de los límites que le marcamos. Los pasos son los de siempre, lo que ha cambiado es quién los da. Y eso nos obliga a replantearnos dónde ponemos la atención humana.
 
 La decisión que tomamos fue esta: **la revisión humana deja de ser una puerta antes del merge y pasa a ser una capa posterior.** Una PR solo se integra si todas sus puertas (tests, spec, auditoría, contratos) están en verde. La persona revisa el resultado, no cada línea que lo ha producido.
 
-El motivo no es ir más rápido. El motivo es que, cuando una persona lee diffs generados por agentes al ritmo al que los agentes los generan, esa lectura deja de ser una señal de calidad. **Se convierte en teatro.**
+El motivo no es ir más rápido. El motivo es que, cuando una persona lee cambios generados por agentes al ritmo al que los agentes los generan, esa lectura deja de ser una señal de calidad. **Se convierte en teatro.**
 
 ## No somos los únicos
 
@@ -48,7 +48,7 @@ La nuestra es sobre todo del primer tipo, aunque no del todo: exigir que cada ca
 
 Es tentador leer todo esto como "menos ingeniería, más automatización". Es justo al revés.
 
-Alguien tiene que dibujar los *bounded contexts*, decidir los invariantes, escribir la *especificación* contra la que construye el agente y diseñar la batería de tests que tiene que cazar la regresión antes de que nadie mire el diff. Eso es bastante más difícil que escribir el código a mano. Es, de hecho, **la ingeniería que antes nos saltábamos**, porque siempre había un revisor detrás haciendo de red de seguridad.
+Alguien tiene que dibujar los *bounded contexts*, decidir los invariantes (lo que nunca puede dejar de cumplirse), escribir la *especificación* contra la que construye el agente y diseñar la batería de tests que tiene que cazar la regresión antes de que nadie mire el código. Eso es bastante más difícil que escribir el código a mano. Es, de hecho, **la ingeniería que antes nos saltábamos**, porque siempre había un revisor detrás haciendo de red de seguridad.
 
 Ahora la red de seguridad es el sistema. Y eso significa que el sistema tiene que estar bien construido, o nadie cazará el error. Justo ahora, cuando tenemos más capacidad de ingeniería que nunca, es cuando más disciplina de ingeniería necesitamos.
 
@@ -88,9 +88,9 @@ Nada de esto llegó de golpe y nada sale gratis. Casi todas las protecciones de 
 
 ## Lo que sigue siendo humano
 
-Nada de esto significa soltar el volante. Sigue habiendo una puerta de entrada innegociable: la issue. Ningún cambio nace de una idea suelta o de un prompt improvisado, sino de un problema descrito, analizado y con criterios de aceptación explícitos. Ahí es donde ponemos el criterio humano: en qué construir y por qué, no en la sintaxis de cómo se construye.
+Nada de esto significa soltar el volante. Sigue habiendo una puerta de entrada innegociable. Ningún cambio nace de una idea suelta o de un prompt improvisado, sino de un problema descrito, analizado y con criterios de aceptación explícitos. Ahí es donde ponemos el criterio humano: en qué construir y por qué, no en la sintaxis de cómo se construye.
 
-Y hay líneas rojas que no se negocian, venga el cambio de un agente o de una persona: nadie toca las claves de firma, nadie hace force-push sobre el trabajo de otro y nadie despliega a producción sin que una persona lo confirme.
+Y hay líneas rojas que el agente no cruza solo: antes de emitir o rotar una credencial o una clave, de reescribir el historial compartido o de tocar producción, se detiene y pide confirmación a una persona.
 
 La responsabilidad tampoco se mueve. **Nadie explica un incidente en producción diciendo que lo escribió el agente.** Decidir no leer cada línea es decidir dónde merece la pena poner la atención, no ceder la autoría. Quien integró el cambio sigue respondiendo por él.
 
