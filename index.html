@@ -63,12 +63,13 @@ hero: true
 		</div>
 	</section>
 
+	{% include dev-years.html %}
 	<section class="split rv" aria-labelledby="sobre">
 		{% include bio-photo.html drift=true %}
 		<div>
 			<h2 id="sobre" class="kick">Sobre mí</h2>
 			<p class="split-title">Notas que nunca me guardo para mí.</p>
-			<p class="split-text">Empecé escribiendo código y llevo trece años en Plain Concepts. Aquí escribo sobre software, inteligencia artificial, computación cuántica, lo que leo y cómo intento vivir mejor.</p>
+			<p class="split-text">Llevo {{ dev_years }} años en el desarrollo de software. Aquí escribo sobre software, inteligencia artificial, computación cuántica, lo que leo y cómo intento vivir mejor.</p>
 			<a href="/miviaje" class="card text-link text-link--big"><span class="hl">Leer la bio completa →</span></a>
 		</div>
 	</section>
