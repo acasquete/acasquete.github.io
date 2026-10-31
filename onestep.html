@@ -16,8 +16,19 @@ nav: onestep
 <section class="wrap cols os-why">
   <h2 class="kick">Por qué</h2>
   <div>
-    <p class="os-claim">La salud no es simplemente la ausencia de enfermedad.</p>
-    <p class="os-text">Aquí comparto mi viaje personal de bienestar, donde cada hábito y decisión cuentan para lograr un equilibrio entre cuerpo y mente. Para mí, el verdadero bienestar significa el compromiso de cuidar tanto el cuerpo como la mente.</p>
+    <p class="os-claim">Un día perfecto no cambia nada. Mil días volviendo, sí.</p>
+    <p class="os-text">Tu salud no depende del lunes en el que lo haces todo bien, sino de lo que sigues haciendo cuando viajas, cuando no tienes ganas o cuando la semana se tuerce.</p>
+    <p class="os-text">Por eso se llama One-Step. Un paso. Cada día. Y si hoy fallas, mañana vuelves.</p>
+  </div>
+</section>
+
+<section class="wrap cols os-why">
+  <h2 class="kick">Comida</h2>
+  <div>
+    <p class="os-claim">Cuento alimentos, no calorías.</p>
+    <p class="os-text">Usé MyFitnessPal durante un tiempo. Ya no. Cuando cada comida se convierte en un examen, acabas dejando de aparecer.</p>
+    <p class="os-text">Ahora apunto lo que como con palabras: qué alimentos, cuántas raciones y si hubo fritura. Sin pesar y sin escanear códigos de barras. Las calorías importan, pero para entenderlas una vez, no para contarlas cada día.</p>
+    <a href="https://onestep.health/blog/es/why-stop-counting-calories" class="card text-link text-link--big"><span class="hl">Por qué dejar de contar cada caloría →</span></a>
   </div>
 </section>
 
@@ -47,7 +58,11 @@ nav: onestep
       <p class="os-app-text">{% if app.description != "" %}{{ app.description }}{% else %}[Una frase sobre lo que hace la app]{% endif %}</p>
       <a href="{% if app.url != "" %}{{ app.url }}{% else %}#{% endif %}" class="btn">Conoce la app →</a>
     </div>
-    <div class="phone">{% if app.screenshot != "" %}<img src="{{ app.screenshot }}" alt="Captura de la app One-Step">{% else %}<span class="mono">[CAPTURA<br>DE LA APP]</span>{% endif %}</div>
+    {% if app.screenshot != "" %}
+    <div class="phone"><img src="{{ app.screenshot }}" alt="Captura de la app One-Step"></div>
+    {% elsif jekyll.environment == "development" %}
+    <div class="phone"><span class="mono">[CAPTURA<br>DE LA APP]</span></div>
+    {% endif %}
   </div>
 </section>
 {% endif %}
