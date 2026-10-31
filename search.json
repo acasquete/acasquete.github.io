@@ -1,0 +1,4 @@
+---
+layout: null
+---
+[{% for post in site.posts %}{% include post-topic.html post=post %}{"t":{{ post.title | jsonify }},"u":{{ post.url | jsonify }},"d":{{ post.date | date: "%d.%m.%Y" | jsonify }},"k":{{ topic.label | default: "Notas" | jsonify }}}{% unless forloop.last %},{% endunless %}{% endfor %}]

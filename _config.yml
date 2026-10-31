@@ -34,7 +34,15 @@ gems:
 # Custom variables
 version: "1.0.0"
 
-# Options
-custom_header: false
-custom_nav_footer: false
-reverse: false
+# Contenido pendiente: mientras esté vacío, en local se ve el marcador del diseño
+# y en producción ese bloque no aparece.
+bio_photo: ""
+next_milestone: ""
+onestep_app:
+  description: ""
+  url: ""
+  screenshot: ""
+
+# Enlaces del pie
+github: https://github.com/acasquete
+linkedin: ""

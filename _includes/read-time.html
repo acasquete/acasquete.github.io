@@ -1,8 +1,1 @@
-<span class="reading-time" title="Tiempo estimado de lectura">- 
-  {% assign words = content | number_of_words %}
-  {% if words < 360 %}
-    1 minuto de lectura
-  {% else %}
-    {{ words | divided_by:180 }} minutos de lectura
-  {% endif %}
-</span>
+{% assign words = content | number_of_words %}{% if words < 360 %}1{% else %}{{ words | divided_by:180 }}{% endif %} min de lectura

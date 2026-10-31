@@ -1,0 +1,18 @@
+{% assign years = include.posts | group_by_exp: 'post', 'post.date | date: "%Y"' %}
+{% for group in years %}
+<div class="year" data-year="{{ group.name }}">
+  <h2 class="year-title">{{ group.name }}</h2>
+  <div>
+    {% for post in group.items %}
+    {% include post-image.html post=post %}
+    {% include post-topic.html post=post %}
+    {% assign month = post.date | date: '%-m' | minus: 1 %}
+    <a class="card row" href="{{ post.url }}" data-topic="{{ topic.id }}" data-search="{{ post.title | escape }} {{ topic.label }}">
+      <div class="img thumb">{% if post_img %}<img src="{{ post_img }}" alt="" loading="lazy">{% else %}<span class="mono">{{ topic.label | default: 'Notas' }}</span>{% endif %}</div>
+      <span><span class="kick kick--tiny">{{ topic.label | default: 'Notas' }}</span><span class="row-title"><span class="hl">{{ post.title }}</span></span></span>
+      <span class="mono row-date">{{ post.date | date: '%d' }} {{ site.data.months[month] }}</span>
+    </a>
+    {% endfor %}
+  </div>
+</div>
+{% endfor %}

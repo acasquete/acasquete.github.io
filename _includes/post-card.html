@@ -1,0 +1,6 @@
+{% include post-topic.html post=include.post %}
+<a class="card rv" href="{{ include.post.url }}">
+  <div class="img img--{{ include.ratio }}"><img src="{{ post_img }}" alt="" loading="lazy"></div>
+  <span class="kick kick--small">{% if include.long %}{{ topic.long | default: 'Notas' }}{% else %}{{ topic.label | default: 'Notas' }}{% endif %}</span>
+  <span class="card-title"><span class="hl">{{ include.post.title }}</span></span>
+</a>

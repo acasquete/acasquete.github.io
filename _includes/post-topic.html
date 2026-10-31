@@ -1,0 +1,1 @@
+{% assign topic = nil %}{% for candidate in site.data.topics %}{% for tag in candidate.tags %}{% if include.post.tags contains tag %}{% assign topic = candidate %}{% break %}{% endif %}{% endfor %}{% if topic %}{% break %}{% endif %}{% endfor %}

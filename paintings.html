@@ -2,30 +2,16 @@
 layout: default
 title: Paintings
 ---
+<section class="wrap page-head">
+  <h1 class="display">Cuadros</h1>
+</section>
 
-<div class="tgnSearchResultsBox">
-
+<section class="wrap grid grid--3 paintings">
   {% for painting in site.data.paintings %}
-  <div class="AC_site_ArticleItemsearchThumb">
-    <a href="/paintings/{{ painting.url }}">
-        <div class="TGN_site_ArticleItemDesktopdate">{{ post.year }}</div>
-        <div class="TGN_site_ArticleItemimage">
-          {% if painting.image %}
-          <img src="/img/paintings/{{ painting.image }}/{{ painting.image }}-s.jpg" >
-          {% else %}
-          <img src="/img/acnotes.png" >
-          {% endif %}
-        </div>
-        
-        <div class="TGN_site_ArticleItemcopy">
-            <div class="TGN_site_ArticleItemtitle"><h1>{{ painting.title }}</h1></div>
-            <div class="TGN_site_ArticleItemdescription">Acrylic on Canvas<br/>19x24,8 cm</div>
-            <div class="TGN_site_ArticleItembylinedate">{{ painting.year }}</div>
-        </div>
-    </a>
-  </div>
+  <a class="card" href="/paintings/{{ painting.url }}">
+    <div class="img img--4-3"><img src="/img/paintings/{{ painting.image }}/{{ painting.image }}-s.jpg" alt="{{ painting.title }}" loading="lazy"></div>
+    <span class="card-title"><span class="hl">{{ painting.title }}</span></span>
+    <span class="card-text">Acrylic on Canvas · 19x24,8 cm</span>
+  </a>
   {% endfor %}
-</div>
-  
-
-</div>
+</section>

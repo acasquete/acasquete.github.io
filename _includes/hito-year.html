@@ -1,0 +1,11 @@
+<div class="cols hito rv">
+  <h3 class="hito-year">{{ include.group.year }}</h3>
+  <ol>
+    {% for item in include.group.items %}
+    <li>
+      <span class="mono muted">{{ item.month }}</span>
+      <span class="hito-label">{% if item.image %}<a href="{{ item.image }}" data-lightbox="about" data-title="{{ item.label | escape }}">{{ item.label }}</a>{% else %}{{ item.label }}{% endif %}{% if item.note %}<small>{{ item.note }}</small>{% endif %}</span>
+    </li>
+    {% endfor %}
+  </ol>
+</div>

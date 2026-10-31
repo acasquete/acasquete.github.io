@@ -1,0 +1,1 @@
+{% assign post_img = include.post.header_fullview | default: include.post.header_image %}{% if post_img %}{% assign post_img = post_img | prepend: '/img/' | replace: '//', '/' %}{% endif %}

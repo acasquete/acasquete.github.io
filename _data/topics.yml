@@ -1,0 +1,30 @@
+# Orden = prioridad: el primer tema cuyo tag aparezca en la nota es el que se muestra.
+- id: ia
+  label: IA
+  long: Inteligencia artificial
+  tags: [artificial_intelligence]
+  filter: true
+- id: cuantica
+  label: Cuántica
+  long: Computación cuántica
+  tags: [quantum_computing, quantum]
+  filter: true
+- id: lecturas
+  label: Lecturas
+  long: Lecturas
+  tags: [readings]
+  filter: true
+- id: salud
+  label: Salud
+  long: Salud
+  tags: [health]
+  filter: true
+- id: personal
+  label: Personal
+  long: Personal
+  tags: [personal]
+  filter: true
+- id: programacion
+  label: Programación
+  long: Programación
+  tags: [programming, fsharp, functional_programming, web, suaveio, fake, vsts, netcore, docker, architecture, azure, big_data, windows_store, typescript, winjs, winrt, aop, nodejs, windows_phone, mvvm, algorithms, software_development]

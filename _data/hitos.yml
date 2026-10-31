@@ -1,0 +1,260 @@
+- year: 2025
+  items:
+  - label: Arizona
+    month: Nov
+  - label: Las Vegas
+    month: Feb
+- year: 2024
+  items:
+  - label: Primeros 10K en Seattle
+    month: Ago
+  - label: Primera vez en D.C. con Merche
+    month: Jul
+  - label: Primera visita a New York con Merche
+    month: Jul
+  - label: Primera visita a Chicago con Merche
+    month: Jul
+  - label: Siempre Perla
+    image: "/img/perla.jpg"
+- year: 2023
+  items:
+  - label: Visita a San Francisco
+    month: Sep
+  - label: Visita a Portland
+    month: Ago
+  - label: Mudanza a Seattle
+    month: Jun
+  - label: Matrimonio Merche
+    month: Jun
+  - label: Primer Maratón
+    month: Mar
+    image: "/img/maraton.jpg"
+- year: 2022
+  items:
+  - label: Segundo viaje a Venecia
+  - label: Primer viaje a San Francisco
+    month: Ago
+  - label: Primer cuadro
+  - label: Bienvenida a Cande
+    month: Sep
+  - label: Viaje a Jordania
+- year: 2021
+  items:
+  - label: Viaje a Noruega
+  - label: PER
+  - label: Pareja Estable
+    note: Firmamos como pareja estable en Barcelona, Merche y yo, después de 16 años juntos, desde 2006
+- year: 2020
+  items:
+  - label: Visita post-pandemia a Sort
+    month: Sep
+  - label: Pandemic Lockdown
+    month: Mar
+  - label: Visita a Londres, Street XO, Pre-pandemia
+    month: Mar
+  - label: Seattle
+    month: Feb
+- year: 2019
+  items:
+  - label: Primer viaje a Sierra Nevada
+    note: Di
+  - label: Primer maratón de montaña
+    month: Oct
+  - label: Viaje a Groenlandia
+    month: Sep
+  - label: Viaje a Islandia
+    month: Sep
+  - label: Primer viaje a Sydney
+    month: Ago
+  - label: Mom
+    month: Abr
+  - label: Visita a Milán
+    month: Mar
+  - label: Visita a San Sebastián
+    month: Mar
+- year: 2018
+  items:
+  - label: Primer viaje a Denia
+    month: Oct
+  - label: Primer viaje a Galicia
+    month: Jul
+    note: Santiago, Lugo, A coruña, Pontevedra
+  - label: Una nueva oficina de Plain
+    month: May
+  - label: Viaje a Pisa, Florencia y Siena
+    month: Ene
+- year: 2017
+  items:
+  - label: Viaje a China
+    month: Jul
+  - label: Primera visita a un 3 Estrellas
+    month: Abr
+  - label: Nueva oficina de Plain
+    month: Feb
+- year: 2016
+  items:
+  - label: Viaje a Puerto Rico
+    month: Jul
+  - label: Primer evento en Dubai
+    month: Abr
+- year: 2015
+  items:
+  - label: Primera carrera 5K
+    month: Nov
+  - label: Visita a Chicago
+    month: Nov
+  - label: Segundo MVP Summit
+    month: Sep
+  - label: Viaje por Castilla León
+    month: Sep
+  - label: Viaje a Madeira
+    month: Jul
+- year: 2014
+  items:
+  - label: Plain Concepts
+    month: Oct
+  - label: Viaje a Frankfurt y Bélgica
+    month: Ago
+  - label: Viaje a Budapest
+    month: Jul
+  - label: Azure Bootcamp
+    month: Abr
+    image: "/img/azure-bootcamp-2014.jpeg"
+  - label: Primer reconocimiento como MVP
+    month: Ene
+- year: 2013
+  items:
+  - label: Tokiota
+    note: Esta fue una etapa de transición corta donde trabajé como freelance para Tokiota como consultor experto en tecnologías de Microsoft. El proyecto principal fue el diseño y desarrollo de un sistema de entrega de notificaciones para un portal inmobiliario, donde el mayor desafío fue mejorar el rendimiento de los procedimientos almacenados de SQL Server.
+  - label: Sesión en MCT Summit
+    note: Working with disconnected data in Windows Store apps, Helsinki, Finland
+  - label: Viaje a Japón
+    month: Jul
+- year: 2012
+  items:
+  - label: Primera publicación en DotNetMania
+    note: Entity Framework Code First Migrations
+  - label: Primera App
+    month: Sep
+    image: "/img/about/taskme.jpeg"
+  - label: Continuo estudios de Ingeniería
+    month: Feb
+- year: 2011
+  items:
+  - label: Evento CatDotNet
+  - label: Primer Open Space en Barcelona
+    month: Jun
+  - label: Pasiona
+    note: En esta etapa, comencé mi carrera en empresas de consultoría. Durante 2 años, participé en el desarrollo de una aplicación WPF para la gestión de notarías. Formé parte de un equipo de 20 desarrolladores y analistas funcionales. En este proyecto, me enfoqué en definir y aplicar mejores prácticas, pruebas unitarias, pruebas funcionales y análisis de rendimiento.
+  - label: Primer Webcast como ponente
+    month: Ene
+- year: 2010
+  items:
+  - label: Primera a Segovia
+    month: Ene
+    image: "/img/segovia2010.jpg"
+- year: 2009
+  items:
+  - label: Primera certificación Microsoft
+    month: Dic
+  - label: Visita a Isla de Pascua
+    month: Sep
+    image: "/img/isla-de-pascua.jpg"
+  - label: Segunda visita al Perito Moreno
+    note: 27 Aug
+    image: "/img/perito-moreno.jpg"
+  - label: Viaje a Chile
+    month: Ago
+  - label: Subiendo el Aneto
+    month: Jul
+    image: "/img/aneto.jpg"
+  - label: MSP
+  - label: Abro cuenta en Twitter
+    month: Mar
+- year: 2008
+  items:
+  - label: Primer viaje a Venecia
+    month: Dic
+  - label: Wolters Kluwer
+    note: Durante este período, inicié mis primeras experiencias como parte de un gran equipo de desarrollo. Comencé en WKE a través de Entel (ahora Entelgy), y poco después pasé a formar parte del personal. Inicialmente, me enfoqué en el desarrollo de un rediseño de una aplicación web de gestión de recursos humanos y nóminas. La pila tecnológica utilizada incluía ASP.NET y MS SQL, con un fuerte enfoque en el frontend usando HTML, CSS y Javascript puro.
+  - label: Primer viaje a Estoril
+    month: Ago
+  - label: Nacimiento de Perla
+    month: Feb
+- year: 2007
+  items:
+  - label: Segundo viaje a Granada
+    month: Dic
+    image: "/img/granada.jpg"
+  - label: Primer viaje a Italia
+    note: Visita Nápoles, Capri, Amalfi
+    image: "/img/roma.jpg"
+- year: 2006
+  items:
+  - label: First trip to Uruguay
+    month: Dic
+  - label: Primer viaje a Málaga y Granada
+    month: Sep
+  - label: Primer viaje a Madrid
+    image: "/img/madrid.jpg"
+  - label: Un concierto
+    image: "/img/cabra-mecanica.jpg"
+- year: 2005
+  items:
+  - label: Freelance
+    note: Tras la etapa con mi propia empresa, continué como freelance, trabajando exclusivamente para una agencia especializada en asesoría técnica, desarrollo web empresarial y marketing en línea. Me encargaba de recopilar los requisitos del cliente, estimar los esfuerzos y diseñar la solución tecnológica.
+  - label: Comienzo estudios en la UOC
+    note: Comencé los estudios en Ingeniería de Informatica en la Universidad Oberta de Catalunya.
+- year: 2004
+  items:
+  - label: Primer viaje a Argentina
+  - label: Primer post en el blog
+- year: 2003
+  items:
+  - label: The Spencer Tunick Experience
+    month: Jun
+    image: "/img/spencer-tunick-installation.jpg"
+- year: 2002
+  items:
+  - label: Primer viaje a Brasil
+    note: De Sao Paulo a Salvador de Bahia
+    image: "/img/rio1.jpg"
+- year: 2001
+  items:
+  - label: Primera empresa, Studio 4
+    note: After my first 4 years of experience, I started a new company with three colleagues from my previous job. I was involved in sales, client acquisition, proposal definition, and project development, focusing on web and desktop applications using Flash, PHP, ASP.NET, and SQL Server.
+- year: 1998
+  items:
+  - label: Primer salario como programador
+    note: Started at Micro 3 Services, where I worked as a programmer and was involved in developing client-server desktop applications using Visual Basic, SQL Server, ASP, and Macromedia Authorware.
+- year: 1997
+  items:
+  - label: Estudios en LAN
+    note: Local Area Network Administration
+- year: 1996
+  items:
+  - label: Graduated High School, IES Lluis Vives
+  - label: Servicio Militar en Jaca, Huesca
+    image: "/img/emmoe-nevada.jpg"
+- year: 1995
+  items:
+  - label: Concurso PC Mania Pixel a Pixel
+    image: "/img/cama.jpg"
+- year: 1994
+  items:
+  - label: Primer PC 486
+- year: 1990
+  items:
+  - label: Primer PC - Amstrad 2086
+- year: 1989
+  items:
+  - label: Primera película en cine
+    image: "/img/palacio-balana.jpg"
+- year: 1986
+  items:
+  - label: Primer ordenador
+    image: "/img/about/amstrad6128-3.jpeg"
+- year: 1977
+  items:
+  - label: Nacido - Barcelona, España
+    image: "/img/about/born.png"

@@ -1,4 +1,5 @@
 ---
+description: Un horario de toma organizado por momento del día.
 title: Guía diaria de suplementos
 header_fullview: health/blister-packs-tablets-pills-prescription-medication-blister-packs.jpg
 tags: [health]  
