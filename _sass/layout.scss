@@ -1166,6 +1166,8 @@
   .kick { color: $accent-light; }
 }
 
+.os-app > div:only-child { grid-column: 1 / -1; }
+
 .os-app-title {
   margin: 18px 0 0;
   font-family: $serif;

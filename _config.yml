@@ -39,8 +39,8 @@ version: "1.0.0"
 bio_photo: ""
 next_milestone: ""
 onestep_app:
-  description: ""
-  url: ""
+  description: "Apunta tu fuerza, tus carreras y lo que has comido en cinco minutos antes de dormir. Sin ruido, sin presión y sin algoritmo."
+  url: "https://onestep.health"
   screenshot: ""
 
 # Enlaces del pie

@@ -10,7 +10,7 @@ Con el paso de los años, he aprendido a mirar cada amanecer con más intensidad
 
 **No hay otro cuerpo que me esté esperando para recoger el relevo**. Este, el que me ha sostenido en cada risa y me ha recogido en cada caída, es el único que tendré hasta el último día. Y entenderlo ha sido como un despertar, un toque de atención que me ha hecho replantearme prioridades. Porque cuidarme ya no es solo una cuestión de evitar enfermedades, sino de vivir con calidad, de sentirme fuerte y presente.
 
-[One–Step](/onestep) es la síntesis de ese viaje personal, una guía donde la ciencia y la experiencia se encuentran para construir **hábitos sostenibles** que me permitan, **no solo añadir años a la vida, sino vida a los años**. Porque al final, lo que de verdad cuenta es cómo me siento en cada uno de esos días: fuerte y capaz de estar para mí y para los que me rodean.
+[One-Step](/onestep) es la síntesis de ese viaje personal, una guía donde la ciencia y la experiencia se encuentran para construir **hábitos sostenibles** que me permitan, **no solo añadir años a la vida, sino vida a los años**. Porque al final, lo que de verdad cuenta es cómo me siento en cada uno de esos días: fuerte y capaz de estar para mí y para los que me rodean.
 
 Esta guía no es una receta milagrosa ni una lista rígida de mandamientos. Es un relato de **pequeñas decisiones**, de **constancia** y **aprendizaje**, de esos momentos en los que me paro a escucharme y a reconocer qué necesito para sentirme bien de verdad. Es mi mapa, mi manual y ahora quiero compartirlo. No porque crea tener todas las respuestas, sino porque en este viaje, compartir es también una forma de crecer y aprender.
 
@@ -34,27 +34,7 @@ Para construir una base sólida en mi camino hacia una vida saludable, he defini
 
 # Mi punto de partida
 
-En la siguiente tabla se detallan algunos parámetros de salud clave y cómo han variado entre 2018 y 2024. Hacer el seguimiento de estos valores, me permite tener claro las areas donde debo enfocarme para mejorar mi bienestar.
-
-| **Parameter**             | **Reference**              | **2018** | **2019** | **2021** | **2022** | **2024** |
-|---------------------------|----------------------------|----------|----------|----------|----------|----------|
-| Weight                    | 57 - 77 kg                 | 70       | 71       | 74       | 71.9     | 74       |
-| Total Cholesterol         | <200 mg/dL                 | 198      | 237 (*)  | 208      | 206      | 234 (*)  |
-| HDL Cholesterol           | ≥ 40 mg/dL                 | 67       | 63       | 62       | 80       | 68       |
-| Triglycerides             | <150 mg/dL                 | 97       | 134      | 67       | 49       | 94       |
-| LDL Cholesterol           | <100 mg/dL                 | 112      | 147 (*)  | 133 (*)  | 116      | 146 (*)  |
-| Glucose                   | 65 - 99 mg/dL              | 85       | 87       | 101      | 77       | 85       |
-| Creatinine                | 0.60 - 1.29 mg/dL          | 0.99     | 1.20     | 1.04     | 1.07     | 1.18     |
-| AST (SGOT)                | 10 - 40 U/L                | 33       | 39       | 39       | 55 (*)   | 22       |
-| ALT (SGPT)                | 9 - 46 U/L                 | 15       | 16       | 22       | 26       | 12       |
-
-(*) Valores fuera de los límites de referencia.
-
-Mirar estos números no es solo un repaso médico, es una lectura de mi propio camino, de las decisiones tomadas y de aquellas que aún tengo por delante. Los datos muestran varias tendencias importantes en la salud cardiovascular y hepática. El **colesterol total** y el **colesterol LDL** han seguido una tendencia al alza desde 2019, superando los niveles recomendados, lo que sugiere un incremento en el riesgo de enfermedades cardiovasculares. Aunque el **HDL** ha mantenido valores saludables, su descenso en 2024 indica la necesidad de atención continua. Los **triglicéridos**, si bien han mostrado un aumento reciente, permanecen en un rango aceptable.
-
-En cuanto a la **función hepática**, el aumento puntual de **AST** en 2022 podría haber reflejado un episodio temporal relacionado con la dieta o el ejercicio, pero se ha normalizado en 2024, lo que es alentador. Los niveles de **ALT** y **fosfatasa alcalina** han estado consistentemente dentro de los rangos normales, indicando una función hepática estable.
-
-Estos cambios resaltan la importancia de seguir de cerca estos indicadores y ajustar el estilo de vida o la atención médica según sea necesario para mantener la salud a largo plazo. Para detalles más exhaustivos, se recomienda consultar el [artículo completo](/parametros-de-salud).
+Me hago análisis de forma periódica porque me permiten tener claras las áreas en las que debo enfocarme para mejorar mi bienestar. Los resultados me los quedo para mí, pero en [Qué mido y por qué](/mis-indicadores-de-salud) explico qué miro y cómo uso esos datos.
 
 # Implementación práctica del protocolo
 
@@ -121,7 +101,7 @@ Los suplementos básicos que he incorporado en mi protocolo son una extensión d
 
 - **Colágeno** (Apoyo para articulaciones, piel y tejidos conectivos): He incorporado el colágeno a mi protocolo debido a sus beneficios para la salud de las articulaciones, la piel y otros tejidos conectivos. Este suplemento es especialmente útil para mantener la elasticidad de la piel, fortalecer los tendones y ligamentos y apoyar la salud de las articulaciones, aspectos que se vuelven cada vez más importantes con el tiempo y la actividad física constante. Al añadir colágeno, busco promover una recuperación completa y un bienestar integral que va más allá de la musculatura, cuidando también de las estructuras que sostienen mi rendimiento y movilidad a largo plazo.
 
-- **Omega 3** (Apoya corazón y reduce inflamación): Aunque intento consumir fuentes naturales de omega 3, como pescado azul y semillas, he decidido incorporar este suplemento para maximizar sus beneficios en mi perfil lipídico y salud cardiovascular. Este ácido graso esencial es clave para reducir la inflamación, proteger la salud del corazón y contribuir a la claridad mental, lo cual es fundamental para gestionar el estrés y promover un bienestar emocional equilibrado. Tomarlo como suplemento me permite asegurarme de que estoy recibiendo una dosis óptima, especialmente en aquellos días en los que las fuentes naturales pueden ser limitadas en mi dieta.
+- **Omega 3** (Apoya corazón y reduce inflamación): Aunque intento consumir fuentes naturales de omega 3, como pescado azul y semillas, he decidido incorporar este suplemento para apoyar mi salud cardiovascular. Este ácido graso esencial es clave para reducir la inflamación, proteger la salud del corazón y contribuir a la claridad mental, lo cual es fundamental para gestionar el estrés y promover un bienestar emocional equilibrado. Tomarlo como suplemento me permite asegurarme de que estoy recibiendo una dosis óptima, especialmente en aquellos días en los que las fuentes naturales pueden ser limitadas en mi dieta.
 
 - **Magnesio** (Mejora recuperación y calidad del sueño): Aunque no me he realizado un análisis que confirme un déficit, he decidido incluir el magnesio en mi protocolo debido a su papel esencial en múltiples funciones corporales clave, especialmente en la recuperación muscular y la calidad del sueño. El magnesio es un mineral fundamental que ayuda a relajar los músculos, apoya la síntesis de proteínas y contribuye a un descanso profundo y reparador, necesario para una recuperación óptima. Al añadirlo, busco asegurarme de que mi cuerpo cuente con el apoyo necesario para enfrentar el día con energía y optimizar mi rendimiento sin depender exclusivamente de los niveles presentes en mi alimentación diaria.
 
@@ -129,7 +109,7 @@ Los suplementos básicos que he incorporado en mi protocolo son una extensión d
 
 Para asegurar que mi protocolo de bienestar siga siendo efectivo y ajustado a mis necesidades, he incorporado una serie de herramientas de monitorización que me permiten analizar de cerca mi progreso y realizar ajustes en función de los resultados. Esta observación constante es fundamental para mantener una visión objetiva de mi evolución, permitiéndome refinar mi rutina y maximizar los beneficios de mis esfuerzos.
 
-Además, utilizo **MyFitnessPal** para llevar un registro detallado de mi ingesta calórica y de nutrientes, lo cual es clave para mantener un equilibrio en mi alimentación. Para medir la calidad del descanso y el estado de recuperación, utilizo una **pulsera Whoop** que monitoriza parámetros importantes como la variabilidad de la frecuencia cardíaca (HRV) y los ciclos de sueño. Finalmente, el **reloj Garmin** me ayuda a seguir y optimizar mis entrenamientos de resistencia (endurance), permitiéndome ajustar la intensidad y duración de cada sesión según mis objetivos.
+En la alimentación no cuento calorías, cuento alimentos: apunto qué como y cuántas raciones, sin pesar nada. Durante un tiempo usé **MyFitnessPal** para registrar calorías y nutrientes, pero ya no lo uso. Para medir la calidad del descanso y el estado de recuperación, utilizo una **pulsera Whoop** que monitoriza parámetros importantes como la variabilidad de la frecuencia cardíaca (HRV) y los ciclos de sueño. Finalmente, el **reloj Garmin** me ayuda a seguir y optimizar mis entrenamientos de resistencia (endurance), permitiéndome ajustar la intensidad y duración de cada sesión según mis objetivos.
 
 - **Registro**: Llevo un diario semanal donde anoto niveles de energía, estado de ánimo y calidad del sueño, reflejando cómo cada aspecto de mi rutina afecta mi bienestar.
 - **Reflexión**: Cada semana reviso los avances logrados y detecto áreas de mejora, utilizando los datos registrados para una evaluación más precisa.
