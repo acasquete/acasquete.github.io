@@ -29,7 +29,7 @@
   font-family: $serif;
   font-size: 20px;
   line-height: 1.75;
-  color: #222;
+  color: $prose;
 
   p, ul, ol, table, pre, .video-embed { margin: 0 0 28px; }
   ul, ol { padding-left: 1.5em; }
@@ -57,7 +57,7 @@
     text-decoration: underline;
     text-decoration-color: $accent-color;
     text-underline-offset: 3px;
-    &:hover { color: $accent-dark; }
+    &:hover { color: $accent-text; }
   }
 
   img {
@@ -72,7 +72,7 @@
   hr {
     margin: 56px 0;
     border: 0;
-    border-top: 1px solid #D9D7D2;
+    border-top: 1px solid $line-soft;
   }
 
   blockquote {

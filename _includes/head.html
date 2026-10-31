@@ -7,6 +7,17 @@
 	<title>{%if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %} | Alex Casquete</title>
   	<meta name="description" content="{%if page.description %}{{ page.description }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
+	<!-- Theme: set before first paint -->
+	<script>
+		(function () {
+			var pref = "auto";
+			try { pref = localStorage.getItem("acn-theme") || "auto"; } catch (e) {}
+			var root = document.documentElement;
+			root.setAttribute("data-theme-pref", pref);
+			root.classList.toggle("dark", pref === "dark" || (pref === "auto" && window.matchMedia("(prefers-color-scheme: dark)").matches));
+		})();
+	</script>
+
 	<!-- CSS & fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

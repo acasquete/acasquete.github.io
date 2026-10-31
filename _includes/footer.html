@@ -2,11 +2,11 @@
   <div class="wrap">
     <a href="/" class="logo logo--footer">acasquete<span>/</span>notes</a>
     <div class="footer-links">
-      <span class="footer-nav"><a href="/miviaje">Bio</a><a href="/biblioteca">Biblioteca</a><a href="/onestep">One-Step</a></span>
       <a href="/atom.xml">RSS</a>
       <a href="{{ site.github }}">GitHub</a>
       {% if site.linkedin != "" %}<a href="{{ site.linkedin }}">LinkedIn</a>{% endif %}
       <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">CC BY 4.0 · {{ site.time | date: "%Y" }}</a>
     </div>
+    {% include theme-button.html %}
   </div>
 </footer>

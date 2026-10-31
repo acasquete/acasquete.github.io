@@ -7,6 +7,7 @@
     <a class="sq{% if page.nav == 'blog' %} on{% endif %}" href="/blog" aria-label="Buscar en todo el blog"{% if page.nav == 'blog' %} aria-current="page"{% endif %}{% if page.hero %} data-search-open{% endif %}>
       <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"></circle><path d="M15.5 15.5L20 20"></path></svg>
     </a>
+    <button type="button" class="menu-btn" id="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span></button>
     {% if page.hero %}<span class="progress" aria-hidden="true"></span>{% endif %}
   </div>
 </header>

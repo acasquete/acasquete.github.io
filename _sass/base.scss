@@ -1,25 +1,51 @@
 /*- Base color -*/
 
 $background-color: #FAFAF8;
-$text-color: #141414;
+$text-color: var(--ink);
 $accent-color: #3D7BFF;
 
 $accent-dark: #2F66E0;
 $accent-light: #7FA8FF;
 $night: #141518;
 $bar: #111215;
-$muted: #6B6B6B;
-$soft: #4A4A4A;
-$faint: #8A8A8A;
-$line: #E4E2DD;
-$line-strong: #CFCCC5;
-$surface: #E6E5E1;
-$panel: #EDECE8;
+$pill: #141518;
+$muted: var(--muted);
+$soft: var(--soft);
+$soft-strong: var(--soft-strong);
+$prose: var(--prose);
+$faint: var(--faint);
+$line: var(--line);
+$line-soft: var(--line-soft);
+$line-strong: var(--line-strong);
+$surface: var(--surface);
+$panel: var(--panel);
+$on-ink: var(--on-ink);
+$accent-text: var(--accent-text);
 
 $serif: 'Literata', Georgia, serif;
 $sans: 'Instrument Sans', system-ui, sans-serif;
 $mono: 'JetBrains Mono', monospace;
 $ease: cubic-bezier(.2,.7,.2,1);
+
+/*- Theme -*/
+
+:root {
+  --paper: #FAFAF8;
+  --ink: #141414;
+  --muted: #6B6B6B;
+  --soft: #4A4A4A;
+  --soft-strong: #3A3A3A;
+  --prose: #222222;
+  --faint: #8A8A8A;
+  --line: #E4E2DD;
+  --line-soft: #D9D7D2;
+  --line-strong: #CFCCC5;
+  --surface: #E6E5E1;
+  --panel: #EDECE8;
+  --on-ink: #FFFFFF;
+  --label: #FFFFFF;
+  --accent-text: #3D7BFF;
+}
 
 /*- Base reset -*/
 
@@ -36,16 +62,17 @@ html, body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, img {
 /*- Base settings -*/
 
 html {
-  background-color: $background-color;
+  background-color: var(--paper);
   overflow-x: clip;
 }
 
-html.search-open {
+html.search-open, html.menu-open {
   overflow: hidden;
 }
 
 body {
-  background-color: $background-color;
+  background-color: var(--paper);
+  transition: background-color .4s ease, color .4s ease;
   color: $text-color;
   font-family: $sans;
   font-size: 16px;
