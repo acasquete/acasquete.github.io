@@ -1,0 +1,6 @@
+<div class="card bk rv">
+  <div class="img cov"><img src="/img/books/{{ include.book.image }}" alt="Portada de {{ include.book.title }}" loading="lazy"></div>
+  <span class="bk-title">{{ include.book.title }}</span>
+  {% if include.book.author %}<span class="bk-author">{{ include.book.author }}</span>{% endif %}
+  <span class="mono bk-year">{{ include.book.read }}</span>
+</div>

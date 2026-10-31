@@ -1,4 +1,5 @@
 ---
+description: Qué mido, cada cuánto y cómo uso los datos para ajustar hábitos.
 title: Mis indicadores de salud
 tags: [health]  
 reviewed: true  

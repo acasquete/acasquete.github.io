@@ -1,96 +1,74 @@
 ---
 layout: default
-title: Biblioteca Personal
+title: Biblioteca
+nav: biblioteca
 ---
-<div class="container">
-  <h1>Biblioteca</h1>
-  <h2>Literatura Universal</h2>
-</div>
+{% assign books = site.data.world_literature | reverse %}
+{% assign latest = books | first %}
+{% assign latest_note = site.posts | where: "url", latest.post_url | first %}
+{% assign read_count = site.data.world_literature.size | plus: site.data.personal_development.size %}
+{% assign radar_count = site.data.books.size | plus: site.data.personal.size %}
+{% assign first_read = site.data.world_literature | first %}
 
-  <section class="gallery">
-  <div class="container">
+<section class="wrap page-head">
+  <span class="kick accent">Biblioteca</span>
+  <h1 class="display display--limit">Los libros más interesantes que he leído.</h1>
+  <p class="page-intro">Literatura universal y desarrollo personal. {{ read_count }} libros leídos desde {{ first_read.read }} y {{ radar_count }} esperando su turno.</p>
+</section>
 
-    <ol class="image-list grid-view">
-
-        {% for book in site.data.world_literature %}
-          <figure>
-            
-            <a class="book-container">
-            
-            <div class="book">
-              <img
-                alt="{{ book.title }}"
-                src="/img/books/{{ book.image }}"
-                />
-            </div>
-            </a>
-
-            <figcaption>
-              <p class="title">{{ book.title }}</p>
-              {% if book.author  %}
-              <p class="author">by {{ book.author }}</p>
-              {% endif %}
-              <!--<p class="read">{{ book.read }}</p>-->
-            </figcaption>
-          </figure>
-        {% endfor %}
-    
-
-    
-    </ol>
+<section class="wrap" aria-labelledby="ultimo" style="padding-top: 80px">
+  <div class="latest cols">
+    <div class="img latest-cover"><img src="/img/books/{{ latest.image }}" alt="Portada de {{ latest.title }}"></div>
+    <div>
+      <h2 id="ultimo" class="kick">Lo último que he leído</h2>
+      <p class="latest-title">{{ latest.title }}</p>
+      <p class="latest-author">{{ latest.author }} · {{ latest.read }}</p>
+      {% if latest.quote %}<div class="latest-quote">{{ latest.quote | markdownify }}</div>{% endif %}
+      {% if latest_note %}<a class="card text-link text-link--big" href="{{ latest_note.url }}"><span class="hl">Leer la nota: {{ latest_note.title }} →</span></a>{% endif %}
+    </div>
   </div>
 </section>
 
-<div class="container">
-  <h2>Desarrollo Personal</h2>
-</div>
-
-<section class="gallery">
-  <div class="container">
-
-    <ol class="image-list grid-view">
-
-      {% for book in site.data.personal_development %}
-      <figure>
-
-        <a class="book-container">
-
-          <div class="book">
-            <img
-                    alt="{{ book.title }}"
-                    src="/img/books/{{ book.image }}"
-            />
-          </div>
-        </a>
-
-        <figcaption>
-          <p class="title">{{ book.title }}</p>
-          {% if book.author  %}
-          <p class="author">by {{ book.author }}</p>
-          {% endif %}
-          <!--<p class="read">{{ book.read }}</p>-->
-        </figcaption>
-      </figure>
-      {% endfor %}
-
-
-
-    </ol>
+<section class="wrap" aria-labelledby="lit" style="padding-top: 104px">
+  <div class="section-head section-head--book">
+    <h2 id="lit" class="kick">Literatura universal</h2>
+    <span class="mono muted">{{ site.data.world_literature.size }} libros</span>
   </div>
+  <div class="books">
+    {% for book in books limit: 10 offset: 1 %}{% include book.html book=book %}{% endfor %}
+  </div>
+  <details class="more">
+    <summary class="text-link text-link--blue">Ver los {{ site.data.world_literature.size }} →</summary>
+    <div class="books">
+      {% for book in books offset: 11 %}{% include book.html book=book %}{% endfor %}
+    </div>
+  </details>
 </section>
 
-<div class="container">
-  <h1>Lo próximo: {{ site.data.books | size }} + {{ site.data.personal | size }} libros en mi radar</h1>
-</div>
-
-<section class="pending">
-  {% for book in site.data.books %}
-  <span class="book-title">{{ book.title }}</span>
-  {% endfor %}  
-</section>
-<hr/>
-<section class="pending">
-  {% for book in site.data.personal %}
-  <span class="book-title">{{ book.title }}</span>
+<section class="wrap" aria-labelledby="dp" style="padding-top: 88px">
+  <div class="section-head section-head--book">
+    <h2 id="dp" class="kick">Desarrollo personal</h2>
+    <span class="mono muted">{{ site.data.personal_development.size }} {% if site.data.personal_development.size == 1 %}libro{% else %}libros{% endif %}</span>
+  </div>
+  {% for book in site.data.personal_development %}
+  <p class="book-line"><span>{{ book.title }}</span><span>{{ book.author }} · {{ book.read }}</span></p>
   {% endfor %}
+</section>
+
+<section class="wrap" aria-labelledby="radar" style="padding-top: 88px">
+  <div class="section-head section-head--book">
+    <h2 id="radar" class="kick">En el radar</h2>
+    <span class="mono muted">{{ radar_count }} libros</span>
+  </div>
+  {% assign radar = site.data.books | concat: site.data.personal %}
+  {% assign hidden_count = radar_count | minus: 12 %}
+  <div class="radar">
+    {% for book in radar limit: 12 %}<span class="radar-pill">{{ book.title }}</span>{% endfor %}
+  </div>
+  <details class="more more--radar">
+    <summary class="radar-more">y {{ hidden_count }} más →</summary>
+    <div class="radar">
+      {% for book in radar offset: 12 %}<span class="radar-pill">{{ book.title }}</span>{% endfor %}
+    </div>
+  </details>
 </section>

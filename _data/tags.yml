@@ -30,3 +30,22 @@ allowed-tags:
   - health
   - quantum_computing
   - artificial_intelligence
+
+labels:
+  artificial_intelligence: IA
+  quantum_computing: Cuántica
+  readings: Lecturas
+  health: Salud
+  personal: Personal
+  programming: Programación
+  random: Varios
+  english: English
+  fsharp: F#
+  functional_programming: Programación funcional
+  big_data: Big data
+  windows_store: Windows Store
+  windows_phone: Windows Phone
+  architecture: Arquitectura
+  certification: Certificaciones
+  event: Eventos
+  algorithms: Algoritmos

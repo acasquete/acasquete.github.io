@@ -2,50 +2,65 @@
 layout: default
 comments: true
 ---
+{% include post-image.html post=page %}
+{% include post-topic.html post=page %}
 <article id="post-page" {% if page.custom_class %}class="{{ page.custom_class }}"{% endif %}>
-	<h1>{%if page.header %}{{ page.header }}{% else %}{{ page.title }}{% endif %}</h1>		
-	<time datetime="{{ page.date | date_to_xmlschema }}" class="by-line">{% include formatted_date.html %}</time>
-	
-	{% include read-time.html %}
-	
-	<div class="content">
-
-		{% if page.header_fullview %}
-		<p><img src="/img/{{page.header_fullview}}" alt="{{page.title}}" class="fullview" /></p>
-        {% elsif page.header_image %}
-		<p><img src="/img/{{page.header_image}}" alt="{{page.title}}" style="width: 100%;
-			max-height: 400px; object-fit: cover;" /></p>
-		{% endif %}
-		
-		{% if page.reviewed == false %}
-		<div class="underreview">
-			This post is under review and will be updated soon.
-		</div>
-		{% endif %}
-
-		{{ content }}
-
-		{% if page.ai == true %}
-		<div class="underreview">
-			<strong>Nota sobre el uso de IA:</strong> Este artículo ha sido desarrollado principalmente por el autor, utilizando herramientas de inteligencia artificial de manera limitada para la estructuración del contenido. Todas las opiniones, análisis y reflexiones son del autor.
-		</div>
-		{% endif %}
-		
+	<div class="wrap post-head">
+		<a href="/blog?tema={{ topic.id }}" class="kick accent">{{ topic.long | default: 'Notas' }}</a>
+		<h1 class="display">{%if page.header %}{{ page.header }}{% else %}{{ page.title }}{% endif %}</h1>
+		{% if page.description %}<p class="post-lede">{{ page.description }}</p>{% endif %}
+		<p class="post-meta mono"><time datetime="{{ page.date | date_to_xmlschema }}">{% include formatted_date.html %}</time> · {% include read-time.html %}</p>
 	</div>
 
-	<div class="tags">
+	{% if post_img %}
+	<figure class="wrap post-cover">
+		<img src="{{ post_img }}" alt="{{ page.title }}"{% if page.hero_position %} style="object-position: {{ page.hero_position }}"{% endif %}>
+	</figure>
+	{% endif %}
+
+	<div class="wrap post-column">
+		<div class="content prose">
+
+			{% if page.reviewed == false %}
+			<div class="underreview">
+				This post is under review and will be updated soon.
+			</div>
+			{% endif %}
+
+			{{ content }}
+
+			{% if page.ai == true %}
+			<div class="underreview">
+				<strong>Nota sobre el uso de IA:</strong> Este artículo ha sido desarrollado principalmente por el autor, utilizando herramientas de inteligencia artificial de manera limitada para la estructuración del contenido. Todas las opiniones, análisis y reflexiones son del autor.
+			</div>
+			{% endif %}
+
+		</div>
+
 		{% if page.tags != null %}
+		<div class="tags">
 			{% assign projectTags = site.data.tags.allowed-tags %}
 			{% for tag in page.tags %}
 			{% if projectTags contains tag %}
-			<a href="{{ "/tag/" | append: tag }}" class="btn btn-default navbar-btn cursorNorm" role="button">#{{tag}}</a>
+			<a href="{{ "/tag/" | append: tag }}" class="chip">{{ site.data.tags.labels[tag] | default: tag | replace: '_', ' ' }}</a>
 			{% endif %}
 			{% endfor %}
+		</div>
 		{% endif %}
 	</div>
-
-	
-
-
 </article>
 
+<section class="wrap" aria-labelledby="sigue">
+	<div class="section-head section-head--post"><h2 id="sigue" class="kick">Sigue leyendo</h2></div>
+	<div class="grid grid--3">
+		{% assign shown = 0 %}
+		{% for post in site.posts %}
+			{% include post-image.html post=post %}
+			{% if post_img and post.url != page.url and post.reviewed != false %}
+				{% include post-card.html post=post ratio="16-10" long=true %}
+				{% assign shown = shown | plus: 1 %}
+				{% if shown == 3 %}{% break %}{% endif %}
+			{% endif %}
+		{% endfor %}
+	</div>
+</section>

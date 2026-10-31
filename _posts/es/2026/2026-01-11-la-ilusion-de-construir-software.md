@@ -1,4 +1,6 @@
 ---
+featured: 3
+description: Decimos que construimos software, como si fuera algo sólido.
 title: La ilusión de construir software
 tags: [personal]
 reviewed: true

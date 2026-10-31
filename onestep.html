@@ -1,45 +1,53 @@
 ---
-layout: page
-title: "One–Step"
+layout: default
+title: "One-Step"
+nav: onestep
 ---
-<div class="container">
-<h1><span class="accent">One–Step</span><br/>Una guía personal para maximizar el bienestar y la longevidad </h1>
-
-    <p style="margin-bottom: 3em">Bienvenido a un espacio dedicado a explorar el camino hacia una vida plena y longeva. Aquí comparto mi viaje personal de bienestar, donde cada hábito y decisión son fundamentales para lograr un equilibrio entre cuerpo y mente. La salud no es simplemente la ausencia de enfermedad; para mí, el verdadero bienestar significa el compromiso de cuidar tanto el cuerpo como la mente.</p>
-    <div class="tgnSearchResultsBox">
-    {% assign health_items = site.posts %}
-    {% assign health_items = health_items | sort: 'date' %}
-    {% for item in health_items %}
-    {% if item.tags contains 'health' %}
-  <div class="AC_site_ArticleItemsearchThumbWide">
-    <a href="{{ item.url }}">
-        <div class="TGN_site_ArticleItemimageWide">
-          {% if item.header_fullview %}
-          <img src="/img/{{ item.header_fullview }}" >
-          {% elsif item.header_image %}
-          <img src="/img/{{ item.header_image }}" >
-          {% else %}
-          <img src="/img/acnotes.png" >
-          {% endif %}
-        </div>
-        
-        <div class="TGN_site_ArticleItemcopy">
-            <div class="TGN_site_ArticleItemtitle"><h1>{{ item.title }}</h1></div>
-            <div class="TGN_site_ArticleItemdescription">
-              {% if item.content contains '<!-- excerpt-end -->' %}
-							{{ item.content | split:'<!-- excerpt-end -->' | first | strip_html }}
-							{% else %}
-							{{ item.excerpt | strip_html | truncate: 150 }}
-							{% endif %}
-            </div>
-            <div class="TGN_site_ArticleItembylinedate">{{ item.date | date: '%B %e, %Y' }}</div>
-        </div>
-    </a>
+<section class="os-hero">
+  <img src="/img/runner.jpg" alt="Corredor en un camino al amanecer">
+  <div class="os-shade" aria-hidden="true"></div>
+  <div class="wrap">
+    <span class="kick">Proyecto personal</span>
+    <h1>One-Step</h1>
+    <p>Una guía personal para maximizar el bienestar y la longevidad.</p>
   </div>
-    {% endif %}
-  {% endfor %}
-</div>
-  
+</section>
 
-</div>
-</div>
+<section class="wrap cols os-why">
+  <h2 class="kick">Por qué</h2>
+  <div>
+    <p class="os-claim">La salud no es simplemente la ausencia de enfermedad.</p>
+    <p class="os-text">Aquí comparto mi viaje personal de bienestar, donde cada hábito y decisión cuentan para lograr un equilibrio entre cuerpo y mente. Para mí, el verdadero bienestar significa el compromiso de cuidar tanto el cuerpo como la mente.</p>
+  </div>
+</section>
+
+<section class="wrap" aria-labelledby="guias" style="padding-top: 104px">
+  <div class="section-head section-head--post"><h2 id="guias" class="kick">Las guías</h2></div>
+  <div class="grid grid--3">
+    {% assign guides = site.tags.health | sort: 'date' %}
+    {% for item in guides %}
+    {% include post-image.html post=item %}
+    <a class="card rv" href="{{ item.url }}">
+      <div class="img img--4-3"><img src="{{ post_img | default: '/img/acnotes.png' }}" alt="" loading="lazy"></div>
+      <span class="mono guide-number">Guía {% if forloop.index < 10 %}0{% endif %}{{ forloop.index }}</span>
+      <span class="guide-title"><span class="hl">{{ item.title }}</span></span>
+      <span class="card-text">{{ item.description }}</span>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+
+{% assign app = site.onestep_app %}
+{% if app.description != "" or jekyll.environment == "development" %}
+<section class="wrap" style="padding-top: 112px">
+  <div class="cols os-app">
+    <div>
+      <span class="kick">La app</span>
+      <p class="os-app-title">One-Step, también en tu iPhone.</p>
+      <p class="os-app-text">{% if app.description != "" %}{{ app.description }}{% else %}[Una frase sobre lo que hace la app]{% endif %}</p>
+      <a href="{% if app.url != "" %}{{ app.url }}{% else %}#{% endif %}" class="btn">Conoce la app →</a>
+    </div>
+    <div class="phone">{% if app.screenshot != "" %}<img src="{{ app.screenshot }}" alt="Captura de la app One-Step">{% else %}<span class="mono">[CAPTURA<br>DE LA APP]</span>{% endif %}</div>
+  </div>
+</section>
+{% endif %}

@@ -1,0 +1,12 @@
+<figure class="photo{% if include.drift %} photo--small{% endif %}">
+  <div{% if include.drift %} class="drift"{% endif %}><div class="photo-frame" aria-hidden="true"></div></div>
+  {% if site.bio_photo != "" %}
+  <div class="photo-box"><img src="{{ site.bio_photo }}" alt="Alex Casquete"></div>
+  {% else %}
+  <div class="photo-box" role="img" aria-label="Alex Casquete">
+    <svg aria-hidden="true" class="photo-hatch" width="100%" height="100%"><defs><pattern id="hatch" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="10" stroke="#D8D6D0" stroke-width="1"></line></pattern></defs><rect width="100%" height="100%" fill="url(#hatch)"></rect></svg>
+    <svg aria-hidden="true" width="120" height="184" viewBox="0 0 132 200" fill="none" stroke="#8A877F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="position: relative"><circle cx="66" cy="30" r="18"></circle><path d="M34 196V100c0-18 14-32 32-32s32 14 32 32v96"></path><path d="M66 150v46"></path><rect x="22" y="104" width="62" height="42" rx="3" transform="rotate(-8 53 125)" fill="#E6E5E1"></rect><path d="M84 112l20 8"></path></svg>
+    {% if jekyll.environment == "development" %}<span class="mono photo-label">[TU FOTO · de pie, con un MacBook Pro]</span>{% endif %}
+  </div>
+  {% endif %}
+</figure>

@@ -1,39 +1,23 @@
 ---
 layout: default
-title: Todo el Blog
+title: Archivo
+nav: blog
 ---
-
-<div class="tgnSearchResultsBox">
-
-  {% for post in site.posts %}
-  <div class="AC_site_ArticleItemsearchThumb">
-    <a href="{{ post.url }}">
-        <div class="TGN_site_ArticleItemDesktopdate">{% include formatted_date.html date=post.date %}</div>
-        <div class="TGN_site_ArticleItemimage">
-          {% if post.header_fullview %}
-          <img src="/img/{{ post.header_fullview }}" >
-          {% elsif post.header_image %}
-          <img src="/img/{{ post.header_image }}" >
-          {% else %}
-          <img src="/img/acnotes.png" >
-          {% endif %}
-        </div>
-        
-        <div class="TGN_site_ArticleItemcopy">
-            <div class="TGN_site_ArticleItemtitle"><h1>{{ post.title }}</h1></div>
-            <div class="TGN_site_ArticleItemdescription">
-              {% if post.content contains '<!-- excerpt-end -->' %}
-							{{ post.content | split:'<!-- excerpt-end -->' | first | strip_html }}
-							{% else %}
-							{{ post.excerpt | strip_html | truncate: 150 }}
-							{% endif %}
-            </div>
-            <div class="TGN_site_ArticleItembylinedate">{% include formatted_date.html date=post.date %}</div>
-        </div>
-    </a>
+<section class="wrap page-head">
+  <h1 class="display">Archivo</h1>
+  <label for="archive-q" class="kick muted archive-label">Buscar en todo el blog</label>
+  <div class="archive-search">
+    <input id="archive-q" type="search" placeholder="IA, cuántica, libros, salud…" autocomplete="off">
+    <span class="mono muted" id="archive-count" aria-live="polite">{{ site.posts.size }} notas</span>
   </div>
-  {% endfor %}
-</div>
-  
+  <div class="filters" role="group" aria-label="Filtrar por tema">
+    <button type="button" data-topic-filter="todo" aria-pressed="true">Todo</button>
+    {% for t in site.data.topics %}{% if t.filter %}<button type="button" data-topic-filter="{{ t.id }}" aria-pressed="false">{{ t.label }}</button>{% endif %}{% endfor %}
+  </div>
+</section>
 
-</div>
+<section class="wrap archive" id="archive" data-recent-since="2024" data-total="{{ site.posts.size }} notas">
+  {% include post-list.html posts=site.posts %}
+  <p class="archive-empty" id="archive-empty" hidden>No hay notas con esa búsqueda.</p>
+  <button type="button" class="text-link text-link--blue" id="archive-more" hidden>Cargar notas anteriores, de 2023 a {{ site.posts.last.date | date: "%Y" }} →</button>
+</section>

@@ -1,4 +1,5 @@
 ---
+description: Hábitos, rutinas y decisiones diarias para cuidar cuerpo y mente.
 title: Mi protocolo para una vida saludable
 tags: [personal, health]  
 reviewed: true 
