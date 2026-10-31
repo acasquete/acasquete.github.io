@@ -19,6 +19,78 @@ function norm(text) {
 	update();
 })();
 
+// Mobile menu
+(function () {
+	var toggle = document.getElementById('menu-toggle');
+	var sheet = document.getElementById('mobile-menu');
+	var scrim = document.getElementById('menu-scrim');
+	var root = document.documentElement;
+
+	function setOpen(open) {
+		root.classList.toggle('menu-open', open);
+		toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+		toggle.setAttribute('aria-label', open ? 'Cerrar menú' : 'Abrir menú');
+	}
+
+	toggle.addEventListener('click', function () {
+		setOpen(!root.classList.contains('menu-open'));
+	});
+
+	scrim.addEventListener('click', function () {
+		setOpen(false);
+	});
+
+	document.addEventListener('keydown', function (event) {
+		if (event.key === 'Escape' && root.classList.contains('menu-open')) {
+			setOpen(false);
+			toggle.focus();
+		}
+	});
+
+	window.matchMedia('(min-width: 521px)').addEventListener('change', function () {
+		setOpen(false);
+	});
+
+	sheet.querySelectorAll('a').forEach(function (link) {
+		link.addEventListener('click', function () {
+			setOpen(false);
+		});
+	});
+})();
+
+// Theme: auto, light or dark, cycled from the theme buttons
+(function () {
+	var names = { auto: 'automático (según el sistema)', light: 'claro', dark: 'oscuro' };
+	var next = { auto: 'light', light: 'dark', dark: 'auto' };
+	var root = document.documentElement;
+	var system = window.matchMedia('(prefers-color-scheme: dark)');
+	var buttons = document.querySelectorAll('[data-theme-toggle]');
+	var pref = root.getAttribute('data-theme-pref') || 'auto';
+
+	function apply() {
+		var label = 'Tema: ' + names[pref] + '. Pulsa para cambiar a ' + names[next[pref]];
+		root.setAttribute('data-theme-pref', pref);
+		root.classList.toggle('dark', pref === 'dark' || (pref === 'auto' && system.matches));
+		buttons.forEach(function (button) {
+			button.setAttribute('aria-label', label);
+			button.title = label;
+		});
+	}
+
+	buttons.forEach(function (button) {
+		button.addEventListener('click', function () {
+			pref = next[pref];
+			try {
+				localStorage.setItem('acn-theme', pref);
+			} catch (e) {}
+			apply();
+		});
+	});
+
+	system.addEventListener('change', apply);
+	apply();
+})();
+
 // Home carousel
 (function () {
 	var slides = document.querySelectorAll('.hero .slide');

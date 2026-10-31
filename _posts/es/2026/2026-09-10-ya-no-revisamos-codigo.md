@@ -1,6 +1,7 @@
 ---
 featured: 1
 hero_position: center 40%
+hero_position_mobile: 22% center
 description: Una nueva forma de hacer software ha llegado, y no se parece del todo a lo que imaginábamos.
 title: Ya no revisamos código
 tags: [artificial_intelligence, programming]

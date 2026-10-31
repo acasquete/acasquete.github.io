@@ -9,7 +9,7 @@ hero: true
 	<div class="par hero-slides">
 		{% for post in featured %}
 		{% include post-image.html post=post %}
-		<a class="slide{% if forloop.first %} is-active{% endif %}" href="{{ post.url }}" tabindex="-1" aria-hidden="{% if forloop.first %}false{% else %}true{% endif %}"><img src="{{ post_img }}" alt="{{ post.title }}"{% if post.hero_position %} style="object-position: {{ post.hero_position }}"{% endif %}></a>
+		<a class="slide{% if forloop.first %} is-active{% endif %}" href="{{ post.url }}" tabindex="-1" aria-hidden="{% if forloop.first %}false{% else %}true{% endif %}"><img src="{{ post_img }}" alt="{{ post.title }}" style="{% if post.hero_position %}object-position: {{ post.hero_position }};{% endif %}{% if post.hero_position_mobile %} --mobile-position: {{ post.hero_position_mobile }}{% endif %}"></a>
 		{% endfor %}
 	</div>
 	<div class="hero-shade" aria-hidden="true"></div>
