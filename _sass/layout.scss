@@ -819,6 +819,24 @@
   border-top: 1px solid $line-soft;
 }
 
+.zoomable { cursor: zoom-in; }
+
+/* Lightbox: centred in the viewport (it sets a fixed top offset by default) */
+
+#lightbox {
+  position: fixed;
+  top: 0 !important;
+  left: 0 !important;
+  height: 100%;
+  overflow: auto;
+}
+
+#lightbox:not([style*="none"]) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 /* Biblioteca */
 
 .latest {

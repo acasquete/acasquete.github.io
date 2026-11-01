@@ -272,3 +272,25 @@ document.querySelectorAll('.post-column .content > blockquote').forEach(function
 		quote.classList.add('is-pull');
 	}
 });
+
+
+// Post: images open in the lightbox, with the caption below them as the title
+document.querySelectorAll('.post-cover img, .post-column .content img').forEach(function (image) {
+	if (image.closest('a') !== null) return;
+
+	var block = image.parentElement.tagName === 'P' ? image.parentElement : image;
+	var next = block.nextElementSibling;
+	var isCaption = next !== null && next.tagName === 'P' && next.children.length === 1
+		&& next.firstElementChild.tagName === 'EM'
+		&& next.textContent.trim() === next.firstElementChild.textContent.trim();
+
+	var link = document.createElement('a');
+	link.href = image.getAttribute('src');
+	link.className = 'zoomable';
+	link.setAttribute('data-lightbox', 'post');
+	link.setAttribute('data-alt', image.alt);
+	if (isCaption) link.setAttribute('data-title', next.textContent.trim());
+
+	image.parentNode.insertBefore(link, image);
+	link.appendChild(image);
+});
