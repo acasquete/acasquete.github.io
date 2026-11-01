@@ -52,19 +52,9 @@ Ahora el código aparece más rápido, sí.
 Pero también aparecen más decisiones, más temprano, con más superficie de error.
 **La complejidad no se reduce: se acelera.**
 
-Y aquí entra otra ilusión peligrosa: la de la *experiencia de desarrollador perfecta*.
+Por eso el objetivo nunca fue eliminar la fricción, sino ponerla donde importa. Ya no dedicamos el esfuerzo a escribir código, ni siquiera a leer cada línea. Lo dedicamos a los mecanismos que nos dan la confianza para entregarlo y a decidir si debería existir.
 
-Pensamos que mejorar la Developer Experience es eliminar fricción.
-Pero **la fricción no es el enemigo. La fricción mal situada lo es**.
-
-Un buen entorno no elimina la dificultad.
-**La coloca donde aporta valor.**
-
-Cuando la DX es mala, el desarrollador lucha contra herramientas, procesos y plataformas.
-Cuando es buena, **lucha contra el problema real**.
-
-La IA promete eliminar fricción, pero en realidad **exige más criterio, más contexto y más responsabilidad**.
-Porque alguien tiene que validar.
+Alguien tiene que validar.
 Alguien tiene que entender.
 Alguien tiene que decir *"esto no"*.
 
