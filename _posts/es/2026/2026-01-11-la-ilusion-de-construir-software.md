@@ -2,11 +2,13 @@
 featured: 3
 description: Decimos que construimos software, como si fuera algo sólido.
 title: La ilusión de construir software
-tags: [personal]
+tags: [personal, artificial_intelligence]
 reviewed: true
 home: true
 ai: true
-header_fullview: working-team.jpg
+header_image: la-ilusion-de-construir-software-cover.jpg
+cover_ratio: 16 / 9
+hero_image_mobile: la-ilusion-de-construir-software-cover-mobile.jpg
 ---
 Decimos que construimos software.
 Como si fuera algo sólido. Como si hubiera planos definitivos, materiales estables y un momento claro en el que alguien pudiera decir: *"ya está"*.
