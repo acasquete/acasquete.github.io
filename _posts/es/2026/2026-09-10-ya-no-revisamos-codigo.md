@@ -1,14 +1,15 @@
 ---
 featured: 1
 hero_position: center 40%
-hero_position_mobile: 22% center
+cover_ratio: 16 / 9
+hero_position_mobile: 78% center
 description: Una nueva forma de hacer software ha llegado, y no se parece del todo a lo que imaginábamos.
 title: Ya no revisamos código
 tags: [artificial_intelligence, programming]
 reviewed: true
 home: true
 ai: true
-header_image: ya-no-revisamos-codigo-cover.jpg
+header_image: ya-no-revisamos-codigo-ojo-cover.jpg
 ---
 Este mes compartí una nota interna con todo el equipo de Plain Concepts. El titular, *"ya no revisamos código"*, lo elegí a propósito para que llamara la atención, pero es lo de menos: lo importante son las conversaciones que abre este tipo de declaraciones y que, por fin, dijéramos en voz alta algo que muchos veíamos venir desde hacía un año, aunque nadie tuviera muy claro cómo iba a llegar.<!-- excerpt-end -->
 

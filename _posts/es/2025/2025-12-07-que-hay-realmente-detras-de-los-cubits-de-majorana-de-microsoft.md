@@ -6,7 +6,9 @@ tags: [personal, quantum_computing]
 reviewed: true
 home: true
 ai: true
-header_fullview: majorana.jpg
+header_image: majorana-cover.jpg
+cover_ratio: 3 / 2
+hero_position_mobile: 57% center
 ---
 En los últimos meses, Microsoft ha vuelto a acaparar titulares con una promesa muy concreta: está construyendo un «ordenador cuántico topológico» basado en cúbits de Majorana y, según la compañía, ya tiene funcionando un primer chip, Majorana 1, con la vista puesta en llegar a millones de cúbits en pocos años.
 

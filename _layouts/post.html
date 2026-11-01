@@ -14,7 +14,7 @@ comments: true
 
 	{% if post_img %}
 	<figure class="wrap post-cover">
-		<img src="{{ post_img }}" alt="{{ page.title }}"{% if page.hero_position %} style="object-position: {{ page.hero_position }}"{% endif %}>
+		<img src="{{ post_img }}" alt="{{ page.title }}" style="{% if page.hero_position %}object-position: {{ page.hero_position }};{% endif %}{% if page.cover_ratio %} aspect-ratio: {{ page.cover_ratio }};{% endif %}">
 	</figure>
 	{% endif %}
 
