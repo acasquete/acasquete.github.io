@@ -1,4 +1,6 @@
 ---
+featured: 4
+description: La computación cuántica no es magia ni un atajo inmediato para romper cifrados.
 title: El mito del ataque cuántico
 tags: [personal, quantum_computing]
 reviewed: true

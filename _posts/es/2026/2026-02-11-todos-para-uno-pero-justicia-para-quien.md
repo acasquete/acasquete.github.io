@@ -5,7 +5,8 @@ tags: [personal, readings]
 reviewed: true
 home: false
 ai: true
-header_image: los-tres-mosqueteros-cover.jpg
+header_image: los-tres-mosqueteros-review-cover.jpg
+cover_ratio: 16 / 9
 ---
 A estas alturas de la vida, retomar *Los tres mosqueteros* ha sido una de esas lecturas que te reconcilian con los clásicos. Pese a haber visto adaptaciones en cine y televisión durante décadas, nunca me había detenido en la novela original de Dumas.<!-- excerpt-end --> Y me ha sorprendido comprobar cuánto se pierde en esas versiones: la estructura narrativa es mucho más rica, y ciertos personajes y acontecimientos cobran un peso que las películas apenas insinúan.
 
