@@ -2,8 +2,28 @@
   items:
   - label: Descubriendo Arizona
     month: Nov
-  - label: Unos días en Las Vegas
+  - label: De vuelta en Las Vegas, con Merche
+    month: Nov
+  - label: Un fin de semana en Blanes, con Merche
+    month: Oct
+  - label: La península Olímpica, con Merche
+    month: Ago
+  - label: Hawái, con Merche
+    month: Jul
+  - label: Plain Camp en Benidorm
+    month: Jun
+  - label: Un viaje a San Francisco, con Merche
+    month: May
+  - label: Puerto Vallarta, con Merche
+    month: Mar
+  - label: Ajijic y el lago de Chapala, con Merche
+    month: Mar
+  - label: Vancouver, con Merche
     month: Feb
+  - label: Nueva York, con Merche
+    month: Ene
+  - label: Una despedida de soltero en Las Vegas
+    month: Ene
 - year: 2024
   items:
   - label: Primeros 10K en Seattle
