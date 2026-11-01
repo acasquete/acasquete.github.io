@@ -6,7 +6,9 @@ tags: [personal, quantum_computing]
 reviewed: true
 home: true
 ai: true
-header_fullview: elliptic-curve-bitcoin-chalkboard-side-view.jpg
+header_image: el-mito-del-ataque-cuantico-cover.jpg
+cover_ratio: 16 / 9
+hero_image_mobile: el-mito-del-ataque-cuantico-cover-mobile.jpg
 ---
 A principios de año apareció en *Voz Pópuli* un artículo titulado [*“En solo 320 segundos hackean a Bitcoin con el primer ataque cuántico de la historia”*](https://www.vozpopuli.com/economia/solo-320-segundos-hackean-bitcoin-con-el-primer-ataque-cuantico-historia-sd.html). El artículo generó un notable eco mediático y el propio medio finalmente modificó el titular por uno más prudente (aunque igualmente impreciso): *“Un experto alerta de un posible intento de hackeo a Bitcoin con computación cuántica”*.
 
