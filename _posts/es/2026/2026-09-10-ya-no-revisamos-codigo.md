@@ -100,6 +100,8 @@ Las puertas dicen si un cambio entra; la excelencia de ingeniería dice cómo ev
 
 ![Indicadores de excelencia de ingeniería en Pulse: cobertura, mutación, métodos con CRAP superior a 30, vulnerabilidades críticas y altas, componentes en el SBOM y deuda de complejidad.](/img/ya-no-revisamos/pulse-excelencia.png)
 
+*Los indicadores que cada aplicación publica en Pulse en cada commit.*
+
 * **Cobertura:** qué parte del código se ejecuta en los tests.
 * **Mutación:** cuántos errores introducidos a propósito detectan esos tests.
 * **CRAP > 30:** cuántos métodos combinan mucha complejidad con pocas pruebas.
