@@ -1,121 +1,121 @@
 - year: 2025
   items:
-  - label: Arizona
+  - label: Descubriendo Arizona
     month: Nov
-  - label: Las Vegas
+  - label: Unos días en Las Vegas
     month: Feb
 - year: 2024
   items:
   - label: Primeros 10K en Seattle
     month: Ago
-  - label: Primera vez en D.C. con Merche
+  - label: Nuestra primera vez en Washington D. C., con Merche
     month: Jul
-  - label: Primera visita a New York con Merche
+  - label: Nuestra primera vez en Nueva York, con Merche
     month: Jul
-  - label: Primera visita a Chicago con Merche
+  - label: Nuestra primera vez en Chicago, con Merche
     month: Jul
   - label: Siempre Perla
     image: "/img/perla.jpg"
 - year: 2023
   items:
-  - label: Visita a San Francisco
+  - label: Un viaje a San Francisco
     month: Sep
-  - label: Visita a Portland
+  - label: Un viaje a Portland
     month: Ago
-  - label: Mudanza a Seattle
+  - label: Seattle se convierte en casa
     month: Jun
-  - label: Matrimonio Merche
+  - label: Nos casamos
     month: Jun
-  - label: Primer Maratón
+  - label: Primera maratón
     month: Mar
     image: "/img/maraton.jpg"
 - year: 2022
   items:
-  - label: Segundo viaje a Venecia
-  - label: Primer viaje a San Francisco
+  - label: Volver a Venecia
+  - label: Primera vez en San Francisco
     month: Ago
   - label: Primer cuadro
   - label: Bienvenida a Cande
     month: Sep
-  - label: Viaje a Jordania
+  - label: Descubriendo Jordania
 - year: 2021
   items:
-  - label: Viaje a Noruega
-  - label: PER
-  - label: Pareja Estable
-    note: Firmamos como pareja estable en Barcelona, Merche y yo, después de 16 años juntos, desde 2006
+  - label: Descubriendo Noruega
+  - label: Primera navegación a las islas
+  - label: Otro paso en nuestra vida juntos
+    note: Pareja estable en Barcelona con Merche, después de 16 años juntos, desde 2006.
 - year: 2020
   items:
-  - label: Visita post-pandemia a Sort
+  - label: Una visita a Sort después de la pandemia
     month: Sep
-  - label: Pandemic Lockdown
+  - label: El confinamiento por la pandemia
     month: Mar
-  - label: Visita a Londres, Street XO, Pre-pandemia
+  - label: Londres y StreetXO, antes de la pandemia
     month: Mar
-  - label: Seattle
+  - label: Unos días en Seattle
     month: Feb
 - year: 2019
   items:
-  - label: Primer viaje a Sierra Nevada
+  - label: Primera vez en Sierra Nevada
     note: Di
-  - label: Primer maratón de montaña
+  - label: Primera maratón de montaña
     month: Oct
-  - label: Viaje a Groenlandia
+  - label: Un viaje a Groenlandia
     month: Sep
-  - label: Viaje a Islandia
+  - label: Descubriendo Islandia
     month: Sep
-  - label: Primer viaje a Sydney
+  - label: Primera vez en Sídney
     month: Ago
-  - label: Mom
+  - label: Adiós, mamá
     month: Abr
-  - label: Visita a Milán
+  - label: Unos días en Milán
     month: Mar
-  - label: Visita a San Sebastián
+  - label: Un viaje a San Sebastián
     month: Mar
 - year: 2018
   items:
-  - label: Primer viaje a Denia
+  - label: Primera vez en Denia
     month: Oct
-  - label: Primer viaje a Galicia
+  - label: Primera vez en Galicia
     month: Jul
-    note: Santiago, Lugo, A coruña, Pontevedra
-  - label: Una nueva oficina de Plain
+    note: Santiago, Lugo, A Coruña y Pontevedra.
+  - label: Otra oficina nueva en Plain Concepts
     month: May
-  - label: Viaje a Pisa, Florencia y Siena
+  - label: Por Pisa, Florencia y Siena
     month: Ene
 - year: 2017
   items:
-  - label: Viaje a China
+  - label: Descubriendo China
     month: Jul
-  - label: Primera visita a un 3 Estrellas
+  - label: Primera vez en un tres estrellas
     month: Abr
-  - label: Nueva oficina de Plain
+  - label: Estrenamos oficina en Plain Concepts
     month: Feb
 - year: 2016
   items:
-  - label: Viaje a Puerto Rico
+  - label: Un viaje a Puerto Rico
     month: Jul
-  - label: Primer evento en Dubai
+  - label: Primer evento en Dubái
     month: Abr
 - year: 2015
   items:
-  - label: Primera carrera 5K
+  - label: Primera carrera de 5K
     month: Nov
-  - label: Visita a Chicago
+  - label: Un viaje a Chicago
     month: Nov
   - label: Segundo MVP Summit
     month: Sep
-  - label: Viaje por Castilla León
+  - label: Por Castilla y León
     month: Sep
-  - label: Viaje a Madeira
+  - label: Un viaje a Madeira
     month: Jul
 - year: 2014
   items:
-  - label: Plain Concepts
+  - label: Llegada a Plain Concepts
     month: Oct
-  - label: Viaje a Frankfurt y Bélgica
+  - label: Por Fráncfort y Bélgica
     month: Ago
-  - label: Viaje a Budapest
+  - label: Unos días en Budapest
     month: Jul
   - label: Azure Bootcamp
     month: Abr
@@ -124,91 +124,91 @@
     month: Ene
 - year: 2013
   items:
-  - label: Tokiota
-    note: Esta fue una etapa de transición corta donde trabajé como freelance para Tokiota como consultor experto en tecnologías de Microsoft. El proyecto principal fue el diseño y desarrollo de un sistema de entrega de notificaciones para un portal inmobiliario, donde el mayor desafío fue mejorar el rendimiento de los procedimientos almacenados de SQL Server.
-  - label: Sesión en MCT Summit
-    note: Working with disconnected data in Windows Store apps, Helsinki, Finland
-  - label: Viaje a Japón
+  - label: Freelance para Tokiota
+    note: Fue una etapa de transición corta en la que trabajé como freelance para Tokiota, como consultor experto en tecnologías de Microsoft. El proyecto principal fue el diseño y desarrollo de un sistema de entrega de notificaciones para un portal inmobiliario, donde el mayor desafío fue mejorar el rendimiento de los procedimientos almacenados de SQL Server.
+  - label: Sesión en el MCT Summit
+    note: "«Working with disconnected data in Windows Store apps», en Helsinki (Finlandia)."
+  - label: Descubriendo Japón
     month: Jul
 - year: 2012
   items:
-  - label: Primera publicación en DotNetMania
-    note: Entity Framework Code First Migrations
-  - label: Primera App
+  - label: Primera publicación en dotNetManía
+    note: "«Entity Framework Code First Migrations»."
+  - label: Primera app
     month: Sep
     image: "/img/about/taskme.jpeg"
-  - label: Continuo estudios de Ingeniería
+  - label: 'git stash pop: sigo con los estudios de Ingeniería'
     month: Feb
 - year: 2011
   items:
   - label: Evento CatDotNet
   - label: Primer Open Space en Barcelona
     month: Jun
-  - label: Pasiona
-    note: En esta etapa, comencé mi carrera en empresas de consultoría. Durante 2 años, participé en el desarrollo de una aplicación WPF para la gestión de notarías. Formé parte de un equipo de 20 desarrolladores y analistas funcionales. En este proyecto, me enfoqué en definir y aplicar mejores prácticas, pruebas unitarias, pruebas funcionales y análisis de rendimiento.
-  - label: Primer Webcast como ponente
+  - label: Etapa en Pasiona
+    note: En esta etapa empecé mi carrera en empresas de consultoría. Durante dos años participé en el desarrollo de una aplicación WPF para la gestión de notarías, en un equipo de 20 desarrolladores y analistas funcionales. Me centré en definir y aplicar buenas prácticas, pruebas unitarias, pruebas funcionales y análisis de rendimiento.
+  - label: Primer webcast como ponente
     month: Ene
 - year: 2010
   items:
-  - label: Primera a Segovia
+  - label: Primera vez en Segovia
     month: Ene
     image: "/img/segovia2010.jpg"
 - year: 2009
   items:
-  - label: Primera certificación Microsoft
+  - label: Primera certificación de Microsoft
     month: Dic
-  - label: Visita a Isla de Pascua
+  - label: Un viaje a la isla de Pascua
     month: Sep
     image: "/img/isla-de-pascua.jpg"
-  - label: Segunda visita al Perito Moreno
-    note: 27 Aug
+  - label: Volver al Perito Moreno
+    note: 27 de agosto.
     image: "/img/perito-moreno.jpg"
-  - label: Viaje a Chile
+  - label: Un viaje a Chile
     month: Ago
   - label: Subiendo el Aneto
     month: Jul
     image: "/img/aneto.jpg"
-  - label: MSP
+  - label: Microsoft Student Partner
   - label: Abro cuenta en Twitter
     month: Mar
 - year: 2008
   items:
-  - label: Primer viaje a Venecia
+  - label: Primera vez en Venecia
     month: Dic
-  - label: Wolters Kluwer
-    note: Durante este período, inicié mis primeras experiencias como parte de un gran equipo de desarrollo. Comencé en WKE a través de Entel (ahora Entelgy), y poco después pasé a formar parte del personal. Inicialmente, me enfoqué en el desarrollo de un rediseño de una aplicación web de gestión de recursos humanos y nóminas. La pila tecnológica utilizada incluía ASP.NET y MS SQL, con un fuerte enfoque en el frontend usando HTML, CSS y Javascript puro.
-  - label: Primer viaje a Estoril
+  - label: Etapa en Wolters Kluwer
+    note: Durante este período tuve mis primeras experiencias en un gran equipo de desarrollo. Empecé en WKE a través de Entel (ahora Entelgy) y poco después pasé a formar parte de la plantilla. Al principio me centré en el rediseño de una aplicación web de gestión de recursos humanos y nóminas, con ASP.NET y MS SQL y con un fuerte enfoque en el frontend, usando HTML, CSS y JavaScript puro.
+  - label: Primera vez en Estoril
     month: Ago
-  - label: Nacimiento de Perla
+  - label: Nace Perla
     month: Feb
 - year: 2007
   items:
-  - label: Segundo viaje a Granada
+  - label: Volver a Granada
     month: Dic
     image: "/img/granada.jpg"
   - label: Primer viaje a Italia
-    note: Visita Nápoles, Capri, Amalfi
+    note: Nápoles, Capri y Amalfi.
     image: "/img/roma.jpg"
 - year: 2006
   items:
-  - label: First trip to Uruguay
+  - label: Primer viaje a Uruguay
     month: Dic
-  - label: Primer viaje a Málaga y Granada
+  - label: Primera vez en Málaga y Granada
     month: Sep
-  - label: Primer viaje a Madrid
+  - label: Primera vez en Madrid
     image: "/img/madrid.jpg"
   - label: Un concierto
     image: "/img/cabra-mecanica.jpg"
 - year: 2005
   items:
-  - label: Freelance
-    note: Tras la etapa con mi propia empresa, continué como freelance, trabajando exclusivamente para una agencia especializada en asesoría técnica, desarrollo web empresarial y marketing en línea. Me encargaba de recopilar los requisitos del cliente, estimar los esfuerzos y diseñar la solución tecnológica.
-  - label: Comienzo estudios en la UOC
-    note: Comencé los estudios en Ingeniería de Informatica en la Universidad Oberta de Catalunya.
+  - label: Trabajo como freelance
+    note: Tras la etapa con mi propia empresa, seguí como freelance, trabajando en exclusiva para una agencia especializada en asesoría técnica, desarrollo web empresarial y marketing en línea. Me encargaba de recopilar los requisitos del cliente, estimar los esfuerzos y diseñar la solución tecnológica.
+  - label: Empiezo a estudiar en la UOC
+    note: Empecé los estudios de Ingeniería Informática en la Universitat Oberta de Catalunya.
 - year: 2004
   items:
   - label: Primer viaje a Argentina
-  - label: Primer post en el blog
+  - label: Empiezo a escribir en internet
 - year: 2003
   items:
   - label: The Spencer Tunick Experience
@@ -217,44 +217,44 @@
 - year: 2002
   items:
   - label: Primer viaje a Brasil
-    note: De Sao Paulo a Salvador de Bahia
+    note: De São Paulo a Salvador de Bahía.
     image: "/img/rio1.jpg"
 - year: 2001
   items:
-  - label: Primera empresa, Studio 4
-    note: After my first 4 years of experience, I started a new company with three colleagues from my previous job. I was involved in sales, client acquisition, proposal definition, and project development, focusing on web and desktop applications using Flash, PHP, ASP.NET, and SQL Server.
+  - label: 'Primera empresa: Studio 4'
+    note: Tras mis primeros cuatro años de experiencia, monté una empresa con tres compañeros de mi trabajo anterior. Me ocupaba de las ventas, la captación de clientes, la definición de propuestas y el desarrollo de proyectos, sobre todo aplicaciones web y de escritorio con Flash, PHP, ASP.NET y SQL Server.
 - year: 1998
   items:
-  - label: Primer salario como programador
-    note: Started at Micro 3 Services, where I worked as a programmer and was involved in developing client-server desktop applications using Visual Basic, SQL Server, ASP, and Macromedia Authorware.
+  - label: Empiezo a trabajar como programador
+    note: Empecé en Micro 3 Services como programador, desarrollando aplicaciones de escritorio cliente-servidor con Visual Basic, SQL Server, ASP y Macromedia Authorware.
 - year: 1997
   items:
-  - label: Estudios en LAN
-    note: Local Area Network Administration
+  - label: Estudio redes locales
+    note: Administración de redes de área local.
 - year: 1996
   items:
-  - label: Graduated High School, IES Lluis Vives
-  - label: Servicio Militar en Jaca, Huesca
+  - label: Termino el instituto en el IES Lluís Vives
+  - label: El servicio militar en Jaca (Huesca)
     image: "/img/emmoe-nevada.jpg"
 - year: 1995
   items:
-  - label: Concurso PC Mania Pixel a Pixel
+  - label: El concurso Pixel a Pixel de PC Manía
     image: "/img/cama.jpg"
 - year: 1994
   items:
   - label: Primer PC 486
 - year: 1990
   items:
-  - label: Primer PC - Amstrad 2086
+  - label: 'C:\> Primer PC: un Amstrad 2086'
 - year: 1989
   items:
-  - label: Primera película en cine
+  - label: Primera película en el cine
     image: "/img/palacio-balana.jpg"
 - year: 1986
   items:
-  - label: Primer ordenador
+  - label: 'Ready: primer ordenador'
     image: "/img/about/amstrad6128-3.jpeg"
 - year: 1977
   items:
-  - label: Nacido - Barcelona, España
+  - label: Hello, world
     image: "/img/about/born.png"
