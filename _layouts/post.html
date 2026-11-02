@@ -4,7 +4,9 @@ comments: true
 ---
 {% include post-image.html post=page %}
 {% include post-topic.html post=page %}
-<article id="post-page" {% if page.custom_class %}class="{{ page.custom_class }}"{% endif %}>
+{% assign ar_src = "" %}
+{% if site.adaptive_reading and page.adaptive != false and site.data.adaptive contains page.slug %}{% assign ar_src = "/adaptive/" | append: page.slug | append: ".json" %}{% endif %}
+<article id="post-page" {% if page.custom_class %}class="{{ page.custom_class }}"{% endif %}{% if ar_src != "" %} data-adaptive="{{ ar_src }}"{% endif %}>
 	<div class="wrap post-head">
 		<a href="/blog?tema={{ topic.id }}" class="kick accent">{{ topic.long | default: 'Notas' }}</a>
 		<h1 class="display">{%if page.header %}{{ page.header }}{% else %}{{ page.title }}{% endif %}</h1>
@@ -36,6 +38,8 @@ comments: true
 			{% endif %}
 
 		</div>
+
+		{% if ar_src != "" %}<script src="/js/adaptive.js?v={{ site.time | date: '%s' }}" defer></script>{% endif %}
 
 		{% if page.tags != null %}
 		<div class="tags">

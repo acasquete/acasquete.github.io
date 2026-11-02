@@ -1,0 +1,238 @@
+{
+ "version": 1,
+ "slug": "la-ilusion-de-construir-software",
+ "post": "_posts/es/2026/2026-01-11-la-ilusion-de-construir-software.md",
+ "generator": {
+  "provider": "file",
+  "model": "file",
+  "prompt_version": 1,
+  "generated_at": "2026-11-02T21:36:06Z"
+ },
+ "blocks": [
+  {
+   "tag": "p",
+   "html": "Decimos que construimos software. Como si fuera algo sólido. Como si hubiera planos definitivos, materiales estables y un momento claro en el que alguien pudiera decir: <em>“ya está”</em>.",
+   "text": "Decimos que construimos software. Como si fuera algo sólido. Como si hubiera planos definitivos, materiales estables y un momento claro en el que alguien pudiera decir: “ya está”.",
+   "h": "0a8e2769",
+   "k": "0a8e2769.0",
+   "id": "b-da5u1w",
+   "levels": {
+    "2": "Decimos que construimos software, como si hubiera un momento claro en el que alguien pudiera decir: <em>“ya está”</em>.",
+    "3": "Decimos que construimos software. Como si fuera algo sólido, con planos definitivos y un momento claro en el que alguien pudiera decir: <em>“ya está”</em>.",
+    "1": "Decimos que construimos software, como si fuera algo sólido."
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "A los desarrolladores nos gusta pensar que escribimos código y el sistema emerge, limpio, coherente, casi elegante. Los diseñadores definen experiencias, flujos, <em>journeys</em>, que después contamos a los clientes. A los clientes les decimos que vamos a construir una solución que cubre sus necesidades actuales… y las futuras, si el presupuesto lo permite.",
+   "text": "A los desarrolladores nos gusta pensar que escribimos código y el sistema emerge, limpio, coherente, casi elegante. Los diseñadores definen experiencias, flujos, journeys, que después contamos a los clientes. A los clientes les decimos que vamos a construir una solución que cubre sus necesidades actuales… y las futuras, si el presupuesto lo permite.",
+   "h": "7084e567",
+   "k": "7084e567.0",
+   "id": "b-jnslr4",
+   "levels": {
+    "2": "",
+    "3": "A los desarrolladores nos gusta pensar que escribimos código y el sistema emerge, limpio y coherente. A los clientes les decimos que vamos a construir una solución que cubre sus necesidades actuales… y las futuras, si el presupuesto lo permite.",
+    "1": ""
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "No implementamos requisitos. Interpretamos frases incompletas dichas en reuniones largas. No diseñamos pantallas. Tomamos decisiones irreversibles basadas en hipótesis que sabremos si eran correctas meses después. No entregamos soluciones. Entregamos compromisos temporales entre tiempo, coste, expectativas y deuda técnica.",
+   "text": "No implementamos requisitos. Interpretamos frases incompletas dichas en reuniones largas. No diseñamos pantallas. Tomamos decisiones irreversibles basadas en hipótesis que sabremos si eran correctas meses después. No entregamos soluciones. Entregamos compromisos temporales entre tiempo, coste, expectativas y deuda técnica.",
+   "h": "47895fdb",
+   "k": "47895fdb.0",
+   "id": "b-ec1pv0",
+   "levels": {
+    "2": "No implementamos requisitos: interpretamos frases incompletas. Tomamos decisiones irreversibles basadas en hipótesis. Entregamos compromisos temporales entre tiempo, coste, expectativas y deuda técnica.",
+    "3": "No implementamos requisitos. Interpretamos frases incompletas. Tomamos decisiones irreversibles basadas en hipótesis que sabremos si eran correctas meses después. Entregamos compromisos temporales entre tiempo, coste, expectativas y deuda técnica.",
+    "1": ""
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "Cada línea existe porque alguien tuvo que elegir rápido, porque algo no estaba claro, porque <em>“de momento vale”</em>. Y ese <em>“de momento”</em> acaba sosteniendo un negocio entero.",
+   "text": "Cada línea existe porque alguien tuvo que elegir rápido, porque algo no estaba claro, porque “de momento vale”. Y ese “de momento” acaba sosteniendo un negocio entero.",
+   "h": "a3d12200",
+   "k": "a3d12200.0",
+   "id": "b-1cv8z8",
+   "levels": {
+    "2": "",
+    "3": "Cada línea existe porque alguien tuvo que elegir rápido, porque <em>“de momento vale”</em>. Y ese <em>“de momento”</em> acaba sosteniendo un negocio entero.",
+    "1": ""
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "La nueva ilusión es que ahora el software se escribe solo. Que la fricción del desarrollo ha desaparecido. Que si una IA genera código, el problema ya no es técnico sino <em>“solo de ideas”</em>.",
+   "text": "La nueva ilusión es que ahora el software se escribe solo. Que la fricción del desarrollo ha desaparecido. Que si una IA genera código, el problema ya no es técnico sino “solo de ideas”.",
+   "h": "7ef7881f",
+   "k": "7ef7881f.0",
+   "id": "b-8oktyv",
+   "levels": {
+    "2": "La nueva ilusión es que ahora el software se escribe solo y que la fricción del desarrollo ha desaparecido.",
+    "3": "La nueva ilusión es que ahora el software se escribe solo. Que la fricción del desarrollo ha desaparecido y que si una IA genera código, el problema ya no es técnico.",
+    "1": "Ahora creemos que, con la IA, el software se escribe solo."
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "La fricción está en <strong>decidir qué construir</strong>. En <strong>entender por qué algo no funciona</strong>. En <strong>asumir las consecuencias</strong> de una decisión seis meses después, cuando el contexto ha cambiado y nadie recuerda por qué se hizo así.",
+   "text": "La fricción está en decidir qué construir. En entender por qué algo no funciona. En asumir las consecuencias de una decisión seis meses después, cuando el contexto ha cambiado y nadie recuerda por qué se hizo así.",
+   "h": "e8455cf2",
+   "k": "e8455cf2.0",
+   "id": "b-f0rzlx",
+   "levels": {
+    "2": "La fricción está en <strong>decidir qué construir</strong>, en <strong>entender por qué algo no funciona</strong> y en <strong>asumir las consecuencias</strong> de una decisión seis meses después, cuando el contexto ha cambiado.",
+    "3": "La fricción está en <strong>decidir qué construir</strong>, en <strong>entender por qué algo no funciona</strong> y en <strong>asumir las consecuencias</strong> de una decisión seis meses después, cuando nadie recuerda por qué se hizo así.",
+    "1": ""
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "Ahora el código aparece más rápido, sí. Pero también aparecen más decisiones, más temprano, con más superficie de error. <strong>La complejidad no se reduce: se acelera.</strong>",
+   "text": "Ahora el código aparece más rápido, sí. Pero también aparecen más decisiones, más temprano, con más superficie de error. La complejidad no se reduce: se acelera.",
+   "h": "df9481c4",
+   "k": "df9481c4.0",
+   "id": "b-2wc7t5",
+   "levels": {
+    "2": "Ahora el código aparece más rápido, sí. Pero también aparecen más decisiones, más temprano, con más superficie de error. <strong>La complejidad no se reduce: se acelera.</strong>",
+    "3": "Ahora el código aparece más rápido, sí. Pero también aparecen más decisiones, más temprano, con más superficie de error. <strong>La complejidad no se reduce: se acelera.</strong>",
+    "1": "Pero el código sale más rápido y la complejidad no se reduce: se acelera."
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "Por eso el objetivo nunca fue eliminar la fricción, sino ponerla donde importa. Ya no dedicamos el esfuerzo a escribir código, ni siquiera a leer cada línea. Lo dedicamos a los mecanismos que nos dan la confianza para entregarlo y a decidir si debería existir.",
+   "text": "Por eso el objetivo nunca fue eliminar la fricción, sino ponerla donde importa. Ya no dedicamos el esfuerzo a escribir código, ni siquiera a leer cada línea. Lo dedicamos a los mecanismos que nos dan la confianza para entregarlo y a decidir si debería existir.",
+   "h": "97554619",
+   "k": "97554619.0",
+   "id": "b-yakmib",
+   "levels": {
+    "2": "El objetivo nunca fue eliminar la fricción, sino ponerla donde importa: en los mecanismos que nos dan confianza para entregar y en decidir si debería existir.",
+    "3": "Por eso el objetivo nunca fue eliminar la fricción, sino ponerla donde importa. Ya no dedicamos el esfuerzo a escribir código, sino a los mecanismos que nos dan confianza para entregarlo y a decidir si debería existir.",
+    "1": "Por eso el esfuerzo ya no va a escribir código, sino a decidir si debería existir."
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "Hemos creado una industria entera basada en ilusiones compartidas: que el software se puede planificar como una obra civil, que los requisitos existen antes de empezar, que el usuario sabe lo que quiere, y ahora, que la IA entiende el problema mejor que nosotros.",
+   "text": "Hemos creado una industria entera basada en ilusiones compartidas: que el software se puede planificar como una obra civil, que los requisitos existen antes de empezar, que el usuario sabe lo que quiere, y ahora, que la IA entiende el problema mejor que nosotros.",
+   "h": "0bc44fd7",
+   "k": "0bc44fd7.0",
+   "id": "b-kja3ba",
+   "levels": {
+    "2": "",
+    "3": "Hemos creado una industria entera basada en ilusiones compartidas: que el software se puede planificar como una obra civil, que los requisitos existen antes de empezar y, ahora, que la IA entiende el problema mejor que nosotros.",
+    "1": ""
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "Sin ella, sería imposible empezar. Nadie firmaría un proyecto diciendo: <em>“Durante los próximos 12 meses aprenderemos cosas, cambiaremos de opinión, reescribiremos partes clave y al final tendrás algo distinto a lo que imaginabas, pero probablemente más útil.”</em>",
+   "text": "Sin ella, sería imposible empezar. Nadie firmaría un proyecto diciendo: “Durante los próximos 12 meses aprenderemos cosas, cambiaremos de opinión, reescribiremos partes clave y al final tendrás algo distinto a lo que imaginabas, pero probablemente más útil.”",
+   "h": "5b717a53",
+   "k": "5b717a53.0",
+   "id": "b-vmc38t",
+   "levels": {
+    "2": "",
+    "3": "Sin ella, sería imposible empezar: nadie firmaría un proyecto diciendo que aprenderemos cosas, cambiaremos de opinión y al final tendrás algo distinto a lo que imaginabas.",
+    "1": ""
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "Y, sin embargo, hay gente que sí firma. No porque ignore la ambigüedad, sino precisamente porque la reconoce. No creen en la ilusión de control, creen en la capacidad de adaptarse. Han pasado ya por proyectos donde el plan inicial murió pronto, pero el resultado final fue mejor. Han visto que el valor no estaba en acertar a la primera, sino en <strong>aprender más rápido que los demás</strong>.",
+   "text": "Y, sin embargo, hay gente que sí firma. No porque ignore la ambigüedad, sino precisamente porque la reconoce. No creen en la ilusión de control, creen en la capacidad de adaptarse. Han pasado ya por proyectos donde el plan inicial murió pronto, pero el resultado final fue mejor. Han visto que el valor no estaba en acertar a la primera, sino en aprender más rápido que los demás.",
+   "h": "a220ee7b",
+   "k": "a220ee7b.0",
+   "id": "b-2je10r",
+   "levels": {
+    "2": "Y, sin embargo, hay gente que sí firma. No porque ignore la ambigüedad, sino porque la reconoce. Ha visto que el valor no estaba en acertar a la primera, sino en <strong>aprender más rápido que los demás</strong>.",
+    "3": "Y, sin embargo, hay gente que sí firma. No porque ignore la ambigüedad, sino porque la reconoce. No creen en la ilusión de control, creen en la capacidad de adaptarse. Han visto que el valor no estaba en acertar a la primera, sino en <strong>aprender más rápido que los demás</strong>.",
+    "1": ""
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "<strong>Estas personas no compran certezas. Compran criterio.</strong> No esperan promesas cerradas, esperan equipos que piensen, que digan <em>“no lo sé”</em> a tiempo y que sepan corregir el rumbo sin dramatismos. No buscan la ausencia de riesgo, buscan gente que ya haya navegado en él y haya vuelto con cicatrices útiles.",
+   "text": "Estas personas no compran certezas. Compran criterio. No esperan promesas cerradas, esperan equipos que piensen, que digan “no lo sé” a tiempo y que sepan corregir el rumbo sin dramatismos. No buscan la ausencia de riesgo, buscan gente que ya haya navegado en él y haya vuelto con cicatrices útiles.",
+   "h": "c4ceccd2",
+   "k": "c4ceccd2.0",
+   "id": "b-kxgl54",
+   "levels": {
+    "2": "<strong>Estas personas no compran certezas. Compran criterio.</strong> Esperan equipos que piensen, que digan <em>“no lo sé”</em> a tiempo y que sepan corregir el rumbo.",
+    "3": "<strong>Estas personas no compran certezas. Compran criterio.</strong> Esperan equipos que piensen, que digan <em>“no lo sé”</em> a tiempo y que sepan corregir el rumbo sin dramatismos. Buscan gente que ya haya navegado en el riesgo y haya vuelto con cicatrices útiles.",
+    "1": ""
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "Son los que han visto proyectos fracasar no por falta de talento, sino por exceso de seguridad. Los que han aprendido que un roadmap rígido tranquiliza al principio, pero asfixia al final. Los que prefieren un equipo incómodo con preguntas difíciles antes que uno cómodo repitiendo respuestas antiguas.",
+   "text": "Son los que han visto proyectos fracasar no por falta de talento, sino por exceso de seguridad. Los que han aprendido que un roadmap rígido tranquiliza al principio, pero asfixia al final. Los que prefieren un equipo incómodo con preguntas difíciles antes que uno cómodo repitiendo respuestas antiguas.",
+   "h": "9ed3600e",
+   "k": "9ed3600e.0",
+   "id": "b-0gq34m",
+   "levels": {
+    "2": "",
+    "3": "Han visto proyectos fracasar no por falta de talento, sino por exceso de seguridad. Prefieren un equipo incómodo con preguntas difíciles antes que uno cómodo repitiendo respuestas antiguas.",
+    "1": ""
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "Y desde ahí, el software aparece como consecuencia, no como promesa. Cambia, evoluciona, a veces decepciona, pero casi siempre enseña algo útil. No porque estuviera perfectamente diseñado desde el inicio, sino porque hubo espacio para pensar, para frenar y para corregir.",
+   "text": "Y desde ahí, el software aparece como consecuencia, no como promesa. Cambia, evoluciona, a veces decepciona, pero casi siempre enseña algo útil. No porque estuviera perfectamente diseñado desde el inicio, sino porque hubo espacio para pensar, para frenar y para corregir.",
+   "h": "d5794b9b",
+   "k": "d5794b9b.0",
+   "id": "b-8fti3s",
+   "levels": {
+    "2": "Desde ahí, el software aparece como consecuencia, no como promesa: cambia, a veces decepciona, pero casi siempre enseña algo útil.",
+    "3": "Desde ahí, el software aparece como consecuencia, no como promesa. Cambia, evoluciona, a veces decepciona, pero casi siempre enseña algo útil, porque hubo espacio para pensar, para frenar y para corregir.",
+    "1": ""
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "Al final, el software no lo sostienen los planes, ni el código, ni ahora la IA. <strong>Lo sostienen personas que ya han vivido el caos y, aun así, deciden volver a entrar.</strong>",
+   "text": "Al final, el software no lo sostienen los planes, ni el código, ni ahora la IA. Lo sostienen personas que ya han vivido el caos y, aun así, deciden volver a entrar.",
+   "h": "fc6c0d2a",
+   "k": "fc6c0d2a.0",
+   "id": "b-y1w55s",
+   "levels": {
+    "2": "Al final, el software no lo sostienen los planes, ni el código, ni ahora la IA. <strong>Lo sostienen personas que ya han vivido el caos y, aun así, deciden volver a entrar.</strong>",
+    "3": "Al final, el software no lo sostienen los planes, ni el código, ni ahora la IA. <strong>Lo sostienen personas que ya han vivido el caos y, aun así, deciden volver a entrar.</strong>",
+    "1": "Al final, el software lo sostienen personas que han vivido el caos y deciden volver a entrar."
+   },
+   "errors": {},
+   "model": "file"
+  }
+ ]
+}

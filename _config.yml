@@ -26,6 +26,17 @@ defaults:
     values:
       layout: "post"
 
+# Adaptive Reading (see scripts/adaptive/README.md). Set to false to switch it off site-wide.
+adaptive_reading: true
+
+# Keep tooling and generation scripts out of the published site
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - scripts
+
 # Plugins
 gems:
   - jekyll-paginate
