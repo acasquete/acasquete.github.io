@@ -1,0 +1,613 @@
+{
+ "version": 1,
+ "slug": "el-mito-del-ataque-cuantico",
+ "post": "_posts/es/2025/2025-11-23-el-mito-del-ataque-cuantico.md",
+ "generator": {
+  "provider": "file",
+  "model": "file",
+  "prompt_version": 1,
+  "generated_at": "2026-11-02T21:36:04Z"
+ },
+ "blocks": [
+  {
+   "tag": "p",
+   "html": "A principios de año apareció en <em>Voz Pópuli</em> un artículo titulado <a href=\"https://www.vozpopuli.com/economia/solo-320-segundos-hackean-bitcoin-con-el-primer-ataque-cuantico-historia-sd.html\"><em>“En solo 320 segundos hackean a Bitcoin con el primer ataque cuántico de la historia”</em></a>. El artículo generó un notable eco mediático y el propio medio finalmente modificó el titular por uno más prudente (aunque igualmente impreciso): <em>“Un experto alerta de un posible intento de hackeo a Bitcoin con computación cuántica”</em>.",
+   "text": "A principios de año apareció en Voz Pópuli un artículo titulado “En solo 320 segundos hackean a Bitcoin con el primer ataque cuántico de la historia”. El artículo generó un notable eco mediático y el propio medio finalmente modificó el titular por uno más prudente (aunque igualmente impreciso): “Un experto alerta de un posible intento de hackeo a Bitcoin con computación cuántica”.",
+   "h": "e5274d3e",
+   "k": "e5274d3e.0",
+   "id": "b-pd8ooj",
+   "levels": {
+    "2": "A principios de año <em>Voz Pópuli</em> publicó <a href=\"https://www.vozpopuli.com/economia/solo-320-segundos-hackean-bitcoin-con-el-primer-ataque-cuantico-historia-sd.html\"><em>“En solo 320 segundos hackean a Bitcoin con el primer ataque cuántico de la historia”</em></a>. Tuvo mucho eco y el medio acabó cambiando el titular por uno más prudente, aunque igualmente impreciso.",
+    "3": "A principios de año apareció en <em>Voz Pópuli</em> un artículo titulado <a href=\"https://www.vozpopuli.com/economia/solo-320-segundos-hackean-bitcoin-con-el-primer-ataque-cuantico-historia-sd.html\"><em>“En solo 320 segundos hackean a Bitcoin con el primer ataque cuántico de la historia”</em></a>. Tuvo un notable eco mediático y el medio acabó cambiando el titular por uno más prudente (aunque igualmente impreciso): <em>“Un experto alerta de un posible intento de hackeo a Bitcoin con computación cuántica”</em>.",
+    "1": "Un medio publicó que habían hackeado Bitcoin con un ataque cuántico en 320 segundos."
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "El problema no es únicamente el alarmismo generado, sino que la premisa central del artículo es directamente falsa: <strong>no existe ningún ataque cuántico capaz de vulnerar Bitcoin usando un ordenador de 18 cúbits, ni en 320 segundos ni bajo ninguna otra condición realista</strong>.",
+   "text": "El problema no es únicamente el alarmismo generado, sino que la premisa central del artículo es directamente falsa: no existe ningún ataque cuántico capaz de vulnerar Bitcoin usando un ordenador de 18 cúbits, ni en 320 segundos ni bajo ninguna otra condición realista.",
+   "h": "f365fc87",
+   "k": "f365fc87.0",
+   "id": "b-iyiq6s",
+   "levels": {
+    "2": "El problema no es solo el alarmismo: la premisa del artículo es falsa. <strong>No existe ningún ataque cuántico capaz de vulnerar Bitcoin usando un ordenador de 18 cúbits, ni en 320 segundos ni bajo ninguna otra condición realista</strong>.",
+    "3": "El problema no es únicamente el alarmismo, sino que la premisa central del artículo es directamente falsa: <strong>no existe ningún ataque cuántico capaz de vulnerar Bitcoin usando un ordenador de 18 cúbits, ni en 320 segundos ni bajo ninguna otra condición realista</strong>.",
+    "1": "Es falso: <strong>no existe ningún ataque cuántico capaz de vulnerar Bitcoin</strong> con un ordenador de 18 cúbits."
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "Esta anécdota, sin embargo, sirve para repasar cómo funcionan distintos algoritmos de clave pública, explicar con claridad la criptografía que utiliza Bitcoin y entender qué requeriría realmente la computación cuántica para convertirse en una amenaza.",
+   "text": "Esta anécdota, sin embargo, sirve para repasar cómo funcionan distintos algoritmos de clave pública, explicar con claridad la criptografía que utiliza Bitcoin y entender qué requeriría realmente la computación cuántica para convertirse en una amenaza.",
+   "h": "60f4ccb2",
+   "k": "60f4ccb2.0",
+   "id": "b-kv3i0j",
+   "levels": {
+    "2": "Esta anécdota sirve para repasar cómo funcionan los algoritmos de clave pública, explicar la criptografía de Bitcoin y entender qué requeriría la computación cuántica para ser una amenaza.",
+    "3": "Esta anécdota sirve para repasar cómo funcionan distintos algoritmos de clave pública, explicar con claridad la criptografía que utiliza Bitcoin y entender qué requeriría realmente la computación cuántica para convertirse en una amenaza.",
+    "1": ""
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "Además, conviene recordar que este tipo de narrativa no es algo aislado. Cada cierto tiempo reaparece la idea de que la computación cuántica está a punto de romper toda la seguridad basada en claves públicas, incluidas las infraestructuras de certificados que usamos a diario. Se suele presentar como uno de los primeros argumentos al hablar de ordenadores cuánticos, casi siempre sin matices. En este artículo veremos que estamos muy lejos de ese escenario. La computación cuántica no es magia ni un atajo inmediato para romper cifrados. Su estado actual está limitado por ruido, escalabilidad, fidelidad y la necesidad de corrección de errores masiva. Comprender estas limitaciones técnicas es clave para evaluar cualquier supuesto “ataque cuántico”.",
+   "text": "Además, conviene recordar que este tipo de narrativa no es algo aislado. Cada cierto tiempo reaparece la idea de que la computación cuántica está a punto de romper toda la seguridad basada en claves públicas, incluidas las infraestructuras de certificados que usamos a diario. Se suele presentar como uno de los primeros argumentos al hablar de ordenadores cuánticos, casi siempre sin matices. En este artículo veremos que estamos muy lejos de ese escenario. La computación cuántica no es magia ni un atajo inmediato para romper cifrados. Su estado actual está limitado por ruido, escalabilidad, fidelidad y la necesidad de corrección de errores masiva. Comprender estas limitaciones técnicas es clave para evaluar cualquier supuesto “ataque cuántico”.",
+   "h": "b412d347",
+   "k": "b412d347.0",
+   "id": "b-kjj32e",
+   "levels": {
+    "2": "Esta narrativa no es aislada: cada cierto tiempo reaparece la idea de que la computación cuántica está a punto de romper toda la seguridad basada en claves públicas, casi siempre sin matices. Estamos muy lejos de ese escenario. La computación cuántica no es magia: está limitada por ruido, escalabilidad, fidelidad y la necesidad de corrección de errores masiva.",
+    "3": "Este tipo de narrativa no es aislada. Cada cierto tiempo reaparece la idea de que la computación cuántica está a punto de romper toda la seguridad basada en claves públicas, incluidas las infraestructuras de certificados, casi siempre sin matices. Estamos muy lejos de ese escenario: la computación cuántica no es magia y está limitada por ruido, escalabilidad, fidelidad y la necesidad de corrección de errores masiva. Comprender estas limitaciones es clave para evaluar cualquier supuesto “ataque cuántico”.",
+    "1": ""
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "RSA, uno de los estándares clásicos de cifrado de clave pública, se basa en una idea muy sencilla: multiplicar dos números primos grandes es fácil, pero averiguar qué dos primos se usaron —es decir, factorizar el número resultante— es extremadamente difícil. Esa asimetría es la base de su seguridad y explica por qué un atacante debe invertir enormes recursos computacionales para romper una clave RSA convencional.",
+   "text": "RSA, uno de los estándares clásicos de cifrado de clave pública, se basa en una idea muy sencilla: multiplicar dos números primos grandes es fácil, pero averiguar qué dos primos se usaron —es decir, factorizar el número resultante— es extremadamente difícil. Esa asimetría es la base de su seguridad y explica por qué un atacante debe invertir enormes recursos computacionales para romper una clave RSA convencional.",
+   "h": "cb70bfe1",
+   "k": "cb70bfe1.0",
+   "id": "b-ncyk5g",
+   "levels": {
+    "2": "RSA, un estándar clásico de clave pública, se basa en que multiplicar dos primos grandes es fácil, pero factorizar el resultado es extremadamente difícil. Esa asimetría es la base de su seguridad.",
+    "3": "RSA, uno de los estándares clásicos de clave pública, se basa en una idea sencilla: multiplicar dos primos grandes es fácil, pero averiguar qué primos se usaron —es decir, factorizar el resultado— es extremadamente difícil. Esa asimetría es la base de su seguridad.",
+    "1": "RSA es seguro porque multiplicar dos primos grandes es fácil, pero averiguar cuáles se usaron es extremadamente difícil."
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "La construcción de <strong>RSA</strong> sigue siempre el mismo proceso: se escogen dos primos grandes <em>(p y q)</em>, se calcula el producto <code>n = p × q</code> y, a partir de ahí, se derivan un <strong>exponente público</strong> <code>e</code> y un <strong>exponente privado</strong> <code>d</code>, donde <code>d</code> es el inverso modular de <code>e</code> respecto a <code>(p−1)(q−1)</code>. El par <code>(e, n)</code> forma la <strong>clave pública</strong>, mientras que <code>(d, n)</code> constituye la <strong>clave privada</strong>. Sobre este mecanismo se construyen tanto el <strong>cifrado</strong> como la <strong>firma</strong>: el mensaje se eleva a una potencia módulo <code>n</code>, usando la <strong>clave pública</strong> para cifrar y la <strong>clave privada</strong> para firmar; el proceso inverso se realiza con la clave complementaria.",
+   "text": "La construcción de RSA sigue siempre el mismo proceso: se escogen dos primos grandes (p y q), se calcula el producto n = p × q y, a partir de ahí, se derivan un exponente público e y un exponente privado d, donde d es el inverso modular de e respecto a (p−1)(q−1). El par (e, n) forma la clave pública, mientras que (d, n) constituye la clave privada. Sobre este mecanismo se construyen tanto el cifrado como la firma: el mensaje se eleva a una potencia módulo n, usando la clave pública para cifrar y la clave privada para firmar; el proceso inverso se realiza con la clave complementaria.",
+   "h": "023bff61",
+   "k": "023bff61.0",
+   "id": "b-qymuhz",
+   "levels": {
+    "2": "En RSA se escogen dos primos grandes <em>(p y q)</em>, se calcula <code>n = p × q</code> y se derivan un <strong>exponente público</strong> <code>e</code> y uno <strong>privado</strong> <code>d</code>. El par <code>(e, n)</code> es la <strong>clave pública</strong> y <code>(d, n)</code> la <strong>clave privada</strong>; con ellas se cifra y se firma.",
+    "3": "En <strong>RSA</strong> se escogen dos primos grandes <em>(p y q)</em>, se calcula <code>n = p × q</code> y se derivan un <strong>exponente público</strong> <code>e</code> y un <strong>exponente privado</strong> <code>d</code>, inverso modular de <code>e</code> respecto a <code>(p−1)(q−1)</code>. El par <code>(e, n)</code> forma la <strong>clave pública</strong> y <code>(d, n)</code> la <strong>clave privada</strong>. Con ellas se construyen el <strong>cifrado</strong> y la <strong>firma</strong>: el mensaje se eleva a una potencia módulo <code>n</code>, con la clave pública para cifrar y la privada para firmar.",
+    "1": ""
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "Por ejemplo, en un esquema RSA muy simplificado para propósitos didácticos, podríamos elegir <code>p = 11</code> y <code>q = 13</code>, de modo que <code>n = 11 × 13 = 143</code> y <code>(p−1)(q−1) = 10 × 12 = 120</code>. Para definir el exponente público seleccionamos un valor <code>e</code> que sea <strong>coprimo</strong> con 120, es decir, que no comparta factores con él. Probando valores pequeños vemos que 2, 3, 4, 5 y 6 no sirven, pero <code>e = 7</code> sí cumple la condición (<code>gcd(7,120) = 1</code>). A partir de ahí calculamos el exponente privado <code>d</code> como el número que satisface <code>e · d ≡ 1 (mod 120)</code>, lo que nos da <code>d = 103</code>. Así, la clave pública es <code>(e, n) = (7, 143)</code> y la clave privada es <code>(d, n) = (103, 143)</code>. Si queremos cifrar un mensaje numérico pequeño, por ejemplo <code>m = 9</code>, el remitente calcula el <strong>cifrado</strong> <code>c = m^e mod n = 9^7 mod 143</code>; el receptor, con la clave privada, recupera el mensaje original computando <code>m = c^d mod n</code>. Aunque en la práctica se usan primos de cientos o miles de bits, la lógica matemática es exactamente la misma.",
+   "text": "Por ejemplo, en un esquema RSA muy simplificado para propósitos didácticos, podríamos elegir p = 11 y q = 13, de modo que n = 11 × 13 = 143 y (p−1)(q−1) = 10 × 12 = 120. Para definir el exponente público seleccionamos un valor e que sea coprimo con 120, es decir, que no comparta factores con él. Probando valores pequeños vemos que 2, 3, 4, 5 y 6 no sirven, pero e = 7 sí cumple la condición (gcd(7,120) = 1). A partir de ahí calculamos el exponente privado d como el número que satisface e · d ≡ 1 (mod 120), lo que nos da d = 103. Así, la clave pública es (e, n) = (7, 143) y la clave privada es (d, n) = (103, 143). Si queremos cifrar un mensaje numérico pequeño, por ejemplo m = 9, el remitente calcula el cifrado c = m^e mod n = 9^7 mod 143; el receptor, con la clave privada, recupera el mensaje original computando m = c^d mod n. Aunque en la práctica se usan primos de cientos o miles de bits, la lógica matemática es exactamente la misma.",
+   "h": "ee247442",
+   "k": "ee247442.0",
+   "id": "b-4ixkq3",
+   "levels": {
+    "2": "",
+    "3": "Por ejemplo, con <code>p = 11</code> y <code>q = 13</code>, tenemos <code>n = 11 × 13 = 143</code> y <code>(p−1)(q−1) = 10 × 12 = 120</code>. Elegimos un <code>e</code> <strong>coprimo</strong> con 120: 2, 3, 4, 5 y 6 no sirven, pero <code>e = 7</code> sí. El exponente privado cumple <code>e · d ≡ 1 (mod 120)</code>, lo que da <code>d = 103</code>. La clave pública es <code>(e, n) = (7, 143)</code> y la privada <code>(d, n) = (103, 143)</code>. Para cifrar <code>m = 9</code> se calcula <code>c = m^e mod n = 9^7 mod 143</code>, y el receptor recupera el mensaje con <code>m = c^d mod n</code>. En la práctica se usan primos de cientos o miles de bits, pero la lógica es la misma.",
+    "1": ""
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "Las claves RSA modernas tienen normalmente <strong>2048 bits</strong>, una longitud que garantiza que la factorización clásica resulte impracticable. Pero en 1994 Peter Shor demostró que un ordenador cuántico suficientemente grande podría factorizar estos números de forma eficiente mediante su algoritmo cuántico, lo que rompería RSA de forma directa.",
+   "text": "Las claves RSA modernas tienen normalmente 2048 bits, una longitud que garantiza que la factorización clásica resulte impracticable. Pero en 1994 Peter Shor demostró que un ordenador cuántico suficientemente grande podría factorizar estos números de forma eficiente mediante su algoritmo cuántico, lo que rompería RSA de forma directa.",
+   "h": "82b1b167",
+   "k": "82b1b167.0",
+   "id": "b-vk5995",
+   "levels": {
+    "2": "Las claves RSA modernas tienen normalmente <strong>2048 bits</strong>, lo que hace impracticable la factorización clásica. Pero en 1994 Peter Shor demostró que un ordenador cuántico suficientemente grande podría factorizar estos números de forma eficiente y romper RSA.",
+    "3": "Las claves RSA modernas tienen normalmente <strong>2048 bits</strong>, una longitud que garantiza que la factorización clásica resulte impracticable. Pero en 1994 Peter Shor demostró que un ordenador cuántico suficientemente grande podría factorizar estos números de forma eficiente con su algoritmo, lo que rompería RSA de forma directa.",
+    "1": "En 1994 Peter Shor demostró que un ordenador cuántico suficientemente grande podría romper RSA."
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "El problema —y es la razón por la que RSA sigue siendo seguro hoy— es que ese “ordenador cuántico suficientemente grande” está muy lejos de la tecnología actual: sería necesario disponer de <strong>miles de cúbits lógicos</strong>, lo que se traduce en <strong>millones de cúbits físicos</strong> una vez añadida la corrección de errores cuánticos. No existe hoy ningún sistema que se acerque mínimamente a esa escala.",
+   "text": "El problema —y es la razón por la que RSA sigue siendo seguro hoy— es que ese “ordenador cuántico suficientemente grande” está muy lejos de la tecnología actual: sería necesario disponer de miles de cúbits lógicos, lo que se traduce en millones de cúbits físicos una vez añadida la corrección de errores cuánticos. No existe hoy ningún sistema que se acerque mínimamente a esa escala.",
+   "h": "9ec8f2ac",
+   "k": "9ec8f2ac.0",
+   "id": "b-n6wqt2",
+   "levels": {
+    "2": "Pero ese ordenador está muy lejos de la tecnología actual: haría falta <strong>miles de cúbits lógicos</strong>, o sea, <strong>millones de cúbits físicos</strong> con corrección de errores. Hoy ningún sistema se acerca a esa escala.",
+    "3": "El problema —y la razón por la que RSA sigue siendo seguro hoy— es que ese “ordenador cuántico suficientemente grande” está muy lejos de la tecnología actual: serían necesarios <strong>miles de cúbits lógicos</strong>, es decir, <strong>millones de cúbits físicos</strong> una vez añadida la corrección de errores cuánticos. No existe hoy ningún sistema que se acerque mínimamente a esa escala.",
+    "1": "Pero ese ordenador necesitaría <strong>millones de cúbits físicos</strong> y hoy nada se acerca a esa escala."
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "En entornos reales como TLS (y anteriormente SSL), RSA ha tenido tradicionalmente dos funciones: por un lado, autenticar al servidor mediante las firmas usadas en los certificados, algo que sigue siendo habitual; y por otro, servir como mecanismo de intercambio de claves, una función que hoy se ha abandonado porque no ofrece <em>Forward Secrecy</em> (es decir, que incluso si la clave privada del servidor se viera comprometida en el futuro, las sesiones cifradas del pasado seguirían siendo imposibles de descifrar).",
+   "text": "En entornos reales como TLS (y anteriormente SSL), RSA ha tenido tradicionalmente dos funciones: por un lado, autenticar al servidor mediante las firmas usadas en los certificados, algo que sigue siendo habitual; y por otro, servir como mecanismo de intercambio de claves, una función que hoy se ha abandonado porque no ofrece Forward Secrecy (es decir, que incluso si la clave privada del servidor se viera comprometida en el futuro, las sesiones cifradas del pasado seguirían siendo imposibles de descifrar).",
+   "h": "16dd556f",
+   "k": "16dd556f.0",
+   "id": "b-yfkzut",
+   "levels": {
+    "2": "En TLS, RSA ha servido para autenticar al servidor mediante las firmas de los certificados, algo todavía habitual, y para intercambiar claves, función abandonada por no ofrecer <em>Forward Secrecy</em>.",
+    "3": "En TLS (y antes SSL), RSA ha tenido dos funciones: autenticar al servidor mediante las firmas de los certificados, algo todavía habitual, y servir de intercambio de claves, función hoy abandonada porque no ofrece <em>Forward Secrecy</em> (aunque la clave privada del servidor se viera comprometida, las sesiones cifradas del pasado seguirían siendo indescifrables).",
+    "1": ""
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "En las versiones modernas del protocolo (TLS 1.3), el intercambio de claves se realiza mediante <strong>ECDHE</strong> (<em>Elliptic Curve Diffie–Hellman Ephemeral</em>), un mecanismo basado en curvas elípticas que genera claves efímeras para garantizar <em>Forward Secrecy</em>. Mientras tanto, RSA queda relegado a la autenticación del servidor o es sustituido directamente por firmas <strong>ECDSA</strong> (<em>Elliptic Curve Digital Signature Algorithm</em>), o incluso por algoritmos postcuánticos que comienzan a incorporarse progresivamente.",
+   "text": "En las versiones modernas del protocolo (TLS 1.3), el intercambio de claves se realiza mediante ECDHE (Elliptic Curve Diffie–Hellman Ephemeral), un mecanismo basado en curvas elípticas que genera claves efímeras para garantizar Forward Secrecy. Mientras tanto, RSA queda relegado a la autenticación del servidor o es sustituido directamente por firmas ECDSA (Elliptic Curve Digital Signature Algorithm), o incluso por algoritmos postcuánticos que comienzan a incorporarse progresivamente.",
+   "h": "257529d9",
+   "k": "257529d9.0",
+   "id": "b-4brtuu",
+   "levels": {
+    "2": "En TLS 1.3 el intercambio de claves usa <strong>ECDHE</strong>, basado en curvas elípticas, y RSA queda para autenticar al servidor o se sustituye por firmas <strong>ECDSA</strong> o por algoritmos postcuánticos.",
+    "3": "En TLS 1.3 el intercambio de claves se realiza mediante <strong>ECDHE</strong> (<em>Elliptic Curve Diffie–Hellman Ephemeral</em>), basado en curvas elípticas, que genera claves efímeras y garantiza <em>Forward Secrecy</em>. RSA queda para autenticar al servidor o se sustituye por firmas <strong>ECDSA</strong> o por algoritmos postcuánticos.",
+    "1": ""
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "Para ver ejemplos reales, basta con comprobar los certificados de algunas webs muy conocidas. <strong>Amazon.com</strong>, por ejemplo, utiliza certificados basados en <strong>RSA de 2048 bits</strong>, algo que sigue siendo habitual en grandes plataformas por motivos de compatibilidad y estabilidad.",
+   "text": "Para ver ejemplos reales, basta con comprobar los certificados de algunas webs muy conocidas. Amazon.com, por ejemplo, utiliza certificados basados en RSA de 2048 bits, algo que sigue siendo habitual en grandes plataformas por motivos de compatibilidad y estabilidad.",
+   "h": "b5d5d9d7",
+   "k": "b5d5d9d7.0",
+   "id": "b-w7pkax",
+   "levels": {
+    "2": "",
+    "3": "Basta comprobar los certificados de webs conocidas. <strong>Amazon.com</strong> utiliza certificados basados en <strong>RSA de 2048 bits</strong>, algo habitual en grandes plataformas por compatibilidad y estabilidad.",
+    "1": ""
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "Por el contrario, <strong>Google.com</strong> es uno de los mejores ejemplos de un servicio que <strong>no utiliza RSA</strong>, sino certificados basados en <strong>ECDSA</strong>, normalmente con claves de curva elíptica <strong>secp256r1</strong>.",
+   "text": "Por el contrario, Google.com es uno de los mejores ejemplos de un servicio que no utiliza RSA, sino certificados basados en ECDSA, normalmente con claves de curva elíptica secp256r1.",
+   "h": "427ce4bd",
+   "k": "427ce4bd.0",
+   "id": "b-t4r7vq",
+   "levels": {
+    "2": "",
+    "3": "En cambio, <strong>Google.com</strong> <strong>no utiliza RSA</strong>, sino certificados <strong>ECDSA</strong>, normalmente con claves de curva elíptica <strong>secp256r1</strong>.",
+    "1": ""
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "<em>Ejemplo real: Amazon.com utiliza RSA de 2048 bits, mientras que Google.com utiliza ECDSA con claves de curva elíptica de 256 bits. La diferencia se aprecia comparando el campo “Public Key Algorithm” del certificado TLS.</em>",
+   "text": "Ejemplo real: Amazon.com utiliza RSA de 2048 bits, mientras que Google.com utiliza ECDSA con claves de curva elíptica de 256 bits. La diferencia se aprecia comparando el campo “Public Key Algorithm” del certificado TLS.",
+   "h": "d13953d1",
+   "k": "d13953d1.0",
+   "id": "b-kcnhzd",
+   "levels": {
+    "2": "",
+    "3": "<em>Ejemplo real: Amazon.com utiliza RSA de 2048 bits y Google.com ECDSA con claves de curva elíptica de 256 bits.</em>",
+    "1": ""
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "<strong>RSA sigue siendo relevante</strong>, pero su futuro está condicionado por dos factores clave: la evolución real de la computación cuántica y la transición hacia <strong>algoritmos criptográficos postcuánticos</strong>, diseñados para resistir tanto ataques clásicos como ataques cuánticos. La solidez de RSA hoy no está en duda, pero a medio y largo plazo dependerá de cómo avance esta migración hacia estándares más robustos.",
+   "text": "RSA sigue siendo relevante, pero su futuro está condicionado por dos factores clave: la evolución real de la computación cuántica y la transición hacia algoritmos criptográficos postcuánticos, diseñados para resistir tanto ataques clásicos como ataques cuánticos. La solidez de RSA hoy no está en duda, pero a medio y largo plazo dependerá de cómo avance esta migración hacia estándares más robustos.",
+   "h": "9d27c998",
+   "k": "9d27c998.0",
+   "id": "b-3ztup0",
+   "levels": {
+    "2": "<strong>RSA sigue siendo relevante</strong>, pero su futuro depende de la evolución real de la computación cuántica y de la transición a <strong>algoritmos postcuánticos</strong>. Hoy su solidez no está en duda.",
+    "3": "<strong>RSA sigue siendo relevante</strong>, pero su futuro depende de la evolución real de la computación cuántica y de la transición hacia <strong>algoritmos criptográficos postcuánticos</strong>, diseñados para resistir ataques clásicos y cuánticos. Hoy su solidez no está en duda, pero a medio y largo plazo dependerá de esa migración.",
+    "1": ""
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "A diferencia de RSA, Bitcoin no se apoya en la factorización de números grandes, sino en la criptografía de <strong>curvas elípticas</strong>, concretamente en el esquema <strong>ECDSA</strong> utilizado sobre la curva <strong>secp256k1</strong>. Este enfoque permite ofrecer un nivel de seguridad muy alto con claves mucho más pequeñas.",
+   "text": "A diferencia de RSA, Bitcoin no se apoya en la factorización de números grandes, sino en la criptografía de curvas elípticas, concretamente en el esquema ECDSA utilizado sobre la curva secp256k1. Este enfoque permite ofrecer un nivel de seguridad muy alto con claves mucho más pequeñas.",
+   "h": "6f125038",
+   "k": "6f125038.0",
+   "id": "b-peglvb",
+   "levels": {
+    "2": "A diferencia de RSA, Bitcoin no se apoya en la factorización, sino en criptografía de <strong>curvas elípticas</strong>: el esquema <strong>ECDSA</strong> sobre la curva <strong>secp256k1</strong>, que ofrece mucha seguridad con claves mucho más pequeñas.",
+    "3": "A diferencia de RSA, Bitcoin no se apoya en la factorización de números grandes, sino en la criptografía de <strong>curvas elípticas</strong>, concretamente en el esquema <strong>ECDSA</strong> sobre la curva <strong>secp256k1</strong>. Este enfoque ofrece un nivel de seguridad muy alto con claves mucho más pequeñas.",
+    "1": "Bitcoin no usa RSA, sino curvas elípticas, que dan mucha seguridad con claves mucho más pequeñas."
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "<strong>ECDSA</strong> (<em>Elliptic Curve Digital Signature Algorithm</em>) es un algoritmo de firma digital que permite verificar que una transacción ha sido firmada por el propietario de una clave privada, sin revelar esa clave. La seguridad del sistema depende de la dificultad de resolver el <strong>ECDLP</strong>.",
+   "text": "ECDSA (Elliptic Curve Digital Signature Algorithm) es un algoritmo de firma digital que permite verificar que una transacción ha sido firmada por el propietario de una clave privada, sin revelar esa clave. La seguridad del sistema depende de la dificultad de resolver el ECDLP.",
+   "h": "3b3763ac",
+   "k": "3b3763ac.0",
+   "id": "b-6uyofz",
+   "levels": {
+    "2": "<strong>ECDSA</strong> es un algoritmo de firma digital que permite verificar que una transacción ha sido firmada por el propietario de una clave privada sin revelarla. Su seguridad depende de la dificultad del <strong>ECDLP</strong>.",
+    "3": "<strong>ECDSA</strong> (<em>Elliptic Curve Digital Signature Algorithm</em>) es un algoritmo de firma digital que permite verificar que una transacción ha sido firmada por el propietario de una clave privada, sin revelar esa clave. La seguridad depende de la dificultad de resolver el <strong>ECDLP</strong>.",
+    "1": "Con ellas se firma una transacción sin revelar la clave privada."
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "<strong>ECDLP</strong> (<em>Elliptic Curve Discrete Logarithm Problem</em>, o problema del logaritmo discreto en curvas elípticas) plantea lo siguiente: dado un punto <code>P</code> de la curva que resulta de multiplicar un punto base <code>G</code> por un número secreto <code>k</code> (es decir, <code>P = k × G</code>), es computacionalmente inviable calcular <code>k</code>. Multiplicar es fácil; invertir la operación es prácticamente imposible.",
+   "text": "ECDLP (Elliptic Curve Discrete Logarithm Problem, o problema del logaritmo discreto en curvas elípticas) plantea lo siguiente: dado un punto P de la curva que resulta de multiplicar un punto base G por un número secreto k (es decir, P = k × G), es computacionalmente inviable calcular k. Multiplicar es fácil; invertir la operación es prácticamente imposible.",
+   "h": "df0cc0b5",
+   "k": "df0cc0b5.0",
+   "id": "b-azpnnm",
+   "levels": {
+    "2": "El <strong>ECDLP</strong> plantea que, dado un punto <code>P</code> que resulta de multiplicar un punto base <code>G</code> por un número secreto <code>k</code> (<code>P = k × G</code>), es inviable calcular <code>k</code>. Multiplicar es fácil; invertir la operación es prácticamente imposible.",
+    "3": "<strong>ECDLP</strong> (<em>Elliptic Curve Discrete Logarithm Problem</em>) plantea lo siguiente: dado un punto <code>P</code> de la curva que resulta de multiplicar un punto base <code>G</code> por un número secreto <code>k</code> (es decir, <code>P = k × G</code>), es computacionalmente inviable calcular <code>k</code>. Multiplicar es fácil; invertir la operación es prácticamente imposible.",
+    "1": ""
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "donde <code>p</code> es un número primo de 256 bits. Aunque en la práctica se opera sobre un <strong>campo finito</strong>, esta representación continua ayuda a visualizar la forma de la curva:",
+   "text": "donde p es un número primo de 256 bits. Aunque en la práctica se opera sobre un campo finito, esta representación continua ayuda a visualizar la forma de la curva:",
+   "h": "321de2a3",
+   "k": "321de2a3.0",
+   "id": "b-np8zrb",
+   "levels": {
+    "2": "",
+    "3": "donde <code>p</code> es un número primo de 256 bits. Aunque en la práctica se opera sobre un <strong>campo finito</strong>, esta representación continua ayuda a visualizar la forma de la curva:",
+    "1": ""
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "li",
+   "html": "La <strong>clave pública</strong> es un punto de la curva, obtenido mediante la operación <code>P = k × G</code>, donde <code>G</code> es un punto base fijado por el estándar.",
+   "text": "La clave pública es un punto de la curva, obtenido mediante la operación P = k × G, donde G es un punto base fijado por el estándar.",
+   "h": "6e85ea98",
+   "k": "6e85ea98.0",
+   "id": "b-i1thk1",
+   "levels": {
+    "2": "La <strong>clave pública</strong> es un punto de la curva, <code>P = k × G</code>, donde <code>G</code> es un punto base fijado por el estándar.",
+    "3": "La <strong>clave pública</strong> es un punto de la curva, obtenido con <code>P = k × G</code>, donde <code>G</code> es un punto base fijado por el estándar.",
+    "1": ""
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "La seguridad depende de que, aun conociendo <code>G</code> y <code>P</code>, nadie pueda recuperar el valor <code>k</code>. Esta dificultad es lo que hace que una clave de 256 bits en curvas elípticas ofrezca una seguridad equivalente a la de una clave RSA de más de 3000 bits.",
+   "text": "La seguridad depende de que, aun conociendo G y P, nadie pueda recuperar el valor k. Esta dificultad es lo que hace que una clave de 256 bits en curvas elípticas ofrezca una seguridad equivalente a la de una clave RSA de más de 3000 bits.",
+   "h": "d5a6336e",
+   "k": "d5a6336e.0",
+   "id": "b-5ywrlr",
+   "levels": {
+    "2": "Aun conociendo <code>G</code> y <code>P</code>, nadie puede recuperar <code>k</code>. Por eso una clave de 256 bits en curvas elípticas equivale en seguridad a una clave RSA de más de 3000 bits.",
+    "3": "La seguridad depende de que, aun conociendo <code>G</code> y <code>P</code>, nadie pueda recuperar <code>k</code>. Esta dificultad hace que una clave de 256 bits en curvas elípticas ofrezca una seguridad equivalente a la de una clave RSA de más de 3000 bits.",
+    "1": ""
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "Para entender bien cómo funcionan las curvas elípticas en criptografía ayuda trabajar con un ejemplo pequeño y manejable. En lugar de usar la curva real de Bitcoin, que opera con números enormes de 256 bits, empleamos una curva diminuta definida sobre el campo finito módulo 17. Este tipo de curva no es segura, pero permite ver con claridad cómo se generan y manipulan claves sin necesidad de software especializado.",
+   "text": "Para entender bien cómo funcionan las curvas elípticas en criptografía ayuda trabajar con un ejemplo pequeño y manejable. En lugar de usar la curva real de Bitcoin, que opera con números enormes de 256 bits, empleamos una curva diminuta definida sobre el campo finito módulo 17. Este tipo de curva no es segura, pero permite ver con claridad cómo se generan y manipulan claves sin necesidad de software especializado.",
+   "h": "44a63d3d",
+   "k": "44a63d3d.0",
+   "id": "b-scqptc",
+   "levels": {
+    "2": "Para entenderlo ayuda un ejemplo pequeño: en lugar de la curva real de Bitcoin, con números de 256 bits, usamos una curva diminuta sobre el campo finito módulo 17. No es segura, pero permite ver cómo se generan las claves.",
+    "3": "Para entender las curvas elípticas ayuda un ejemplo pequeño. En lugar de la curva real de Bitcoin, con números de 256 bits, usamos una curva diminuta sobre el campo finito módulo 17. No es segura, pero permite ver cómo se generan y manipulan claves.",
+    "1": ""
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "La curva que utilizamos es <code>y² = x³ + 2 (mod 17)</code>. Elegimos este valor porque en módulos reducidos solo algunos parámetros producen curvas válidas y con suficientes puntos. El valor 2 genera una curva simple y funcional en este entorno. En Bitcoin se usa el parámetro 7 porque así lo fija el estándar secp256k1 y funciona correctamente en un módulo de 256 bits.",
+   "text": "La curva que utilizamos es y² = x³ + 2 (mod 17). Elegimos este valor porque en módulos reducidos solo algunos parámetros producen curvas válidas y con suficientes puntos. El valor 2 genera una curva simple y funcional en este entorno. En Bitcoin se usa el parámetro 7 porque así lo fija el estándar secp256k1 y funciona correctamente en un módulo de 256 bits.",
+   "h": "f6dcbd48",
+   "k": "f6dcbd48.0",
+   "id": "b-gw3ij1",
+   "levels": {
+    "2": "",
+    "3": "La curva es <code>y² = x³ + 2 (mod 17)</code>. En módulos reducidos solo algunos parámetros producen curvas válidas. En Bitcoin se usa el parámetro 7 porque así lo fija el estándar secp256k1.",
+    "1": ""
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "En un campo finito la curva no es continua. Es un conjunto discreto de puntos que cumplen la ecuación módulo 17. Con un módulo tan pequeño se pueden listar todos los puntos válidos de forma directa. Entre ellos está <code>G = (0, 6)</code> que empleamos como punto base. En sistemas reales como secp256k1 el punto base también está definido de antemano y garantiza las propiedades de seguridad necesarias.",
+   "text": "En un campo finito la curva no es continua. Es un conjunto discreto de puntos que cumplen la ecuación módulo 17. Con un módulo tan pequeño se pueden listar todos los puntos válidos de forma directa. Entre ellos está G = (0, 6) que empleamos como punto base. En sistemas reales como secp256k1 el punto base también está definido de antemano y garantiza las propiedades de seguridad necesarias.",
+   "h": "0a0f69ad",
+   "k": "0a0f69ad.0",
+   "id": "b-pxd9rk",
+   "levels": {
+    "2": "En un campo finito la curva es un conjunto discreto de puntos. Usamos como punto base <code>G = (0, 6)</code>; en secp256k1 también está definido de antemano.",
+    "3": "En un campo finito la curva es un conjunto discreto de puntos que cumplen la ecuación módulo 17, y con un módulo tan pequeño se pueden listar todos. Entre ellos está <code>G = (0, 6)</code>, nuestro punto base; en secp256k1 también está definido de antemano.",
+    "1": ""
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "Partimos de una clave privada pequeña, <code>k = 7</code>. En Bitcoin este valor sería un número aleatorio de 256 bits, pero aquí elegimos un número reducido para poder seguir el ejemplo sin esfuerzo.",
+   "text": "Partimos de una clave privada pequeña, k = 7. En Bitcoin este valor sería un número aleatorio de 256 bits, pero aquí elegimos un número reducido para poder seguir el ejemplo sin esfuerzo.",
+   "h": "c7039314",
+   "k": "c7039314.0",
+   "id": "b-h2rdww",
+   "levels": {
+    "2": "",
+    "3": "Partimos de una clave privada pequeña, <code>k = 7</code>. En Bitcoin sería un número aleatorio de 256 bits, pero aquí usamos uno reducido para seguir el ejemplo sin esfuerzo.",
+    "1": ""
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "La clave pública se obtiene mediante <strong>multiplicación escalar</strong>, expresada como <code>P = k × G</code>. En las curvas elípticas esta operación no es un producto convencional. Multiplicar un punto por un número significa <strong>sumarlo consigo mismo k veces</strong> aplicando las reglas específicas de la curva. En este caso:",
+   "text": "La clave pública se obtiene mediante multiplicación escalar, expresada como P = k × G. En las curvas elípticas esta operación no es un producto convencional. Multiplicar un punto por un número significa sumarlo consigo mismo k veces aplicando las reglas específicas de la curva. En este caso:",
+   "h": "3abf5c6d",
+   "k": "3abf5c6d.0",
+   "id": "b-ije34u",
+   "levels": {
+    "2": "La clave pública se obtiene con <strong>multiplicación escalar</strong>, <code>P = k × G</code>: multiplicar un punto por un número significa <strong>sumarlo consigo mismo k veces</strong> con las reglas de la curva.",
+    "3": "La clave pública se obtiene mediante <strong>multiplicación escalar</strong>, <code>P = k × G</code>. En curvas elípticas no es un producto convencional: multiplicar un punto por un número significa <strong>sumarlo consigo mismo k veces</strong> con las reglas de la curva. En este caso:",
+    "1": ""
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "Tras realizar cada una de estas sumas según las normas de la curva se obtiene <code>P = (4, 12)</code>, que pasa a ser la <strong>clave pública</strong> correspondiente a la clave privada <code>k</code>.",
+   "text": "Tras realizar cada una de estas sumas según las normas de la curva se obtiene P = (4, 12), que pasa a ser la clave pública correspondiente a la clave privada k.",
+   "h": "e0156d88",
+   "k": "e0156d88.0",
+   "id": "b-ps6xaf",
+   "levels": {
+    "2": "",
+    "3": "Tras realizar cada suma se obtiene <code>P = (4, 12)</code>, que es la <strong>clave pública</strong> correspondiente a la clave privada <code>k</code>.",
+    "1": ""
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "Estas sumas no se comportan como operaciones en el plano habitual. La curva define un mecanismo geométrico propio. Cuando los puntos son distintos se toma la recta que los une, se identifica el tercer punto donde esa recta vuelve a cortar la curva y se refleja ese punto respecto al eje x para obtener el resultado. Cuando se suma un punto consigo mismo se utiliza la tangente en ese punto y se aplica el mismo procedimiento. Estas reglas se traducen en fórmulas exactas dentro del campo finito y permiten que la curva forme una estructura algebraica estable donde la multiplicación escalar tiene sentido y es eficiente de calcular.",
+   "text": "Estas sumas no se comportan como operaciones en el plano habitual. La curva define un mecanismo geométrico propio. Cuando los puntos son distintos se toma la recta que los une, se identifica el tercer punto donde esa recta vuelve a cortar la curva y se refleja ese punto respecto al eje x para obtener el resultado. Cuando se suma un punto consigo mismo se utiliza la tangente en ese punto y se aplica el mismo procedimiento. Estas reglas se traducen en fórmulas exactas dentro del campo finito y permiten que la curva forme una estructura algebraica estable donde la multiplicación escalar tiene sentido y es eficiente de calcular.",
+   "h": "7fd3c615",
+   "k": "7fd3c615.0",
+   "id": "b-zc6dy7",
+   "levels": {
+    "2": "",
+    "3": "Estas sumas no se comportan como en el plano habitual: entre dos puntos distintos se toma la recta que los une, se identifica el tercer punto donde corta la curva y se refleja respecto al eje x; si se suma un punto consigo mismo se usa la tangente. Estas reglas se traducen en fórmulas exactas en el campo finito y hacen eficiente la multiplicación escalar.",
+    "1": ""
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "Intentar resolver <code>P = k × G</code> para encontrar <code>k</code> es el <strong>problema del logaritmo discreto en curvas elípticas</strong>. No existe ningún algoritmo eficiente que permita invertir esta operación en curvas modernas. La única estrategia general es la fuerza bruta. Examinar valores uno a uno hasta encontrar el correcto.",
+   "text": "Intentar resolver P = k × G para encontrar k es el problema del logaritmo discreto en curvas elípticas. No existe ningún algoritmo eficiente que permita invertir esta operación en curvas modernas. La única estrategia general es la fuerza bruta. Examinar valores uno a uno hasta encontrar el correcto.",
+   "h": "b64afbf8",
+   "k": "b64afbf8.0",
+   "id": "b-szpwvf",
+   "levels": {
+    "2": "Resolver <code>P = k × G</code> para hallar <code>k</code> es el <strong>problema del logaritmo discreto en curvas elípticas</strong>. No existe un algoritmo eficiente para invertirlo en curvas modernas; solo queda la fuerza bruta.",
+    "3": "Intentar resolver <code>P = k × G</code> para encontrar <code>k</code> es el <strong>problema del logaritmo discreto en curvas elípticas</strong>. No existe ningún algoritmo eficiente que permita invertir esta operación en curvas modernas. La única estrategia general es la fuerza bruta: examinar valores uno a uno hasta encontrar el correcto.",
+    "1": "Descubrir esa clave solo sería posible probando valores uno a uno, por fuerza bruta."
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "En el ejemplo esto sería posible porque el espacio de búsqueda es pequeño. En Bitcoin la clave privada tiene 256 bits y el total de valores posibles asciende a <code>2²⁵⁶</code>, aproximadamente <code>1,15 × 10⁷⁷</code> opciones. Incluso un sistema capaz de probar mil millones de claves por segundo tardaría <code>10⁶⁸</code> segundos en recorrer el espacio completo. La edad del universo ronda los <code>10¹⁷</code> segundos. La operación inversa se encuentra completamente fuera de alcance.",
+   "text": "En el ejemplo esto sería posible porque el espacio de búsqueda es pequeño. En Bitcoin la clave privada tiene 256 bits y el total de valores posibles asciende a 2²⁵⁶, aproximadamente 1,15 × 10⁷⁷ opciones. Incluso un sistema capaz de probar mil millones de claves por segundo tardaría 10⁶⁸ segundos en recorrer el espacio completo. La edad del universo ronda los 10¹⁷ segundos. La operación inversa se encuentra completamente fuera de alcance.",
+   "h": "01f8d809",
+   "k": "01f8d809.0",
+   "id": "b-xj0k1u",
+   "levels": {
+    "2": "En el ejemplo sería posible porque el espacio de búsqueda es pequeño, pero en Bitcoin la clave privada tiene 256 bits y hay <code>2²⁵⁶</code> valores posibles, aproximadamente <code>1,15 × 10⁷⁷</code>. Un sistema que probara mil millones de claves por segundo tardaría <code>10⁶⁸</code> segundos; la edad del universo ronda los <code>10¹⁷</code>.",
+    "3": "En el ejemplo esto sería posible porque el espacio de búsqueda es pequeño. En Bitcoin la clave privada tiene 256 bits y hay <code>2²⁵⁶</code> valores posibles, aproximadamente <code>1,15 × 10⁷⁷</code>. Un sistema capaz de probar mil millones de claves por segundo tardaría <code>10⁶⁸</code> segundos, y la edad del universo ronda los <code>10¹⁷</code> segundos. La operación inversa está fuera de alcance.",
+    "1": "Y en Bitcoin habría tantas opciones que no bastaría ni la edad del universo."
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "El algoritmo de Shor podría, en teoría, resolver este problema de forma eficiente. Para hacerlo con claves de 256 bits sería necesario disponer de cientos de cúbits lógicos con corrección de errores completa. Esto exige millones de cúbits físicos y circuitos profundos y extremadamente estables. La tecnología cuántica actual trabaja con cúbits ruidosos y sin la corrección de errores necesaria para ejecutar un ataque de este tipo. En estas condiciones <strong>los ordenadores cuánticos reales no suponen una amenaza para ECDSA ni para Bitcoin</strong>.",
+   "text": "El algoritmo de Shor podría, en teoría, resolver este problema de forma eficiente. Para hacerlo con claves de 256 bits sería necesario disponer de cientos de cúbits lógicos con corrección de errores completa. Esto exige millones de cúbits físicos y circuitos profundos y extremadamente estables. La tecnología cuántica actual trabaja con cúbits ruidosos y sin la corrección de errores necesaria para ejecutar un ataque de este tipo. En estas condiciones los ordenadores cuánticos reales no suponen una amenaza para ECDSA ni para Bitcoin.",
+   "h": "06c2dd16",
+   "k": "06c2dd16.0",
+   "id": "b-rux44j",
+   "levels": {
+    "2": "El algoritmo de Shor podría, en teoría, resolver este problema de forma eficiente, pero con claves de 256 bits exigiría cientos de cúbits lógicos con corrección de errores completa, es decir, millones de cúbits físicos. La tecnología actual trabaja con cúbits ruidosos y sin esa corrección. Por eso <strong>los ordenadores cuánticos reales no suponen una amenaza para ECDSA ni para Bitcoin</strong>.",
+    "3": "El algoritmo de Shor podría, en teoría, resolver este problema de forma eficiente, pero con claves de 256 bits haría falta disponer de cientos de cúbits lógicos con corrección de errores completa, es decir, millones de cúbits físicos y circuitos profundos y muy estables. La tecnología actual trabaja con cúbits ruidosos y sin esa corrección, así que <strong>los ordenadores cuánticos reales no suponen una amenaza para ECDSA ni para Bitcoin</strong>.",
+    "1": "Aunque Shor podría resolverlo en teoría, haría falta corrección de errores completa, y los ordenadores cuánticos actuales no la tienen."
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "Para que un ataque cuántico contra Bitcoin o RSA fuera realmente viable, no bastaría con un procesador de unas pocas decenas o incluso cientos de cúbits físicos. Sería necesario un tipo de máquina cuántica radicalmente más avanzada que las actuales. En concreto, un ataque práctico requeriría:",
+   "text": "Para que un ataque cuántico contra Bitcoin o RSA fuera realmente viable, no bastaría con un procesador de unas pocas decenas o incluso cientos de cúbits físicos. Sería necesario un tipo de máquina cuántica radicalmente más avanzada que las actuales. En concreto, un ataque práctico requeriría:",
+   "h": "66dc2dbc",
+   "k": "66dc2dbc.0",
+   "id": "b-viss8x",
+   "levels": {
+    "2": "Para que un ataque cuántico contra Bitcoin o RSA fuera viable, no bastaría con unas pocas decenas o cientos de cúbits físicos: haría falta una máquina radicalmente más avanzada. En concreto:",
+    "3": "Para que un ataque cuántico contra Bitcoin o RSA fuera realmente viable, no bastaría con unas pocas decenas o cientos de cúbits físicos. Sería necesaria una máquina radicalmente más avanzada. En concreto, haría falta:",
+    "1": ""
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "li",
+   "html": "<strong>Cúbits lógicos y corrección de errores completa</strong>. La criptografía moderna no cae con cúbits físicos: hace falta ejecutar el algoritmo de Shor de forma tolerante a fallos. Esto implica miles de cúbits lógicos, cada uno respaldado por miles de cúbits físicos mediante códigos de corrección de errores.",
+   "text": "Cúbits lógicos y corrección de errores completa. La criptografía moderna no cae con cúbits físicos: hace falta ejecutar el algoritmo de Shor de forma tolerante a fallos. Esto implica miles de cúbits lógicos, cada uno respaldado por miles de cúbits físicos mediante códigos de corrección de errores.",
+   "h": "7546147e",
+   "k": "7546147e.0",
+   "id": "b-4pp61e",
+   "levels": {
+    "2": "<strong>Cúbits lógicos y corrección de errores completa</strong>. Hay que ejecutar Shor de forma tolerante a fallos: miles de cúbits lógicos, cada uno respaldado por miles de cúbits físicos.",
+    "3": "<strong>Cúbits lógicos y corrección de errores completa</strong>. La criptografía moderna no cae con cúbits físicos: hace falta ejecutar Shor de forma tolerante a fallos, con miles de cúbits lógicos, cada uno respaldado por miles de cúbits físicos mediante códigos de corrección de errores.",
+    "1": ""
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "li",
+   "html": "<strong>Profundidad de circuito muy elevada</strong>. Shor, aplicado a claves reales de 2048 o 3072 bits (RSA) o a claves de 256 bits en curvas elípticas (Bitcoin), exige millones de puertas cuánticas consecutivas. Los dispositivos actuales apenas soportan unas decenas.",
+   "text": "Profundidad de circuito muy elevada. Shor, aplicado a claves reales de 2048 o 3072 bits (RSA) o a claves de 256 bits en curvas elípticas (Bitcoin), exige millones de puertas cuánticas consecutivas. Los dispositivos actuales apenas soportan unas decenas.",
+   "h": "8e12f0bc",
+   "k": "8e12f0bc.0",
+   "id": "b-8f3wcf",
+   "levels": {
+    "2": "<strong>Profundidad de circuito muy elevada</strong>. Shor exige millones de puertas cuánticas consecutivas con claves reales; los dispositivos actuales apenas soportan unas decenas.",
+    "3": "<strong>Profundidad de circuito muy elevada</strong>. Shor, aplicado a claves reales de 2048 o 3072 bits (RSA) o de 256 bits en curvas elípticas (Bitcoin), exige millones de puertas cuánticas consecutivas. Los dispositivos actuales apenas soportan unas decenas.",
+    "1": ""
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "li",
+   "html": "<strong>Tasas de error ultrabajas</strong>. Incluso un pequeño error acumulado destruye el estado cuántico y hace fracasar la ejecución. Se necesitarían tasas de error por puerta y por qubit varios órdenes de magnitud mejores que las actuales.",
+   "text": "Tasas de error ultrabajas. Incluso un pequeño error acumulado destruye el estado cuántico y hace fracasar la ejecución. Se necesitarían tasas de error por puerta y por qubit varios órdenes de magnitud mejores que las actuales.",
+   "h": "5334ab68",
+   "k": "5334ab68.0",
+   "id": "b-ilgmvl",
+   "levels": {
+    "2": "<strong>Tasas de error ultrabajas</strong>. Un pequeño error acumulado destruye el estado cuántico; harían falta tasas varios órdenes de magnitud mejores que las actuales.",
+    "3": "<strong>Tasas de error ultrabajas</strong>. Un pequeño error acumulado destruye el estado cuántico y hace fracasar la ejecución. Se necesitarían tasas de error por puerta y por qubit varios órdenes de magnitud mejores que las actuales.",
+    "1": ""
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "li",
+   "html": "<strong>Quantum RAM (QRAM)</strong>. Para manejar eficientemente estructuras de datos a la escala necesaria en ataques criptográficos. La QRAM no es estrictamente necesaria para ejecutar Shor, pero sería imprescindible para escalar muchos ataques criptográficos cuánticos más avanzados y hoy sigue siendo solo un concepto teórico.",
+   "text": "Quantum RAM (QRAM). Para manejar eficientemente estructuras de datos a la escala necesaria en ataques criptográficos. La QRAM no es estrictamente necesaria para ejecutar Shor, pero sería imprescindible para escalar muchos ataques criptográficos cuánticos más avanzados y hoy sigue siendo solo un concepto teórico.",
+   "h": "19ae7295",
+   "k": "19ae7295.0",
+   "id": "b-90pyy7",
+   "levels": {
+    "2": "<strong>Quantum RAM (QRAM)</strong>. No es estrictamente necesaria para ejecutar Shor, pero sería imprescindible para escalar ataques más avanzados y hoy sigue siendo solo un concepto teórico.",
+    "3": "<strong>Quantum RAM (QRAM)</strong>. Sirve para manejar estructuras de datos a la escala necesaria. No es estrictamente necesaria para ejecutar Shor, pero sería imprescindible para escalar ataques más avanzados y hoy sigue siendo solo un concepto teórico.",
+    "1": ""
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "li",
+   "html": "<strong>Estabilidad durante tiempos largos</strong>. Ejecutar Shor sobre claves reales demandaría minutos u horas de operación coherente, mientras que los sistemas actuales mantienen la coherencia durante milisegundos o microsegundos.",
+   "text": "Estabilidad durante tiempos largos. Ejecutar Shor sobre claves reales demandaría minutos u horas de operación coherente, mientras que los sistemas actuales mantienen la coherencia durante milisegundos o microsegundos.",
+   "h": "38fdbd47",
+   "k": "38fdbd47.0",
+   "id": "b-qnosue",
+   "levels": {
+    "2": "<strong>Estabilidad durante tiempos largos</strong>. Ejecutar Shor sobre claves reales demandaría minutos u horas de coherencia; hoy se mantiene durante milisegundos o microsegundos.",
+    "3": "<strong>Estabilidad durante tiempos largos</strong>. Ejecutar Shor sobre claves reales demandaría minutos u horas de operación coherente, mientras que los sistemas actuales mantienen la coherencia durante milisegundos o microsegundos.",
+    "1": ""
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "Solo la combinación de estos elementos permitiría, en la práctica, romper RSA o ECDSA. Y ninguno de ellos está disponible hoy. La distancia tecnológica entre los ordenadores cuánticos actuales y una máquina capaz de atacar criptografía real sigue siendo enorme.",
+   "text": "Solo la combinación de estos elementos permitiría, en la práctica, romper RSA o ECDSA. Y ninguno de ellos está disponible hoy. La distancia tecnológica entre los ordenadores cuánticos actuales y una máquina capaz de atacar criptografía real sigue siendo enorme.",
+   "h": "81bf6fd3",
+   "k": "81bf6fd3.0",
+   "id": "b-i1t1ks",
+   "levels": {
+    "2": "Solo la combinación de estos elementos permitiría romper RSA o ECDSA, y ninguno está disponible hoy. La distancia tecnológica sigue siendo enorme.",
+    "3": "Solo la combinación de estos elementos permitiría, en la práctica, romper RSA o ECDSA. Y ninguno de ellos está disponible hoy. La distancia tecnológica entre los ordenadores cuánticos actuales y una máquina capaz de atacar criptografía real sigue siendo enorme.",
+    "1": "Hoy no existe ninguna de las piezas necesarias, y la distancia tecnológica sigue siendo enorme."
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "El supuesto “ataque cuántico a Bitcoin en 320 segundos” no solo era falso, sino técnicamente imposible con el hardware cuántico disponible hoy. Tanto RSA como las curvas elípticas que utiliza Bitcoin se basan en problemas matemáticos cuya inversión sigue estando muy lejos del alcance de los ordenadores cuánticos actuales. El algoritmo de Shor demuestra que, en teoría, el futuro cuántico podrá romper ambos sistemas, pero ese escenario exige miles de cúbits lógicos y millones de cúbits físicos, una escala que ninguna plataforma cuántica moderna puede ofrecer.",
+   "text": "El supuesto “ataque cuántico a Bitcoin en 320 segundos” no solo era falso, sino técnicamente imposible con el hardware cuántico disponible hoy. Tanto RSA como las curvas elípticas que utiliza Bitcoin se basan en problemas matemáticos cuya inversión sigue estando muy lejos del alcance de los ordenadores cuánticos actuales. El algoritmo de Shor demuestra que, en teoría, el futuro cuántico podrá romper ambos sistemas, pero ese escenario exige miles de cúbits lógicos y millones de cúbits físicos, una escala que ninguna plataforma cuántica moderna puede ofrecer.",
+   "h": "a4796c21",
+   "k": "a4796c21.0",
+   "id": "b-o7fm04",
+   "levels": {
+    "2": "El supuesto “ataque cuántico a Bitcoin en 320 segundos” no solo era falso, sino técnicamente imposible con el hardware actual. RSA y las curvas elípticas de Bitcoin se basan en problemas muy lejos del alcance de los ordenadores cuánticos de hoy. Shor demuestra que en teoría podrán romperlos, pero hacen falta miles de cúbits lógicos y millones de cúbits físicos, una escala que ninguna plataforma ofrece.",
+    "3": "El supuesto “ataque cuántico a Bitcoin en 320 segundos” no solo era falso, sino técnicamente imposible con el hardware cuántico actual. RSA y las curvas elípticas de Bitcoin se basan en problemas matemáticos muy lejos del alcance de los ordenadores cuánticos de hoy. Shor demuestra que, en teoría, podrán romperse, pero eso exige miles de cúbits lógicos y millones de cúbits físicos, una escala que ninguna plataforma moderna ofrece.",
+    "1": ""
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "Mientras tanto, Bitcoin continúa protegido por ECDSA sobre <em>secp256k1</em>, una estructura criptográfica altamente resistente y con niveles de seguridad equivalentes a claves RSA mucho más largas. La amenaza cuántica llegará si la tecnología consigue escalar de forma significativa, algo que hoy está muy lejos de estar resuelto. Será un proceso gradual que la comunidad criptográfica, las infraestructuras de Internet y las cadenas de bloques tendrán que afrontar mediante algoritmos postcuánticos estandarizados.",
+   "text": "Mientras tanto, Bitcoin continúa protegido por ECDSA sobre secp256k1, una estructura criptográfica altamente resistente y con niveles de seguridad equivalentes a claves RSA mucho más largas. La amenaza cuántica llegará si la tecnología consigue escalar de forma significativa, algo que hoy está muy lejos de estar resuelto. Será un proceso gradual que la comunidad criptográfica, las infraestructuras de Internet y las cadenas de bloques tendrán que afrontar mediante algoritmos postcuánticos estandarizados.",
+   "h": "a1071cf9",
+   "k": "a1071cf9.0",
+   "id": "b-y63502",
+   "levels": {
+    "2": "Mientras tanto, Bitcoin sigue protegido por ECDSA sobre <em>secp256k1</em>, con una seguridad equivalente a claves RSA mucho más largas. La amenaza llegará si la tecnología escala, algo muy lejos de estar resuelto, y será un proceso gradual que se afrontará con algoritmos postcuánticos estandarizados.",
+    "3": "Mientras tanto, Bitcoin sigue protegido por ECDSA sobre <em>secp256k1</em>, con niveles de seguridad equivalentes a claves RSA mucho más largas. La amenaza cuántica llegará si la tecnología escala de forma significativa, algo muy lejos de estar resuelto, y será un proceso gradual que la comunidad criptográfica y las cadenas de bloques tendrán que afrontar con algoritmos postcuánticos estandarizados.",
+    "1": "Bitcoin sigue protegido, y la amenaza cuántica llegará solo si la tecnología escala, de forma gradual y con algoritmos postcuánticos."
+   },
+   "errors": {},
+   "model": "file"
+  }
+ ]
+}
