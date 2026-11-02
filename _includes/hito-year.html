@@ -2,9 +2,12 @@
   <h3 class="hito-year">{{ include.group.year }}</h3>
   <ol>
     {% for item in include.group.items %}
-    <li>
+    {% assign rot = item.label.size | modulo: 7 | minus: 3 %}
+    {% if rot == 0 %}{% assign rot = 3 %}{% endif %}
+    <li{% if item.image %} class="has-photo"{% endif %}>
       <span class="mono muted">{{ item.month }}</span>
-      <span class="hito-label">{% if item.image %}<a href="{{ item.image }}" data-lightbox="about" data-title="{{ item.label | escape }}">{{ item.label }}</a>{% else %}{{ item.label }}{% endif %}{% if item.note %}<small>{{ item.note }}</small>{% endif %}</span>
+      <span class="hito-label">{{ item.label }}{% if item.note %}<small>{{ item.note }}</small>{% endif %}</span>
+      {% if item.image %}<a class="hito-photo" href="{{ item.image }}" data-lightbox="about" data-title="{{ item.label | escape }}" style="--rot: {{ rot }}deg"><img src="{{ item.image }}" alt="{{ item.label | escape }}" loading="lazy"></a>{% endif %}
     </li>
     {% endfor %}
   </ol>

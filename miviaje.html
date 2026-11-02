@@ -22,6 +22,8 @@ nav: bio
     <div><span class="stat">{{ dev_years }}</span><span class="stat-label">años en desarrollo</span></div>
     <div><span class="stat">{{ site.posts.size }}</span><span class="stat-label">notas escritas desde {{ site.posts.last.date | date: "%Y" }}</span></div>
     <div><span class="stat">{{ read_count }}</span><span class="stat-label">libros en la biblioteca</span></div>
+    <div><span class="stat">{{ site.data.cities | map: "name" | uniq | size }}</span><span class="stat-label">ciudades visitadas</span></div>
+    <div><span class="stat">{{ site.data.cities | map: "country" | uniq | size }}</span><span class="stat-label">países visitados</span></div>
   </div>
 </section>
 
