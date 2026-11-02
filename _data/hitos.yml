@@ -2,6 +2,7 @@
   items:
   - label: Descubriendo Arizona
     month: Nov
+    image: "/img/arizona.jpg"
   - label: De vuelta en Las Vegas, con Merche
     month: Nov
   - label: Un fin de semana en Blanes, con Merche
@@ -10,10 +11,12 @@
     month: Ago
   - label: Hawái, con Merche
     month: Jul
+    image: "/img/hawai.jpg"
   - label: Plain Camp en Benidorm
     month: Jun
   - label: Un viaje a San Francisco, con Merche
     month: May
+    image: "/img/san-francisco.jpg"
   - label: Puerto Vallarta, con Merche
     month: Mar
   - label: Ajijic y el lago de Chapala, con Merche
@@ -44,6 +47,7 @@
     month: Ago
   - label: Seattle se convierte en casa
     month: Jun
+    image: "/img/seattle.jpg"
   - label: Nos casamos
     month: Jun
   - label: Primera maratón
