@@ -144,8 +144,9 @@
   - label: Azure Bootcamp
     month: Abr
     image: "/img/azure-bootcamp-2014.jpeg"
-  - label: Primer reconocimiento como MVP
+  - label: Primer reconocimiento como MVP, con el Guille
     month: Ene
+    image: "/img/mvp-2014.jpg"
 - year: 2013
   items:
   - label: Freelance para Tokiota
