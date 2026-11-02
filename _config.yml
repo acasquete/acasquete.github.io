@@ -47,7 +47,7 @@ version: "1.0.0"
 
 # Contenido pendiente: mientras esté vacío, en local se ve el marcador del diseño
 # y en producción ese bloque no aparece.
-bio_photo: ""
+bio_photo: "/img/alex-bio.jpg"
 next_milestone: ""
 onestep_app:
   description: "Apunta tu fuerza, tus carreras y lo que has comido en cinco minutos antes de dormir. Sin ruido, sin presión y sin algoritmo."

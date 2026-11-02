@@ -1,46 +1,76 @@
+- year: 2026
+  items:
+  - label: Cuarto Halloween en Seattle
+    month: Oct
+  - label: Un domingo cualquiera, Seahawks
+    month: Oct
+  - label: Seabrook y la costa del Pacífico de Washington
+    month: Oct
+    note: De Olimpia a Seabrook y Ruby Beach.
+  - label: De Yosemite a Los Ángeles por la costa
+    month: Ago
+    note: Yosemite, Santa Cruz, Big Sur, Santa Bárbara y Los Ángeles.
+  - label: Vuelta a España en verano
+    month: Jun
+    note: Barcelona, Toledo, Granada y Madrid.
+  - label: Los Ángeles
+    month: Abr
+  - label: Un fin de semana en Bellingham
+    month: Feb
+  - label: Boston
+    month: Ene
+  - label: Año Nuevo en Nueva York
+    month: Ene
+    image: "/img/nueva-york-2026.jpg"
 - year: 2025
   items:
   - label: Descubriendo Arizona
     month: Nov
     image: "/img/arizona.jpg"
-  - label: De vuelta en Las Vegas, con Merche
+  - label: De vuelta en Las Vegas
     month: Nov
-  - label: Un fin de semana en Blanes, con Merche
+  - label: Un fin de semana en Blanes
     month: Oct
-  - label: La península Olímpica, con Merche
+  - label: Tercer Halloween en Seattle
+    month: Oct
+  - label: La península Olímpica
     month: Ago
-  - label: Hawái, con Merche
+  - label: Hawái
     month: Jul
     image: "/img/hawai.jpg"
   - label: Plain Camp en Benidorm
     month: Jun
-  - label: Un viaje a San Francisco, con Merche
+  - label: Un viaje a San Francisco
     month: May
     image: "/img/san-francisco.jpg"
-  - label: Puerto Vallarta, con Merche
+  - label: Puerto Vallarta
     month: Mar
-  - label: Ajijic y el lago de Chapala, con Merche
+  - label: Ajijic y el lago de Chapala
     month: Mar
-  - label: Vancouver, con Merche
+  - label: Vancouver
     month: Feb
-  - label: Nueva York, con Merche
+  - label: Nueva York
     month: Ene
   - label: Una despedida de soltero en Las Vegas
     month: Ene
 - year: 2024
   items:
+  - label: Segundo Halloween en Seattle
+    month: Oct
   - label: Primeros 10K en Seattle
     month: Ago
-  - label: Nuestra primera vez en Washington D. C., con Merche
+  - label: Nuestra primera vez en Washington D. C.
     month: Jul
-  - label: Nuestra primera vez en Nueva York, con Merche
+  - label: Nuestra primera vez en Nueva York
     month: Jul
-  - label: Nuestra primera vez en Chicago, con Merche
+  - label: Nuestra primera vez en Chicago
     month: Jul
   - label: Siempre Perla
     image: "/img/perla.jpg"
 - year: 2023
   items:
+  - label: Primer Halloween en Seattle
+    month: Oct
   - label: Un viaje a San Francisco
     month: Sep
   - label: Un viaje a Portland
