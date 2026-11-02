@@ -1,146 +1,146 @@
-long,lat,name,year
-2.130554,41.371672,"Barcelona Home"
--3.689518,40.437671,"Madrid"
-2.816277,41.977486,"Girona"
-2.967167,42.266639,"Figueres"
-3.877831,43.608239,"Montpellier"
-5.379181,43.329548,"Marseille"
--58.407097,-34.625863,"Buenos Aires"
--43.183651,-22.965506,"Rio de Janeiro"
--46.632328,-23.532514,"SaoPaulo"
--45.458078,-23.819898,"Maresias"
--64.188995,-31.404345,"Córdoba"
--68.831406,-32.891696,"Mendoza"
--60.658264,-32.956825,"Rosario"
--58.519363,-33.011255,"Gualeguaychu"
--61.253500,-32.848010,"Correa"
--54.581108,-25.540893,"Foz do Iguaçu"
--2.935195,43.262831,"Bilbao"
--0.880966,41.652778,"Zaragoza"
--0.407395,42.138968,"Huesca"
--0.546312,42.573057,"Jaca"
--1.105800,40.343371,"Teruel"
--39.708366,-18.420336,"Itaúnas"
--0.382805,39.466945,"Valencia"
--0.350747,39.498875,"Alboraya"
--0.221272,39.660487,"PortdeSagunt"
--0.466232,39.436458,"Torrent"
--0.139389,38.548568,"Benidorm"
--4.406869,36.721067,"Málaga"
--3.594675,37.171602,"Granada"
--4.780083,37.889893,"Córdoba"
--4.322777,37.617155,"Baena"
--2.138386,40.076627,"Cuenca"
-5.054398,43.406419,"Martigues"
--4.117899,40.947832,"Segovia"
--5.657959,40.968039,"Salamanca"
--5.001011,41.501635,"Tordesillas"
--4.026833,39.860472,"Toledo"
-1.582375,42.535501,"Encamp"
-1.530018,42.508299,"AndorralaVella"
-0.740633,42.407805,"ElPontdeSuert"
-2.850008,41.700282,"LloretdeMar"
-1.140175,41.076375,"Salou"
-1.106615,41.155523,"Reus"
-2.900219,42.697829,"Perpignan"
-2.342749,43.218500,"Carcassonne"
-0.932293,41.633471,"Golmés"
--64.428446,-31.656252,"AltaGracia"
--64.496956,-31.420387,"CarlosPaz"
--68.328094,-34.618517,"SanRafael"
-1.929817,42.436491,"Puigcerdà"
-1.131420,42.412051,"Sort"
-12.3345898,45.4371908,"Venice",2000
-151.2092955,-33.8688197,"Sydney",2021
--109.4333,-27.1500,"Hanga Roa, Isla de Pascua"
--66.6141,18.0111,"Ponce"
--66.1185,18.4671,"San Juan"
--73.5674,45.5019,"Montreal"
--71.2075,46.8131,"Quebec"
--79.3832,43.6532,"Toronto"
--45.5148,61.1496,"Qassiarsuk"
--21.827774,64.128288,"Reykjavík"
--87.6298,41.8781,"Chicago"
-18.95508,69.6489,"Tromsø",2021
-10.757933,59.911491,"Oslo",2021
-35.0063,29.5321,"Aqaba",2022
-35.4076,29.5559,"Wadi Rum",2022
-35.4444,30.3285,"Petra",2022
-35.9106,31.9539,"Amman",2022
--122.419415,37.774929,"San Francisco",2022
--122.330062,47.603832,"Seattle",2023
--122.674195,45.520247,"Portland",2023
--122.419415,37.774929,"San Francisco",2023
--74.006015,40.712728,"New York",2023
--0.1278,51.5074,London
--2.2426,53.4808,Manchester
--3.1883,55.9533,Edinburgh
--4.2518,55.8642,Glasgow
--4.2247,57.4778,Inverness
-4.9041,52.3676,Amsterdam
--75.6972,45.4215,Ottawa
-2.3522,48.8566,Paris
-24.9384,60.1699,Helsinki
-139.6917,35.6895,Tokyo
-135.7681,35.0116,Kyoto
-135.805,34.6851,Nara
-12.4964,41.9028,Rome
-14.2681,40.8518,Naples
-11.2558,43.7696,Florence
-10.4017,43.7228,Pisa
-8.6821,50.1109,Frankfurt
-13.405,52.52,Berlin
-12.3731,51.3397,Leipzig
-9.1829,48.7758,Stuttgart
-11.582,48.1351,Munich
-6.9603,50.9375,Cologne
-9.2109,49.1427,Heilbronn
-9.226,49.1905,Neckarsulm
-116.4074,39.9042,Beijing
-108.9398,34.3416,Xi'an
-121.4737,31.2304,Shanghai
-135.5023,34.6937,Osaka
-55.296249,25.276987,Dubai
-16.3738,48.2082,Vienna
-19.0402,47.4979,Budapest
-14.4378,50.0755,Prague,
-3.0031,43.1843,Narbonne
-2.7917,41.6762,Blanes
-9.19,45.4642,Milan
--70.6693,-33.4489,Santiago
--8.4115,43.3623,A Coruña
--71.55,-33.0153,Viña del Mar
--72.9369,-41.4717,Puerto Montt
--70.9171,-53.1638,Punta Arenas
--72.5033,-51.7333,Puerto Natales
--9.1393,38.7223,"Lisboa"
--8.611,41.1496,"Oporto"
--8.4196,40.2033,"Coimbra"
--9.3976,38.7059,"Estoril"
--77.0369,38.9072,"Washington D.C."
--56.1645,-34.9011,"Montevideo"
--3.679536,42.343992,"Burgos"
--69.716667,48.143333,"Tadoussac"
--5.986944,37.389092,"Sevilla"
--4.53292,42.00969,"Palencia"
--5.57175,42.598726,"Leon"
--1.980812,43.318334,"San Sebastian"
--8.64435,42.433657,"Pontevedra"
--7.556029,43.009629,"Lugo"
--4.728562,41.652252,"Valladolid"
--3.689396,41.672921,"Aranda de Duero"
--1.130654,37.99224,"Murcia"
--3.137999,37.299999,"Guadix"
--0.490686,38.34517,"Alicante"
--0.565048,38.192019,"Santa Pola"
--0.8656056,37.7432859,"Los Alcázares"
-0.100972,38.84079,"Denia"
-1.805982,41.237066,"Sitges"
--115.1398,36.1699,"Las Vegas",2025
--103.2678,20.2994,"Ajijic",2025
--105.2253,20.6534,"Puerto Vallarta",2025
--123.1207,49.2827,"Vancouver",2025
--157.8583,21.3069,"Honolulu",2025
--123.6,47.8,"Península Olímpica",2025
--111.4577,36.9147,"Page",2025
--110.1,36.98,"Monument Valley",2025
+long,lat,name,year,country
+2.130554,41.371672,"Barcelona Home",,España
+-3.689518,40.437671,"Madrid",,España
+2.816277,41.977486,"Girona",,España
+2.967167,42.266639,"Figueres",,España
+3.877831,43.608239,"Montpellier",,Francia
+5.379181,43.329548,"Marseille",,Francia
+-58.407097,-34.625863,"Buenos Aires",,Argentina
+-43.183651,-22.965506,"Rio de Janeiro",,Brasil
+-46.632328,-23.532514,"SaoPaulo",,Brasil
+-45.458078,-23.819898,"Maresias",,Brasil
+-64.188995,-31.404345,"Córdoba",,Argentina
+-68.831406,-32.891696,"Mendoza",,Argentina
+-60.658264,-32.956825,"Rosario",,Argentina
+-58.519363,-33.011255,"Gualeguaychu",,Argentina
+-61.253500,-32.848010,"Correa",,Argentina
+-54.581108,-25.540893,"Foz do Iguaçu",,Brasil
+-2.935195,43.262831,"Bilbao",,España
+-0.880966,41.652778,"Zaragoza",,España
+-0.407395,42.138968,"Huesca",,España
+-0.546312,42.573057,"Jaca",,España
+-1.105800,40.343371,"Teruel",,España
+-39.708366,-18.420336,"Itaúnas",,Brasil
+-0.382805,39.466945,"Valencia",,España
+-0.350747,39.498875,"Alboraya",,España
+-0.221272,39.660487,"PortdeSagunt",,España
+-0.466232,39.436458,"Torrent",,España
+-0.139389,38.548568,"Benidorm",,España
+-4.406869,36.721067,"Málaga",,España
+-3.594675,37.171602,"Granada",,España
+-4.780083,37.889893,"Córdoba",,España
+-4.322777,37.617155,"Baena",,España
+-2.138386,40.076627,"Cuenca",,España
+5.054398,43.406419,"Martigues",,Francia
+-4.117899,40.947832,"Segovia",,España
+-5.657959,40.968039,"Salamanca",,España
+-5.001011,41.501635,"Tordesillas",,España
+-4.026833,39.860472,"Toledo",,España
+1.582375,42.535501,"Encamp",,Andorra
+1.530018,42.508299,"AndorralaVella",,Andorra
+0.740633,42.407805,"ElPontdeSuert",,España
+2.850008,41.700282,"LloretdeMar",,España
+1.140175,41.076375,"Salou",,España
+1.106615,41.155523,"Reus",,España
+2.900219,42.697829,"Perpignan",,Francia
+2.342749,43.218500,"Carcassonne",,Francia
+0.932293,41.633471,"Golmés",,España
+-64.428446,-31.656252,"AltaGracia",,Argentina
+-64.496956,-31.420387,"CarlosPaz",,Argentina
+-68.328094,-34.618517,"SanRafael",,Argentina
+1.929817,42.436491,"Puigcerdà",,España
+1.131420,42.412051,"Sort",,España
+12.3345898,45.4371908,"Venice",2000,Italia
+151.2092955,-33.8688197,"Sydney",2021,Australia
+-109.4333,-27.1500,"Hanga Roa, Isla de Pascua",,Chile
+-66.6141,18.0111,"Ponce",,Estados Unidos
+-66.1185,18.4671,"San Juan",,Estados Unidos
+-73.5674,45.5019,"Montreal",,Canadá
+-71.2075,46.8131,"Quebec",,Canadá
+-79.3832,43.6532,"Toronto",,Canadá
+-45.5148,61.1496,"Qassiarsuk",,Dinamarca
+-21.827774,64.128288,"Reykjavík",,Islandia
+-87.6298,41.8781,"Chicago",,Estados Unidos
+18.95508,69.6489,"Tromsø",2021,Noruega
+10.757933,59.911491,"Oslo",2021,Noruega
+35.0063,29.5321,"Aqaba",2022,Jordania
+35.4076,29.5559,"Wadi Rum",2022,Jordania
+35.4444,30.3285,"Petra",2022,Jordania
+35.9106,31.9539,"Amman",2022,Jordania
+-122.419415,37.774929,"San Francisco",2022,Estados Unidos
+-122.330062,47.603832,"Seattle",2023,Estados Unidos
+-122.674195,45.520247,"Portland",2023,Estados Unidos
+-122.419415,37.774929,"San Francisco",2023,Estados Unidos
+-74.006015,40.712728,"New York",2023,Estados Unidos
+-0.1278,51.5074,London,,Reino Unido
+-2.2426,53.4808,Manchester,,Reino Unido
+-3.1883,55.9533,Edinburgh,,Reino Unido
+-4.2518,55.8642,Glasgow,,Reino Unido
+-4.2247,57.4778,Inverness,,Reino Unido
+4.9041,52.3676,Amsterdam,,Países Bajos
+-75.6972,45.4215,Ottawa,,Canadá
+2.3522,48.8566,Paris,,Francia
+24.9384,60.1699,Helsinki,,Finlandia
+139.6917,35.6895,Tokyo,,Japón
+135.7681,35.0116,Kyoto,,Japón
+135.805,34.6851,Nara,,Japón
+12.4964,41.9028,Rome,,Italia
+14.2681,40.8518,Naples,,Italia
+11.2558,43.7696,Florence,,Italia
+10.4017,43.7228,Pisa,,Italia
+8.6821,50.1109,Frankfurt,,Alemania
+13.405,52.52,Berlin,,Alemania
+12.3731,51.3397,Leipzig,,Alemania
+9.1829,48.7758,Stuttgart,,Alemania
+11.582,48.1351,Munich,,Alemania
+6.9603,50.9375,Cologne,,Alemania
+9.2109,49.1427,Heilbronn,,Alemania
+9.226,49.1905,Neckarsulm,,Alemania
+116.4074,39.9042,Beijing,,China
+108.9398,34.3416,Xi'an,,China
+121.4737,31.2304,Shanghai,,China
+135.5023,34.6937,Osaka,,Japón
+55.296249,25.276987,Dubai,,Emiratos Árabes Unidos
+16.3738,48.2082,Vienna,,Austria
+19.0402,47.4979,Budapest,,Hungría
+14.4378,50.0755,Prague,,Chequia
+3.0031,43.1843,Narbonne,,Francia
+2.7917,41.6762,Blanes,,España
+9.19,45.4642,Milan,,Italia
+-70.6693,-33.4489,Santiago,,Chile
+-8.4115,43.3623,A Coruña,,España
+-71.55,-33.0153,Viña del Mar,,Chile
+-72.9369,-41.4717,Puerto Montt,,Chile
+-70.9171,-53.1638,Punta Arenas,,Chile
+-72.5033,-51.7333,Puerto Natales,,Chile
+-9.1393,38.7223,"Lisboa",,Portugal
+-8.611,41.1496,"Oporto",,Portugal
+-8.4196,40.2033,"Coimbra",,Portugal
+-9.3976,38.7059,"Estoril",,Portugal
+-77.0369,38.9072,"Washington D.C.",,Estados Unidos
+-56.1645,-34.9011,"Montevideo",,Uruguay
+-3.679536,42.343992,"Burgos",,España
+-69.716667,48.143333,"Tadoussac",,Canadá
+-5.986944,37.389092,"Sevilla",,España
+-4.53292,42.00969,"Palencia",,España
+-5.57175,42.598726,"Leon",,España
+-1.980812,43.318334,"San Sebastian",,España
+-8.64435,42.433657,"Pontevedra",,España
+-7.556029,43.009629,"Lugo",,España
+-4.728562,41.652252,"Valladolid",,España
+-3.689396,41.672921,"Aranda de Duero",,España
+-1.130654,37.99224,"Murcia",,España
+-3.137999,37.299999,"Guadix",,España
+-0.490686,38.34517,"Alicante",,España
+-0.565048,38.192019,"Santa Pola",,España
+-0.8656056,37.7432859,"Los Alcázares",,España
+0.100972,38.84079,"Denia",,España
+1.805982,41.237066,"Sitges",,España
+-115.1398,36.1699,"Las Vegas",2025,Estados Unidos
+-103.2678,20.2994,"Ajijic",2025,México
+-105.2253,20.6534,"Puerto Vallarta",2025,México
+-123.1207,49.2827,"Vancouver",2025,Canadá
+-157.8583,21.3069,"Honolulu",2025,Estados Unidos
+-123.6,47.8,"Península Olímpica",2025,Estados Unidos
+-111.4577,36.9147,"Page",2025,Estados Unidos
+-110.1,36.98,"Monument Valley",2025,Estados Unidos

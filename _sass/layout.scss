@@ -987,7 +987,7 @@
 
 .stats {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   border-top: 1px solid $text-color;
   border-bottom: 1px solid $text-color;
 
@@ -1036,7 +1036,22 @@
     border-bottom: 1px solid $line;
   }
 
+  li.has-photo { grid-template-columns: 56px minmax(0, 1fr) auto; align-items: center; }
+
   .mono { font-size: 12px; }
+}
+
+.hito-photo {
+  display: block;
+  width: 120px;
+  padding: 6px 6px 18px;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .18), 0 6px 14px rgba(0, 0, 0, .10);
+  transform: rotate(var(--rot, 2deg));
+  transition: transform .2s ease;
+
+  img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+  &:hover { transform: rotate(0deg) scale(1.06); }
 }
 
 .more > .hito:first-of-type { margin-top: 24px; }
