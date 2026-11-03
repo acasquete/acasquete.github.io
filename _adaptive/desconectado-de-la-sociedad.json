@@ -1,0 +1,157 @@
+{
+ "version": 1,
+ "slug": "desconectado-de-la-sociedad",
+ "post": "_posts/es/2024/2024-10-29-desconectado-de-la-sociedad.md",
+ "generator": {
+  "provider": "file",
+  "model": "file",
+  "prompt_version": 2,
+  "generated_at": "2026-11-03T21:30:04Z"
+ },
+ "blocks": [
+  {
+   "tag": "p",
+   "html": "Gregor Samsa se despierta una mañana convertido en un insecto enorme, y lo primero que le preocupa no es eso. Le preocupa que ha perdido el tren de las cinco y que va a llegar tarde al trabajo. Es la primera vez que leo <em>La metamorfosis</em>, y esa escena me pareció lo más inquietante del libro: un hombre que ya no tiene cuerpo humano y sigue pensando como un empleado.",
+   "text": "Gregor Samsa se despierta una mañana convertido en un insecto enorme, y lo primero que le preocupa no es eso. Le preocupa que ha perdido el tren de las cinco y que va a llegar tarde al trabajo. Es la primera vez que leo La metamorfosis, y esa escena me pareció lo más inquietante del libro: un hombre que ya no tiene cuerpo humano y sigue pensando como un empleado.",
+   "h": "f7dd841d",
+   "k": "f7dd841d.0",
+   "id": "b-0t0w48",
+   "levels": {
+    "1": "Gregor Samsa se despierta convertido en un insecto y solo le preocupa llegar tarde al trabajo.",
+    "2": "Gregor Samsa se despierta convertido en un insecto, y lo que le preocupa es llegar tarde al trabajo. Es la primera vez que leo <em>La metamorfosis</em>.",
+    "3": "Gregor Samsa se despierta convertido en un insecto enorme, y lo primero que le preocupa es que ha perdido el tren de las cinco y va a llegar tarde al trabajo. Es la primera vez que leo <em>La metamorfosis</em>, y me inquietó eso: un hombre sin cuerpo humano que sigue pensando como un empleado.",
+    "4": "Gregor Samsa se despierta convertido en un insecto enorme, y lo primero que le preocupa es que ha perdido el tren de las cinco y va a llegar tarde al trabajo. Es la primera vez que leo <em>La metamorfosis</em>, y eso me pareció lo más inquietante: un hombre sin cuerpo humano que sigue pensando como un empleado."
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "Gregor es viajante de comercio. Lleva años manteniendo a sus padres y a su hermana, pagando las deudas del padre y soñando con mandar a Grete al conservatorio a estudiar violín. Esa misma mañana, el apoderado de la empresa se presenta en casa para pedir explicaciones por el retraso. Nadie pregunta qué le pasa a Gregor. Preguntan por qué no está trabajando.",
+   "text": "Gregor es viajante de comercio. Lleva años manteniendo a sus padres y a su hermana, pagando las deudas del padre y soñando con mandar a Grete al conservatorio a estudiar violín. Esa misma mañana, el apoderado de la empresa se presenta en casa para pedir explicaciones por el retraso. Nadie pregunta qué le pasa a Gregor. Preguntan por qué no está trabajando.",
+   "h": "3e584ebc",
+   "k": "3e584ebc.0",
+   "id": "b-i74ndy",
+   "levels": {
+    "1": "",
+    "2": "",
+    "3": "",
+    "4": "Gregor es viajante de comercio. Lleva años manteniendo a sus padres y a su hermana y pagando las deudas del padre. Esa mañana, el apoderado de la empresa se presenta en casa. Nadie pregunta qué le pasa a Gregor; preguntan por qué no está trabajando."
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "Kafka publicó el relato en 1915 y pidió a su editor, Kurt Wolff, que en la cubierta no se dibujara el insecto. Al leerlo se entiende por qué. Lo que importa no es cómo es Gregor, sino cómo lo miran los demás. La transformación se da casi por hecha desde la primera línea; lo que de verdad cambia a lo largo del libro es la familia.",
+   "text": "Kafka publicó el relato en 1915 y pidió a su editor, Kurt Wolff, que en la cubierta no se dibujara el insecto. Al leerlo se entiende por qué. Lo que importa no es cómo es Gregor, sino cómo lo miran los demás. La transformación se da casi por hecha desde la primera línea; lo que de verdad cambia a lo largo del libro es la familia.",
+   "h": "a9499e4d",
+   "k": "a9499e4d.0",
+   "id": "b-s31zcz",
+   "levels": {
+    "1": "",
+    "2": "",
+    "3": "",
+    "4": "Kafka publicó el relato en 1915 y pidió a su editor, Kurt Wolff, que no se dibujara el insecto en la cubierta. Lo que importa no es cómo es Gregor, sino cómo lo miran los demás: lo que de verdad cambia es la familia."
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "Al principio, Grete le lleva comida y limpia su cuarto. La madre se desmaya la primera vez que lo ve. El padre lo devuelve a su habitación a empujones y, más adelante, le tira manzanas. Una se le queda clavada en la espalda y nadie se la quita. Gregor la lleva encima, pudriéndose, durante más de un mes.",
+   "text": "Al principio, Grete le lleva comida y limpia su cuarto. La madre se desmaya la primera vez que lo ve. El padre lo devuelve a su habitación a empujones y, más adelante, le tira manzanas. Una se le queda clavada en la espalda y nadie se la quita. Gregor la lleva encima, pudriéndose, durante más de un mes.",
+   "h": "e7a294f5",
+   "k": "e7a294f5.0",
+   "id": "b-bgp3gd",
+   "levels": {
+    "1": "",
+    "2": "",
+    "3": "Grete le lleva comida, la madre se desmaya al verlo y el padre le tira manzanas. Una se le queda clavada en la espalda y nadie se la quita.",
+    "4": "Al principio, Grete le lleva comida y limpia su cuarto. La madre se desmaya al verlo. El padre lo devuelve a empujones a su habitación y, más adelante, le tira manzanas. Una se le queda clavada en la espalda y se pudre allí más de un mes."
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "Lo más incómodo es lo que pasa en paralelo. Con Gregor encerrado, la familia empieza a trabajar. El padre, al que todos creían acabado, se pone un uniforme de ordenanza de banco. La madre cose ropa para fuera. Grete entra de dependienta. Podían hacerlo desde el principio; simplemente no lo necesitaban, porque ya trabajaba él.",
+   "text": "Lo más incómodo es lo que pasa en paralelo. Con Gregor encerrado, la familia empieza a trabajar. El padre, al que todos creían acabado, se pone un uniforme de ordenanza de banco. La madre cose ropa para fuera. Grete entra de dependienta. Podían hacerlo desde el principio; simplemente no lo necesitaban, porque ya trabajaba él.",
+   "h": "d7aa78d6",
+   "k": "d7aa78d6.0",
+   "id": "b-6ecl4r",
+   "levels": {
+    "1": "",
+    "2": "Con Gregor encerrado, la familia empieza a trabajar. Podían hacerlo desde el principio; no lo necesitaban, porque ya trabajaba él.",
+    "3": "Con Gregor encerrado, la familia empieza a trabajar: el padre de ordenanza de banco, la madre cosiendo y Grete de dependienta. Podían hacerlo desde el principio; no lo necesitaban, porque ya trabajaba él.",
+    "4": "Con Gregor encerrado, la familia empieza a trabajar. El padre, al que todos creían acabado, se pone un uniforme de ordenanza de banco; la madre cose para fuera y Grete entra de dependienta. Podían hacerlo desde el principio; no lo necesitaban, porque ya trabajaba él."
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "Toman huéspedes para pagar el alquiler, y una noche Grete toca el violín para ellos. Gregor sale arrastrándose de su cuarto, atraído por la música. Los huéspedes lo ven, se indignan y anuncian que se van sin pagar nada. Esa noche es Grete, la que más lo había cuidado, la que dice que tienen que deshacerse de él.",
+   "text": "Toman huéspedes para pagar el alquiler, y una noche Grete toca el violín para ellos. Gregor sale arrastrándose de su cuarto, atraído por la música. Los huéspedes lo ven, se indignan y anuncian que se van sin pagar nada. Esa noche es Grete, la que más lo había cuidado, la que dice que tienen que deshacerse de él.",
+   "h": "05ad7688",
+   "k": "05ad7688.0",
+   "id": "b-y5q9ro",
+   "levels": {
+    "1": "",
+    "2": "Una noche, Grete, la que más lo había cuidado, dice que tienen que deshacerse de él.",
+    "3": "Una noche Grete toca el violín para unos huéspedes, Gregor sale atraído por la música y los huéspedes se van indignados. Entonces Grete, la que más lo había cuidado, dice que tienen que deshacerse de él.",
+    "4": "Toman huéspedes para pagar el alquiler, y una noche Grete toca el violín para ellos. Gregor sale atraído por la música, los huéspedes se indignan y anuncian que se van sin pagar. Esa noche es Grete, la que más lo había cuidado, la que dice que tienen que deshacerse de él."
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "Gregor muere esa madrugada. Por la mañana, la familia se toma el día libre y sale en tranvía al campo. Hablan del futuro, de mudarse a un piso más pequeño, y los padres se dan cuenta de que Grete se ha convertido en una joven guapa y de que pronto habrá que buscarle marido. El libro termina con alivio. Ese final me dejó más frío que cualquier descripción del insecto.",
+   "text": "Gregor muere esa madrugada. Por la mañana, la familia se toma el día libre y sale en tranvía al campo. Hablan del futuro, de mudarse a un piso más pequeño, y los padres se dan cuenta de que Grete se ha convertido en una joven guapa y de que pronto habrá que buscarle marido. El libro termina con alivio. Ese final me dejó más frío que cualquier descripción del insecto.",
+   "h": "77736cb8",
+   "k": "77736cb8.0",
+   "id": "b-jjwrvd",
+   "levels": {
+    "1": "",
+    "2": "",
+    "3": "Gregor muere esa madrugada. Por la mañana la familia sale en tranvía al campo, habla del futuro y piensa en buscarle marido a Grete. El libro termina con alivio, y ese final me dejó más frío que el insecto.",
+    "4": "Gregor muere esa madrugada. Por la mañana, la familia sale en tranvía al campo, habla de mudarse a un piso más pequeño y los padres ven que pronto habrá que buscarle marido a Grete. El libro termina con alivio, y ese final me dejó más frío que cualquier descripción del insecto."
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "Esta lectura me ha hecho pensar en las relaciones que mantenemos con nuestros amigos y nuestra familia. En cuánto de lo que sentimos por alguien depende de lo que esa persona hace por nosotros, y en qué pasa cuando deja de hacerlo. Gregor sigue preocupándose por los suyos hasta el último día; ellos dejan de verlo en cuanto deja de ser útil.",
+   "text": "Esta lectura me ha hecho pensar en las relaciones que mantenemos con nuestros amigos y nuestra familia. En cuánto de lo que sentimos por alguien depende de lo que esa persona hace por nosotros, y en qué pasa cuando deja de hacerlo. Gregor sigue preocupándose por los suyos hasta el último día; ellos dejan de verlo en cuanto deja de ser útil.",
+   "h": "a24803e1",
+   "k": "a24803e1.0",
+   "id": "b-5wbu2h",
+   "levels": {
+    "1": "",
+    "2": "Me ha hecho pensar en las relaciones con amigos y familia: en cuánto de lo que sentimos por alguien depende de lo que hace por nosotros.",
+    "3": "Esta lectura me ha hecho pensar en las relaciones con nuestros amigos y nuestra familia: en cuánto de lo que sentimos por alguien depende de lo que hace por nosotros. Gregor se preocupa por los suyos hasta el final; ellos dejan de verlo en cuanto deja de ser útil.",
+    "4": "Esta lectura me ha hecho pensar en las relaciones con nuestros amigos y nuestra familia: en cuánto de lo que sentimos por alguien depende de lo que hace por nosotros, y en qué pasa cuando deja de hacerlo. Gregor se preocupa por los suyos hasta el final; ellos dejan de verlo en cuanto deja de ser útil."
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "Hace más de un siglo, Kafka retrató algo que sigue ahí: una sociedad que mide el valor de las personas por su productividad. Quizá no nos despertemos convertidos en insectos, pero todos conocemos a alguien que, cuando dejó de rendir, pasó a ser una carga. Y quizá también hemos sido, alguna vez, la familia Samsa.",
+   "text": "Hace más de un siglo, Kafka retrató algo que sigue ahí: una sociedad que mide el valor de las personas por su productividad. Quizá no nos despertemos convertidos en insectos, pero todos conocemos a alguien que, cuando dejó de rendir, pasó a ser una carga. Y quizá también hemos sido, alguna vez, la familia Samsa.",
+   "h": "7775ef69",
+   "k": "7775ef69.0",
+   "id": "b-xbz0tq",
+   "levels": {
+    "1": "Su familia deja de verlo en cuanto deja de ser útil: Kafka retrató una sociedad que mide el valor de las personas por su productividad.",
+    "2": "Kafka retrató una sociedad que mide el valor de las personas por su productividad. Y quizá también hemos sido, alguna vez, la familia Samsa.",
+    "3": "Hace más de un siglo, Kafka retrató una sociedad que mide el valor de las personas por su productividad. Todos conocemos a alguien que pasó a ser una carga cuando dejó de rendir. Y quizá también hemos sido, alguna vez, la familia Samsa.",
+    "4": "Hace más de un siglo, Kafka retrató algo que sigue ahí: una sociedad que mide el valor de las personas por su productividad. Todos conocemos a alguien que, cuando dejó de rendir, pasó a ser una carga. Y quizá también hemos sido, alguna vez, la familia Samsa."
+   },
+   "errors": {},
+   "model": "file"
+  }
+ ]
+}

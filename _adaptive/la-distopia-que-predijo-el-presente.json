@@ -1,0 +1,141 @@
+{
+ "version": 1,
+ "slug": "la-distopia-que-predijo-el-presente",
+ "post": "_posts/es/2024/2024-10-22-la-distopia-que-predijo-el-presente.md",
+ "generator": {
+  "provider": "file",
+  "model": "file",
+  "prompt_version": 2,
+  "generated_at": "2026-11-03T21:29:54Z"
+ },
+ "blocks": [
+  {
+   "tag": "p",
+   "html": "<em>Un mundo feliz</em> empieza en una fábrica. No de coches, sino de personas: el Centro de Incubación y Condicionamiento de la Central de Londres, donde un director enseña a unos estudiantes cómo se fabrican seres humanos en serie. Huxley lo escribió en 1932. Lo he vuelto a escuchar, esta vez en audiolibro mientras entrenaba, y me ha impresionado tanto como la primera vez que lo leí.",
+   "text": "Un mundo feliz empieza en una fábrica. No de coches, sino de personas: el Centro de Incubación y Condicionamiento de la Central de Londres, donde un director enseña a unos estudiantes cómo se fabrican seres humanos en serie. Huxley lo escribió en 1932. Lo he vuelto a escuchar, esta vez en audiolibro mientras entrenaba, y me ha impresionado tanto como la primera vez que lo leí.",
+   "h": "4d31a9f7",
+   "k": "4d31a9f7.0",
+   "id": "b-u4bbvk",
+   "levels": {
+    "1": "He vuelto a escuchar <em>Un mundo feliz</em>, que Huxley escribió en 1932: una sociedad que fabrica personas en serie.",
+    "4": "<em>Un mundo feliz</em> empieza en una fábrica, pero de personas: el Centro de Incubación y Condicionamiento de la Central de Londres, donde un director enseña a unos estudiantes cómo se fabrican seres humanos en serie. Huxley lo escribió en 1932. Lo he vuelto a escuchar, en audiolibro mientras entrenaba, y me ha impresionado tanto como la primera vez.",
+    "2": "<em>Un mundo feliz</em>, que Huxley escribió en 1932, empieza en una fábrica de personas. Lo he vuelto a escuchar en audiolibro y me ha impresionado tanto como la primera vez.",
+    "3": "<em>Un mundo feliz</em> empieza en una fábrica de personas, donde un director enseña a unos estudiantes cómo se fabrican seres humanos en serie. Huxley lo escribió en 1932. Lo he vuelto a escuchar en audiolibro mientras entrenaba y me ha impresionado tanto como la primera vez."
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "Siempre me ha sorprendido la gente capaz de anticipar el futuro. Clarke, Asimov o Verne escribieron sobre cosas que parecían imposibles y que acabaron llegando. Huxley juega en esa liga, pero con una diferencia: lo que imaginó no es una máquina, sino una forma de vivir.",
+   "text": "Siempre me ha sorprendido la gente capaz de anticipar el futuro. Clarke, Asimov o Verne escribieron sobre cosas que parecían imposibles y que acabaron llegando. Huxley juega en esa liga, pero con una diferencia: lo que imaginó no es una máquina, sino una forma de vivir.",
+   "h": "6d9946f3",
+   "k": "6d9946f3.0",
+   "id": "b-9cdcmb",
+   "levels": {
+    "1": "",
+    "4": "Siempre me ha sorprendido la gente capaz de anticipar el futuro, como Clarke, Asimov o Verne. Huxley juega en esa liga, con una diferencia: lo que imaginó no es una máquina, sino una forma de vivir.",
+    "2": "",
+    "3": ""
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "La historia transcurre en el año 632 después de Ford. Ford ocupa el lugar de Dios, la cadena de montaje es el modelo de todo y la estabilidad es la única virtud. De un solo óvulo, gracias al proceso Bokanovsky, salen hasta noventa y seis gemelos idénticos, destinados desde el frasco a una casta: alfas, betas, gammas, deltas y epsilones. Después, mientras duermen, una voz les repite las mismas frases hasta que forman parte de ellos. Es la hipnopedia. Nadie tiene que obligarlos a nada, porque nadie quiere otra cosa.",
+   "text": "La historia transcurre en el año 632 después de Ford. Ford ocupa el lugar de Dios, la cadena de montaje es el modelo de todo y la estabilidad es la única virtud. De un solo óvulo, gracias al proceso Bokanovsky, salen hasta noventa y seis gemelos idénticos, destinados desde el frasco a una casta: alfas, betas, gammas, deltas y epsilones. Después, mientras duermen, una voz les repite las mismas frases hasta que forman parte de ellos. Es la hipnopedia. Nadie tiene que obligarlos a nada, porque nadie quiere otra cosa.",
+   "h": "2f385e0d",
+   "k": "2f385e0d.0",
+   "id": "b-x3jt3y",
+   "levels": {
+    "1": "",
+    "4": "La historia transcurre en el año 632 después de Ford. Ford ocupa el lugar de Dios y la estabilidad es la única virtud. Con el proceso Bokanovsky, de un solo óvulo salen hasta noventa y seis gemelos idénticos, destinados desde el frasco a una casta. Mientras duermen, una voz les repite las mismas frases: es la hipnopedia. Nadie tiene que obligarlos a nada, porque nadie quiere otra cosa.",
+    "2": "En ese mundo, las personas se fabrican en serie y se condicionan mientras duermen. Nadie quiere otra cosa.",
+    "3": "La historia transcurre en el año 632 después de Ford, donde la estabilidad es la única virtud. Con el proceso Bokanovsky, de un óvulo salen decenas de gemelos destinados a una casta, y la hipnopedia les repite frases mientras duermen. Nadie tiene que obligarlos a nada, porque nadie quiere otra cosa."
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "Y si algo duele, está el <em>soma</em>, una droga sin efectos secundarios que quita cualquier malestar. No hay familias, ni arte que inquiete, ni soledad: hay consumo, deporte, sexo sin compromiso y los <em>feelies</em>, un cine que se siente con el cuerpo.",
+   "text": "Y si algo duele, está el soma, una droga sin efectos secundarios que quita cualquier malestar. No hay familias, ni arte que inquiete, ni soledad: hay consumo, deporte, sexo sin compromiso y los feelies, un cine que se siente con el cuerpo.",
+   "h": "ade33000",
+   "k": "ade33000.0",
+   "id": "b-an096v",
+   "levels": {
+    "1": "",
+    "4": "Y si algo duele, está el <em>soma</em>, una droga que quita cualquier malestar. No hay familias ni soledad: hay consumo, deporte, sexo sin compromiso y los <em>feelies</em>, un cine que se siente con el cuerpo.",
+    "2": "",
+    "3": "Y si algo duele, está el <em>soma</em>, una droga que quita cualquier malestar."
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "<strong>Bernard Marx</strong> es un alfa que no encaja, demasiado bajo para su casta y demasiado consciente de sí mismo. En un viaje a una reserva de salvajes, donde la gente aún nace de madres y envejece, encuentra a <strong>John</strong>, al que todos llaman el Salvaje. John ha crecido leyendo a Shakespeare y llega a Londres convencido de que va a conocer un mundo maravilloso. Lo que encuentra es un lugar donde nadie sufre, pero tampoco nadie siente nada de verdad.",
+   "text": "Bernard Marx es un alfa que no encaja, demasiado bajo para su casta y demasiado consciente de sí mismo. En un viaje a una reserva de salvajes, donde la gente aún nace de madres y envejece, encuentra a John, al que todos llaman el Salvaje. John ha crecido leyendo a Shakespeare y llega a Londres convencido de que va a conocer un mundo maravilloso. Lo que encuentra es un lugar donde nadie sufre, pero tampoco nadie siente nada de verdad.",
+   "h": "9f3fea33",
+   "k": "9f3fea33.0",
+   "id": "b-stivj8",
+   "levels": {
+    "1": "",
+    "4": "<strong>Bernard Marx</strong> es un alfa que no encaja, demasiado bajo para su casta. En una reserva de salvajes, donde la gente aún nace de madres, encuentra a <strong>John</strong>, el Salvaje, que ha crecido leyendo a Shakespeare. John llega a Londres esperando un mundo maravilloso y encuentra un lugar donde nadie sufre, pero tampoco nadie siente nada de verdad.",
+    "2": "<strong>John</strong>, el Salvaje, ha crecido fuera de ese mundo y descubre que en él nadie sufre, pero nadie siente nada de verdad.",
+    "3": "<strong>Bernard Marx</strong>, un alfa que no encaja, encuentra en una reserva a <strong>John</strong>, el Salvaje, que ha crecido leyendo a Shakespeare. En Londres, John descubre un lugar donde nadie sufre, pero tampoco nadie siente nada de verdad."
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "El momento central del libro es su conversación con Mustafá Mond, uno de los interventores mundiales. Mond no es un villano de opereta: sabe perfectamente lo que se ha sacrificado y lo defiende con argumentos. La verdad, la belleza y la libertad, dice, son incompatibles con la felicidad estable. John responde que prefiere la incomodidad, la poesía, el peligro y el pecado, y acaba reclamando el derecho a ser desgraciado. El final, en un faro abandonado y rodeado de curiosos, es de los más duros que he leído.",
+   "text": "El momento central del libro es su conversación con Mustafá Mond, uno de los interventores mundiales. Mond no es un villano de opereta: sabe perfectamente lo que se ha sacrificado y lo defiende con argumentos. La verdad, la belleza y la libertad, dice, son incompatibles con la felicidad estable. John responde que prefiere la incomodidad, la poesía, el peligro y el pecado, y acaba reclamando el derecho a ser desgraciado. El final, en un faro abandonado y rodeado de curiosos, es de los más duros que he leído.",
+   "h": "aab952d8",
+   "k": "aab952d8.0",
+   "id": "b-79cofw",
+   "levels": {
+    "1": "",
+    "4": "El momento central es su conversación con Mustafá Mond, uno de los interventores mundiales. Mond no es un villano de opereta: sabe lo que se ha sacrificado y lo defiende. La verdad, la belleza y la libertad son incompatibles con la felicidad estable. John prefiere la incomodidad, la poesía, el peligro y el pecado, y reclama el derecho a ser desgraciado. El final, en un faro abandonado, es de los más duros que he leído.",
+    "2": "John prefiere la poesía y el peligro a la felicidad estable, y reclama el derecho a ser desgraciado.",
+    "3": "El centro del libro es su conversación con Mustafá Mond, para quien la verdad y la libertad son incompatibles con la felicidad estable. John prefiere la poesía y el peligro, y reclama el derecho a ser desgraciado. El final es de los más duros que he leído."
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "Lo inquietante no es que Huxley acertara en los detalles, sino en el mecanismo. En <em>1984</em>, Orwell imaginó un poder que vigila y castiga. Huxley imaginó uno que no lo necesita, porque nos da exactamente lo que queremos. Cuando pienso en algoritmos que deciden qué noticias leemos, en el entretenimiento diseñado para no soltarnos, en el consumo como respuesta a todo o en debates como el de <a href=\"https://www.broadinstitute.org/what-broad/areas-focus/project-spotlight/questions-and-answers-about-crispr\">CRISPR</a> y la edición genética, me cuesta no ver piezas sueltas de aquel mundo.",
+   "text": "Lo inquietante no es que Huxley acertara en los detalles, sino en el mecanismo. En 1984, Orwell imaginó un poder que vigila y castiga. Huxley imaginó uno que no lo necesita, porque nos da exactamente lo que queremos. Cuando pienso en algoritmos que deciden qué noticias leemos, en el entretenimiento diseñado para no soltarnos, en el consumo como respuesta a todo o en debates como el de CRISPR y la edición genética, me cuesta no ver piezas sueltas de aquel mundo.",
+   "h": "db7ba38b",
+   "k": "db7ba38b.0",
+   "id": "b-sd4cjr",
+   "levels": {
+    "1": "Huxley acertó en el mecanismo: un poder que no necesita vigilar, porque nos da exactamente lo que queremos.",
+    "4": "Lo inquietante no es que Huxley acertara en los detalles, sino en el mecanismo. En <em>1984</em>, Orwell imaginó un poder que vigila y castiga. Huxley imaginó uno que no lo necesita, porque nos da lo que queremos. Los algoritmos que deciden qué leemos, el entretenimiento diseñado para no soltarnos, el consumo como respuesta a todo o el debate sobre <a href=\"https://www.broadinstitute.org/what-broad/areas-focus/project-spotlight/questions-and-answers-about-crispr\">CRISPR</a> son piezas sueltas de aquel mundo.",
+    "2": "Lo inquietante es que Huxley acertó en el mecanismo: un poder que no vigila ni castiga, porque nos da exactamente lo que queremos.",
+    "3": "Lo inquietante es que Huxley acertó en el mecanismo. Orwell, en <em>1984</em>, imaginó un poder que vigila y castiga; Huxley, uno que nos da exactamente lo que queremos. Los algoritmos, el entretenimiento que no nos suelta o la edición genética son piezas sueltas de aquel mundo."
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "No vivimos en el mundo que imaginó Huxley, ni mucho menos. Pero el libro deja una pregunta incómoda: cuánta libertad estamos dispuestos a cambiar por estar cómodos. Mond lo tenía claro. John también. Lo difícil es saber de qué lado estaríamos nosotros.",
+   "text": "No vivimos en el mundo que imaginó Huxley, ni mucho menos. Pero el libro deja una pregunta incómoda: cuánta libertad estamos dispuestos a cambiar por estar cómodos. Mond lo tenía claro. John también. Lo difícil es saber de qué lado estaríamos nosotros.",
+   "h": "c990a1e0",
+   "k": "c990a1e0.0",
+   "id": "b-yukto9",
+   "levels": {
+    "1": "La pregunta que deja es cuánta libertad cambiaríamos por estar cómodos.",
+    "4": "No vivimos en el mundo que imaginó Huxley, ni mucho menos. Pero el libro deja una pregunta incómoda: cuánta libertad estamos dispuestos a cambiar por estar cómodos. Mond lo tenía claro, y John también. Lo difícil es saber de qué lado estaríamos nosotros.",
+    "2": "No vivimos en ese mundo, pero el libro deja una pregunta incómoda: cuánta libertad estamos dispuestos a cambiar por estar cómodos.",
+    "3": "No vivimos en el mundo de Huxley, pero el libro deja una pregunta incómoda: cuánta libertad estamos dispuestos a cambiar por estar cómodos. Lo difícil es saber de qué lado estaríamos."
+   },
+   "errors": {},
+   "model": "file"
+  }
+ ]
+}

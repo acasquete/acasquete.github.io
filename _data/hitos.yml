@@ -297,11 +297,14 @@
     note: Administración de redes de área local.
 - year: 1996
   items:
-  - label: Termino el instituto en el IES Lluís Vives
   - label: El servicio militar en Jaca (Huesca)
+    month: May
     image: "/img/emmoe-nevada.jpg"
 - year: 1995
   items:
+  - label: Termino el COU en el IES Lluís Vives
+    month: Jun
+    note: Párvulos, EGB, BUP y COU, catorce años en el mismo centro.
   - label: El concurso Pixel a Pixel de PC Manía
     image: "/img/cama.jpg"
 - year: 1994
@@ -318,6 +321,11 @@
   items:
   - label: 'Ready: primer ordenador'
     image: "/img/about/amstrad6128-3.jpeg"
+- year: 1981
+  items:
+  - label: Empiezo párvulos en el Lluís Vives
+    month: Sep
+    image: "/img/ies-lluis-vives.jpg"
 - year: 1977
   items:
   - label: Hello, world
