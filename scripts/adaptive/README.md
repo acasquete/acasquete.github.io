@@ -4,12 +4,15 @@ Lets a reader change how deep an article reads: for the whole article (header ca
 
 | Reader level | Manifest variant | Target size | What it does |
 |---|---|---|---|
-| Sencillo | `1` | ≈8-10% of the words | near-one-liners: each kept block is one short sentence stating the concept; everything else is **omitted**; no images, code or tables |
-| Esencial (default) | `2` | ≈45% | the thread of the argument; blocks may be omitted; only the first image |
-| Detallado | `3` | ≈75% | almost everything, without repetition; never omits a block |
+| Resumen | `1` | ≈5% of the words (about a minute) | the opening and the 3-5 key ideas in a few blocks; everything else is **omitted**; no headings, images, code or tables |
+| Sencillo | `2` | ≈20% | the article told briefly and plainly: opening, each main idea and the conclusion; no images, code or tables |
+| Esencial (default) | `3` | ≈45% | the thread of the argument; blocks may be omitted; only the first image |
+| Detallado | `4` | ≈75% | almost everything, without repetition; never omits a block |
 | Original | (none) | 100% | the author's exact text |
 
-An empty string (`""`) as a variant means "omit this block at this level" (levels 1 and 2 only). Headings whose section ends up empty are hidden too. Condensing is allowed, inventing is not: everything in a variant (figures, links, inline code, quotes) must exist in the original. Reading time per level is computed in the browser from the visible text (same formula as `_includes/read-time.html`), so Sencillo shows far fewer minutes than Original. `generate.py` prints each level's share of the original words and the omitted-block counts after every run.
+An empty string (`""`) as a variant means "omit this block at this level" (levels 1-3). Headings whose section ends up empty are hidden too.
+
+**Coherence.** At every level, the blocks that remain must read as one complete text on their own: an opening that sets the context, every term introduced before it is used, the ideas linked, and the author's conclusion. That is why levels 1-3 are generated in a single call that sees the whole article (`generate_article`), while Detallado, which keeps every block, is generated block by block. Condensing is allowed, inventing is not: everything in a variant (figures, links, inline code, quotes) must exist in the original. Reading time per level is computed in the browser from the visible text (same formula as `_includes/read-time.html`), so Resumen and Sencillo show far fewer minutes than Original. `generate.py` prints each level's share of the original words and the omitted-block counts after every run.
 
 State: `globalLevel` (saved in `localStorage` as `acn-reading-depth`; default Esencial) and `overrides` (blockId → level, session only). Choosing the article's level in a paragraph removes its override; changing the global level clears all overrides.
 
@@ -40,7 +43,7 @@ bundle exec jekyll build              # a full build is needed once so the page 
 
 ## Regenerate when the original changes
 
-Run the same command. Only blocks whose text changed (or that failed before) are sent to the model; unchanged blocks keep their id and variants. `--force` regenerates everything; `--only-levels 1` (or `1,2`) regenerates just those levels and keeps the rest. The summary line reports blocks to generate / reused / orphaned.
+Run the same command. Only blocks whose text changed (or that failed before) are sent to the model; unchanged blocks keep their id and variants. `--force` regenerates everything; `--only-levels 1` (or `1,2,3`) regenerates just those levels and keeps the rest. The summary line reports blocks to generate / reused / orphaned.
 
 `python3 scripts/adaptive/generate.py <slug> --check` validates the stored adaptations against the current page (stale, missing, invalid, orphaned, manifest out of sync) with no API calls; exit code 1 if anything is wrong.
 
@@ -52,13 +55,13 @@ Credentials are read from environment variables only; never put keys in the repo
 |---|---|---|
 | Anthropic (default) | `--provider anthropic` | `ANTHROPIC_API_KEY`, optional `ADAPTIVE_MODEL` (default `claude-sonnet-5-5`), `ANTHROPIC_BASE_URL` |
 | OpenAI-compatible | `--provider openai` | `OPENAI_API_KEY`, `ADAPTIVE_MODEL` or `--model`, optional `OPENAI_BASE_URL` |
-| Hand-written / tests | `--provider file --variants-file f.json` | none; `f.json` is `{"<block index>": {"1": "<html>", "2": "<html>", "3": "<html>"}}` |
+| Hand-written / tests | `--provider file --variants-file f.json` | none; `f.json` is `{"<block index>": {"1": "<html>", ..., "4": "<html>"}}` |
 
 Generation is a manual step; it never runs during a normal Jekyll build.
 
 ## Validation (a variant that fails is not published)
 
-Each variant is checked against its original: only `a[href] em strong b i code kbd sup sub br`; no Markdown leftovers; links, inline code, numeric figures and quoted text must be a subset of the original's (nothing new, quotes verbatim); length between 0.04×/0.2×/0.45× (levels 1/2/3) and 1.2×–1.3× the original. On failure the model is asked once more for just the failing levels; if it still fails the level is omitted and the browser shows the original for that block. Errors are kept in `_adaptive/<slug>.json` (`errors`) and printed to stderr.
+Each variant is checked against its original: only `a[href] em strong b i code kbd sup sub br`; no Markdown leftovers; links, inline code, numeric figures and quoted text must be a subset of the original's (nothing new, quotes verbatim); length between 0.02×/0.05×/0.2×/0.45× (levels 1/2/3/4) and 1×/1×/1.2×/1.3× the original. On failure the model is asked once more (the whole-article pass regenerates the level as a whole, to keep it coherent); if it still fails the level is omitted and the browser shows the original for that block. Errors are kept in `_adaptive/<slug>.json` (`errors`) and printed to stderr.
 
 ## Turn it on / off
 

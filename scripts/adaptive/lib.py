@@ -11,9 +11,9 @@ import secrets
 import unicodedata
 from html.parser import HTMLParser
 
-LEVELS = (1, 2, 3)  # Sencillo, Esencial, Detallado; Original is always the author's text
-OMITTABLE = (1, 2)  # at these levels a block may be dropped entirely (empty string)
-MIN_WORDS = 25
+LEVELS = (1, 2, 3, 4)  # Resumen, Sencillo, Esencial, Detallado; Original is always the author's text
+OMITTABLE = (1, 2, 3)  # at these levels a block may be dropped entirely (empty string)
+MIN_WORDS = 1  # every paragraph counts: short ones carry the thread too
 
 VOID = {"br", "img", "hr", "input", "meta", "link", "source", "wbr", "col",
         "area", "base", "embed", "param", "track"}
@@ -28,6 +28,8 @@ EXCLUDED_ANCESTORS = {"blockquote", "pre", "table", "figure", "details",
                       "h4", "h5", "h6"}
 EXCLUDED_DIV_CLASSES = {"underreview", "video-embed", "highlight", "tags",
                         "highlighter-rouge", "footnotes"}
+# A paragraph that is only an emphasised line right after an image.
+CAPTION_RE = re.compile(r"^<em>(?:(?!</em>).)*</em>$", re.S)
 # What a generated variant may contain.
 ALLOWED_TAGS = {"a", "em", "strong", "b", "i", "code", "kbd", "sup", "sub", "br"}
 
@@ -182,9 +184,12 @@ class BlockExtractor(HTMLParser):
         text = normalize_text("".join(cand.text))
         if len(text.split()) < self.min_words:
             return
+        raw = normalize_text("".join(cand.raw))
+        if CAPTION_RE.match(raw):  # an image caption follows its image, it is not prose
+            return
         self.blocks.append({
             "tag": cand.tag,
-            "html": normalize_text("".join(cand.raw)),
+            "html": raw,
             "text": text,
         })
 
@@ -307,7 +312,7 @@ def numbers_of(text):
 
 
 # Length of a variant relative to its original block: (min, max).
-RATIO = {1: (0.02, 0.6), 2: (0.2, 1.2), 3: (0.45, 1.3)}
+RATIO = {1: (0.02, 1.0), 2: (0.05, 1.0), 3: (0.2, 1.2), 4: (0.45, 1.3)}
 
 
 def validate_variant(original_html, variant_html, level):

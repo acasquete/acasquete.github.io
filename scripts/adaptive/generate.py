@@ -27,24 +27,46 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import lib  # noqa: E402
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
-PROMPT_VERSION = 1
+PROMPT_VERSION = 2
 
 LEVEL_GUIDE = {
-    "1": "Sencillo (~8-10% del texto): casi sentencias. Cada bloque que mantengas es UNA frase corta (máx. ~25 palabras) que expresa el concepto, sin relleno, sin adjetivos ni ejemplos; todo lo demás se omite con \"\". No son frases sueltas: leídas seguidas forman un resumen que explica las ideas del artículo con palabras llanas.",
-    "2": "Esencial (~45% del texto): el hilo del argumento sin digresiones ni ejemplos secundarios. Puedes omitir con \"\" los párrafos prescindibles y condensar el resto.",
-    "3": "Detallado (~75% del texto): casi todo el contenido, quitando repeticiones y giros innecesarios. Normalmente conserva todos los bloques.",
+    "1": "Resumen (~5% del texto, un minuto de lectura): la entrada del artículo y sus 3-5 ideas clave en muy pocos bloques; el resto se omite con \"\". Es lo que leería alguien que solo quiere saber de qué va y qué concluye.",
+    "2": "Sencillo (~20% del texto): el artículo contado de forma breve y llana. Conserva la entrada, cada idea principal y el cierre en frases cortas; omite con \"\" ejemplos, detalles técnicos y párrafos secundarios.",
+    "3": "Esencial (~45% del texto): el hilo del argumento sin digresiones ni ejemplos secundarios. Puedes omitir con \"\" los párrafos prescindibles y condensar el resto.",
+    "4": "Detallado (~75% del texto): casi todo el contenido, quitando repeticiones y giros innecesarios. Conserva todos los bloques.",
 }
 
-SYSTEM = """Eres un editor que adapta la profundidad de textos de un blog personal sin cambiar su contenido ni inventar nada.
-Recibirás UN bloque (un párrafo o elemento de lista) y devolverás tres variantes de lectura: 1 (Sencillo, la más corta: casi una sentencia por idea), 2 (Esencial) y 3 (Detallado, la más cercana al original). El nivel 4 (Original) es el texto del autor y no se genera.
+# Levels that drop blocks are generated for the whole article in one call, so that
+# the blocks kept at each level read as one continuous text. Detallado keeps every
+# block and is generated block by block.
+ARTICLE_LEVELS = lib.OMITTABLE
 
-Reglas obligatorias:
-- Condensar es válido (omitir ideas secundarias, ejemplos, cifras o enlaces), pero no inventes información ni añadas afirmaciones que no estén en el original.
-- Todo lo que aparezca en una variante debe existir en el original: cifras, enlaces (mismo href), texto de <code> y citas entre comillas (idénticas).
+COHERENCE = """Coherencia (lo más importante): para cada nivel, al leer seguidos solo los bloques que conservas, el lector debe encontrar un texto completo y autónomo:
+- Empieza con una entrada que sitúe al lector (de qué trata, quién habla, por qué importa). Nunca empieces por la tesis sin contexto.
+- No uses un término, nombre propio o metáfora del artículo (por ejemplo, una palabra que el autor define más adelante) sin haberlo presentado antes en ese mismo nivel.
+- Las ideas se encadenan: si omites el párrafo que introducía algo, mueve la presentación al bloque que conservas.
+- Termina con la conclusión del autor.
+- Puedes reformular un bloque para que recoja también la idea de bloques vecinos omitidos, siempre que no inventes nada."""
+
+RULES = """Reglas obligatorias:
+- Condensar es válido (omitir ideas secundarias, ejemplos, cifras o enlaces), pero no inventes información ni añadas afirmaciones que no estén en el artículo.
+- Todo lo que aparezca en una variante debe existir en el bloque original: cifras, enlaces (mismo href), texto de <code> y citas entre comillas (idénticas).
 - Conserva la voz, la persona gramatical y el estilo del autor siempre que sea posible. Mismo idioma que el original.
-- Un nivel puede omitir el bloque entero devolviendo una cadena vacía "" (solo niveles 1 y 2). Los niveles más cortos omiten más.
-- Usa SOLO estas etiquetas HTML: a (solo href), em, strong, code, kbd, sup, sub, br. Nada de Markdown, atributos extra ni clases.
-- Responde únicamente con un objeto JSON con las claves "1", "2" y "3" cuyos valores son cadenas HTML. Sin texto adicional."""
+- Usa SOLO estas etiquetas HTML: a (solo href), em, strong, code, kbd, sup, sub, br. Nada de Markdown, atributos extra ni clases."""
+
+SYSTEM_ARTICLE = """Eres un editor que adapta la profundidad de los artículos de un blog personal sin cambiar su contenido ni inventar nada.
+Recibirás un artículo dividido en bloques numerados y devolverás, para cada bloque, sus variantes de los niveles %s. El Original es el texto del autor y no se genera. Un bloque se omite en un nivel devolviendo la cadena vacía "".
+
+%s
+
+%s
+- Responde únicamente con un objeto JSON {"<número de bloque>": {"<nivel>": "<html>"}} con todos los bloques y niveles pedidos. Sin texto adicional."""
+
+SYSTEM = """Eres un editor que adapta la profundidad de textos de un blog personal sin cambiar su contenido ni inventar nada.
+Recibirás UN bloque (un párrafo o elemento de lista) y devolverás su variante Detallada (nivel 4), la más cercana al original.
+
+%s
+- Responde únicamente con un objeto JSON {"4": "<html>"}. Sin texto adicional.""" % RULES
 
 
 # ----------------------------------------------------------------- helpers ---
@@ -103,12 +125,18 @@ def build_user_prompt(meta, blocks, i):
     b = blocks[i]
     prev_t = blocks[i - 1]["text"][:300] if i > 0 else "(inicio)"
     next_t = blocks[i + 1]["text"][:300] if i + 1 < len(blocks) else "(fin)"
-    guide = "\n".join("%s = %s" % (k, v) for k, v in LEVEL_GUIDE.items())
     return (
         "Artículo: %s\nDescripción: %s\n\nContexto (no lo reescribas):\n- Bloque anterior: %s\n- Bloque siguiente: %s\n\n"
-        "Niveles:\n%s\n\nBLOQUE ORIGINAL (HTML):\n%s\n"
-        % (meta.get("title", ""), meta.get("description", ""), prev_t, next_t, guide, b["html"])
+        "Nivel:\n4 = %s\n\nBLOQUE ORIGINAL (HTML):\n%s\n"
+        % (meta.get("title", ""), meta.get("description", ""), prev_t, next_t, LEVEL_GUIDE["4"], b["html"])
     )
+
+
+def build_article_prompt(meta, blocks, levels):
+    guide = "\n".join("%s = %s" % (l, LEVEL_GUIDE[l]) for l in levels)
+    body = "\n\n".join("[%d] <%s> %s" % (i, b["tag"], b["html"]) for i, b in enumerate(blocks))
+    return ("Artículo: %s\nDescripción: %s\n\nNiveles que debes generar:\n%s\n\nBLOQUES (HTML):\n%s\n"
+            % (meta.get("title", ""), meta.get("description", ""), guide, body))
 
 
 def _http_json(url, headers, payload, timeout=120):
@@ -183,6 +211,8 @@ class FileProvider:
         self.index = None
 
     def complete(self, system, user):
+        if self.index is None:  # whole-article call
+            return json.dumps(self.data, ensure_ascii=False)
         entry = self.data.get(str(self.index))
         if entry is None:
             raise RuntimeError("no entry for block %s in variants file" % self.index)
@@ -199,37 +229,88 @@ def make_provider(args):
 
 # -------------------------------------------------------------- generation ---
 
+def _store(b, lvl, value):
+    errs = lib.validate_variant(b["html"], value, int(lvl))
+    if errs:
+        b["errors"][lvl] = "; ".join(errs)
+        return b["errors"][lvl]
+    b["levels"][lvl] = value.strip()
+    b["errors"].pop(lvl, None)
+    return None
+
+
+def generate_article(provider, meta, blocks, levels, log):
+    """One call for the whole article so each short level reads as a continuous text.
+
+    A level missing for any block is regenerated for every block (a level is
+    coherent as a whole, not piecemeal). If it cannot be produced, the previous
+    variants are restored untouched.
+    """
+    levels = [l for l in levels if any(l not in b["levels"] for b in blocks)]
+    if not levels:
+        return
+    snapshot = [{l: b["levels"][l] for l in levels if l in b["levels"]} for b in blocks]
+    system = SYSTEM_ARTICLE % (", ".join(levels), COHERENCE, RULES)
+    prompt = build_article_prompt(meta, blocks, levels)
+    feedback = ""
+    for attempt in (1, 2):
+        for b in blocks:
+            for lvl in levels:
+                b["levels"].pop(lvl, None)
+        if isinstance(provider, FileProvider):
+            provider.index = None
+        try:
+            data = extract_json(provider.complete(system, prompt + feedback))
+        except Exception as e:
+            log("  article attempt %d failed: %s" % (attempt, e))
+            feedback = "\n\nLa respuesta anterior no fue un JSON válido. Devuelve solo el JSON."
+            continue
+        problems = []
+        for i, b in enumerate(blocks):
+            entry = data.get(str(i)) or {}
+            for lvl in levels:
+                err = _store(b, lvl, entry.get(lvl))
+                if err:
+                    problems.append("- bloque %d, nivel %s: %s" % (i, lvl, err))
+        if not problems:
+            return
+        log("  article attempt %d: %d invalid variant(s)" % (attempt, len(problems)))
+        feedback = ("\n\nEstas variantes no son válidas. Devuelve el JSON completo de nuevo corrigiéndolas "
+                    "y manteniendo la coherencia de cada nivel:\n" + "\n".join(problems))
+    for b, snap in zip(blocks, snapshot):
+        for lvl in levels:
+            b["levels"].pop(lvl, None)
+        b["levels"].update(snap)
+        for lvl in levels:
+            if lvl in snap:
+                b["errors"].pop(lvl, None)
+            else:
+                b["errors"].setdefault(lvl, "generation failed")
+
+
 def generate_block(provider, meta, blocks, i, log):
     b = blocks[i]
-    todo = [str(l) for l in lib.LEVELS if str(l) not in b["levels"]]
+    todo = [str(l) for l in lib.LEVELS if l not in ARTICLE_LEVELS and str(l) not in b["levels"]]
+    if not todo:
+        return
     prompt = build_user_prompt(meta, blocks, i)
     feedback = ""
     for attempt in (1, 2):
         if isinstance(provider, FileProvider):
             provider.index = i
         try:
-            raw = provider.complete(SYSTEM, prompt + feedback)
-            data = extract_json(raw)
+            data = extract_json(provider.complete(SYSTEM, prompt + feedback))
         except Exception as e:  # network, JSON...
             log("  block %d attempt %d failed: %s" % (i, attempt, e))
             feedback = "\n\nLa respuesta anterior no fue un JSON válido. Devuelve solo el JSON."
             continue
-        problems = {}
-        for lvl in todo:
-            errs = lib.validate_variant(b["html"], data.get(lvl), int(lvl))
-            if errs:
-                problems[lvl] = "; ".join(errs)
-            else:
-                b["levels"][lvl] = data[lvl].strip()
-                b["errors"].pop(lvl, None)
-        todo = [l for l in todo if l not in b["levels"]]
+        problems = {l: _store(b, l, data.get(l)) for l in todo}
+        problems = {l: e for l, e in problems.items() if e}
+        todo = list(problems)
         if not todo:
             return
         log("  block %d attempt %d invalid levels: %s" % (i, attempt, {l: e[:120] for l, e in problems.items()}))
-        feedback = "\n\nCorrige solo estos niveles (los demás son válidos):\n" + "\n".join(
-            "- nivel %s: %s" % (l, e) for l, e in problems.items())
-        for l, e in problems.items():
-            b["errors"][l] = e
+        feedback = "\n\nCorrige la variante:\n" + "\n".join("- nivel %s: %s" % (l, e) for l, e in problems.items())
     for l in todo:
         b["errors"].setdefault(l, "generation failed")
 
@@ -248,7 +329,7 @@ def level_totals(blocks):
 
 
 def print_totals(blocks):
-    names = {1: "Sencillo", 2: "Esencial", 3: "Detallado"}
+    names = {1: "Resumen", 2: "Sencillo", 3: "Esencial", 4: "Detallado"}
     print("  words vs original: " + ", ".join("%s %.0f%%" % (names[l], r * 100) for l, r in level_totals(blocks).items()))
     omitted = {l: sum(1 for b in blocks if b.get("levels", {}).get(str(l)) == "") for l in lib.OMITTABLE}
     print("  omitted blocks: " + ", ".join("%s %d" % (names[l], n) for l, n in omitted.items()))
@@ -293,7 +374,7 @@ def main():
     ap.add_argument("--html", help="built page to read (default: _site/<slug>.html)")
     ap.add_argument("--min-words", type=int, default=lib.MIN_WORDS)
     ap.add_argument("--force", action="store_true", help="regenerate every block")
-    ap.add_argument("--only-levels", help="comma-separated levels (e.g. 1 or 1,2) to regenerate for every block, keeping the others")
+    ap.add_argument("--only-levels", help="comma-separated levels (e.g. 1 or 1,2,3) to regenerate for every block, keeping the others")
     ap.add_argument("--dry-run", action="store_true", help="show the plan, call nothing, write nothing")
     ap.add_argument("--check", action="store_true", help="validate stored adaptations, no API calls")
     args = ap.parse_args()
@@ -339,6 +420,8 @@ def main():
 
     provider = make_provider(args)
     log = lambda m: print(m, file=sys.stderr)
+    print("  whole-article pass: levels %s" % ", ".join(str(l) for l in ARTICLE_LEVELS))
+    generate_article(provider, meta, blocks, [str(l) for l in ARTICLE_LEVELS], log)
     for n, i in enumerate(pending, 1):
         print("  [%d/%d] %s" % (n, len(pending), blocks[i]["id"]))
         generate_block(provider, meta, blocks, i, log)

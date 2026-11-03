@@ -24,7 +24,12 @@ class Extraction(unittest.TestCase):
             "<table><tr><td><p>%s</p></td></tr></table><p><img src=\"/a.png\">%s</p>"
             % (LONG, LONG, LONG, LONG, LONG, LONG, LONG))
         blocks = lib.extract_blocks(html)
-        self.assertEqual([b["tag"] for b in blocks], ["p", "li"])
+        self.assertEqual([b["tag"] for b in blocks], ["p", "li", "li"])  # short items count too
+        self.assertEqual(len(lib.extract_blocks(html, min_words=25)), 2)
+
+    def test_skips_image_captions(self):
+        html = page("<p><img src=\"/a.png\"></p><p><em>Imagen 1. Una curva.</em></p><p>La realidad es otra.</p>")
+        self.assertEqual([b["text"] for b in lib.extract_blocks(html)], ["La realidad es otra."])
 
     def test_skips_blocks_with_footnotes_and_nested_lists(self):
         html = page('<p>%s<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup></p>'
@@ -108,15 +113,16 @@ class Validation(unittest.TestCase):
             "too short": "Según la documentación.",
         }
         for expected, variant in cases.items():
-            errs = lib.validate_variant(self.ORIG, variant, 2)
+            errs = lib.validate_variant(self.ORIG, variant, 3)
             self.assertTrue(any(expected in e for e in errs), (expected, errs))
-        self.assertEqual(lib.validate_variant(self.ORIG, "", 3), ["empty response"])  # level 3 cannot be omitted
+        self.assertEqual(lib.validate_variant(self.ORIG, "", 4), ["empty response"])  # Detallado cannot be omitted
 
     def test_condensing_is_allowed_inventing_is_not(self):
         short = "El sistema procesa 250 mensajes."
-        self.assertEqual(lib.validate_variant(self.ORIG, short, 3 if False else 2), [])  # dropped link/code/quote: fine
-        self.assertEqual(lib.validate_variant(self.ORIG, "", 1), [])    # omitted at Sencillo
-        self.assertEqual(lib.validate_variant(self.ORIG, "", 2), [])    # omitted at Esencial
+        self.assertEqual(lib.validate_variant(self.ORIG, short, 3), [])  # dropped link/code/quote: fine
+        self.assertEqual(lib.validate_variant(self.ORIG, "", 1), [])    # omitted at Resumen
+        self.assertEqual(lib.validate_variant(self.ORIG, "", 2), [])    # omitted at Sencillo
+        self.assertEqual(lib.validate_variant(self.ORIG, "", 3), [])    # omitted at Esencial
         self.assertTrue(any("figures" in e for e in lib.validate_variant(self.ORIG, "El sistema procesa 999 mensajes.", 2)))
         self.assertTrue(any("too long" in e for e in lib.validate_variant(self.ORIG, self.GOOD + " " + self.GOOD, 1)))
 

@@ -5,8 +5,8 @@
  "generator": {
   "provider": "file",
   "model": "file",
-  "prompt_version": 1,
-  "generated_at": "2026-11-02T21:36:07Z"
+  "prompt_version": 2,
+  "generated_at": "2026-11-03T00:05:12Z"
  },
  "blocks": [
   {
@@ -17,9 +17,26 @@
    "k": "59826741.0",
    "id": "b-0xbaj2",
    "levels": {
-    "2": "Microsoft promete un «ordenador cuántico topológico» basado en cúbits de Majorana y dice que ya tiene un primer chip, Majorana 1.",
-    "3": "En los últimos meses, Microsoft ha vuelto a acaparar titulares con una promesa muy concreta: está construyendo un «ordenador cuántico topológico» basado en cúbits de Majorana y, según la compañía, ya tiene funcionando un primer chip, Majorana 1, con la vista puesta en llegar a millones de cúbits.",
-    "1": "Microsoft dice que construye un ordenador cuántico topológico con cúbits de Majorana."
+    "4": "En los últimos meses, Microsoft ha vuelto a acaparar titulares con una promesa muy concreta: está construyendo un «ordenador cuántico topológico» basado en cúbits de Majorana y, según la compañía, ya tiene funcionando un primer chip, Majorana 1, con la vista puesta en llegar a millones de cúbits.",
+    "3": "En los últimos meses, Microsoft ha vuelto a acaparar titulares: está construyendo un «ordenador cuántico topológico» basado en cúbits de Majorana y, según la compañía, ya tiene funcionando un primer chip, Majorana 1.",
+    "1": "Microsoft asegura que ya tiene funcionando un primer chip, Majorana 1, para un «ordenador cuántico topológico» basado en cúbits de Majorana. Sobre el papel suena a revolución, pero la historia es bastante más matizada.",
+    "2": "Microsoft dice que está construyendo un «ordenador cuántico topológico» basado en cúbits de Majorana y que ya tiene un primer chip, Majorana 1. Sobre el papel suena a revolución, pero la historia es bastante más matizada."
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "Este artículo intenta aclarar qué son esos supuestos cúbits de Majorana, qué ha hecho exactamente Microsoft y qué sigue sin estar demostrado.",
+   "text": "Este artículo intenta aclarar qué son esos supuestos cúbits de Majorana, qué ha hecho exactamente Microsoft y qué sigue sin estar demostrado.",
+   "h": "f86a9c04",
+   "k": "f86a9c04.0",
+   "id": "b-zxglon",
+   "levels": {
+    "1": "",
+    "2": "Aquí intento aclarar qué ha hecho exactamente Microsoft y qué sigue sin estar demostrado.",
+    "3": "Este artículo intenta aclarar qué son esos supuestos cúbits de Majorana, qué ha hecho exactamente Microsoft y qué sigue sin estar demostrado.",
+    "4": "Este artículo intenta aclarar qué son esos supuestos cúbits de Majorana, qué ha hecho exactamente Microsoft y qué sigue sin estar demostrado."
    },
    "errors": {},
    "model": "file"
@@ -32,9 +49,10 @@
    "k": "79a34b72.0",
    "id": "b-ksyyqx",
    "levels": {
-    "2": "Los «modos de Majorana» en materiales <strong>no son nuevas partículas fundamentales</strong>. Son <strong>cuasipartículas</strong> que surgen en ciertos superconductores topológicos, localizadas en los extremos de una estructura.",
-    "3": "Empecemos por el principio: <strong>los «modos de Majorana» en materiales no son nuevas partículas fundamentales</strong>. Son <strong>cuasipartículas</strong> que surgen en ciertos superconductores topológicos, localizadas en los extremos de una estructura.",
-    "1": "Los modos de Majorana no son partículas nuevas, sino cuasipartículas en los extremos de ciertos superconductores."
+    "4": "Empecemos por el principio: <strong>los «modos de Majorana» en materiales no son nuevas partículas fundamentales</strong>. Son <strong>cuasipartículas</strong> que surgen en ciertos superconductores topológicos, localizadas en los extremos de una estructura.",
+    "3": "Los «modos de Majorana» en materiales <strong>no son nuevas partículas fundamentales</strong>. Son <strong>cuasipartículas</strong> que surgen en ciertos superconductores topológicos, localizadas en los extremos de una estructura.",
+    "1": "",
+    "2": "Los «modos de Majorana» son <strong>cuasipartículas</strong> que aparecen en los extremos de ciertos dispositivos superconductores, como un nanohilo."
    },
    "errors": {},
    "model": "file"
@@ -47,9 +65,58 @@
    "k": "db151ac9.0",
    "id": "b-z4166u",
    "levels": {
-    "2": "La idea teórica toma forma en 2001 con el <em>modelo de Kitaev</em>: una cadena unidimensional de fermiones en un superconductor «exótico» donde aparecen dos modos especiales en los extremos, que pueden describirse como un par de modos de Majorana.",
-    "3": "La idea teórica toma forma en 2001 con el <em>modelo de Kitaev</em>: una cadena unidimensional de fermiones en un superconductor «exótico» en la que aparecen dos modos especiales en los extremos, correlacionados de forma no local, que pueden describirse como un par de modos de Majorana.",
-    "1": ""
+    "4": "La idea teórica toma forma en 2001 con el <em>modelo de Kitaev</em>: una cadena unidimensional de fermiones en un superconductor «exótico» en la que aparecen dos modos especiales en los extremos, correlacionados de forma no local, que pueden describirse como un par de modos de Majorana.",
+    "3": "La idea teórica nace en 2001 con el <em>modelo de Kitaev</em>: una cadena de fermiones en un superconductor «exótico» con un par de modos de Majorana en los extremos.",
+    "1": "",
+    "2": ""
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "En ese contexto aparecen dos tipos de estados importantes:",
+   "text": "En ese contexto aparecen dos tipos de estados importantes:",
+   "h": "c2b1b925",
+   "k": "c2b1b925.0",
+   "id": "b-331h6f",
+   "levels": {
+    "1": "",
+    "2": "",
+    "3": "",
+    "4": "En ese contexto aparecen dos tipos de estados importantes:"
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "li",
+   "html": "<strong>Modos de Majorana (modos cero)</strong>: energía prácticamente nula, con carácter topológico y no local.",
+   "text": "Modos de Majorana (modos cero): energía prácticamente nula, con carácter topológico y no local.",
+   "h": "3075e185",
+   "k": "3075e185.0",
+   "id": "b-hq6osn",
+   "levels": {
+    "1": "",
+    "2": "",
+    "3": "",
+    "4": "<strong>Modos de Majorana (modos cero)</strong>: energía prácticamente nula, con carácter topológico y no local."
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "li",
+   "html": "<strong>Estados de Andreev</strong>: estados de baja energía pero triviales, locales, sin protección topológica.",
+   "text": "Estados de Andreev: estados de baja energía pero triviales, locales, sin protección topológica.",
+   "h": "a8f98793",
+   "k": "a8f98793.0",
+   "id": "b-j3j2tt",
+   "levels": {
+    "1": "",
+    "2": "",
+    "3": "",
+    "4": "<strong>Estados de Andreev</strong>: estados de baja energía pero triviales, locales, sin protección topológica."
    },
    "errors": {},
    "model": "file"
@@ -62,9 +129,10 @@
    "k": "f22fc1fe.0",
    "id": "b-2vgw2f",
    "levels": {
-    "2": "",
-    "3": "El problema práctico es que distinguirlos experimentalmente es muy difícil: la frontera entre «casi cero» y «cero» en energía no se puede trazar con un rotulador.",
-    "1": ""
+    "4": "El problema práctico es que distinguirlos experimentalmente es muy difícil: la frontera entre «casi cero» y «cero» en energía no se puede trazar con un rotulador.",
+    "3": "Estos modos de Majorana tienen energía prácticamente nula y son no locales, pero se parecen mucho a los <strong>estados de Andreev</strong>, triviales y locales, y distinguirlos experimentalmente es muy difícil.",
+    "1": "",
+    "2": "El problema es que se confunden fácilmente con otros estados triviales, los <strong>estados de Andreev</strong>."
    },
    "errors": {},
    "model": "file"
@@ -77,9 +145,26 @@
    "k": "f41d24e2.0",
    "id": "b-biidyi",
    "levels": {
-    "2": "La computación cuántica «convencional» trabaja con cúbits locales y frágiles. Su gran coste es la <strong>corrección de errores</strong>: hacen falta muchos cúbits físicos para obtener un cúbit lógico estable.",
-    "3": "La computación cuántica «convencional» trabaja con cúbits locales y frágiles. Su gran coste es la <strong>corrección de errores</strong>: hacen falta muchos cúbits físicos para un cúbit lógico estable.",
-    "1": ""
+    "4": "La computación cuántica «convencional» trabaja con cúbits locales y frágiles. Su gran coste es la <strong>corrección de errores</strong>: hacen falta muchos cúbits físicos para un cúbit lógico estable.",
+    "3": "La computación cuántica convencional usa cúbits locales y frágiles, y la <strong>corrección de errores</strong> exige muchos cúbits físicos por cada cúbit lógico.",
+    "1": "",
+    "2": ""
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "Los cúbits topológicos de Majorana prometen justo lo contrario:",
+   "text": "Los cúbits topológicos de Majorana prometen justo lo contrario:",
+   "h": "0706b1cb",
+   "k": "0706b1cb.0",
+   "id": "b-mfhx52",
+   "levels": {
+    "1": "",
+    "2": "",
+    "3": "",
+    "4": "Los cúbits topológicos de Majorana prometen justo lo contrario:"
    },
    "errors": {},
    "model": "file"
@@ -92,9 +177,10 @@
    "k": "edacef60.0",
    "id": "b-v2k2y5",
    "levels": {
-    "2": "El cúbit se codifica de forma <strong>no local</strong>, por ejemplo en los extremos de un nanohilo o en una estructura en forma de H llamada <strong>tetrón</strong>.",
-    "3": "El cúbit se codifica de forma <strong>no local</strong>, por ejemplo en los extremos de un nanohilo o en una estructura en forma de H llamada <strong>tetrón</strong>.",
-    "1": "El cúbit se codifica de forma <strong>no local</strong>, y eso lo protegería de pequeñas perturbaciones."
+    "4": "El cúbit se codifica de forma <strong>no local</strong>, por ejemplo en los extremos de un nanohilo o en una estructura en forma de H llamada <strong>tetrón</strong>.",
+    "3": "",
+    "1": "",
+    "2": ""
    },
    "errors": {},
    "model": "file"
@@ -107,9 +193,10 @@
    "k": "6018511d.0",
    "id": "b-pb48q1",
    "levels": {
-    "2": "",
-    "3": "Las pequeñas perturbaciones locales no destruyen el estado global, igual que un nudo no se deshace porque tires un poco de la cuerda por un punto intermedio.",
-    "1": ""
+    "4": "Las pequeñas perturbaciones locales no destruyen el estado global, igual que un nudo no se deshace porque tires un poco de la cuerda por un punto intermedio.",
+    "3": "",
+    "1": "",
+    "2": ""
    },
    "errors": {},
    "model": "file"
@@ -122,9 +209,74 @@
    "k": "b20d0dca.0",
    "id": "b-rpr3nc",
    "levels": {
-    "2": "Esa protección topológica, si fuera real, podría dar <strong>tiempos de coherencia muy largos</strong> y reducir drásticamente el sobrecoste de la corrección de errores. De ahí el entusiasmo.",
-    "3": "Esa protección topológica, si fuera real, podría dar <strong>tiempos de coherencia muy largos</strong> y reducir drásticamente el sobrecoste de la corrección de errores. De ahí el entusiasmo.",
-    "1": ""
+    "4": "Esa protección topológica, si fuera real, podría dar <strong>tiempos de coherencia muy largos</strong> y reducir drásticamente el sobrecoste de la corrección de errores. De ahí el entusiasmo.",
+    "3": "Los cúbits topológicos de Majorana prometen lo contrario: el cúbit se codifica de forma no local, por ejemplo en una estructura en forma de H llamada <strong>tetrón</strong>, y las perturbaciones locales no lo destruyen. Eso daría tiempos de coherencia muy largos y mucha menos corrección de errores. Pero nada de eso se ha demostrado de forma incontestable.",
+    "1": "La promesa es grande: cúbits de Majorana protegidos frente al ruido, con tiempos de coherencia muy largos y mucha menos corrección de errores.",
+    "2": "Como cúbits, su atractivo es que guardarían la información protegida frente al ruido local, lo que reduciría mucho la costosa corrección de errores de los cúbits actuales. Pero nadie ha demostrado todavía que estos modos existan de verdad en un dispositivo."
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "Pero esa promesa depende de demostrar dos cosas:",
+   "text": "Pero esa promesa depende de demostrar dos cosas:",
+   "h": "dd6f4cc9",
+   "k": "dd6f4cc9.0",
+   "id": "b-1dbzk5",
+   "levels": {
+    "1": "",
+    "2": "",
+    "3": "",
+    "4": "Pero esa promesa depende de demostrar dos cosas:"
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "li",
+   "html": "Que los <strong>modos de Majorana existen realmente</strong> en tu dispositivo.",
+   "text": "Que los modos de Majorana existen realmente en tu dispositivo.",
+   "h": "bb703bf0",
+   "k": "bb703bf0.0",
+   "id": "b-48r556",
+   "levels": {
+    "1": "",
+    "2": "",
+    "3": "",
+    "4": "Que los <strong>modos de Majorana existen realmente</strong> en tu dispositivo."
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "li",
+   "html": "Que puedes <strong>trenzarlos («braiding») y leer su paridad</strong> de forma controlada, mostrando la estadística no abeliana que les da su carácter topológico.",
+   "text": "Que puedes trenzarlos («braiding») y leer su paridad de forma controlada, mostrando la estadística no abeliana que les da su carácter topológico.",
+   "h": "dbda7ab7",
+   "k": "dbda7ab7.0",
+   "id": "b-6u9nkq",
+   "levels": {
+    "1": "",
+    "2": "",
+    "3": "",
+    "4": "Que puedes <strong>trenzarlos («braiding») y leer su paridad</strong> de forma controlada, mostrando la estadística no abeliana que les da su carácter topológico."
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "Ninguna de las dos se ha demostrado de forma incontestable.",
+   "text": "Ninguna de las dos se ha demostrado de forma incontestable.",
+   "h": "4bb9783a",
+   "k": "4bb9783a.0",
+   "id": "b-fa5mt9",
+   "levels": {
+    "1": "",
+    "2": "",
+    "3": "",
+    "4": "Ninguna de las dos se ha demostrado de forma incontestable."
    },
    "errors": {},
    "model": "file"
@@ -137,9 +289,10 @@
    "k": "3276023e.0",
    "id": "b-2ctsno",
    "levels": {
-    "2": "",
-    "3": "Microsoft apuesta por la vía topológica desde aproximadamente 2010: crea un gran grupo de investigación y se centra en nanohilos de InAs/Al con estados de Majorana.",
-    "1": ""
+    "4": "Microsoft apuesta por la vía topológica desde aproximadamente 2010: crea un gran grupo de investigación y se centra en nanohilos de InAs/Al con estados de Majorana.",
+    "3": "Microsoft apuesta por la vía topológica desde aproximadamente 2010, con nanohilos de InAs/Al.",
+    "1": "",
+    "2": ""
    },
    "errors": {},
    "model": "file"
@@ -152,9 +305,10 @@
    "k": "ed359ada.0",
    "id": "b-88azwq",
    "levels": {
-    "2": "En 2018, el equipo publica en <em>Nature</em> un artículo que se presenta como una prueba sólida de modos de Majorana. Poco después, otros grupos descubren que pueden obtenerse curvas muy similares con estados de Andreev triviales.",
+    "4": "En 2018, el equipo publica en <em>Nature</em> un artículo que se presenta como una prueba sólida de modos de Majorana. Poco después, otros grupos descubren que pueden obtenerse curvas muy similares con estados de Andreev triviales.",
     "3": "En 2018, el equipo publica en <em>Nature</em> un artículo que se presenta como una prueba sólida de modos de Majorana. Poco después, otros grupos descubren que pueden obtenerse curvas muy similares con estados de Andreev triviales.",
-    "1": "Pero otros grupos obtuvieron resultados muy parecidos con estados triviales."
+    "1": "Pero Microsoft arrastra un precedente: en 2018 presentó en Nature una prueba de modos de Majorana que otros grupos explicaron con estados triviales, y el artículo acabó retirado. Por eso cada anuncio suyo se mira con lupa.",
+    "2": "En 2018, Microsoft publica en <em>Nature</em> una supuesta prueba de modos de Majorana. Otros grupos obtienen curvas muy parecidas con estados de Andreev, y se descubre que solo se habían publicado los resultados favorables."
    },
    "errors": {},
    "model": "file"
@@ -167,9 +321,106 @@
    "k": "b5df6a60.0",
    "id": "b-w8pxnk",
    "levels": {
+    "4": "La reputación del programa queda dañada, y empieza una «segunda generación», encabezada por Chetan Nayak, con un mensaje de «hemos aprendido de los errores».",
+    "3": "La reputación del programa queda dañada y empieza una «segunda generación», encabezada por Chetan Nayak.",
+    "1": "",
+    "2": "El artículo acaba retirado y la reputación del programa queda dañada. Por eso conviene leer con cuidado lo que vino después."
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "En febrero de 2025, Azure Quantum publica en <em>Nature</em> el artículo titulado:",
+   "text": "En febrero de 2025, Azure Quantum publica en Nature el artículo titulado:",
+   "h": "20c2c5a2",
+   "k": "20c2c5a2.0",
+   "id": "b-1msyyp",
+   "levels": {
+    "1": "",
+    "2": "En febrero de 2025, Microsoft publica un nuevo artículo en <em>Nature</em>.",
+    "3": "En febrero de 2025, Azure Quantum publica en <em>Nature</em> el artículo titulado:",
+    "4": "En febrero de 2025, Azure Quantum publica en <em>Nature</em> el artículo titulado:"
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "Lo esencial:",
+   "text": "Lo esencial:",
+   "h": "619a7d04",
+   "k": "619a7d04.0",
+   "id": "b-w58r93",
+   "levels": {
+    "1": "",
     "2": "",
-    "3": "La reputación del programa queda dañada, y empieza una «segunda generación», encabezada por Chetan Nayak, con un mensaje de «hemos aprendido de los errores».",
-    "1": ""
+    "3": "Lo esencial:",
+    "4": "Lo esencial:"
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "li",
+   "html": "El dispositivo es un <strong>nanohilo de InAs/Al</strong> con puntos cuánticos definidos por puertas, una configuración pensada como paso intermedio hacia un <strong>tetrón lineal</strong>.",
+   "text": "El dispositivo es un nanohilo de InAs/Al con puntos cuánticos definidos por puertas, una configuración pensada como paso intermedio hacia un tetrón lineal.",
+   "h": "f5075697",
+   "k": "f5075697.0",
+   "id": "b-lrlf64",
+   "levels": {
+    "1": "",
+    "2": "",
+    "3": "El dispositivo es un <strong>nanohilo de InAs/Al</strong> con puntos cuánticos definidos por puertas, una configuración pensada como paso intermedio hacia un <strong>tetrón lineal</strong>.",
+    "4": "El dispositivo es un <strong>nanohilo de InAs/Al</strong> con puntos cuánticos definidos por puertas, una configuración pensada como paso intermedio hacia un <strong>tetrón lineal</strong>."
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "La parte delicada está en la interpretación:",
+   "text": "La parte delicada está en la interpretación:",
+   "h": "b92af6a7",
+   "k": "b92af6a7.0",
+   "id": "b-eorhgh",
+   "levels": {
+    "1": "",
+    "2": "",
+    "3": "La parte delicada está en la interpretación:",
+    "4": "La parte delicada está en la interpretación:"
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "li",
+   "html": "Los autores presentan sus datos como «compatibles» con la lectura de paridad de un par de modos de tipo Majorana separados por micras.",
+   "text": "Los autores presentan sus datos como «compatibles» con la lectura de paridad de un par de modos de tipo Majorana separados por micras.",
+   "h": "68449738",
+   "k": "68449738.0",
+   "id": "b-g89kzq",
+   "levels": {
+    "1": "",
+    "2": "",
+    "3": "Los autores presentan sus datos como «compatibles» con la lectura de paridad de un par de modos de tipo Majorana separados por micras.",
+    "4": "Los autores presentan sus datos como «compatibles» con la lectura de paridad de un par de modos de tipo Majorana separados por micras."
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "li",
+   "html": "Sin embargo, <strong>no descartan de forma concluyente</strong> que lo observado pueda explicarse con estados de Andreev de baja energía.",
+   "text": "Sin embargo, no descartan de forma concluyente que lo observado pueda explicarse con estados de Andreev de baja energía.",
+   "h": "3d255619",
+   "k": "3d255619.0",
+   "id": "b-jm9m1b",
+   "levels": {
+    "1": "",
+    "2": "Muestra una técnica para medir la paridad, pero no afirma haber visto Majoranas ni descarta los estados de Andreev.",
+    "3": "Sin embargo, <strong>no descartan de forma concluyente</strong> que lo observado pueda explicarse con estados de Andreev de baja energía.",
+    "4": "Sin embargo, <strong>no descartan de forma concluyente</strong> que lo observado pueda explicarse con estados de Andreev de baja energía."
    },
    "errors": {},
    "model": "file"
@@ -182,9 +433,106 @@
    "k": "dadbc90e.0",
    "id": "b-ijnsg7",
    "levels": {
-    "2": "El último artículo es técnicamente interesante como avance en la <strong>lectura de paridad</strong>, pero está muy lejos de ser la demostración limpia de un cúbit de Majorana que sugieren muchos titulares.",
-    "3": "En resumen, el artículo es técnicamente interesante como avance en la <strong>lectura de paridad</strong> de estos dispositivos híbridos, pero está muy lejos de ser la demostración limpia de un cúbit de Majorana que sugieren muchos titulares.",
-    "1": "El último artículo es un avance técnico, pero está muy lejos de demostrar un cúbit de Majorana."
+    "4": "En resumen, el artículo es técnicamente interesante como avance en la <strong>lectura de paridad</strong> de estos dispositivos híbridos, pero está muy lejos de ser la demostración limpia de un cúbit de Majorana que sugieren muchos titulares.",
+    "3": "En resumen, es un avance en la <strong>lectura de paridad</strong>, muy lejos de la demostración limpia de un cúbit de Majorana que sugieren muchos titulares.",
+    "1": "Su nuevo artículo en Nature demuestra una técnica de medida interesante, pero no afirma haber observado Majoranas ni cúbits topológicos.",
+    "2": ""
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "Al mismo tiempo, el CEO de Microsoft y varios portavoces de Azure Quantum han hablado en los medios de:",
+   "text": "Al mismo tiempo, el CEO de Microsoft y varios portavoces de Azure Quantum han hablado en los medios de:",
+   "h": "0dde7fed",
+   "k": "0dde7fed.0",
+   "id": "b-lkf02b",
+   "levels": {
+    "1": "",
+    "2": "",
+    "3": "Al mismo tiempo, Microsoft ha hablado en los medios de:",
+    "4": "Al mismo tiempo, el CEO de Microsoft y varios portavoces de Azure Quantum han hablado en los medios de:"
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "li",
+   "html": "un primer chip llamado <strong>Majorana 1</strong>, con <strong>8 cúbits topológicos</strong>;",
+   "text": "un primer chip llamado Majorana 1, con 8 cúbits topológicos;",
+   "h": "cf294b09",
+   "k": "cf294b09.0",
+   "id": "b-3n9g0i",
+   "levels": {
+    "1": "",
+    "2": "",
+    "3": "un primer chip llamado <strong>Majorana 1</strong>, con <strong>8 cúbits topológicos</strong>;",
+    "4": "un primer chip llamado <strong>Majorana 1</strong>, con <strong>8 cúbits topológicos</strong>;"
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "li",
+   "html": "una hoja de ruta para llegar a <strong>millones de cúbits</strong> en pocos años;",
+   "text": "una hoja de ruta para llegar a millones de cúbits en pocos años;",
+   "h": "57d45c57",
+   "k": "57d45c57.0",
+   "id": "b-pntt7n",
+   "levels": {
+    "1": "",
+    "2": "",
+    "3": "y una hoja de ruta para llegar a <strong>millones de cúbits</strong> en pocos años.",
+    "4": "una hoja de ruta para llegar a <strong>millones de cúbits</strong> en pocos años;"
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "li",
+   "html": "y la idea de que ya estarían por delante de otros enfoques en la carrera cuántica.",
+   "text": "y la idea de que ya estarían por delante de otros enfoques en la carrera cuántica.",
+   "h": "e78ffd83",
+   "k": "e78ffd83.0",
+   "id": "b-eb1wrq",
+   "levels": {
+    "1": "",
+    "2": "",
+    "3": "",
+    "4": "y la idea de que ya estarían por delante de otros enfoques en la carrera cuántica."
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "El problema es que, a día de hoy, <strong>ningún artículo científico describe ese supuesto procesador con detalle</strong>, ni hay una demostración de:",
+   "text": "El problema es que, a día de hoy, ningún artículo científico describe ese supuesto procesador con detalle, ni hay una demostración de:",
+   "h": "69dcc2e9",
+   "k": "69dcc2e9.0",
+   "id": "b-3ohs1q",
+   "levels": {
+    "1": "",
+    "2": "",
+    "3": "Pero <strong>ningún artículo científico describe ese procesador</strong>, ni hay una demostración de:",
+    "4": "El problema es que, a día de hoy, <strong>ningún artículo científico describe ese supuesto procesador con detalle</strong>, ni hay una demostración de:"
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "li",
+   "html": "un <strong>tetrón completo</strong> que funcione como cúbit, con tiempos de coherencia medidos;",
+   "text": "un tetrón completo que funcione como cúbit, con tiempos de coherencia medidos;",
+   "h": "4f6ae4fa",
+   "k": "4f6ae4fa.0",
+   "id": "b-ifcqq7",
+   "levels": {
+    "1": "",
+    "2": "",
+    "3": "un <strong>tetrón completo</strong> que funcione como cúbit, con tiempos de coherencia medidos;",
+    "4": "un <strong>tetrón completo</strong> que funcione como cúbit, con tiempos de coherencia medidos;"
    },
    "errors": {},
    "model": "file"
@@ -197,9 +545,26 @@
    "k": "b0c1bb9b.0",
    "id": "b-gb2y6l",
    "levels": {
-    "2": "",
+    "4": "ni, mucho menos, del <strong>trenzado</strong> de modos de Majorana, que sería la prueba inequívoca de la estadística no abeliana.",
     "3": "ni, mucho menos, del <strong>trenzado</strong> de modos de Majorana, que sería la prueba inequívoca de la estadística no abeliana.",
-    "1": ""
+    "1": "",
+    "2": ""
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "Lo que sí hay es:",
+   "text": "Lo que sí hay es:",
+   "h": "7847f53c",
+   "k": "7847f53c.0",
+   "id": "b-8dyvvh",
+   "levels": {
+    "1": "",
+    "2": "",
+    "3": "Lo que sí hay es:",
+    "4": "Lo que sí hay es:"
    },
    "errors": {},
    "model": "file"
@@ -212,9 +577,10 @@
    "k": "3784cc1f.0",
    "id": "b-jaxcd4",
    "levels": {
-    "2": "Declaraciones en blogs y entrevistas según las cuales la empresa ya cuenta con decenas de modos de Majorana y varios cúbits funcionando, sin manuscritos revisados por pares.",
-    "3": "Declaraciones en blogs y entrevistas según las cuales la empresa ya cuenta con decenas de modos de Majorana y varios cúbits funcionando, sin que se hayan publicado manuscritos revisados por pares.",
-    "1": ""
+    "4": "Declaraciones en blogs y entrevistas según las cuales la empresa ya cuenta con decenas de modos de Majorana y varios cúbits funcionando, sin que se hayan publicado manuscritos revisados por pares.",
+    "3": "Declaraciones según las cuales la empresa ya tiene varios cúbits funcionando, sin manuscritos revisados por pares.",
+    "1": "",
+    "2": ""
    },
    "errors": {},
    "model": "file"
@@ -227,9 +593,10 @@
    "k": "ccdb2a8d.0",
    "id": "b-ywye89",
    "levels": {
-    "2": "Es el clásico choque entre <strong>marketing corporativo</strong> y <strong>rigor científico</strong>: mientras no haya artículos con datos reproducibles, para la física académica el contador de cúbits topológicos demostrados sigue <strong>a cero</strong>.",
-    "3": "Es el clásico choque entre el <strong>marketing corporativo</strong> y el <strong>rigor científico</strong>: mientras no haya artículos con datos reproducibles, para la física académica el contador de cúbits topológicos demostrados sigue <strong>a cero</strong>.",
-    "1": ""
+    "4": "Es el clásico choque entre el <strong>marketing corporativo</strong> y el <strong>rigor científico</strong>: mientras no haya artículos con datos reproducibles, para la física académica el contador de cúbits topológicos demostrados sigue <strong>a cero</strong>.",
+    "3": "Es el choque entre <strong>marketing</strong> y <strong>rigor científico</strong>: para la física académica, el contador de cúbits topológicos demostrados sigue <strong>a cero</strong>.",
+    "1": "Aun así, la compañía habla en los medios de chips con cúbits topológicos sin artículos que lo respalden: para la física académica, el contador de cúbits topológicos demostrados sigue a cero.",
+    "2": "Al mismo tiempo, Microsoft habla en los medios de un chip con cúbits topológicos y de millones de cúbits, sin artículos que lo respalden. Para la física académica, el contador sigue <strong>a cero</strong>."
    },
    "errors": {},
    "model": "file"
@@ -242,9 +609,58 @@
    "k": "8ed95fba.0",
    "id": "b-0laykv",
    "levels": {
-    "2": "La forma inequívoca de demostrar que tienes <strong>modos de Majorana topológicos</strong> es observar su <strong>comportamiento</strong> al trenzarlos:",
-    "3": "En teoría, la forma inequívoca de demostrar que tienes <strong>modos de Majorana topológicos</strong>, y no simples impostores de Andreev, es observar su <strong>comportamiento</strong> al trenzarlos:",
-    "1": ""
+    "4": "En teoría, la forma inequívoca de demostrar que tienes <strong>modos de Majorana topológicos</strong>, y no simples impostores de Andreev, es observar su <strong>comportamiento</strong> al trenzarlos:",
+    "3": "La forma inequívoca de demostrar que tienes modos de Majorana topológicos, y no impostores de Andreev, es trenzarlos: intercambiar sus posiciones en un tetrón y ver su huella en la paridad.",
+    "1": "",
+    "2": "La prueba definitiva sería <strong>trenzar</strong> los modos de Majorana, y nadie lo ha conseguido todavía, tampoco Microsoft."
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "li",
+   "html": "Construyes una geometría de <strong>dos nanohilos conectados por un segmento central superconductor</strong>, con forma de H (un tetrón).",
+   "text": "Construyes una geometría de dos nanohilos conectados por un segmento central superconductor, con forma de H (un tetrón).",
+   "h": "66e8ce3d",
+   "k": "66e8ce3d.0",
+   "id": "b-zcs9rk",
+   "levels": {
+    "1": "",
+    "2": "",
+    "3": "",
+    "4": "Construyes una geometría de <strong>dos nanohilos conectados por un segmento central superconductor</strong>, con forma de H (un tetrón)."
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "li",
+   "html": "En los cuatro extremos hay cuatro modos que, si son de Majorana, codifican un cúbit de forma no local.",
+   "text": "En los cuatro extremos hay cuatro modos que, si son de Majorana, codifican un cúbit de forma no local.",
+   "h": "33493f3c",
+   "k": "33493f3c.0",
+   "id": "b-4pc808",
+   "levels": {
+    "1": "",
+    "2": "",
+    "3": "",
+    "4": "En los cuatro extremos hay cuatro modos que, si son de Majorana, codifican un cúbit de forma no local."
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "li",
+   "html": "Mediante campos eléctricos y magnéticos, mueves adiabáticamente esos modos por la H e intercambias sus posiciones de forma controlada.",
+   "text": "Mediante campos eléctricos y magnéticos, mueves adiabáticamente esos modos por la H e intercambias sus posiciones de forma controlada.",
+   "h": "dd117ddc",
+   "k": "dd117ddc.0",
+   "id": "b-2phfcw",
+   "levels": {
+    "1": "",
+    "2": "",
+    "3": "",
+    "4": "Mediante campos eléctricos y magnéticos, mueves adiabáticamente esos modos por la H e intercambias sus posiciones de forma controlada."
    },
    "errors": {},
    "model": "file"
@@ -257,9 +673,10 @@
    "k": "b4968ed5.0",
    "id": "b-pat1t4",
    "levels": {
-    "2": "",
-    "3": "Intercambiar dos de ellos no conmuta con otras operaciones y deja una huella reconocible en las medidas de paridad: esa es la estadística no abeliana.",
-    "1": ""
+    "4": "Intercambiar dos de ellos no conmuta con otras operaciones y deja una huella reconocible en las medidas de paridad: esa es la estadística no abeliana.",
+    "3": "",
+    "1": "",
+    "2": ""
    },
    "errors": {},
    "model": "file"
@@ -272,9 +689,10 @@
    "k": "bdbd35ab.0",
    "id": "b-g70iv8",
    "levels": {
-    "2": "Esa secuencia de trenzado sería la <strong>prueba topológica definitiva</strong>. Hasta ahora, nadie ha mostrado un experimento así con datos convincentes, tampoco Microsoft.",
-    "3": "Esa secuencia de trenzado sería la <strong>prueba topológica definitiva</strong>. Hasta ahora, nadie ha mostrado un experimento así con datos convincentes, tampoco Microsoft.",
-    "1": "La prueba definitiva sería trenzar los modos, y nadie lo ha mostrado todavía."
+    "4": "Esa secuencia de trenzado sería la <strong>prueba topológica definitiva</strong>. Hasta ahora, nadie ha mostrado un experimento así con datos convincentes, tampoco Microsoft.",
+    "3": "Nadie lo ha mostrado todavía con datos convincentes, tampoco Microsoft; el propio Nayak reconoce que es un objetivo de futuro.",
+    "1": "",
+    "2": ""
    },
    "errors": {},
    "model": "file"
@@ -287,9 +705,26 @@
    "k": "12afdcd8.0",
    "id": "b-3oyluh",
    "levels": {
-    "2": "Para no perderse entre tanto ruido, conviene aplicar una regla muy sencilla:",
-    "3": "La computación cuántica topológica sigue siendo una línea de investigación fascinante. Pero, para no perderse entre tanto ruido, conviene aplicar una regla muy sencilla:",
-    "1": ""
+    "4": "La computación cuántica topológica sigue siendo una línea de investigación fascinante. Pero, para no perderse entre tanto ruido, conviene aplicar una regla muy sencilla:",
+    "3": "La computación cuántica topológica sigue siendo fascinante, pero, para no perderse entre tanto ruido, conviene aplicar una regla sencilla:",
+    "1": "",
+    "2": "Ante las próximas noticias, conviene preguntarse si hay un artículo revisado por pares y si se ha demostrado el trenzado o solo una lectura de paridad."
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "<strong>Confía, pero verifica</strong>, también en la cuántica:",
+   "text": "Confía, pero verifica, también en la cuántica:",
+   "h": "1544360f",
+   "k": "1544360f.0",
+   "id": "b-abhmm8",
+   "levels": {
+    "1": "",
+    "2": "",
+    "3": "<strong>Confía, pero verifica</strong>, también en la cuántica:",
+    "4": "<strong>Confía, pero verifica</strong>, también en la cuántica:"
    },
    "errors": {},
    "model": "file"
@@ -302,9 +737,26 @@
    "k": "3b79bed7.0",
    "id": "b-ydok6c",
    "levels": {
-    "2": "<strong>¿Hay un artículo revisado por pares?</strong> Si solo hay una nota de prensa o una entrada de blog de la empresa, tómalo como marketing.",
-    "3": "<strong>¿Hay un artículo revisado por pares?</strong> Si solo hay una nota de prensa o una entrada de blog de la empresa, tómalo como marketing, no como una prueba.",
-    "1": ""
+    "4": "<strong>¿Hay un artículo revisado por pares?</strong> Si solo hay una nota de prensa o una entrada de blog de la empresa, tómalo como marketing, no como una prueba.",
+    "3": "<strong>¿Hay un artículo revisado por pares?</strong> Una nota de prensa es marketing, no una prueba.",
+    "1": "",
+    "2": ""
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "li",
+   "html": "<strong>¿Qué afirman exactamente?</strong> «Compatible con…» no es lo mismo que «demostramos sin ambigüedad…». Lee la letra pequeña.",
+   "text": "¿Qué afirman exactamente? «Compatible con…» no es lo mismo que «demostramos sin ambigüedad…». Lee la letra pequeña.",
+   "h": "940bc73f",
+   "k": "940bc73f.0",
+   "id": "b-tg7og3",
+   "levels": {
+    "1": "",
+    "2": "",
+    "3": "<strong>¿Qué afirman exactamente?</strong> «Compatible con…» no es lo mismo que «demostramos sin ambigüedad…». Lee la letra pequeña.",
+    "4": "<strong>¿Qué afirman exactamente?</strong> «Compatible con…» no es lo mismo que «demostramos sin ambigüedad…». Lee la letra pequeña."
    },
    "errors": {},
    "model": "file"
@@ -317,9 +769,10 @@
    "k": "8df4af60.0",
    "id": "b-o9li3l",
    "levels": {
-    "2": "",
-    "3": "<strong>¿Se descartan explícitamente las explicaciones triviales (Andreev, desorden, etc.)?</strong> Si no hay un análisis sistemático de las alternativas, el resultado es prometedor, pero no concluyente.",
-    "1": ""
+    "4": "<strong>¿Se descartan explícitamente las explicaciones triviales (Andreev, desorden, etc.)?</strong> Si no hay un análisis sistemático de las alternativas, el resultado es prometedor, pero no concluyente.",
+    "3": "",
+    "1": "",
+    "2": ""
    },
    "errors": {},
    "model": "file"
@@ -332,9 +785,10 @@
    "k": "fb034e29.0",
    "id": "b-mw7ize",
    "levels": {
-    "2": "<strong>¿Hay replicación independiente o, al menos, críticas técnicas serias?</strong> Cuando varias réplicas independientes apuntan en la misma dirección, empieza a formarse un consenso.",
-    "3": "<strong>¿Hay replicación independiente o, al menos, críticas técnicas serias?</strong> Cuando varias réplicas independientes apuntan en la misma dirección, empieza a formarse un consenso.",
-    "1": ""
+    "4": "<strong>¿Hay replicación independiente o, al menos, críticas técnicas serias?</strong> Cuando varias réplicas independientes apuntan en la misma dirección, empieza a formarse un consenso.",
+    "3": "<strong>¿Hay replicación independiente o críticas técnicas serias?</strong>",
+    "1": "",
+    "2": ""
    },
    "errors": {},
    "model": "file"
@@ -347,9 +801,10 @@
    "k": "2215eda5.0",
    "id": "b-85s9ej",
    "levels": {
-    "2": "<strong>¿Se ha demostrado el trenzado o solo una lectura local de la paridad?</strong> Hasta que no haya un experimento de trenzado convincente, hablar de «cúbits topológicos funcionales» es prematuro.",
-    "3": "<strong>¿Se ha demostrado el trenzado o solo una lectura local de la paridad?</strong> Hasta que no haya un experimento de trenzado convincente, hablar de «cúbits topológicos funcionales» es prematuro.",
-    "1": ""
+    "4": "<strong>¿Se ha demostrado el trenzado o solo una lectura local de la paridad?</strong> Hasta que no haya un experimento de trenzado convincente, hablar de «cúbits topológicos funcionales» es prematuro.",
+    "3": "<strong>¿Se ha demostrado el trenzado o solo una lectura local de la paridad?</strong>",
+    "1": "",
+    "2": ""
    },
    "errors": {},
    "model": "file"
@@ -362,9 +817,10 @@
    "k": "26820222.0",
    "id": "b-mx6d1q",
    "levels": {
-    "2": "La apuesta de Microsoft por Majorana es valiente. Pero, a día de hoy, <strong>nadie ha observado de forma incontestable un modo cero de Majorana en estos dispositivos, ni un cúbit topológico funcionando como tal</strong>.",
-    "3": "La apuesta de Microsoft por Majorana es valiente y, si saliera bien, podría cambiar el panorama de la computación cuántica. Pero, a día de hoy, <strong>nadie ha observado de forma incontestable un modo cero de Majorana en estos dispositivos, ni un cúbit topológico funcionando como tal</strong>.",
-    "1": "Por ahora, nadie ha observado un modo de Majorana de forma incontestable."
+    "4": "La apuesta de Microsoft por Majorana es valiente y, si saliera bien, podría cambiar el panorama de la computación cuántica. Pero, a día de hoy, <strong>nadie ha observado de forma incontestable un modo cero de Majorana en estos dispositivos, ni un cúbit topológico funcionando como tal</strong>.",
+    "3": "La apuesta de Microsoft por Majorana es valiente. Pero, a día de hoy, <strong>nadie ha observado de forma incontestable un modo cero de Majorana en estos dispositivos, ni un cúbit topológico funcionando como tal</strong>. Lo que hay son buenos experimentos de metrología y muchas expectativas.",
+    "1": "La apuesta es valiente, pero nadie ha observado de forma incontestable un cúbit topológico funcionando. Queda por ver si la ciencia estará a la altura de las promesas.",
+    "2": "La apuesta de Microsoft es valiente, pero <strong>nadie ha observado de forma incontestable un cúbit topológico funcionando</strong>. Queda por ver si los próximos artículos estarán a la altura de las promesas o si la expectación volverá a ir por delante de la ciencia."
    },
    "errors": {},
    "model": "file"
@@ -377,9 +833,10 @@
    "k": "9e814db8.0",
    "id": "b-3pf380",
    "levels": {
-    "2": "",
-    "3": "Queda por ver si los próximos artículos estarán a la altura de las promesas o si este capítulo acabará siendo otro ejemplo de cómo la expectación puede ir varios pasos por delante de la ciencia.",
-    "1": ""
+    "4": "Queda por ver si los próximos artículos estarán a la altura de las promesas o si este capítulo acabará siendo otro ejemplo de cómo la expectación puede ir varios pasos por delante de la ciencia.",
+    "3": "Queda por ver si los próximos artículos estarán a la altura de las promesas.",
+    "1": "",
+    "2": ""
    },
    "errors": {},
    "model": "file"
