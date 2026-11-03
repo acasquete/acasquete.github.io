@@ -78,8 +78,11 @@ def find_post(slug):
         base = parts[3] if len(parts) == 4 and parts[0].isdigit() else name
         if base == slug:
             return path
-    draft = os.path.join(ROOT, "_drafts", slug + ".md")
-    return draft if os.path.exists(draft) else None
+    for folder in ("_drafts", "privado"):  # privado/: unlisted previews (pages with `slug:` in front matter)
+        path = os.path.join(ROOT, folder, slug + ".md")
+        if os.path.exists(path):
+            return path
+    return None
 
 
 def page_path(slug, override=None):

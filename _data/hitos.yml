@@ -8,9 +8,13 @@
     month: Oct
     note: De Olimpia a Seabrook y Ruby Beach.
     image: "/img/seabrook-2026.jpg"
-  - label: De Yosemite a Los Ángeles por la costa
+  - label: Venice Beach
     month: Ago
-    note: Yosemite, Santa Cruz, Big Sur, Santa Bárbara y Los Ángeles.
+    note: Por la costa desde Santa Cruz, Big Sur y Santa Bárbara hasta Los Ángeles.
+    image: "/img/venice-beach.jpg"
+  - label: Yosemite
+    month: Ago
+    image: "/img/yosemite.jpg"
   - label: Vuelta a España en verano
     month: Jun
     note: Barcelona, Toledo, Granada y Madrid.
@@ -49,6 +53,7 @@
     month: Mar
   - label: Ajijic y el lago de Chapala
     month: Mar
+    image: "/img/ajijic.jpg"
   - label: Vancouver
     month: Feb
     image: "/img/vancouver.jpg"
