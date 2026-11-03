@@ -23,7 +23,7 @@ Estamos a finales de 2026. No tenemos las doscientas mil copias de agentes que i
 
 En el [post anterior](/ya-no-revisamos-codigo) conté que habíamos dejado de revisar cada cambio a mano. La consecuencia lógica llegó sola: si no lees el código antes del *merge*, el editor deja de ser el sitio donde pasa el trabajo. Hoy no usamos IDE. Trabajamos con agentes en la terminal.
 
-En el equipo de plataforma trabajamos con Claude Code, en su versión de terminal, y con OpenCode. Y delegamos todo el trabajo que podemos en flujos agénticos que se ejecutan en GitHub.
+En el equipo de plataforma trabajamos con la CLI de Claude Code y con OpenCode. Y delegamos todo el trabajo que podemos en flujos agénticos que se ejecutan en GitHub.
 
 No lo cuento como una preferencia, ni como una pose. Lo planteo como una **prueba de madurez**. Dejar el IDE solo es posible cuando el resto del sistema es lo bastante bueno como para no necesitar mirar el código: una especificación ejecutable, puertas que bloquean, permisos claros y trazabilidad de cada cambio. Si para confiar en lo que ha hecho un agente todavía tienes que abrir el editor y leerlo, el problema no es la herramienta: es que tu sistema aún no está listo.
 
