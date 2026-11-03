@@ -51,6 +51,7 @@
     month: Mar
   - label: Vancouver
     month: Feb
+    image: "/img/vancouver.jpg"
   - label: Nueva York
     month: Ene
   - label: Una despedida de soltero en Las Vegas
