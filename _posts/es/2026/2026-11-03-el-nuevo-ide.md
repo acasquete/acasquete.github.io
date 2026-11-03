@@ -1,20 +1,12 @@
 ---
-# Private preview: a page, not a post, so it stays out of the home page, /blog, tags, the feed and search.
-layout: post
-permalink: /p/cda77c06/el-nuevo-ide
-slug: el-nuevo-ide  # pages have no slug of their own; Adaptive Reading needs it
-date: 2026-11-02
-sitemap: false
-noindex: true
-comments: false
-header_image: el-nuevo-ide-cover.jpg
 cover_ratio: 16 / 9
 description: Ya no abrimos el IDE. No es una preferencia, es una prueba de madurez. Y lo que necesitamos ahora no es un editor mejor, sino una forma de controlar decenas de sesiones a la vez.
 title: El nuevo IDE
 tags: [artificial_intelligence, programming]
-reviewed: false
-home: false
+reviewed: true
+home: true
 ai: true
+header_image: el-nuevo-ide-cover.jpg
 ---
 En abril de 2025 se publicó [*AI 2027*](https://ai-2027.com/), un escenario que contaba, mes a mes, cómo podría llegar una inteligencia artificial superhumana. Casi todo el texto habla de geopolítica y de riesgos, pero hay una línea, fechada a finales de 2026, que leí entonces como ciencia ficción: a los programadores que mejor les iría serían los que supieran «gestionar y controlar la calidad de equipos de IA».<!-- excerpt-end -->
 
