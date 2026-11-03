@@ -307,11 +307,17 @@
 		})(performance.now());
 	}
 
-	function firstVisibleBlock() {
+	// The first block on screen, skipping blocks the target level will omit
+	// (anchoring on a block that disappears would make the page jump).
+	function firstVisibleBlock(nextLevel) {
 		var top = ui.topOffset || 0;
 		var list = Array.from(state.blocks.values());
 		for (var i = 0; i < list.length; i++) {
-			if (list[i].el.getBoundingClientRect().bottom > top + 8) return list[i].el;
+			var b = list[i];
+			if (b.el.classList.contains('ar-gone')) continue;
+			if (b.el.getBoundingClientRect().bottom <= top + 8) continue;
+			if (nextLevel !== undefined && variantFor(b, nextLevel) === '') continue;
+			return b.el;
 		}
 		return null;
 	}
@@ -392,7 +398,7 @@
 		index = clampIndex(index);
 		if (index === state.globalLevel && !state.overrides.size) return;
 		closePanel(false);
-		var anchor = firstVisibleBlock();
+		var anchor = firstVisibleBlock(index);
 		state.globalLevel = index;
 		state.overrides.clear();
 		if (persist !== false) storeLevel(index);
