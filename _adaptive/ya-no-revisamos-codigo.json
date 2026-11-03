@@ -75,16 +75,16 @@
   },
   {
    "tag": "p",
-   "html": "La decisión que tomamos fue esta: <strong>la revisión humana deja de ser una puerta antes del merge y pasa a ser una capa posterior.</strong> Una PR solo se integra si todas sus puertas (tests, spec, auditoría, contratos) están en verde: comprueban que hace lo que se pidió, que no rompe lo que ya funcionaba y que respeta los requisitos de seguridad. La persona revisa el resultado, no cada línea que lo ha producido.",
+   "html": "La decisión que tomamos fue esta: <strong>la revisión humana deja de ser una puerta antes del <em>merge</em> y pasa a ser una capa posterior.</strong> Una PR solo se integra si todas sus puertas (tests, spec, auditoría, contratos) están en verde: comprueban que hace lo que se pidió, que no rompe lo que ya funcionaba y que respeta los requisitos de seguridad. La persona revisa el resultado, no cada línea que lo ha producido.",
    "text": "La decisión que tomamos fue esta: la revisión humana deja de ser una puerta antes del merge y pasa a ser una capa posterior. Una PR solo se integra si todas sus puertas (tests, spec, auditoría, contratos) están en verde: comprueban que hace lo que se pidió, que no rompe lo que ya funcionaba y que respeta los requisitos de seguridad. La persona revisa el resultado, no cada línea que lo ha producido.",
    "h": "6be07f69",
    "k": "6be07f69.0",
    "id": "b-45vmmv",
    "levels": {
-    "4": "La decisión que tomamos fue esta: <strong>la revisión humana deja de ser una puerta antes del merge y pasa a ser una capa posterior.</strong> Una PR solo se integra si todas sus puertas (tests, spec, auditoría, contratos) están en verde, es decir, si hace lo que se pidió, no rompe lo que ya funcionaba y respeta la seguridad. La persona revisa el resultado, no cada línea.",
-    "1": "Por eso la revisión humana deja de ser un paso previo al merge: con tantos cambios, leer cada línea se convierte en teatro. Un cambio solo se integra si pasa todas sus comprobaciones automáticas, y la persona revisa el resultado.",
-    "2": "Por eso <strong>la revisión humana deja de ser una puerta antes del merge y pasa a ser una capa posterior.</strong> Un cambio solo se integra si pasa todas sus puertas, unas comprobaciones automáticas, y la persona revisa el resultado, no cada línea.",
-    "3": "La decisión que tomamos fue esta: <strong>la revisión humana deja de ser una puerta antes del merge y pasa a ser una capa posterior.</strong> Una PR solo se integra si todas sus puertas (tests, spec, auditoría, contratos) están en verde. La persona revisa el resultado, no cada línea."
+    "4": "La decisión que tomamos fue esta: <strong>la revisión humana deja de ser una puerta antes del <em>merge</em> y pasa a ser una capa posterior.</strong> Una PR solo se integra si todas sus puertas (tests, spec, auditoría, contratos) están en verde, es decir, si hace lo que se pidió, no rompe lo que ya funcionaba y respeta la seguridad. La persona revisa el resultado, no cada línea.",
+    "1": "Por eso la revisión humana deja de ser un paso previo al <em>merge</em>: con tantos cambios, leer cada línea se convierte en teatro. Un cambio solo se integra si pasa todas sus comprobaciones automáticas, y la persona revisa el resultado.",
+    "2": "Por eso <strong>la revisión humana deja de ser una puerta antes del <em>merge</em> y pasa a ser una capa posterior.</strong> Un cambio solo se integra si pasa todas sus puertas, unas comprobaciones automáticas, y la persona revisa el resultado, no cada línea.",
+    "3": "La decisión que tomamos fue esta: <strong>la revisión humana deja de ser una puerta antes del <em>merge</em> y pasa a ser una capa posterior.</strong> Una PR solo se integra si todas sus puertas (tests, spec, auditoría, contratos) están en verde. La persona revisa el resultado, no cada línea."
    },
    "errors": {},
    "model": "file"
@@ -427,16 +427,16 @@
   },
   {
    "tag": "p",
-   "html": "<strong>10. Análisis dinámico.</strong> Después del merge, el código se despliega en un entorno de pruebas y ZAP lo sondea automáticamente como lo haría un atacante. Es análisis dinámico (DAST): encuentra lo que no se ve en el código, sino en la aplicación funcionando. La jaula no termina en el merge.",
+   "html": "<strong>10. Análisis dinámico.</strong> Después del <em>merge</em>, el código se despliega en un entorno de pruebas y ZAP lo sondea automáticamente como lo haría un atacante. Es análisis dinámico (DAST): encuentra lo que no se ve en el código, sino en la aplicación funcionando. La jaula no termina en el <em>merge</em>.",
    "text": "10. Análisis dinámico. Después del merge, el código se despliega en un entorno de pruebas y ZAP lo sondea automáticamente como lo haría un atacante. Es análisis dinámico (DAST): encuentra lo que no se ve en el código, sino en la aplicación funcionando. La jaula no termina en el merge.",
    "h": "f54f0974",
    "k": "f54f0974.0",
    "id": "b-va2q47",
    "levels": {
-    "4": "<strong>10. Análisis dinámico.</strong> Después del merge, el código se despliega en un entorno de pruebas y ZAP lo sondea automáticamente como lo haría un atacante. Es análisis dinámico (DAST): encuentra lo que no se ve en el código, sino en la aplicación funcionando.",
+    "4": "<strong>10. Análisis dinámico.</strong> Después del <em>merge</em>, el código se despliega en un entorno de pruebas y ZAP lo sondea automáticamente como lo haría un atacante. Es análisis dinámico (DAST): encuentra lo que no se ve en el código, sino en la aplicación funcionando.",
     "1": "",
     "2": "",
-    "3": "<strong>10. Análisis dinámico.</strong> Después del merge, ZAP sondea el sistema desplegado en pruebas como lo haría un atacante. La jaula no termina en el merge."
+    "3": "<strong>10. Análisis dinámico.</strong> Después del <em>merge</em>, ZAP sondea el sistema desplegado en pruebas como lo haría un atacante. La jaula no termina en el <em>merge</em>."
    },
    "errors": {},
    "model": "file"
@@ -459,13 +459,13 @@
   },
   {
    "tag": "p",
-   "html": "Las puertas dicen si un cambio entra; la excelencia de ingeniería dice cómo evoluciona el sistema con el tiempo. El propio pipeline de cada aplicación publica estos indicadores en cada commit:",
+   "html": "Las puertas dicen si un cambio entra; la excelencia de ingeniería dice cómo evoluciona el sistema con el tiempo. El propio <em>pipeline</em> de cada aplicación publica estos indicadores en cada commit:",
    "text": "Las puertas dicen si un cambio entra; la excelencia de ingeniería dice cómo evoluciona el sistema con el tiempo. El propio pipeline de cada aplicación publica estos indicadores en cada commit:",
    "h": "44e309eb",
    "k": "44e309eb.0",
    "id": "b-bwhsvk",
    "levels": {
-    "4": "Las puertas dicen si un cambio entra; la excelencia de ingeniería, cómo evoluciona el sistema. El pipeline de cada aplicación publica estos indicadores en cada commit:",
+    "4": "Las puertas dicen si un cambio entra; la excelencia de ingeniería, cómo evoluciona el sistema. El <em>pipeline</em> de cada aplicación publica estos indicadores en cada commit:",
     "1": "",
     "2": "",
     "3": ""
@@ -891,16 +891,16 @@
   },
   {
    "tag": "p",
-   "html": "Nada de esto significa soltar el volante. Sigue habiendo una puerta de entrada innegociable: ningún cambio nace de una idea suelta o de un prompt improvisado, sino de un problema descrito, analizado y con criterios de aceptación explícitos. Ahí es donde ponemos el criterio humano: en qué construir y por qué, no en la sintaxis de cómo se construye.",
+   "html": "Nada de esto significa soltar el volante. Sigue habiendo una puerta de entrada innegociable: ningún cambio nace de una idea suelta o de un <em>prompt</em> improvisado, sino de un problema descrito, analizado y con criterios de aceptación explícitos. Ahí es donde ponemos el criterio humano: en qué construir y por qué, no en la sintaxis de cómo se construye.",
    "text": "Nada de esto significa soltar el volante. Sigue habiendo una puerta de entrada innegociable: ningún cambio nace de una idea suelta o de un prompt improvisado, sino de un problema descrito, analizado y con criterios de aceptación explícitos. Ahí es donde ponemos el criterio humano: en qué construir y por qué, no en la sintaxis de cómo se construye.",
    "h": "ee3a0302",
    "k": "ee3a0302.0",
    "id": "b-se42or",
    "levels": {
-    "4": "Nada de esto significa soltar el volante. Ningún cambio nace de una idea suelta o de un prompt improvisado, sino de un problema descrito, analizado y con criterios de aceptación explícitos. Ahí ponemos el criterio humano: en qué construir y por qué, no en la sintaxis.",
+    "4": "Nada de esto significa soltar el volante. Ningún cambio nace de una idea suelta o de un <em>prompt</em> improvisado, sino de un problema descrito, analizado y con criterios de aceptación explícitos. Ahí ponemos el criterio humano: en qué construir y por qué, no en la sintaxis.",
     "1": "El criterio humano sigue estando en qué construir y por qué, y quien integra un cambio sigue respondiendo por él.",
     "2": "Esto no significa soltar el volante. Cada cambio nace de un problema descrito y con criterios de aceptación, y quien lo integra sigue respondiendo por él.",
-    "3": "Nada de esto significa soltar el volante. Ningún cambio nace de una idea suelta o de un prompt improvisado, sino de un problema descrito, analizado y con criterios de aceptación explícitos. Ahí ponemos el criterio humano."
+    "3": "Nada de esto significa soltar el volante. Ningún cambio nace de una idea suelta o de un <em>prompt</em> improvisado, sino de un problema descrito, analizado y con criterios de aceptación explícitos. Ahí ponemos el criterio humano."
    },
    "errors": {},
    "model": "file"

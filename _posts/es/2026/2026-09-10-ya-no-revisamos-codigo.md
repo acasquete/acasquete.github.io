@@ -21,7 +21,7 @@ Hasta hace poco, revisar una PR significaba lo de siempre: alguien leía los cam
 
 En esas aplicaciones, buena parte de los pasos del ciclo (leer la *issue*, escribir el código, ejecutar los tests, abrir la PR) ya no los hace una persona, sino un agente de IA con sus propias herramientas y permisos, dentro de los límites que le marcamos. Los pasos son los de siempre; lo que ha cambiado es quién los da, y eso nos obliga a replantearnos dónde ponemos la atención humana.
 
-La decisión que tomamos fue esta: **la revisión humana deja de ser una puerta antes del merge y pasa a ser una capa posterior.** Una PR solo se integra si todas sus puertas (tests, spec, auditoría, contratos) están en verde: comprueban que hace lo que se pidió, que no rompe lo que ya funcionaba y que respeta los requisitos de seguridad. La persona revisa el resultado, no cada línea que lo ha producido.
+La decisión que tomamos fue esta: **la revisión humana deja de ser una puerta antes del *merge* y pasa a ser una capa posterior.** Una PR solo se integra si todas sus puertas (tests, spec, auditoría, contratos) están en verde: comprueban que hace lo que se pidió, que no rompe lo que ya funcionaba y que respeta los requisitos de seguridad. La persona revisa el resultado, no cada línea que lo ha producido.
 
 El motivo no es ir más rápido, sino que, con este volumen de cambios, leer cada uno deja de ser una señal fiable de calidad. **Se convierte en teatro.**
 
@@ -87,7 +87,7 @@ Las medimos en Pulse, un panel interno que lee de GitHub qué prácticas protege
 
 ### Con el sistema en marcha
 
-**10. Análisis dinámico.** Después del merge, el código se despliega en un entorno de pruebas y ZAP lo sondea automáticamente como lo haría un atacante. Es análisis dinámico (DAST): encuentra lo que no se ve en el código, sino en la aplicación funcionando. La jaula no termina en el merge.
+**10. Análisis dinámico.** Después del *merge*, el código se despliega en un entorno de pruebas y ZAP lo sondea automáticamente como lo haría un atacante. Es análisis dinámico (DAST): encuentra lo que no se ve en el código, sino en la aplicación funcionando. La jaula no termina en el *merge*.
 
 **11. Rendimiento.** Cuando el proyecto lo requiere, las pruebas de carga, por ejemplo con k6, comprueban que los tiempos de respuesta se mantienen dentro de un presupuesto. Un cambio puede pasar todas las puertas anteriores y hacer que la aplicación sea lenta. Solo después de estas dos comprobaciones una persona confirma el paso a producción.
 
@@ -97,7 +97,7 @@ Las medimos en Pulse, un panel interno que lee de GitHub qué prácticas protege
 
 ### Lo que medimos: excelencia de ingeniería
 
-Las puertas dicen si un cambio entra; la excelencia de ingeniería dice cómo evoluciona el sistema con el tiempo. El propio pipeline de cada aplicación publica estos indicadores en cada commit:
+Las puertas dicen si un cambio entra; la excelencia de ingeniería dice cómo evoluciona el sistema con el tiempo. El propio *pipeline* de cada aplicación publica estos indicadores en cada commit:
 
 ![Indicadores de excelencia de ingeniería en Pulse: cobertura, mutación, métodos con CRAP superior a 30, vulnerabilidades críticas y altas, componentes en el SBOM y deuda de complejidad.](/img/ya-no-revisamos/pulse-excelencia.png)
 
@@ -151,7 +151,7 @@ Nada de esto llegó de golpe ni sale gratis. La jaula hay que diseñarla, manten
 
 ## Lo que sigue siendo humano
 
-Nada de esto significa soltar el volante. Sigue habiendo una puerta de entrada innegociable: ningún cambio nace de una idea suelta o de un prompt improvisado, sino de un problema descrito, analizado y con criterios de aceptación explícitos. Ahí es donde ponemos el criterio humano: en qué construir y por qué, no en la sintaxis de cómo se construye.
+Nada de esto significa soltar el volante. Sigue habiendo una puerta de entrada innegociable: ningún cambio nace de una idea suelta o de un *prompt* improvisado, sino de un problema descrito, analizado y con criterios de aceptación explícitos. Ahí es donde ponemos el criterio humano: en qué construir y por qué, no en la sintaxis de cómo se construye.
 
 Y hay líneas rojas que el agente no cruza solo: antes de tocar producción, se detiene y pide confirmación a una persona. Los cambios que afectan a dominios sensibles, como la seguridad, o a una decisión de arquitectura documentada (ADR) también necesitan su aprobación.
 
