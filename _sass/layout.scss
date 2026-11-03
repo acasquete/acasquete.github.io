@@ -46,6 +46,80 @@
   span { color: $accent-color; }
 }
 
+// Post thumbnail and title that slide into the bar once the cover is gone.
+.bar-post {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  max-width: 40%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #FFFFFF;
+  font-size: 15px;
+  font-weight: 500;
+  opacity: 0;
+  transform: translate(-50%, 8px);
+  pointer-events: none;
+  transition: opacity .35s ease, transform .45s $ease;
+
+  img {
+    flex: none;
+    width: 56px;
+    height: 36px;
+    border-radius: 5px;
+    object-fit: cover;
+  }
+
+  span {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .site-header.has-post & { opacity: 1; transform: translate(-50%, 0); pointer-events: auto; }
+  // Mid widths: the centred title would collide with the tabs.
+  @media (max-width: 1099px) and (min-width: 521px) { display: none; }
+  // Phones: thumbnail only, in the free space between the logo and the buttons.
+  @media (max-width: 520px) {
+    position: static;
+    margin: 0 auto;
+    transform: translateY(8px);
+    span { display: none; }
+    img { width: 48px; height: 30px; }
+    .site-header.has-post & { transform: none; }
+  }
+}
+
+// Phones: the reading-level button that the floating pill docks into.
+.bar-ar {
+  display: none;
+  &[hidden] { display: none !important; }
+}
+
+@media (max-width: 520px) {
+  .bar-ar {
+    display: flex;
+    flex: none;
+    align-items: center;
+    justify-content: center;
+    width: 0;
+    height: 44px;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background: transparent;
+    color: #FFFFFF;
+    opacity: 0;
+    overflow: hidden;
+    cursor: pointer;
+    transition: width .36s $ease, opacity .25s ease, background .3s;
+    &[aria-expanded="true"] { background: rgba(255,255,255,.16); }
+  }
+  .site-header.ar-docked .bar-ar { width: 44px; opacity: 1; }
+}
+
 .tabs {
   display: flex;
   align-items: stretch;
@@ -809,6 +883,31 @@
   }
 }
 
+// The cover drifts away as you start reading: it lags behind the scroll,
+// shrinks a little and fades out. Scroll-driven, CSS only; browsers without
+// support (or readers who prefer reduced motion) keep a static image.
+@supports (animation-timeline: scroll()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .post-cover img {
+      transform-origin: 50% 0;
+      animation: cover-drift linear both;
+      animation-timeline: scroll(root);
+      animation-range: 0 60vh;
+    }
+
+    // Keep the title above the drifting image.
+    .post-cover + .post-head { position: relative; z-index: 1; }
+  }
+}
+
+@keyframes cover-drift {
+  70% { opacity: 0; }
+  to {
+    transform: translateY(16%) scale(.92);
+    opacity: 0;
+  }
+}
+
 .post-column {
   max-width: 808px;
   padding-top: 72px;
@@ -1413,11 +1512,14 @@
       font-size: 15px;
       span { color: $accent-light; }
     }
+    // The buttons sit on the right; a post thumbnail, when there is one,
+    // centres itself in the space between them and the logo.
+    &:not(:has(.bar-post)) .logo { margin-right: auto; }
 
     .sq {
       width: 44px;
       height: 44px;
-      margin-left: auto;
+      margin-left: 0;
       border: 0;
       border-radius: 50%;
       background: transparent;

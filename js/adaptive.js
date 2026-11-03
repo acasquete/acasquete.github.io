@@ -15,6 +15,7 @@
 	// "original" is never stored. An empty string means "omit this block at this level".
 	var VARIANT_KEY = ['1', '2', '3', '4', null];
 	var DEFAULT_LEVEL = 2; // Esencial
+	var PILL_IDLE_MS = 3000; // mobile: collapse the floating pill after this idle time
 	var STORAGE_KEY = 'acn-reading-depth';
 	var ALLOWED = { A: 1, EM: 1, STRONG: 1, B: 1, I: 1, CODE: 1, KBD: 1, SUP: 1, SUB: 1, BR: 1 };
 	// Must mirror scripts/adaptive/lib.py
@@ -451,20 +452,78 @@
 		document.body.appendChild(ui.live);
 
 		var hdr = document.getElementById('header');
+		var barBtn = document.getElementById('bar-ar');
 		function measure() {
 			ui.topOffset = hdr ? hdr.getBoundingClientRect().height : 0;
 			pill.style.setProperty('--ar-top', ui.topOffset + 'px');
+			// Where the bar ends once it is stuck (the phone bar floats with a top gap).
+			var stuck = hdr ? (parseFloat(getComputedStyle(hdr).top) || 0) + ui.topOffset : 0;
+			pill.style.setProperty('--ar-dock-top', stuck + 'px');
+			if (barBtn && docked()) {
+				var b = barBtn.getBoundingClientRect();
+				pill.style.setProperty('--ar-origin', Math.round(b.left + b.width / 2 - 12) + 'px');
+			}
 		}
+
+		// On phones the pill docks into the header bar: a layers button sits in
+		// the bar, and the level control drops down from it and folds back up
+		// after a few idle seconds. Elsewhere it floats as before.
+		var dockQuery = window.matchMedia('(max-width: 520px)');
+		var idleTimer = null;
+		var dragging = false;
+		var past = false;
+		function docked() { return !!barBtn && dockQuery.matches; }
+		function setPill(open) {
+			pill.classList.toggle('is-shown', open);
+			pill.setAttribute('aria-hidden', open ? 'false' : 'true');
+			if (barBtn) barBtn.setAttribute('aria-expanded', open && docked() ? 'true' : 'false');
+		}
+		function arm() {
+			window.clearTimeout(idleTimer);
+			if (!docked() || dragging) return;
+			idleTimer = window.setTimeout(function () {
+				var busy = pill.contains(document.activeElement) || pill.matches(':hover') || barBtn.matches(':hover');
+				if (!busy) setPill(false);
+			}, PILL_IDLE_MS);
+		}
+		function openDock() { measure(); setPill(true); arm(); }
+		function sync() {
+			window.clearTimeout(idleTimer);
+			var dock = docked();
+			pill.classList.toggle('ar-pill--dock', dock);
+			if (hdr) hdr.classList.toggle('ar-docked', past && dock);
+			if (barBtn) barBtn.tabIndex = past && dock ? 0 : -1;
+			if (!past) setPill(false);
+			else if (dock) openDock();
+			else setPill(true);
+		}
+
 		measure();
 		window.addEventListener('resize', measure);
+
+		if (barBtn) {
+			barBtn.hidden = false;
+			barBtn.addEventListener('click', function () {
+				if (pill.classList.contains('is-shown')) setPill(false); else openDock();
+			});
+			barBtn.addEventListener('mouseenter', function () { if (past && docked()) openDock(); });
+			barBtn.addEventListener('mouseleave', arm);
+		}
+		pill.addEventListener('mouseleave', arm);
+		pill.addEventListener('pointerdown', function () { dragging = true; arm(); });
+		['pointerup', 'pointercancel'].forEach(function (evt) {
+			pill.addEventListener(evt, function () { dragging = false; arm(); });
+		});
+		pill.addEventListener('input', arm);
+		pill.addEventListener('focusout', arm);
+		if (dockQuery.addEventListener) dockQuery.addEventListener('change', function () { measure(); sync(); });
 
 		if ('IntersectionObserver' in window) {
 			var io = new IntersectionObserver(function (entries) {
 				var e = entries[entries.length - 1];
-				var past = !e.isIntersecting && e.boundingClientRect.bottom < (ui.topOffset || 0) + 8;
-				pill.classList.toggle('is-shown', past);
-				pill.setAttribute('aria-hidden', past ? 'false' : 'true');
+				past = !e.isIntersecting && e.boundingClientRect.bottom < (ui.topOffset || 0) + 8;
 				card.classList.toggle('is-collapsed', past);
+				sync();
 			}, { rootMargin: '-' + Math.round(ui.topOffset || 0) + 'px 0px 0px 0px', threshold: 0 });
 			io.observe(card);
 		}

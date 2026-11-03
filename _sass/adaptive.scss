@@ -358,6 +358,25 @@ li.ar-block > .ar-margin { right: calc(100% + 24px + 1.5em); }
   .ar-panel__labels { flex-grow: 0; width: 100px; }
 }
 
+// Phones: the pill is a drop-down from the header bar's layers button. It
+// grows out of the button and folds back into it.
+.ar-pill.ar-pill--dock {
+  top: calc(var(--ar-dock-top, 64px) + 8px);
+  left: calc(12px + env(safe-area-inset-left));
+  right: calc(12px + env(safe-area-inset-right));
+  justify-content: center;
+  height: 52px;
+  transform-origin: var(--ar-origin, 80%) -8px;
+  transform: translateY(-14px) scale(.2, .5);
+  transition: opacity 180ms ease, transform 300ms var(--ar-ease), visibility 0s linear 300ms;
+
+  &.is-shown {
+    transform: none;
+    transition: opacity 200ms ease, transform 360ms var(--ar-ease), visibility 0s;
+  }
+  .ar-slider--pill { flex: 1 1 auto; width: auto; max-width: 200px; }
+}
+
 @media (max-width: 520px) {
   .ar-pill { right: calc(12px + env(safe-area-inset-right)); gap: 8px; padding: 0 12px; }
   .ar-pill__name { width: 64px; font-size: 13px; }
