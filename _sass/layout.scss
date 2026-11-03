@@ -1029,6 +1029,10 @@
   color: $faint;
 }
 
+// Books with a review link to the post
+a.bk { color: inherit; text-decoration: none; }
+.bk-review { color: $accent-text; }
+
 .book-line {
   margin: 0;
   display: flex;

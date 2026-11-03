@@ -1,0 +1,157 @@
+{
+ "version": 1,
+ "slug": "de-ratones-y-hombres-en-voz-alta",
+ "post": "_posts/es/2026/2026-11-03-de-ratones-y-hombres-en-voz-alta.md",
+ "generator": {
+  "provider": "file",
+  "model": "file",
+  "prompt_version": 2,
+  "generated_at": "2026-11-03T21:29:31Z"
+ },
+ "blocks": [
+  {
+   "tag": "p",
+   "html": "No he leído <em>De ratones y hombres</em>. La he escuchado, en el audiolibro narrado por Joan Mora, y al terminarla tuve la sensación de haberla conocido como Steinbeck quería que se conociera: en voz alta.",
+   "text": "No he leído De ratones y hombres. La he escuchado, en el audiolibro narrado por Joan Mora, y al terminarla tuve la sensación de haberla conocido como Steinbeck quería que se conociera: en voz alta.",
+   "h": "b9fbcb7d",
+   "k": "b9fbcb7d.0",
+   "id": "b-444mjw",
+   "levels": {
+    "1": "No he leído <em>De ratones y hombres</em>: la he escuchado, narrada por Joan Mora.",
+    "2": "No he leído <em>De ratones y hombres</em>: la he escuchado, en el audiolibro narrado por Joan Mora.",
+    "3": "No he leído <em>De ratones y hombres</em>. La he escuchado, en el audiolibro narrado por Joan Mora, y creo que es como Steinbeck quería que se conociera: en voz alta.",
+    "4": "No he leído <em>De ratones y hombres</em>. La he escuchado, en el audiolibro narrado por Joan Mora, y al terminarla tuve la sensación de haberla conocido como Steinbeck quería que se conociera: en voz alta."
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "La novela es de 1937 y es casi una obra de teatro disfrazada. Steinbeck la escribió casi como un guion y él mismo la adaptó al teatro: en noviembre de ese mismo año ya se estrenaba en Broadway. Cada capítulo empieza con un paisaje, como una acotación, y luego todo es diálogo en un mismo sitio: la orilla del río, el barracón, el establo. Leída, puede parecer escueta. Escuchada, es otra cosa.",
+   "text": "La novela es de 1937 y es casi una obra de teatro disfrazada. Steinbeck la escribió casi como un guion y él mismo la adaptó al teatro: en noviembre de ese mismo año ya se estrenaba en Broadway. Cada capítulo empieza con un paisaje, como una acotación, y luego todo es diálogo en un mismo sitio: la orilla del río, el barracón, el establo. Leída, puede parecer escueta. Escuchada, es otra cosa.",
+   "h": "1aca4833",
+   "k": "1aca4833.0",
+   "id": "b-yeveav",
+   "levels": {
+    "1": "",
+    "2": "",
+    "3": "La novela, de 1937, es casi una obra de teatro: Steinbeck la adaptó él mismo y ese año ya estaba en Broadway. Leída puede parecer escueta; escuchada, es otra cosa.",
+    "4": "La novela es de 1937 y es casi una obra de teatro disfrazada: Steinbeck la adaptó él mismo y en noviembre de ese año ya se estrenaba en Broadway. Cada capítulo empieza con un paisaje, como una acotación, y luego todo es diálogo. Leída, puede parecer escueta. Escuchada, es otra cosa."
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "La historia cabe en pocas líneas. <strong>George</strong> y <strong>Lennie</strong> son dos jornaleros que van de rancho en rancho por California durante la Gran Depresión. George es pequeño y listo; Lennie es enorme, fuerte como una mula y con la cabeza de un niño. Comparten un sueño: juntar dinero, comprar una granja y vivir de lo que dé la tierra, con conejos que cuidará Lennie.",
+   "text": "La historia cabe en pocas líneas. George y Lennie son dos jornaleros que van de rancho en rancho por California durante la Gran Depresión. George es pequeño y listo; Lennie es enorme, fuerte como una mula y con la cabeza de un niño. Comparten un sueño: juntar dinero, comprar una granja y vivir de lo que dé la tierra, con conejos que cuidará Lennie.",
+   "h": "ae525b06",
+   "k": "ae525b06.0",
+   "id": "b-yy87jd",
+   "levels": {
+    "1": "",
+    "2": "<strong>George</strong> y <strong>Lennie</strong> son dos jornaleros en la California de la Gran Depresión que sueñan con comprar una granja.",
+    "3": "<strong>George</strong> y <strong>Lennie</strong> son dos jornaleros que van de rancho en rancho por la California de la Gran Depresión. Lennie es enorme y con la cabeza de un niño. Sueñan con una granja con conejos.",
+    "4": "<strong>George</strong> y <strong>Lennie</strong> son dos jornaleros que van de rancho en rancho por California durante la Gran Depresión. George es pequeño y listo; Lennie, enorme y con la cabeza de un niño. Sueñan con juntar dinero, comprar una granja y tener conejos que cuidará Lennie."
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "Casi todo el libro son voces, y en un audiolibro todas salen de la misma persona. Joan Mora tiene que ser George, Lennie, el viejo Candy, Slim, Curley, Crooks y la mujer de Curley, a veces en la misma escena. Lo difícil es Lennie. Repite las mismas preguntas una y otra vez, y con la voz equivocada sería un personaje cómico o insoportable. En la suya no es ninguna de las dos cosas: es alguien que necesita oír lo mismo para estar tranquilo.",
+   "text": "Casi todo el libro son voces, y en un audiolibro todas salen de la misma persona. Joan Mora tiene que ser George, Lennie, el viejo Candy, Slim, Curley, Crooks y la mujer de Curley, a veces en la misma escena. Lo difícil es Lennie. Repite las mismas preguntas una y otra vez, y con la voz equivocada sería un personaje cómico o insoportable. En la suya no es ninguna de las dos cosas: es alguien que necesita oír lo mismo para estar tranquilo.",
+   "h": "1161cedc",
+   "k": "1161cedc.0",
+   "id": "b-bg17vz",
+   "levels": {
+    "1": "",
+    "2": "",
+    "3": "En un audiolibro todas las voces salen de la misma persona. Lo difícil es Lennie, que repite las mismas preguntas; en la voz de Joan Mora es alguien que necesita oír lo mismo para estar tranquilo.",
+    "4": "En un audiolibro todas las voces salen de la misma persona: Joan Mora es George, Lennie, Candy, Slim, Curley, Crooks y la mujer de Curley. Lo difícil es Lennie, que repite las mismas preguntas una y otra vez. Con la voz equivocada sería cómico o insoportable; en la suya es alguien que necesita oír lo mismo para estar tranquilo."
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "Esa repetición es lo que cambia al escuchar. En papel, cuando George vuelve a contar lo de la granja, el ojo salta el párrafo porque ya lo conoce. En audio no puedes saltarlo. Lo oyes entero, cada vez, con las mismas palabras, hasta que entiendes que no es información sino un ritual, lo que se dicen dos personas que no tienen nada más. Por eso la última vez que George lo cuenta pesa tanto.",
+   "text": "Esa repetición es lo que cambia al escuchar. En papel, cuando George vuelve a contar lo de la granja, el ojo salta el párrafo porque ya lo conoce. En audio no puedes saltarlo. Lo oyes entero, cada vez, con las mismas palabras, hasta que entiendes que no es información sino un ritual, lo que se dicen dos personas que no tienen nada más. Por eso la última vez que George lo cuenta pesa tanto.",
+   "h": "24daa034",
+   "k": "24daa034.0",
+   "id": "b-givzv3",
+   "levels": {
+    "1": "",
+    "2": "En audio no puedes saltarte las veces que George cuenta lo de la granja. Lo oyes entero, hasta entender que es un ritual.",
+    "3": "En papel, el ojo salta el párrafo cuando George vuelve a contar lo de la granja. En audio lo oyes entero, cada vez, hasta entender que es un ritual. Por eso la última vez pesa tanto.",
+    "4": "Esa repetición es lo que cambia al escuchar. En papel, cuando George vuelve a contar lo de la granja, el ojo salta el párrafo. En audio lo oyes entero, cada vez, hasta que entiendes que no es información sino un ritual entre dos personas que no tienen nada más. Por eso la última vez que George lo cuenta pesa tanto."
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "Hay otra escena que en voz alta se hace casi insoportable: la del perro de Candy. Un perro viejo, ciego, que huele mal, y un compañero que convence a Candy de que lo mejor es pegarle un tiro. Se lo llevan fuera y los demás esperan en el barracón, en silencio, a que suene el disparo. Steinbeck alarga ese silencio y el narrador también. Es la escena más importante del libro, aunque al oírla todavía no lo sabes.",
+   "text": "Hay otra escena que en voz alta se hace casi insoportable: la del perro de Candy. Un perro viejo, ciego, que huele mal, y un compañero que convence a Candy de que lo mejor es pegarle un tiro. Se lo llevan fuera y los demás esperan en el barracón, en silencio, a que suene el disparo. Steinbeck alarga ese silencio y el narrador también. Es la escena más importante del libro, aunque al oírla todavía no lo sabes.",
+   "h": "69a3e66f",
+   "k": "69a3e66f.0",
+   "id": "b-b67lag",
+   "levels": {
+    "1": "",
+    "2": "",
+    "3": "Y la escena del perro viejo de Candy, con todos esperando en silencio el disparo, es la más importante del libro, aunque al oírla aún no lo sabes.",
+    "4": "Otra escena se hace casi insoportable en voz alta: la del perro viejo y ciego de Candy, al que un compañero convence de pegarle un tiro. Los demás esperan en el barracón, en silencio, a que suene el disparo, y el narrador alarga ese silencio como Steinbeck. Es la escena más importante del libro, aunque al oírla todavía no lo sabes."
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "Me quedo también con un detalle: la única mujer del rancho no tiene nombre. En todo el libro es «la mujer de Curley». Ella también tenía un sueño, y nadie se molesta en escucharlo.",
+   "text": "Me quedo también con un detalle: la única mujer del rancho no tiene nombre. En todo el libro es «la mujer de Curley». Ella también tenía un sueño, y nadie se molesta en escucharlo.",
+   "h": "0dfd7709",
+   "k": "0dfd7709.0",
+   "id": "b-g2hc7h",
+   "levels": {
+    "1": "",
+    "2": "",
+    "3": "",
+    "4": "Me quedo también con un detalle: la única mujer del rancho no tiene nombre. En todo el libro es «la mujer de Curley». Ella también tenía un sueño, y nadie se molesta en escucharlo."
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "El título sale de un poema de Robert Burns, <em>To a Mouse</em>, de 1785, sobre un ratón al que un arado le destroza la madriguera:",
+   "text": "El título sale de un poema de Robert Burns, To a Mouse, de 1785, sobre un ratón al que un arado le destroza la madriguera:",
+   "h": "7ca528f5",
+   "k": "7ca528f5.0",
+   "id": "b-efm3q8",
+   "levels": {
+    "1": "El título sale de un poema de Robert Burns:",
+    "2": "El título sale de un poema de Robert Burns, <em>To a Mouse</em>:",
+    "3": "El título sale de un poema de Robert Burns, <em>To a Mouse</em>:",
+    "4": "El título sale de un poema de Robert Burns, <em>To a Mouse</em>, de 1785, sobre un ratón al que un arado le destroza la madriguera:"
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "Los mejores planes de ratones y hombres a menudo se tuercen. La granja de George y Lennie no llega a existir, pero mientras George la cuenta, existe. Creo que eso es lo que se me ha quedado de este libro: que a veces lo único que tenemos es una historia que alguien nos cuenta en voz alta, y que basta con eso para seguir adelante.",
+   "text": "Los mejores planes de ratones y hombres a menudo se tuercen. La granja de George y Lennie no llega a existir, pero mientras George la cuenta, existe. Creo que eso es lo que se me ha quedado de este libro: que a veces lo único que tenemos es una historia que alguien nos cuenta en voz alta, y que basta con eso para seguir adelante.",
+   "h": "a77d876a",
+   "k": "a77d876a.0",
+   "id": "b-3sf7mx",
+   "levels": {
+    "1": "La granja nunca existe, pero mientras George la cuenta, existe.",
+    "2": "La granja no llega a existir, pero mientras George la cuenta, existe. A veces basta con una historia contada en voz alta para seguir adelante.",
+    "3": "La granja de George y Lennie no llega a existir, pero mientras George la cuenta, existe. A veces lo único que tenemos es una historia contada en voz alta, y basta para seguir adelante.",
+    "4": "Los mejores planes de ratones y hombres a menudo se tuercen. La granja de George y Lennie no llega a existir, pero mientras George la cuenta, existe. Eso es lo que se me ha quedado: que a veces lo único que tenemos es una historia que alguien nos cuenta en voz alta, y que basta para seguir adelante."
+   },
+   "errors": {},
+   "model": "file"
+  }
+ ]
+}

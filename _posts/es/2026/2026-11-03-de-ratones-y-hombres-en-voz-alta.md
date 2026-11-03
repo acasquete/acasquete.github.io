@@ -5,6 +5,8 @@ tags: [personal, readings]
 reviewed: true
 home: false
 ai: true
+header_image: de-ratones-y-hombres-review-cover.jpg
+cover_ratio: 16 / 9
 ---
 No he leído *De ratones y hombres*. La he escuchado, en el audiolibro narrado por Joan Mora, y al terminarla tuve la sensación de haberla conocido como Steinbeck quería que se conociera: en voz alta.<!-- excerpt-end -->
 

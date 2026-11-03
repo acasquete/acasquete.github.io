@@ -18,7 +18,7 @@ nav: biblioteca
 
 <section class="wrap" aria-labelledby="ultimo" style="padding-top: 80px">
   <div class="latest cols">
-    <div class="img latest-cover"><img src="/img/books/{{ latest.image }}" alt="Portada de {{ latest.title }}"></div>
+    {% if latest_note %}<a class="card" href="{{ latest_note.url }}" aria-label="{{ latest.title }}: leer la reseña"><div class="img latest-cover"><img src="/img/books/{{ latest.image }}" alt="Portada de {{ latest.title }}"></div></a>{% else %}<div class="img latest-cover"><img src="/img/books/{{ latest.image }}" alt="Portada de {{ latest.title }}"></div>{% endif %}
     <div>
       <h2 id="ultimo" class="kick">Lo último que he leído</h2>
       <p class="latest-title">{{ latest.title }}</p>
