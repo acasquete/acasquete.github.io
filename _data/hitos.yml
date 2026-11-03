@@ -41,6 +41,7 @@
     image: "/img/hawai.jpg"
   - label: Plain Camp en Benidorm
     month: Jun
+    image: "/img/plain-camp-benidorm.jpg"
   - label: Un viaje a San Francisco
     month: May
     image: "/img/san-francisco.jpg"
@@ -91,7 +92,7 @@
   - label: Primera vez en San Francisco
     month: Ago
   - label: Primer cuadro
-  - label: Hello world, Cande
+  - label: "<em>Hello world</em>, Cande"
     month: Sep
   - label: Descubriendo Jordania
 - year: 2021

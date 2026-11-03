@@ -21,7 +21,7 @@ Estamos a finales de 2026. No tenemos las doscientas mil copias de agentes que i
 
 ## Ya no abrimos el IDE
 
-En el [post anterior](/ya-no-revisamos-codigo) conté que habíamos dejado de revisar cada cambio a mano. La consecuencia lógica llegó sola: si no lees el código antes del merge, el editor deja de ser el sitio donde pasa el trabajo. Hoy no usamos IDE. Trabajamos con agentes en la terminal.
+En el [post anterior](/ya-no-revisamos-codigo) conté que habíamos dejado de revisar cada cambio a mano. La consecuencia lógica llegó sola: si no lees el código antes del *merge*, el editor deja de ser el sitio donde pasa el trabajo. Hoy no usamos IDE. Trabajamos con agentes en la terminal.
 
 En el equipo de plataforma trabajamos con Claude Code, en su versión de terminal, y con OpenCode.
 
@@ -45,7 +45,7 @@ Esta es la distinción que creo que importa.
 
 Una **conversación** es un chat: preguntas, el modelo responde, sigues preguntando. Está pensada para una persona y un agente, y para que la persona esté delante.
 
-Una **sesión** es un trabajo en marcha. Tiene un objetivo (una issue, una especificación), una rama o un *worktree*, unos permisos, un coste acumulado, un estado (trabajando, bloqueada, esperando una decisión, en revisión) y un resultado que se puede verificar: las puertas que ha pasado y las que no.
+Una **sesión** es un trabajo en marcha. Tiene un objetivo (una *issue*, una especificación), una rama o un *worktree*, unos permisos, un coste acumulado, un estado (trabajando, bloqueada, esperando una decisión, en revisión) y un resultado que se puede verificar: las puertas que ha pasado y las que no.
 
 Con una conversación, la pregunta es *qué me ha dicho*. Con decenas de sesiones, las preguntas son otras: cuáles me necesitan ahora, cuáles se han atascado, cuáles están gastando sin avanzar y cuáles puedo dar por buenas sin mirarlas.
 
@@ -64,10 +64,10 @@ Sin pretender tener el diseño cerrado, esto es lo que creo que necesita un ICE:
 1. **Una bandeja de decisiones, no de mensajes.** Lo primero que ves no es código ni chats, sino lo que te espera: una sesión que pide permiso para tocar algo sensible, una especificación ambigua, un *gate* que ha fallado dos veces.
 2. **El estado de cada sesión de un vistazo.** Trabajando, bloqueada, esperando, lista. En qué punto del flujo de despliegue está, si alguna puerta ha fallado y cuántas veces y cuánto tiempo lleva reimplementando. Como un tablero de despliegues, no como una lista de pestañas.
 3. **Varios proyectos, un panel compartido.** Las sesiones se agrupan por proyecto, pero se ven juntas, y el panel es del equipo, no de una persona: todos ven lo mismo, se sabe quién atiende cada sesión y cualquiera con contexto puede tomar una decisión pendiente.
-4. **Evidencias antes que diffs.** De cada sesión quiero ver primero qué puertas ha pasado (tests, mutación, seguridad, especificación) y solo después, si hace falta, el cambio. El diff deja de ser la puerta de entrada.
+4. **Evidencias antes que *diffs*.** De cada sesión quiero ver primero qué puertas ha pasado (tests, mutación, seguridad, especificación) y solo después, si hace falta, el cambio. El *diff* deja de ser la puerta de entrada.
 5. **Coste y presupuesto por sesión.** Cuánto lleva gastado, cuánto se espera que gaste y cuándo pararla. Una sesión que da vueltas es dinero que se va. Y cuántas veces ha llegado al tope de la ventana de contexto: una sesión que se compacta una y otra vez pierde memoria y gasta de más, y suele ser la señal de que hay algo que optimizar, como una tarea demasiado grande, un contexto inflado con archivos que no hacían falta o una especificación que habría que partir.
 6. **Permisos y líneas rojas visibles.** Qué puede hacer cada sesión, qué no, y cuándo se va a detener para pedir confirmación. Y de quién depende: si para desplegar necesita algo de otro equipo, tiene que saberse antes de empezar y no cuando ya está bloqueada, junto con una estimación de cuánto le falta para terminar.
-7. **Trazabilidad de punta a punta.** De la issue a la especificación, de la especificación a la sesión, de la sesión a la PR y de la PR a producción. Si algo falla en producción, tiene que poder seguirse hacia atrás.
+7. **Trazabilidad de punta a punta.** De la *issue* a la especificación, de la especificación a la sesión, de la sesión a la PR y de la PR a producción. Si algo falla en producción, tiene que poder seguirse hacia atrás.
 8. **Pausar, retomar y repartir.** Las sesiones duran horas o días. Tienen que poder pararse, retomarse con su contexto y pasarse a otra persona.
 9. **Un límite de trabajo en curso.** Tener cien sesiones abiertas no es productividad si nadie puede atenderlas. La herramienta debería ayudar a no lanzar más de las que se pueden supervisar.
 
