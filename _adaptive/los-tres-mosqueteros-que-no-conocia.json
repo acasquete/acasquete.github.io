@@ -1,0 +1,109 @@
+{
+ "version": 1,
+ "slug": "los-tres-mosqueteros-que-no-conocia",
+ "post": "_posts/es/2026/2026-02-11-los-tres-mosqueteros-que-no-conocia.md",
+ "generator": {
+  "provider": "file",
+  "model": "file",
+  "prompt_version": 2,
+  "generated_at": "2026-11-03T01:14:53Z"
+ },
+ "blocks": [
+  {
+   "tag": "p",
+   "html": "Creía conocer <em>Los tres mosqueteros</em>. Había visto tantas versiones en cine y televisión que nunca sentí la necesidad de leer la novela de Dumas. Me equivocaba, y me di cuenta por el final de Milady. En la película de Disney de 1993 se arroja por un acantilado después de reconciliarse con Athos; en la de 2011, salta de un dirigible y sobrevive. En la novela no hay acantilado ni rescate: la juzgan los propios héroes.",
+   "text": "Creía conocer Los tres mosqueteros. Había visto tantas versiones en cine y televisión que nunca sentí la necesidad de leer la novela de Dumas. Me equivocaba, y me di cuenta por el final de Milady. En la película de Disney de 1993 se arroja por un acantilado después de reconciliarse con Athos; en la de 2011, salta de un dirigible y sobrevive. En la novela no hay acantilado ni rescate: la juzgan los propios héroes.",
+   "h": "4c0e8ca1",
+   "k": "4c0e8ca1.0",
+   "id": "b-8tdava",
+   "levels": {
+    "1": "Creía conocer <em>Los tres mosqueteros</em> por sus películas, pero al leer por fin la novela de Dumas descubrí que el cine cambia lo más importante: el final de Milady.",
+    "2": "Creía conocer <em>Los tres mosqueteros</em> por sus películas y nunca había leído la novela de Dumas. Me equivocaba: en el cine, Milady se arroja por un acantilado o sobrevive; en la novela, la juzgan los propios héroes.",
+    "3": "Creía conocer <em>Los tres mosqueteros</em>: había visto tantas versiones que nunca leí la novela de Dumas. Me equivocaba, y me di cuenta por el final de Milady. En la película de Disney de 1993 se arroja por un acantilado; en la de 2011, salta de un dirigible y sobrevive. En la novela no hay acantilado ni rescate: la juzgan los propios héroes.",
+    "4": "Creía conocer <em>Los tres mosqueteros</em>. Había visto tantas versiones en cine y televisión que nunca sentí la necesidad de leer la novela de Dumas. Me equivocaba, y me di cuenta por el final de Milady. En la película de Disney de 1993 se arroja por un acantilado tras reconciliarse con Athos; en la de 2011, salta de un dirigible y sobrevive. En la novela no hay acantilado ni rescate: la juzgan los propios héroes."
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "La historia transcurre en la Francia de Luis XIII, con el cardenal Richelieu moviendo los hilos. La primera mitad sigue a <strong>D’Artagnan</strong> y el asunto de los <strong>herretes de diamantes</strong> de la reina; la segunda pertenece a <strong>Milady de Winter</strong>.",
+   "text": "La historia transcurre en la Francia de Luis XIII, con el cardenal Richelieu moviendo los hilos. La primera mitad sigue a D’Artagnan y el asunto de los herretes de diamantes de la reina; la segunda pertenece a Milady de Winter.",
+   "h": "0858b98f",
+   "k": "0858b98f.0",
+   "id": "b-g3coal",
+   "levels": {
+    "1": "",
+    "2": "La historia transcurre en la Francia de Luis XIII y Richelieu: la primera mitad sigue a <strong>D’Artagnan</strong>; la segunda pertenece a <strong>Milady de Winter</strong>.",
+    "3": "La historia transcurre en la Francia de Luis XIII, con el cardenal Richelieu moviendo los hilos. La primera mitad sigue a <strong>D’Artagnan</strong> y los <strong>herretes de diamantes</strong> de la reina; la segunda pertenece a <strong>Milady de Winter</strong>.",
+    "4": "La historia transcurre en la Francia de Luis XIII, con el cardenal Richelieu moviendo los hilos. La primera mitad sigue a <strong>D’Artagnan</strong> y el asunto de los <strong>herretes de diamantes</strong> de la reina; la segunda pertenece a <strong>Milady de Winter</strong>."
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "Lo que no esperaba en una novela de aventuras es ese final. Milady no es una villana plana: engaña, seduce y traiciona, pero cuando se descubre su pasado con Athos también despierta cierta compasión. Y entonces los héroes hacen algo incómodo. Los cuatro amigos y lord de Winter organizan un juicio sin juez, enumeran sus crímenes y la condenan a muerte. Ella reclama un tribunal legítimo. Nadie se lo concede. El verdugo de Lille la lleva en barca a la otra orilla del Lys, la decapita con una espada y arroja sus restos al río, envueltos en su capa.",
+   "text": "Lo que no esperaba en una novela de aventuras es ese final. Milady no es una villana plana: engaña, seduce y traiciona, pero cuando se descubre su pasado con Athos también despierta cierta compasión. Y entonces los héroes hacen algo incómodo. Los cuatro amigos y lord de Winter organizan un juicio sin juez, enumeran sus crímenes y la condenan a muerte. Ella reclama un tribunal legítimo. Nadie se lo concede. El verdugo de Lille la lleva en barca a la otra orilla del Lys, la decapita con una espada y arroja sus restos al río, envueltos en su capa.",
+   "h": "2ef41299",
+   "k": "2ef41299.0",
+   "id": "b-l3zkf8",
+   "levels": {
+    "1": "Milady, la villana, engaña y traiciona, pero también despierta compasión. Al final, los mosqueteros la juzgan sin juez ni tribunal y la entregan al verdugo, que la decapita.",
+    "2": "Milady no es una villana plana: engaña y traiciona, pero también despierta compasión. Al final, los mosqueteros y lord de Winter la juzgan sin juez y la condenan a muerte. Ella reclama un tribunal legítimo; nadie se lo concede, y el verdugo la decapita.",
+    "3": "Lo que no esperaba en una novela de aventuras es ese final. Milady no es una villana plana: engaña, seduce y traiciona, pero cuando se descubre su pasado con Athos también despierta compasión. Los cuatro amigos y lord de Winter organizan un juicio sin juez y la condenan a muerte. Ella reclama un tribunal legítimo, nadie se lo concede, y el verdugo de Lille la decapita a la orilla del Lys.",
+    "4": "Lo que no esperaba en una novela de aventuras es ese final. Milady no es una villana plana: engaña, seduce y traiciona, pero cuando se descubre su pasado con Athos también despierta cierta compasión. Y entonces los héroes hacen algo incómodo: los cuatro amigos y lord de Winter organizan un juicio sin juez, enumeran sus crímenes y la condenan a muerte. Ella reclama un tribunal legítimo. Nadie se lo concede. El verdugo de Lille la lleva en barca a la otra orilla del Lys, la decapita y arroja sus restos al río, envueltos en su capa."
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "¿Es justicia o es venganza? Dumas no responde. Y quizá por eso casi todas las adaptaciones lo esquivan: un suicidio, una muerte en el agua o una huida dejan a los mosqueteros con las manos limpias. Solo la versión de Richard Lester, con Faye Dunaway, se atreve a mantenerlo, con Athos impidiendo que D’Artagnan intervenga. El cine prefiere héroes sin esa mancha. Dumas no.",
+   "text": "¿Es justicia o es venganza? Dumas no responde. Y quizá por eso casi todas las adaptaciones lo esquivan: un suicidio, una muerte en el agua o una huida dejan a los mosqueteros con las manos limpias. Solo la versión de Richard Lester, con Faye Dunaway, se atreve a mantenerlo, con Athos impidiendo que D’Artagnan intervenga. El cine prefiere héroes sin esa mancha. Dumas no.",
+   "h": "dbf9f5f4",
+   "k": "dbf9f5f4.0",
+   "id": "b-mv3idh",
+   "levels": {
+    "1": "¿Es justicia o es venganza? Dumas no responde, y casi todas las películas lo esquivan para dejar a los héroes con las manos limpias.",
+    "2": "¿Es justicia o es venganza? Dumas no responde, y quizá por eso casi todas las adaptaciones lo esquivan: prefieren héroes sin esa mancha. Dumas no.",
+    "3": "¿Es justicia o es venganza? Dumas no responde. Quizá por eso casi todas las adaptaciones lo esquivan: un suicidio, una muerte en el agua o una huida dejan a los mosqueteros con las manos limpias. Solo la versión de Richard Lester, con Faye Dunaway, se atreve a mantenerlo. El cine prefiere héroes sin esa mancha. Dumas no.",
+    "4": "¿Es justicia o es venganza? Dumas no responde. Y quizá por eso casi todas las adaptaciones lo esquivan: un suicidio, una muerte en el agua o una huida dejan a los mosqueteros con las manos limpias. Solo la versión de Richard Lester, con Faye Dunaway, se atreve a mantenerlo, con Athos impidiendo que D’Artagnan intervenga. El cine prefiere héroes sin esa mancha. Dumas no."
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "El arco de D’Artagnan es igualmente notable. Empieza siendo un joven impulsivo, algo torpe y desbordante de ambición. Pero a medida que avanza la historia madura, gana el respeto de Athos, Porthos y Aramis, y se convierte en alguien más mesurado. Su nombramiento como <strong>mosquetero</strong> (cubriendo la vacante de un compañero caído) y luego como <strong>teniente de la compañía</strong> no son golpes de suerte: son el reconocimiento a su valentía, lealtad y astucia. Pero ese ascenso también lo coloca en una posición donde debe asumir responsabilidades incómodas, como su papel en el juicio de Milady.",
+   "text": "El arco de D’Artagnan es igualmente notable. Empieza siendo un joven impulsivo, algo torpe y desbordante de ambición. Pero a medida que avanza la historia madura, gana el respeto de Athos, Porthos y Aramis, y se convierte en alguien más mesurado. Su nombramiento como mosquetero (cubriendo la vacante de un compañero caído) y luego como teniente de la compañía no son golpes de suerte: son el reconocimiento a su valentía, lealtad y astucia. Pero ese ascenso también lo coloca en una posición donde debe asumir responsabilidades incómodas, como su papel en el juicio de Milady.",
+   "h": "bbcace47",
+   "k": "bbcace47.0",
+   "id": "b-xsy3iw",
+   "levels": {
+    "4": "El arco de D’Artagnan es igualmente notable. Empieza siendo un joven impulsivo, algo torpe y desbordante de ambición, pero madura, gana el respeto de Athos, Porthos y Aramis y se vuelve más mesurado. Su nombramiento como <strong>mosquetero</strong> (cubriendo la vacante de un compañero caído) y luego como <strong>teniente de la compañía</strong> no son golpes de suerte, sino el reconocimiento a su valentía, lealtad y astucia. Pero ese ascenso también lo obliga a asumir responsabilidades incómodas, como su papel en el juicio de Milady.",
+    "1": "",
+    "2": "D’Artagnan, por su parte, pasa de joven impulsivo y ambicioso a alguien más mesurado, y ese ascenso también le obliga a asumir su papel en el juicio de Milady.",
+    "3": "El arco de D’Artagnan también es notable: empieza siendo un joven impulsivo y ambicioso, madura, se gana el respeto de Athos, Porthos y Aramis, y sus nombramientos como <strong>mosquetero</strong> y luego como <strong>teniente de la compañía</strong> reconocen su valentía y lealtad. Pero ese ascenso también le obliga a asumir responsabilidades incómodas, como su papel en el juicio de Milady."
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "«Todos para uno y uno para todos» suena a ideal. Después de leer la novela me suena también a advertencia: un grupo así es maravilloso, hasta que decide que no necesita a nadie de fuera para saber qué es justo. Por eso quiero seguir con <em>Veinte años después</em> y <em>El vizconde de Bragelonne</em>: para saber si aquellos jóvenes que juzgaron a Milady lo recuerdan con orgullo o con remordimiento.",
+   "text": "«Todos para uno y uno para todos» suena a ideal. Después de leer la novela me suena también a advertencia: un grupo así es maravilloso, hasta que decide que no necesita a nadie de fuera para saber qué es justo. Por eso quiero seguir con Veinte años después y El vizconde de Bragelonne: para saber si aquellos jóvenes que juzgaron a Milady lo recuerdan con orgullo o con remordimiento.",
+   "h": "9dfa66e3",
+   "k": "9dfa66e3.0",
+   "id": "b-77uz7r",
+   "levels": {
+    "1": "«Todos para uno y uno para todos» suena a ideal, pero también a advertencia: un grupo así es maravilloso, hasta que decide que no necesita a nadie de fuera para saber qué es justo.",
+    "2": "«Todos para uno y uno para todos» suena a ideal, pero después de la novela también a advertencia: un grupo así es maravilloso, hasta que decide que no necesita a nadie de fuera para saber qué es justo. Por eso quiero leer las secuelas.",
+    "3": "«Todos para uno y uno para todos» suena a ideal. Después de leer la novela me suena también a advertencia: un grupo así es maravilloso, hasta que decide que no necesita a nadie de fuera para saber qué es justo. Por eso quiero seguir con las secuelas: para saber si aquellos jóvenes que juzgaron a Milady lo recuerdan con orgullo o con remordimiento.",
+    "4": "«Todos para uno y uno para todos» suena a ideal. Después de leer la novela me suena también a advertencia: un grupo así es maravilloso, hasta que decide que no necesita a nadie de fuera para saber qué es justo. Por eso quiero seguir con <em>Veinte años después</em> y <em>El vizconde de Bragelonne</em>: para saber si aquellos jóvenes que juzgaron a Milady lo recuerdan con orgullo o con remordimiento."
+   },
+   "errors": {},
+   "model": "file"
+  }
+ ]
+}

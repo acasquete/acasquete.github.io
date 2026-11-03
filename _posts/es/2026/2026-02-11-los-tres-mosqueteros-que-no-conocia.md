@@ -8,13 +8,15 @@ ai: true
 header_image: los-tres-mosqueteros-review-cover.jpg
 cover_ratio: 16 / 9
 ---
-A estas alturas de la vida, retomar *Los tres mosqueteros* ha sido una de esas lecturas que te reconcilian con los clásicos. Pese a haber visto adaptaciones en cine y televisión durante décadas, nunca me había detenido en la novela original de Dumas.<!-- excerpt-end --> Y me ha sorprendido comprobar cuánto se pierde en esas versiones: la estructura narrativa es mucho más rica, y ciertos personajes y acontecimientos cobran un peso que las películas apenas insinúan.
+Creía conocer *Los tres mosqueteros*. Había visto tantas versiones en cine y televisión que nunca sentí la necesidad de leer la novela de Dumas.<!-- excerpt-end --> Me equivocaba, y me di cuenta por el final de Milady. En la película de Disney de 1993 se arroja por un acantilado después de reconciliarse con Athos; en la de 2011, salta de un dirigible y sobrevive. En la novela no hay acantilado ni rescate: la juzgan los propios héroes.
 
-Dumas sitúa su historia en la Francia del siglo XVII, bajo el reinado de Luis XIII, donde el cardenal Richelieu ejerce el verdadero poder político. En este contexto de intrigas cortesanas y conflictos religiosos, la novela se divide en dos bloques bien diferenciados. La primera parte gira en torno a **los herretes de diamantes** (los adornos que la reina Ana de Austria regala al duque de Buckingham), un episodio que pone en marcha el conflicto político y sentimental que recorre toda la obra. Aquí el foco está en **D'Artagnan y su ascenso entre los mosqueteros**. La segunda parte, en cambio, se centra en **Milady de Winter**, cuya figura adquiere un protagonismo oscuro y magnético.
+La historia transcurre en la Francia de Luis XIII, con el cardenal Richelieu moviendo los hilos. La primera mitad sigue a **D'Artagnan** y el asunto de los **herretes de diamantes** de la reina; la segunda pertenece a **Milady de Winter**.
 
 > "Todos para uno y uno para todos."
 
-Lo más interesante del personaje de Milady es que Dumas no la construye como una villana plana. Es un personaje complejo, capaz de engañar, seducir y traicionar, sí, pero también de despertar cierta compasión cuando se revela su pasado. El juicio al que la someten al final —donde salen a la luz sus crímenes y su relación con Athos— deja una pregunta incómoda: ¿es justicia o es venganza? La forma en que los mosqueteros actúan como jueces y verdugos genera una tensión moral que no esperaba en una novela de aventuras.
+Lo que no esperaba en una novela de aventuras es ese final. Milady no es una villana plana: engaña, seduce y traiciona, pero cuando se descubre su pasado con Athos también despierta cierta compasión. Y entonces los héroes hacen algo incómodo. Los cuatro amigos y lord de Winter organizan un juicio sin juez, enumeran sus crímenes y la condenan a muerte. Ella reclama un tribunal legítimo. Nadie se lo concede. El verdugo de Lille la lleva en barca a la otra orilla del Lys, la decapita con una espada y arroja sus restos al río, envueltos en su capa.
+
+¿Es justicia o es venganza? Dumas no responde. Y quizá por eso casi todas las adaptaciones lo esquivan: un suicidio, una muerte en el agua o una huida dejan a los mosqueteros con las manos limpias. Solo la versión de Richard Lester, con Faye Dunaway, se atreve a mantenerlo, con Athos impidiendo que D'Artagnan intervenga. El cine prefiere héroes sin esa mancha. Dumas no.
 
 > "Es una mujer sin honor, sin piedad, sin fe, y sin Dios."
 
@@ -22,6 +24,4 @@ El arco de D'Artagnan es igualmente notable. Empieza siendo un joven impulsivo, 
 
 > "La valentía es una cualidad necesaria para conquistar el mundo, pero la prudencia es necesaria para conservarlo."
 
-El final de la novela resuelve los conflictos principales, pero deja un sabor agridulce. D'Artagnan obtiene su recompensa, los mosqueteros siguen adelante con sus vidas, pero hay un peso en todo ello. La ejecución de Milady se presenta como una justicia necesaria, pero al ejecutarse al margen de cualquier proceso legal oficial, obliga a reflexionar sobre los límites del honor y la lealtad.
-
-*Los tres mosqueteros* es bastante más que una novela de aventuras. Es una obra sobre amistad, ambición, poder y las consecuencias de nuestras decisiones. Me ha dejado con ganas de seguir con las secuelas (*Veinte años después* y *El vizconde de Bragelonne*) para ver cómo envejecen estos personajes y qué hacen con las lecciones de su juventud.
+«Todos para uno y uno para todos» suena a ideal. Después de leer la novela me suena también a advertencia: un grupo así es maravilloso, hasta que decide que no necesita a nadie de fuera para saber qué es justo. Por eso quiero seguir con *Veinte años después* y *El vizconde de Bragelonne*: para saber si aquellos jóvenes que juzgaron a Milady lo recuerdan con orgullo o con remordimiento.
