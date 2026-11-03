@@ -51,26 +51,31 @@ Con una conversación, la pregunta es *qué me ha dicho*. Con decenas de sesione
 
 Hoy lo resolvemos con lo más simple que hay: varias pestañas en una terminal, una por sesión. Funciona mientras son pocas. Cuando son decenas, la terminal deja de ser una herramienta y se convierte en un pasillo de puertas cerradas.
 
-Y ahí es donde se nota lo que falta. Saber qué sesión espera una decisión mía sin ir pestaña por pestaña. Ver cuánto cuesta cada una. Retomar una sesión que dejé ayer. Saber si una ya ha entrado en el flujo de despliegue, si una puerta ha fallado en alguna parte de ese flujo y el agente está reimplementando, y cuánto tarda en hacerlo.
+Y ahí es donde se nota lo que falta. Saber qué sesión espera una decisión mía sin ir pestaña por pestaña. Ver cuánto cuesta cada una y cuántas veces llega al tope de la ventana de contexto. Retomar una sesión que dejé ayer. Saber si una ya ha entrado en el flujo de despliegue, si una puerta ha fallado en alguna parte de ese flujo y el agente está reimplementando, y cuánto tarda en hacerlo.
+
+Y todo eso es dentro de un solo proyecto. En el equipo de plataforma no llevamos uno, sino varios a la vez, cada uno con sus sesiones, sus despliegues y sus dependencias. Las pestañas de una terminal son de una persona; el trabajo es del equipo. Lo que hace falta no es una ventana por persona, sino un panel compartido en el que todo el equipo vea lo mismo: qué sesiones hay en marcha en cada proyecto, quién atiende cada una y qué está esperando a quién.
 
 ## Cómo debería ser el nuevo IDE
 
-Si el IDE clásico era un editor con herramientas alrededor, el nuevo es una consola de operaciones. Sin pretender tener el diseño cerrado, esto es lo que creo que necesita:
+Si el IDE clásico era un editor con herramientas alrededor, el nuevo es una consola de operaciones. Si tuviera que ponerle nombre, bastaría con cambiar una letra: no un IDE, sino un **ICE**, un *Integrated Control Environment*. La D de desarrollo deja paso a la C de control: ya no es el sitio donde se escribe el código, sino desde donde se supervisa a quienes lo escriben.
 
-1. **Una bandeja de decisiones, no de mensajes.** Lo primero que ves no es código ni chats, sino lo que te espera: una sesión que pide permiso para tocar algo sensible, una especificación ambigua, una puerta que ha fallado dos veces.
+Sin pretender tener el diseño cerrado, esto es lo que creo que necesita un ICE:
+
+1. **Una bandeja de decisiones, no de mensajes.** Lo primero que ves no es código ni chats, sino lo que te espera: una sesión que pide permiso para tocar algo sensible, una especificación ambigua, un *gate* que ha fallado dos veces.
 2. **El estado de cada sesión de un vistazo.** Trabajando, bloqueada, esperando, lista. En qué punto del flujo de despliegue está, si alguna puerta ha fallado y cuántas veces y cuánto tiempo lleva reimplementando. Como un tablero de despliegues, no como una lista de pestañas.
-3. **Evidencias antes que diffs.** De cada sesión quiero ver primero qué puertas ha pasado (tests, mutación, seguridad, especificación) y solo después, si hace falta, el cambio. El diff deja de ser la puerta de entrada.
-4. **Coste y presupuesto por sesión.** Cuánto lleva gastado, cuánto se espera que gaste y cuándo pararla. Una sesión que da vueltas es dinero que se va.
-5. **Permisos y líneas rojas visibles.** Qué puede hacer cada sesión, qué no, y cuándo se va a detener para pedir confirmación.
-6. **Trazabilidad de punta a punta.** De la issue a la especificación, de la especificación a la sesión, de la sesión a la PR y de la PR a producción. Si algo falla en producción, tiene que poder seguirse hacia atrás.
-7. **Pausar, retomar y repartir.** Las sesiones duran horas o días. Tienen que poder pararse, retomarse con su contexto y pasarse a otra persona.
-8. **Un límite de trabajo en curso.** Tener cien sesiones abiertas no es productividad si nadie puede atenderlas. La herramienta debería ayudar a no lanzar más de las que se pueden supervisar.
+3. **Varios proyectos, un panel compartido.** Las sesiones se agrupan por proyecto, pero se ven juntas, y el panel es del equipo, no de una persona: todos ven lo mismo, se sabe quién atiende cada sesión y cualquiera con contexto puede tomar una decisión pendiente.
+4. **Evidencias antes que diffs.** De cada sesión quiero ver primero qué puertas ha pasado (tests, mutación, seguridad, especificación) y solo después, si hace falta, el cambio. El diff deja de ser la puerta de entrada.
+5. **Coste y presupuesto por sesión.** Cuánto lleva gastado, cuánto se espera que gaste y cuándo pararla. Una sesión que da vueltas es dinero que se va. Y cuántas veces ha llegado al tope de la ventana de contexto: una sesión que se compacta una y otra vez pierde memoria y gasta de más, y suele ser la señal de que hay algo que optimizar, como una tarea demasiado grande, un contexto inflado con archivos que no hacían falta o una especificación que habría que partir.
+6. **Permisos y líneas rojas visibles.** Qué puede hacer cada sesión, qué no, y cuándo se va a detener para pedir confirmación. Y de quién depende: si para desplegar necesita algo de otro equipo, tiene que saberse antes de empezar y no cuando ya está bloqueada, junto con una estimación de cuánto le falta para terminar.
+7. **Trazabilidad de punta a punta.** De la issue a la especificación, de la especificación a la sesión, de la sesión a la PR y de la PR a producción. Si algo falla en producción, tiene que poder seguirse hacia atrás.
+8. **Pausar, retomar y repartir.** Las sesiones duran horas o días. Tienen que poder pararse, retomarse con su contexto y pasarse a otra persona.
+9. **Un límite de trabajo en curso.** Tener cien sesiones abiertas no es productividad si nadie puede atenderlas. La herramienta debería ayudar a no lanzar más de las que se pueden supervisar.
 
 Fíjate en lo que no aparece en la lista: escribir código. El editor no desaparece, pero pasa a ser una vista más, la que abres en el caso raro en que de verdad necesitas leer algo.
 
 ## Lo que no es
 
-No es un chat con pestañas. Tampoco es el editor de siempre con un panel lateral para el agente. Y no es una herramienta personal: si las sesiones son trabajo del equipo, el nuevo IDE es, sobre todo, una herramienta de equipo.
+No es un chat con pestañas. Tampoco es el editor de siempre con un panel lateral para el agente. Y no es una herramienta personal: si las sesiones son trabajo del equipo y abarcan varios proyectos, el nuevo IDE es, sobre todo, un panel compartido.
 
 Steve Yegge lo describe como el momento en que [tu IDE desaparece y no vuelves a abrirlo nunca](https://newsletter.pragmaticengineer.com/p/from-ides-to-ai-agents-with-steve), y ahora habla de que el IDE volverá, pero como centro de control de agentes. Estoy de acuerdo con la segunda parte. Lo que vuelve no es el editor: es la necesidad de un sitio donde trabajar.
 
@@ -90,4 +95,4 @@ Si la respuesta a alguna es no, el IDE todavía te hace falta. No porque escriba
 
 *AI 2027* imaginaba ingenieros que ya no programan y se pasan el día intentando seguir el ritmo de lo que producen los agentes. La primera parte ya la estamos viviendo. La segunda es la que nadie ha resuelto: seguir el ritmo no puede consistir en abrir pestañas una a una.
 
-Los modelos seguirán cambiando cada pocos meses, y las herramientas también. Lo que no va a cambiar es que alguien tiene que decidir qué se construye, comprobar que lo que ha salido es lo que se pidió y responder por ello. El nuevo IDE no es el sitio donde escribimos código. Es el sitio desde el que respondemos por él.
+Los modelos seguirán cambiando cada pocos meses, y las herramientas también. Lo que no va a cambiar es que alguien tiene que decidir qué se construye, comprobar que lo que ha salido es lo que se pidió y responder por ello. El nuevo IDE, el ICE, no es el sitio donde escribimos código. Es el sitio desde el que respondemos por él.
