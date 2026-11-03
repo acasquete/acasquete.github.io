@@ -57,7 +57,7 @@ Y todo eso es dentro de un solo proyecto. En el equipo de plataforma no llevamos
 
 ## Cómo debería ser el nuevo IDE
 
-Si el IDE clásico era un editor con herramientas alrededor, el nuevo es una consola de operaciones. Si tuviera que ponerle nombre, bastaría con cambiar una letra: no un IDE, sino un **ICE**, un *Integrated Control Environment*. La D de desarrollo deja paso a la C de control: ya no es el sitio donde se escribe el código, sino desde donde se supervisa a quienes lo escriben.
+Si el IDE clásico era un editor con herramientas alrededor, el nuevo es una consola de operaciones. El sector ya empieza a llamarlo [**ADE**](https://www.warp.dev/articles/what-is-an-agentic-development-environment), *Agentic Development Environment*. Yo cambiaría otra letra: no un entorno de desarrollo, sino un **ICE**, un *Integrated Control Environment*. La D de desarrollo deja paso a la C de control: ya no es el sitio donde se escribe el código, sino desde donde se supervisa a quienes lo escriben.
 
 Sin pretender tener el diseño cerrado, esto es lo que creo que necesita un ICE:
 
