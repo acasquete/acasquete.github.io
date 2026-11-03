@@ -2,6 +2,7 @@
 # Private preview: a page, not a post, so it stays out of the home page, /blog, tags, the feed and search.
 layout: post
 permalink: /p/cda77c06/el-nuevo-ide
+slug: el-nuevo-ide  # pages have no slug of their own; Adaptive Reading needs it
 date: 2026-11-02
 sitemap: false
 noindex: true
@@ -49,7 +50,7 @@ Una **sesión** es un trabajo en marcha. Tiene un objetivo (una *issue*, una esp
 
 Con una conversación, la pregunta es *qué me ha dicho*. Con decenas de sesiones, las preguntas son otras: cuáles me necesitan ahora, cuáles se han atascado, cuáles están gastando sin avanzar y cuáles puedo dar por buenas sin mirarlas.
 
-Hoy lo resolvemos con lo más simple que hay: varias pestañas en una terminal, una por sesión. Funciona mientras son pocas. Cuando son decenas, la terminal deja de ser una herramienta y se convierte en un pasillo de puertas cerradas.
+Hoy lo resolvemos con lo más simple que hay: varias pestañas en una terminal, una por sesión, que normalmente es una por *feature* o por *issue*. Con los flujos agénticos esperamos a que terminen y miramos las métricas en el panel de *health* de la plataforma. La terminal funciona mientras son pocas. Cuando son más de cinco o diez, deja de ser una herramienta y se convierte en un pasillo de puertas cerradas.
 
 Y ahí es donde se nota lo que falta. Saber qué sesión espera una decisión mía sin ir pestaña por pestaña. Ver cuánto cuesta cada una y cuántas veces llega al tope de la ventana de contexto. Retomar una sesión que dejé ayer. Saber si una ya ha entrado en el flujo de despliegue, si una puerta ha fallado en alguna parte de ese flujo y el agente está reimplementando, y cuánto tarda en hacerlo.
 
@@ -68,7 +69,7 @@ Sin pretender tener el diseño cerrado, esto es lo que creo que necesita un ICE:
 5. **Coste y presupuesto por sesión.** Cuánto lleva gastado, cuánto se espera que gaste y cuándo pararla. Una sesión que da vueltas es dinero que se va. Y cuántas veces ha llegado al tope de la ventana de contexto: una sesión que se compacta una y otra vez pierde memoria y gasta de más, y suele ser la señal de que hay algo que optimizar, como una tarea demasiado grande, un contexto inflado con archivos que no hacían falta o una especificación que habría que partir.
 6. **Permisos y líneas rojas visibles.** Qué puede hacer cada sesión, qué no, y cuándo se va a detener para pedir confirmación. Y de quién depende: si para desplegar necesita algo de otro equipo, tiene que saberse antes de empezar y no cuando ya está bloqueada, junto con una estimación de cuánto le falta para terminar.
 7. **Trazabilidad de punta a punta.** De la *issue* a la especificación, de la especificación a la sesión, de la sesión a la PR y de la PR a producción. Si algo falla en producción, tiene que poder seguirse hacia atrás.
-8. **Pausar, retomar y repartir.** Las sesiones duran horas o días. Tienen que poder pararse, retomarse con su contexto y pasarse a otra persona.
+8. **Pausar, retomar y reasignar.** Las sesiones duran horas. Tienen que poder pararse, retomarse con su contexto y asignarse a otra persona.
 9. **Un límite de trabajo en curso.** Tener cien sesiones abiertas no es productividad si nadie puede atenderlas. La herramienta debería ayudar a no lanzar más de las que se pueden supervisar.
 
 Fíjate en lo que no aparece en la lista: escribir código. El editor no desaparece, pero pasa a ser una vista más, la que abres en el caso raro en que de verdad necesitas leer algo.
@@ -93,6 +94,6 @@ Si la respuesta a alguna es no, el IDE todavía te hace falta. No porque escriba
 
 ## El IDE que falta
 
-*AI 2027* imaginaba ingenieros que ya no programan y se pasan el día intentando seguir el ritmo de lo que producen los agentes. La primera parte ya la estamos viviendo. La segunda es la que nadie ha resuelto: seguir el ritmo no puede consistir en abrir pestañas una a una.
+*AI 2027* imaginaba ingenieros que ya no programan y se pasan el día intentando seguir el ritmo de lo que producen los agentes. La primera parte ya la estamos viviendo. La segunda es la que nadie ha resuelto: seguir el ritmo no puede consistir en ir de conversación en conversación sin una visión completa de en qué punto del flujo está cada sesión.
 
 Los modelos seguirán cambiando cada pocos meses, y las herramientas también. Lo que no va a cambiar es que alguien tiene que decidir qué se construye, comprobar que lo que ha salido es lo que se pidió y responder por ello. El nuevo IDE, el ICE, no es el sitio donde escribimos código. Es el sitio desde el que respondemos por él.
