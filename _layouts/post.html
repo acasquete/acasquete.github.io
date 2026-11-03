@@ -7,18 +7,18 @@ comments: true
 {% assign ar_src = "" %}
 {% if site.adaptive_reading and page.adaptive != false and site.data.adaptive contains page.slug %}{% assign ar_src = "/adaptive/" | append: page.slug | append: ".json" %}{% endif %}
 <article id="post-page" {% if page.custom_class %}class="{{ page.custom_class }}"{% endif %}{% if ar_src != "" %} data-adaptive="{{ ar_src }}"{% endif %}>
+	{% if post_img %}
+	<figure class="wrap post-cover">
+		<img src="{{ post_img }}" alt="{{ page.title }}" style="{% if page.hero_position %}object-position: {{ page.hero_position }};{% endif %}{% if page.cover_ratio %} aspect-ratio: {{ page.cover_ratio }};{% endif %}">
+	</figure>
+	{% endif %}
+
 	<div class="wrap post-head">
 		<a href="/blog?tema={{ topic.id }}" class="kick accent">{{ topic.long | default: 'Notas' }}</a>
 		<h1 class="display">{%if page.header %}{{ page.header }}{% else %}{{ page.title }}{% endif %}</h1>
 		{% if page.description %}<p class="post-lede">{{ page.description }}</p>{% endif %}
 		<p class="post-meta mono"><time datetime="{{ page.date | date_to_xmlschema }}">{% include formatted_date.html %}</time> · {% include read-time.html %}</p>
 	</div>
-
-	{% if post_img %}
-	<figure class="wrap post-cover">
-		<img src="{{ post_img }}" alt="{{ page.title }}" style="{% if page.hero_position %}object-position: {{ page.hero_position }};{% endif %}{% if page.cover_ratio %} aspect-ratio: {{ page.cover_ratio }};{% endif %}">
-	</figure>
-	{% endif %}
 
 	<div class="wrap post-column">
 		<div class="content prose">

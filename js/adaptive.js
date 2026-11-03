@@ -1,6 +1,6 @@
 /*
  * Adaptive Reading: lets the reader change how deep an article reads
- * (Sencillo / Esencial / Detallado / Original), for the whole article and per
+ * (Resumen / Sencillo / Esencial / Detallado / Original), for the whole article and per
  * paragraph. "Original" is always the author's exact text. Variants are
  * pre-generated static JSON; nothing is generated in the browser.
  * See scripts/adaptive/README.md.
@@ -8,12 +8,13 @@
 (function () {
 	'use strict';
 
-	var LEVELS = ['sencillo', 'esencial', 'detallado', 'original'];
-	var LABELS = ['Sencillo', 'Esencial', 'Detallado', 'Original'];
-	// Manifest variants are keyed "1".."3" (generation pipeline, see generate.py).
+	var LEVELS = ['resumen', 'sencillo', 'esencial', 'detallado', 'original'];
+	var LABELS = ['Resumen', 'Sencillo', 'Esencial', 'Detallado', 'Original'];
+	var MAX = LEVELS.length - 1; // Original
+	// Manifest variants are keyed "1".."4" (generation pipeline, see generate.py).
 	// "original" is never stored. An empty string means "omit this block at this level".
-	var VARIANT_KEY = ['1', '2', '3', null];
-	var DEFAULT_LEVEL = 1; // Esencial
+	var VARIANT_KEY = ['1', '2', '3', '4', null];
+	var DEFAULT_LEVEL = 2; // Esencial
 	var STORAGE_KEY = 'acn-reading-depth';
 	var ALLOWED = { A: 1, EM: 1, STRONG: 1, B: 1, I: 1, CODE: 1, KBD: 1, SUP: 1, SUB: 1, BR: 1 };
 	// Must mirror scripts/adaptive/lib.py
@@ -39,7 +40,7 @@
 
 	function clampIndex(value) {
 		var n = parseInt(value, 10);
-		return n >= 0 && n <= 3 ? n : DEFAULT_LEVEL;
+		return n >= 0 && n <= MAX ? n : DEFAULT_LEVEL;
 	}
 
 	function countWords(text) {
@@ -55,7 +56,7 @@
 	if (typeof module !== 'undefined' && module.exports) {
 		module.exports = {
 			normalize: normalize, hash: hash, clampIndex: clampIndex, countWords: countWords,
-			readingMinutes: readingMinutes, LEVELS: LEVELS, LABELS: LABELS, VARIANT_KEY: VARIANT_KEY
+			readingMinutes: readingMinutes, MAX: MAX, LEVELS: LEVELS, LABELS: LABELS, VARIANT_KEY: VARIANT_KEY
 		};
 	}
 	if (typeof document === 'undefined') return;
@@ -92,12 +93,13 @@
 	var ui = {};
 	var openId = null;
 	var totalWords = 0;
-	var levelMinutes = [1, 1, 1, 1];
-	var hiddenExtraWords = 0; // code/tables dropped at Sencillo
+	var levelMinutes = LEVELS.map(function () { return 1; });
+	var hiddenExtraWords = 0; // code, tables and non-adaptable text dropped at Resumen and Sencillo
 	var mediaEls = [];        // images and other figures
 	var extraEls = [];        // code blocks, tables, rules, embeds
+	var proseEls = [];        // text that cannot be adapted: quotes, formulas, references
 
-	if (state.globalLevel < 3) {
+	if (state.globalLevel < MAX) {
 		prose.classList.add('ar-loading');
 		window.setTimeout(function () { prose.classList.remove('ar-loading'); }, 1500);
 	}
@@ -112,7 +114,7 @@
 			.catch(function () { prose.classList.remove('ar-loading'); });
 	}
 
-	if (state.globalLevel < 3 || !('requestIdleCallback' in window)) {
+	if (state.globalLevel < MAX || !('requestIdleCallback' in window)) {
 		start();
 	} else {
 		window.requestIdleCallback(start, { timeout: 1500 });
@@ -187,13 +189,13 @@
 	function computeReadingTimes(blocks) {
 		var base = totalWords;
 		blocks.forEach(function (b) { base -= b.words; });
-		for (var i = 0; i < 4; i++) {
+		for (var i = 0; i <= MAX; i++) {
 			var words = base;
 			blocks.forEach(function (b) {
 				var v = variantFor(b, i);
 				words += v === undefined ? b.words : (v ? countWords(sanitize(v).textContent) : 0);
 			});
-			if (i === 0) words -= hiddenExtraWords;
+			if (i <= 1) words -= hiddenExtraWords;
 			levelMinutes[i] = readingMinutes(Math.max(words, 0));
 		}
 	}
@@ -210,12 +212,12 @@
 		var variant = variantFor(b, level);
 		var omit = variant === '';
 		var custom = state.overrides.has(id);
-		var shown = variant === undefined ? 3 : level; // missing variant: show the original
+		var shown = variant === undefined ? MAX : level; // missing variant: show the original
 		var key = shown + (omit ? 'omit' : '');
 		if (b.shown !== key) {
 			b.shown = key;
 			b.content.textContent = '';
-			if (shown === 3) {
+			if (shown === MAX) {
 				b.nodes.forEach(function (n) { b.content.appendChild(n); });
 			} else if (omit) {
 				b.content.textContent = 'Omitido en este nivel';
@@ -242,21 +244,24 @@
 		syncExtras();
 	}
 
-	// Sencillo: no images, code or tables. Esencial: only the first image.
-	// Headings whose section ends up empty are hidden too.
+	// Resumen and Sencillo: no images, code or tables. Esencial: only the first image.
+	// Headings whose section ends up empty are hidden too, and all of them at Resumen.
 	function isGone(node) {
 		if (node.classList.contains('ar-gone') || node.classList.contains('ar-hide')) return true;
 		if (node.matches('ul, ol')) {
 			var items = node.querySelectorAll('li');
-			return items.length > 0 && Array.prototype.every.call(items, function (li) { return li.classList.contains('ar-gone'); });
+			return items.length > 0 && Array.prototype.every.call(items, function (li) { return li.classList.contains('ar-gone') || li.classList.contains('ar-hide'); });
 		}
 		return false;
 	}
 
 	function syncExtras() {
 		var g = state.globalLevel;
-		mediaEls.forEach(function (m, i) { m.classList.toggle('ar-hide', g === 0 || (g === 1 && i > 0)); });
-		extraEls.forEach(function (x) { x.classList.toggle('ar-hide', g === 0); });
+		mediaEls.forEach(function (group, i) {
+			group.forEach(function (m) { m.classList.toggle('ar-hide', g <= 1 || (g === 2 && i > 0)); });
+		});
+		extraEls.forEach(function (x) { x.classList.toggle('ar-hide', g <= 1); });
+		proseEls.forEach(function (x) { x.classList.toggle('ar-hide', g <= 1); });
 		var heads = Array.prototype.slice.call(prose.querySelectorAll(':scope > h1, :scope > h2, :scope > h3, :scope > h4, :scope > h5, :scope > h6')).reverse();
 		heads.forEach(function (h) {
 			var n = parseInt(h.tagName.charAt(1), 10);
@@ -266,7 +271,7 @@
 				if (m && parseInt(m[1], 10) <= n) break;
 				if (!isGone(sib)) { visible = true; break; }
 			}
-			h.classList.toggle('ar-gone', !visible);
+			h.classList.toggle('ar-gone', g === 0 || !visible); // Resumen reads as one continuous text
 		});
 	}
 
@@ -328,15 +333,15 @@
 		box.appendChild(track);
 		box.appendChild(fill);
 		var dots = [];
-		for (var i = 0; i < 4; i++) {
+		for (var i = 0; i <= MAX; i++) {
 			var d = el('span', 'ar-sl-dot', { 'aria-hidden': 'true' });
-			d.style.setProperty('--p', (i / 3 * 100) + '%');
+			d.style.setProperty('--p', (i / MAX * 100) + '%');
 			box.appendChild(d);
 			dots.push(d);
 		}
 		var thumb = el('span', 'ar-sl-thumb', { 'aria-hidden': 'true' });
 		box.appendChild(thumb);
-		var input = el('input', 'ar-sl-input', { type: 'range', min: '0', max: '3', step: '1' });
+		var input = el('input', 'ar-sl-input', { type: 'range', min: '0', max: String(MAX), step: '1' });
 		if (opts.id) input.id = opts.id;
 		if (opts.ariaLabel) input.setAttribute('aria-label', opts.ariaLabel);
 		box.appendChild(input);
@@ -354,13 +359,13 @@
 			set: function (o) {
 				input.value = String(o.value);
 				input.setAttribute('aria-valuetext', o.valueText);
-				root.style.setProperty('--p', (o.value / 3 * 100) + '%');
+				root.style.setProperty('--p', (o.value / MAX * 100) + '%');
 				root.classList.toggle('is-accent', !!o.accent);
 				dots.forEach(function (d, j) {
 					d.classList.toggle('is-reached', o.filled === false ? false : j <= o.value);
 					d.classList.toggle('is-global', o.globalMark === j);
 				});
-				fill.style.setProperty('--fill', o.filled === false ? '0%' : (o.value / 3 * 100) + '%');
+				fill.style.setProperty('--fill', o.filled === false ? '0%' : (o.value / MAX * 100) + '%');
 			}
 		};
 	}
@@ -517,7 +522,7 @@
 	function wireBlock(found) {
 		var elBlock = found.el;
 		var id = found.entry.id;
-		var b = { id: id, el: elBlock, entry: found.entry, words: found.words, shown: 3 };
+		var b = { id: id, el: elBlock, entry: found.entry, words: found.words, shown: MAX };
 
 		var nodes = Array.prototype.slice.call(elBlock.childNodes);
 		var text = el('span', 'ar-text');
@@ -537,7 +542,7 @@
 		var row = el('span', 'ar-panel__row');
 		var labelsCol = el('span', 'ar-panel__labels', { 'aria-hidden': 'true' });
 		b.labels = LABELS.map(function (name, j) {
-			var s = el('span'); s.textContent = name; s.style.setProperty('--p', (j / 3 * 100) + '%'); labelsCol.appendChild(s); return s;
+			var s = el('span'); s.textContent = name; s.style.setProperty('--t', String(j / MAX)); labelsCol.appendChild(s); return s;
 		});
 		b.slider = createSlider({ vertical: true, ariaLabel: 'Nivel de este párrafo', onInput: function (i) { onBlockInput(id, i); } });
 		row.appendChild(labelsCol);
@@ -591,7 +596,22 @@
 		prose.querySelectorAll('img').forEach(function (img) {
 			if (img.closest('.ar-block')) return;
 			var c = img.closest('figure') || img.closest('p') || img;
-			if (!seen.has(c)) { seen.add(c); mediaEls.push(c); }
+			if (seen.has(c)) return;
+			seen.add(c);
+			// A caption paragraph (only an <em>) right after the image goes with it.
+			var cap = c.nextElementSibling;
+			var isCap = cap && cap.tagName === 'P' && cap.children.length === 1 && cap.firstElementChild.tagName === 'EM' &&
+				normalize(cap.textContent) === normalize(cap.firstElementChild.textContent);
+			mediaEls.push(isCap ? [c, cap] : [c]);
+			if (isCap) seen.add(cap);
+		});
+		prose.querySelectorAll('p, li, blockquote, .footnotes').forEach(function (x) {
+			if (x.classList.contains('ar-block') || x.querySelector('.ar-block') || x.closest('.ar-block')) return;
+			if (seen.has(x) || x.querySelector('img')) return;
+			var outer = x.parentElement && x.parentElement.closest('blockquote, .footnotes');
+			if (outer && prose.contains(outer)) return;
+			proseEls.push(x);
+			hiddenExtraWords += countWords(x.textContent);
 		});
 		var sel = '.highlighter-rouge, pre, table, hr, iframe, video, .video-embed';
 		prose.querySelectorAll(sel).forEach(function (x) {
@@ -608,8 +628,8 @@
 		var found = collectBlocks(manifest);
 		if (!found.length) { prose.classList.remove('ar-loading'); return; }
 		totalWords = countWords(prose.textContent);
-		collectExtras();
 		found.forEach(wireBlock);
+		collectExtras(); // after wiring: it needs to know which paragraphs are blocks
 		computeReadingTimes(Array.from(state.blocks.values()));
 
 		buildHeader();

@@ -776,6 +776,7 @@
 .post-head {
   max-width: 900px;
   padding-top: 88px;
+  .post-cover + & { padding-top: 48px; }
   text-align: center;
   .display { margin-top: 22px; }
 }
@@ -795,12 +796,13 @@
 }
 
 .post-cover {
-  margin: 56px auto 0;
+  margin: 0 auto;
 
   img {
     display: block;
     width: 100%;
     aspect-ratio: 21 / 9;
+    max-height: 50vh;
     border-radius: 10px;
     object-fit: cover;
     background: #111418;

@@ -17,9 +17,8 @@
    "k": "e34b7910.0",
    "id": "b-0fe7ek",
    "levels": {
-    "2": "Escribo pensando en un lector que ya conoce el contexto, pero no es el único: unos quieren la idea en cinco minutos y otros cada decisión de diseño.",
-    "3": "Al escribir una nota técnica suelo pensar en un lector que ya conoce el contexto, pero casi nunca es el único que llega a ella. Algunas personas buscan una visión general en cinco minutos y otras quieren entender cada decisión de diseño con todos sus matices.",
-    "1": "Hay lectores con prisa y lectores con ganas de detalle."
+    "3": "Escribo pensando en un lector que ya conoce el contexto, pero no es el único: unos quieren la idea en cinco minutos y otros cada decisión de diseño.",
+    "4": "Al escribir una nota técnica suelo pensar en un lector que ya conoce el contexto, pero casi nunca es el único que llega a ella. Algunas personas buscan una visión general en cinco minutos y otras quieren entender cada decisión de diseño con todos sus matices."
    },
    "errors": {},
    "model": "file"
@@ -32,9 +31,8 @@
    "k": "0c6386ef.0",
    "id": "b-bwo95s",
    "levels": {
-    "2": "Una cola de mensajes permite que dos sistemas se comuniquen sin coincidir en el tiempo: el productor deja el mensaje y el consumidor lo recoge cuando puede. Por eso, si uno de los dos falla un momento, el otro no se cae. La <a href=\"https://learn.microsoft.com/azure/service-bus-messaging/\">documentación de Azure Service Bus</a> lo explica con detalle, y es una idea que aparece una y otra vez en las arquitecturas modernas.",
-    "3": "Una cola de mensajes permite que dos sistemas se comuniquen sin estar disponibles a la vez: el productor deja el mensaje y el consumidor lo recoge cuando puede, de modo que un fallo temporal de uno no tumba al otro. Esta idea se explica con detalle en la <a href=\"https://learn.microsoft.com/azure/service-bus-messaging/\">documentación de Azure Service Bus</a> y aparece constantemente en arquitecturas modernas.",
-    "1": "Una cola de mensajes es como un buzón: un sistema deja un mensaje y otro lo recoge cuando puede."
+    "3": "Una cola de mensajes permite que dos sistemas se comuniquen sin coincidir en el tiempo: el productor deja el mensaje y el consumidor lo recoge cuando puede. Por eso, si uno de los dos falla un momento, el otro no se cae. La <a href=\"https://learn.microsoft.com/azure/service-bus-messaging/\">documentación de Azure Service Bus</a> lo explica con detalle, y es una idea que aparece una y otra vez en las arquitecturas modernas.",
+    "4": "Una cola de mensajes permite que dos sistemas se comuniquen sin estar disponibles a la vez: el productor deja el mensaje y el consumidor lo recoge cuando puede, de modo que un fallo temporal de uno no tumba al otro. Esta idea se explica con detalle en la <a href=\"https://learn.microsoft.com/azure/service-bus-messaging/\">documentación de Azure Service Bus</a> y aparece constantemente en arquitecturas modernas."
    },
    "errors": {},
    "model": "file"
@@ -47,9 +45,8 @@
    "k": "95d4a3dd.0",
    "id": "b-ub0j8t",
    "levels": {
-    "2": "En una prueba con 250 mensajes por segundo, el consumidor tardó 3,5 segundos de media en vaciar la cola tras una caída de diez minutos. Durante todo ese tiempo nadie perdió un solo pedido, que era justo lo que queríamos demostrar.",
-    "3": "En una prueba con 250 mensajes por segundo, el consumidor tardó 3,5 segundos de media en vaciar la cola tras diez minutos de caída, y no se perdió ni un pedido en ese tiempo, que era justo lo que queríamos demostrar.",
-    "1": ""
+    "3": "En una prueba con 250 mensajes por segundo, el consumidor tardó 3,5 segundos de media en vaciar la cola tras una caída de diez minutos. Durante todo ese tiempo nadie perdió un solo pedido, que era justo lo que queríamos demostrar.",
+    "4": "En una prueba con 250 mensajes por segundo, el consumidor tardó 3,5 segundos de media en vaciar la cola tras diez minutos de caída, y no se perdió ni un pedido en ese tiempo, que era justo lo que queríamos demostrar."
    },
    "errors": {},
    "model": "file"
@@ -62,9 +59,8 @@
    "k": "849aba59.0",
    "id": "b-vydt7r",
    "levels": {
-    "2": "El orden de llegada no está asegurado a menos que se configuren sesiones. Esto tiene un coste de rendimiento que conviene medir antes de decidir.",
-    "3": "El orden de llegada no está garantizado salvo que se configuren sesiones, lo que tiene un coste de rendimiento que conviene medir antes de decidir.",
-    "1": ""
+    "3": "El orden de llegada no está asegurado a menos que se configuren sesiones. Esto tiene un coste de rendimiento que conviene medir antes de decidir.",
+    "4": "El orden de llegada no está garantizado salvo que se configuren sesiones, lo que tiene un coste de rendimiento que conviene medir antes de decidir."
    },
    "errors": {},
    "model": "file"
@@ -77,9 +73,8 @@
    "k": "7509ed10.0",
    "id": "b-1buyzv",
    "levels": {
-    "2": "Como decía un compañero de equipo, “lo difícil de los sistemas asíncronos no es hacerlos funcionar, sino entender por qué a veces no funcionan”. Desde entonces miro con más atención las métricas de la cola que cualquier otro panel.",
-    "3": "Como decía un compañero de equipo, “lo difícil de los sistemas asíncronos no es hacerlos funcionar, sino entender por qué a veces no funcionan”. Desde entonces miro con más cariño las métricas de la cola que cualquier otro panel.",
-    "1": ""
+    "3": "Como decía un compañero de equipo, “lo difícil de los sistemas asíncronos no es hacerlos funcionar, sino entender por qué a veces no funcionan”. Desde entonces miro con más atención las métricas de la cola que cualquier otro panel.",
+    "4": "Como decía un compañero de equipo, “lo difícil de los sistemas asíncronos no es hacerlos funcionar, sino entender por qué a veces no funcionan”. Desde entonces miro con más cariño las métricas de la cola que cualquier otro panel."
    },
    "errors": {},
    "model": "file"
@@ -92,9 +87,8 @@
    "k": "ce866b4d.0",
    "id": "b-uhptjl",
    "levels": {
-    "2": "En resumen, usa <code>ServiceBusClient</code> cuando necesites separar dos sistemas y acepta que la complejidad no desaparece, solo cambia de sitio. Si quieres profundizar, la nota sobre <a href=\"https://acasquetenotes.com/colas-y-reintentos\">colas y reintentos</a> amplía este razonamiento.",
-    "3": "En resumen, usa <code>ServiceBusClient</code> cuando necesites desacoplar dos sistemas y acepta que la complejidad no desaparece, solo cambia de lugar. Si quieres profundizar, la nota sobre <a href=\"https://acasquetenotes.com/colas-y-reintentos\">colas y reintentos</a> amplía este razonamiento.",
-    "1": "Usa <code>ServiceBusClient</code> para desacoplar sistemas, pero la complejidad no desaparece: solo cambia de sitio."
+    "3": "En resumen, usa <code>ServiceBusClient</code> cuando necesites separar dos sistemas y acepta que la complejidad no desaparece, solo cambia de sitio. Si quieres profundizar, la nota sobre <a href=\"https://acasquetenotes.com/colas-y-reintentos\">colas y reintentos</a> amplía este razonamiento.",
+    "4": "En resumen, usa <code>ServiceBusClient</code> cuando necesites desacoplar dos sistemas y acepta que la complejidad no desaparece, solo cambia de lugar. Si quieres profundizar, la nota sobre <a href=\"https://acasquetenotes.com/colas-y-reintentos\">colas y reintentos</a> amplía este razonamiento."
    },
    "errors": {},
    "model": "file"

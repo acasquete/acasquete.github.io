@@ -5,8 +5,8 @@
  "generator": {
   "provider": "file",
   "model": "file",
-  "prompt_version": 1,
-  "generated_at": "2026-11-02T21:36:06Z"
+  "prompt_version": 2,
+  "generated_at": "2026-11-03T00:05:12Z"
  },
  "blocks": [
   {
@@ -17,9 +17,10 @@
    "k": "0a8e2769.0",
    "id": "b-da5u1w",
    "levels": {
-    "2": "Decimos que construimos software, como si hubiera un momento claro en el que alguien pudiera decir: <em>“ya está”</em>.",
-    "3": "Decimos que construimos software. Como si fuera algo sólido, con planos definitivos y un momento claro en el que alguien pudiera decir: <em>“ya está”</em>.",
-    "1": "Decimos que construimos software, como si fuera algo sólido."
+    "4": "Decimos que construimos software. Como si fuera algo sólido, con planos definitivos y un momento claro en el que alguien pudiera decir: <em>“ya está”</em>.",
+    "3": "Decimos que construimos software, una palabra que suena a control y a previsibilidad, como si hubiera un momento claro en el que alguien pudiera decir: <em>“ya está”</em>.",
+    "1": "Decimos que construimos software, como si fuera algo sólido y previsible.",
+    "2": "Decimos que construimos software, una palabra que suena a control, como si hubiera un momento claro en el que alguien pudiera decir: <em>“ya está”</em>."
    },
    "errors": {},
    "model": "file"
@@ -32,9 +33,58 @@
    "k": "7084e567.0",
    "id": "b-jnslr4",
    "levels": {
+    "4": "A los desarrolladores nos gusta pensar que escribimos código y el sistema emerge, limpio y coherente. A los clientes les prometemos una solución para sus necesidades actuales… y las futuras, si el presupuesto lo permite.",
+    "3": "",
+    "1": "",
+    "2": ""
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "La palabra clave es <strong>construir</strong>. Porque suena a control. A previsibilidad. A dominio técnico.",
+   "text": "La palabra clave es construir. Porque suena a control. A previsibilidad. A dominio técnico.",
+   "h": "bb558f5f",
+   "k": "bb558f5f.0",
+   "id": "b-ibouyv",
+   "levels": {
+    "1": "",
     "2": "",
-    "3": "A los desarrolladores nos gusta pensar que escribimos código y el sistema emerge, limpio y coherente. A los clientes les decimos que vamos a construir una solución que cubre sus necesidades actuales… y las futuras, si el presupuesto lo permite.",
-    "1": ""
+    "3": "",
+    "4": "La palabra clave es <strong>construir</strong>. Porque suena a control. A previsibilidad. A dominio técnico."
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "La realidad es otra.",
+   "text": "La realidad es otra.",
+   "h": "7d286bf2",
+   "k": "7d286bf2.0",
+   "id": "b-9f0pq5",
+   "levels": {
+    "1": "",
+    "2": "",
+    "3": "",
+    "4": "La realidad es otra."
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "<strong>En realidad no construimos software.</strong> <strong>Negociamos constantemente con la ambigüedad.</strong>",
+   "text": "En realidad no construimos software. Negociamos constantemente con la ambigüedad.",
+   "h": "1588bf53",
+   "k": "1588bf53.0",
+   "id": "b-r6ghzw",
+   "levels": {
+    "1": "",
+    "2": "",
+    "3": "La realidad es otra: <strong>no construimos software, negociamos constantemente con la ambigüedad.</strong>",
+    "4": "<strong>En realidad no construimos software.</strong> <strong>Negociamos constantemente con la ambigüedad.</strong>"
    },
    "errors": {},
    "model": "file"
@@ -47,9 +97,26 @@
    "k": "47895fdb.0",
    "id": "b-ec1pv0",
    "levels": {
-    "2": "No implementamos requisitos: interpretamos frases incompletas. Tomamos decisiones irreversibles basadas en hipótesis. Entregamos compromisos temporales entre tiempo, coste, expectativas y deuda técnica.",
-    "3": "No implementamos requisitos. Interpretamos frases incompletas. Tomamos decisiones irreversibles basadas en hipótesis que sabremos si eran correctas meses después. Entregamos compromisos temporales entre tiempo, coste, expectativas y deuda técnica.",
-    "1": ""
+    "4": "No implementamos requisitos. Interpretamos frases incompletas. Tomamos decisiones irreversibles basadas en hipótesis que sabremos si eran correctas meses después. Entregamos compromisos temporales entre tiempo, coste, expectativas y deuda técnica.",
+    "3": "No implementamos requisitos: interpretamos frases incompletas. Tomamos decisiones irreversibles basadas en hipótesis y entregamos compromisos temporales entre tiempo, coste y deuda técnica.",
+    "1": "En realidad no construimos software: negociamos con la ambigüedad. Interpretamos frases incompletas, decidimos sobre hipótesis y entregamos compromisos temporales.",
+    "2": "Pero en realidad no construimos software: negociamos con la ambigüedad. Interpretamos frases incompletas y decidimos sobre hipótesis."
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "<strong>El código no es el producto.</strong> <strong>El código es el rastro fósil de decisiones humanas.</strong>",
+   "text": "El código no es el producto. El código es el rastro fósil de decisiones humanas.",
+   "h": "3e0ddeb1",
+   "k": "3e0ddeb1.0",
+   "id": "b-2ij0e5",
+   "levels": {
+    "1": "",
+    "2": "",
+    "3": "<strong>El código no es el producto.</strong> <strong>El código es el rastro fósil de decisiones humanas.</strong>",
+    "4": "<strong>El código no es el producto.</strong> <strong>El código es el rastro fósil de decisiones humanas.</strong>"
    },
    "errors": {},
    "model": "file"
@@ -62,9 +129,26 @@
    "k": "a3d12200.0",
    "id": "b-1cv8z8",
    "levels": {
+    "4": "Cada línea existe porque alguien tuvo que elegir rápido, porque <em>“de momento vale”</em>. Y ese <em>“de momento”</em> acaba sosteniendo un negocio entero.",
+    "3": "",
+    "1": "",
+    "2": ""
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "Y entonces llegó la IA.",
+   "text": "Y entonces llegó la IA.",
+   "h": "3f553d68",
+   "k": "3f553d68.0",
+   "id": "b-ke3xd6",
+   "levels": {
+    "1": "",
     "2": "",
-    "3": "Cada línea existe porque alguien tuvo que elegir rápido, porque <em>“de momento vale”</em>. Y ese <em>“de momento”</em> acaba sosteniendo un negocio entero.",
-    "1": ""
+    "3": "",
+    "4": "Y entonces llegó la IA."
    },
    "errors": {},
    "model": "file"
@@ -77,9 +161,26 @@
    "k": "7ef7881f.0",
    "id": "b-8oktyv",
    "levels": {
-    "2": "La nueva ilusión es que ahora el software se escribe solo y que la fricción del desarrollo ha desaparecido.",
-    "3": "La nueva ilusión es que ahora el software se escribe solo. Que la fricción del desarrollo ha desaparecido y que si una IA genera código, el problema ya no es técnico.",
-    "1": "Ahora creemos que, con la IA, el software se escribe solo."
+    "4": "La nueva ilusión es que ahora el software se escribe solo. Que la fricción del desarrollo ha desaparecido y que si una IA genera código, el problema ya no es técnico.",
+    "3": "Con la IA llegó una nueva ilusión: que el software se escribe solo y que la fricción del desarrollo ha desaparecido.",
+    "1": "",
+    "2": "Con la IA ha llegado una nueva ilusión: que el software se escribe solo."
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "Pero <strong>la fricción nunca estuvo en teclear</strong>.",
+   "text": "Pero la fricción nunca estuvo en teclear.",
+   "h": "12efa7d8",
+   "k": "12efa7d8.0",
+   "id": "b-mpgjbu",
+   "levels": {
+    "1": "",
+    "2": "",
+    "3": "",
+    "4": "Pero <strong>la fricción nunca estuvo en teclear</strong>."
    },
    "errors": {},
    "model": "file"
@@ -92,9 +193,26 @@
    "k": "e8455cf2.0",
    "id": "b-f0rzlx",
    "levels": {
-    "2": "La fricción está en <strong>decidir qué construir</strong>, en <strong>entender por qué algo no funciona</strong> y en <strong>asumir las consecuencias</strong> de una decisión seis meses después, cuando el contexto ha cambiado.",
-    "3": "La fricción está en <strong>decidir qué construir</strong>, en <strong>entender por qué algo no funciona</strong> y en <strong>asumir las consecuencias</strong> de una decisión seis meses después, cuando nadie recuerda por qué se hizo así.",
-    "1": ""
+    "4": "La fricción está en <strong>decidir qué construir</strong>, en <strong>entender por qué algo no funciona</strong> y en <strong>asumir las consecuencias</strong> de una decisión seis meses después, cuando nadie recuerda por qué se hizo así.",
+    "3": "Pero <strong>la fricción nunca estuvo en teclear</strong>, sino en decidir qué construir, en entender por qué algo no funciona y en asumir las consecuencias de una decisión meses después.",
+    "1": "",
+    "2": "Pero la fricción nunca estuvo en teclear, sino en <strong>decidir qué construir</strong> y entender por qué algo no funciona. La IA no la elimina: la desplaza y la acelera."
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "La IA no elimina esa fricción. <strong>La desplaza.</strong>",
+   "text": "La IA no elimina esa fricción. La desplaza.",
+   "h": "2923d932",
+   "k": "2923d932.0",
+   "id": "b-g8ko9j",
+   "levels": {
+    "1": "",
+    "2": "",
+    "3": "",
+    "4": "La IA no elimina esa fricción. <strong>La desplaza.</strong>"
    },
    "errors": {},
    "model": "file"
@@ -107,9 +225,10 @@
    "k": "df9481c4.0",
    "id": "b-2wc7t5",
    "levels": {
-    "2": "Ahora el código aparece más rápido, sí. Pero también aparecen más decisiones, más temprano, con más superficie de error. <strong>La complejidad no se reduce: se acelera.</strong>",
-    "3": "Ahora el código aparece más rápido, sí. Pero también aparecen más decisiones, más temprano, con más superficie de error. <strong>La complejidad no se reduce: se acelera.</strong>",
-    "1": "Pero el código sale más rápido y la complejidad no se reduce: se acelera."
+    "4": "Ahora el código aparece más rápido, sí. Pero también aparecen más decisiones, más temprano, con más superficie de error. <strong>La complejidad no se reduce: se acelera.</strong>",
+    "3": "La IA no elimina esa fricción, la desplaza. El código aparece más rápido, pero también más decisiones, más temprano. <strong>La complejidad no se reduce: se acelera.</strong>",
+    "1": "",
+    "2": ""
    },
    "errors": {},
    "model": "file"
@@ -122,9 +241,42 @@
    "k": "97554619.0",
    "id": "b-yakmib",
    "levels": {
-    "2": "El objetivo nunca fue eliminar la fricción, sino ponerla donde importa: en los mecanismos que nos dan confianza para entregar y en decidir si debería existir.",
-    "3": "Por eso el objetivo nunca fue eliminar la fricción, sino ponerla donde importa. Ya no dedicamos el esfuerzo a escribir código, sino a los mecanismos que nos dan confianza para entregarlo y a decidir si debería existir.",
-    "1": "Por eso el esfuerzo ya no va a escribir código, sino a decidir si debería existir."
+    "4": "Por eso el objetivo nunca fue eliminar la fricción, sino ponerla donde importa. Ya no dedicamos el esfuerzo a escribir código, sino a los mecanismos que nos dan confianza para entregarlo y a decidir si debería existir.",
+    "3": "Por eso el objetivo nunca fue eliminar la fricción, sino ponerla donde importa: ya no en escribir código, sino en los mecanismos que nos dan confianza para entregarlo y en decidir si debería existir.",
+    "1": "Con la IA llega la ilusión de que el software se escribe solo, pero la fricción nunca estuvo en teclear, sino en decidir. La IA no la elimina: la desplaza y la acelera, y alguien humano tiene que validar.",
+    "2": ""
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "Alguien tiene que validar. Alguien tiene que entender. Alguien tiene que decir <em>“esto no”</em>.",
+   "text": "Alguien tiene que validar. Alguien tiene que entender. Alguien tiene que decir “esto no”.",
+   "h": "2b12600c",
+   "k": "2b12600c.0",
+   "id": "b-7e9ozd",
+   "levels": {
+    "1": "",
+    "2": "Por eso alguien humano tiene que validar, entender y decir <em>“esto no”</em>.",
+    "3": "Alguien tiene que validar, entender y decir <em>“esto no”</em>. Y ese alguien sigue siendo humano.",
+    "4": "Alguien tiene que validar. Alguien tiene que entender. Alguien tiene que decir <em>“esto no”</em>."
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "Y ese alguien sigue siendo humano.",
+   "text": "Y ese alguien sigue siendo humano.",
+   "h": "b2e239bb",
+   "k": "b2e239bb.0",
+   "id": "b-5vt92g",
+   "levels": {
+    "1": "",
+    "2": "",
+    "3": "",
+    "4": "Y ese alguien sigue siendo humano."
    },
    "errors": {},
    "model": "file"
@@ -137,9 +289,26 @@
    "k": "0bc44fd7.0",
    "id": "b-kja3ba",
    "levels": {
+    "4": "Hemos creado una industria basada en ilusiones compartidas: que el software se planifica como una obra civil, que los requisitos existen antes de empezar y, ahora, que la IA entiende el problema mejor que nosotros.",
+    "3": "Hemos creado una industria basada en ilusiones compartidas: que el software se planifica como una obra civil y, ahora, que la IA entiende el problema mejor que nosotros.",
+    "1": "",
+    "2": ""
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "<strong>Y, sin embargo, la ilusión no es un fallo. Es el pegamento.</strong>",
+   "text": "Y, sin embargo, la ilusión no es un fallo. Es el pegamento.",
+   "h": "d610ab85",
+   "k": "d610ab85.0",
+   "id": "b-m9pqm5",
+   "levels": {
+    "1": "",
     "2": "",
-    "3": "Hemos creado una industria entera basada en ilusiones compartidas: que el software se puede planificar como una obra civil, que los requisitos existen antes de empezar y, ahora, que la IA entiende el problema mejor que nosotros.",
-    "1": ""
+    "3": "",
+    "4": "<strong>Y, sin embargo, la ilusión no es un fallo. Es el pegamento.</strong>"
    },
    "errors": {},
    "model": "file"
@@ -152,9 +321,10 @@
    "k": "5b717a53.0",
    "id": "b-vmc38t",
    "levels": {
-    "2": "",
-    "3": "Sin ella, sería imposible empezar: nadie firmaría un proyecto diciendo que aprenderemos cosas, cambiaremos de opinión y al final tendrás algo distinto a lo que imaginabas.",
-    "1": ""
+    "4": "Sin ella, sería imposible empezar: nadie firmaría un proyecto diciendo que aprenderemos cosas, cambiaremos de opinión y al final tendrás algo distinto a lo que imaginabas.",
+    "3": "Pero la ilusión no es un fallo, es el pegamento: sin ella nadie firmaría un proyecto admitiendo que cambiaremos de opinión y al final tendrás algo distinto a lo que imaginabas.",
+    "1": "",
+    "2": "Vivimos de ilusiones así, y no son un fallo: sin ellas nadie firmaría un proyecto que admite que cambiará por el camino."
    },
    "errors": {},
    "model": "file"
@@ -167,9 +337,10 @@
    "k": "a220ee7b.0",
    "id": "b-2je10r",
    "levels": {
-    "2": "Y, sin embargo, hay gente que sí firma. No porque ignore la ambigüedad, sino porque la reconoce. Ha visto que el valor no estaba en acertar a la primera, sino en <strong>aprender más rápido que los demás</strong>.",
-    "3": "Y, sin embargo, hay gente que sí firma. No porque ignore la ambigüedad, sino porque la reconoce. No creen en la ilusión de control, creen en la capacidad de adaptarse. Han visto que el valor no estaba en acertar a la primera, sino en <strong>aprender más rápido que los demás</strong>.",
-    "1": ""
+    "4": "Y, sin embargo, hay gente que sí firma. No porque ignore la ambigüedad, sino porque la reconoce: cree en la capacidad de adaptarse. Ha visto que el valor no estaba en acertar a la primera, sino en <strong>aprender más rápido que los demás</strong>.",
+    "3": "Y, sin embargo, hay gente que sí firma, precisamente porque reconoce la ambigüedad. Ha visto que el valor no estaba en acertar a la primera, sino en <strong>aprender más rápido que los demás</strong>.",
+    "1": "Creer que construimos con control es una ilusión, pero es el pegamento que permite empezar. Y hay quien firma un proyecto precisamente porque reconoce la ambigüedad: no compra certezas, compra criterio, y sabe que el valor está en <strong>aprender más rápido que los demás</strong>.",
+    "2": "Aun así, hay gente que sí firma, porque reconoce la ambigüedad y sabe que el valor está en <strong>aprender más rápido que los demás</strong>."
    },
    "errors": {},
    "model": "file"
@@ -182,9 +353,42 @@
    "k": "c4ceccd2.0",
    "id": "b-kxgl54",
    "levels": {
-    "2": "<strong>Estas personas no compran certezas. Compran criterio.</strong> Esperan equipos que piensen, que digan <em>“no lo sé”</em> a tiempo y que sepan corregir el rumbo.",
-    "3": "<strong>Estas personas no compran certezas. Compran criterio.</strong> Esperan equipos que piensen, que digan <em>“no lo sé”</em> a tiempo y que sepan corregir el rumbo sin dramatismos. Buscan gente que ya haya navegado en el riesgo y haya vuelto con cicatrices útiles.",
-    "1": ""
+    "4": "<strong>Estas personas no compran certezas. Compran criterio.</strong> Esperan equipos que piensen, que digan <em>“no lo sé”</em> a tiempo y que corrijan el rumbo sin dramatismos, gente que haya vuelto del riesgo con cicatrices útiles.",
+    "3": "<strong>Estas personas no compran certezas. Compran criterio.</strong> Esperan equipos que piensen y que digan <em>“no lo sé”</em> a tiempo.",
+    "1": "",
+    "2": "<strong>No compran certezas, compran criterio:</strong> equipos que piensen y que digan <em>“no lo sé”</em> a tiempo."
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "Para ellos, <strong>la ambigüedad no es una amenaza</strong>. <strong>Es una señal de honestidad.</strong>",
+   "text": "Para ellos, la ambigüedad no es una amenaza. Es una señal de honestidad.",
+   "h": "729e976f",
+   "k": "729e976f.0",
+   "id": "b-8p23sk",
+   "levels": {
+    "1": "",
+    "2": "",
+    "3": "",
+    "4": "Para ellos, <strong>la ambigüedad no es una amenaza</strong>. <strong>Es una señal de honestidad.</strong>"
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "Porque saben que el verdadero riesgo no es no saber. <strong>El verdadero riesgo es fingir que se sabe.</strong>",
+   "text": "Porque saben que el verdadero riesgo no es no saber. El verdadero riesgo es fingir que se sabe.",
+   "h": "8cf62a73",
+   "k": "8cf62a73.0",
+   "id": "b-e2gxv3",
+   "levels": {
+    "1": "",
+    "2": "",
+    "3": "Para ellos la ambigüedad es una señal de honestidad: <strong>el verdadero riesgo es fingir que se sabe.</strong>",
+    "4": "Porque saben que el verdadero riesgo no es no saber. <strong>El verdadero riesgo es fingir que se sabe.</strong>"
    },
    "errors": {},
    "model": "file"
@@ -197,9 +401,26 @@
    "k": "9ed3600e.0",
    "id": "b-0gq34m",
    "levels": {
-    "2": "",
-    "3": "Han visto proyectos fracasar no por falta de talento, sino por exceso de seguridad. Prefieren un equipo incómodo con preguntas difíciles antes que uno cómodo repitiendo respuestas antiguas.",
-    "1": ""
+    "4": "Han visto proyectos fracasar no por falta de talento, sino por exceso de seguridad. Prefieren un equipo incómodo con preguntas difíciles antes que uno cómodo repitiendo respuestas antiguas.",
+    "3": "",
+    "1": "",
+    "2": ""
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "Con esa gente no se <em>“construye”</em> software. <strong>Se construye confianza.</strong>",
+   "text": "Con esa gente no se “construye” software. Se construye confianza.",
+   "h": "65ddbda9",
+   "k": "65ddbda9.0",
+   "id": "b-4rnmrg",
+   "levels": {
+    "1": "",
+    "2": "Con esa gente no se construye software. <strong>Se construye confianza.</strong>",
+    "3": "Con esa gente no se <em>“construye”</em> software. <strong>Se construye confianza.</strong>",
+    "4": "Con esa gente no se <em>“construye”</em> software. <strong>Se construye confianza.</strong>"
    },
    "errors": {},
    "model": "file"
@@ -212,9 +433,26 @@
    "k": "d5794b9b.0",
    "id": "b-8fti3s",
    "levels": {
-    "2": "Desde ahí, el software aparece como consecuencia, no como promesa: cambia, a veces decepciona, pero casi siempre enseña algo útil.",
-    "3": "Desde ahí, el software aparece como consecuencia, no como promesa. Cambia, evoluciona, a veces decepciona, pero casi siempre enseña algo útil, porque hubo espacio para pensar, para frenar y para corregir.",
-    "1": ""
+    "4": "Desde ahí, el software aparece como consecuencia, no como promesa. Cambia y a veces decepciona, pero casi siempre enseña algo útil, porque hubo espacio para pensar, para frenar y para corregir.",
+    "3": "Desde ahí, el software aparece como consecuencia, no como promesa: cambia, a veces decepciona, pero casi siempre enseña algo útil.",
+    "1": "",
+    "2": ""
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "<strong>Quizá por eso la ilusión sigue siendo necesaria para empezar,</strong> <strong>pero deja de serlo para avanzar.</strong>",
+   "text": "Quizá por eso la ilusión sigue siendo necesaria para empezar, pero deja de serlo para avanzar.",
+   "h": "e029da38",
+   "k": "e029da38.0",
+   "id": "b-8si68i",
+   "levels": {
+    "1": "",
+    "2": "",
+    "3": "<strong>Quizá por eso la ilusión sigue siendo necesaria para empezar,</strong> <strong>pero deja de serlo para avanzar.</strong>",
+    "4": "<strong>Quizá por eso la ilusión sigue siendo necesaria para empezar,</strong> <strong>pero deja de serlo para avanzar.</strong>"
    },
    "errors": {},
    "model": "file"
@@ -227,9 +465,58 @@
    "k": "fc6c0d2a.0",
    "id": "b-y1w55s",
    "levels": {
-    "2": "Al final, el software no lo sostienen los planes, ni el código, ni ahora la IA. <strong>Lo sostienen personas que ya han vivido el caos y, aun así, deciden volver a entrar.</strong>",
+    "4": "Al final, el software no lo sostienen los planes, ni el código, ni ahora la IA. <strong>Lo sostienen personas que ya han vivido el caos y, aun así, deciden volver a entrar.</strong>",
     "3": "Al final, el software no lo sostienen los planes, ni el código, ni ahora la IA. <strong>Lo sostienen personas que ya han vivido el caos y, aun así, deciden volver a entrar.</strong>",
-    "1": "Al final, el software lo sostienen personas que han vivido el caos y deciden volver a entrar."
+    "1": "Al final, el software no lo sostienen los planes ni la IA, sino personas que ya han vivido el caos y deciden volver a entrar.",
+    "2": "Al final, el software lo sostienen personas que ya han vivido el caos y, aun así, deciden volver a entrar."
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "Así que seguimos diciendo que construimos software. Y ahora decimos que lo hace la IA.",
+   "text": "Así que seguimos diciendo que construimos software. Y ahora decimos que lo hace la IA.",
+   "h": "409d8931",
+   "k": "409d8931.0",
+   "id": "b-4o8btt",
+   "levels": {
+    "1": "",
+    "2": "",
+    "3": "Así que seguimos diciendo que construimos software. Y ahora decimos que lo hace la IA.",
+    "4": "Así que seguimos diciendo que construimos software. Y ahora decimos que lo hace la IA."
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "Aunque en realidad seguimos haciendo lo mismo de siempre: explorar, ajustar, equivocarnos, renegociar y volver a empezar.",
+   "text": "Aunque en realidad seguimos haciendo lo mismo de siempre: explorar, ajustar, equivocarnos, renegociar y volver a empezar.",
+   "h": "0a005e6f",
+   "k": "0a005e6f.0",
+   "id": "b-7lom28",
+   "levels": {
+    "1": "",
+    "2": "Seguimos haciendo lo mismo de siempre: explorar, ajustar, equivocarnos y volver a empezar.",
+    "3": "Aunque en realidad seguimos haciendo lo mismo de siempre: explorar, ajustar, equivocarnos, renegociar y volver a empezar.",
+    "4": "Aunque en realidad seguimos haciendo lo mismo de siempre: explorar, ajustar, equivocarnos, renegociar y volver a empezar."
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "<strong>La diferencia es que ahora todo va más rápido.</strong> <strong>Y cuando te equivocas, también.</strong>",
+   "text": "La diferencia es que ahora todo va más rápido. Y cuando te equivocas, también.",
+   "h": "87fc21c6",
+   "k": "87fc21c6.0",
+   "id": "b-tou3ry",
+   "levels": {
+    "1": "Lo que cambia es que ahora todo va más rápido. <strong>Y cuando te equivocas, también.</strong>",
+    "2": "<strong>La diferencia es que ahora todo va más rápido.</strong> <strong>Y cuando te equivocas, también.</strong>",
+    "3": "<strong>La diferencia es que ahora todo va más rápido.</strong> <strong>Y cuando te equivocas, también.</strong>",
+    "4": "<strong>La diferencia es que ahora todo va más rápido.</strong> <strong>Y cuando te equivocas, también.</strong>"
    },
    "errors": {},
    "model": "file"

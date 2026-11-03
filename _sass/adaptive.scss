@@ -52,11 +52,11 @@ html.dark {
 }
 
 .ar-sl-box { position: absolute; }
-.ar-slider--head { height: 40px; margin: 0 12.5%; }
+.ar-slider--head { height: 40px; margin: 0 10%; }
 .ar-slider--head .ar-sl-box { inset: 0; }
-.ar-slider--pill { width: 120px; height: 44px; flex: none; }
+.ar-slider--pill { width: 140px; height: 44px; flex: none; }
 .ar-slider--pill .ar-sl-box { inset: 0 9px; }
-.ar-slider--v { width: 44px; height: 150px; flex: none; }
+.ar-slider--v { width: 44px; height: 176px; flex: none; }
 .ar-slider--v .ar-sl-box { inset: 9px 0; }
 
 .ar-sl-track, .ar-sl-fill, .ar-sl-dot, .ar-sl-thumb { position: absolute; display: block; pointer-events: none; }
@@ -126,7 +126,7 @@ html.dark {
   flex-direction: column;
   gap: 2px;
   box-sizing: border-box;
-  width: 440px;
+  width: 480px;
   max-width: 100%;
   margin: 24px auto 0;
   padding: 12px 18px 10px;
@@ -149,7 +149,7 @@ html.dark {
 
 .ar-card__labels {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   font-family: $sans;
   font-size: 12px;
   color: var(--ar-muted);
@@ -304,10 +304,11 @@ li.ar-block > .ar-margin { right: calc(100% + 24px + 1.5em); }
 }
 
 .ar-panel__row { display: flex; justify-content: flex-end; gap: 10px; }
-.ar-panel__labels { position: relative; flex-grow: 1; height: 150px; }
+.ar-panel__labels { position: relative; flex-grow: 1; height: 176px; }
 .ar-panel__labels span {
   position: absolute;
   right: 0;
+  top: calc(var(--t) * 156px - 1px);
   height: 20px;
   line-height: 20px;
   white-space: nowrap;
@@ -317,10 +318,6 @@ li.ar-block > .ar-margin { right: calc(100% + 24px + 1.5em); }
   &.is-active { font-weight: 600; color: var(--ar-ink); }
 }
 .ar-block.ar-custom .ar-panel__labels .is-active { color: var(--ar-accent); }
-.ar-panel__labels span:nth-child(1) { top: -1px; }
-.ar-panel__labels span:nth-child(2) { top: 43px; }
-.ar-panel__labels span:nth-child(3) { top: 87px; }
-.ar-panel__labels span:nth-child(4) { top: 131px; }
 
 /* No room for a 184px margin (or touch): icon on top of the block, popover / bottom sheet */
 @media (max-width: 1199px) {
