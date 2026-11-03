@@ -1,9 +1,13 @@
 <header id="header" class="site-header{% if page.hero %} site-header--hero{% endif %}">
   <div class="bar">
     <a href="/" class="logo">acasquete<span>/</span>notes</a>
+    {% if page.layout == 'post' and page.header_image %}{% assign bar_img = page.header_fullview | default: page.header_image | prepend: '/img/' | replace: '//', '/' %}
+    <a href="#" class="bar-post" id="bar-post" aria-hidden="true" tabindex="-1"><img src="{{ bar_img }}" alt=""><span>{{ page.title }}</span></a>
+    {% endif %}
     <nav class="tabs" aria-label="Principal">
       {% include nav-links.html %}
     </nav>
+    {% if page.layout == 'post' %}<button type="button" class="bar-ar" id="bar-ar" aria-label="Nivel de lectura" aria-expanded="false" tabindex="-1" hidden><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l9 4.5-9 4.5-9-4.5z"/><path d="M3 12l9 4.5 9-4.5"/><path d="M3 16.5l9 4.5 9-4.5"/></svg></button>{% endif %}
     <a class="sq{% if page.nav == 'blog' %} on{% endif %}" href="/blog" aria-label="Buscar en todo el blog"{% if page.nav == 'blog' %} aria-current="page"{% endif %}{% if page.hero %} data-search-open{% endif %}>
       <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"></circle><path d="M15.5 15.5L20 20"></path></svg>
     </a>

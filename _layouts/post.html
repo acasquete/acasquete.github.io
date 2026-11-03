@@ -11,6 +11,25 @@ comments: true
 	<figure class="wrap post-cover">
 		<img src="{{ post_img }}" alt="{{ page.title }}" style="{% if page.hero_position %}object-position: {{ page.hero_position }};{% endif %}{% if page.cover_ratio %} aspect-ratio: {{ page.cover_ratio }};{% endif %}">
 	</figure>
+	<script>
+		// Show the post thumbnail in the header once the cover has scrolled away.
+		(function () {
+			var cover = document.querySelector('.post-cover');
+			var header = document.getElementById('header');
+			var link = document.getElementById('bar-post');
+			if (!cover || !header || !link || !('IntersectionObserver' in window)) return;
+			link.addEventListener('click', function (e) {
+				e.preventDefault();
+				window.scrollTo({ top: 0, behavior: 'smooth' });
+			});
+			new IntersectionObserver(function (entries) {
+				var gone = !entries[0].isIntersecting;
+				header.classList.toggle('has-post', gone);
+				link.setAttribute('aria-hidden', gone ? 'false' : 'true');
+				link.tabIndex = gone ? 0 : -1;
+			}, { rootMargin: '-' + header.offsetHeight + 'px 0px 0px 0px' }).observe(cover);
+		})();
+	</script>
 	{% endif %}
 
 	<div class="wrap post-head">
