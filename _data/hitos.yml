@@ -81,6 +81,7 @@
     image: "/img/seattle.jpg"
   - label: Nos casamos
     month: Jun
+    image: "/img/nos-casamos.jpg"
   - label: Primera maratón
     month: Mar
     image: "/img/maraton.jpg"
