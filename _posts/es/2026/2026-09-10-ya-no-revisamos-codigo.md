@@ -33,7 +33,7 @@ Robert C. Martin, Uncle Bob, el autor de *Clean Code*, el que se pasó veinte a�
 >
 > — [Robert C. Martin](https://x.com/unclebobmartin/status/2080257779395154409), 23 de julio de 2026
 
-Ya lo había [dicho en abril](https://x.com/unclebobmartin/status/2044114698451476492), en una respuesta que tuvo mucha menos repercusión: no revisa el código de los agentes; mide cobertura, estructura de dependencias, complejidad ciclomática y mutation score, porque "los humanos somos lentos con el código". La de julio, en cambio, dio mucho que hablar.
+Ya lo había [dicho en abril](https://x.com/unclebobmartin/status/2044114698451476492), en una respuesta que tuvo mucha menos repercusión: no revisa el código de los agentes; mide cobertura, estructura de dependencias, complejidad ciclomática y mutation score, porque "los humanos somos lentos con el código".
 
 Viniendo de él, incomoda. Pero apunta justo a lo que ya estábamos construyendo: en vez de leer el código, diseñar la jaula de tests que ese código tiene que superar y dejar que el agente escriba dentro de ella. Si el conjunto de restricciones está bien construido, la calidad deja de depender de que alguien mire cada línea.
 

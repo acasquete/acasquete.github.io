@@ -1,5 +1,5 @@
 ---
-description: Retomar Los tres mosqueteros ha sido una de esas lecturas que te reconcilian con los clásicos.
+description: Creía conocer Los tres mosqueteros por sus películas, hasta que leí cómo termina Milady.
 title: Los tres mosqueteros que no conocía
 tags: [personal, readings]
 reviewed: true
