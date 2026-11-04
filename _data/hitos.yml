@@ -172,6 +172,10 @@
     month: Sep
   - label: Un viaje a Madeira
     month: Jul
+  - label: "<em>Breaking change</em>"
+    month: May
+    note: El 18 de mayo dejo de fumar. Una dependencia menos, y sin <em>rollback</em>.
+    image: "/img/dejo-de-fumar.jpg"
 - year: 2014
   items:
   - label: Llegada a Plain Concepts
@@ -302,6 +306,10 @@
     image: "/img/emmoe-nevada.jpg"
 - year: 1995
   items:
+  - label: "<em>Release</em> 18.0"
+    month: Nov
+    note: Mayor de edad, a seis meses de la mili y sin despegarme del ordenador.
+    image: "/img/18-anos.jpg"
   - label: Termino el COU en el IES Lluís Vives
     month: Jun
     note: Párvulos, EGB, BUP y COU, catorce años en el mismo centro.
@@ -310,9 +318,11 @@
 - year: 1994
   items:
   - label: Primer PC 486
+    image: "/img/pc-486.jpg"
 - year: 1990
   items:
   - label: 'C:\> Primer PC: un Amstrad 2086'
+    image: "/img/amstrad-pc2086.jpg"
 - year: 1989
   items:
   - label: Primera película en el cine
@@ -320,7 +330,7 @@
 - year: 1986
   items:
   - label: 'Ready: primer ordenador'
-    image: "/img/about/amstrad6128-3.jpeg"
+    image: "/img/primer-ordenador.jpg"
 - year: 1981
   items:
   - label: Empiezo párvulos en el Lluís Vives
