@@ -1,5 +1,5 @@
 ---
-featured: 2
+featured: 3
 description: Sobre el papel suena a revolución. En la práctica, la historia es bastante más matizada.
 title: ¿Qué hay realmente detrás de los cúbits de Majorana de Microsoft?
 tags: [personal, quantum_computing]

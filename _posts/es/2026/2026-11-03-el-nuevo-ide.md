@@ -5,12 +5,13 @@ title: El nuevo IDE
 tags: [artificial_intelligence, programming]
 reviewed: true
 home: true
+featured: 1
 ai: true
 header_image: el-nuevo-ide-cover.jpg
 ---
 En abril de 2025 se publicó [*AI 2027*](https://ai-2027.com/), un escenario que contaba, mes a mes, cómo podría llegar una inteligencia artificial superhumana. Casi todo el texto habla de geopolítica y de riesgos, pero hay una línea, fechada a finales de 2026, que leí entonces como ciencia ficción: a los programadores que mejor les iría serían los que supieran «gestionar y controlar la calidad de equipos de IA».<!-- excerpt-end -->
 
-Estamos a finales de 2026. No tenemos las doscientas mil copias de agentes que imaginaba el escenario, pero en nuestro equipo de plataforma una persona puede tener abiertas decenas de sesiones a la vez. Y hay algo que *AI 2027* daba por hecho sin explicarlo nunca: con qué herramienta se supervisa todo eso. Esa herramienta todavía no existe.
+Estamos a finales de 2026. No tenemos las doscientas mil copias de agentes que imaginaba el escenario, pero en nuestro equipo de plataforma una persona puede tener abiertas decenas de sesiones a la vez. Y hay algo que *AI 2027* daba por hecho sin explicarlo nunca: con qué herramienta se supervisa todo eso. Esa herramienta todavía no está resuelta.
 
 ## Ya no abrimos el IDE
 
@@ -66,6 +67,22 @@ Sin pretender tener el diseño cerrado, esto es lo que creo que necesita un ICE:
 
 Fíjate en lo que no aparece en la lista: escribir código. El editor no desaparece, pero pasa a ser una vista más, la que abres en el caso raro en que de verdad necesitas leer algo.
 
+## Una primera versión: ICE
+
+Lo bueno de tener claro lo que falta es que se puede empezar a construir. En PlainConcepts hemos publicado como proyecto de código abierto una primera versión: [**ICE**](https://github.com/PlainConceptsPlatform/ice), *Integrated Control Environment*. Es una interfaz web local para supervisar y dirigir sesiones de Claude Code y de OpenCode. No es un editor ni pretende serlo: sustituye al IDE como sitio de trabajo. No escribe el código, de eso se encargan tus agentes; es la consola desde la que supervisas muchas sesiones de muchos proyectos.
+
+![Muro de sesiones de ICE con ocho celdas por pantalla, cada una con su estado, alertas, flujo de CI, PRs, tokens, coste y actividad de las últimas ocho horas.](/img/el-nuevo-ide/ice-wall.jpg)
+
+*Captura del repositorio, en modo demo: todas las sesiones y proyectos son inventados.*
+
+Cubre una parte de la lista de arriba: hasta 16 sesiones por pantalla, con su estado, el flujo de CI con tiempo estimado, las PR, los tokens, el coste y las compactaciones repetidas; una barra con lo que necesita una decisión tuya; y la posibilidad de responder permisos, enviar mensajes y retomar sesiones sin salir de la página. Es una primera versión y tiene límites claros: es local, para una persona, y el panel compartido por el equipo sigue pendiente.
+
+## Esto no es nada nuevo
+
+Conviene bajar el tono: esto no es nada nuevo ni extraordinario. Hacer una terminal, o un panel como este, es literalmente un *prompt* y media hora. Todo el mundo tiene ahora la capacidad de construirse la herramienta y adaptarla a cómo trabaja, y todo el mundo lo está haciendo. ICE es una más.
+
+Por eso no hay un ganador claro ni lo habrá pronto. Cuando construir cuesta una tarde, cada equipo hace el suyo, a su medida. Habrá tantos ICE como equipos, y no habrá uno rígido que valga para todos: cada equipo tiene sus propias puertas, sus flujos y sus líneas rojas, y su consola tendrá que reflejarlos. La lista de arriba no es una especificación, sino un punto de partida para que cada uno construya la suya. Lo que no se puede delegar en ninguna herramienta es saber qué hay que mirar.
+
 ## Lo que no es
 
 No es un chat con pestañas. Tampoco es el editor de siempre con un panel lateral para el agente. Y no es una herramienta personal: si las sesiones son trabajo del equipo y abarcan varios proyectos, el nuevo IDE es, sobre todo, un panel compartido.
@@ -86,6 +103,6 @@ Si la respuesta a alguna es no, el IDE todavía te hace falta. No porque escriba
 
 ## El IDE que falta
 
-*AI 2027* imaginaba ingenieros que ya no programan y se pasan el día intentando seguir el ritmo de lo que producen los agentes. La primera parte ya la estamos viviendo. La segunda es la que nadie ha resuelto: seguir el ritmo no puede consistir en ir de conversación en conversación sin una visión completa de en qué punto del flujo está cada sesión.
+*AI 2027* imaginaba ingenieros que ya no programan y se pasan el día intentando seguir el ritmo de lo que producen los agentes. La primera parte ya la estamos viviendo. La segunda es la que nadie ha resuelto: seguir el ritmo no puede consistir en ir de conversación en conversación. Hace falta una visión holística del sistema: tus sesiones y las que otros desarrolladores tienen sobre un proyecto, y cómo dependen unas de otras. Y no solo del trabajo de los agentes generando código, sino de todo lo que pasa alrededor: las puertas que ejecutan o han fallado, los despliegues en marcha, los flujos que esperan un *runner* o una aprobación, los permisos pendientes, el coste y las dependencias con otros equipos.
 
 Los modelos seguirán cambiando cada pocos meses, y las herramientas también. Lo que no va a cambiar es que alguien tiene que decidir qué se construye, comprobar que lo que ha salido es lo que se pidió y responder por ello. El nuevo IDE, el ICE, no es el sitio donde escribimos código. Es el sitio desde el que respondemos por él.

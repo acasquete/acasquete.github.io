@@ -1,5 +1,5 @@
 ---
-featured: 3
+featured: 4
 description: Decimos que construimos software, como si fuera algo sólido.
 title: La ilusión de construir software
 tags: [personal, artificial_intelligence]

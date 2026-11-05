@@ -1,5 +1,5 @@
 ---
-featured: 1
+featured: 2
 hero_position: center 40%
 cover_ratio: 16 / 9
 hero_position_mobile: 78% center
