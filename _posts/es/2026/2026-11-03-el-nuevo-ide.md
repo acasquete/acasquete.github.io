@@ -51,7 +51,7 @@ Y todo eso es dentro de un solo proyecto. En el equipo de plataforma no llevamos
 
 ## Cómo debería ser el nuevo IDE
 
-Si el IDE clásico era un editor con herramientas alrededor, el nuevo es una consola de operaciones. El sector ya empieza a llamarlo [**ADE**](https://www.warp.dev/articles/what-is-an-agentic-development-environment), *Agentic Development Environment*. Yo cambiaría otra letra: no un entorno de desarrollo, sino un **ICE**, un *Integrated Control Environment*. La D de desarrollo deja paso a la C de control: ya no es el sitio donde se escribe el código, sino desde donde se supervisa a quienes lo escriben.
+Si el IDE clásico era un editor con herramientas alrededor, el nuevo es una consola de operaciones. El sector lleva tiempo llamándolo [**ADE**](https://www.warp.dev/articles/what-is-an-agentic-development-environment), *Agentic Development Environment*. Yo cambiaría otra letra: no un entorno de desarrollo, sino un **ICE**, un *Integrated Control Environment*. La D de desarrollo deja paso a la C de control: ya no es el sitio donde se escribe el código, sino desde donde se supervisa a quienes lo escriben.
 
 Sin pretender tener el diseño cerrado, esto es lo que creo que necesita un ICE:
 
@@ -103,6 +103,11 @@ Si la respuesta a alguna es no, el IDE todavía te hace falta. No porque escriba
 
 ## El IDE que falta
 
-*AI 2027* imaginaba ingenieros que ya no programan y se pasan el día intentando seguir el ritmo de lo que producen los agentes. La primera parte ya la estamos viviendo. La segunda es la que nadie ha resuelto: seguir el ritmo no puede consistir en ir de conversación en conversación. Hace falta una visión holística del sistema: tus sesiones y las que otros desarrolladores tienen sobre un proyecto, y cómo dependen unas de otras. Y no solo del trabajo de los agentes generando código, sino de todo lo que pasa alrededor: las puertas que ejecutan o han fallado, los despliegues en marcha, los flujos que esperan un *runner* o una aprobación, los permisos pendientes, el coste y las dependencias con otros equipos.
+*AI 2027* imaginaba ingenieros que ya no programan y se pasan el día intentando seguir el ritmo de lo que producen los agentes. La primera parte ya la estamos viviendo. La segunda la intentan resolver muchas herramientas, pero casi todas se quedan en una persona y en una máquina. Y seguir el ritmo no puede consistir en ir de conversación en conversación.
+
+Hace falta una visión holística del sistema, y con dos condiciones:
+
+- **Compartida.** Las sesiones de un proyecto y sus dependencias son del equipo, no de quien las lanzó, y se ven igual se ejecuten donde se ejecuten, en local o en la nube.
+- **Completa.** No solo el trabajo de los agentes generando código, sino todo lo que pasa alrededor: las puertas que se ejecutan o han fallado, los despliegues en marcha, los flujos que esperan un *runner* o una aprobación, los permisos pendientes, el coste y las dependencias con otros equipos.
 
 Los modelos seguirán cambiando cada pocos meses, y las herramientas también. Lo que no va a cambiar es que alguien tiene que decidir qué se construye, comprobar que lo que ha salido es lo que se pidió y responder por ello. El nuevo IDE, el ICE, no es el sitio donde escribimos código. Es el sitio desde el que respondemos por él.
