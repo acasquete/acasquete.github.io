@@ -71,7 +71,7 @@ Fíjate en lo que no aparece en la lista: escribir código. El editor no desapar
 
 Lo bueno de tener claro lo que falta es que se puede empezar a construir. En PlainConcepts hemos publicado como proyecto de código abierto una primera versión: [**ICE**](https://github.com/PlainConceptsPlatform/ice), *Integrated Control Environment*. Es una interfaz web local para supervisar y dirigir sesiones de Claude Code y de OpenCode. No es un editor ni pretende serlo: sustituye al IDE como sitio de trabajo. No escribe el código, de eso se encargan tus agentes; es la consola desde la que supervisas muchas sesiones de muchos proyectos.
 
-![Muro de sesiones de ICE con ocho celdas por pantalla, cada una con su estado, alertas, flujo de CI, PRs, tokens, coste y actividad de las últimas ocho horas.](/img/el-nuevo-ide/ice-wall.jpg)
+![Muro de sesiones de ICE con ocho celdas por pantalla, cada una con su estado, alertas y flujo de CI, incluida una sesión con un flujo de despliegue en marcha (pages-build-deployment).](/img/el-nuevo-ide/ice-wall.jpg)
 
 *Captura del repositorio, en modo demo: todas las sesiones y proyectos son inventados.*
 
