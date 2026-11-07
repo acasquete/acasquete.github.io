@@ -22,7 +22,7 @@ nav: biblioteca
     <div>
       <h2 id="ultimo" class="kick">Lo último que he leído</h2>
       <p class="latest-title">{{ latest.title }}</p>
-      <p class="latest-author">{{ latest.author }} · {{ latest.read }}</p>
+      <p class="latest-author">{{ latest.author }} · {{ latest.published }} · leído {{ latest.read }}</p>
       {% if latest.quote %}<div class="latest-quote">{{ latest.quote | markdownify }}</div>{% endif %}
       {% if latest_note %}<a class="card text-link text-link--big" href="{{ latest_note.url }}"><span class="hl">Leer la nota: {{ latest_note.title }} →</span></a>{% endif %}
     </div>
@@ -51,7 +51,7 @@ nav: biblioteca
     <span class="mono muted">{{ site.data.personal_development.size }} {% if site.data.personal_development.size == 1 %}libro{% else %}libros{% endif %}</span>
   </div>
   {% for book in site.data.personal_development %}
-  <p class="book-line"><span>{{ book.title }}</span><span>{{ book.author }} · {{ book.read }}</span></p>
+  <p class="book-line"><span>{{ book.title }}</span><span>{{ book.author }} · {{ book.published }} · leído {{ book.read }}</span></p>
   {% endfor %}
 </section>
 

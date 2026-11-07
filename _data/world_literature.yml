@@ -1,194 +1,232 @@
 - title: Dracula
   author: Bram Stoker
+  published: 1897
   image: dracula.jpg
   read: 2019
 
 - title: 1984
   author: George Orwell
+  published: 1949
   image: 1984.jpg
   read: 2019
 
 - title: El extraño caso del Dr. Jekyll y Mr. Hyde
   author: Robert Louis Stevenson
+  published: 1886
   image: el-extrano-caso-del-dr-jekyll-y-mr-hyde.jpg
   read: 2019
 
 - title: Frankenstein
   author: Mary Shelley
+  published: 1818
   image: frankenstein.jpg
   read: 2019
 
 - title: Lazarillo de Tormes
   author: 
+  published: 1554
   image: lazarillo-de-tormes.jpg
   read: 2019
 
 - title: El Principito
   author: Antoine de Saint Exupery
+  published: 1943
   image: el-principito.jpg
   read: 2020
 
 - title: Harry Potter y la piedra filosofal
   author: J. K. Rowling
+  published: 1997
   image: harry-potter-y-la-piedra-filosofal.jpg
   read: 2020
 
 - title: La vuelta al mundo en 80 días
   author: Julio Verne
+  published: 1872
   image: la-vuelta-al-mundo-en-80-dias.jpg
   read: 2020
 
 - title: El viejo y el mar
   author: Ernest Hemingway
+  published: 1952
   image: el-viejo-y-el-mar.jpg
   read: 2020
 
 - title: Cuento de Navidad
   author: Charles Dickens
+  published: 1843
   image: cuento-de-navidad.jpg
   read: 2020
 
 - title: Platero y yo
   author: Juan Ramón Jiménez
+  published: 1914
   image: platero-y-yo.jpg
   read: 2021
 
 - title: El guardián entre el centeno
   author: J.D. Salinger
+  published: 1951
   image: guardian-entre-centeno.jpg
   read: 2021
 
 - title: ¿Sueñan los androides con ovejas eléctricas?
   author: Philip K. Dick
+  published: 1968
   image: suenan-androides.jpg
   read: 2021
 
 - title: El Hobbit
   author: J.R.R. Tolkien
+  published: 1937
   image: hobbit.jpg
   read: 2021
 
 - title: 84, Charing Cross Road
   author: Helene Hanff
+  published: 1970
   image: 84charingcrossroad.jpg
   read: 2021
 
 - title: Luces de bohemia
   author: Ramón del Valle-Inclán
+  published: 1920
   image: lucesdebohemia.jpg
   read: 2021
 
 - title: Harry Potter y la cámara secreta
   author: J. K. Rowling
+  published: 1998
   image: harry-potter-y-la-camara-secreta.jpg
   read: 2022
 
 - title: El mundo de Sofía
   author: Jostein Gaarder
+  published: 1991
   image: el-mundo-de-sofia.jpg
   read: 2022
 
 - title: El sabueso de los Baskerville
   author: Arthur Conan Doyle
+  published: 1902
   image: el-sabueso-de-los-baskerville.png
   read: 2022
   post_url: /el-clasico-del-genero-de-misterio-y-detectives
 
 - title: Un mundo feliz
   author: Aldous Huxley
+  published: 1932
   image: un-mundo-feliz.jpg
   read: 2024
   post_url: /la-distopia-que-predijo-el-presente
 
 - title: La metamorfosis
   author: Franz Kafka
+  published: 1915
   image: la-metamorfosis.jpg
   read: 2024
   post_url: /desconectado-de-la-sociedad
 
 - title: Juan Salvador Gaviota
   author: Richard Bach
+  published: 1970
   image: juan-salvador-gaviota.jpg
   read: 2024
   post_url: /volar-mas-alto
 
 - title: Crónica de una muerte anunciada
   author: Gabriel García Márquez
+  published: 1981
   image: cronica-muerte.jpg
   read: 2024
 
 - title: El sueño de una noche de verano
   author: William Shakespeare
+  published: 1595
   image: sueno-noche-verano.jpg
   read: 2024
 
 - title: La casa de Bernarda Alba
   author: Federico García Lorca
+  published: 1936
   image: la-casa-de-bernarda-alba.jpg
   read: 2024
 
 - title: La vida es sueño
   author: Pedro Calderón de la Barca
+  published: 1635
   image: la-vida-es-sueno.jpg
   read: 2024 
 
 - title: Rebelión en la granja
   author: George Orwell
+  published: 1945
   image: rebelion-en-la-granja.jpg
   read: 2024
 
 - title: El gran Gatsby
   author: Francis Scott Fitzgerald
+  published: 1925
   image: el-gran-gatsby.jpg
   read: 2024
 
 - title: Siddharta
   author: Herman Hesse
+  published: 1922
   image: siddharta.jpg
   read: 2024
   
 - title: Hamlet
   author: William Shakespeare
+  published: 1600
   image: hamlet.jpg
   read: 2024
   
 - title: Romeo y Julieta
   author: William Shakespeare
+  published: 1597
   image: romeo-y-julieta.jpg
   read: 2024
 
 - title: Las penas del joven Werther
   author: J. W. Goethe
+  published: 1774
   image: penas-joven-werther.jpg
   read: 2024
 
 - title: Miedo y asco en Las Vegas
   author: Hunter S. Thompson
+  published: 1971
   image: miedo-y-asco-en-las-vegas.jpg
   read: 2024
 
 - title: El mago de Oz
   author: L. Frank Baum
+  published: 1900
   image: el-mago-de-oz.jpg
   read: 2024
 
 - title: Marianela
   author: Benito Pérez Galdós
+  published: 1878
   image: marianela.jpg
   read: 2024
 
 - title: La guerra de los mundos
   author: H.G. Wells
+  published: 1898
   image: la-guerra-de-los-mundos.jpg
   read: 2025
 
 - title: Crimen y castigo
   author: Fiodor Dostoievski
+  published: 1866
   image: crimen-y-castigo.jpg
   read: 2025
 
 - title: Los tres mosqueteros
   author: Alexandre Dumas
+  published: 1844
   image: los-tres-mosqueteros.jpg
   read: 2026
   post_url: /los-tres-mosqueteros-que-no-conocia
@@ -196,6 +234,7 @@
 
 - title: De ratones y hombres
   author: John Steinbeck
+  published: 1937
   image: de-ratones-y-hombres.jpg
   read: 2026
   post_url: /de-ratones-y-hombres-en-voz-alta

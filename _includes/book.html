@@ -2,5 +2,5 @@
   <div class="img cov"><img src="/img/books/{{ include.book.image }}" alt="Portada de {{ include.book.title }}" loading="lazy"></div>
   <span class="bk-title">{% if include.book.post_url %}<span class="hl">{{ include.book.title }}</span>{% else %}{{ include.book.title }}{% endif %}</span>
   {% if include.book.author %}<span class="bk-author">{{ include.book.author }}</span>{% endif %}
-  <span class="mono bk-year">{{ include.book.read }}{% if include.book.post_url %} · <span class="bk-review">Reseña →</span>{% endif %}</span>
+  <span class="mono bk-year">{{ include.book.published }} · leído {{ include.book.read }}{% if include.book.post_url %} · <span class="bk-review">Reseña →</span>{% endif %}</span>
 {% if include.book.post_url %}</a>{% else %}</div>{% endif %}
