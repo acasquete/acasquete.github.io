@@ -57,18 +57,27 @@ nav: biblioteca
 
 <section class="wrap" aria-labelledby="radar" style="padding-top: 88px">
   <div class="section-head section-head--book">
-    <h2 id="radar" class="kick">En el radar</h2>
-    <span class="mono muted">{{ radar_count }} libros</span>
+    <h2 id="radar" class="kick">En el radar · Literatura</h2>
+    <span class="mono muted">{{ site.data.books.size }} libros</span>
   </div>
-  {% assign radar = site.data.books | concat: site.data.personal %}
-  {% assign hidden_count = radar_count | minus: 12 %}
+  {% assign hidden_count = site.data.books.size | minus: 12 %}
   <div class="radar">
-    {% for book in radar limit: 12 %}<span class="radar-pill">{{ book.title }}</span>{% endfor %}
+    {% for book in site.data.books limit: 12 %}<span class="radar-pill">{{ book.title }}</span>{% endfor %}
   </div>
   <details class="more more--radar">
     <summary class="radar-more">y {{ hidden_count }} más →</summary>
     <div class="radar">
-      {% for book in radar offset: 12 %}<span class="radar-pill">{{ book.title }}</span>{% endfor %}
+      {% for book in site.data.books offset: 12 %}<span class="radar-pill">{{ book.title }}</span>{% endfor %}
     </div>
   </details>
+</section>
+
+<section class="wrap" aria-labelledby="radar-dp" style="padding-top: 88px">
+  <div class="section-head section-head--book">
+    <h2 id="radar-dp" class="kick">En el radar · Desarrollo personal</h2>
+    <span class="mono muted">{{ site.data.personal.size }} libros</span>
+  </div>
+  <div class="radar">
+    {% for book in site.data.personal %}<span class="radar-pill">{{ book.title }}</span>{% endfor %}
+  </div>
 </section>
