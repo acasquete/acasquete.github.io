@@ -1,6 +1,6 @@
 ---
 cover_ratio: 16 / 9
-description: "Programar con agentes de IA ya es lo habitual. El reto ahora es supervisar decenas de sesiones a la vez, y la herramienta para hacerlo todavía está por definir."
+description: "Desarrollar con agentes de IA ya es lo habitual. El reto ahora es supervisar decenas de sesiones a la vez, y la herramienta para hacerlo todavía está por definir."
 title: Cuando desarrollar es supervisar
 tags: [artificial_intelligence, programming]
 reviewed: true
