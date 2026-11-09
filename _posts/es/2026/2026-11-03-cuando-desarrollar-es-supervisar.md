@@ -80,7 +80,7 @@ Cubre una parte de la lista de arriba: hasta 16 sesiones por pantalla, con su es
 
 ## Esto no es nada nuevo
 
-Conviene bajar el tono, porque esto no es nada nuevo ni extraordinario. Hacer una terminal, o un panel como este, es literalmente un *prompt* y media hora de ajustes. Todo el mundo tiene ahora la capacidad de construirse la herramienta y adaptarla a cómo trabaja, y todo el mundo lo está haciendo. ICE es una más.
+Conviene bajar el tono, porque esto no es nada nuevo ni extraordinario. Hacer una terminal, o un panel como este, es literalmente un *prompt* y media hora de ajustes. Todo el mundo tiene ahora la capacidad de construirse la herramienta y adaptarla a cómo trabaja, y todo el mundo lo está haciendo.
 
 Por eso no hay un ganador claro ni lo habrá pronto. Cuando construir cuesta una tarde, cada equipo hace el suyo, a su medida. Habrá tantos ICE como equipos, y no habrá uno rígido que valga para todos: cada equipo tiene sus propias puertas, sus flujos y sus líneas rojas, y su consola tendrá que reflejarlos. La lista de arriba no es una especificación, sino un punto de partida para que cada uno construya la suya. Lo que no se puede delegar en ninguna herramienta es saber qué hay que mirar.
 
@@ -102,7 +102,7 @@ Antes de dejar el IDE, o de presumir de haberlo dejado, conviene hacerse unas po
 
 Si la respuesta a alguna es no, el IDE todavía hace falta. No porque se escriba código en él, sino porque es la última red de seguridad.
 
-## El IDE que falta
+## Una nueva visión
 
 *AI 2027* imaginaba ingenieros que ya no programan y se pasan el día intentando seguir el ritmo de lo que producen los agentes. La primera parte ya se está viviendo. La segunda la intentan resolver muchas herramientas, pero casi todas se quedan en una persona y en una máquina. Y seguir el ritmo no puede consistir en ir de conversación en conversación.
 
@@ -111,4 +111,4 @@ Hace falta una visión holística del sistema, y con dos condiciones:
 - **Compartida.** Las sesiones de un proyecto y sus dependencias son del equipo, no de quien las lanzó, y se ven igual se ejecuten donde se ejecuten, en local o en la nube.
 - **Completa.** No solo el trabajo de los agentes generando código, sino todo lo que pasa alrededor: las puertas que se ejecutan o han fallado, los despliegues en marcha, los flujos que esperan un *runner* o una aprobación, los permisos pendientes, el coste y las dependencias con otros equipos.
 
-Los modelos seguirán cambiando cada pocos meses, y las herramientas también. Lo que no va a cambiar es que alguien tiene que decidir qué se construye, comprobar que lo que ha salido es lo que se pidió y responder por ello. El nuevo IDE no es el sitio donde se escribe el código. Es el sitio desde el que se responde por él.
+Los modelos seguirán cambiando cada pocos meses, y las herramientas también. Lo que no va a cambiar es que alguien tiene que decidir qué se construye, comprobar que lo que ha salido es lo que se pidió y responder por ello. El nuevo IDE no es el sitio donde se escribe el código. Es el sitio donde se garantiza que las puertas que lo verifican son sólidas.

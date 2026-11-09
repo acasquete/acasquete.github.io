@@ -6,7 +6,7 @@
   "provider": "file",
   "model": "file",
   "prompt_version": 2,
-  "generated_at": "2026-11-09T19:14:07Z"
+  "generated_at": "2026-11-09T20:07:52Z"
  },
  "blocks": [
   {
@@ -539,16 +539,16 @@
   },
   {
    "tag": "p",
-   "html": "Conviene bajar el tono, porque esto no es nada nuevo ni extraordinario. Hacer una terminal, o un panel como este, es literalmente un <em>prompt</em> y media hora de ajustes. Todo el mundo tiene ahora la capacidad de construirse la herramienta y adaptarla a cómo trabaja, y todo el mundo lo está haciendo. ICE es una más.",
-   "text": "Conviene bajar el tono, porque esto no es nada nuevo ni extraordinario. Hacer una terminal, o un panel como este, es literalmente un prompt y media hora de ajustes. Todo el mundo tiene ahora la capacidad de construirse la herramienta y adaptarla a cómo trabaja, y todo el mundo lo está haciendo. ICE es una más.",
-   "h": "3c35c3a4",
-   "k": "3c35c3a4.0",
+   "html": "Conviene bajar el tono, porque esto no es nada nuevo ni extraordinario. Hacer una terminal, o un panel como este, es literalmente un <em>prompt</em> y media hora de ajustes. Todo el mundo tiene ahora la capacidad de construirse la herramienta y adaptarla a cómo trabaja, y todo el mundo lo está haciendo.",
+   "text": "Conviene bajar el tono, porque esto no es nada nuevo ni extraordinario. Hacer una terminal, o un panel como este, es literalmente un prompt y media hora de ajustes. Todo el mundo tiene ahora la capacidad de construirse la herramienta y adaptarla a cómo trabaja, y todo el mundo lo está haciendo.",
+   "h": "da05fabf",
+   "k": "da05fabf.0",
    "id": "b-3e34v9",
    "levels": {
+    "4": "Conviene bajar el tono: esto no es nada nuevo ni extraordinario. Hacer una terminal, o un panel como este, es literalmente un <em>prompt</em> y media hora de ajustes. Todo el mundo puede construirse la herramienta y adaptarla a cómo trabaja, y todo el mundo lo está haciendo.",
     "1": "",
     "2": "",
-    "3": "Conviene bajar el tono, porque esto no es nada nuevo. Hacer un panel como este es literalmente un <em>prompt</em> y media hora de ajustes, y todo el mundo puede construirse la herramienta. ICE es una más.",
-    "4": "Conviene bajar el tono: esto no es nada nuevo ni extraordinario. Hacer una terminal, o un panel como este, es literalmente un <em>prompt</em> y media hora de ajustes. Todo el mundo puede construirse la herramienta y adaptarla a cómo trabaja, y todo el mundo lo está haciendo. ICE es una más."
+    "3": "Conviene bajar el tono, porque esto no es nada nuevo. Hacer un panel como este es literalmente un <em>prompt</em> y media hora de ajustes, y todo el mundo puede construirse la herramienta."
    },
    "errors": {},
    "model": "file"
@@ -779,16 +779,16 @@
   },
   {
    "tag": "p",
-   "html": "Los modelos seguirán cambiando cada pocos meses, y las herramientas también. Lo que no va a cambiar es que alguien tiene que decidir qué se construye, comprobar que lo que ha salido es lo que se pidió y responder por ello. El nuevo IDE no es el sitio donde se escribe el código. Es el sitio desde el que se responde por él.",
-   "text": "Los modelos seguirán cambiando cada pocos meses, y las herramientas también. Lo que no va a cambiar es que alguien tiene que decidir qué se construye, comprobar que lo que ha salido es lo que se pidió y responder por ello. El nuevo IDE no es el sitio donde se escribe el código. Es el sitio desde el que se responde por él.",
-   "h": "24ccc0dc",
-   "k": "24ccc0dc.0",
+   "html": "Los modelos seguirán cambiando cada pocos meses, y las herramientas también. Lo que no va a cambiar es que alguien tiene que decidir qué se construye, comprobar que lo que ha salido es lo que se pidió y responder por ello. El nuevo IDE no es el sitio donde se escribe el código. Es el sitio donde se garantiza que las puertas que lo verifican son sólidas.",
+   "text": "Los modelos seguirán cambiando cada pocos meses, y las herramientas también. Lo que no va a cambiar es que alguien tiene que decidir qué se construye, comprobar que lo que ha salido es lo que se pidió y responder por ello. El nuevo IDE no es el sitio donde se escribe el código. Es el sitio donde se garantiza que las puertas que lo verifican son sólidas.",
+   "h": "d20b31c3",
+   "k": "d20b31c3.0",
    "id": "b-psvoko",
    "levels": {
-    "4": "Los modelos y las herramientas seguirán cambiando cada pocos meses. Lo que no va a cambiar es que alguien tiene que decidir qué se construye, comprobar que lo que ha salido es lo que se pidió y responder por ello. El nuevo IDE no es el sitio donde se escribe el código: es el sitio desde el que se responde por él.",
-    "1": "Lo que no cambia es que alguien tiene que decidir qué se construye y responder por ello: el nuevo IDE es el sitio desde el que se responde.",
-    "2": "Los modelos y las herramientas seguirán cambiando, pero alguien tiene que decidir qué se construye, comprobar lo que ha salido y responder por ello. El nuevo IDE es el sitio desde el que se responde por el código.",
-    "3": "Los modelos y las herramientas seguirán cambiando. Lo que no va a cambiar es que alguien tiene que decidir qué se construye, comprobar que lo que ha salido es lo que se pidió y responder por ello. El nuevo IDE no es el sitio donde se escribe el código: es el sitio desde el que se responde por él."
+    "1": "Lo que no cambia es que alguien tiene que decidir qué se construye y responder por ello: el nuevo IDE es el sitio donde se garantiza que las puertas que verifican son sólidas.",
+    "2": "Los modelos y las herramientas seguirán cambiando, pero alguien tiene que decidir qué se construye, comprobar lo que ha salido y responder por ello. El nuevo IDE es el sitio donde se garantiza que las puertas que verifican el código son sólidas.",
+    "3": "Los modelos y las herramientas seguirán cambiando. Lo que no va a cambiar es que alguien tiene que decidir qué se construye, comprobar que lo que ha salido es lo que se pidió y responder por ello. El nuevo IDE no es el sitio donde se escribe el código: es el sitio donde se garantiza que las puertas que lo verifican son sólidas.",
+    "4": "Los modelos y las herramientas seguirán cambiando cada pocos meses. Lo que no va a cambiar es que alguien tiene que decidir qué se construye, comprobar que lo que ha salido es lo que se pidió y responder por ello. El nuevo IDE no es el sitio donde se escribe el código: es el sitio donde se garantiza que las puertas que lo verifican son sólidas."
    },
    "errors": {},
    "model": "file"
