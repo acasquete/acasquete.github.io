@@ -1,106 +1,106 @@
 {
  "version": 1,
  "slug": "cuando-programar-es-supervisar",
- "post": "privado/el-nuevo-ide.md",
+ "post": "_posts/es/2026/2026-11-03-cuando-programar-es-supervisar.md",
  "generator": {
   "provider": "file",
   "model": "file",
   "prompt_version": 2,
-  "generated_at": "2026-11-03T19:49:48Z"
+  "generated_at": "2026-11-09T08:24:26Z"
  },
  "blocks": [
   {
    "tag": "p",
-   "html": "En abril de 2025 se publicó <a href=\"https://ai-2027.com/\"><em>AI 2027</em></a>, un escenario que contaba, mes a mes, cómo podría llegar una inteligencia artificial superhumana. Casi todo el texto habla de geopolítica y de riesgos, pero hay una línea, fechada a finales de 2026, que leí entonces como ciencia ficción: a los programadores que mejor les iría serían los que supieran «gestionar y controlar la calidad de equipos de IA».",
-   "text": "En abril de 2025 se publicó AI 2027, un escenario que contaba, mes a mes, cómo podría llegar una inteligencia artificial superhumana. Casi todo el texto habla de geopolítica y de riesgos, pero hay una línea, fechada a finales de 2026, que leí entonces como ciencia ficción: a los programadores que mejor les iría serían los que supieran «gestionar y controlar la calidad de equipos de IA».",
-   "h": "93240cc5",
-   "k": "93240cc5.0",
+   "html": "En abril de 2025 se publicó <a href=\"https://ai-2027.com/\"><em>AI 2027</em></a>, un escenario que contaba, mes a mes, cómo podría llegar una inteligencia artificial superhumana. Casi todo el texto habla de geopolítica y de riesgos, pero hay una línea, fechada a finales de 2026, que entonces sonaba a ciencia ficción: a los programadores que mejor les iría serían los que supieran «gestionar y controlar la calidad de equipos de IA».",
+   "text": "En abril de 2025 se publicó AI 2027, un escenario que contaba, mes a mes, cómo podría llegar una inteligencia artificial superhumana. Casi todo el texto habla de geopolítica y de riesgos, pero hay una línea, fechada a finales de 2026, que entonces sonaba a ciencia ficción: a los programadores que mejor les iría serían los que supieran «gestionar y controlar la calidad de equipos de IA».",
+   "h": "c5c5bf83",
+   "k": "c5c5bf83.0",
    "id": "b-u7womi",
    "levels": {
-    "4": "En abril de 2025 se publicó <a href=\"https://ai-2027.com/\"><em>AI 2027</em></a>, un escenario que contaba mes a mes cómo podría llegar una inteligencia artificial superhumana. Casi todo habla de geopolítica y de riesgos, pero hay una línea, fechada a finales de 2026, que leí como ciencia ficción: a los programadores que mejor les iría serían los que supieran «gestionar y controlar la calidad de equipos de IA».",
-    "1": "En abril de 2025, <a href=\"https://ai-2027.com/\"><em>AI 2027</em></a> predijo que a los programadores que mejor les iría serían los que supieran «gestionar y controlar la calidad de equipos de IA».",
-    "2": "En abril de 2025, el escenario <a href=\"https://ai-2027.com/\"><em>AI 2027</em></a> decía que a finales de 2026 a los programadores que mejor les iría serían los que supieran «gestionar y controlar la calidad de equipos de IA».",
-    "3": "En abril de 2025 se publicó <a href=\"https://ai-2027.com/\"><em>AI 2027</em></a>, un escenario sobre cómo podría llegar una inteligencia artificial superhumana. Una línea, fechada a finales de 2026, me pareció ciencia ficción: a los programadores que mejor les iría serían los que supieran «gestionar y controlar la calidad de equipos de IA»."
+    "4": "En abril de 2025 se publicó <a href=\"https://ai-2027.com/\"><em>AI 2027</em></a>, un escenario que contaba mes a mes cómo podría llegar una inteligencia artificial superhumana. Casi todo habla de geopolítica y de riesgos, pero una línea, fechada a finales de 2026, sonaba a ciencia ficción: a los programadores que mejor les iría serían los que supieran «gestionar y controlar la calidad de equipos de IA».",
+    "1": "El escenario <a href=\"https://ai-2027.com/\"><em>AI 2027</em></a> preveía que a los programadores que mejor les iría serían los que supieran gestionar y controlar equipos de IA.",
+    "2": "En abril de 2025 se publicó <a href=\"https://ai-2027.com/\"><em>AI 2027</em></a>, un escenario sobre una inteligencia artificial superhumana. Una línea, fechada a finales de 2026, parecía ciencia ficción: a los programadores que mejor les iría serían los que supieran «gestionar y controlar la calidad de equipos de IA».",
+    "3": "En abril de 2025 se publicó <a href=\"https://ai-2027.com/\"><em>AI 2027</em></a>, un escenario sobre la llegada de una inteligencia artificial superhumana. Una línea, fechada a finales de 2026, sonaba a ciencia ficción: a los programadores que mejor les iría serían los que supieran «gestionar y controlar la calidad de equipos de IA»."
    },
    "errors": {},
    "model": "file"
   },
   {
    "tag": "p",
-   "html": "Estamos a finales de 2026. No tenemos las doscientas mil copias de agentes que imaginaba el escenario, pero en nuestro equipo de plataforma una persona puede tener abiertas decenas de sesiones a la vez. Y hay algo que <em>AI 2027</em> daba por hecho sin explicarlo nunca: con qué herramienta se supervisa todo eso. Esa herramienta todavía no existe.",
-   "text": "Estamos a finales de 2026. No tenemos las doscientas mil copias de agentes que imaginaba el escenario, pero en nuestro equipo de plataforma una persona puede tener abiertas decenas de sesiones a la vez. Y hay algo que AI 2027 daba por hecho sin explicarlo nunca: con qué herramienta se supervisa todo eso. Esa herramienta todavía no existe.",
-   "h": "d508b6c3",
-   "k": "d508b6c3.0",
+   "html": "Es finales de 2026. Todavía no existen las doscientas mil copias de agentes que imaginaba el escenario, pero un desarrollador ya puede tener abiertas decenas de sesiones a la vez. Y hay algo que <em>AI 2027</em> daba por hecho sin explicarlo nunca: con qué herramienta se supervisa todo eso. Esa herramienta todavía no está resuelta.",
+   "text": "Es finales de 2026. Todavía no existen las doscientas mil copias de agentes que imaginaba el escenario, pero un desarrollador ya puede tener abiertas decenas de sesiones a la vez. Y hay algo que AI 2027 daba por hecho sin explicarlo nunca: con qué herramienta se supervisa todo eso. Esa herramienta todavía no está resuelta.",
+   "h": "309afd2e",
+   "k": "309afd2e.0",
    "id": "b-bpujrb",
    "levels": {
-    "4": "Estamos a finales de 2026. No tenemos las doscientas mil copias de agentes del escenario, pero en nuestro equipo de plataforma una persona puede tener abiertas decenas de sesiones a la vez. Y <em>AI 2027</em> daba por hecho, sin explicarlo, con qué herramienta se supervisa todo eso. Esa herramienta todavía no existe.",
-    "1": "Ya ha llegado: en nuestro equipo una persona puede tener abiertas decenas de sesiones de agentes a la vez, pero la herramienta para supervisarlas todavía no existe.",
-    "2": "Estamos a finales de 2026, y en nuestro equipo de plataforma una persona puede tener abiertas decenas de sesiones a la vez. Pero la herramienta para supervisarlas todavía no existe.",
-    "3": "Estamos a finales de 2026 y en nuestro equipo de plataforma una persona puede tener abiertas decenas de sesiones a la vez. Lo que <em>AI 2027</em> no explicaba es con qué herramienta se supervisa todo eso. Esa herramienta todavía no existe."
+    "4": "Es finales de 2026. Aún no existen las doscientas mil copias de agentes del escenario, pero un desarrollador ya puede tener abiertas decenas de sesiones a la vez. <em>AI 2027</em> daba por hecho con qué herramienta se supervisa todo eso, y esa herramienta todavía no está resuelta.",
+    "1": "A finales de 2026 un desarrollador ya puede tener abiertas decenas de sesiones de agentes a la vez, pero falta la herramienta para supervisarlas.",
+    "2": "Es finales de 2026 y un desarrollador ya puede tener abiertas decenas de sesiones a la vez. <em>AI 2027</em> daba por hecho con qué herramienta se supervisa todo eso, y esa herramienta todavía no está resuelta.",
+    "3": "Es finales de 2026 y un desarrollador ya puede tener abiertas decenas de sesiones a la vez. <em>AI 2027</em> daba por hecho con qué herramienta se supervisa todo eso, y esa herramienta todavía no está resuelta."
    },
    "errors": {},
    "model": "file"
   },
   {
    "tag": "p",
-   "html": "En el <a href=\"/ya-no-revisamos-codigo\">post anterior</a> conté que habíamos dejado de revisar cada cambio a mano. La consecuencia lógica llegó sola: si no lees el código antes del <em>merge</em>, el editor deja de ser el sitio donde pasa el trabajo. Hoy no usamos IDE. Trabajamos con agentes en la terminal.",
-   "text": "En el post anterior conté que habíamos dejado de revisar cada cambio a mano. La consecuencia lógica llegó sola: si no lees el código antes del merge, el editor deja de ser el sitio donde pasa el trabajo. Hoy no usamos IDE. Trabajamos con agentes en la terminal.",
-   "h": "1a71b175",
-   "k": "1a71b175.0",
-   "id": "b-ewg7zu",
+   "html": "El <a href=\"/ya-no-revisamos-codigo\">post anterior</a> contaba cómo se había dejado de revisar cada cambio a mano. La consecuencia lógica llegó sola: si el código no se lee antes de integrar el cambio, el editor de código clásico deja de ser la herramienta en la que apoyarse. Hoy ya no utilizamos un IDE: se trabaja con agentes en la terminal y se delega todo el trabajo posible en flujos agénticos que se ejecutan en GitHub.",
+   "text": "El post anterior contaba cómo se había dejado de revisar cada cambio a mano. La consecuencia lógica llegó sola: si el código no se lee antes de integrar el cambio, el editor de código clásico deja de ser la herramienta en la que apoyarse. Hoy ya no utilizamos un IDE: se trabaja con agentes en la terminal y se delega todo el trabajo posible en flujos agénticos que se ejecutan en GitHub.",
+   "h": "f247dc98",
+   "k": "f247dc98.0",
+   "id": "b-4ttcks",
    "levels": {
-    "4": "En el <a href=\"/ya-no-revisamos-codigo\">post anterior</a> conté que habíamos dejado de revisar cada cambio a mano. La consecuencia llegó sola: si no lees el código antes del <em>merge</em>, el editor deja de ser el sitio donde pasa el trabajo. Hoy no usamos IDE. Trabajamos con agentes en la terminal.",
-    "1": "",
-    "2": "Hemos dejado de revisar cada cambio a mano y, con eso, el editor ha dejado de ser el sitio donde pasa el trabajo. Hoy no usamos IDE: trabajamos con agentes en la terminal.",
-    "3": "En el <a href=\"/ya-no-revisamos-codigo\">post anterior</a> conté que habíamos dejado de revisar cada cambio a mano. Si no lees el código antes del <em>merge</em>, el editor deja de ser el sitio donde pasa el trabajo. Hoy no usamos IDE: trabajamos con agentes en la terminal."
+    "1": "Hoy ya no utilizamos un IDE: se trabaja con agentes en la terminal y con flujos agénticos en GitHub.",
+    "2": "Dejar de revisar cada cambio a mano tiene una consecuencia: sin leer el código antes de integrarlo, el editor de código clásico deja de ser la herramienta de apoyo. Hoy ya no utilizamos un IDE: se trabaja con agentes en la terminal y con flujos agénticos en GitHub.",
+    "3": "El <a href=\"/ya-no-revisamos-codigo\">post anterior</a> contaba cómo se había dejado de revisar cada cambio a mano. Si el código no se lee antes de integrarlo, el editor de código clásico deja de ser la herramienta en la que apoyarse. Hoy ya no utilizamos un IDE: se trabaja con agentes en la terminal y se delega lo posible en flujos agénticos en GitHub.",
+    "4": "El <a href=\"/ya-no-revisamos-codigo\">post anterior</a> contaba cómo se había dejado de revisar cada cambio a mano. La consecuencia: si el código no se lee antes de integrarlo, el editor de código clásico deja de ser la herramienta en la que apoyarse. Hoy ya no utilizamos un IDE: se trabaja con agentes en la terminal y se delega todo el trabajo posible en flujos agénticos en GitHub."
    },
    "errors": {},
    "model": "file"
   },
   {
    "tag": "p",
-   "html": "En el equipo de plataforma trabajamos con la CLI de Claude Code y con OpenCode. Y delegamos todo el trabajo que podemos en flujos agénticos que se ejecutan en GitHub.",
-   "text": "En el equipo de plataforma trabajamos con la CLI de Claude Code y con OpenCode. Y delegamos todo el trabajo que podemos en flujos agénticos que se ejecutan en GitHub.",
-   "h": "c01a2913",
-   "k": "c01a2913.0",
-   "id": "b-rwxg0g",
-   "levels": {
-    "4": "En el equipo de plataforma trabajamos con la CLI de Claude Code y con OpenCode, y delegamos todo lo que podemos en flujos agénticos que se ejecutan en GitHub.",
-    "1": "",
-    "2": "",
-    "3": ""
-   },
-   "errors": {},
-   "model": "file"
-  },
-  {
-   "tag": "p",
-   "html": "No lo cuento como una preferencia, ni como una pose. Lo planteo como una <strong>prueba de madurez</strong>. Dejar el IDE solo es posible cuando el resto del sistema es lo bastante bueno como para no necesitar mirar el código: una especificación ejecutable, puertas que bloquean, permisos claros y trazabilidad de cada cambio. Si para confiar en lo que ha hecho un agente todavía tienes que abrir el editor y leerlo, el problema no es la herramienta: es que tu sistema aún no está listo.",
-   "text": "No lo cuento como una preferencia, ni como una pose. Lo planteo como una prueba de madurez. Dejar el IDE solo es posible cuando el resto del sistema es lo bastante bueno como para no necesitar mirar el código: una especificación ejecutable, puertas que bloquean, permisos claros y trazabilidad de cada cambio. Si para confiar en lo que ha hecho un agente todavía tienes que abrir el editor y leerlo, el problema no es la herramienta: es que tu sistema aún no está listo.",
-   "h": "f455a8ad",
-   "k": "f455a8ad.0",
+   "html": "No es una preferencia ni una pose, sino una <strong>prueba de madurez</strong>. Dejar el IDE solo es posible cuando el resto del sistema es lo bastante bueno como para no necesitar mirar el código: una especificación ejecutable, puertas que bloquean, permisos claros y trazabilidad de cada cambio. Si para confiar en lo que ha hecho un agente todavía hay que abrir el editor y leerlo, el problema no es la herramienta: es que el sistema aún no está listo.",
+   "text": "No es una preferencia ni una pose, sino una prueba de madurez. Dejar el IDE solo es posible cuando el resto del sistema es lo bastante bueno como para no necesitar mirar el código: una especificación ejecutable, puertas que bloquean, permisos claros y trazabilidad de cada cambio. Si para confiar en lo que ha hecho un agente todavía hay que abrir el editor y leerlo, el problema no es la herramienta: es que el sistema aún no está listo.",
+   "h": "51079783",
+   "k": "51079783.0",
    "id": "b-nsaim5",
    "levels": {
-    "4": "No es una preferencia ni una pose: lo planteo como una <strong>prueba de madurez</strong>. Dejar el IDE solo es posible cuando el resto del sistema es lo bastante bueno como para no necesitar mirar el código: una especificación ejecutable, puertas que bloquean, permisos claros y trazabilidad de cada cambio. Si para confiar en un agente todavía tienes que abrir el editor, el problema no es la herramienta: es que tu sistema aún no está listo.",
-    "1": "Hoy no usamos IDE, y lo planteo como una <strong>prueba de madurez</strong>: solo es posible si el sistema es lo bastante bueno como para no necesitar mirar el código.",
-    "2": "Lo planteo como una <strong>prueba de madurez</strong>: dejar el IDE solo es posible cuando el sistema es lo bastante bueno como para no necesitar mirar el código.",
-    "3": "Lo planteo como una <strong>prueba de madurez</strong>. Dejar el IDE solo es posible cuando el sistema no necesita que mires el código: una especificación ejecutable, puertas que bloquean, permisos claros y trazabilidad. Si todavía tienes que abrir el editor para confiar en un agente, tu sistema aún no está listo."
+    "4": "No es una preferencia ni una pose, sino una <strong>prueba de madurez</strong>. Dejar el IDE solo es posible cuando el sistema es lo bastante bueno como para no necesitar mirar el código: especificación ejecutable, puertas que bloquean, permisos claros y trazabilidad de cada cambio. Si para confiar en un agente todavía hay que abrir el editor y leerlo, el sistema aún no está listo.",
+    "1": "",
+    "2": "Dejar el IDE es una <strong>prueba de madurez</strong>: solo es posible cuando el sistema es lo bastante bueno como para no necesitar mirar el código, con puertas que bloquean, permisos claros y trazabilidad.",
+    "3": "No es una pose, sino una <strong>prueba de madurez</strong>. Dejar el IDE solo es posible cuando el sistema es lo bastante bueno como para no necesitar mirar el código: especificación ejecutable, puertas que bloquean, permisos claros y trazabilidad. Si todavía hay que abrir el editor para confiar en un agente, el sistema aún no está listo."
    },
    "errors": {},
    "model": "file"
   },
   {
    "tag": "p",
-   "html": "Los datos dicen lo contrario de lo que vivimos, o eso parece. En la <a href=\"https://visualstudiomagazine.com/articles/2026/10/06/stack-overflow-2026-survey-vs-code-leads-visual-studio-takes-third.aspx\">encuesta de Stack Overflow de 2026</a>, VS Code sigue siendo el IDE más usado. Pero en la misma encuesta, Claude Code es el agente más usado, con un 65,5 %, y el uso de agentes ha pasado del 31 % en 2025 al 59 % en abril de este año.",
-   "text": "Los datos dicen lo contrario de lo que vivimos, o eso parece. En la encuesta de Stack Overflow de 2026, VS Code sigue siendo el IDE más usado. Pero en la misma encuesta, Claude Code es el agente más usado, con un 65,5 %, y el uso de agentes ha pasado del 31 % en 2025 al 59 % en abril de este año.",
-   "h": "64150d85",
-   "k": "64150d85.0",
+   "html": "Esto tiene nombre: <em>software factory</em>. <a href=\"https://simonwillison.net/2026/feb/7/software-factory/\">StrongDM</a> lo popularizó este año para describir un equipo donde los agentes escriben y prueban el código, y las personas ni lo escriben ni lo revisan. Cuando se lleva al extremo se llama <em>dark factory</em>, como las fábricas que trabajan a oscuras porque los robots no necesitan luz. Pero oscuridad no significa ausencia de control: StrongDM lo mueve de la lectura del código a escenarios de validación que los agentes no ven y a réplicas de los servicios contra los que prueban. El enfoque va en la misma línea, con el control en las puertas, y deja la misma pregunta abierta: desde dónde se supervisa todo eso.",
+   "text": "Esto tiene nombre: software factory. StrongDM lo popularizó este año para describir un equipo donde los agentes escriben y prueban el código, y las personas ni lo escriben ni lo revisan. Cuando se lleva al extremo se llama dark factory, como las fábricas que trabajan a oscuras porque los robots no necesitan luz. Pero oscuridad no significa ausencia de control: StrongDM lo mueve de la lectura del código a escenarios de validación que los agentes no ven y a réplicas de los servicios contra los que prueban. El enfoque va en la misma línea, con el control en las puertas, y deja la misma pregunta abierta: desde dónde se supervisa todo eso.",
+   "h": "e36afc42",
+   "k": "e36afc42.0",
+   "id": "b-b5e3xx",
+   "levels": {
+    "4": "Esto tiene nombre: <em>software factory</em>. <a href=\"https://simonwillison.net/2026/feb/7/software-factory/\">StrongDM</a> lo popularizó este año para describir un equipo donde los agentes escriben y prueban el código, y las personas ni lo escriben ni lo revisan. Llevado al extremo se llama <em>dark factory</em>. Pero oscuridad no significa ausencia de control: StrongDM lo mueve a escenarios de validación que los agentes no ven y a réplicas de los servicios contra los que prueban. El enfoque va en la misma línea y deja abierta la misma pregunta: desde dónde se supervisa todo eso.",
+    "1": "",
+    "2": "Esto tiene nombre: <em>software factory</em>. <a href=\"https://simonwillison.net/2026/feb/7/software-factory/\">StrongDM</a> lo popularizó para describir un equipo donde los agentes escriben y prueban el código y las personas ni lo escriben ni lo revisan. No es ausencia de control: se mueve a escenarios de validación y a réplicas de servicios, y queda abierta la pregunta de desde dónde se supervisa todo eso.",
+    "3": "Esto tiene nombre: <em>software factory</em>. <a href=\"https://simonwillison.net/2026/feb/7/software-factory/\">StrongDM</a> lo popularizó para describir un equipo donde los agentes escriben y prueban el código y las personas ni lo escriben ni lo revisan; llevado al extremo, una <em>dark factory</em>. Pero oscuridad no significa ausencia de control: StrongDM lo mueve a escenarios de validación que los agentes no ven y a réplicas de los servicios con los que prueban. Queda abierta la misma pregunta: desde dónde se supervisa todo eso."
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "Los datos dicen lo contrario de lo que se ve en el día a día, o eso parece. En la <a href=\"https://visualstudiomagazine.com/articles/2026/10/06/stack-overflow-2026-survey-vs-code-leads-visual-studio-takes-third.aspx\">encuesta de Stack Overflow de 2026</a>, VS Code sigue siendo el IDE más usado. Pero en la misma encuesta, Claude Code es el agente más usado, con un 65,5 %, y el uso de agentes ha pasado del 31 % en 2025 al 59 % en abril de este año.",
+   "text": "Los datos dicen lo contrario de lo que se ve en el día a día, o eso parece. En la encuesta de Stack Overflow de 2026, VS Code sigue siendo el IDE más usado. Pero en la misma encuesta, Claude Code es el agente más usado, con un 65,5 %, y el uso de agentes ha pasado del 31 % en 2025 al 59 % en abril de este año.",
+   "h": "eb41db26",
+   "k": "eb41db26.0",
    "id": "b-3hnfkm",
    "levels": {
-    "4": "Los datos parecen decir lo contrario. En la <a href=\"https://visualstudiomagazine.com/articles/2026/10/06/stack-overflow-2026-survey-vs-code-leads-visual-studio-takes-third.aspx\">encuesta de Stack Overflow de 2026</a>, VS Code sigue siendo el IDE más usado. Pero en la misma encuesta Claude Code es el agente más usado, con un 65,5 %, y el uso de agentes ha pasado del 31 % en 2025 al 59 % en abril de este año.",
+    "4": "Los datos parecen decir lo contrario de lo que se ve en el día a día. En la <a href=\"https://visualstudiomagazine.com/articles/2026/10/06/stack-overflow-2026-survey-vs-code-leads-visual-studio-takes-third.aspx\">encuesta de Stack Overflow de 2026</a>, VS Code sigue siendo el IDE más usado, pero Claude Code es el agente más usado, con un 65,5 %, y el uso de agentes ha pasado del 31 % en 2025 al 59 % en abril de este año.",
     "1": "",
     "2": "",
-    "3": "En la <a href=\"https://visualstudiomagazine.com/articles/2026/10/06/stack-overflow-2026-survey-vs-code-leads-visual-studio-takes-third.aspx\">encuesta de Stack Overflow de 2026</a>, VS Code sigue siendo el IDE más usado, pero Claude Code es el agente más usado y el uso de agentes ha pasado del 31 % al 59 %."
+    "3": "Los datos parecen decir lo contrario. En la <a href=\"https://visualstudiomagazine.com/articles/2026/10/06/stack-overflow-2026-survey-vs-code-leads-visual-studio-takes-third.aspx\">encuesta de Stack Overflow de 2026</a>, VS Code sigue siendo el IDE más usado, pero Claude Code es el agente más usado, con un 65,5 %, y el uso de agentes ha pasado del 31 % en 2025 al 59 % en abril de este año."
    },
    "errors": {},
    "model": "file"
@@ -123,16 +123,16 @@
   },
   {
    "tag": "li",
-   "html": "Microsoft ha sacado <a href=\"https://www.infoworld.com/article/4156038/visual-studio-code-1-115-introduces-vs-code-agents-app.html\">VS Code Agents</a>, una aplicación aparte del editor para lanzar y seguir sesiones de agentes en paralelo. La novedad de Visual Studio 2026 se resumió con un titular que lo dice todo: <a href=\"https://visualstudiomagazine.com/articles/2026/04/29/vs-2026-joins-vs-code-with-integrated-cloud-agent-assign-a-task-close-the-ide-get-a-pr.aspx\">asigna una tarea, cierra el IDE, recibe una PR</a>.",
-   "text": "Microsoft ha sacado VS Code Agents, una aplicación aparte del editor para lanzar y seguir sesiones de agentes en paralelo. La novedad de Visual Studio 2026 se resumió con un titular que lo dice todo: asigna una tarea, cierra el IDE, recibe una PR.",
-   "h": "c9b7195e",
-   "k": "c9b7195e.0",
+   "html": "Microsoft lanzó <a href=\"https://www.infoworld.com/article/4156038/visual-studio-code-1-115-introduces-vs-code-agents-app.html\">VS Code Agents</a>, una aplicación aparte del editor para lanzar y seguir sesiones de agentes en paralelo. La novedad de Visual Studio 2026 se resumió con un titular que lo dice todo: <a href=\"https://visualstudiomagazine.com/articles/2026/04/29/vs-2026-joins-vs-code-with-integrated-cloud-agent-assign-a-task-close-the-ide-get-a-pr.aspx\">asigna una tarea, cierra el IDE, recibe una PR</a>.",
+   "text": "Microsoft lanzó VS Code Agents, una aplicación aparte del editor para lanzar y seguir sesiones de agentes en paralelo. La novedad de Visual Studio 2026 se resumió con un titular que lo dice todo: asigna una tarea, cierra el IDE, recibe una PR.",
+   "h": "fa014a8d",
+   "k": "fa014a8d.0",
    "id": "b-8rm3l2",
    "levels": {
-    "4": "Microsoft ha sacado <a href=\"https://www.infoworld.com/article/4156038/visual-studio-code-1-115-introduces-vs-code-agents-app.html\">VS Code Agents</a>, una aplicación aparte del editor para lanzar y seguir sesiones de agentes en paralelo. La novedad de Visual Studio 2026 se resumió en un titular: <a href=\"https://visualstudiomagazine.com/articles/2026/04/29/vs-2026-joins-vs-code-with-integrated-cloud-agent-assign-a-task-close-the-ide-get-a-pr.aspx\">asigna una tarea, cierra el IDE, recibe una PR</a>.",
+    "4": "Microsoft lanzó <a href=\"https://www.infoworld.com/article/4156038/visual-studio-code-1-115-introduces-vs-code-agents-app.html\">VS Code Agents</a>, una aplicación aparte del editor para lanzar y seguir sesiones de agentes en paralelo. La novedad de Visual Studio 2026 se resumió en un titular: <a href=\"https://visualstudiomagazine.com/articles/2026/04/29/vs-2026-joins-vs-code-with-integrated-cloud-agent-assign-a-task-close-the-ide-get-a-pr.aspx\">asigna una tarea, cierra el IDE, recibe una PR</a>.",
     "1": "",
     "2": "",
-    "3": ""
+    "3": "Microsoft lanzó <a href=\"https://www.infoworld.com/article/4156038/visual-studio-code-1-115-introduces-vs-code-agents-app.html\">VS Code Agents</a>, una aplicación aparte del editor para seguir sesiones de agentes en paralelo."
    },
    "errors": {},
    "model": "file"
@@ -155,13 +155,29 @@
   },
   {
    "tag": "li",
-   "html": "JetBrains lanzó <a href=\"https://tech-insider.org/jetbrains-air-eap-ides-multi-agent-2026/\">Air</a>, un orquestador de varios agentes que ni siquiera trae agentes propios: ejecuta los que tengas instalados.",
-   "text": "JetBrains lanzó Air, un orquestador de varios agentes que ni siquiera trae agentes propios: ejecuta los que tengas instalados.",
-   "h": "000c7540",
-   "k": "000c7540.0",
+   "html": "JetBrains lanzó <a href=\"https://tech-insider.org/jetbrains-air-eap-ides-multi-agent-2026/\">Air</a>, un orquestador de varios agentes que ni siquiera trae agentes propios: ejecuta los que estén instalados.",
+   "text": "JetBrains lanzó Air, un orquestador de varios agentes que ni siquiera trae agentes propios: ejecuta los que estén instalados.",
+   "h": "85ce170e",
+   "k": "85ce170e.0",
    "id": "b-usxcny",
    "levels": {
-    "4": "JetBrains lanzó <a href=\"https://tech-insider.org/jetbrains-air-eap-ides-multi-agent-2026/\">Air</a>, un orquestador de varios agentes que no trae agentes propios: ejecuta los que tengas instalados.",
+    "4": "JetBrains lanzó <a href=\"https://tech-insider.org/jetbrains-air-eap-ides-multi-agent-2026/\">Air</a>, un orquestador de varios agentes que ni siquiera trae agentes propios: ejecuta los instalados.",
+    "1": "",
+    "2": "",
+    "3": ""
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "li",
+   "html": "Y Microsoft lo llevó también a la terminal: <a href=\"https://github.com/microsoft/intelligent-terminal/releases\">Intelligent Terminal 0.3</a>, un <em>fork</em> de Windows Terminal con una barra lateral que muestra qué agentes están trabajando o esperando atención, con su repositorio y su rama.",
+   "text": "Y Microsoft lo llevó también a la terminal: Intelligent Terminal 0.3, un fork de Windows Terminal con una barra lateral que muestra qué agentes están trabajando o esperando atención, con su repositorio y su rama.",
+   "h": "81cb2f6b",
+   "k": "81cb2f6b.0",
+   "id": "b-h5fq7f",
+   "levels": {
+    "4": "Y Microsoft lo llevó también a la terminal: <a href=\"https://github.com/microsoft/intelligent-terminal/releases\">Intelligent Terminal 0.3</a>, un <em>fork</em> de Windows Terminal con una barra lateral que muestra qué agentes están trabajando o esperando atención, con su repositorio y su rama.",
     "1": "",
     "2": "",
     "3": ""
@@ -171,29 +187,29 @@
   },
   {
    "tag": "p",
-   "html": "Los tres hacen lo mismo: construir, al lado del editor, una ventana para los agentes. Es la forma más honesta de reconocer que el trabajo ya no pasa por el editor. Pero también es una solución a medias: siguen pensando en conversaciones.",
-   "text": "Los tres hacen lo mismo: construir, al lado del editor, una ventana para los agentes. Es la forma más honesta de reconocer que el trabajo ya no pasa por el editor. Pero también es una solución a medias: siguen pensando en conversaciones.",
-   "h": "5ed88c71",
-   "k": "5ed88c71.0",
+   "html": "Los cuatro hacen lo mismo: construir, al lado del editor o en su lugar, una ventana para los agentes. Es la forma más honesta de reconocer que el trabajo ya no pasa por el editor. Pero también es una solución a medias: siguen pensando en conversaciones y en una sola persona delante de una sola máquina.",
+   "text": "Los cuatro hacen lo mismo: construir, al lado del editor o en su lugar, una ventana para los agentes. Es la forma más honesta de reconocer que el trabajo ya no pasa por el editor. Pero también es una solución a medias: siguen pensando en conversaciones y en una sola persona delante de una sola máquina.",
+   "h": "4395cf3b",
+   "k": "4395cf3b.0",
    "id": "b-f5rndj",
    "levels": {
-    "4": "Los tres hacen lo mismo: construir, al lado del editor, una ventana para los agentes. Es la forma más honesta de reconocer que el trabajo ya no pasa por el editor, pero es una solución a medias: siguen pensando en conversaciones.",
+    "4": "Los cuatro hacen lo mismo: construir, al lado del editor o en su lugar, una ventana para los agentes. Es la forma más honesta de reconocer que el trabajo ya no pasa por el editor, pero es una solución a medias: siguen pensando en conversaciones y en una sola persona delante de una sola máquina.",
     "1": "",
-    "2": "Los fabricantes ya construyen, al lado del editor, una ventana para los agentes. Pero es una solución a medias: siguen pensando en conversaciones.",
-    "3": "Microsoft, Cursor y JetBrains ya construyen, al lado del editor, una ventana para los agentes. Reconocen que el trabajo ya no pasa por el editor, pero siguen pensando en conversaciones."
+    "2": "Los fabricantes de IDE, como Microsoft, Cursor y JetBrains, construyen una ventana para los agentes al lado del editor o en su lugar, pero siguen pensando en conversaciones y en una sola persona delante de una sola máquina.",
+    "3": "Microsoft, Cursor y JetBrains, entre otros, construyen una ventana para los agentes al lado del editor o en su lugar, pero es una solución a medias: siguen pensando en conversaciones y en una sola persona delante de una sola máquina."
    },
    "errors": {},
    "model": "file"
   },
   {
    "tag": "p",
-   "html": "Esta es la distinción que creo que importa.",
-   "text": "Esta es la distinción que creo que importa.",
-   "h": "48bf6da7",
-   "k": "48bf6da7.0",
+   "html": "Esta es la distinción que importa.",
+   "text": "Esta es la distinción que importa.",
+   "h": "ab0d2941",
+   "k": "ab0d2941.0",
    "id": "b-6c87jd",
    "levels": {
-    "4": "Esta es la distinción que creo que importa.",
+    "4": "Esta es la distinción que importa.",
     "1": "",
     "2": "",
     "3": ""
@@ -203,16 +219,16 @@
   },
   {
    "tag": "p",
-   "html": "Una <strong>conversación</strong> es un chat: preguntas, el modelo responde, sigues preguntando. Está pensada para una persona y un agente, y para que la persona esté delante.",
-   "text": "Una conversación es un chat: preguntas, el modelo responde, sigues preguntando. Está pensada para una persona y un agente, y para que la persona esté delante.",
-   "h": "2a66152e",
-   "k": "2a66152e.0",
+   "html": "Una <strong>conversación</strong> es un chat: preguntas, el modelo responde, se sigue preguntando. Está pensada para una persona y un agente, y para que la persona esté delante.",
+   "text": "Una conversación es un chat: preguntas, el modelo responde, se sigue preguntando. Está pensada para una persona y un agente, y para que la persona esté delante.",
+   "h": "ec8a7711",
+   "k": "ec8a7711.0",
    "id": "b-7tpopi",
    "levels": {
-    "4": "Una <strong>conversación</strong> es un chat: preguntas, el modelo responde, sigues preguntando. Está pensada para una persona y un agente, con la persona delante.",
+    "4": "Una <strong>conversación</strong> es un chat: se pregunta, el modelo responde y se sigue preguntando. Está pensada para una persona y un agente, y para que la persona esté delante.",
     "1": "",
     "2": "",
-    "3": ""
+    "3": "Una <strong>conversación</strong> es un chat pensado para una persona y un agente, con la persona delante."
    },
    "errors": {},
    "model": "file"
@@ -227,120 +243,120 @@
    "levels": {
     "4": "Una <strong>sesión</strong> es un trabajo en marcha. Tiene un objetivo (una <em>issue</em>, una especificación), una rama o un <em>worktree</em>, unos permisos, un coste acumulado, un estado (trabajando, bloqueada, esperando una decisión, en revisión) y un resultado verificable: las puertas que ha pasado y las que no.",
     "1": "",
-    "2": "Lo que importa son las sesiones. Una <strong>sesión</strong> no es un chat: es un trabajo en marcha, con un objetivo, unos permisos, un coste, un estado y un resultado que se puede verificar.",
-    "3": "Una <strong>sesión</strong> es un trabajo en marcha: un objetivo, una rama, unos permisos, un coste, un estado y un resultado que se puede verificar."
+    "2": "Una <strong>sesión</strong> es un trabajo en marcha, con objetivo, permisos, coste, estado y un resultado verificable: las puertas que ha pasado.",
+    "3": "Una <strong>sesión</strong> es un trabajo en marcha: tiene un objetivo, una rama o un <em>worktree</em>, permisos, un coste acumulado, un estado y un resultado verificable, las puertas que ha pasado."
    },
    "errors": {},
    "model": "file"
   },
   {
    "tag": "p",
-   "html": "Con una conversación, la pregunta es <em>qué me ha dicho</em>. Con decenas de sesiones, las preguntas son otras: cuáles me necesitan ahora, cuáles se han atascado, cuáles están gastando sin avanzar y cuáles puedo dar por buenas sin mirarlas.",
-   "text": "Con una conversación, la pregunta es qué me ha dicho. Con decenas de sesiones, las preguntas son otras: cuáles me necesitan ahora, cuáles se han atascado, cuáles están gastando sin avanzar y cuáles puedo dar por buenas sin mirarlas.",
-   "h": "2d348abb",
-   "k": "2d348abb.0",
-   "id": "b-weg9ba",
+   "html": "Con una conversación, la pregunta es <em>qué ha dicho</em>. Con decenas de sesiones, las preguntas son otras: cuáles necesitan atención ahora, cuáles se han atascado, cuáles están gastando sin avanzar y cuáles se pueden dar por buenas sin mirarlas.",
+   "text": "Con una conversación, la pregunta es qué ha dicho. Con decenas de sesiones, las preguntas son otras: cuáles necesitan atención ahora, cuáles se han atascado, cuáles están gastando sin avanzar y cuáles se pueden dar por buenas sin mirarlas.",
+   "h": "7f551225",
+   "k": "7f551225.0",
+   "id": "b-5rdyat",
    "levels": {
-    "4": "Con una conversación, la pregunta es <em>qué me ha dicho</em>. Con decenas de sesiones, las preguntas son cuáles me necesitan ahora, cuáles se han atascado, cuáles gastan sin avanzar y cuáles puedo dar por buenas sin mirarlas.",
+    "4": "Con una conversación, la pregunta es <em>qué ha dicho</em>. Con decenas de sesiones, las preguntas son otras: cuáles necesitan atención ahora, cuáles se han atascado, cuáles gastan sin avanzar y cuáles se pueden dar por buenas sin mirarlas.",
     "1": "",
     "2": "",
-    "3": "Con decenas de sesiones, la pregunta ya no es <em>qué me ha dicho</em>, sino cuáles me necesitan, cuáles se han atascado y cuáles puedo dar por buenas sin mirarlas."
+    "3": "Con decenas de sesiones la pregunta ya no es qué ha dicho el agente, sino cuáles necesitan atención, cuáles se han atascado y cuáles se pueden dar por buenas sin mirarlas."
    },
    "errors": {},
    "model": "file"
   },
   {
    "tag": "p",
-   "html": "Hoy lo resolvemos con lo más simple que hay: varias pestañas en una terminal, una por sesión, que normalmente es una por <em>feature</em> o por <em>issue</em>. Con los flujos agénticos esperamos a que terminen y miramos las métricas en el panel de <em>health</em> de la plataforma. La terminal funciona mientras son pocas. Cuando son más de cinco o diez, deja de ser una herramienta y se convierte en un pasillo de puertas cerradas.",
-   "text": "Hoy lo resolvemos con lo más simple que hay: varias pestañas en una terminal, una por sesión, que normalmente es una por feature o por issue. Con los flujos agénticos esperamos a que terminen y miramos las métricas en el panel de health de la plataforma. La terminal funciona mientras son pocas. Cuando son más de cinco o diez, deja de ser una herramienta y se convierte en un pasillo de puertas cerradas.",
-   "h": "db9b4d97",
-   "k": "db9b4d97.0",
+   "html": "Hoy se resuelve con lo más simple que hay: varias pestañas en una terminal, una por sesión, que normalmente es una por <em>feature</em> o por <em>issue</em>. Con los flujos agénticos se espera a que terminen y se miran las métricas en el panel de <em>health</em> de la plataforma. La terminal funciona mientras son pocas. Cuando son más de cinco, deja de ser una herramienta útil y se convierte en un cuadro eléctrico sin etiquetas.",
+   "text": "Hoy se resuelve con lo más simple que hay: varias pestañas en una terminal, una por sesión, que normalmente es una por feature o por issue. Con los flujos agénticos se espera a que terminen y se miran las métricas en el panel de health de la plataforma. La terminal funciona mientras son pocas. Cuando son más de cinco, deja de ser una herramienta útil y se convierte en un cuadro eléctrico sin etiquetas.",
+   "h": "c6c3ae25",
+   "k": "c6c3ae25.0",
    "id": "b-nhn49f",
    "levels": {
-    "4": "Hoy lo resolvemos con varias pestañas en una terminal, una por sesión, normalmente una por <em>feature</em> o por <em>issue</em>. Con los flujos agénticos esperamos a que terminen y miramos las métricas en el panel de <em>health</em> de la plataforma. La terminal funciona mientras son pocas; cuando son más de cinco o diez, deja de ser una herramienta y se convierte en un pasillo de puertas cerradas.",
+    "4": "Hoy se resuelve con lo más simple: varias pestañas en una terminal, una por sesión, normalmente una por <em>feature</em> o por <em>issue</em>. Con los flujos agénticos se espera a que terminen y se miran las métricas en el panel de <em>health</em> de la plataforma. La terminal funciona mientras son pocas; con más de cinco, deja de ser útil y se convierte en un cuadro eléctrico sin etiquetas.",
     "1": "",
-    "2": "Hoy las llevamos en varias pestañas de una terminal, una por sesión. Funciona mientras son pocas, pero no cuando son más de cinco o diez.",
-    "3": "Hoy usamos una pestaña de terminal por sesión, normalmente una por <em>feature</em> o por <em>issue</em>, y el panel de <em>health</em> de la plataforma para los flujos agénticos. Cuando son más de cinco o diez, la terminal se convierte en un pasillo de puertas cerradas."
+    "2": "Hoy se resuelve con pestañas en una terminal, una por sesión. Funciona mientras son pocas; con más de cinco, se convierte en un cuadro eléctrico sin etiquetas.",
+    "3": "Hoy se resuelve con varias pestañas en una terminal, una por sesión, y con los flujos agénticos se esperan los resultados y se miran las métricas en el panel de <em>health</em> de la plataforma. Con más de cinco sesiones, la terminal deja de ser útil y se convierte en un cuadro eléctrico sin etiquetas."
    },
    "errors": {},
    "model": "file"
   },
   {
    "tag": "p",
-   "html": "Y ahí es donde se nota lo que falta. Saber qué sesión espera una decisión mía sin ir pestaña por pestaña. Ver cuánto cuesta cada una y cuántas veces llega al tope de la ventana de contexto. Retomar una sesión que dejé ayer. Saber si una ya ha entrado en el flujo de despliegue, si una puerta ha fallado en alguna parte de ese flujo y el agente está reimplementando, y cuánto tarda en hacerlo.",
-   "text": "Y ahí es donde se nota lo que falta. Saber qué sesión espera una decisión mía sin ir pestaña por pestaña. Ver cuánto cuesta cada una y cuántas veces llega al tope de la ventana de contexto. Retomar una sesión que dejé ayer. Saber si una ya ha entrado en el flujo de despliegue, si una puerta ha fallado en alguna parte de ese flujo y el agente está reimplementando, y cuánto tarda en hacerlo.",
-   "h": "9a575593",
-   "k": "9a575593.0",
-   "id": "b-6oh8q2",
+   "html": "Y ahí es donde se nota lo que falta. Saber qué sesión espera una decisión sin ir pestaña por pestaña. Saber si una ya ha entrado en el flujo de despliegue, o si una puerta ha fallado en alguna parte de ese flujo y el agente está reimplementando, lo que puede ser señal de que hay algo que optimizar. Saber cuánto lleva consumido de la ventana de contexto. Y la lista no acaba ahí: cada sesión que se suma trae preguntas nuevas, y ninguna pestaña tiene la respuesta a la vista.",
+   "text": "Y ahí es donde se nota lo que falta. Saber qué sesión espera una decisión sin ir pestaña por pestaña. Saber si una ya ha entrado en el flujo de despliegue, o si una puerta ha fallado en alguna parte de ese flujo y el agente está reimplementando, lo que puede ser señal de que hay algo que optimizar. Saber cuánto lleva consumido de la ventana de contexto. Y la lista no acaba ahí: cada sesión que se suma trae preguntas nuevas, y ninguna pestaña tiene la respuesta a la vista.",
+   "h": "0c09f555",
+   "k": "0c09f555.0",
+   "id": "b-oids6w",
    "levels": {
-    "4": "Ahí se nota lo que falta. Saber qué sesión espera una decisión mía sin ir pestaña por pestaña. Ver cuánto cuesta cada una y cuántas veces llega al tope de la ventana de contexto. Retomar una sesión de ayer. Saber si ha entrado en el flujo de despliegue, si una puerta ha fallado y el agente está reimplementando, y cuánto tarda.",
+    "4": "Ahí se nota lo que falta: saber qué sesión espera una decisión sin ir pestaña por pestaña; saber si una ha entrado en el flujo de despliegue, o si una puerta ha fallado y el agente está reimplementando, señal de que hay algo que optimizar; saber cuánto lleva consumido de la ventana de contexto. Y cada sesión que se suma trae preguntas nuevas.",
     "1": "",
-    "2": "Falta saber qué sesión espera una decisión, cuánto cuesta cada una y en qué punto del despliegue está.",
-    "3": "Falta saber qué sesión espera una decisión mía, cuánto cuesta cada una y cuántas veces llega al tope de la ventana de contexto, retomar una sesión de ayer y saber si una puerta del despliegue ha fallado y el agente está reimplementando."
+    "2": "",
+    "3": "Ahí se nota lo que falta: saber qué sesión espera una decisión sin ir pestaña por pestaña, si una puerta ha fallado y el agente está reimplementando, y cuánto contexto lleva consumido. Y cada sesión que se suma trae preguntas nuevas."
    },
    "errors": {},
    "model": "file"
   },
   {
    "tag": "p",
-   "html": "Y todo eso es dentro de un solo proyecto. En el equipo de plataforma no llevamos uno, sino varios a la vez, cada uno con sus sesiones, sus despliegues y sus dependencias. Las pestañas de una terminal son de una persona; el trabajo es del equipo. Lo que hace falta no es una ventana por persona, sino un panel compartido en el que todo el equipo vea lo mismo: qué sesiones hay en marcha en cada proyecto, quién atiende cada una y qué está esperando a quién.",
-   "text": "Y todo eso es dentro de un solo proyecto. En el equipo de plataforma no llevamos uno, sino varios a la vez, cada uno con sus sesiones, sus despliegues y sus dependencias. Las pestañas de una terminal son de una persona; el trabajo es del equipo. Lo que hace falta no es una ventana por persona, sino un panel compartido en el que todo el equipo vea lo mismo: qué sesiones hay en marcha en cada proyecto, quién atiende cada una y qué está esperando a quién.",
-   "h": "2b412637",
-   "k": "2b412637.0",
+   "html": "Y todo eso es dentro de un solo proyecto. Un equipo altamente efectivo no lleva uno, sino varios a la vez, cada uno con sus sesiones, sus despliegues y sus dependencias. Las pestañas de una terminal son de una persona; el trabajo es del equipo. Lo que hace falta no es una ventana por persona, sino un panel compartido en el que todo el equipo vea lo mismo: qué sesiones hay en marcha en cada proyecto, quién atiende cada una y qué está esperando a quién.",
+   "text": "Y todo eso es dentro de un solo proyecto. Un equipo altamente efectivo no lleva uno, sino varios a la vez, cada uno con sus sesiones, sus despliegues y sus dependencias. Las pestañas de una terminal son de una persona; el trabajo es del equipo. Lo que hace falta no es una ventana por persona, sino un panel compartido en el que todo el equipo vea lo mismo: qué sesiones hay en marcha en cada proyecto, quién atiende cada una y qué está esperando a quién.",
+   "h": "f279c787",
+   "k": "f279c787.0",
    "id": "b-0xd5ip",
    "levels": {
-    "4": "Y todo eso dentro de un solo proyecto. En el equipo de plataforma llevamos varios a la vez, cada uno con sus sesiones, despliegues y dependencias. Las pestañas son de una persona; el trabajo es del equipo. Hace falta un panel compartido en el que todo el equipo vea lo mismo: qué sesiones hay en marcha en cada proyecto, quién atiende cada una y qué está esperando a quién.",
-    "1": "",
-    "2": "Y el equipo lleva varios proyectos a la vez, así que hace falta un panel compartido en el que todos vean lo mismo.",
-    "3": "Y eso en un solo proyecto. Llevamos varios a la vez, y el trabajo es del equipo, no de una persona: hace falta un panel compartido donde todos vean qué sesiones hay en marcha, quién atiende cada una y qué está esperando a quién."
+    "4": "Todo eso es dentro de un solo proyecto. Un equipo altamente efectivo lleva varios a la vez, cada uno con sus sesiones, despliegues y dependencias. Las pestañas de una terminal son de una persona; el trabajo es del equipo. Hace falta un panel compartido en el que todo el equipo vea qué sesiones hay en marcha en cada proyecto, quién atiende cada una y qué espera a quién.",
+    "1": "Hace falta un panel compartido por todo el equipo, no una ventana por persona.",
+    "2": "Un equipo lleva varios proyectos a la vez, y las pestañas de una terminal son de una persona mientras el trabajo es del equipo. Hace falta un panel compartido en el que todo el equipo vea lo mismo.",
+    "3": "Todo eso es dentro de un solo proyecto, y un equipo altamente efectivo lleva varios a la vez. Las pestañas de una terminal son de una persona; el trabajo es del equipo. Hace falta un panel compartido en el que todos vean qué sesiones hay en marcha, quién atiende cada una y qué espera a quién."
    },
    "errors": {},
    "model": "file"
   },
   {
    "tag": "p",
-   "html": "Si el IDE clásico era un editor con herramientas alrededor, el nuevo es una consola de operaciones. El sector ya empieza a llamarlo <a href=\"https://www.warp.dev/articles/what-is-an-agentic-development-environment\"><strong>ADE</strong></a>, <em>Agentic Development Environment</em>. Yo cambiaría otra letra: no un entorno de desarrollo, sino un <strong>ICE</strong>, un <em>Integrated Control Environment</em>. La D de desarrollo deja paso a la C de control: ya no es el sitio donde se escribe el código, sino desde donde se supervisa a quienes lo escriben.",
-   "text": "Si el IDE clásico era un editor con herramientas alrededor, el nuevo es una consola de operaciones. El sector ya empieza a llamarlo ADE, Agentic Development Environment. Yo cambiaría otra letra: no un entorno de desarrollo, sino un ICE, un Integrated Control Environment. La D de desarrollo deja paso a la C de control: ya no es el sitio donde se escribe el código, sino desde donde se supervisa a quienes lo escriben.",
-   "h": "741d9228",
-   "k": "741d9228.0",
+   "html": "Si el IDE clásico era un editor con herramientas alrededor, el nuevo es una consola de operaciones: la sala de control de una <em>software factory</em>. El sector lleva tiempo llamándolo <a href=\"https://www.warp.dev/articles/what-is-an-agentic-development-environment\"><strong>ADE</strong></a>, <em>Agentic Development Environment</em>. Aquí conviene cambiar otra letra: no un entorno de desarrollo, sino un <strong>ICE</strong>, un <em>Integrated Control Environment</em>. La D de desarrollo deja paso a la C de control: ya no es el sitio donde se escribe el código, sino desde donde se supervisa a quienes lo escriben.",
+   "text": "Si el IDE clásico era un editor con herramientas alrededor, el nuevo es una consola de operaciones: la sala de control de una software factory. El sector lleva tiempo llamándolo ADE, Agentic Development Environment. Aquí conviene cambiar otra letra: no un entorno de desarrollo, sino un ICE, un Integrated Control Environment. La D de desarrollo deja paso a la C de control: ya no es el sitio donde se escribe el código, sino desde donde se supervisa a quienes lo escriben.",
+   "h": "2a51c363",
+   "k": "2a51c363.0",
    "id": "b-ec4aln",
    "levels": {
-    "4": "Si el IDE clásico era un editor con herramientas alrededor, el nuevo es una consola de operaciones. El sector empieza a llamarlo <a href=\"https://www.warp.dev/articles/what-is-an-agentic-development-environment\"><strong>ADE</strong></a>, <em>Agentic Development Environment</em>. Yo cambiaría otra letra: un <strong>ICE</strong>, un <em>Integrated Control Environment</em>. La D de desarrollo deja paso a la C de control: no es el sitio donde se escribe el código, sino desde donde se supervisa a quienes lo escriben.",
-    "1": "Lo que hace falta no es un editor mejor, sino una consola de operaciones compartida por el equipo: un <strong>ICE</strong>, <em>Integrated Control Environment</em>, desde donde se supervisa a quienes escriben el código.",
-    "2": "Por eso el nuevo IDE debería ser una consola de operaciones. El sector lo llama <a href=\"https://www.warp.dev/articles/what-is-an-agentic-development-environment\"><strong>ADE</strong></a>; yo lo llamaría <strong>ICE</strong>, <em>Integrated Control Environment</em>: no el sitio donde se escribe el código, sino desde donde se supervisa a quienes lo escriben.",
-    "3": "El nuevo IDE es una consola de operaciones. El sector empieza a llamarlo <a href=\"https://www.warp.dev/articles/what-is-an-agentic-development-environment\"><strong>ADE</strong></a>, <em>Agentic Development Environment</em>; yo diría <strong>ICE</strong>, <em>Integrated Control Environment</em>: la D de desarrollo deja paso a la C de control, porque ya no se escribe el código, sino que se supervisa a quienes lo escriben."
+    "4": "El IDE clásico era un editor con herramientas alrededor; el nuevo es una consola de operaciones, la sala de control de una <em>software factory</em>. El sector lo llama <a href=\"https://www.warp.dev/articles/what-is-an-agentic-development-environment\"><strong>ADE</strong></a>, <em>Agentic Development Environment</em>. Aquí conviene cambiar otra letra: no un entorno de desarrollo, sino un <strong>ICE</strong>, un <em>Integrated Control Environment</em>. Ya no es el sitio donde se escribe el código, sino desde donde se supervisa a quienes lo escriben.",
+    "1": "El nuevo IDE es una consola de control, un <strong>ICE</strong> (<em>Integrated Control Environment</em>), desde la que se supervisa a quienes escriben el código.",
+    "2": "El nuevo IDE es una consola de operaciones, la sala de control de una <em>software factory</em>. El sector lo llama <a href=\"https://www.warp.dev/articles/what-is-an-agentic-development-environment\"><strong>ADE</strong></a>, pero conviene cambiar una letra: un <strong>ICE</strong>, <em>Integrated Control Environment</em>, desde el que se supervisa a quienes escriben el código.",
+    "3": "El nuevo IDE es una consola de operaciones, la sala de control de una <em>software factory</em>. El sector lo llama <a href=\"https://www.warp.dev/articles/what-is-an-agentic-development-environment\"><strong>ADE</strong></a>, <em>Agentic Development Environment</em>; aquí conviene cambiar otra letra: un <strong>ICE</strong>, <em>Integrated Control Environment</em>. Ya no es el sitio donde se escribe el código, sino desde donde se supervisa a quienes lo escriben."
    },
    "errors": {},
    "model": "file"
   },
   {
    "tag": "p",
-   "html": "Sin pretender tener el diseño cerrado, esto es lo que creo que necesita un ICE:",
-   "text": "Sin pretender tener el diseño cerrado, esto es lo que creo que necesita un ICE:",
-   "h": "9ad2d8b4",
-   "k": "9ad2d8b4.0",
+   "html": "Sin pretender un diseño cerrado, esto es lo que necesita un ICE:",
+   "text": "Sin pretender un diseño cerrado, esto es lo que necesita un ICE:",
+   "h": "eaf7aa1a",
+   "k": "eaf7aa1a.0",
    "id": "b-uz0xgk",
    "levels": {
-    "4": "Sin pretender tener el diseño cerrado, esto es lo que creo que necesita un ICE:",
+    "4": "Sin pretender un diseño cerrado, esto es lo que necesita un ICE:",
     "1": "",
-    "2": "Esto es lo que creo que necesita un ICE:",
-    "3": "Esto es lo que creo que necesita un ICE:"
+    "2": "",
+    "3": "Sin pretender un diseño cerrado, esto es lo que necesita un ICE:"
    },
    "errors": {},
    "model": "file"
   },
   {
    "tag": "li",
-   "html": "<strong>Una bandeja de decisiones, no de mensajes.</strong> Lo primero que ves no es código ni chats, sino lo que te espera: una sesión que pide permiso para tocar algo sensible, una especificación ambigua, un <em>gate</em> que ha fallado dos veces.",
-   "text": "Una bandeja de decisiones, no de mensajes. Lo primero que ves no es código ni chats, sino lo que te espera: una sesión que pide permiso para tocar algo sensible, una especificación ambigua, un gate que ha fallado dos veces.",
-   "h": "24eb0c2e",
-   "k": "24eb0c2e.0",
-   "id": "b-yjpj48",
+   "html": "<strong>Una bandeja de decisiones, no de mensajes.</strong> Lo primero que aparece no es código ni chats, sino lo que está esperando una decisión: una sesión que pide permiso para tocar algo sensible, una especificación ambigua, un <em>gate</em> que ha fallado dos veces.",
+   "text": "Una bandeja de decisiones, no de mensajes. Lo primero que aparece no es código ni chats, sino lo que está esperando una decisión: una sesión que pide permiso para tocar algo sensible, una especificación ambigua, un gate que ha fallado dos veces.",
+   "h": "61562c08",
+   "k": "61562c08.0",
+   "id": "b-wbt6gj",
    "levels": {
-    "4": "<strong>Una bandeja de decisiones, no de mensajes.</strong> Lo primero que ves no es código ni chats, sino lo que te espera: una sesión que pide permiso para tocar algo sensible, una especificación ambigua, un <em>gate</em> que ha fallado dos veces.",
+    "4": "<strong>Una bandeja de decisiones, no de mensajes.</strong> Lo primero que aparece no es código ni chats, sino lo que espera una decisión: una sesión que pide permiso para tocar algo sensible, una especificación ambigua, un <em>gate</em> que ha fallado dos veces.",
     "1": "",
-    "2": "<strong>Una bandeja de decisiones, no de mensajes:</strong> lo primero que ves es lo que te espera.",
-    "3": "<strong>Una bandeja de decisiones, no de mensajes.</strong> Lo primero que ves es lo que te espera: un permiso, una especificación ambigua, un <em>gate</em> que ha fallado dos veces."
+    "2": "",
+    "3": "<strong>Una bandeja de decisiones, no de mensajes.</strong> Lo primero que aparece es lo que espera una decisión: un permiso sensible, una especificación ambigua, un <em>gate</em> que ha fallado dos veces."
    },
    "errors": {},
    "model": "file"
@@ -355,8 +371,8 @@
    "levels": {
     "4": "<strong>El estado de cada sesión de un vistazo.</strong> Trabajando, bloqueada, esperando, lista. En qué punto del despliegue está, si alguna puerta ha fallado, cuántas veces y cuánto lleva reimplementando. Como un tablero de despliegues, no una lista de pestañas.",
     "1": "",
-    "2": "<strong>El estado de cada sesión de un vistazo</strong>, como un tablero de despliegues.",
-    "3": "<strong>El estado de cada sesión de un vistazo.</strong> En qué punto del despliegue está y si alguna puerta ha fallado, como un tablero de despliegues."
+    "2": "",
+    "3": ""
    },
    "errors": {},
    "model": "file"
@@ -371,24 +387,24 @@
    "levels": {
     "4": "<strong>Varios proyectos, un panel compartido.</strong> Las sesiones se agrupan por proyecto pero se ven juntas, y el panel es del equipo: todos ven lo mismo, se sabe quién atiende cada sesión y cualquiera con contexto puede tomar una decisión pendiente.",
     "1": "",
-    "2": "<strong>Un panel compartido</strong> por todo el equipo y todos los proyectos.",
-    "3": "<strong>Varios proyectos, un panel compartido.</strong> El panel es del equipo: todos ven lo mismo y cualquiera con contexto puede tomar una decisión pendiente."
+    "2": "",
+    "3": "<strong>Varios proyectos, un panel compartido.</strong> Las sesiones se agrupan por proyecto pero se ven juntas, y todo el equipo ve lo mismo."
    },
    "errors": {},
    "model": "file"
   },
   {
    "tag": "li",
-   "html": "<strong>Evidencias antes que <em>diffs</em>.</strong> De cada sesión quiero ver primero qué puertas ha pasado (tests, mutación, seguridad, especificación) y solo después, si hace falta, el cambio. El <em>diff</em> deja de ser la puerta de entrada.",
-   "text": "Evidencias antes que diffs. De cada sesión quiero ver primero qué puertas ha pasado (tests, mutación, seguridad, especificación) y solo después, si hace falta, el cambio. El diff deja de ser la puerta de entrada.",
-   "h": "9e5cd1aa",
-   "k": "9e5cd1aa.0",
-   "id": "b-7841sr",
+   "html": "<strong>Evidencias antes que <em>diffs</em>.</strong> De cada sesión debe verse primero qué puertas ha pasado (tests, mutación, seguridad, especificación) y solo después, si hace falta, el cambio o la conversación del agente con sus acciones y su razonamiento. Leer el código modificado línea a línea, o repasar cada paso que dio el agente, deja de ser la puerta de entrada.",
+   "text": "Evidencias antes que diffs. De cada sesión debe verse primero qué puertas ha pasado (tests, mutación, seguridad, especificación) y solo después, si hace falta, el cambio o la conversación del agente con sus acciones y su razonamiento. Leer el código modificado línea a línea, o repasar cada paso que dio el agente, deja de ser la puerta de entrada.",
+   "h": "37585d1f",
+   "k": "37585d1f.0",
+   "id": "b-svwu8d",
    "levels": {
-    "4": "<strong>Evidencias antes que <em>diffs</em>.</strong> De cada sesión, primero qué puertas ha pasado (tests, mutación, seguridad, especificación) y solo después, si hace falta, el cambio. El <em>diff</em> deja de ser la puerta de entrada.",
+    "4": "<strong>Evidencias antes que <em>diffs</em>.</strong> De cada sesión debe verse primero qué puertas ha pasado (tests, mutación, seguridad, especificación) y solo después, si hace falta, el cambio o la conversación del agente. Leer el código línea a línea o repasar cada paso del agente deja de ser la puerta de entrada.",
     "1": "",
-    "2": "<strong>Evidencias antes que <em>diffs</em>:</strong> primero, qué puertas ha pasado.",
-    "3": "<strong>Evidencias antes que <em>diffs</em>.</strong> Primero qué puertas ha pasado; el cambio, solo si hace falta."
+    "2": "",
+    "3": "<strong>Evidencias antes que <em>diffs</em>.</strong> De cada sesión debe verse primero qué puertas ha pasado y solo después, si hace falta, el cambio o la conversación del agente."
    },
    "errors": {},
    "model": "file"
@@ -403,8 +419,8 @@
    "levels": {
     "4": "<strong>Coste y presupuesto por sesión.</strong> Cuánto lleva gastado, cuánto se espera que gaste y cuándo pararla. Y cuántas veces ha llegado al tope de la ventana de contexto: una sesión que se compacta una y otra vez pierde memoria y gasta de más, y suele indicar algo que optimizar, como una tarea demasiado grande, un contexto inflado o una especificación que habría que partir.",
     "1": "",
-    "2": "<strong>Coste y presupuesto por sesión</strong>, y cuándo pararla.",
-    "3": "<strong>Coste y presupuesto por sesión.</strong> Cuánto lleva gastado y cuándo pararla. Y cuántas veces ha llegado al tope de la ventana de contexto, que suele ser la señal de que hay algo que optimizar."
+    "2": "",
+    "3": ""
    },
    "errors": {},
    "model": "file"
@@ -419,8 +435,8 @@
    "levels": {
     "4": "<strong>Permisos y líneas rojas visibles.</strong> Qué puede hacer cada sesión, qué no, y cuándo se detendrá a pedir confirmación. Y de quién depende: si para desplegar necesita algo de otro equipo, hay que saberlo antes de empezar y no cuando ya está bloqueada, con una estimación de cuánto le falta.",
     "1": "",
-    "2": "<strong>Permisos y líneas rojas visibles.</strong>",
-    "3": "<strong>Permisos y líneas rojas visibles.</strong> Qué puede hacer cada sesión y cuándo se detendrá a pedir confirmación, y si depende de otro equipo, saberlo antes de empezar y no cuando ya está bloqueada."
+    "2": "",
+    "3": ""
    },
    "errors": {},
    "model": "file"
@@ -435,8 +451,8 @@
    "levels": {
     "4": "<strong>Trazabilidad de punta a punta.</strong> De la <em>issue</em> a la especificación, a la sesión, a la PR y a producción. Si algo falla en producción, tiene que poder seguirse hacia atrás.",
     "1": "",
-    "2": "<strong>Trazabilidad</strong> de la <em>issue</em> a producción.",
-    "3": "<strong>Trazabilidad de punta a punta.</strong> De la <em>issue</em> a producción, para poder seguir hacia atrás cualquier fallo."
+    "2": "",
+    "3": ""
    },
    "errors": {},
    "model": "file"
@@ -449,10 +465,10 @@
    "k": "8726e2e5.0",
    "id": "b-3dz25b",
    "levels": {
+    "4": "<strong>Pausar, retomar y reasignar.</strong> Las sesiones duran horas: tienen que poder pararse, retomarse con su contexto y asignarse a otra persona.",
     "1": "",
     "2": "",
-    "3": "",
-    "4": "<strong>Pausar, retomar y reasignar.</strong> Las sesiones duran horas: tienen que poder pararse, retomarse con su contexto y asignarse a otra persona."
+    "3": ""
    },
    "errors": {},
    "model": "file"
@@ -468,23 +484,87 @@
     "4": "<strong>Un límite de trabajo en curso.</strong> Cien sesiones abiertas no son productividad si nadie puede atenderlas. La herramienta debería ayudar a no lanzar más de las que se pueden supervisar.",
     "1": "",
     "2": "",
-    "3": "<strong>Un límite de trabajo en curso.</strong> No lanzar más sesiones de las que se pueden supervisar."
+    "3": "<strong>Un límite de trabajo en curso.</strong> Cien sesiones abiertas no son productividad si nadie puede atenderlas."
    },
    "errors": {},
    "model": "file"
   },
   {
    "tag": "p",
-   "html": "Fíjate en lo que no aparece en la lista: escribir código. El editor no desaparece, pero pasa a ser una vista más, la que abres en el caso raro en que de verdad necesitas leer algo.",
-   "text": "Fíjate en lo que no aparece en la lista: escribir código. El editor no desaparece, pero pasa a ser una vista más, la que abres en el caso raro en que de verdad necesitas leer algo.",
-   "h": "62b11a87",
-   "k": "62b11a87.0",
+   "html": "Lo que no aparece en la lista es escribir código. El editor no desaparece, pero pasa a ser una vista más, la que se abre en el caso raro en que de verdad hace falta leer algo.",
+   "text": "Lo que no aparece en la lista es escribir código. El editor no desaparece, pero pasa a ser una vista más, la que se abre en el caso raro en que de verdad hace falta leer algo.",
+   "h": "11ca7749",
+   "k": "11ca7749.0",
    "id": "b-9wzb0g",
    "levels": {
-    "4": "Fíjate en lo que no aparece en la lista: escribir código. El editor no desaparece, pero pasa a ser una vista más, la que abres en el caso raro en que de verdad necesitas leer algo.",
+    "4": "Lo que no aparece en la lista es escribir código. El editor no desaparece, pero pasa a ser una vista más, la que se abre en el caso raro en que hace falta leer algo.",
     "1": "",
-    "2": "El editor no desaparece, pero pasa a ser una vista más.",
-    "3": "Fíjate en lo que no aparece: escribir código. El editor pasa a ser una vista más."
+    "2": "",
+    "3": "Lo que no aparece en la lista es escribir código: el editor pasa a ser una vista más, la que se abre en el caso raro en que hace falta leer algo."
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "Lo bueno de tener claro lo que falta es que se puede empezar a construir. PlainConcepts ha publicado como proyecto de código abierto una primera versión: <a href=\"https://github.com/PlainConceptsPlatform/ice\"><strong>ICE</strong></a>, <em>Integrated Control Environment</em>. Es una interfaz web local para supervisar y dirigir sesiones de Claude Code y de OpenCode. No es un editor ni pretende serlo: sustituye al IDE como sitio de trabajo. No escribe el código, de eso se encargan los agentes; es la consola desde la que se supervisan muchas sesiones de muchos proyectos.",
+   "text": "Lo bueno de tener claro lo que falta es que se puede empezar a construir. PlainConcepts ha publicado como proyecto de código abierto una primera versión: ICE, Integrated Control Environment. Es una interfaz web local para supervisar y dirigir sesiones de Claude Code y de OpenCode. No es un editor ni pretende serlo: sustituye al IDE como sitio de trabajo. No escribe el código, de eso se encargan los agentes; es la consola desde la que se supervisan muchas sesiones de muchos proyectos.",
+   "h": "c5fcf811",
+   "k": "c5fcf811.0",
+   "id": "b-vbzbns",
+   "levels": {
+    "4": "Tener claro lo que falta permite empezar a construir. PlainConcepts ha publicado como código abierto una primera versión: <a href=\"https://github.com/PlainConceptsPlatform/ice\"><strong>ICE</strong></a>, <em>Integrated Control Environment</em>, una interfaz web local para supervisar y dirigir sesiones de Claude Code y de OpenCode. No es un editor: sustituye al IDE como sitio de trabajo. No escribe el código, de eso se encargan los agentes; es la consola desde la que se supervisan muchas sesiones de muchos proyectos.",
+    "1": "",
+    "2": "PlainConcepts ha publicado como código abierto una primera versión: <a href=\"https://github.com/PlainConceptsPlatform/ice\"><strong>ICE</strong></a>, una interfaz web local para supervisar sesiones de Claude Code y de OpenCode. No escribe el código: es la consola desde la que se supervisan muchas sesiones de muchos proyectos.",
+    "3": "PlainConcepts ha publicado como código abierto una primera versión: <a href=\"https://github.com/PlainConceptsPlatform/ice\"><strong>ICE</strong></a>, <em>Integrated Control Environment</em>, una interfaz web local para supervisar y dirigir sesiones de Claude Code y de OpenCode. No es un editor ni escribe el código: es la consola desde la que se supervisan muchas sesiones de muchos proyectos."
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "Cubre una parte de la lista de arriba: hasta 16 sesiones por pantalla, con su estado, el flujo de CI con tiempo estimado, las PR, los tokens, el coste y las compactaciones repetidas; una barra con lo que necesita una decisión; y la posibilidad de responder permisos, enviar mensajes y retomar sesiones sin salir de la página. Es una primera versión y tiene límites claros: es local, para una persona, y el panel compartido por el equipo sigue pendiente.",
+   "text": "Cubre una parte de la lista de arriba: hasta 16 sesiones por pantalla, con su estado, el flujo de CI con tiempo estimado, las PR, los tokens, el coste y las compactaciones repetidas; una barra con lo que necesita una decisión; y la posibilidad de responder permisos, enviar mensajes y retomar sesiones sin salir de la página. Es una primera versión y tiene límites claros: es local, para una persona, y el panel compartido por el equipo sigue pendiente.",
+   "h": "29b4f451",
+   "k": "29b4f451.0",
+   "id": "b-iop2eg",
+   "levels": {
+    "4": "Cubre una parte de la lista: hasta 16 sesiones por pantalla, con su estado, el flujo de CI con tiempo estimado, las PR, los tokens, el coste y las compactaciones repetidas; una barra con lo que necesita una decisión; y la posibilidad de responder permisos, enviar mensajes y retomar sesiones. Es una primera versión: es local, para una persona, y el panel compartido sigue pendiente.",
+    "1": "",
+    "2": "",
+    "3": ""
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "Conviene bajar el tono: esto no es nada nuevo ni extraordinario. Hacer una terminal, o un panel como este, es literalmente un <em>prompt</em> y media hora de ajustes. Todo el mundo tiene ahora la capacidad de construirse la herramienta y adaptarla a cómo trabaja, y todo el mundo lo está haciendo. ICE es una más.",
+   "text": "Conviene bajar el tono: esto no es nada nuevo ni extraordinario. Hacer una terminal, o un panel como este, es literalmente un prompt y media hora de ajustes. Todo el mundo tiene ahora la capacidad de construirse la herramienta y adaptarla a cómo trabaja, y todo el mundo lo está haciendo. ICE es una más.",
+   "h": "b507d902",
+   "k": "b507d902.0",
+   "id": "b-3e34v9",
+   "levels": {
+    "4": "Conviene bajar el tono: esto no es nada nuevo ni extraordinario. Hacer una terminal, o un panel como este, es literalmente un <em>prompt</em> y media hora de ajustes. Todo el mundo puede construirse la herramienta y adaptarla a cómo trabaja, y todo el mundo lo está haciendo. ICE es una más.",
+    "1": "",
+    "2": "",
+    "3": "Conviene bajar el tono: esto no es nada nuevo. Hacer un panel como este es literalmente un <em>prompt</em> y media hora de ajustes, y todo el mundo puede construirse la herramienta. ICE es una más."
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "Por eso no hay un ganador claro ni lo habrá pronto. Cuando construir cuesta una tarde, cada equipo hace el suyo, a su medida. Habrá tantos ICE como equipos, y no habrá uno rígido que valga para todos: cada equipo tiene sus propias puertas, sus flujos y sus líneas rojas, y su consola tendrá que reflejarlos. La lista de arriba no es una especificación, sino un punto de partida para que cada uno construya la suya. Lo que no se puede delegar en ninguna herramienta es saber qué hay que mirar.",
+   "text": "Por eso no hay un ganador claro ni lo habrá pronto. Cuando construir cuesta una tarde, cada equipo hace el suyo, a su medida. Habrá tantos ICE como equipos, y no habrá uno rígido que valga para todos: cada equipo tiene sus propias puertas, sus flujos y sus líneas rojas, y su consola tendrá que reflejarlos. La lista de arriba no es una especificación, sino un punto de partida para que cada uno construya la suya. Lo que no se puede delegar en ninguna herramienta es saber qué hay que mirar.",
+   "h": "78be82e3",
+   "k": "78be82e3.0",
+   "id": "b-97ig97",
+   "levels": {
+    "4": "Por eso no hay un ganador claro ni lo habrá pronto. Cuando construir cuesta una tarde, cada equipo hace el suyo: habrá tantos ICE como equipos, porque cada uno tiene sus propias puertas, flujos y líneas rojas. La lista de arriba no es una especificación, sino un punto de partida. Lo que no se puede delegar en ninguna herramienta es saber qué hay que mirar.",
+    "1": "",
+    "2": "No habrá un ganador claro: cuando construir cuesta una tarde, cada equipo hace el suyo, con sus propias puertas, flujos y líneas rojas. Lo que no se puede delegar es saber qué hay que mirar.",
+    "3": "No hay un ganador claro ni lo habrá pronto. Cuando construir cuesta una tarde, cada equipo hace el suyo, con sus propias puertas, flujos y líneas rojas. La lista de arriba es un punto de partida, no una especificación. Lo que no se puede delegar en ninguna herramienta es saber qué hay que mirar."
    },
    "errors": {},
    "model": "file"
@@ -500,20 +580,20 @@
     "4": "No es un chat con pestañas, ni el editor de siempre con un panel lateral para el agente, ni una herramienta personal: si las sesiones son del equipo y abarcan varios proyectos, el nuevo IDE es, sobre todo, un panel compartido.",
     "1": "",
     "2": "",
-    "3": "No es un chat con pestañas ni el editor de siempre con un panel lateral. Es, sobre todo, un panel compartido del equipo."
+    "3": ""
    },
    "errors": {},
    "model": "file"
   },
   {
    "tag": "p",
-   "html": "Steve Yegge lo describe como el momento en que <a href=\"https://newsletter.pragmaticengineer.com/p/from-ides-to-ai-agents-with-steve\">tu IDE desaparece y no vuelves a abrirlo nunca</a>, y ahora habla de que el IDE volverá, pero como centro de control de agentes. Estoy de acuerdo con la segunda parte. Lo que vuelve no es el editor: es la necesidad de un sitio donde trabajar.",
-   "text": "Steve Yegge lo describe como el momento en que tu IDE desaparece y no vuelves a abrirlo nunca, y ahora habla de que el IDE volverá, pero como centro de control de agentes. Estoy de acuerdo con la segunda parte. Lo que vuelve no es el editor: es la necesidad de un sitio donde trabajar.",
-   "h": "b633e056",
-   "k": "b633e056.0",
+   "html": "Steve Yegge lo describe como el momento en que <a href=\"https://newsletter.pragmaticengineer.com/p/from-ides-to-ai-agents-with-steve\">tu IDE desaparece y no vuelves a abrirlo nunca</a>, y ahora habla de que el IDE volverá, pero como centro de control de agentes. La segunda parte es la acertada. Lo que vuelve no es el editor: es la necesidad de un sitio donde trabajar.",
+   "text": "Steve Yegge lo describe como el momento en que tu IDE desaparece y no vuelves a abrirlo nunca, y ahora habla de que el IDE volverá, pero como centro de control de agentes. La segunda parte es la acertada. Lo que vuelve no es el editor: es la necesidad de un sitio donde trabajar.",
+   "h": "1e224952",
+   "k": "1e224952.0",
    "id": "b-fwg5md",
    "levels": {
-    "4": "Steve Yegge lo describe como el momento en que <a href=\"https://newsletter.pragmaticengineer.com/p/from-ides-to-ai-agents-with-steve\">tu IDE desaparece y no vuelves a abrirlo nunca</a>, y ahora dice que el IDE volverá como centro de control de agentes. Estoy de acuerdo con lo segundo. Lo que vuelve no es el editor: es la necesidad de un sitio donde trabajar.",
+    "4": "Steve Yegge lo describe como el momento en que <a href=\"https://newsletter.pragmaticengineer.com/p/from-ides-to-ai-agents-with-steve\">tu IDE desaparece y no vuelves a abrirlo nunca</a>, y ahora habla de que el IDE volverá, pero como centro de control de agentes. La segunda parte es la acertada. Lo que vuelve no es el editor: es la necesidad de un sitio donde trabajar.",
     "1": "",
     "2": "",
     "3": ""
@@ -539,13 +619,13 @@
   },
   {
    "tag": "li",
-   "html": "¿Puedes saber si un cambio es correcto sin leerlo?",
-   "text": "¿Puedes saber si un cambio es correcto sin leerlo?",
-   "h": "71bc0186",
-   "k": "71bc0186.0",
+   "html": "¿Se puede saber si un cambio es correcto sin leerlo?",
+   "text": "¿Se puede saber si un cambio es correcto sin leerlo?",
+   "h": "2fd4651b",
+   "k": "2fd4651b.0",
    "id": "b-xx3wdb",
    "levels": {
-    "4": "¿Puedes saber si un cambio es correcto sin leerlo?",
+    "4": "¿Se puede saber si un cambio es correcto sin leerlo?",
     "1": "",
     "2": "",
     "3": ""
@@ -571,13 +651,13 @@
   },
   {
    "tag": "li",
-   "html": "¿Sabes qué puede tocar cada agente y qué no?",
-   "text": "¿Sabes qué puede tocar cada agente y qué no?",
-   "h": "9121b11a",
-   "k": "9121b11a.0",
+   "html": "¿Se sabe qué puede tocar cada agente y qué no?",
+   "text": "¿Se sabe qué puede tocar cada agente y qué no?",
+   "h": "801cea05",
+   "k": "801cea05.0",
    "id": "b-z19x1i",
    "levels": {
-    "4": "¿Sabes qué puede tocar cada agente y qué no?",
+    "4": "¿Se sabe qué puede tocar cada agente y qué no?",
     "1": "",
     "2": "",
     "3": ""
@@ -587,13 +667,13 @@
   },
   {
    "tag": "li",
-   "html": "¿Puedes seguir un incidente de producción hasta la sesión que lo provocó?",
-   "text": "¿Puedes seguir un incidente de producción hasta la sesión que lo provocó?",
-   "h": "9b548e15",
-   "k": "9b548e15.0",
+   "html": "¿Se puede seguir un incidente de producción hasta la sesión que lo provocó?",
+   "text": "¿Se puede seguir un incidente de producción hasta la sesión que lo provocó?",
+   "h": "91505b70",
+   "k": "91505b70.0",
    "id": "b-khv13c",
    "levels": {
-    "4": "¿Puedes seguir un incidente de producción hasta la sesión que lo provocó?",
+    "4": "¿Se puede seguir un incidente de producción hasta la sesión que lo provocó?",
     "1": "",
     "2": "",
     "3": ""
@@ -603,13 +683,13 @@
   },
   {
    "tag": "li",
-   "html": "¿Sabes cuánto te cuesta cada cambio?",
-   "text": "¿Sabes cuánto te cuesta cada cambio?",
-   "h": "fbf45bc8",
-   "k": "fbf45bc8.0",
+   "html": "¿Se sabe cuánto cuesta cada cambio?",
+   "text": "¿Se sabe cuánto cuesta cada cambio?",
+   "h": "22d25002",
+   "k": "22d25002.0",
    "id": "b-b6vra8",
    "levels": {
-    "4": "¿Sabes cuánto te cuesta cada cambio?",
+    "4": "¿Se sabe cuánto cuesta cada cambio?",
     "1": "",
     "2": "",
     "3": ""
@@ -619,48 +699,96 @@
   },
   {
    "tag": "p",
-   "html": "Si la respuesta a alguna es no, el IDE todavía te hace falta. No porque escribas código en él, sino porque es tu última red de seguridad.",
-   "text": "Si la respuesta a alguna es no, el IDE todavía te hace falta. No porque escribas código en él, sino porque es tu última red de seguridad.",
-   "h": "e244eab4",
-   "k": "e244eab4.0",
+   "html": "Si la respuesta a alguna es no, el IDE todavía hace falta. No porque se escriba código en él, sino porque es la última red de seguridad.",
+   "text": "Si la respuesta a alguna es no, el IDE todavía hace falta. No porque se escriba código en él, sino porque es la última red de seguridad.",
+   "h": "d5635fa6",
+   "k": "d5635fa6.0",
    "id": "b-y0l0tq",
    "levels": {
-    "4": "Si la respuesta a alguna es no, el IDE todavía te hace falta. No para escribir código en él, sino porque es tu última red de seguridad.",
-    "1": "",
-    "2": "Si para confiar en un cambio todavía tienes que leerlo, el IDE te sigue haciendo falta: es tu última red de seguridad.",
-    "3": "Antes de dejarlo, pregúntate si puedes saber que un cambio es correcto sin leerlo. Si no, el IDE todavía te hace falta: es tu última red de seguridad."
-   },
-   "errors": {},
-   "model": "file"
-  },
-  {
-   "tag": "p",
-   "html": "<em>AI 2027</em> imaginaba ingenieros que ya no programan y se pasan el día intentando seguir el ritmo de lo que producen los agentes. La primera parte ya la estamos viviendo. La segunda es la que nadie ha resuelto: seguir el ritmo no puede consistir en ir de conversación en conversación sin una visión completa de en qué punto del flujo está cada sesión.",
-   "text": "AI 2027 imaginaba ingenieros que ya no programan y se pasan el día intentando seguir el ritmo de lo que producen los agentes. La primera parte ya la estamos viviendo. La segunda es la que nadie ha resuelto: seguir el ritmo no puede consistir en ir de conversación en conversación sin una visión completa de en qué punto del flujo está cada sesión.",
-   "h": "6b665b04",
-   "k": "6b665b04.0",
-   "id": "b-r4m33g",
-   "levels": {
-    "4": "<em>AI 2027</em> imaginaba ingenieros que ya no programan e intentan seguir el ritmo de lo que producen los agentes. Lo primero ya lo vivimos. Lo segundo nadie lo ha resuelto: seguir el ritmo no puede consistir en ir de conversación en conversación sin una visión completa de en qué punto del flujo está cada sesión.",
+    "4": "Si la respuesta a alguna pregunta es no, el IDE todavía hace falta. No porque se escriba código en él, sino porque es la última red de seguridad.",
     "1": "",
     "2": "",
-    "3": "<em>AI 2027</em> imaginaba ingenieros intentando seguir el ritmo de los agentes. Seguir ese ritmo no puede consistir en ir de conversación en conversación sin saber en qué punto del flujo está cada sesión."
+    "3": "Si un cambio no puede darse por bueno sin leerlo, el IDE todavía hace falta, no para escribir código, sino como última red de seguridad."
    },
    "errors": {},
    "model": "file"
   },
   {
    "tag": "p",
-   "html": "Los modelos seguirán cambiando cada pocos meses, y las herramientas también. Lo que no va a cambiar es que alguien tiene que decidir qué se construye, comprobar que lo que ha salido es lo que se pidió y responder por ello. El nuevo IDE, el ICE, no es el sitio donde escribimos código. Es el sitio desde el que respondemos por él.",
-   "text": "Los modelos seguirán cambiando cada pocos meses, y las herramientas también. Lo que no va a cambiar es que alguien tiene que decidir qué se construye, comprobar que lo que ha salido es lo que se pidió y responder por ello. El nuevo IDE, el ICE, no es el sitio donde escribimos código. Es el sitio desde el que respondemos por él.",
-   "h": "7df4c759",
-   "k": "7df4c759.0",
+   "html": "<em>AI 2027</em> imaginaba ingenieros que ya no programan y se pasan el día intentando seguir el ritmo de lo que producen los agentes. La primera parte ya se está viviendo. La segunda la intentan resolver muchas herramientas, pero casi todas se quedan en una persona y en una máquina. Y seguir el ritmo no puede consistir en ir de conversación en conversación.",
+   "text": "AI 2027 imaginaba ingenieros que ya no programan y se pasan el día intentando seguir el ritmo de lo que producen los agentes. La primera parte ya se está viviendo. La segunda la intentan resolver muchas herramientas, pero casi todas se quedan en una persona y en una máquina. Y seguir el ritmo no puede consistir en ir de conversación en conversación.",
+   "h": "9501b2ae",
+   "k": "9501b2ae.0",
+   "id": "b-r4m33g",
+   "levels": {
+    "4": "<em>AI 2027</em> imaginaba ingenieros que ya no programan y se pasan el día intentando seguir el ritmo de lo que producen los agentes. La primera parte ya se está viviendo; la segunda la intentan resolver muchas herramientas, casi todas centradas en una persona y una máquina. Y seguir el ritmo no puede consistir en ir de conversación en conversación.",
+    "1": "",
+    "2": "",
+    "3": "<em>AI 2027</em> imaginaba ingenieros que ya no programan y se pasan el día intentando seguir el ritmo de los agentes. La primera parte ya se está viviendo; la segunda la intentan resolver muchas herramientas, casi todas centradas en una persona y una máquina."
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "Hace falta una visión holística del sistema, y con dos condiciones:",
+   "text": "Hace falta una visión holística del sistema, y con dos condiciones:",
+   "h": "941be8d4",
+   "k": "941be8d4.0",
+   "id": "b-usrmb0",
+   "levels": {
+    "4": "Hace falta una visión holística del sistema, con dos condiciones:",
+    "1": "",
+    "2": "",
+    "3": ""
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "li",
+   "html": "<strong>Compartida.</strong> Las sesiones de un proyecto y sus dependencias son del equipo, no de quien las lanzó, y se ven igual se ejecuten donde se ejecuten, en local o en la nube.",
+   "text": "Compartida. Las sesiones de un proyecto y sus dependencias son del equipo, no de quien las lanzó, y se ven igual se ejecuten donde se ejecuten, en local o en la nube.",
+   "h": "da7afcc0",
+   "k": "da7afcc0.0",
+   "id": "b-tu3i24",
+   "levels": {
+    "4": "<strong>Compartida.</strong> Las sesiones de un proyecto y sus dependencias son del equipo, no de quien las lanzó, y se ven igual se ejecuten donde se ejecuten, en local o en la nube.",
+    "1": "",
+    "2": "",
+    "3": ""
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "li",
+   "html": "<strong>Completa.</strong> No solo el trabajo de los agentes generando código, sino todo lo que pasa alrededor: las puertas que se ejecutan o han fallado, los despliegues en marcha, los flujos que esperan un <em>runner</em> o una aprobación, los permisos pendientes, el coste y las dependencias con otros equipos.",
+   "text": "Completa. No solo el trabajo de los agentes generando código, sino todo lo que pasa alrededor: las puertas que se ejecutan o han fallado, los despliegues en marcha, los flujos que esperan un runner o una aprobación, los permisos pendientes, el coste y las dependencias con otros equipos.",
+   "h": "b7f335f1",
+   "k": "b7f335f1.0",
+   "id": "b-2lgg8s",
+   "levels": {
+    "4": "<strong>Completa.</strong> No solo el trabajo de los agentes generando código, sino todo lo que pasa alrededor: las puertas que se ejecutan o han fallado, los despliegues en marcha, los flujos que esperan un <em>runner</em> o una aprobación, los permisos pendientes, el coste y las dependencias con otros equipos.",
+    "1": "",
+    "2": "",
+    "3": ""
+   },
+   "errors": {},
+   "model": "file"
+  },
+  {
+   "tag": "p",
+   "html": "Los modelos seguirán cambiando cada pocos meses, y las herramientas también. Lo que no va a cambiar es que alguien tiene que decidir qué se construye, comprobar que lo que ha salido es lo que se pidió y responder por ello. El nuevo IDE no es el sitio donde se escribe el código. Es el sitio desde el que se responde por él.",
+   "text": "Los modelos seguirán cambiando cada pocos meses, y las herramientas también. Lo que no va a cambiar es que alguien tiene que decidir qué se construye, comprobar que lo que ha salido es lo que se pidió y responder por ello. El nuevo IDE no es el sitio donde se escribe el código. Es el sitio desde el que se responde por él.",
+   "h": "24ccc0dc",
+   "k": "24ccc0dc.0",
    "id": "b-psvoko",
    "levels": {
-    "4": "Los modelos y las herramientas seguirán cambiando cada pocos meses. Lo que no cambiará es que alguien tiene que decidir qué se construye, comprobar que lo que ha salido es lo que se pidió y responder por ello. El nuevo IDE, el ICE, no es el sitio donde escribimos código. Es el sitio desde el que respondemos por él.",
-    "1": "El nuevo IDE no es el sitio donde escribimos código. Es el sitio desde el que respondemos por él.",
-    "2": "Alguien tiene que decidir qué se construye y responder por ello. El nuevo IDE, el ICE, no es el sitio donde escribimos código. Es el sitio desde el que respondemos por él.",
-    "3": "Alguien tiene que decidir qué se construye, comprobar que es lo que se pidió y responder por ello. El nuevo IDE, el ICE, no es el sitio donde escribimos código. Es el sitio desde el que respondemos por él."
+    "4": "Los modelos y las herramientas seguirán cambiando cada pocos meses. Lo que no va a cambiar es que alguien tiene que decidir qué se construye, comprobar que lo que ha salido es lo que se pidió y responder por ello. El nuevo IDE no es el sitio donde se escribe el código: es el sitio desde el que se responde por él.",
+    "1": "Lo que no cambia es que alguien tiene que decidir qué se construye y responder por ello: el nuevo IDE es el sitio desde el que se responde.",
+    "2": "Los modelos y las herramientas seguirán cambiando, pero alguien tiene que decidir qué se construye, comprobar lo que ha salido y responder por ello. El nuevo IDE es el sitio desde el que se responde por el código.",
+    "3": "Los modelos y las herramientas seguirán cambiando. Lo que no va a cambiar es que alguien tiene que decidir qué se construye, comprobar que lo que ha salido es lo que se pidió y responder por ello. El nuevo IDE no es el sitio donde se escribe el código: es el sitio desde el que se responde por él."
    },
    "errors": {},
    "model": "file"

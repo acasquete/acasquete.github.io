@@ -1,6 +1,6 @@
 ---
 cover_ratio: 16 / 9
-description: "Cada vez más programadores delegan el código en agentes de IA. El reto ahora es supervisar decenas de sesiones a la vez, y la herramienta para hacerlo todavía está por definir."
+description: "Programar con agentes de IA ya es lo habitual. El reto ahora es supervisar decenas de sesiones a la vez, y la herramienta para hacerlo todavía está por definir."
 title: Cuando programar es supervisar
 tags: [artificial_intelligence, programming]
 reviewed: true
@@ -13,9 +13,9 @@ En abril de 2025 se publicó [*AI 2027*](https://ai-2027.com/), un escenario que
 
 Es finales de 2026. Todavía no existen las doscientas mil copias de agentes que imaginaba el escenario, pero un desarrollador ya puede tener abiertas decenas de sesiones a la vez. Y hay algo que *AI 2027* daba por hecho sin explicarlo nunca: con qué herramienta se supervisa todo eso. Esa herramienta todavía no está resuelta.
 
-## Ya no se abre el IDE
+## Ya no utilizamos un IDE
 
-El [post anterior](/ya-no-revisamos-codigo) contaba cómo se había dejado de revisar cada cambio a mano. La consecuencia lógica llegó sola: si el código no se lee antes de integrar el cambio, el editor deja de ser la herramienta en la que apoyarse. Hoy no se usa ningún IDE: se trabaja con agentes en la terminal y se delega todo el trabajo posible en flujos agénticos que se ejecutan en GitHub.
+El [post anterior](/ya-no-revisamos-codigo) contaba cómo se había dejado de revisar cada cambio a mano. La consecuencia lógica llegó sola: si el código no se lee antes de integrar el cambio, el editor de código clásico deja de ser la herramienta en la que apoyarse. Hoy ya no utilizamos un IDE: se trabaja con agentes en la terminal y se delega todo el trabajo posible en flujos agénticos que se ejecutan en GitHub.
 
 No es una preferencia ni una pose, sino una **prueba de madurez**. Dejar el IDE solo es posible cuando el resto del sistema es lo bastante bueno como para no necesitar mirar el código: una especificación ejecutable, puertas que bloquean, permisos claros y trazabilidad de cada cambio. Si para confiar en lo que ha hecho un agente todavía hay que abrir el editor y leerlo, el problema no es la herramienta: es que el sistema aún no está listo.
 
@@ -29,8 +29,8 @@ Todo el mundo tiene el IDE instalado. Cada vez menos gente trabaja dentro de él
 
 - Microsoft lanzó [VS Code Agents](https://www.infoworld.com/article/4156038/visual-studio-code-1-115-introduces-vs-code-agents-app.html), una aplicación aparte del editor para lanzar y seguir sesiones de agentes en paralelo. La novedad de Visual Studio 2026 se resumió con un titular que lo dice todo: [asigna una tarea, cierra el IDE, recibe una PR](https://visualstudiomagazine.com/articles/2026/04/29/vs-2026-joins-vs-code-with-integrated-cloud-agent-assign-a-task-close-the-ide-get-a-pr.aspx).
 - Cursor 3 estrenó una [ventana de agentes](https://www.datacamp.com/blog/cursor-3) construida desde cero alrededor de los agentes, no del editor de archivos.
-- JetBrains lanzó [Air](https://tech-insider.org/jetbrains-air-eap-ides-multi-agent-2026/), un orquestador de varios agentes que ni siquiera trae agentes propios: ejecuta los que tengas instalados.
-- Y Microsoft lo llevó también a la terminal: [Intelligent Terminal 0.3](https://github.com/microsoft/intelligent-terminal/releases), un *fork* de Windows Terminal con una barra lateral que muestra qué agentes están trabajando o esperándote, con su repositorio y su rama.
+- JetBrains lanzó [Air](https://tech-insider.org/jetbrains-air-eap-ides-multi-agent-2026/), un orquestador de varios agentes que ni siquiera trae agentes propios: ejecuta los que estén instalados.
+- Y Microsoft lo llevó también a la terminal: [Intelligent Terminal 0.3](https://github.com/microsoft/intelligent-terminal/releases), un *fork* de Windows Terminal con una barra lateral que muestra qué agentes están trabajando o esperando atención, con su repositorio y su rama.
 
 Los cuatro hacen lo mismo: construir, al lado del editor o en su lugar, una ventana para los agentes. Es la forma más honesta de reconocer que el trabajo ya no pasa por el editor. Pero también es una solución a medias: siguen pensando en conversaciones y en una sola persona delante de una sola máquina.
 
@@ -38,11 +38,11 @@ Los cuatro hacen lo mismo: construir, al lado del editor o en su lugar, una vent
 
 Esta es la distinción que importa.
 
-Una **conversación** es un chat: preguntas, el modelo responde, sigues preguntando. Está pensada para una persona y un agente, y para que la persona esté delante.
+Una **conversación** es un chat: preguntas, el modelo responde, se sigue preguntando. Está pensada para una persona y un agente, y para que la persona esté delante.
 
 Una **sesión** es un trabajo en marcha. Tiene un objetivo (una *issue*, una especificación), una rama o un *worktree*, unos permisos, un coste acumulado, un estado (trabajando, bloqueada, esperando una decisión, en revisión) y un resultado que se puede verificar: las puertas que ha pasado y las que no.
 
-Con una conversación, la pregunta es *qué ha dicho*. Con decenas de sesiones, las preguntas son otras: cuáles necesitan atención ahora, cuáles se han atascado, cuáles están gastando sin avanzar y cuáles puedo dar por buenas sin mirarlas.
+Con una conversación, la pregunta es *qué ha dicho*. Con decenas de sesiones, las preguntas son otras: cuáles necesitan atención ahora, cuáles se han atascado, cuáles están gastando sin avanzar y cuáles se pueden dar por buenas sin mirarlas.
 
 Hoy se resuelve con lo más simple que hay: varias pestañas en una terminal, una por sesión, que normalmente es una por *feature* o por *issue*. Con los flujos agénticos se espera a que terminen y se miran las métricas en el panel de *health* de la plataforma. La terminal funciona mientras son pocas. Cuando son más de cinco, deja de ser una herramienta útil y se convierte en un cuadro eléctrico sin etiquetas.
 
@@ -76,7 +76,7 @@ Lo bueno de tener claro lo que falta es que se puede empezar a construir. PlainC
 
 *Captura del repositorio, en modo demo: todas las sesiones y proyectos son inventados.*
 
-Cubre una parte de la lista de arriba: hasta 16 sesiones por pantalla, con su estado, el flujo de CI con tiempo estimado, las PR, los tokens, el coste y las compactaciones repetidas; una barra con lo que necesita una decisión tuya; y la posibilidad de responder permisos, enviar mensajes y retomar sesiones sin salir de la página. Es una primera versión y tiene límites claros: es local, para una persona, y el panel compartido por el equipo sigue pendiente.
+Cubre una parte de la lista de arriba: hasta 16 sesiones por pantalla, con su estado, el flujo de CI con tiempo estimado, las PR, los tokens, el coste y las compactaciones repetidas; una barra con lo que necesita una decisión; y la posibilidad de responder permisos, enviar mensajes y retomar sesiones sin salir de la página. Es una primera versión y tiene límites claros: es local, para una persona, y el panel compartido por el equipo sigue pendiente.
 
 ## Esto no es nada nuevo
 
