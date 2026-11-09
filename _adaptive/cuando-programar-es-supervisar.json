@@ -6,7 +6,7 @@
   "provider": "file",
   "model": "file",
   "prompt_version": 2,
-  "generated_at": "2026-11-09T08:24:26Z"
+  "generated_at": "2026-11-09T08:38:31Z"
  },
  "blocks": [
   {
@@ -43,16 +43,16 @@
   },
   {
    "tag": "p",
-   "html": "El <a href=\"/ya-no-revisamos-codigo\">post anterior</a> contaba cómo se había dejado de revisar cada cambio a mano. La consecuencia lógica llegó sola: si el código no se lee antes de integrar el cambio, el editor de código clásico deja de ser la herramienta en la que apoyarse. Hoy ya no utilizamos un IDE: se trabaja con agentes en la terminal y se delega todo el trabajo posible en flujos agénticos que se ejecutan en GitHub.",
-   "text": "El post anterior contaba cómo se había dejado de revisar cada cambio a mano. La consecuencia lógica llegó sola: si el código no se lee antes de integrar el cambio, el editor de código clásico deja de ser la herramienta en la que apoyarse. Hoy ya no utilizamos un IDE: se trabaja con agentes en la terminal y se delega todo el trabajo posible en flujos agénticos que se ejecutan en GitHub.",
-   "h": "f247dc98",
-   "k": "f247dc98.0",
+   "html": "El <a href=\"/ya-no-revisamos-codigo\">post anterior</a> contaba cómo habíamos dejado de revisar cada cambio a mano. La consecuencia lógica llegó sola: si el código no se lee antes de integrar el cambio, el editor de código clásico deja de ser la herramienta en la que apoyarse. Hoy ya no utilizamos un IDE: se trabaja con agentes en la terminal y se delega todo el trabajo posible en flujos agénticos que se ejecutan en GitHub.",
+   "text": "El post anterior contaba cómo habíamos dejado de revisar cada cambio a mano. La consecuencia lógica llegó sola: si el código no se lee antes de integrar el cambio, el editor de código clásico deja de ser la herramienta en la que apoyarse. Hoy ya no utilizamos un IDE: se trabaja con agentes en la terminal y se delega todo el trabajo posible en flujos agénticos que se ejecutan en GitHub.",
+   "h": "c7a42411",
+   "k": "c7a42411.0",
    "id": "b-4ttcks",
    "levels": {
     "1": "Hoy ya no utilizamos un IDE: se trabaja con agentes en la terminal y con flujos agénticos en GitHub.",
     "2": "Dejar de revisar cada cambio a mano tiene una consecuencia: sin leer el código antes de integrarlo, el editor de código clásico deja de ser la herramienta de apoyo. Hoy ya no utilizamos un IDE: se trabaja con agentes en la terminal y con flujos agénticos en GitHub.",
-    "3": "El <a href=\"/ya-no-revisamos-codigo\">post anterior</a> contaba cómo se había dejado de revisar cada cambio a mano. Si el código no se lee antes de integrarlo, el editor de código clásico deja de ser la herramienta en la que apoyarse. Hoy ya no utilizamos un IDE: se trabaja con agentes en la terminal y se delega lo posible en flujos agénticos en GitHub.",
-    "4": "El <a href=\"/ya-no-revisamos-codigo\">post anterior</a> contaba cómo se había dejado de revisar cada cambio a mano. La consecuencia: si el código no se lee antes de integrarlo, el editor de código clásico deja de ser la herramienta en la que apoyarse. Hoy ya no utilizamos un IDE: se trabaja con agentes en la terminal y se delega todo el trabajo posible en flujos agénticos en GitHub."
+    "3": "El <a href=\"/ya-no-revisamos-codigo\">post anterior</a> contaba cómo habíamos dejado de revisar cada cambio a mano. Si el código no se lee antes de integrarlo, el editor de código clásico deja de ser la herramienta en la que apoyarse. Hoy ya no utilizamos un IDE: se trabaja con agentes en la terminal y se delega lo posible en flujos agénticos en GitHub.",
+    "4": "El <a href=\"/ya-no-revisamos-codigo\">post anterior</a> contaba cómo habíamos dejado de revisar cada cambio a mano. La consecuencia: si el código no se lee antes de integrarlo, el editor de código clásico deja de ser la herramienta en la que apoyarse. Hoy ya no utilizamos un IDE: se trabaja con agentes en la terminal y se delega todo el trabajo posible en flujos agénticos en GitHub."
    },
    "errors": {},
    "model": "file"

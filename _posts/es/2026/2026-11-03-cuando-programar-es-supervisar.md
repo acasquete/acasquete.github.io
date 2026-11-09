@@ -15,7 +15,7 @@ Es finales de 2026. Todavía no existen las doscientas mil copias de agentes que
 
 ## Ya no utilizamos un IDE
 
-El [post anterior](/ya-no-revisamos-codigo) contaba cómo se había dejado de revisar cada cambio a mano. La consecuencia lógica llegó sola: si el código no se lee antes de integrar el cambio, el editor de código clásico deja de ser la herramienta en la que apoyarse. Hoy ya no utilizamos un IDE: se trabaja con agentes en la terminal y se delega todo el trabajo posible en flujos agénticos que se ejecutan en GitHub.
+El [post anterior](/ya-no-revisamos-codigo) contaba cómo habíamos dejado de revisar cada cambio a mano. La consecuencia lógica llegó sola: si el código no se lee antes de integrar el cambio, el editor de código clásico deja de ser la herramienta en la que apoyarse. Hoy ya no utilizamos un IDE: se trabaja con agentes en la terminal y se delega todo el trabajo posible en flujos agénticos que se ejecutan en GitHub.
 
 No es una preferencia ni una pose, sino una **prueba de madurez**. Dejar el IDE solo es posible cuando el resto del sistema es lo bastante bueno como para no necesitar mirar el código: una especificación ejecutable, puertas que bloquean, permisos claros y trazabilidad de cada cambio. Si para confiar en lo que ha hecho un agente todavía hay que abrir el editor y leerlo, el problema no es la herramienta: es que el sistema aún no está listo.
 
