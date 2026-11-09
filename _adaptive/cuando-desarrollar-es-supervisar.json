@@ -6,7 +6,7 @@
   "provider": "file",
   "model": "file",
   "prompt_version": 2,
-  "generated_at": "2026-11-09T18:11:33Z"
+  "generated_at": "2026-11-09T19:14:07Z"
  },
  "blocks": [
   {
@@ -49,10 +49,10 @@
    "k": "cea73713.0",
    "id": "b-4ttcks",
    "levels": {
+    "4": "El <a href=\"/ya-no-revisamos-codigo\">post anterior</a> contaba cómo habíamos dejado de revisar cada cambio a mano. La consecuencia: si el código no se lee antes de integrarlo, el editor de código clásico deja de ser la herramienta en la que apoyarse. Hoy ya no utilizamos un IDE: trabajamos con agentes en la terminal y delegamos todo el trabajo posible en flujos agénticos en la nube.",
     "1": "Hoy ya no utilizamos un IDE: trabajamos con agentes en la terminal y con flujos agénticos en la nube.",
     "2": "Dejar de revisar cada cambio a mano tiene una consecuencia: sin leer el código antes de integrarlo, el editor de código clásico deja de ser la herramienta de apoyo. Hoy ya no utilizamos un IDE: trabajamos con agentes en la terminal y con flujos agénticos en la nube.",
-    "3": "El <a href=\"/ya-no-revisamos-codigo\">post anterior</a> contaba cómo habíamos dejado de revisar cada cambio a mano. Si el código no se lee antes de integrarlo, el editor de código clásico deja de ser la herramienta en la que apoyarse. Hoy ya no utilizamos un IDE: trabajamos con agentes en la terminal y delegamos lo posible en flujos agénticos en la nube.",
-    "4": "El <a href=\"/ya-no-revisamos-codigo\">post anterior</a> contaba cómo habíamos dejado de revisar cada cambio a mano. La consecuencia: si el código no se lee antes de integrarlo, el editor de código clásico deja de ser la herramienta en la que apoyarse. Hoy ya no utilizamos un IDE: trabajamos con agentes en la terminal y delegamos todo el trabajo posible en flujos agénticos en la nube."
+    "3": "El <a href=\"/ya-no-revisamos-codigo\">post anterior</a> contaba cómo habíamos dejado de revisar cada cambio a mano. Si el código no se lee antes de integrarlo, el editor de código clásico deja de ser la herramienta en la que apoyarse. Hoy ya no utilizamos un IDE: trabajamos con agentes en la terminal y delegamos lo posible en flujos agénticos en la nube."
    },
    "errors": {},
    "model": "file"
@@ -171,13 +171,13 @@
   },
   {
    "tag": "li",
-   "html": "Y Microsoft lo llevó también a la terminal: <a href=\"https://github.com/microsoft/intelligent-terminal/releases\">Intelligent Terminal 0.3</a>, un <em>fork</em> de Windows Terminal con una barra lateral que muestra qué agentes están trabajando o esperando atención, con su repositorio y su rama.",
-   "text": "Y Microsoft lo llevó también a la terminal: Intelligent Terminal 0.3, un fork de Windows Terminal con una barra lateral que muestra qué agentes están trabajando o esperando atención, con su repositorio y su rama.",
-   "h": "81cb2f6b",
-   "k": "81cb2f6b.0",
+   "html": "Y Microsoft lo ha llevado también a la terminal: <a href=\"https://github.com/microsoft/intelligent-terminal/releases\">Intelligent Terminal 0.3</a>, un <em>fork</em> de Windows Terminal con una barra lateral que muestra qué agentes están trabajando o esperando atención, con su repositorio y su rama.",
+   "text": "Y Microsoft lo ha llevado también a la terminal: Intelligent Terminal 0.3, un fork de Windows Terminal con una barra lateral que muestra qué agentes están trabajando o esperando atención, con su repositorio y su rama.",
+   "h": "f4fccb66",
+   "k": "f4fccb66.0",
    "id": "b-h5fq7f",
    "levels": {
-    "4": "Y Microsoft lo llevó también a la terminal: <a href=\"https://github.com/microsoft/intelligent-terminal/releases\">Intelligent Terminal 0.3</a>, un <em>fork</em> de Windows Terminal con una barra lateral que muestra qué agentes están trabajando o esperando atención, con su repositorio y su rama.",
+    "4": "Y Microsoft lo ha llevado también a la terminal: <a href=\"https://github.com/microsoft/intelligent-terminal/releases\">Intelligent Terminal 0.3</a>, un <em>fork</em> de Windows Terminal con una barra lateral que muestra qué agentes están trabajando o esperando atención, con su repositorio y su rama.",
     "1": "",
     "2": "",
     "3": ""
@@ -315,16 +315,16 @@
   },
   {
    "tag": "p",
-   "html": "Si el IDE clásico era un editor con herramientas alrededor, el nuevo es una consola de operaciones: la sala de control de una <em>software factory</em>. El sector lleva tiempo llamándolo <a href=\"https://www.warp.dev/articles/what-is-an-agentic-development-environment\"><strong>ADE</strong></a>, <em>Agentic Development Environment</em>. Aquí conviene cambiar otra letra: no un entorno de desarrollo, sino un <strong>ICE</strong>, un <em>Integrated Control Environment</em>. La D de desarrollo deja paso a la C de control: ya no es el sitio donde se escribe el código, sino desde donde se supervisa a quienes lo escriben.",
-   "text": "Si el IDE clásico era un editor con herramientas alrededor, el nuevo es una consola de operaciones: la sala de control de una software factory. El sector lleva tiempo llamándolo ADE, Agentic Development Environment. Aquí conviene cambiar otra letra: no un entorno de desarrollo, sino un ICE, un Integrated Control Environment. La D de desarrollo deja paso a la C de control: ya no es el sitio donde se escribe el código, sino desde donde se supervisa a quienes lo escriben.",
-   "h": "2a51c363",
-   "k": "2a51c363.0",
+   "html": "Si el IDE clásico era un editor con herramientas alrededor, el nuevo es una consola de operaciones: la sala de control de una <em>software factory</em>. El sector lleva tiempo llamándolo <a href=\"https://www.warp.dev/articles/what-is-an-agentic-development-environment\"><strong>ADE</strong></a>, <em>Agentic Development Environment</em>. Aquí mi propuesta es cambiar otra letra: no un entorno de desarrollo, sino un <strong>ICE</strong>, un <em>Integrated Control Environment</em>. La D de desarrollo deja paso a la C de control: ya no es el sitio donde se escribe el código, sino desde donde se supervisa a quienes lo escriben.",
+   "text": "Si el IDE clásico era un editor con herramientas alrededor, el nuevo es una consola de operaciones: la sala de control de una software factory. El sector lleva tiempo llamándolo ADE, Agentic Development Environment. Aquí mi propuesta es cambiar otra letra: no un entorno de desarrollo, sino un ICE, un Integrated Control Environment. La D de desarrollo deja paso a la C de control: ya no es el sitio donde se escribe el código, sino desde donde se supervisa a quienes lo escriben.",
+   "h": "190313ff",
+   "k": "190313ff.0",
    "id": "b-ec4aln",
    "levels": {
-    "4": "El IDE clásico era un editor con herramientas alrededor; el nuevo es una consola de operaciones, la sala de control de una <em>software factory</em>. El sector lo llama <a href=\"https://www.warp.dev/articles/what-is-an-agentic-development-environment\"><strong>ADE</strong></a>, <em>Agentic Development Environment</em>. Aquí conviene cambiar otra letra: no un entorno de desarrollo, sino un <strong>ICE</strong>, un <em>Integrated Control Environment</em>. Ya no es el sitio donde se escribe el código, sino desde donde se supervisa a quienes lo escriben.",
+    "4": "El IDE clásico era un editor con herramientas alrededor; el nuevo es una consola de operaciones, la sala de control de una <em>software factory</em>. El sector lo llama <a href=\"https://www.warp.dev/articles/what-is-an-agentic-development-environment\"><strong>ADE</strong></a>, <em>Agentic Development Environment</em>. Aquí mi propuesta es cambiar otra letra: no un entorno de desarrollo, sino un <strong>ICE</strong>, un <em>Integrated Control Environment</em>. Ya no es el sitio donde se escribe el código, sino desde donde se supervisa a quienes lo escriben.",
     "1": "El nuevo IDE es una consola de control, un <strong>ICE</strong> (<em>Integrated Control Environment</em>), desde la que se supervisa a quienes escriben el código.",
-    "2": "El nuevo IDE es una consola de operaciones, la sala de control de una <em>software factory</em>. El sector lo llama <a href=\"https://www.warp.dev/articles/what-is-an-agentic-development-environment\"><strong>ADE</strong></a>, pero conviene cambiar una letra: un <strong>ICE</strong>, <em>Integrated Control Environment</em>, desde el que se supervisa a quienes escriben el código.",
-    "3": "El nuevo IDE es una consola de operaciones, la sala de control de una <em>software factory</em>. El sector lo llama <a href=\"https://www.warp.dev/articles/what-is-an-agentic-development-environment\"><strong>ADE</strong></a>, <em>Agentic Development Environment</em>; aquí conviene cambiar otra letra: un <strong>ICE</strong>, <em>Integrated Control Environment</em>. Ya no es el sitio donde se escribe el código, sino desde donde se supervisa a quienes lo escriben."
+    "2": "El nuevo IDE es una consola de operaciones, la sala de control de una <em>software factory</em>. El sector lo llama <a href=\"https://www.warp.dev/articles/what-is-an-agentic-development-environment\"><strong>ADE</strong></a>, pero la propuesta es cambiar una letra: un <strong>ICE</strong>, <em>Integrated Control Environment</em>, desde el que se supervisa a quienes escriben el código.",
+    "3": "El nuevo IDE es una consola de operaciones, la sala de control de una <em>software factory</em>. El sector lo llama <a href=\"https://www.warp.dev/articles/what-is-an-agentic-development-environment\"><strong>ADE</strong></a>, <em>Agentic Development Environment</em>; aquí mi propuesta es cambiar otra letra: un <strong>ICE</strong>, <em>Integrated Control Environment</em>. Ya no es el sitio donde se escribe el código, sino desde donde se supervisa a quienes lo escriben."
    },
    "errors": {},
    "model": "file"
@@ -507,29 +507,29 @@
   },
   {
    "tag": "p",
-   "html": "Lo bueno de tener claro lo que falta es que se puede empezar a construir. PlainConcepts ha publicado como proyecto de código abierto una primera versión: <a href=\"https://github.com/PlainConceptsPlatform/ice\"><strong>ICE</strong></a>, <em>Integrated Control Environment</em>. Es una interfaz web local para supervisar y dirigir sesiones de Claude Code y de OpenCode. No es un editor ni pretende serlo: sustituye al IDE como sitio de trabajo. No escribe el código, de eso se encargan los agentes; es la consola desde la que se supervisan muchas sesiones de muchos proyectos.",
-   "text": "Lo bueno de tener claro lo que falta es que se puede empezar a construir. PlainConcepts ha publicado como proyecto de código abierto una primera versión: ICE, Integrated Control Environment. Es una interfaz web local para supervisar y dirigir sesiones de Claude Code y de OpenCode. No es un editor ni pretende serlo: sustituye al IDE como sitio de trabajo. No escribe el código, de eso se encargan los agentes; es la consola desde la que se supervisan muchas sesiones de muchos proyectos.",
-   "h": "c5fcf811",
-   "k": "c5fcf811.0",
+   "html": "Lo bueno de tener claro lo que falta es que se puede empezar a construir. Para empezar a experimentar con sistemas de supervisión y ver sus límites, he comenzado a utilizar una herramienta personalizada, una primera aproximación publicada como proyecto de código abierto por PlainConcepts: <a href=\"https://github.com/PlainConceptsPlatform/ice\"><strong>ICE</strong></a>, <em>Integrated Control Environment</em>. Es una interfaz web local para supervisar y dirigir sesiones de Claude Code y de OpenCode. No es un editor ni pretende serlo: sustituye al IDE como sitio de trabajo. No escribe el código, de eso se encargan los agentes; es la consola desde la que se supervisan muchas sesiones de muchos proyectos.",
+   "text": "Lo bueno de tener claro lo que falta es que se puede empezar a construir. Para empezar a experimentar con sistemas de supervisión y ver sus límites, he comenzado a utilizar una herramienta personalizada, una primera aproximación publicada como proyecto de código abierto por PlainConcepts: ICE, Integrated Control Environment. Es una interfaz web local para supervisar y dirigir sesiones de Claude Code y de OpenCode. No es un editor ni pretende serlo: sustituye al IDE como sitio de trabajo. No escribe el código, de eso se encargan los agentes; es la consola desde la que se supervisan muchas sesiones de muchos proyectos.",
+   "h": "2b2e7c7a",
+   "k": "2b2e7c7a.0",
    "id": "b-vbzbns",
    "levels": {
-    "4": "Tener claro lo que falta permite empezar a construir. PlainConcepts ha publicado como código abierto una primera versión: <a href=\"https://github.com/PlainConceptsPlatform/ice\"><strong>ICE</strong></a>, <em>Integrated Control Environment</em>, una interfaz web local para supervisar y dirigir sesiones de Claude Code y de OpenCode. No es un editor: sustituye al IDE como sitio de trabajo. No escribe el código, de eso se encargan los agentes; es la consola desde la que se supervisan muchas sesiones de muchos proyectos.",
+    "4": "Tener claro lo que falta permite empezar a construir. Para empezar a experimentar con sistemas de supervisión y ver sus límites, he comenzado a utilizar una herramienta personalizada, una primera aproximación publicada como código abierto por PlainConcepts: <a href=\"https://github.com/PlainConceptsPlatform/ice\"><strong>ICE</strong></a>, <em>Integrated Control Environment</em>, una interfaz web local para supervisar y dirigir sesiones de Claude Code y de OpenCode. No es un editor: sustituye al IDE como sitio de trabajo. No escribe el código, de eso se encargan los agentes; es la consola desde la que se supervisan muchas sesiones de muchos proyectos.",
     "1": "",
-    "2": "PlainConcepts ha publicado como código abierto una primera versión: <a href=\"https://github.com/PlainConceptsPlatform/ice\"><strong>ICE</strong></a>, una interfaz web local para supervisar sesiones de Claude Code y de OpenCode. No escribe el código: es la consola desde la que se supervisan muchas sesiones de muchos proyectos.",
-    "3": "PlainConcepts ha publicado como código abierto una primera versión: <a href=\"https://github.com/PlainConceptsPlatform/ice\"><strong>ICE</strong></a>, <em>Integrated Control Environment</em>, una interfaz web local para supervisar y dirigir sesiones de Claude Code y de OpenCode. No es un editor ni escribe el código: es la consola desde la que se supervisan muchas sesiones de muchos proyectos."
+    "2": "Para experimentar con sistemas de supervisión y ver sus límites, he comenzado a utilizar una herramienta personalizada, una primera aproximación publicada como código abierto por PlainConcepts: <a href=\"https://github.com/PlainConceptsPlatform/ice\"><strong>ICE</strong></a>, una interfaz web local para supervisar sesiones de Claude Code y de OpenCode. No escribe el código: es la consola desde la que se supervisan muchas sesiones de muchos proyectos.",
+    "3": "Para empezar a experimentar con sistemas de supervisión y ver sus límites, he comenzado a utilizar una herramienta personalizada, una primera aproximación publicada como código abierto por PlainConcepts: <a href=\"https://github.com/PlainConceptsPlatform/ice\"><strong>ICE</strong></a>, <em>Integrated Control Environment</em>, una interfaz web local para supervisar y dirigir sesiones de Claude Code y de OpenCode. No es un editor ni escribe el código: es la consola desde la que se supervisan muchas sesiones de muchos proyectos."
    },
    "errors": {},
    "model": "file"
   },
   {
    "tag": "p",
-   "html": "Cubre una parte de la lista de arriba: hasta 16 sesiones por pantalla, con su estado, el flujo de CI con tiempo estimado, las PR, los tokens, el coste y las compactaciones repetidas; una barra con lo que necesita una decisión; y la posibilidad de responder permisos, enviar mensajes y retomar sesiones sin salir de la página. Es una primera versión y tiene límites claros: es local, para una persona, y el panel compartido por el equipo sigue pendiente.",
-   "text": "Cubre una parte de la lista de arriba: hasta 16 sesiones por pantalla, con su estado, el flujo de CI con tiempo estimado, las PR, los tokens, el coste y las compactaciones repetidas; una barra con lo que necesita una decisión; y la posibilidad de responder permisos, enviar mensajes y retomar sesiones sin salir de la página. Es una primera versión y tiene límites claros: es local, para una persona, y el panel compartido por el equipo sigue pendiente.",
-   "h": "29b4f451",
-   "k": "29b4f451.0",
+   "html": "Cubre una parte de la lista de arriba: hasta 16 sesiones por pantalla, con su estado, el flujo de CI con tiempo estimado, las PR, los tokens, el coste y las compactaciones repetidas; una barra con lo que necesita una decisión; y la posibilidad de responder permisos, enviar mensajes y retomar sesiones sin salir de la página. Es una primera aproximación y tiene límites claros: es local, para una persona, y el panel compartido por el equipo sigue pendiente.",
+   "text": "Cubre una parte de la lista de arriba: hasta 16 sesiones por pantalla, con su estado, el flujo de CI con tiempo estimado, las PR, los tokens, el coste y las compactaciones repetidas; una barra con lo que necesita una decisión; y la posibilidad de responder permisos, enviar mensajes y retomar sesiones sin salir de la página. Es una primera aproximación y tiene límites claros: es local, para una persona, y el panel compartido por el equipo sigue pendiente.",
+   "h": "c0524965",
+   "k": "c0524965.0",
    "id": "b-iop2eg",
    "levels": {
-    "4": "Cubre una parte de la lista: hasta 16 sesiones por pantalla, con su estado, el flujo de CI con tiempo estimado, las PR, los tokens, el coste y las compactaciones repetidas; una barra con lo que necesita una decisión; y la posibilidad de responder permisos, enviar mensajes y retomar sesiones. Es una primera versión: es local, para una persona, y el panel compartido sigue pendiente.",
+    "4": "Cubre una parte de la lista: hasta 16 sesiones por pantalla, con su estado, el flujo de CI con tiempo estimado, las PR, los tokens, el coste y las compactaciones repetidas; una barra con lo que necesita una decisión; y la posibilidad de responder permisos, enviar mensajes y retomar sesiones. Es una primera aproximación: es local, para una persona, y el panel compartido sigue pendiente.",
     "1": "",
     "2": "",
     "3": ""
@@ -539,16 +539,16 @@
   },
   {
    "tag": "p",
-   "html": "Conviene bajar el tono: esto no es nada nuevo ni extraordinario. Hacer una terminal, o un panel como este, es literalmente un <em>prompt</em> y media hora de ajustes. Todo el mundo tiene ahora la capacidad de construirse la herramienta y adaptarla a cómo trabaja, y todo el mundo lo está haciendo. ICE es una más.",
-   "text": "Conviene bajar el tono: esto no es nada nuevo ni extraordinario. Hacer una terminal, o un panel como este, es literalmente un prompt y media hora de ajustes. Todo el mundo tiene ahora la capacidad de construirse la herramienta y adaptarla a cómo trabaja, y todo el mundo lo está haciendo. ICE es una más.",
-   "h": "b507d902",
-   "k": "b507d902.0",
+   "html": "Conviene bajar el tono, porque esto no es nada nuevo ni extraordinario. Hacer una terminal, o un panel como este, es literalmente un <em>prompt</em> y media hora de ajustes. Todo el mundo tiene ahora la capacidad de construirse la herramienta y adaptarla a cómo trabaja, y todo el mundo lo está haciendo. ICE es una más.",
+   "text": "Conviene bajar el tono, porque esto no es nada nuevo ni extraordinario. Hacer una terminal, o un panel como este, es literalmente un prompt y media hora de ajustes. Todo el mundo tiene ahora la capacidad de construirse la herramienta y adaptarla a cómo trabaja, y todo el mundo lo está haciendo. ICE es una más.",
+   "h": "3c35c3a4",
+   "k": "3c35c3a4.0",
    "id": "b-3e34v9",
    "levels": {
-    "4": "Conviene bajar el tono: esto no es nada nuevo ni extraordinario. Hacer una terminal, o un panel como este, es literalmente un <em>prompt</em> y media hora de ajustes. Todo el mundo puede construirse la herramienta y adaptarla a cómo trabaja, y todo el mundo lo está haciendo. ICE es una más.",
     "1": "",
     "2": "",
-    "3": "Conviene bajar el tono: esto no es nada nuevo. Hacer un panel como este es literalmente un <em>prompt</em> y media hora de ajustes, y todo el mundo puede construirse la herramienta. ICE es una más."
+    "3": "Conviene bajar el tono, porque esto no es nada nuevo. Hacer un panel como este es literalmente un <em>prompt</em> y media hora de ajustes, y todo el mundo puede construirse la herramienta. ICE es una más.",
+    "4": "Conviene bajar el tono: esto no es nada nuevo ni extraordinario. Hacer una terminal, o un panel como este, es literalmente un <em>prompt</em> y media hora de ajustes. Todo el mundo puede construirse la herramienta y adaptarla a cómo trabaja, y todo el mundo lo está haciendo. ICE es una más."
    },
    "errors": {},
    "model": "file"

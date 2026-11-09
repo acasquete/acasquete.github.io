@@ -30,7 +30,7 @@ Todo el mundo tiene el IDE instalado. Cada vez menos gente trabaja dentro de él
 - Microsoft lanzó [VS Code Agents](https://www.infoworld.com/article/4156038/visual-studio-code-1-115-introduces-vs-code-agents-app.html), una aplicación aparte del editor para lanzar y seguir sesiones de agentes en paralelo. La novedad de Visual Studio 2026 se resumió con un titular que lo dice todo: [asigna una tarea, cierra el IDE, recibe una PR](https://visualstudiomagazine.com/articles/2026/04/29/vs-2026-joins-vs-code-with-integrated-cloud-agent-assign-a-task-close-the-ide-get-a-pr.aspx).
 - Cursor 3 estrenó una [ventana de agentes](https://www.datacamp.com/blog/cursor-3) construida desde cero alrededor de los agentes, no del editor de archivos.
 - JetBrains lanzó [Air](https://tech-insider.org/jetbrains-air-eap-ides-multi-agent-2026/), un orquestador de varios agentes que ni siquiera trae agentes propios: ejecuta los que estén instalados.
-- Y Microsoft lo llevó también a la terminal: [Intelligent Terminal 0.3](https://github.com/microsoft/intelligent-terminal/releases), un *fork* de Windows Terminal con una barra lateral que muestra qué agentes están trabajando o esperando atención, con su repositorio y su rama.
+- Y Microsoft lo ha llevado también a la terminal: [Intelligent Terminal 0.3](https://github.com/microsoft/intelligent-terminal/releases), un *fork* de Windows Terminal con una barra lateral que muestra qué agentes están trabajando o esperando atención, con su repositorio y su rama.
 
 Los cuatro hacen lo mismo: construir, al lado del editor o en su lugar, una ventana para los agentes. Es la forma más honesta de reconocer que el trabajo ya no pasa por el editor. Pero también es una solución a medias: siguen pensando en conversaciones y en una sola persona delante de una sola máquina.
 
@@ -52,7 +52,7 @@ Y todo eso es dentro de un solo proyecto. Un equipo altamente efectivo no lleva 
 
 ## Cómo debería ser el nuevo IDE
 
-Si el IDE clásico era un editor con herramientas alrededor, el nuevo es una consola de operaciones: la sala de control de una *software factory*. El sector lleva tiempo llamándolo [**ADE**](https://www.warp.dev/articles/what-is-an-agentic-development-environment), *Agentic Development Environment*. Aquí conviene cambiar otra letra: no un entorno de desarrollo, sino un **ICE**, un *Integrated Control Environment*. La D de desarrollo deja paso a la C de control: ya no es el sitio donde se escribe el código, sino desde donde se supervisa a quienes lo escriben.
+Si el IDE clásico era un editor con herramientas alrededor, el nuevo es una consola de operaciones: la sala de control de una *software factory*. El sector lleva tiempo llamándolo [**ADE**](https://www.warp.dev/articles/what-is-an-agentic-development-environment), *Agentic Development Environment*. Aquí mi propuesta es cambiar otra letra: no un entorno de desarrollo, sino un **ICE**, un *Integrated Control Environment*. La D de desarrollo deja paso a la C de control: ya no es el sitio donde se escribe el código, sino desde donde se supervisa a quienes lo escriben.
 
 Sin pretender un diseño cerrado, esto es lo que necesita un ICE:
 
@@ -68,19 +68,19 @@ Sin pretender un diseño cerrado, esto es lo que necesita un ICE:
 
 Lo que no aparece en la lista es escribir código. El editor no desaparece, pero pasa a ser una vista más, la que se abre en el caso raro en que de verdad hace falta leer algo.
 
-## Una primera versión: ICE
+## Una primera aproximación
 
-Lo bueno de tener claro lo que falta es que se puede empezar a construir. PlainConcepts ha publicado como proyecto de código abierto una primera versión: [**ICE**](https://github.com/PlainConceptsPlatform/ice), *Integrated Control Environment*. Es una interfaz web local para supervisar y dirigir sesiones de Claude Code y de OpenCode. No es un editor ni pretende serlo: sustituye al IDE como sitio de trabajo. No escribe el código, de eso se encargan los agentes; es la consola desde la que se supervisan muchas sesiones de muchos proyectos.
+Lo bueno de tener claro lo que falta es que se puede empezar a construir. Para empezar a experimentar con sistemas de supervisión y ver sus límites, he comenzado a utilizar una herramienta personalizada, una primera aproximación publicada como proyecto de código abierto por PlainConcepts: [**ICE**](https://github.com/PlainConceptsPlatform/ice), *Integrated Control Environment*. Es una interfaz web local para supervisar y dirigir sesiones de Claude Code y de OpenCode. No es un editor ni pretende serlo: sustituye al IDE como sitio de trabajo. No escribe el código, de eso se encargan los agentes; es la consola desde la que se supervisan muchas sesiones de muchos proyectos.
 
 ![Muro de sesiones de ICE con ocho celdas por pantalla, cada una con su estado, alertas y flujo de CI, incluida una sesión con un flujo de despliegue en marcha (pages-build-deployment).](/img/el-nuevo-ide/ice-wall.jpg)
 
 *Captura del repositorio, en modo demo: todas las sesiones y proyectos son inventados.*
 
-Cubre una parte de la lista de arriba: hasta 16 sesiones por pantalla, con su estado, el flujo de CI con tiempo estimado, las PR, los tokens, el coste y las compactaciones repetidas; una barra con lo que necesita una decisión; y la posibilidad de responder permisos, enviar mensajes y retomar sesiones sin salir de la página. Es una primera versión y tiene límites claros: es local, para una persona, y el panel compartido por el equipo sigue pendiente.
+Cubre una parte de la lista de arriba: hasta 16 sesiones por pantalla, con su estado, el flujo de CI con tiempo estimado, las PR, los tokens, el coste y las compactaciones repetidas; una barra con lo que necesita una decisión; y la posibilidad de responder permisos, enviar mensajes y retomar sesiones sin salir de la página. Es una primera aproximación y tiene límites claros: es local, para una persona, y el panel compartido por el equipo sigue pendiente.
 
 ## Esto no es nada nuevo
 
-Conviene bajar el tono: esto no es nada nuevo ni extraordinario. Hacer una terminal, o un panel como este, es literalmente un *prompt* y media hora de ajustes. Todo el mundo tiene ahora la capacidad de construirse la herramienta y adaptarla a cómo trabaja, y todo el mundo lo está haciendo. ICE es una más.
+Conviene bajar el tono, porque esto no es nada nuevo ni extraordinario. Hacer una terminal, o un panel como este, es literalmente un *prompt* y media hora de ajustes. Todo el mundo tiene ahora la capacidad de construirse la herramienta y adaptarla a cómo trabaja, y todo el mundo lo está haciendo. ICE es una más.
 
 Por eso no hay un ganador claro ni lo habrá pronto. Cuando construir cuesta una tarde, cada equipo hace el suyo, a su medida. Habrá tantos ICE como equipos, y no habrá uno rígido que valga para todos: cada equipo tiene sus propias puertas, sus flujos y sus líneas rojas, y su consola tendrá que reflejarlos. La lista de arriba no es una especificación, sino un punto de partida para que cada uno construya la suya. Lo que no se puede delegar en ninguna herramienta es saber qué hay que mirar.
 
