@@ -21,6 +21,8 @@ En el equipo de plataforma trabajamos con la CLI de Claude Code y con OpenCode. 
 
 No lo cuento como una preferencia, ni como una pose. Lo planteo como una **prueba de madurez**. Dejar el IDE solo es posible cuando el resto del sistema es lo bastante bueno como para no necesitar mirar el código: una especificación ejecutable, puertas que bloquean, permisos claros y trazabilidad de cada cambio. Si para confiar en lo que ha hecho un agente todavía tienes que abrir el editor y leerlo, el problema no es la herramienta: es que tu sistema aún no está listo.
 
+Esto tiene nombre: *software factory*. [StrongDM](https://simonwillison.net/2026/feb/7/software-factory/) lo popularizó este año para describir un equipo donde los agentes escriben, prueban y despliegan, y las personas no escriben ni revisan el código. Cuando se lleva al extremo se llama *dark factory*, como las fábricas que trabajan a oscuras porque los robots no necesitan luz. Lo nuestro se parece, pero con una diferencia que importa: no quitamos el control, lo movemos de la lectura del código a las puertas. Una fábrica a oscuras es una apuesta; una fábrica con panel de control es un sistema.
+
 ## La paradoja
 
 Los datos dicen lo contrario de lo que vivimos, o eso parece. En la [encuesta de Stack Overflow de 2026](https://visualstudiomagazine.com/articles/2026/10/06/stack-overflow-2026-survey-vs-code-leads-visual-studio-takes-third.aspx), VS Code sigue siendo el IDE más usado. Pero en la misma encuesta, Claude Code es el agente más usado, con un 65,5 %, y el uso de agentes ha pasado del 31 % en 2025 al 59 % en abril de este año.
@@ -30,8 +32,9 @@ Todo el mundo tiene el IDE instalado. Cada vez menos gente trabaja dentro de él
 - Microsoft ha sacado [VS Code Agents](https://www.infoworld.com/article/4156038/visual-studio-code-1-115-introduces-vs-code-agents-app.html), una aplicación aparte del editor para lanzar y seguir sesiones de agentes en paralelo. La novedad de Visual Studio 2026 se resumió con un titular que lo dice todo: [asigna una tarea, cierra el IDE, recibe una PR](https://visualstudiomagazine.com/articles/2026/04/29/vs-2026-joins-vs-code-with-integrated-cloud-agent-assign-a-task-close-the-ide-get-a-pr.aspx).
 - Cursor 3 estrenó una [ventana de agentes](https://www.datacamp.com/blog/cursor-3) construida desde cero alrededor de los agentes, no del editor de archivos.
 - JetBrains lanzó [Air](https://tech-insider.org/jetbrains-air-eap-ides-multi-agent-2026/), un orquestador de varios agentes que ni siquiera trae agentes propios: ejecuta los que tengas instalados.
+- Y Microsoft lo ha llevado también a la terminal: [Intelligent Terminal 0.3](https://github.com/microsoft/intelligent-terminal/releases), un *fork* de Windows Terminal con una barra lateral que muestra qué agentes están trabajando o esperándote, con su repositorio y su rama. Funciona con Claude Code, OpenCode y otros, pero sigue siendo para una persona y una máquina.
 
-Los tres hacen lo mismo: construir, al lado del editor, una ventana para los agentes. Es la forma más honesta de reconocer que el trabajo ya no pasa por el editor. Pero también es una solución a medias: siguen pensando en conversaciones.
+Los cuatro hacen lo mismo: construir, al lado del editor o en su lugar, una ventana para los agentes. Es la forma más honesta de reconocer que el trabajo ya no pasa por el editor. Pero también es una solución a medias: siguen pensando en conversaciones.
 
 ## Sesiones, no conversaciones
 
@@ -51,7 +54,7 @@ Y todo eso es dentro de un solo proyecto. En el equipo de plataforma no llevamos
 
 ## Cómo debería ser el nuevo IDE
 
-Si el IDE clásico era un editor con herramientas alrededor, el nuevo es una consola de operaciones. El sector lleva tiempo llamándolo [**ADE**](https://www.warp.dev/articles/what-is-an-agentic-development-environment), *Agentic Development Environment*. Yo cambiaría otra letra: no un entorno de desarrollo, sino un **ICE**, un *Integrated Control Environment*. La D de desarrollo deja paso a la C de control: ya no es el sitio donde se escribe el código, sino desde donde se supervisa a quienes lo escriben.
+Si el IDE clásico era un editor con herramientas alrededor, el nuevo es una consola de operaciones: la sala de control de una *software factory*. El sector lleva tiempo llamándolo [**ADE**](https://www.warp.dev/articles/what-is-an-agentic-development-environment), *Agentic Development Environment*. Yo cambiaría otra letra: no un entorno de desarrollo, sino un **ICE**, un *Integrated Control Environment*. La D de desarrollo deja paso a la C de control: ya no es el sitio donde se escribe el código, sino desde donde se supervisa a quienes lo escriben.
 
 Sin pretender tener el diseño cerrado, esto es lo que creo que necesita un ICE:
 
